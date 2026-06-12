@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Kaggle credentials
+.kaggle/
+kaggle.json
+access_token
+
+# Downloaded competition data
+data/raw/
+data/working/
+
+# Runtime outputs
+outputs/
+runs/
+traces/
+*.log
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
