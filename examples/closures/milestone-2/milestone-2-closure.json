@@ -1,0 +1,134 @@
+{
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "executes_dataset_code": false,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legalCertification": false,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_2_report_closure_v1"
+  },
+  "closed_tasks": 9,
+  "closure_status": "MILESTONE_2_CLOSED_PASS",
+  "commit_chain": [
+    "8dee4c3",
+    "d40d9e8",
+    "f4b66da",
+    "484baf8",
+    "d0281f9",
+    "1705baf",
+    "d91bf3e",
+    "ba4f0dc",
+    "a9c7d03"
+  ],
+  "dry_run_package": {
+    "file_hashes": {
+      "README.md": "4584c7f5dccf810659f9fd04f297e4f8929e2b59f66248b57302f7d237a45646",
+      "benchmark-report.md": "dc6feebbdc569998064458412bbc2b15f764482015643e8d644b948a46add441",
+      "public-boundary.json": "e8d8d595e60f309e34b0b9af7e8d5d90cb130357041b527ef32d1469f0015961"
+    },
+    "files": [
+      "README.md",
+      "benchmark-report.md",
+      "public-boundary.json"
+    ],
+    "metadata": {
+      "contains_api_keys": false,
+      "deterministic": true,
+      "executes_dataset_code": false,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "private_core_exposure": false,
+      "public_safe": true,
+      "source": "kaggle_dry_run_package_v1",
+      "uses_benchmark_report": true,
+      "uses_outcome_verification": true,
+      "uses_score_calibration": true
+    },
+    "package_id": "KAGGLE-DRYRUN-41C18DE4A1D2",
+    "package_signature": "41C18DE4A1D27FDE",
+    "package_status": "KAGGLE_DRY_RUN_PACKAGE_VALID",
+    "report_signature": "1B5221241DA2FD6B",
+    "status": "KAGGLE_DRY_RUN_PACKAGE_READY",
+    "task_id": "kaggle-dry-run-smoke"
+  },
+  "markdown": "# ARC-AGI-3 Milestone #2 Report / Closure\n\nStatus: MILESTONE_2_CLOSED_PASS\nMilestone: Milestone #2\nRepository: hbce-arc-agi3-agent\nTests passed: 97\n\n## Task chain\n\n- Task 1: Task Loader v1 - CLOSED_PASS - commit `8dee4c3`\n- Task 2: Environment Harness v1 - CLOSED_PASS - commit `d40d9e8`\n- Task 3: Object Model v1 - CLOSED_PASS - commit `f4b66da`\n- Task 4: Rule Hypothesis v1 - CLOSED_PASS - commit `484baf8`\n- Task 5: Planner Strategy Expansion v1 - CLOSED_PASS - commit `d0281f9`\n- Task 6: Outcome Verification v1 - CLOSED_PASS - commit `1705baf`\n- Task 7: Score Calibration v1 - CLOSED_PASS - commit `d91bf3e`\n- Task 8: Benchmark Report Generator v1 - CLOSED_PASS - commit `ba4f0dc`\n- Task 9: Kaggle Dry-Run Package v1 - CLOSED_PASS - commit `a9c7d03`\n\n## Kaggle dry-run package\n\n- Package status: KAGGLE_DRY_RUN_PACKAGE_VALID\n- Package ID: KAGGLE-DRYRUN-41C18DE4A1D2\n- Package signature: 41C18DE4A1D27FDE\n- Kaggle submission sent: false\n\n## Boundary\n\n- public_safe=true\n- deterministic=true\n- external_api_dependency=false\n- executes_dataset_code=false\n- contains_api_keys=false\n- private_core_exposure=false\n- kaggle_submission_sent=false\n- legalCertification=false\n\n## Next step\n\nProceed to the next ARC-AGI-3 public R&D phase without Kaggle live submission.\n\nClosure signature: EDFD1234147D5021\n",
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "executes_dataset_code": false,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legalCertification": false,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_2_report_closure_v1",
+    "uses_kaggle_dry_run_package": true
+  },
+  "milestone": "Milestone #2",
+  "milestone_status": "READY_FOR_PHASE_NEXT",
+  "next_step": "Proceed to the next ARC-AGI-3 public R&D phase without Kaggle live submission.",
+  "repository": "hbce-arc-agi3-agent",
+  "signature": "EDFD1234147D5021",
+  "status": "MILESTONE_2_CLOSURE_READY",
+  "task_chain": [
+    {
+      "commit": "8dee4c3",
+      "name": "Task Loader v1",
+      "status": "CLOSED_PASS",
+      "task": "Task 1"
+    },
+    {
+      "commit": "d40d9e8",
+      "name": "Environment Harness v1",
+      "status": "CLOSED_PASS",
+      "task": "Task 2"
+    },
+    {
+      "commit": "f4b66da",
+      "name": "Object Model v1",
+      "status": "CLOSED_PASS",
+      "task": "Task 3"
+    },
+    {
+      "commit": "484baf8",
+      "name": "Rule Hypothesis v1",
+      "status": "CLOSED_PASS",
+      "task": "Task 4"
+    },
+    {
+      "commit": "d0281f9",
+      "name": "Planner Strategy Expansion v1",
+      "status": "CLOSED_PASS",
+      "task": "Task 5"
+    },
+    {
+      "commit": "1705baf",
+      "name": "Outcome Verification v1",
+      "status": "CLOSED_PASS",
+      "task": "Task 6"
+    },
+    {
+      "commit": "d91bf3e",
+      "name": "Score Calibration v1",
+      "status": "CLOSED_PASS",
+      "task": "Task 7"
+    },
+    {
+      "commit": "ba4f0dc",
+      "name": "Benchmark Report Generator v1",
+      "status": "CLOSED_PASS",
+      "task": "Task 8"
+    },
+    {
+      "commit": "a9c7d03",
+      "name": "Kaggle Dry-Run Package v1",
+      "status": "CLOSED_PASS",
+      "task": "Task 9"
+    }
+  ],
+  "tests_passed": 97,
+  "total_tasks": 9
+}
