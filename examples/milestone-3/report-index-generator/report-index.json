@@ -1,0 +1,224 @@
+{
+  "index_status": "REPORT_INDEX_VALID",
+  "indexed_artifact_count": 15,
+  "indexed_report_count": 5,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "executes_dataset_code": false,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "milestone": "Milestone #3",
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "report_index_generator_v1",
+    "task": "Task 6",
+    "uses_batch_benchmark_runner": true,
+    "uses_dataset_sample_registry": true,
+    "uses_failure_taxonomy": true,
+    "uses_multi_task_outcome_aggregator": true,
+    "uses_strategy_selection_index": true
+  },
+  "milestone": "Milestone #3",
+  "ready_report_count": 5,
+  "report_entries": [
+    {
+      "artifact_paths": [
+        "examples/milestone-3/batch-benchmark-runner/batch-benchmark-run.json",
+        "examples/milestone-3/batch-benchmark-runner/batch-benchmark-run.md"
+      ],
+      "deterministic": true,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "metadata": {
+        "artifact_paths_exist": {
+          "examples/milestone-3/batch-benchmark-runner/batch-benchmark-run.json": true,
+          "examples/milestone-3/batch-benchmark-runner/batch-benchmark-run.md": true
+        },
+        "deterministic": true,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "primary_path_exists": true,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "report_index_generator_v1"
+      },
+      "milestone": "Milestone #3",
+      "module_name": "batch_benchmark_runner",
+      "primary_path": "docs/batch-benchmark-runner-v1.md",
+      "private_core_exposure": false,
+      "public_safe": true,
+      "ready_marker": "ARC_AGI3_BATCH_BENCHMARK_RUNNER_V1_READY=true",
+      "report_key": "batch_benchmark_runner_v1",
+      "report_title": "Batch Benchmark Runner v1",
+      "report_type": "public_benchmark_report",
+      "signature": "BD641A236E139AC7",
+      "status": "REPORT_INDEX_ENTRY_READY",
+      "task": "Task 2"
+    },
+    {
+      "artifact_paths": [
+        "examples/milestone-3/dataset-sample-registry/dataset-sample-registry.json",
+        "examples/milestone-3/dataset-sample-registry/dataset-sample-registry.md"
+      ],
+      "deterministic": true,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "metadata": {
+        "artifact_paths_exist": {
+          "examples/milestone-3/dataset-sample-registry/dataset-sample-registry.json": true,
+          "examples/milestone-3/dataset-sample-registry/dataset-sample-registry.md": true
+        },
+        "deterministic": true,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "primary_path_exists": true,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "report_index_generator_v1"
+      },
+      "milestone": "Milestone #3",
+      "module_name": "dataset_sample_registry",
+      "primary_path": "docs/dataset-sample-registry-v1.md",
+      "private_core_exposure": false,
+      "public_safe": true,
+      "ready_marker": "ARC_AGI3_DATASET_SAMPLE_REGISTRY_V1_READY=true",
+      "report_key": "dataset_sample_registry_v1",
+      "report_title": "Dataset Sample Registry v1",
+      "report_type": "public_registry_report",
+      "signature": "7789DA2624655648",
+      "status": "REPORT_INDEX_ENTRY_READY",
+      "task": "Task 1"
+    },
+    {
+      "artifact_paths": [
+        "examples/milestone-3/failure-taxonomy/failure-taxonomy-report.json",
+        "examples/milestone-3/failure-taxonomy/failure-taxonomy-report.md"
+      ],
+      "deterministic": true,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "metadata": {
+        "artifact_paths_exist": {
+          "examples/milestone-3/failure-taxonomy/failure-taxonomy-report.json": true,
+          "examples/milestone-3/failure-taxonomy/failure-taxonomy-report.md": true
+        },
+        "deterministic": true,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "primary_path_exists": true,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "report_index_generator_v1"
+      },
+      "milestone": "Milestone #3",
+      "module_name": "failure_taxonomy",
+      "primary_path": "docs/failure-taxonomy-v1.md",
+      "private_core_exposure": false,
+      "public_safe": true,
+      "ready_marker": "ARC_AGI3_FAILURE_TAXONOMY_V1_READY=true",
+      "report_key": "failure_taxonomy_v1",
+      "report_title": "Failure Taxonomy v1",
+      "report_type": "public_failure_taxonomy_report",
+      "signature": "1EA5B0AAB473E370",
+      "status": "REPORT_INDEX_ENTRY_READY",
+      "task": "Task 5"
+    },
+    {
+      "artifact_paths": [
+        "examples/milestone-3/multi-task-outcome-aggregator/multi-task-outcome-aggregate.json",
+        "examples/milestone-3/multi-task-outcome-aggregator/multi-task-outcome-aggregate.md"
+      ],
+      "deterministic": true,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "metadata": {
+        "artifact_paths_exist": {
+          "examples/milestone-3/multi-task-outcome-aggregator/multi-task-outcome-aggregate.json": true,
+          "examples/milestone-3/multi-task-outcome-aggregator/multi-task-outcome-aggregate.md": true
+        },
+        "deterministic": true,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "primary_path_exists": true,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "report_index_generator_v1"
+      },
+      "milestone": "Milestone #3",
+      "module_name": "multi_task_outcome_aggregator",
+      "primary_path": "docs/multi-task-outcome-aggregator-v1.md",
+      "private_core_exposure": false,
+      "public_safe": true,
+      "ready_marker": "ARC_AGI3_MULTI_TASK_OUTCOME_AGGREGATOR_V1_READY=true",
+      "report_key": "multi_task_outcome_aggregator_v1",
+      "report_title": "Multi-Task Outcome Aggregator v1",
+      "report_type": "public_outcome_aggregate_report",
+      "signature": "767628F9C7956DED",
+      "status": "REPORT_INDEX_ENTRY_READY",
+      "task": "Task 3"
+    },
+    {
+      "artifact_paths": [
+        "examples/milestone-3/strategy-selection-index/strategy-selection-index.json",
+        "examples/milestone-3/strategy-selection-index/strategy-selection-index.md"
+      ],
+      "deterministic": true,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "metadata": {
+        "artifact_paths_exist": {
+          "examples/milestone-3/strategy-selection-index/strategy-selection-index.json": true,
+          "examples/milestone-3/strategy-selection-index/strategy-selection-index.md": true
+        },
+        "deterministic": true,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "primary_path_exists": true,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "report_index_generator_v1"
+      },
+      "milestone": "Milestone #3",
+      "module_name": "strategy_selection_index",
+      "primary_path": "docs/strategy-selection-index-v1.md",
+      "private_core_exposure": false,
+      "public_safe": true,
+      "ready_marker": "ARC_AGI3_STRATEGY_SELECTION_INDEX_V1_READY=true",
+      "report_key": "strategy_selection_index_v1",
+      "report_title": "Strategy Selection Index v1",
+      "report_type": "public_strategy_selection_report",
+      "signature": "1023A5072C380288",
+      "status": "REPORT_INDEX_ENTRY_READY",
+      "task": "Task 4"
+    }
+  ],
+  "report_index_id": "REPORT-INDEX-380079FFB6E9",
+  "report_keys": [
+    "batch_benchmark_runner_v1",
+    "dataset_sample_registry_v1",
+    "failure_taxonomy_v1",
+    "multi_task_outcome_aggregator_v1",
+    "strategy_selection_index_v1"
+  ],
+  "report_signatures": {
+    "batch_benchmark_runner_v1": "BD641A236E139AC7",
+    "dataset_sample_registry_v1": "7789DA2624655648",
+    "failure_taxonomy_v1": "1EA5B0AAB473E370",
+    "multi_task_outcome_aggregator_v1": "767628F9C7956DED",
+    "strategy_selection_index_v1": "1023A5072C380288"
+  },
+  "signature": "380079FFB6E9B6DC",
+  "source_chain_ids": {
+    "batch_id": "BATCH-BENCHMARK-5748D8399B3A",
+    "dataset_sample_registry_id": "DATASET-SAMPLE-REGISTRY-21F03BA2C85E",
+    "failure_taxonomy_report_id": "FAILURE-TAXONOMY-REPORT-FC3663E93EA3",
+    "multi_task_outcome_aggregate_id": "MULTI-TASK-OUTCOME-9A52836EEB09",
+    "primary_failure_class": "PARTIAL_TRANSFORM_REFERENCE_MISMATCH",
+    "selected_strategy_id": "STRATEGY-IDENTITY-BASELINE-v1",
+    "selected_strategy_name": "identity_baseline_v1",
+    "severity_band": "LOW",
+    "strategy_selection_index_id": "STRATEGY-SELECTION-INDEX-6DA2C585190E"
+  },
+  "status": "REPORT_INDEX_GENERATOR_READY"
+}
