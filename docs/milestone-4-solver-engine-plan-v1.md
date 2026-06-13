@@ -19,6 +19,40 @@ Milestone #4 now focuses on improving task-solving ability.
 
 The goal is not to send a Kaggle submission immediately. The goal is to build a better deterministic local solver stack that can recognize grid objects, color transformations, spatial structure, candidate outputs, and ranking logic.
 
+## Prize and deadline target
+
+Milestone #4 is not a generic solver milestone. It is the first prize-oriented solver milestone.
+
+The operational target is to move from a verified public pipeline to a solver engine capable of improving ranking performance under competition deadlines.
+
+Competition opportunity target recorded for project planning:
+
+- user-stated total prize opportunity: `$850,000`
+- user-stated highest score prize target: `$150,000`
+- user-stated bonus prize target: `$700,000`
+- official ARC Prize 2026 schedule reference: competition started on 2026-03-25
+- ARC-AGI-3 milestone deadline #1: 2026-06-30
+- ARC-AGI-3 milestone deadline #2: 2026-09-30
+- final submission deadline: 2026-11-02
+- paper deadline: 2026-11-08
+- results announcement: 2026-12-04
+
+Milestone #4 must therefore produce measurable solver improvement, not only infrastructure.
+
+The final result expected from this milestone is:
+
+- a deterministic local solver engine
+- measurable benchmark improvement against the Milestone #3 baseline
+- expanded local evaluation
+- score regression report
+- local submission-format candidate
+- clear readiness status for next milestone
+- `ready_for_kaggle_submission=false` until explicitly promoted by a later safety gate
+- `kaggle_submission_sent=false`
+
+The milestone must be judged by result, not by the existence of files. Files are cheap. Scoring is not.
+
+
 ## Strategic position
 
 Milestone #4 is the first solver-focused milestone after the public pipeline foundation.
@@ -132,6 +166,18 @@ Milestone #4 must not:
 ## Operational markers
 
 ARC_AGI3_MILESTONE_4_SOLVER_ENGINE_PLAN_V1_READY=true  
+ARC_AGI3_MILESTONE_4_PRIZE_ORIENTED_SOLVER_TARGET=true  
+ARC_AGI3_MILESTONE_4_USER_STATED_TOTAL_PRIZE_OPPORTUNITY_USD=850000  
+ARC_AGI3_MILESTONE_4_USER_STATED_HIGHEST_SCORE_PRIZE_USD=150000  
+ARC_AGI3_MILESTONE_4_USER_STATED_BONUS_PRIZE_USD=700000  
+ARC_AGI3_MILESTONE_4_DEADLINE_MILESTONE_1=2026-06-30  
+ARC_AGI3_MILESTONE_4_DEADLINE_MILESTONE_2=2026-09-30  
+ARC_AGI3_MILESTONE_4_DEADLINE_FINAL_SUBMISSION=2026-11-02  
+ARC_AGI3_MILESTONE_4_DEADLINE_PAPER=2026-11-08  
+ARC_AGI3_MILESTONE_4_RESULTS_ANNOUNCEMENT=2026-12-04  
+ARC_AGI3_MILESTONE_4_RESULT_REQUIRED=true  
+ARC_AGI3_MILESTONE_4_SCORE_IMPROVEMENT_REQUIRED=true  
+ARC_AGI3_MILESTONE_4_LOCAL_SUBMISSION_FORMAT_REQUIRED=true  
 ARC_AGI3_MILESTONE_4_STATUS=OPEN_READY  
 ARC_AGI3_MILESTONE_4_PREVIOUS_MILESTONE=MILESTONE_3_CLOSED_PASS  
 ARC_AGI3_MILESTONE_4_PREVIOUS_CLOSURE_COMMIT=0ca0df9  
