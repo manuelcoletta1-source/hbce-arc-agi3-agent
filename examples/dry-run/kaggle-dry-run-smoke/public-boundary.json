@@ -1,0 +1,11 @@
+{
+  "contains_api_keys": false,
+  "deterministic": true,
+  "executes_dataset_code": false,
+  "external_api_dependency": false,
+  "kaggle_submission_sent": false,
+  "private_core_exposure": false,
+  "public_safe": true,
+  "raw_dataset_code_execution": false,
+  "source": "kaggle_dry_run_package_v1"
+}

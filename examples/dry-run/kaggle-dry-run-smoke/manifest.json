@@ -1,0 +1,31 @@
+{
+  "file_hashes": {
+    "README.md": "4584c7f5dccf810659f9fd04f297e4f8929e2b59f66248b57302f7d237a45646",
+    "benchmark-report.md": "dc6feebbdc569998064458412bbc2b15f764482015643e8d644b948a46add441",
+    "public-boundary.json": "e8d8d595e60f309e34b0b9af7e8d5d90cb130357041b527ef32d1469f0015961"
+  },
+  "files": [
+    "README.md",
+    "benchmark-report.md",
+    "public-boundary.json"
+  ],
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "executes_dataset_code": false,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "kaggle_dry_run_package_v1",
+    "uses_benchmark_report": true,
+    "uses_outcome_verification": true,
+    "uses_score_calibration": true
+  },
+  "package_id": "KAGGLE-DRYRUN-41C18DE4A1D2",
+  "package_signature": "41C18DE4A1D27FDE",
+  "package_status": "KAGGLE_DRY_RUN_PACKAGE_VALID",
+  "report_signature": "1B5221241DA2FD6B",
+  "status": "KAGGLE_DRY_RUN_PACKAGE_READY",
+  "task_id": "kaggle-dry-run-smoke"
+}
