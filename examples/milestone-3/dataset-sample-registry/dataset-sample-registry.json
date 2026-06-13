@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "executes_dataset_code": false,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "milestone": "Milestone #3",
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "dataset_sample_registry_v1",
+    "task": "Task 1"
+  },
+  "registry_id": "DATASET-SAMPLE-REGISTRY-21F03BA2C85E",
+  "registry_status": "DATASET_SAMPLE_REGISTRY_VALID",
+  "sample_count": 3,
+  "sample_ids": [
+    "SAMPLE-1DE9E816D958",
+    "SAMPLE-84E8BE15DED7",
+    "SAMPLE-B4DD92F8949D"
+  ],
+  "sample_signatures": {
+    "SAMPLE-1DE9E816D958": "A2C6C96F7FD4A5B2",
+    "SAMPLE-84E8BE15DED7": "74D13AA0B3EDAF50",
+    "SAMPLE-B4DD92F8949D": "06B949481F5B43D2"
+  },
+  "samples": [
+    {
+      "expected_output": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "expected_shape": [
+        3,
+        3
+      ],
+      "input_grid": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "input_shape": [
+        3,
+        3
+      ],
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "dataset_sample_registry_v1"
+      },
+      "name": "preserve-non-background",
+      "sample_id": "SAMPLE-1DE9E816D958",
+      "signature": "A2C6C96F7FD4A5B2",
+      "split": "public-smoke",
+      "status": "DATASET_SAMPLE_RECORD_READY",
+      "tags": [
+        "preserve-structure",
+        "smoke",
+        "vertical-object"
+      ]
+    },
+    {
+      "expected_output": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "expected_shape": [
+        3,
+        3
+      ],
+      "input_grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "input_shape": [
+        3,
+        3
+      ],
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "dataset_sample_registry_v1"
+      },
+      "name": "identity-single-object",
+      "sample_id": "SAMPLE-84E8BE15DED7",
+      "signature": "74D13AA0B3EDAF50",
+      "split": "public-smoke",
+      "status": "DATASET_SAMPLE_RECORD_READY",
+      "tags": [
+        "identity",
+        "object-preservation",
+        "smoke"
+      ]
+    },
+    {
+      "expected_output": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "expected_shape": [
+        2,
+        2
+      ],
+      "input_grid": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "input_shape": [
+        2,
+        2
+      ],
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "dataset_sample_registry_v1"
+      },
+      "name": "partial-transform-reference",
+      "sample_id": "SAMPLE-B4DD92F8949D",
+      "signature": "06B949481F5B43D2",
+      "split": "public-smoke",
+      "status": "DATASET_SAMPLE_RECORD_READY",
+      "tags": [
+        "partial",
+        "score-calibration",
+        "smoke"
+      ]
+    }
+  ],
+  "signature": "21F03BA2C85EF72F",
+  "status": "DATASET_SAMPLE_REGISTRY_READY"
+}
