@@ -1,0 +1,231 @@
+{
+  "average_cell_accuracy": 0.916667,
+  "batch_id": "BATCH-BENCHMARK-5748D8399B3A",
+  "batch_status": "BATCH_BENCHMARK_RUN_VALID",
+  "matched_count": 2,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "executes_dataset_code": false,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "milestone": "Milestone #3",
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "batch_benchmark_runner_v1",
+    "task": "Task 2",
+    "uses_dataset_sample_registry": true
+  },
+  "mismatched_count": 1,
+  "registry_id": "DATASET-SAMPLE-REGISTRY-21F03BA2C85E",
+  "runner_strategy": "identity_baseline_v1",
+  "signature": "5748D8399B3A47FF",
+  "status": "BATCH_BENCHMARK_RUN_READY",
+  "task_count": 3,
+  "task_ids": [
+    "BATCH-TASK-CCBB59ECD386",
+    "BATCH-TASK-CCC2336D8AF5",
+    "BATCH-TASK-CF3376CA69F0"
+  ],
+  "task_records": [
+    {
+      "cell_accuracy": 1.0,
+      "exact_match": true,
+      "expected_output": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "expected_shape": [
+        3,
+        3
+      ],
+      "input_shape": [
+        3,
+        3
+      ],
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "batch_benchmark_runner_v1",
+        "uses_dataset_sample_registry": true
+      },
+      "mismatch_count": 0,
+      "predicted_shape": [
+        3,
+        3
+      ],
+      "prediction": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "runner_strategy": "identity_baseline_v1",
+      "sample_id": "SAMPLE-1DE9E816D958",
+      "sample_name": "preserve-non-background",
+      "signature": "E70CC34717F1DC79",
+      "status": "BATCH_BENCHMARK_TASK_READY",
+      "task_id": "BATCH-TASK-CCBB59ECD386",
+      "verified": true
+    },
+    {
+      "cell_accuracy": 1.0,
+      "exact_match": true,
+      "expected_output": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "expected_shape": [
+        3,
+        3
+      ],
+      "input_shape": [
+        3,
+        3
+      ],
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "batch_benchmark_runner_v1",
+        "uses_dataset_sample_registry": true
+      },
+      "mismatch_count": 0,
+      "predicted_shape": [
+        3,
+        3
+      ],
+      "prediction": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "runner_strategy": "identity_baseline_v1",
+      "sample_id": "SAMPLE-84E8BE15DED7",
+      "sample_name": "identity-single-object",
+      "signature": "A56584BF676D3067",
+      "status": "BATCH_BENCHMARK_TASK_READY",
+      "task_id": "BATCH-TASK-CCC2336D8AF5",
+      "verified": true
+    },
+    {
+      "cell_accuracy": 0.75,
+      "exact_match": false,
+      "expected_output": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "expected_shape": [
+        2,
+        2
+      ],
+      "input_shape": [
+        2,
+        2
+      ],
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "batch_benchmark_runner_v1",
+        "uses_dataset_sample_registry": true
+      },
+      "mismatch_count": 1,
+      "predicted_shape": [
+        2,
+        2
+      ],
+      "prediction": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "runner_strategy": "identity_baseline_v1",
+      "sample_id": "SAMPLE-B4DD92F8949D",
+      "sample_name": "partial-transform-reference",
+      "signature": "98E8589E0C5A468C",
+      "status": "BATCH_BENCHMARK_TASK_READY",
+      "task_id": "BATCH-TASK-CF3376CA69F0",
+      "verified": true
+    }
+  ],
+  "task_signatures": {
+    "BATCH-TASK-CCBB59ECD386": "E70CC34717F1DC79",
+    "BATCH-TASK-CCC2336D8AF5": "A56584BF676D3067",
+    "BATCH-TASK-CF3376CA69F0": "98E8589E0C5A468C"
+  },
+  "verified_count": 3
+}
