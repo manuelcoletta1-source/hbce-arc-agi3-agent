@@ -1,0 +1,122 @@
+{
+  "aggregate_id": "MULTI-TASK-OUTCOME-9A52836EEB09",
+  "aggregate_quality_band": "STRONG",
+  "aggregate_status": "MULTI_TASK_OUTCOME_AGGREGATE_VALID",
+  "aggregate_verdict": "OUTCOME_AGGREGATE_STRONG",
+  "average_calibrated_score": 0.916667,
+  "average_cell_accuracy": 0.916667,
+  "batch_id": "BATCH-BENCHMARK-5748D8399B3A",
+  "exact_match_rate": 0.666667,
+  "failed_count": 0,
+  "matched_count": 2,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "executes_dataset_code": false,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "milestone": "Milestone #3",
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "multi_task_outcome_aggregator_v1",
+    "task": "Task 3",
+    "uses_batch_benchmark_runner": true,
+    "uses_dataset_sample_registry": true
+  },
+  "outcome_ids": [
+    "BATCH-TASK-CCBB59ECD386",
+    "BATCH-TASK-CCC2336D8AF5",
+    "BATCH-TASK-CF3376CA69F0"
+  ],
+  "outcome_records": [
+    {
+      "calibrated_score": 1.0,
+      "cell_accuracy": 1.0,
+      "exact_match": true,
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "multi_task_outcome_aggregator_v1",
+        "uses_batch_benchmark_runner": true,
+        "uses_dataset_sample_registry": true
+      },
+      "mismatch_count": 0,
+      "outcome_status": "OUTCOME_MATCH",
+      "quality_band": "PERFECT",
+      "sample_id": "SAMPLE-1DE9E816D958",
+      "sample_name": "preserve-non-background",
+      "signature": "D9C0F72B2530D0FC",
+      "status": "MULTI_TASK_OUTCOME_RECORD_READY",
+      "task_id": "BATCH-TASK-CCBB59ECD386",
+      "verified": true
+    },
+    {
+      "calibrated_score": 1.0,
+      "cell_accuracy": 1.0,
+      "exact_match": true,
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "multi_task_outcome_aggregator_v1",
+        "uses_batch_benchmark_runner": true,
+        "uses_dataset_sample_registry": true
+      },
+      "mismatch_count": 0,
+      "outcome_status": "OUTCOME_MATCH",
+      "quality_band": "PERFECT",
+      "sample_id": "SAMPLE-84E8BE15DED7",
+      "sample_name": "identity-single-object",
+      "signature": "85B5304A343CCFB8",
+      "status": "MULTI_TASK_OUTCOME_RECORD_READY",
+      "task_id": "BATCH-TASK-CCC2336D8AF5",
+      "verified": true
+    },
+    {
+      "calibrated_score": 0.75,
+      "cell_accuracy": 0.75,
+      "exact_match": false,
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "multi_task_outcome_aggregator_v1",
+        "uses_batch_benchmark_runner": true,
+        "uses_dataset_sample_registry": true
+      },
+      "mismatch_count": 1,
+      "outcome_status": "OUTCOME_PARTIAL",
+      "quality_band": "GOOD",
+      "sample_id": "SAMPLE-B4DD92F8949D",
+      "sample_name": "partial-transform-reference",
+      "signature": "65FCEEEC1BDAE9C3",
+      "status": "MULTI_TASK_OUTCOME_RECORD_READY",
+      "task_id": "BATCH-TASK-CF3376CA69F0",
+      "verified": true
+    }
+  ],
+  "outcome_signatures": {
+    "BATCH-TASK-CCBB59ECD386": "D9C0F72B2530D0FC",
+    "BATCH-TASK-CCC2336D8AF5": "85B5304A343CCFB8",
+    "BATCH-TASK-CF3376CA69F0": "65FCEEEC1BDAE9C3"
+  },
+  "partial_count": 1,
+  "registry_id": "DATASET-SAMPLE-REGISTRY-21F03BA2C85E",
+  "signature": "9A52836EEB0971DF",
+  "status": "MULTI_TASK_OUTCOME_AGGREGATOR_READY",
+  "task_count": 3,
+  "unverified_count": 0
+}
