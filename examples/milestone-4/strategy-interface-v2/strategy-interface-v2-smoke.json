@@ -1,0 +1,295 @@
+{
+  "best_candidate_signature": "FAC81B50ACC1DC7C",
+  "best_result": {
+    "candidate_grid": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "candidate_shape": {
+      "cell_count": 4,
+      "height": 2,
+      "width": 2
+    },
+    "candidate_signature": "FAC81B50ACC1DC7C",
+    "confidence": 0.5,
+    "metadata": {
+      "candidate_policy": "RETURN_TEST_INPUT_UNCHANGED",
+      "contains_api_keys": false,
+      "deterministic": true,
+      "dry_run_only": true,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "local_only": true,
+      "private_core_exposure": false,
+      "prize_oriented_solver_target": true,
+      "public_safe": true,
+      "score_oriented": true,
+      "source": "strategy_interface_v2",
+      "uses_train_pairs": false
+    },
+    "rank_hint": 100,
+    "reasoning_tags": [
+      "baseline",
+      "identity",
+      "milestone_4_task_1",
+      "shape_preserving"
+    ],
+    "result_signature": "50C1125A96823463",
+    "score_hint": 0.5,
+    "status": "STRATEGY_RESULT_READY",
+    "strategy_id": "STRATEGY-IDENTITY-BASELINE-v2",
+    "strategy_name": "identity_baseline_v2",
+    "strategy_version": "v2",
+    "task_id": "MILESTONE-4-TASK-1-SMOKE"
+  },
+  "best_strategy_id": "STRATEGY-IDENTITY-BASELINE-v2",
+  "candidate_count": 1,
+  "descriptor_validations": [
+    {
+      "checks": {
+        "deterministic_true": true,
+        "external_api_dependency_false": true,
+        "kaggle_submission_sent_false": true,
+        "local_only_true": true,
+        "metadata_deterministic": true,
+        "metadata_dry_run_only": true,
+        "metadata_local_only": true,
+        "metadata_public_safe": true,
+        "private_core_exposure_false": true,
+        "prize_oriented_solver_target_true": true,
+        "score_oriented_true": true,
+        "signature_present": true,
+        "strategy_family_present": true,
+        "strategy_id_present": true,
+        "strategy_name_present": true,
+        "strategy_version_present": true
+      },
+      "signature": "716057B6E57E6EA2",
+      "status": "STRATEGY_DESCRIPTOR_VALID",
+      "strategy_id": "STRATEGY-IDENTITY-BASELINE-v2",
+      "valid": true
+    }
+  ],
+  "descriptors": [
+    {
+      "description": "Returns the test input unchanged as deterministic baseline candidate.",
+      "deterministic": true,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "local_only": true,
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "dry_run_only": true,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "local_only": true,
+        "private_core_exposure": false,
+        "prize_oriented_solver_target": true,
+        "public_safe": true,
+        "score_oriented": true,
+        "source": "strategy_interface_v2"
+      },
+      "private_core_exposure": false,
+      "prize_oriented_solver_target": true,
+      "score_oriented": true,
+      "signature": "716057B6E57E6EA2",
+      "strategy_family": "BASELINE",
+      "strategy_id": "STRATEGY-IDENTITY-BASELINE-v2",
+      "strategy_name": "identity_baseline_v2",
+      "strategy_version": "v2"
+    }
+  ],
+  "input": {
+    "metadata": {
+      "baseline_reference": "MILESTONE_3_CLOSED_PASS",
+      "bonus_prize_target_usd": 700000,
+      "contains_api_keys": false,
+      "deterministic": true,
+      "dry_run_only": true,
+      "external_api_dependency": false,
+      "final_submission_deadline": "2026-11-02",
+      "highest_score_prize_target_usd": 150000,
+      "kaggle_submission_sent": false,
+      "local_only": true,
+      "milestone": "Milestone #4",
+      "private_core_exposure": false,
+      "prize_oriented_solver_target": true,
+      "prize_target_usd": 850000,
+      "public_safe": true,
+      "score_oriented": true,
+      "smoke_test": true,
+      "source": "strategy_interface_v2",
+      "task": "Task 1"
+    },
+    "task_id": "MILESTONE-4-TASK-1-SMOKE",
+    "test_input": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "test_input_shape": {
+      "cell_count": 4,
+      "height": 2,
+      "width": 2
+    },
+    "test_input_signature": "FAC81B50ACC1DC7C",
+    "train_pairs": [
+      {
+        "input_grid": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "input_shape": {
+          "cell_count": 4,
+          "height": 2,
+          "width": 2
+        },
+        "input_signature": "0A9A27EB42298F29",
+        "metadata": {
+          "example_id": "identity-smoke-1"
+        },
+        "output_grid": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "output_shape": {
+          "cell_count": 4,
+          "height": 2,
+          "width": 2
+        },
+        "output_signature": "0A9A27EB42298F29"
+      }
+    ]
+  },
+  "interface_status": "STRATEGY_INTERFACE_V2_READY",
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "local_only": true,
+    "milestone": "Milestone #4",
+    "private_core_exposure": false,
+    "prize_oriented_solver_target": true,
+    "public_safe": true,
+    "result_required": true,
+    "score_improvement_required": true,
+    "score_oriented": true,
+    "source": "strategy_interface_v2",
+    "task": "Task 1"
+  },
+  "result_validations": [
+    {
+      "candidate_signature": "FAC81B50ACC1DC7C",
+      "checks": {
+        "candidate_grid_valid": true,
+        "candidate_signature_present": true,
+        "confidence_valid": true,
+        "contains_api_keys_false": true,
+        "external_api_dependency_false": true,
+        "kaggle_submission_sent_false": true,
+        "metadata_deterministic": true,
+        "metadata_dry_run_only": true,
+        "metadata_local_only": true,
+        "metadata_prize_oriented_solver_target": true,
+        "metadata_public_safe": true,
+        "metadata_score_oriented": true,
+        "private_core_exposure_false": true,
+        "rank_hint_valid": true,
+        "reasoning_tags_present": true,
+        "result_signature_present": true,
+        "score_hint_valid": true,
+        "status_ready": true,
+        "strategy_id_present": true,
+        "strategy_name_present": true,
+        "task_id_matches": true,
+        "task_id_present": true
+      },
+      "result_signature": "50C1125A96823463",
+      "status": "STRATEGY_RESULT_VALID",
+      "strategy_id": "STRATEGY-IDENTITY-BASELINE-v2",
+      "task_id": "MILESTONE-4-TASK-1-SMOKE",
+      "valid": true
+    }
+  ],
+  "results": [
+    {
+      "candidate_grid": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "candidate_shape": {
+        "cell_count": 4,
+        "height": 2,
+        "width": 2
+      },
+      "candidate_signature": "FAC81B50ACC1DC7C",
+      "confidence": 0.5,
+      "metadata": {
+        "candidate_policy": "RETURN_TEST_INPUT_UNCHANGED",
+        "contains_api_keys": false,
+        "deterministic": true,
+        "dry_run_only": true,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "local_only": true,
+        "private_core_exposure": false,
+        "prize_oriented_solver_target": true,
+        "public_safe": true,
+        "score_oriented": true,
+        "source": "strategy_interface_v2",
+        "uses_train_pairs": false
+      },
+      "rank_hint": 100,
+      "reasoning_tags": [
+        "baseline",
+        "identity",
+        "milestone_4_task_1",
+        "shape_preserving"
+      ],
+      "result_signature": "50C1125A96823463",
+      "score_hint": 0.5,
+      "status": "STRATEGY_RESULT_READY",
+      "strategy_id": "STRATEGY-IDENTITY-BASELINE-v2",
+      "strategy_name": "identity_baseline_v2",
+      "strategy_version": "v2",
+      "task_id": "MILESTONE-4-TASK-1-SMOKE"
+    }
+  ],
+  "signature": "3845B690527D855D",
+  "status": "STRATEGY_INTERFACE_V2_PIPELINE_READY",
+  "strategy_count": 1,
+  "task_id": "MILESTONE-4-TASK-1-SMOKE",
+  "validation_status": "STRATEGY_INTERFACE_V2_VALID"
+}
