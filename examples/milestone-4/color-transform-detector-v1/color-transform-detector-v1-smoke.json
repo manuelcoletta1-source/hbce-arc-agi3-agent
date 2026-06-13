@@ -1,0 +1,404 @@
+{
+  "confidence": 1.0,
+  "detection_report": {
+    "confidence": 1.0,
+    "detection_id": "COLOR-TRANSFORM-DETECTION-6EEB90DABF48",
+    "global_added_colors": [
+      3
+    ],
+    "global_input_palette": [
+      0,
+      1,
+      2
+    ],
+    "global_output_palette": [
+      0,
+      2,
+      3
+    ],
+    "global_preserved_colors": [
+      0,
+      2
+    ],
+    "global_removed_colors": [
+      1
+    ],
+    "has_ambiguous_mapping": false,
+    "has_palette_expansion": true,
+    "has_palette_reduction": true,
+    "metadata": {
+      "agentic_state_feature": true,
+      "candidate_generator_signal": true,
+      "candidate_ranker_signal": true,
+      "contains_api_keys": false,
+      "deterministic": true,
+      "dry_run_only": true,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "leaderboard_target_leader_score": 1.3,
+      "leaderboard_target_podium_attack_score": 0.68,
+      "leaderboard_target_top_10_entry_score": 0.6,
+      "leaderboard_target_top_5_score": 0.65,
+      "local_only": true,
+      "milestone": "Milestone #4",
+      "private_core_exposure": false,
+      "prize_oriented_solver_target": true,
+      "public_safe": true,
+      "score_oriented": true,
+      "source": "color_transform_detector_v1",
+      "task": "Task 3"
+    },
+    "pair_count": 2,
+    "pair_reports": [
+      {
+        "added_colors": [
+          3
+        ],
+        "ambiguous_source_colors": [],
+        "ambiguous_target_colors": [],
+        "background_mapping": {
+          "confidence": 1.0,
+          "count": 2,
+          "relation": "COLOR_PRESERVED",
+          "signature": "C47DFF135D813C50",
+          "source_color": 0,
+          "source_total": 2,
+          "target_color": 0
+        },
+        "changed_source_colors": [
+          1
+        ],
+        "confidence": 1.0,
+        "dominant_mappings": [
+          {
+            "confidence": 1.0,
+            "count": 2,
+            "relation": "COLOR_PRESERVED",
+            "signature": "C47DFF135D813C50",
+            "source_color": 0,
+            "source_total": 2,
+            "target_color": 0
+          },
+          {
+            "confidence": 1.0,
+            "count": 2,
+            "relation": "COLOR_REPLACED",
+            "signature": "C2E3A591F8E86082",
+            "source_color": 1,
+            "source_total": 2,
+            "target_color": 3
+          },
+          {
+            "confidence": 1.0,
+            "count": 2,
+            "relation": "COLOR_PRESERVED",
+            "signature": "119E09BD42DBE789",
+            "source_color": 2,
+            "source_total": 2,
+            "target_color": 2
+          }
+        ],
+        "input_grid": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        "input_palette": [
+          0,
+          1,
+          2
+        ],
+        "input_shape": {
+          "cell_count": 6,
+          "height": 2,
+          "width": 3
+        },
+        "input_signature": "234C0BD155A762D0",
+        "metadata": {
+          "agentic_state_feature": true,
+          "candidate_generator_signal": true,
+          "candidate_ranker_signal": true,
+          "contains_api_keys": false,
+          "deterministic": true,
+          "dry_run_only": true,
+          "external_api_dependency": false,
+          "kaggle_submission_sent": false,
+          "local_only": true,
+          "milestone": "Milestone #4",
+          "private_core_exposure": false,
+          "prize_oriented_solver_target": true,
+          "public_safe": true,
+          "score_oriented": true,
+          "source": "color_transform_detector_v1",
+          "task": "Task 3"
+        },
+        "output_grid": [
+          [
+            0,
+            3,
+            3
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        "output_palette": [
+          0,
+          2,
+          3
+        ],
+        "output_shape": {
+          "cell_count": 6,
+          "height": 2,
+          "width": 3
+        },
+        "output_signature": "106B564A98F34163",
+        "pair_id": "pair-0",
+        "preserved_colors": [
+          0,
+          2
+        ],
+        "removed_colors": [
+          1
+        ],
+        "shape_preserving": true,
+        "signature": "482D860294590A33",
+        "status": "COLOR_TRANSFORM_PAIR_READY",
+        "transform_type": "COLOR_REMAP"
+      },
+      {
+        "added_colors": [
+          3
+        ],
+        "ambiguous_source_colors": [],
+        "ambiguous_target_colors": [],
+        "background_mapping": {
+          "confidence": 1.0,
+          "count": 1,
+          "relation": "COLOR_PRESERVED",
+          "signature": "3F7CB6CA865403A4",
+          "source_color": 0,
+          "source_total": 1,
+          "target_color": 0
+        },
+        "changed_source_colors": [
+          1
+        ],
+        "confidence": 1.0,
+        "dominant_mappings": [
+          {
+            "confidence": 1.0,
+            "count": 1,
+            "relation": "COLOR_PRESERVED",
+            "signature": "3F7CB6CA865403A4",
+            "source_color": 0,
+            "source_total": 1,
+            "target_color": 0
+          },
+          {
+            "confidence": 1.0,
+            "count": 1,
+            "relation": "COLOR_REPLACED",
+            "signature": "559B161BFFEB7899",
+            "source_color": 1,
+            "source_total": 1,
+            "target_color": 3
+          },
+          {
+            "confidence": 1.0,
+            "count": 2,
+            "relation": "COLOR_PRESERVED",
+            "signature": "119E09BD42DBE789",
+            "source_color": 2,
+            "source_total": 2,
+            "target_color": 2
+          }
+        ],
+        "input_grid": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "input_palette": [
+          0,
+          1,
+          2
+        ],
+        "input_shape": {
+          "cell_count": 4,
+          "height": 2,
+          "width": 2
+        },
+        "input_signature": "EC299ECB6286DE44",
+        "metadata": {
+          "agentic_state_feature": true,
+          "candidate_generator_signal": true,
+          "candidate_ranker_signal": true,
+          "contains_api_keys": false,
+          "deterministic": true,
+          "dry_run_only": true,
+          "external_api_dependency": false,
+          "kaggle_submission_sent": false,
+          "local_only": true,
+          "milestone": "Milestone #4",
+          "private_core_exposure": false,
+          "prize_oriented_solver_target": true,
+          "public_safe": true,
+          "score_oriented": true,
+          "source": "color_transform_detector_v1",
+          "task": "Task 3"
+        },
+        "output_grid": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "output_palette": [
+          0,
+          2,
+          3
+        ],
+        "output_shape": {
+          "cell_count": 4,
+          "height": 2,
+          "width": 2
+        },
+        "output_signature": "6B2AA42B796B06FD",
+        "pair_id": "pair-1",
+        "preserved_colors": [
+          0,
+          2
+        ],
+        "removed_colors": [
+          1
+        ],
+        "shape_preserving": true,
+        "signature": "F82CA4CB1DC4B972",
+        "status": "COLOR_TRANSFORM_PAIR_READY",
+        "transform_type": "COLOR_REMAP"
+      }
+    ],
+    "signature": "6EEB90DABF48B7BF",
+    "stable_mappings": [
+      {
+        "confidence": 1.0,
+        "count": 3,
+        "relation": "COLOR_PRESERVED",
+        "signature": "C5D82C31CFE31AE6",
+        "source_color": 0,
+        "source_total": 3,
+        "target_color": 0
+      },
+      {
+        "confidence": 1.0,
+        "count": 3,
+        "relation": "COLOR_REPLACED",
+        "signature": "B17351936885E450",
+        "source_color": 1,
+        "source_total": 3,
+        "target_color": 3
+      },
+      {
+        "confidence": 1.0,
+        "count": 4,
+        "relation": "COLOR_PRESERVED",
+        "signature": "A3F0955E3EFCF907",
+        "source_color": 2,
+        "source_total": 4,
+        "target_color": 2
+      }
+    ],
+    "status": "COLOR_TRANSFORM_DETECTION_READY",
+    "transform_type": "AGGREGATE_STABLE_COLOR_REMAP",
+    "unstable_source_colors": []
+  },
+  "detector_status": "COLOR_TRANSFORM_DETECTION_READY",
+  "metadata": {
+    "agentic_state_feature": true,
+    "candidate_generator_signal": true,
+    "candidate_ranker_signal": true,
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "leaderboard_target_leader_score": 1.3,
+    "leaderboard_target_podium_attack_score": 0.68,
+    "leaderboard_target_top_10_entry_score": 0.6,
+    "leaderboard_target_top_5_score": 0.65,
+    "local_only": true,
+    "milestone": "Milestone #4",
+    "private_core_exposure": false,
+    "prize_oriented_solver_target": true,
+    "public_safe": true,
+    "score_oriented": true,
+    "source": "color_transform_detector_v1",
+    "task": "Task 3"
+  },
+  "pair_count": 2,
+  "signature": "6EEB90DABF48B7BF",
+  "stable_mapping_count": 3,
+  "status": "COLOR_TRANSFORM_DETECTOR_PIPELINE_READY",
+  "transform_type": "AGGREGATE_STABLE_COLOR_REMAP",
+  "validation": {
+    "checks": {
+      "confidence_valid": true,
+      "contains_api_keys_false": true,
+      "detection_id_present": true,
+      "external_api_dependency_false": true,
+      "global_added_colors_list": true,
+      "global_input_palette_list": true,
+      "global_output_palette_list": true,
+      "global_preserved_colors_list": true,
+      "global_removed_colors_list": true,
+      "has_ambiguous_mapping_bool": true,
+      "has_palette_expansion_bool": true,
+      "has_palette_reduction_bool": true,
+      "kaggle_submission_sent_false": true,
+      "metadata_agentic_state_feature": true,
+      "metadata_candidate_generator_signal": true,
+      "metadata_candidate_ranker_signal": true,
+      "metadata_deterministic": true,
+      "metadata_dry_run_only": true,
+      "metadata_local_only": true,
+      "metadata_prize_oriented_solver_target": true,
+      "metadata_public_safe": true,
+      "metadata_score_oriented": true,
+      "pair_count_valid": true,
+      "pair_reports_valid": true,
+      "private_core_exposure_false": true,
+      "signature_present": true,
+      "stable_mappings_valid": true,
+      "status_ready": true,
+      "transform_type_present": true,
+      "unstable_source_colors_list": true
+    },
+    "confidence": 1.0,
+    "detection_id": "COLOR-TRANSFORM-DETECTION-6EEB90DABF48",
+    "pair_count": 2,
+    "signature": "6EEB90DABF48B7BF",
+    "status": "COLOR_TRANSFORM_DETECTION_VALID",
+    "transform_type": "AGGREGATE_STABLE_COLOR_REMAP",
+    "valid": true
+  },
+  "validation_status": "COLOR_TRANSFORM_DETECTION_VALID"
+}
