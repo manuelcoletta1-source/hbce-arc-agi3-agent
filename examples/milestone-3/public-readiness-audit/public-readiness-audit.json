@@ -1,0 +1,306 @@
+{
+  "aggregate_id": "MULTI-TASK-OUTCOME-9A52836EEB09",
+  "audit_checks": [
+    {
+      "category": "artifact_boundary",
+      "check_id": "PUBLIC-READINESS-CHECK-200A2BA9B27C",
+      "check_name": "artifact_presence",
+      "evidence": {
+        "artifact_status": {
+          "failure_taxonomy_json": true,
+          "failure_taxonomy_md": true,
+          "local_submission_candidate_json": true,
+          "local_submission_candidate_md": true,
+          "report_index_json": true,
+          "report_index_md": true
+        },
+        "expected_artifacts": {
+          "failure_taxonomy_json": "examples/milestone-3/failure-taxonomy/failure-taxonomy-report.json",
+          "failure_taxonomy_md": "examples/milestone-3/failure-taxonomy/failure-taxonomy-report.md",
+          "local_submission_candidate_json": "examples/milestone-3/local-submission-candidate-builder/local-submission-candidate.json",
+          "local_submission_candidate_md": "examples/milestone-3/local-submission-candidate-builder/local-submission-candidate.md",
+          "report_index_json": "examples/milestone-3/report-index-generator/report-index.json",
+          "report_index_md": "examples/milestone-3/report-index-generator/report-index.md"
+        }
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Regenerate missing public artifacts before release packaging.",
+      "severity": "BLOCKER",
+      "signature": "200A2BA9B27C4D2F",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    },
+    {
+      "category": "quality_gate",
+      "check_id": "PUBLIC-READINESS-CHECK-F142BC99D30D",
+      "check_name": "blocked_task_count_tracked",
+      "evidence": {
+        "blocked_task_count": 1,
+        "remediation_required_count": 1
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Align blocked task and remediation counts before advancing readiness.",
+      "severity": "WARNING",
+      "signature": "F142BC99D30DEEF7",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    },
+    {
+      "category": "contract",
+      "check_id": "PUBLIC-READINESS-CHECK-2A5D17862E12",
+      "check_name": "candidate_contract_valid",
+      "evidence": {
+        "candidate_id": "LOCAL-SUBMISSION-CANDIDATE-E226DE7C08C2",
+        "candidate_status": "LOCAL_SUBMISSION_CANDIDATE_VALID"
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Regenerate the local submission candidate package before public audit.",
+      "severity": "BLOCKER",
+      "signature": "2A5D17862E12996B",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    },
+    {
+      "category": "submission_boundary",
+      "check_id": "PUBLIC-READINESS-CHECK-F350CCA0234C",
+      "check_name": "kaggle_submission_not_sent",
+      "evidence": {
+        "candidate_kaggle_submission_sent": false,
+        "payload_kaggle_submission_sent": false
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Block audit if any Kaggle submission flag is true.",
+      "severity": "BLOCKER",
+      "signature": "F350CCA0234C99A2",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    },
+    {
+      "category": "submission_boundary",
+      "check_id": "PUBLIC-READINESS-CHECK-DCD243597026",
+      "check_name": "local_dry_run_only",
+      "evidence": {
+        "candidate_submission_mode": "LOCAL_DRY_RUN_ONLY",
+        "payload_submission_mode": "LOCAL_DRY_RUN_ONLY"
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Force submission mode to LOCAL_DRY_RUN_ONLY before any public release package.",
+      "severity": "BLOCKER",
+      "signature": "DCD243597026CC89",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    },
+    {
+      "category": "metadata_boundary",
+      "check_id": "PUBLIC-READINESS-CHECK-1456E5AD2BFC",
+      "check_name": "no_external_dependency_or_credentials",
+      "evidence": {
+        "contains_api_keys": false,
+        "executes_dataset_code": false,
+        "external_api_dependency": false
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Remove external API, key, or executable dataset dependency before audit passes.",
+      "severity": "BLOCKER",
+      "signature": "1456E5AD2BFCA217",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    },
+    {
+      "category": "submission_boundary",
+      "check_id": "PUBLIC-READINESS-CHECK-C4118D8778C2",
+      "check_name": "not_ready_for_kaggle_submission",
+      "evidence": {
+        "candidate_ready_for_kaggle_submission": false,
+        "payload_ready_for_kaggle_submission": false
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Keep Kaggle readiness false until public readiness and release package gates pass.",
+      "severity": "BLOCKER",
+      "signature": "C4118D8778C2B93D",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    },
+    {
+      "category": "readiness",
+      "check_id": "PUBLIC-READINESS-CHECK-84D4793064AC",
+      "check_name": "public_readiness_audit_enabled",
+      "evidence": {
+        "ready_for_public_readiness_audit": true
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Rebuild candidate package with ready_for_public_readiness_audit=true.",
+      "severity": "BLOCKER",
+      "signature": "84D4793064AC469C",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    },
+    {
+      "category": "metadata_boundary",
+      "check_id": "PUBLIC-READINESS-CHECK-B981D15CF6C6",
+      "check_name": "public_safety_metadata",
+      "evidence": {
+        "deterministic": true,
+        "private_core_exposure": false,
+        "public_safe": true
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Fix candidate metadata before public packaging.",
+      "severity": "BLOCKER",
+      "signature": "B981D15CF6C65CC8",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    },
+    {
+      "category": "release_boundary",
+      "check_id": "PUBLIC-READINESS-CHECK-82AE818A8F2F",
+      "check_name": "release_package_ready_not_submission_ready",
+      "evidence": {
+        "ready_for_kaggle_submission": false,
+        "ready_for_public_readiness_audit": true
+      },
+      "metadata": {
+        "contains_api_keys": false,
+        "deterministic": true,
+        "executes_dataset_code": false,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "private_core_exposure": false,
+        "public_safe": true,
+        "source": "public_readiness_audit_v1"
+      },
+      "passed": true,
+      "remediation_hint": "Proceed only to dry-run release package, not Kaggle submission.",
+      "severity": "WARNING",
+      "signature": "82AE818A8F2F9D99",
+      "status": "PUBLIC_READINESS_AUDIT_CHECK_READY"
+    }
+  ],
+  "audit_id": "PUBLIC-READINESS-AUDIT-C37C53F41756",
+  "audit_status": "PUBLIC_READINESS_AUDIT_PASS",
+  "batch_id": "BATCH-BENCHMARK-5748D8399B3A",
+  "blocking_issue_count": 0,
+  "candidate_id": "LOCAL-SUBMISSION-CANDIDATE-E226DE7C08C2",
+  "failed_check_ids": [],
+  "failed_checks": 0,
+  "failure_taxonomy_report_id": "FAILURE-TAXONOMY-REPORT-FC3663E93EA3",
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "executes_dataset_code": false,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "local_only": true,
+    "milestone": "Milestone #3",
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "public_readiness_audit_v1",
+    "task": "Task 8",
+    "uses_batch_benchmark_runner": true,
+    "uses_dataset_sample_registry": true,
+    "uses_failure_taxonomy": true,
+    "uses_local_submission_candidate_builder": true,
+    "uses_multi_task_outcome_aggregator": true,
+    "uses_report_index_generator": true,
+    "uses_strategy_selection_index": true
+  },
+  "passed_checks": 10,
+  "ready_for_kaggle_submission": false,
+  "ready_for_release_package": true,
+  "registry_id": "DATASET-SAMPLE-REGISTRY-21F03BA2C85E",
+  "report_index_id": "REPORT-INDEX-380079FFB6E9",
+  "selected_strategy_id": "STRATEGY-IDENTITY-BASELINE-v1",
+  "signature": "C37C53F4175660D2",
+  "status": "PUBLIC_READINESS_AUDIT_READY",
+  "strategy_index_id": "STRATEGY-SELECTION-INDEX-6DA2C585190E",
+  "submission_mode": "LOCAL_DRY_RUN_ONLY",
+  "total_checks": 10,
+  "warning_check_ids": [
+    "PUBLIC-READINESS-CHECK-F142BC99D30D",
+    "PUBLIC-READINESS-CHECK-82AE818A8F2F"
+  ],
+  "warning_count": 0
+}
