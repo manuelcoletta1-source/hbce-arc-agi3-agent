@@ -1,0 +1,420 @@
+{
+  "baseline_commit": "2346e9b Add ARC AGI3 manual submission execution gate",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "freeze_gate_count": 27,
+  "freeze_gates": [
+    {
+      "name": "manual_gate_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_gate_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_gate_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_execution_gate_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_execution_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "precheck_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "precheck_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "precheck_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_package_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_package_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_release_summary_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_release_summary_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "freeze_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "freeze_record_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "freeze_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "frozen_artifact_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "frozen_artifacts_hashes_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "freeze_id": "MILESTONE-6-REAL-SUBMISSION-FREEZE-9E37415967F8",
+  "freeze_index": {
+    "baseline_commit": "2346e9b Add ARC AGI3 manual submission execution gate",
+    "external_api_dependency": false,
+    "freeze_locked": true,
+    "freeze_mode": "REAL_SUBMISSION_PACKAGE_FREEZE_ONLY_NO_UPLOAD",
+    "freeze_ready": true,
+    "freeze_scope": "FREEZE_LOCAL_SUBMISSION_PACKAGE_REFERENCES_NO_API_NO_UPLOAD",
+    "freeze_verdict": "REAL_SUBMISSION_PACKAGE_FROZEN_FOR_MANUAL_REVIEW_NO_SUBMISSION",
+    "frozen_artifact_count": 4,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_execution_performed": false,
+    "milestone": "Milestone #6",
+    "private_core_exposure": false,
+    "ready_artifact_count": 4,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "task": "Task 6",
+    "upload_performed": false
+  },
+  "freeze_issue_count": 0,
+  "freeze_issues": [
+    {
+      "active": false,
+      "name": "manual_gate_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_gate_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_gate_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_execution_gate_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_execution_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "precheck_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "precheck_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "precheck_not_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_package_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_package_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_release_summary_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_release_summary_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "freeze_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "freeze_record_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "freeze_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "frozen_artifact_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "frozen_artifact_hash_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    }
+  ],
+  "freeze_locked": true,
+  "freeze_mode": "REAL_SUBMISSION_PACKAGE_FREEZE_ONLY_NO_UPLOAD",
+  "freeze_ready": true,
+  "freeze_record": {
+    "boundary_intact": true,
+    "contains_api_keys": false,
+    "dry_run_package_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+    "external_api_dependency": false,
+    "freeze_locked": true,
+    "freeze_mode": "REAL_SUBMISSION_PACKAGE_FREEZE_ONLY_NO_UPLOAD",
+    "freeze_record_ready": true,
+    "freeze_scope": "FREEZE_LOCAL_SUBMISSION_PACKAGE_REFERENCES_NO_API_NO_UPLOAD",
+    "freeze_verdict": "REAL_SUBMISSION_PACKAGE_FROZEN_FOR_MANUAL_REVIEW_NO_SUBMISSION",
+    "frozen_artifact_count": 4,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_execution_gate_ready": true,
+    "manual_execution_performed": false,
+    "manual_gate_id": "MILESTONE-6-MANUAL-SUBMISSION-GATE-AB82FA104158",
+    "next_allowed_stage": "OPTIONAL_HUMAN_MANUAL_SUBMISSION_OUTSIDE_AGENT",
+    "precheck_id": "MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7",
+    "precheck_passed": true,
+    "private_core_exposure": false,
+    "public_release_summary_id": "MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F",
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "upload_performed": false
+  },
+  "freeze_scope": "FREEZE_LOCAL_SUBMISSION_PACKAGE_REFERENCES_NO_API_NO_UPLOAD",
+  "freeze_verdict": "REAL_SUBMISSION_PACKAGE_FROZEN_FOR_MANUAL_REVIEW_NO_SUBMISSION",
+  "frozen_artifact_count": 4,
+  "frozen_artifacts": [
+    {
+      "actual_status": "MILESTONE_6_MANUAL_SUBMISSION_EXECUTION_GATE_READY",
+      "artifact_id": "MILESTONE-6-MANUAL-SUBMISSION-GATE-AB82FA104158",
+      "expected_status": "MILESTONE_6_MANUAL_SUBMISSION_EXECUTION_GATE_READY",
+      "name": "manual_submission_execution_gate",
+      "path": "examples/milestone-6/manual-submission-execution-gate-v1/milestone-6-manual-submission-execution-gate-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256": "72eb008a58bb882ba32536f5bd30cb1c7ae0e010d766719dc37096c2d1807a61",
+      "sha256_16": "72EB008A58BB882B"
+    },
+    {
+      "actual_status": "MILESTONE_6_REAL_SUBMISSION_PRECHECK_GATE_READY",
+      "artifact_id": "MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7",
+      "expected_status": "MILESTONE_6_REAL_SUBMISSION_PRECHECK_GATE_READY",
+      "name": "real_submission_precheck_gate",
+      "path": "examples/milestone-6/real-submission-precheck-gate-v1/milestone-6-real-submission-precheck-gate-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256": "8cdc6485af9d19a72f5bae5bd9fa4e149d721892cb615f291ced2aa422282100",
+      "sha256_16": "8CDC6485AF9D19A7"
+    },
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY",
+      "artifact_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+      "expected_status": "MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY",
+      "name": "submission_candidate_dry_run_package",
+      "path": "examples/milestone-5/submission-candidate-dry-run-package-v1/submission-candidate-dry-run-package-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256": "15d64befb2aa4a24a348e9626013dd5f421d5d3839dbe4983c1679d6e0466e7a",
+      "sha256_16": "15D64BEFB2AA4A24"
+    },
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_RELEASE_SUMMARY_READY",
+      "artifact_id": "MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F",
+      "expected_status": "MILESTONE_5_PUBLIC_RELEASE_SUMMARY_READY",
+      "name": "public_release_summary",
+      "path": "examples/milestone-5/public-release-summary-v1/milestone-5-public-release-summary-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256": "d69b74902b9639ea948e2cd3655294ed87dd7441edece90c0be2fbd829bac9c8",
+      "sha256_16": "D69B74902B9639EA"
+    }
+  ],
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "manual_execution_performed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_6_real_submission_package_freeze_v1"
+  },
+  "milestone": "Milestone #6",
+  "next_allowed_stage": "OPTIONAL_HUMAN_MANUAL_SUBMISSION_OUTSIDE_AGENT",
+  "passed_gate_count": 27,
+  "ready_artifact_count": 4,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "signature": "9E37415967F8EBE1",
+  "status": "MILESTONE_6_REAL_SUBMISSION_PACKAGE_FREEZE_READY",
+  "task": "Task 6",
+  "title": "Real Submission Package Freeze v1",
+  "upload_performed": false,
+  "warning_count": 0
+}

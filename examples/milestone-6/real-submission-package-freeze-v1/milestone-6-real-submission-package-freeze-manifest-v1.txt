@@ -1,0 +1,31 @@
+ARC AGI3 MILESTONE 6 REAL SUBMISSION PACKAGE FREEZE MANIFEST v1
+freeze_id=MILESTONE-6-REAL-SUBMISSION-FREEZE-9E37415967F8
+signature=9E37415967F8EBE1
+status=MILESTONE_6_REAL_SUBMISSION_PACKAGE_FREEZE_READY
+baseline_commit=2346e9b Add ARC AGI3 manual submission execution gate
+freeze_mode=REAL_SUBMISSION_PACKAGE_FREEZE_ONLY_NO_UPLOAD
+freeze_verdict=REAL_SUBMISSION_PACKAGE_FROZEN_FOR_MANUAL_REVIEW_NO_SUBMISSION
+frozen_artifact_count=4
+ready_artifact_count=4
+freeze_gate_count=27
+passed_gate_count=27
+freeze_issue_count=0
+freeze_ready=True
+freeze_locked=True
+manual_execution_performed=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+real_submission_created=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+FROZEN_ARTIFACTS
+manual_submission_execution_gate ready=True sha256=72eb008a58bb882ba32536f5bd30cb1c7ae0e010d766719dc37096c2d1807a61 artifact_id=MILESTONE-6-MANUAL-SUBMISSION-GATE-AB82FA104158 path=examples/milestone-6/manual-submission-execution-gate-v1/milestone-6-manual-submission-execution-gate-v1.json
+real_submission_precheck_gate ready=True sha256=8cdc6485af9d19a72f5bae5bd9fa4e149d721892cb615f291ced2aa422282100 artifact_id=MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7 path=examples/milestone-6/real-submission-precheck-gate-v1/milestone-6-real-submission-precheck-gate-v1.json
+submission_candidate_dry_run_package ready=True sha256=15d64befb2aa4a24a348e9626013dd5f421d5d3839dbe4983c1679d6e0466e7a artifact_id=MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87 path=examples/milestone-5/submission-candidate-dry-run-package-v1/submission-candidate-dry-run-package-v1.json
+public_release_summary ready=True sha256=d69b74902b9639ea948e2cd3655294ed87dd7441edece90c0be2fbd829bac9c8 artifact_id=MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F path=examples/milestone-5/public-release-summary-v1/milestone-5-public-release-summary-v1.json

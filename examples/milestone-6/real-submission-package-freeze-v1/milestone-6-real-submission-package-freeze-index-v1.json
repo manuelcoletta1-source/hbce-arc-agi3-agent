@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "2346e9b Add ARC AGI3 manual submission execution gate",
+  "external_api_dependency": false,
+  "freeze_locked": true,
+  "freeze_mode": "REAL_SUBMISSION_PACKAGE_FREEZE_ONLY_NO_UPLOAD",
+  "freeze_ready": true,
+  "freeze_scope": "FREEZE_LOCAL_SUBMISSION_PACKAGE_REFERENCES_NO_API_NO_UPLOAD",
+  "freeze_verdict": "REAL_SUBMISSION_PACKAGE_FROZEN_FOR_MANUAL_REVIEW_NO_SUBMISSION",
+  "frozen_artifact_count": 4,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "manual_execution_performed": false,
+  "milestone": "Milestone #6",
+  "private_core_exposure": false,
+  "ready_artifact_count": 4,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "task": "Task 6",
+  "upload_performed": false
+}
