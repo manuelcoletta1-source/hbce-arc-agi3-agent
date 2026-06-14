@@ -1,0 +1,37 @@
+ARC AGI3 PUBLIC SAFETY & BOUNDARY CHECKLIST MANIFEST v1
+checklist_id=MILESTONE-5-SAFETY-CHECKLIST-4609EB912767
+signature=4609EB9127676E2D
+status=MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY
+ready_for_kaggle_submission_preflight_report=True
+kaggle_submission_sent=False
+
+MANDATORY_BLOCKED_ACTIONS
+kaggle_api_authentication
+kaggle_api_submission
+network_upload
+external_api_call
+secret_or_token_read
+private_core_export
+legal_certification_claim
+
+BOUNDARY_FLAGS
+public_safe=True expected=True valid=True
+deterministic=True expected=True valid=True
+local_only=True expected=True valid=True
+dry_run_only=True expected=True valid=True
+external_api_dependency=False expected=False valid=True
+contains_api_keys=False expected=False valid=True
+kaggle_submission_sent=False expected=False valid=True
+private_core_exposure=False expected=False valid=True
+legal_certification=False expected=False valid=True
+
+BOUNDARY
+public_safe=true
+deterministic=true
+local_only=true
+dry_run_only=true
+external_api_dependency=false
+contains_api_keys=false
+kaggle_submission_sent=false
+private_core_exposure=false
+legal_certification=false
