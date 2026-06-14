@@ -1,0 +1,887 @@
+{
+  "baseline_commit": "d7c1584 Add ARC AGI3 local candidate manual review",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "candidate_count": 4,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "local_review_source": {
+    "path": "examples/milestone-9/local-candidate-manual-review-v1/milestone-9-local-candidate-manual-review-v1.json",
+    "present": true,
+    "review_id": "MILESTONE-9-LOCAL-REVIEW-459C714B7915",
+    "sha256": "44bb904921434de0b3e8c6de53a57a236b18214fd0d80747c6eccd0bd0244551",
+    "sha256_16": "44BB904921434DE0",
+    "status": "MILESTONE_9_LOCAL_CANDIDATE_MANUAL_REVIEW_V1_READY"
+  },
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_9_real_submission_preflight_gate_v1"
+  },
+  "milestone": "Milestone #9",
+  "next_allowed_stage": "MILESTONE_9_TASK_5_OPERATOR_APPROVAL_GATE_V1",
+  "operator_approval_granted": false,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 48,
+  "preflight_case_count": 10,
+  "preflight_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "preflight_local_review_source_ready_v1",
+      "operation": "verify_local_review_artifact"
+    },
+    {
+      "area": "candidate_source",
+      "case_id": "preflight_candidate_source_bound_v1",
+      "operation": "verify_candidate_source_binding"
+    },
+    {
+      "area": "candidate_integrity",
+      "case_id": "preflight_candidate_signature_bound_v1",
+      "operation": "verify_candidate_signature"
+    },
+    {
+      "area": "review_integrity",
+      "case_id": "preflight_review_cases_passed_v1",
+      "operation": "verify_review_case_pass_count"
+    },
+    {
+      "area": "operator_approval",
+      "case_id": "preflight_operator_approval_absent_v1",
+      "operation": "verify_operator_approval_absent"
+    },
+    {
+      "area": "upload_gate",
+      "case_id": "preflight_manual_upload_blocked_v1",
+      "operation": "verify_manual_upload_blocked"
+    },
+    {
+      "area": "submission",
+      "case_id": "preflight_real_submission_blocked_v1",
+      "operation": "verify_real_submission_blocked"
+    },
+    {
+      "area": "boundary",
+      "case_id": "preflight_no_auth_no_external_api_v1",
+      "operation": "verify_no_auth_no_external_api"
+    },
+    {
+      "area": "claim_boundary",
+      "case_id": "preflight_no_score_or_leaderboard_claim_v1",
+      "operation": "verify_no_score_or_leaderboard_claim"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "preflight_next_stage_valid_v1",
+      "operation": "verify_operator_approval_gate_next"
+    }
+  ],
+  "preflight_check_count": 14,
+  "preflight_check_list": [
+    "local_review_artifact_exists",
+    "local_review_artifact_ready",
+    "local_review_candidate_source_present",
+    "local_review_candidate_signature_present",
+    "operator_declarations_not_accepted",
+    "operator_approval_not_granted",
+    "manual_upload_not_allowed",
+    "kaggle_authentication_not_performed",
+    "upload_not_performed",
+    "real_submission_not_created",
+    "real_submission_not_allowed",
+    "score_claim_absent",
+    "public_leaderboard_claim_absent",
+    "legal_certification_absent"
+  ],
+  "preflight_checks": {
+    "candidate_count_positive": true,
+    "candidate_id_present": true,
+    "candidate_signature_present": true,
+    "candidate_source_exists": true,
+    "candidate_source_path_present": true,
+    "external_api_dependency_false": true,
+    "kaggle_authentication_not_allowed": true,
+    "kaggle_authentication_not_performed": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_review_artifact_present": true,
+    "local_review_artifact_ready": true,
+    "local_review_artifact_valid": true,
+    "local_review_cases_valid": true,
+    "local_review_next_stage_matches_task_4": true,
+    "local_review_ready": true,
+    "manual_upload_not_allowed": true,
+    "next_stage_valid": true,
+    "operator_approval_not_granted": true,
+    "operator_approval_not_received": true,
+    "operator_approval_required": true,
+    "preflight_check_count_valid": true,
+    "preflight_gate_not_open": true,
+    "preflight_gate_ready": true,
+    "preflight_not_completed": true,
+    "preflight_ready": true,
+    "preflight_required": true,
+    "private_core_exposure_false": true,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission_false": true,
+    "real_submission_allowed_false": true,
+    "real_submission_not_created": true,
+    "score_claim_absent": true,
+    "upload_not_performed": true
+  },
+  "preflight_failure_count": 0,
+  "preflight_gate_count": 48,
+  "preflight_gate_open": false,
+  "preflight_gate_ready": true,
+  "preflight_gates": [
+    {
+      "name": "local_review_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_review_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_review_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_review_next_stage_matches_task_4",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_review_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_review_cases_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_source_path_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_source_exists",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_count_positive",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_signature_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_id_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_check_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_not_completed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_gate_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_gate_not_open",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "preflight_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_preflight_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_not_granted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_not_received",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "preflight_id": "MILESTONE-9-PREFLIGHT-GATE-BB37FBF4F421",
+  "preflight_index": {
+    "baseline_commit": "d7c1584 Add ARC AGI3 local candidate manual review",
+    "candidate_count": 4,
+    "candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "candidate_source_path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "depends_on_local_review": "MILESTONE-9-LOCAL-REVIEW-459C714B7915",
+    "external_api_dependency": false,
+    "kaggle_authentication_allowed": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_upload_allowed": false,
+    "milestone": "Milestone #9",
+    "next_allowed_stage": "MILESTONE_9_TASK_5_OPERATOR_APPROVAL_GATE_V1",
+    "operator_approval_granted": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "preflight_case_count": 10,
+    "preflight_check_count": 14,
+    "preflight_failure_count": 0,
+    "preflight_gate_open": false,
+    "preflight_gate_ready": true,
+    "preflight_locked": true,
+    "preflight_mode": "MILESTONE_9_REAL_SUBMISSION_PREFLIGHT_GATE_V1_LOCAL_ONLY",
+    "preflight_pass_count": 10,
+    "preflight_ready": true,
+    "preflight_scope": "VERIFY_REAL_SUBMISSION_PREFLIGHT_WITHOUT_UPLOAD_AUTH_OR_APPROVAL",
+    "preflight_verdict": "REAL_SUBMISSION_PREFLIGHT_READY_APPROVAL_NOT_GRANTED_SUBMISSION_BLOCKED",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_preflight_completed": false,
+    "real_submission_preflight_created": true,
+    "task": "Task 4",
+    "upload_performed": false
+  },
+  "preflight_issue_count": 0,
+  "preflight_issues": [
+    {
+      "active": false,
+      "name": "local_review_artifact_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_review_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_review_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_review_next_stage_matches_task_4",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_review_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_review_cases_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_source_path_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_source_exists",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_count_positive",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_signature_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_id_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_check_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_not_completed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_gate_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_gate_not_open",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "preflight_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_preflight_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_granted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_received",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "contains_api_keys_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "preflight_locked": true,
+  "preflight_mode": "MILESTONE_9_REAL_SUBMISSION_PREFLIGHT_GATE_V1_LOCAL_ONLY",
+  "preflight_pass_count": 10,
+  "preflight_ready": true,
+  "preflight_record": {
+    "baseline_local_review_id": "MILESTONE-9-LOCAL-REVIEW-459C714B7915",
+    "boundary_control_count": 9,
+    "candidate_count": 4,
+    "candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "candidate_signature": "4A84F8136BD61B3F",
+    "candidate_source_path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "contains_api_keys": false,
+    "external_api_dependency": false,
+    "kaggle_authentication_allowed": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_review_ready": true,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_9_TASK_5_OPERATOR_APPROVAL_GATE_V1",
+    "operator_approval_granted": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "preflight_case_count": 10,
+    "preflight_check_count": 14,
+    "preflight_failure_count": 0,
+    "preflight_gate_open": false,
+    "preflight_gate_ready": true,
+    "preflight_locked": true,
+    "preflight_mode": "MILESTONE_9_REAL_SUBMISSION_PREFLIGHT_GATE_V1_LOCAL_ONLY",
+    "preflight_pass_count": 10,
+    "preflight_ready": true,
+    "preflight_scope": "VERIFY_REAL_SUBMISSION_PREFLIGHT_WITHOUT_UPLOAD_AUTH_OR_APPROVAL",
+    "preflight_verdict": "REAL_SUBMISSION_PREFLIGHT_READY_APPROVAL_NOT_GRANTED_SUBMISSION_BLOCKED",
+    "private_core_exposure": false,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "real_submission_preflight_completed": false,
+    "real_submission_preflight_created": true,
+    "real_submission_preflight_ready": true,
+    "regression_guard_count": 12,
+    "score_claim_absent": true,
+    "upload_performed": false
+  },
+  "preflight_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "preflight_local_review_source_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_local_review_artifact",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "candidate_source",
+      "case_id": "preflight_candidate_source_bound_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_candidate_source_binding",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "candidate_integrity",
+      "case_id": "preflight_candidate_signature_bound_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_candidate_signature",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "review_integrity",
+      "case_id": "preflight_review_cases_passed_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_review_case_pass_count",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "operator_approval",
+      "case_id": "preflight_operator_approval_absent_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_operator_approval_absent",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "upload_gate",
+      "case_id": "preflight_manual_upload_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_manual_upload_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission",
+      "case_id": "preflight_real_submission_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "preflight_no_auth_no_external_api_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_auth_no_external_api",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "claim_boundary",
+      "case_id": "preflight_no_score_or_leaderboard_claim_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_score_or_leaderboard_claim",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "preflight_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_operator_approval_gate_next",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "preflight_scope": "VERIFY_REAL_SUBMISSION_PREFLIGHT_WITHOUT_UPLOAD_AUTH_OR_APPROVAL",
+  "preflight_source_summary": {
+    "candidate_count": 4,
+    "candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "candidate_signature": "4A84F8136BD61B3F",
+    "candidate_source_path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "local_review_id": "MILESTONE-9-LOCAL-REVIEW-459C714B7915",
+    "local_review_path": "examples/milestone-9/local-candidate-manual-review-v1/milestone-9-local-candidate-manual-review-v1.json",
+    "local_review_present": true,
+    "local_review_signature": "459C714B7915D25A",
+    "local_review_status": "MILESTONE_9_LOCAL_CANDIDATE_MANUAL_REVIEW_V1_READY",
+    "review_case_count": 10,
+    "review_failure_count": 0,
+    "review_pass_count": 10,
+    "review_sha256": "44bb904921434de0b3e8c6de53a57a236b18214fd0d80747c6eccd0bd0244551",
+    "review_sha256_16": "44BB904921434DE0"
+  },
+  "preflight_state": {
+    "kaggle_authentication_allowed": false,
+    "manual_upload_allowed": false,
+    "operator_approval_granted": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "preflight_gate_open": false,
+    "preflight_gate_ready": true,
+    "preflight_gate_verdict": "PREFLIGHT_READY_BUT_OPERATOR_APPROVAL_NOT_GRANTED",
+    "real_submission_allowed": false,
+    "real_submission_preflight_completed": false,
+    "real_submission_preflight_ready": true,
+    "real_submission_preflight_required": true
+  },
+  "preflight_verdict": "REAL_SUBMISSION_PREFLIGHT_READY_APPROVAL_NOT_GRANTED_SUBMISSION_BLOCKED",
+  "public_leaderboard_claim_absent": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "real_submission_preflight_completed": false,
+  "real_submission_preflight_created": true,
+  "real_submission_preflight_ready": true,
+  "regression_guard_count": 12,
+  "regression_guards": [
+    "guard_preflight_uses_local_review_artifact",
+    "guard_preflight_candidate_source_bound",
+    "guard_preflight_candidate_signature_bound",
+    "guard_preflight_review_cases_passed",
+    "guard_preflight_operator_approval_absent",
+    "guard_preflight_manual_upload_blocked",
+    "guard_preflight_real_submission_blocked",
+    "guard_preflight_does_not_authenticate",
+    "guard_preflight_does_not_upload",
+    "guard_preflight_no_score_claim",
+    "guard_preflight_no_private_core_exposure",
+    "guard_preflight_no_legal_certification"
+  ],
+  "score_claim_absent": true,
+  "signature": "BB37FBF4F42130B1",
+  "status": "MILESTONE_9_REAL_SUBMISSION_PREFLIGHT_GATE_V1_READY",
+  "task": "Task 4",
+  "title": "Real Submission Preflight Gate v1",
+  "upload_performed": false,
+  "warning_count": 0
+}
