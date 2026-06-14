@@ -1,0 +1,798 @@
+{
+  "baseline_case_count": 10,
+  "baseline_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m10_baseline_m9_closure_source_ready_v1",
+      "operation": "verify_milestone_9_blocked_closure"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m10_baseline_submission_still_blocked_v1",
+      "operation": "verify_real_submission_still_blocked"
+    },
+    {
+      "area": "approval_boundary",
+      "case_id": "m10_baseline_operator_approval_absent_v1",
+      "operation": "verify_operator_approval_absent"
+    },
+    {
+      "area": "kaggle_boundary",
+      "case_id": "m10_baseline_kaggle_actions_absent_v1",
+      "operation": "verify_no_kaggle_action"
+    },
+    {
+      "area": "local_solver",
+      "case_id": "m10_baseline_local_solver_cycle_ready_v1",
+      "operation": "verify_local_solver_cycle_ready"
+    },
+    {
+      "area": "roadmap",
+      "case_id": "m10_baseline_local_stage_plan_ready_v1",
+      "operation": "verify_local_stage_plan"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m10_baseline_next_stage_valid_v1",
+      "operation": "verify_error_pattern_audit_next"
+    },
+    {
+      "area": "fail_closed",
+      "case_id": "m10_baseline_fail_closed_preserved_v1",
+      "operation": "verify_fail_closed_boundary"
+    },
+    {
+      "area": "public_safety",
+      "case_id": "m10_baseline_no_private_core_exposure_v1",
+      "operation": "verify_no_private_core_exposure"
+    },
+    {
+      "area": "claim_boundary",
+      "case_id": "m10_baseline_no_legal_certification_v1",
+      "operation": "verify_no_legal_certification"
+    }
+  ],
+  "baseline_check_count": 18,
+  "baseline_check_list": [
+    "milestone_9_closure_artifact_exists",
+    "milestone_9_closure_artifact_ready",
+    "milestone_9_closed",
+    "milestone_9_closed_with_real_submission_blocked",
+    "real_submission_decision_not_authorized",
+    "operator_approval_not_granted",
+    "manual_upload_blocked",
+    "kaggle_authentication_blocked",
+    "real_submission_blocked",
+    "kaggle_submission_absent",
+    "local_solver_cycle_created",
+    "local_solver_cycle_ready",
+    "local_improvement_stages_present",
+    "next_stage_error_pattern_audit",
+    "fail_closed_boundary_preserved",
+    "no_external_api_dependency",
+    "no_private_core_exposure",
+    "no_legal_certification"
+  ],
+  "baseline_checks": {
+    "baseline_case_count_valid": true,
+    "baseline_check_count_valid": true,
+    "baseline_mode_valid": true,
+    "baseline_scope_valid": true,
+    "baseline_verdict_valid": true,
+    "candidate_count_positive": true,
+    "candidate_id_present": true,
+    "candidate_signature_present": true,
+    "candidate_source_present": true,
+    "closure_artifact_present": true,
+    "closure_artifact_ready": true,
+    "closure_artifact_valid": true,
+    "closure_reason_operator_approval_not_granted": true,
+    "closure_type_blocked": true,
+    "closure_verdict_blocked": true,
+    "external_api_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_not_allowed": true,
+    "kaggle_authentication_not_performed": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_cycle_created": true,
+    "local_cycle_locked_to_local_only": true,
+    "local_cycle_ready": true,
+    "local_stage_count_valid": true,
+    "manual_upload_not_allowed": true,
+    "metadata_boundary_count_valid": true,
+    "milestone_10_open": true,
+    "milestone_9_closed": true,
+    "next_stage_valid": true,
+    "operator_approval_not_granted": true,
+    "operator_approval_not_received": true,
+    "operator_approval_required": true,
+    "private_core_exposure_false": true,
+    "ready_for_real_kaggle_submission_false": true,
+    "real_submission_allowed_false": true,
+    "real_submission_decision_not_authorized": true,
+    "real_submission_decision_reason_valid": true,
+    "real_submission_not_created": true,
+    "upload_not_performed": true
+  },
+  "baseline_commit": "b887f6c Close ARC AGI3 milestone 9 real submission blocked",
+  "baseline_failure_count": 0,
+  "baseline_gate_count": 40,
+  "baseline_gates": [
+    {
+      "name": "closure_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_9_closed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_type_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_reason_operator_approval_not_granted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_verdict_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_decision_not_authorized",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_not_granted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_source_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_id_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_signature_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_count_positive",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_check_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_stage_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_10_open",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_cycle_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_cycle_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_cycle_locked_to_local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_baseline_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "baseline_id": "MILESTONE-10-LOCAL-SOLVER-BASELINE-561758728A97",
+  "baseline_index": {
+    "baseline_commit": "b887f6c Close ARC AGI3 milestone 9 real submission blocked",
+    "baseline_mode": "MILESTONE_10_LOCAL_SOLVER_IMPROVEMENT_BASELINE_V1_LOCAL_ONLY",
+    "baseline_ready": true,
+    "baseline_scope": "OPEN_LOCAL_SOLVER_IMPROVEMENT_AFTER_BLOCKED_SUBMISSION_CLOSURE",
+    "baseline_verdict": "MILESTONE_10_OPEN_LOCAL_SOLVER_IMPROVEMENT_ONLY_REAL_SUBMISSION_BLOCKED",
+    "candidate_count": 4,
+    "candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "candidate_source_path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "depends_on_milestone_9_closure": "MILESTONE-9-BLOCKED-CLOSURE-F055E887E86B",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_improvement_stage_count": 5,
+    "local_solver_improvement_cycle_created": true,
+    "local_solver_improvement_cycle_ready": true,
+    "manual_upload_allowed": false,
+    "milestone": "Milestone #10",
+    "milestone_10_open": true,
+    "next_allowed_stage": "MILESTONE_10_TASK_2_LOCAL_ERROR_PATTERN_AUDIT_V1",
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "task": "Task 1"
+  },
+  "baseline_issue_count": 0,
+  "baseline_issues": [
+    {
+      "active": false,
+      "name": "closure_artifact_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_9_closed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_type_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_reason_operator_approval_not_granted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_verdict_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_decision_not_authorized",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_granted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_source_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_id_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_signature_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_count_positive",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_check_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_stage_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_10_open",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_cycle_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_cycle_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_cycle_locked_to_local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_baseline_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_failure_count_zero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "baseline_locked": true,
+  "baseline_mode": "MILESTONE_10_LOCAL_SOLVER_IMPROVEMENT_BASELINE_V1_LOCAL_ONLY",
+  "baseline_pass_count": 10,
+  "baseline_ready": true,
+  "baseline_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m10_baseline_m9_closure_source_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_milestone_9_blocked_closure",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m10_baseline_submission_still_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_still_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "approval_boundary",
+      "case_id": "m10_baseline_operator_approval_absent_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_operator_approval_absent",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "kaggle_boundary",
+      "case_id": "m10_baseline_kaggle_actions_absent_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_kaggle_action",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "local_solver",
+      "case_id": "m10_baseline_local_solver_cycle_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_local_solver_cycle_ready",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "roadmap",
+      "case_id": "m10_baseline_local_stage_plan_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_local_stage_plan",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m10_baseline_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_error_pattern_audit_next",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "fail_closed",
+      "case_id": "m10_baseline_fail_closed_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_fail_closed_boundary",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "public_safety",
+      "case_id": "m10_baseline_no_private_core_exposure_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_private_core_exposure",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "claim_boundary",
+      "case_id": "m10_baseline_no_legal_certification_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_legal_certification",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "baseline_scope": "OPEN_LOCAL_SOLVER_IMPROVEMENT_AFTER_BLOCKED_SUBMISSION_CLOSURE",
+  "baseline_state": {
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_improvement_stage_count": 5,
+    "local_solver_improvement_cycle_created": true,
+    "local_solver_improvement_cycle_locked_to_local_only": true,
+    "local_solver_improvement_cycle_ready": true,
+    "manual_upload_allowed": false,
+    "milestone_10_mode": "MILESTONE_10_LOCAL_SOLVER_IMPROVEMENT_BASELINE_V1_LOCAL_ONLY",
+    "milestone_10_open": true,
+    "milestone_10_title": "Local Solver Improvement Cycle",
+    "next_allowed_stage": "MILESTONE_10_TASK_2_LOCAL_ERROR_PATTERN_AUDIT_V1",
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_boundary_status": "BLOCKED",
+    "real_submission_decision": "NOT_AUTHORIZED"
+  },
+  "baseline_verdict": "MILESTONE_10_OPEN_LOCAL_SOLVER_IMPROVEMENT_ONLY_REAL_SUBMISSION_BLOCKED",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "local_improvement_stage_count": 5,
+  "local_improvement_stages": [
+    {
+      "name": "Local Error Pattern Audit v1",
+      "purpose": "identify failure patterns from local benchmark traces",
+      "stage_id": "m10_task_2_local_error_pattern_audit_v1"
+    },
+    {
+      "name": "Solver Patch Plan v1",
+      "purpose": "define local-only deterministic solver refinements",
+      "stage_id": "m10_task_3_solver_patch_plan_v1"
+    },
+    {
+      "name": "Solver Patch Implementation v1",
+      "purpose": "implement safe local solver improvements",
+      "stage_id": "m10_task_4_solver_patch_implementation_v1"
+    },
+    {
+      "name": "Benchmark Refresh v1",
+      "purpose": "rerun deterministic local checks and compare stability",
+      "stage_id": "m10_task_5_benchmark_refresh_v1"
+    },
+    {
+      "name": "Candidate Refresh v1",
+      "purpose": "produce a new local submission candidate for review only",
+      "stage_id": "m10_task_6_candidate_refresh_v1"
+    }
+  ],
+  "local_solver_improvement_cycle_created": true,
+  "local_solver_improvement_cycle_locked_to_local_only": true,
+  "local_solver_improvement_cycle_ready": true,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_10_local_solver_improvement_baseline_v1"
+  },
+  "milestone": "Milestone #10",
+  "milestone_10_open": true,
+  "milestone_9_closure_source": {
+    "closure_id": "MILESTONE-9-BLOCKED-CLOSURE-F055E887E86B",
+    "path": "examples/milestone-9/real-submission-blocked-closure-v1/milestone-9-real-submission-blocked-closure-v1.json",
+    "present": true,
+    "sha256": "a94c2a1ce453dc306949d249755cc3165424440e1c546b40b9a972dbf8344aa6",
+    "sha256_16": "A94C2A1CE453DC30",
+    "status": "MILESTONE_9_REAL_SUBMISSION_BLOCKED_CLOSURE_V1_READY"
+  },
+  "next_allowed_stage": "MILESTONE_10_TASK_2_LOCAL_ERROR_PATTERN_AUDIT_V1",
+  "passed_gate_count": 40,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "signature": "561758728A976951",
+  "source_summary": {
+    "candidate_count": 4,
+    "candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "candidate_signature": "4A84F8136BD61B3F",
+    "candidate_source_path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "closure_sha256": "a94c2a1ce453dc306949d249755cc3165424440e1c546b40b9a972dbf8344aa6",
+    "closure_sha256_16": "A94C2A1CE453DC30",
+    "kaggle_authentication_allowed": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "manual_upload_allowed": false,
+    "milestone_9_closed": true,
+    "milestone_9_closure_id": "MILESTONE-9-BLOCKED-CLOSURE-F055E887E86B",
+    "milestone_9_closure_path": "examples/milestone-9/real-submission-blocked-closure-v1/milestone-9-real-submission-blocked-closure-v1.json",
+    "milestone_9_closure_present": true,
+    "milestone_9_closure_reason": "OPERATOR_APPROVAL_NOT_GRANTED",
+    "milestone_9_closure_signature": "F055E887E86B8CDB",
+    "milestone_9_closure_status": "MILESTONE_9_REAL_SUBMISSION_BLOCKED_CLOSURE_V1_READY",
+    "milestone_9_closure_type": "REAL_SUBMISSION_BLOCKED",
+    "milestone_9_closure_verdict": "CLOSED_WITH_REAL_SUBMISSION_BLOCKED",
+    "operator_approval_granted": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "real_submission_decision_reason": "OPERATOR_APPROVAL_NOT_GRANTED",
+    "upload_performed": false
+  },
+  "status": "MILESTONE_10_LOCAL_SOLVER_IMPROVEMENT_BASELINE_V1_READY",
+  "task": "Task 1",
+  "title": "Local Solver Improvement Baseline v1",
+  "upload_performed": false,
+  "warning_count": 0
+}
