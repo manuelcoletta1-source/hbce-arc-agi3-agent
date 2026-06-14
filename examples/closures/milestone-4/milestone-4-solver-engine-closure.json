@@ -1,0 +1,118 @@
+{
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "closed_task_count": 9,
+  "closure_id": "MILESTONE-4-SOLVER-CLOSURE-526D821DAB2C",
+  "final_commit": "4fbae99 Add ARC AGI3 candidate ranker task family policy fix",
+  "final_test_count_before_closure": 337,
+  "final_test_status": "PASS",
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "closure_kind": "SOLVER_ENGINE_MILESTONE_CLOSURE",
+    "milestone": "Milestone #4",
+    "phase_next_ready": true,
+    "score_oriented": true,
+    "source": "milestone_4_solver_engine_closure_v1",
+    "task": "Task 10"
+  },
+  "milestone": "Milestone #4",
+  "planning_commits": [
+    "efa5f86 Open ARC AGI3 milestone 4 solver engine plan",
+    "b0c200f Add prize and deadline targets to ARC AGI3 milestone 4"
+  ],
+  "ready_for_next_phase": true,
+  "signature": "526D821DAB2CB47C",
+  "solver_engine_result": {
+    "expanded_best_candidate_match_rate": 1.0,
+    "failure_loop_improvement_item_count": 0,
+    "failure_loop_next_solver_target": "none",
+    "final_color_only_best_candidate": "COLOR_REMAP",
+    "final_color_only_match": true,
+    "ready_for_phase_next": true
+  },
+  "status": "MILESTONE_4_SOLVER_ENGINE_CLOSURE_READY",
+  "tasks": [
+    {
+      "artifact_hint": "milestone-4 strategy interface",
+      "commit": "e08f204",
+      "result": "Milestone #4 solver strategy interface established.",
+      "status": "CLOSED_PASS",
+      "task_number": 1,
+      "title": "Strategy Interface v2"
+    },
+    {
+      "artifact_hint": "grid object extraction artifacts",
+      "commit": "ea7ef2b",
+      "result": "Grid object structure extraction available for downstream solvers.",
+      "status": "CLOSED_PASS",
+      "task_number": 2,
+      "title": "Grid Object Extractor v1"
+    },
+    {
+      "artifact_hint": "color transform detector artifacts",
+      "commit": "cf897c1",
+      "result": "Stable color remap and palette signals detected deterministically.",
+      "status": "CLOSED_PASS",
+      "task_number": 3,
+      "title": "Color Transform Detector v1"
+    },
+    {
+      "artifact_hint": "shape symmetry detector artifacts",
+      "commit": "c7b203d",
+      "result": "Shape, symmetry and transform evidence connected to candidate generation.",
+      "status": "CLOSED_PASS",
+      "task_number": 4,
+      "title": "Shape / Symmetry Detector v1"
+    },
+    {
+      "artifact_hint": "candidate generator artifacts",
+      "commit": "308f4ad",
+      "result": "Deterministic candidate grids generated from color and shape evidence.",
+      "status": "CLOSED_PASS",
+      "task_number": 5,
+      "title": "Candidate Generator v1"
+    },
+    {
+      "artifact_hint": "candidate ranker artifacts",
+      "commit": "fa03713",
+      "result": "Candidate scoring and deterministic ranking pipeline established.",
+      "status": "CLOSED_PASS",
+      "task_number": 6,
+      "title": "Candidate Ranker v1"
+    },
+    {
+      "artifact_hint": "examples/milestone-4/expanded-batch-benchmark-v2",
+      "commit": "5f6be77",
+      "result": "Batch benchmark coverage expanded and measurable.",
+      "status": "CLOSED_PASS",
+      "task_number": 7,
+      "title": "Expanded Batch Benchmark v2"
+    },
+    {
+      "artifact_hint": "examples/milestone-4/failure-driven-improvement-loop-v1",
+      "commit": "9d9db93",
+      "result": "Failure loop isolated solver improvement targets.",
+      "status": "CLOSED_PASS",
+      "task_number": 8,
+      "title": "Failure-Driven Solver Improvement Loop v1"
+    },
+    {
+      "artifact_hint": "examples/milestone-4/candidate-ranker-task-family-policy-fix-v1",
+      "commit": "4fbae99",
+      "result": "Color-only task fixed: COLOR_REMAP selected and benchmark match rate reached 1.0.",
+      "status": "CLOSED_PASS",
+      "task_number": 9,
+      "title": "Candidate Ranker Task-Family Policy Fix v1"
+    }
+  ],
+  "title": "Solver Engine Milestone Closure Report v1"
+}
