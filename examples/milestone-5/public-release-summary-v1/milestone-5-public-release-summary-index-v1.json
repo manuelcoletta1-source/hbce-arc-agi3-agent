@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "7a8cf84 Close ARC AGI3 milestone 5 submission preparation",
+  "closure_artifact_sha256_16": "78F64C29CE3F2B6C",
+  "closure_id": "MILESTONE-5-SUBMISSION-CLOSURE-876E09DA2D13",
+  "closure_signature": "876E09DA2D13FB97",
+  "external_api_dependency": false,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "milestone": "Milestone #5",
+  "milestone_status": "MILESTONE_5_SUBMISSION_PREPARATION_CLOSED_PASS",
+  "private_core_exposure": false,
+  "project_name": "HBCE ARC-AGI-3 Agent",
+  "public_release_summary_ready": true,
+  "real_kaggle_submission_created": false,
+  "release_scope": "PUBLIC_RELEASE_SUMMARY_ONLY_NO_SUBMISSION"
+}

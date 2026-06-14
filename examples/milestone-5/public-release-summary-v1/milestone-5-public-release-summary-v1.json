@@ -1,0 +1,301 @@
+{
+  "baseline_commit": "7a8cf84 Close ARC AGI3 milestone 5 submission preparation",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "closed_task_count": 9,
+  "closure_id": "MILESTONE-5-SUBMISSION-CLOSURE-876E09DA2D13",
+  "closure_signature": "876E09DA2D13FB97",
+  "final_package_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_5_public_release_summary_v1"
+  },
+  "milestone": "Milestone #5",
+  "milestone_status": "MILESTONE_5_SUBMISSION_PREPARATION_CLOSED_PASS",
+  "passed_gate_count": 18,
+  "project_name": "HBCE ARC-AGI-3 Agent",
+  "public_claims": {
+    "closed_task_count": 9,
+    "closure_gate_count": 20,
+    "closure_issue_count": 0,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #5",
+    "milestone_status": "MILESTONE_5_SUBMISSION_PREPARATION_CLOSED_PASS",
+    "private_core_exposure": false,
+    "project_name": "HBCE ARC-AGI-3 Agent",
+    "ready_task_count": 9,
+    "real_kaggle_submission_created": false,
+    "submission_preparation_closed": true,
+    "summary_kind": "PUBLIC_RELEASE_SUMMARY",
+    "tests_passed_recorded": "433 passed in 2.82s",
+    "warning_count": 0
+  },
+  "public_release_summary_ready": true,
+  "ready_for_real_kaggle_submission": false,
+  "ready_task_count": 9,
+  "release_scope": "PUBLIC_RELEASE_SUMMARY_ONLY_NO_SUBMISSION",
+  "signature": "B1587904B17F2022",
+  "status": "MILESTONE_5_PUBLIC_RELEASE_SUMMARY_READY",
+  "summary_gate_count": 18,
+  "summary_gates": [
+    {
+      "description": "Milestone #5 closure artifact is present.",
+      "name": "closure_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 closure exposes ready status.",
+      "name": "closure_status_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 closure has closure id and signature.",
+      "name": "closure_validation_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 closed task count is 9.",
+      "name": "closed_task_count_is_9",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 ready task count is 9.",
+      "name": "ready_task_count_is_9",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 closure gate count is 20.",
+      "name": "closure_gate_count_is_20",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 closure issue count is zero.",
+      "name": "closure_issue_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Submission preparation is closed.",
+      "name": "submission_preparation_closed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Closure allows public release summary.",
+      "name": "ready_for_public_release_summary",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Real Kaggle submission remains false.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No Kaggle submission has been sent.",
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps public_safe=true.",
+      "name": "boundary_public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps deterministic=true.",
+      "name": "boundary_deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps local_only=true.",
+      "name": "boundary_local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps dry_run_only=true.",
+      "name": "boundary_dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps external_api_dependency=false.",
+      "name": "no_external_api_dependency",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps private_core_exposure=false.",
+      "name": "no_private_core_exposure",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps legal_certification=false.",
+      "name": "no_legal_certification",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "summary_id": "MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F",
+  "summary_index": {
+    "baseline_commit": "7a8cf84 Close ARC AGI3 milestone 5 submission preparation",
+    "closure_artifact_sha256_16": "78F64C29CE3F2B6C",
+    "closure_id": "MILESTONE-5-SUBMISSION-CLOSURE-876E09DA2D13",
+    "closure_signature": "876E09DA2D13FB97",
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #5",
+    "milestone_status": "MILESTONE_5_SUBMISSION_PREPARATION_CLOSED_PASS",
+    "private_core_exposure": false,
+    "project_name": "HBCE ARC-AGI-3 Agent",
+    "public_release_summary_ready": true,
+    "real_kaggle_submission_created": false,
+    "release_scope": "PUBLIC_RELEASE_SUMMARY_ONLY_NO_SUBMISSION"
+  },
+  "summary_issue_count": 0,
+  "summary_issues": [
+    {
+      "active": false,
+      "description": "Milestone #5 closure artifact is missing.",
+      "name": "closure_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Milestone #5 closure status is not ready.",
+      "name": "closure_status_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Milestone #5 closure id/signature is missing.",
+      "name": "closure_validation_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Closed task count is not 9.",
+      "name": "closed_task_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Ready task count is not 9.",
+      "name": "ready_task_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Closure gate count is not 20.",
+      "name": "closure_gate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Closure issue count is not zero.",
+      "name": "closure_issue_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Submission preparation is not closed.",
+      "name": "submission_preparation_not_closed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Public release summary readiness is false.",
+      "name": "public_release_summary_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Real Kaggle submission readiness is not false.",
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Kaggle submission flag is not false.",
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "public_safe boundary is not true.",
+      "name": "boundary_not_public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "deterministic boundary is not true.",
+      "name": "boundary_not_deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "local_only boundary is not true.",
+      "name": "boundary_not_local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "dry_run_only boundary is not true.",
+      "name": "boundary_not_dry_run_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "external_api_dependency is not false.",
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "private_core_exposure is not false.",
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "legal_certification is not false.",
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    }
+  ],
+  "summary_kind": "PUBLIC_RELEASE_SUMMARY",
+  "title": "ARC AGI3 Milestone #5 Public Release Summary v1",
+  "warning_count": 0
+}
