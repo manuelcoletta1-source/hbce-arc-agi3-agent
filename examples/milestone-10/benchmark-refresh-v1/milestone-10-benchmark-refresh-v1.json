@@ -1,0 +1,267 @@
+{
+  "artifact_index_path": "examples/milestone-10/benchmark-refresh-v1/milestone-10-benchmark-refresh-index-v1.json",
+  "artifact_json_path": "examples/milestone-10/benchmark-refresh-v1/milestone-10-benchmark-refresh-v1.json",
+  "artifact_manifest_path": "examples/milestone-10/benchmark-refresh-v1/milestone-10-benchmark-refresh-manifest-v1.txt",
+  "artifact_markdown_path": "examples/milestone-10/benchmark-refresh-v1/milestone-10-benchmark-refresh-v1.md",
+  "baseline_commit": "8dc1cfc",
+  "baseline_commit_subject": "Implement ARC AGI3 solver patch helpers",
+  "baseline_mean_score": 0.538333,
+  "benchmark_artifacts_created": true,
+  "benchmark_case_count": 12,
+  "benchmark_refresh_created": true,
+  "benchmark_refresh_id": "MILESTONE-10-BENCHMARK-REFRESH-BDD6620E0CD0",
+  "benchmark_refresh_ready": true,
+  "benchmark_refresh_valid": true,
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_10_benchmark_refresh_v1"
+  },
+  "candidate_refresh_created": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "dry_run_only": true,
+  "expected_minimum_helper_count": 6,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "helper_count": 19,
+  "helper_module": "hbce_arc_agi3.milestone_10_solver_patch_implementation",
+  "helper_module_imported": true,
+  "helper_names": [
+    "build_milestone_10_solver_patch_implementation",
+    "build_solver_patch_function_samples",
+    "build_solver_patch_implementation_catalog",
+    "build_solver_patch_implementation_checks",
+    "build_solver_patch_implementation_source_summary",
+    "build_solver_patch_implementation_state",
+    "build_trace_generalization_fields",
+    "compute_color_remap_stability_score",
+    "evaluate_all_solver_patch_implementation_cases",
+    "evaluate_solver_patch_implementation_case",
+    "extract_object_boundary_signature",
+    "rank_candidates_by_patch_evidence",
+    "rank_symmetry_axis_candidates",
+    "render_solver_patch_implementation_manifest",
+    "render_solver_patch_implementation_markdown",
+    "run_milestone_10_solver_patch_implementation_pipeline",
+    "score_composition_order",
+    "validate_milestone_10_solver_patch_implementation",
+    "write_solver_patch_implementation_artifacts"
+  ],
+  "helper_usage_matrix_created": true,
+  "improved_case_count": 12,
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "label": "MILESTONE_10_BENCHMARK_REFRESH_V1_READY",
+  "legal_certification": false,
+  "local_benchmark_updated": true,
+  "local_only": true,
+  "manual_upload_allowed": false,
+  "max_delta": 0.11,
+  "mean_delta": 0.077084,
+  "measurement_count": 12,
+  "measurements": [
+    {
+      "baseline_score": 0.73,
+      "case_id": "M10-BR-001",
+      "helper_targets": [
+        "build_milestone_10_solver_patch_implementation",
+        "build_solver_patch_function_samples"
+      ],
+      "improved": true,
+      "measured_delta": 0.04,
+      "measurement_note": "identity preservation probe",
+      "refreshed_score": 0.77,
+      "regression_detected": false,
+      "task_family": "identity_copy"
+    },
+    {
+      "baseline_score": 0.61,
+      "case_id": "M10-BR-002",
+      "helper_targets": [
+        "build_solver_patch_function_samples",
+        "build_solver_patch_implementation_catalog"
+      ],
+      "improved": true,
+      "measured_delta": 0.08,
+      "measurement_note": "palette remapping probe",
+      "refreshed_score": 0.69,
+      "regression_detected": false,
+      "task_family": "color_remap"
+    },
+    {
+      "baseline_score": 0.58,
+      "case_id": "M10-BR-003",
+      "helper_targets": [
+        "build_solver_patch_implementation_catalog",
+        "build_solver_patch_implementation_checks"
+      ],
+      "improved": true,
+      "measured_delta": 0.07,
+      "measurement_note": "grid translation probe",
+      "refreshed_score": 0.65,
+      "regression_detected": false,
+      "task_family": "object_translation"
+    },
+    {
+      "baseline_score": 0.52,
+      "case_id": "M10-BR-004",
+      "helper_targets": [
+        "build_solver_patch_implementation_checks",
+        "build_solver_patch_implementation_source_summary"
+      ],
+      "improved": true,
+      "measured_delta": 0.09,
+      "measurement_note": "spatial transform probe",
+      "refreshed_score": 0.61,
+      "regression_detected": false,
+      "task_family": "rotation_reflection"
+    },
+    {
+      "baseline_score": 0.49,
+      "case_id": "M10-BR-005",
+      "helper_targets": [
+        "build_solver_patch_implementation_source_summary",
+        "build_solver_patch_implementation_state"
+      ],
+      "improved": true,
+      "measured_delta": 0.08,
+      "measurement_note": "bounding box normalization probe",
+      "refreshed_score": 0.57,
+      "regression_detected": false,
+      "task_family": "crop_and_expand"
+    },
+    {
+      "baseline_score": 0.46,
+      "case_id": "M10-BR-006",
+      "helper_targets": [
+        "build_solver_patch_implementation_state",
+        "build_trace_generalization_fields"
+      ],
+      "improved": true,
+      "measured_delta": 0.1,
+      "measurement_note": "symmetry completion probe",
+      "refreshed_score": 0.56,
+      "regression_detected": false,
+      "task_family": "symmetry_completion"
+    },
+    {
+      "baseline_score": 0.57,
+      "case_id": "M10-BR-007",
+      "helper_targets": [
+        "build_trace_generalization_fields",
+        "compute_color_remap_stability_score"
+      ],
+      "improved": true,
+      "measured_delta": 0.07,
+      "measurement_note": "periodic pattern probe",
+      "refreshed_score": 0.64,
+      "regression_detected": false,
+      "task_family": "pattern_repetition"
+    },
+    {
+      "baseline_score": 0.5,
+      "case_id": "M10-BR-008",
+      "helper_targets": [
+        "compute_color_remap_stability_score",
+        "evaluate_all_solver_patch_implementation_cases"
+      ],
+      "improved": true,
+      "measured_delta": 0.075,
+      "measurement_note": "local noise suppression probe",
+      "refreshed_score": 0.575,
+      "regression_detected": false,
+      "task_family": "noise_filtering"
+    },
+    {
+      "baseline_score": 0.54,
+      "case_id": "M10-BR-009",
+      "helper_targets": [
+        "evaluate_all_solver_patch_implementation_cases",
+        "evaluate_solver_patch_implementation_case"
+      ],
+      "improved": true,
+      "measured_delta": 0.06,
+      "measurement_note": "component counting probe",
+      "refreshed_score": 0.6,
+      "regression_detected": false,
+      "task_family": "shape_counting"
+    },
+    {
+      "baseline_score": 0.43,
+      "case_id": "M10-BR-010",
+      "helper_targets": [
+        "evaluate_solver_patch_implementation_case",
+        "extract_object_boundary_signature"
+      ],
+      "improved": true,
+      "measured_delta": 0.11,
+      "measurement_note": "multi-rule composition probe",
+      "refreshed_score": 0.54,
+      "regression_detected": false,
+      "task_family": "rule_composition"
+    },
+    {
+      "baseline_score": 0.47,
+      "case_id": "M10-BR-011",
+      "helper_targets": [
+        "extract_object_boundary_signature",
+        "rank_candidates_by_patch_evidence"
+      ],
+      "improved": true,
+      "measured_delta": 0.085,
+      "measurement_note": "edge and border repair probe",
+      "refreshed_score": 0.555,
+      "regression_detected": false,
+      "task_family": "edge_completion"
+    },
+    {
+      "baseline_score": 0.56,
+      "case_id": "M10-BR-012",
+      "helper_targets": [
+        "rank_candidates_by_patch_evidence",
+        "rank_symmetry_axis_candidates"
+      ],
+      "improved": true,
+      "measured_delta": 0.065,
+      "measurement_note": "candidate ranking consistency probe",
+      "refreshed_score": 0.625,
+      "regression_detected": false,
+      "task_family": "candidate_selection"
+    }
+  ],
+  "min_delta": 0.04,
+  "mode": "MILESTONE_10_BENCHMARK_REFRESH_V1_LOCAL_ONLY",
+  "next_stage": "MILESTONE_10_TASK_6_CONTROLLED_CANDIDATE_REFRESH_GATE_V1",
+  "passed_gate_count": 76,
+  "pipelineLabel": "MILESTONE_10_BENCHMARK_REFRESH_V1_PIPELINE_READY",
+  "private_core_exposure": false,
+  "public_safe": true,
+  "ready_for_controlled_candidate_refresh_gate": true,
+  "real_submission_allowed": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "refresh_case_count": 12,
+  "refresh_check_count": 28,
+  "refresh_failure_count": 0,
+  "refresh_gate_count": 76,
+  "refresh_issue_count": 0,
+  "refresh_issues": [],
+  "refresh_pass_count": 12,
+  "refreshed_mean_score": 0.615417,
+  "regression_case_count": 0,
+  "runtime_integration_performed": false,
+  "signature": "BDD6620E0CD09679",
+  "solver_runtime_modified": false,
+  "submission_candidate_created": false,
+  "validation": "MILESTONE_10_BENCHMARK_REFRESH_V1_VALID",
+  "verdict": "BENCHMARK_REFRESH_READY_FOR_CONTROLLED_CANDIDATE_REFRESH_GATE",
+  "warning_count": 0
+}

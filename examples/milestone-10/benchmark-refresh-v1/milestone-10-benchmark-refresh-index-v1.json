@@ -1,0 +1,21 @@
+{
+  "artifact_json_path": "examples/milestone-10/benchmark-refresh-v1/milestone-10-benchmark-refresh-v1.json",
+  "artifact_manifest_path": "examples/milestone-10/benchmark-refresh-v1/milestone-10-benchmark-refresh-manifest-v1.txt",
+  "artifact_markdown_path": "examples/milestone-10/benchmark-refresh-v1/milestone-10-benchmark-refresh-v1.md",
+  "benchmark_refresh_id": "MILESTONE-10-BENCHMARK-REFRESH-BDD6620E0CD0",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_10_benchmark_refresh_v1"
+  },
+  "signature": "BDD6620E0CD09679",
+  "source": "milestone_10_benchmark_refresh_v1",
+  "validation": "MILESTONE_10_BENCHMARK_REFRESH_V1_VALID"
+}

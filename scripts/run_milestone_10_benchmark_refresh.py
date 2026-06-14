@@ -1,0 +1,68 @@
+from __future__ import annotations
+
+from hbce_arc_agi3.milestone_10_benchmark_refresh import run_and_write_benchmark_refresh
+
+
+def main() -> int:
+    result = run_and_write_benchmark_refresh()
+
+    print(result["pipelineLabel"])
+    print(result["label"])
+    print(result["validation"])
+    print(result["benchmark_refresh_id"])
+    print(result["signature"])
+    print(result["baseline_commit"])
+    print(result["baseline_commit_subject"])
+    print(result["mode"])
+    print(result["verdict"])
+    print(result["next_stage"])
+    print(result["helper_module"])
+    print(result["helper_module_imported"])
+    print(result["expected_minimum_helper_count"])
+    print(result["helper_count"])
+    print(result["benchmark_case_count"])
+    print(result["measurement_count"])
+    print(result["improved_case_count"])
+    print(result["regression_case_count"])
+    print(result["baseline_mean_score"])
+    print(result["refreshed_mean_score"])
+    print(result["mean_delta"])
+    print(result["min_delta"])
+    print(result["max_delta"])
+    print(result["refresh_check_count"])
+    print(result["refresh_case_count"])
+    print(result["refresh_pass_count"])
+    print(result["refresh_failure_count"])
+    print(result["refresh_gate_count"])
+    print(result["passed_gate_count"])
+    print(result["refresh_issue_count"])
+    print(result["warning_count"])
+    print(result["benchmark_refresh_created"])
+    print(result["benchmark_refresh_ready"])
+    print(result["benchmark_refresh_valid"])
+    print(result["helper_usage_matrix_created"])
+    print(result["local_benchmark_updated"])
+    print(result["benchmark_artifacts_created"])
+    print(result["ready_for_controlled_candidate_refresh_gate"])
+    print(result["runtime_integration_performed"])
+    print(result["solver_runtime_modified"])
+    print(result["candidate_refresh_created"])
+    print(result["submission_candidate_created"])
+    print(result["real_submission_decision"])
+    print(result["real_submission_allowed"])
+    print(result["manual_upload_allowed"])
+    print(result["kaggle_authentication_allowed"])
+    print(result["kaggle_submission_sent"])
+    print(result["fail_closed_required"])
+    print(result["fail_closed_active"])
+    print(result["artifact_json_path"])
+    print(result["artifact_markdown_path"])
+    print(result["artifact_manifest_path"])
+    print(result["artifact_index_path"])
+    print(result["boundary"])
+
+    return 0 if result["benchmark_refresh_valid"] else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
