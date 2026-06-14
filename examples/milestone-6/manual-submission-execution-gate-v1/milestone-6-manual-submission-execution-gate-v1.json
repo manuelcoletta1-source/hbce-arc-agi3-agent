@@ -1,0 +1,321 @@
+{
+  "baseline_commit": "47f2e00 Add ARC AGI3 real submission precheck gate",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "gate_count": 21,
+  "gate_id": "MILESTONE-6-MANUAL-SUBMISSION-GATE-AB82FA104158",
+  "gate_mode": "MANUAL_SUBMISSION_EXECUTION_GATE_ONLY_NO_UPLOAD",
+  "gate_scope": "DOCUMENT_MANUAL_EXECUTION_REQUIREMENTS_NO_API_NO_UPLOAD",
+  "gate_verdict": "MANUAL_EXECUTION_GATE_READY_REAL_SUBMISSION_NOT_PERFORMED",
+  "issue_count": 0,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "manual_execution_gate_ready": true,
+  "manual_execution_gate_required": true,
+  "manual_execution_gates": [
+    {
+      "name": "precheck_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "precheck_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "precheck_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "precheck_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_granted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_execution_gate_required_by_precheck",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_execution_gate_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_execution_gate_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_confirmations_defined",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_execution_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "secrets_required_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "manual_execution_index": {
+    "baseline_commit": "47f2e00 Add ARC AGI3 real submission precheck gate",
+    "depends_on_precheck": "MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7",
+    "external_api_dependency": false,
+    "gate_mode": "MANUAL_SUBMISSION_EXECUTION_GATE_ONLY_NO_UPLOAD",
+    "gate_scope": "DOCUMENT_MANUAL_EXECUTION_REQUIREMENTS_NO_API_NO_UPLOAD",
+    "gate_verdict": "MANUAL_EXECUTION_GATE_READY_REAL_SUBMISSION_NOT_PERFORMED",
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_execution_gate_ready": true,
+    "manual_execution_gate_required": true,
+    "manual_execution_performed": false,
+    "milestone": "Milestone #6",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "task": "Task 5",
+    "upload_performed": false
+  },
+  "manual_execution_issues": [
+    {
+      "active": false,
+      "name": "precheck_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "precheck_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "precheck_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "precheck_not_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_granted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_execution_gate_not_required_by_precheck",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_execution_gate_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_execution_gate_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_confirmations_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_execution_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "secrets_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    }
+  ],
+  "manual_execution_performed": false,
+  "manual_execution_record": {
+    "boundary_intact": true,
+    "contains_api_keys": false,
+    "external_api_dependency": false,
+    "gate_mode": "MANUAL_SUBMISSION_EXECUTION_GATE_ONLY_NO_UPLOAD",
+    "gate_scope": "DOCUMENT_MANUAL_EXECUTION_REQUIREMENTS_NO_API_NO_UPLOAD",
+    "gate_verdict": "MANUAL_EXECUTION_GATE_READY_REAL_SUBMISSION_NOT_PERFORMED",
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_confirmation_count": 6,
+    "manual_confirmations": [
+      "human_operator_must_review_submission_candidate",
+      "human_operator_must_review_kaggle_rules",
+      "human_operator_must_use_kaggle_ui_or_cli_manually",
+      "human_operator_must_not_expose_private_core",
+      "human_operator_must_not_use_runtime_secrets",
+      "human_operator_accepts_real_submission_responsibility"
+    ],
+    "manual_execution_gate_ready": true,
+    "manual_execution_gate_required": true,
+    "manual_execution_performed": false,
+    "next_allowed_stage": "OPTIONAL_HUMAN_RUN_KAGGLE_SUBMISSION_OUTSIDE_AGENT",
+    "operator_approval_granted": true,
+    "precheck_id": "MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7",
+    "precheck_passed": true,
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "secrets_required": false,
+    "upload_performed": false
+  },
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_6_manual_submission_execution_gate_v1"
+  },
+  "milestone": "Milestone #6",
+  "next_allowed_stage": "OPTIONAL_HUMAN_RUN_KAGGLE_SUBMISSION_OUTSIDE_AGENT",
+  "operator_approval_granted": true,
+  "passed_gate_count": 21,
+  "precheck_id": "MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7",
+  "precheck_passed": true,
+  "precheck_signature": "3273A65E5AF7AFB7",
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "signature": "AB82FA104158706A",
+  "status": "MILESTONE_6_MANUAL_SUBMISSION_EXECUTION_GATE_READY",
+  "task": "Task 5",
+  "title": "Manual Submission Execution Gate v1",
+  "upload_performed": false,
+  "warning_count": 0
+}

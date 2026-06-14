@@ -1,0 +1,21 @@
+{
+  "baseline_commit": "47f2e00 Add ARC AGI3 real submission precheck gate",
+  "depends_on_precheck": "MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7",
+  "external_api_dependency": false,
+  "gate_mode": "MANUAL_SUBMISSION_EXECUTION_GATE_ONLY_NO_UPLOAD",
+  "gate_scope": "DOCUMENT_MANUAL_EXECUTION_REQUIREMENTS_NO_API_NO_UPLOAD",
+  "gate_verdict": "MANUAL_EXECUTION_GATE_READY_REAL_SUBMISSION_NOT_PERFORMED",
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "manual_execution_gate_ready": true,
+  "manual_execution_gate_required": true,
+  "manual_execution_performed": false,
+  "milestone": "Milestone #6",
+  "private_core_exposure": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "task": "Task 5",
+  "upload_performed": false
+}

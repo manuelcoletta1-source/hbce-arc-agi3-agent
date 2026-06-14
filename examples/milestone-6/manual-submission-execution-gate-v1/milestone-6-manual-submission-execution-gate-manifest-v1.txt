@@ -1,0 +1,23 @@
+ARC AGI3 MILESTONE 6 MANUAL SUBMISSION EXECUTION GATE MANIFEST v1
+gate_id=MILESTONE-6-MANUAL-SUBMISSION-GATE-AB82FA104158
+signature=AB82FA104158706A
+status=MILESTONE_6_MANUAL_SUBMISSION_EXECUTION_GATE_READY
+baseline_commit=47f2e00 Add ARC AGI3 real submission precheck gate
+gate_mode=MANUAL_SUBMISSION_EXECUTION_GATE_ONLY_NO_UPLOAD
+gate_verdict=MANUAL_EXECUTION_GATE_READY_REAL_SUBMISSION_NOT_PERFORMED
+gate_count=21
+passed_gate_count=21
+issue_count=0
+manual_execution_gate_ready=True
+manual_execution_gate_required=True
+manual_execution_performed=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+real_submission_created=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
