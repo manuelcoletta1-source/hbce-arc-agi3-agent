@@ -1,0 +1,592 @@
+{
+  "baseline_commit": "8e26ed1 Close ARC AGI3 milestone 6 real submission readiness",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "competitive_claim_absent": true,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "manual_submission_allowed": false,
+  "manual_upload_performed": false,
+  "measurement_count": 6,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_7_competitive_solver_improvement_plan_v1"
+  },
+  "milestone": "Milestone #7",
+  "milestone_6_closure_source": {
+    "actual_status": "MILESTONE_6_REAL_SUBMISSION_READINESS_CLOSURE_READY",
+    "artifact_id": "MILESTONE-6-READINESS-CLOSURE-F553E38B9FE9",
+    "expected_status": "MILESTONE_6_REAL_SUBMISSION_READINESS_CLOSURE_READY",
+    "name": "milestone_6_real_submission_readiness_closure",
+    "path": "examples/milestone-6/real-submission-readiness-closure-v1/milestone-6-real-submission-readiness-closure-v1.json",
+    "present": true,
+    "ready": true,
+    "sha256": "71cf56a37fb72dfa635f76a78e024d47e3c27d005100c1c9fb6ed627be0e7958",
+    "sha256_16": "71CF56A37FB72DFA"
+  },
+  "milestone_7_open": true,
+  "milestone_7_tasks": [
+    {
+      "name": "Competitive Solver Improvement Plan v1",
+      "output": "Milestone 7 plan, gates, workstreams, and no-upload boundary.",
+      "status": "CURRENT_TASK_READY",
+      "task": 1
+    },
+    {
+      "name": "Baseline Solver Failure Taxonomy v1",
+      "output": "Failure classes from current local solver behavior.",
+      "status": "PLANNED",
+      "task": 2
+    },
+    {
+      "name": "Task-Family Solver Expansion v1",
+      "output": "Family-specific deterministic solver improvements.",
+      "status": "PLANNED",
+      "task": 3
+    },
+    {
+      "name": "Candidate Generator Improvement v1",
+      "output": "Improved candidate generation and candidate diversity guard.",
+      "status": "PLANNED",
+      "task": 4
+    },
+    {
+      "name": "Ranker Evidence Upgrade v1",
+      "output": "Evidence-aware ranker signals and selection audit.",
+      "status": "PLANNED",
+      "task": 5
+    },
+    {
+      "name": "Regression Benchmark v1",
+      "output": "Regression proof that solver changes preserve public-safe boundary.",
+      "status": "PLANNED",
+      "task": 6
+    },
+    {
+      "name": "Local Score Improvement Report v1",
+      "output": "Measured improvement report from local deterministic evaluation.",
+      "status": "PLANNED",
+      "task": 7
+    },
+    {
+      "name": "Submission Candidate Rebuild v1",
+      "output": "Rebuilt local candidate after solver improvements.",
+      "status": "PLANNED",
+      "task": 8
+    },
+    {
+      "name": "Final Competitive Readiness Audit v1",
+      "output": "Final audit before any manual submission decision.",
+      "status": "PLANNED",
+      "task": 9
+    },
+    {
+      "name": "Manual Submission Decision Closure v1",
+      "output": "Human decision closure with upload still not automatic.",
+      "status": "PLANNED",
+      "task": 10
+    }
+  ],
+  "next_allowed_stage": "MILESTONE_7_TASK_2_BASELINE_SOLVER_FAILURE_TAXONOMY",
+  "passed_gate_count": 34,
+  "plan_gate_count": 34,
+  "plan_gates": [
+    {
+      "name": "milestone_6_closure_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_6_closure_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_6_closure_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_6_closed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_6_blocks_real_submission",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_6_solver_improvement_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_6_solver_improvement_not_completed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_7_open",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "workstream_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_workstreams_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "priority_p0_workstreams_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_sequence_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_1_current_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "measurable_outputs_defined",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "competitive_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_submission_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "plan_id": "MILESTONE-7-COMPETITIVE-SOLVER-PLAN-E11E391652C7",
+  "plan_index": {
+    "baseline_commit": "8e26ed1 Close ARC AGI3 milestone 6 real submission readiness",
+    "competitive_claim_absent": true,
+    "depends_on_milestone_6_closure": "MILESTONE-6-READINESS-CLOSURE-F553E38B9FE9",
+    "external_api_dependency": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_submission_allowed": false,
+    "manual_upload_performed": false,
+    "milestone": "Milestone #7",
+    "milestone_7_open": true,
+    "next_allowed_stage": "MILESTONE_7_TASK_2_BASELINE_SOLVER_FAILURE_TAXONOMY",
+    "plan_locked": true,
+    "plan_mode": "COMPETITIVE_SOLVER_IMPROVEMENT_PLAN_ONLY_NO_UPLOAD",
+    "plan_ready": true,
+    "plan_scope": "OPEN_MILESTONE_7_FOR_MEASURABLE_SOLVER_IMPROVEMENT_BEFORE_REAL_SUBMISSION",
+    "plan_verdict": "MILESTONE_7_OPEN_COMPETITIVE_SOLVER_IMPROVEMENT_REQUIRED",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "solver_improvement_required": true,
+    "task": "Task 1",
+    "task_count": 10,
+    "upload_performed": false,
+    "workstream_count": 6
+  },
+  "plan_issue_count": 0,
+  "plan_issues": [
+    {
+      "active": false,
+      "name": "milestone_6_closure_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_6_closure_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_6_closure_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_6_not_closed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_6_allows_real_submission",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_6_solver_improvement_not_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_6_solver_improvement_already_completed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_7_not_open",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "workstream_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "workstream_not_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "priority_p0_workstreams_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_sequence_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_1_not_current_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "measurable_outputs_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "competitive_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_submission_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    }
+  ],
+  "plan_locked": true,
+  "plan_mode": "COMPETITIVE_SOLVER_IMPROVEMENT_PLAN_ONLY_NO_UPLOAD",
+  "plan_ready": true,
+  "plan_record": {
+    "boundary_intact": true,
+    "competitive_claim_absent": true,
+    "contains_api_keys": false,
+    "external_api_dependency": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_submission_allowed": false,
+    "manual_upload_performed": false,
+    "measurement_count": 6,
+    "milestone_6_closed": true,
+    "milestone_6_closure_id": "MILESTONE-6-READINESS-CLOSURE-F553E38B9FE9",
+    "milestone_6_solver_improvement_completed": false,
+    "milestone_6_solver_improvement_required": true,
+    "milestone_7_open": true,
+    "next_allowed_stage": "MILESTONE_7_TASK_2_BASELINE_SOLVER_FAILURE_TAXONOMY",
+    "plan_locked": true,
+    "plan_mode": "COMPETITIVE_SOLVER_IMPROVEMENT_PLAN_ONLY_NO_UPLOAD",
+    "plan_ready": true,
+    "plan_scope": "OPEN_MILESTONE_7_FOR_MEASURABLE_SOLVER_IMPROVEMENT_BEFORE_REAL_SUBMISSION",
+    "plan_verdict": "MILESTONE_7_OPEN_COMPETITIVE_SOLVER_IMPROVEMENT_REQUIRED",
+    "priority_p0_count": 3,
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "required_workstream_count": 6,
+    "solver_improvement_required": true,
+    "task_count": 10,
+    "task_sequence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "upload_performed": false,
+    "workstream_count": 6
+  },
+  "plan_scope": "OPEN_MILESTONE_7_FOR_MEASURABLE_SOLVER_IMPROVEMENT_BEFORE_REAL_SUBMISSION",
+  "plan_verdict": "MILESTONE_7_OPEN_COMPETITIVE_SOLVER_IMPROVEMENT_REQUIRED",
+  "priority_p0_count": 3,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "required_workstream_count": 6,
+  "signature": "E11E391652C71EF6",
+  "solver_improvement_required": true,
+  "status": "MILESTONE_7_COMPETITIVE_SOLVER_IMPROVEMENT_PLAN_READY",
+  "task": "Task 1",
+  "task_count": 10,
+  "title": "Competitive Solver Improvement Plan v1",
+  "upload_performed": false,
+  "warning_count": 0,
+  "workstream_count": 6,
+  "workstreams": [
+    {
+      "goal": "Map current solver failures into deterministic, actionable categories.",
+      "measurement": "Produce a local failure taxonomy with closed and open failure classes.",
+      "name": "baseline_failure_taxonomy",
+      "priority": "P0",
+      "required": true
+    },
+    {
+      "goal": "Expand solver coverage by task family instead of random one-off hacks.",
+      "measurement": "Add family-specific improvement records and regression-safe solver paths.",
+      "name": "task_family_solver_expansion",
+      "priority": "P0",
+      "required": true
+    },
+    {
+      "goal": "Improve candidate diversity and correctness before ranking.",
+      "measurement": "Increase deterministic valid candidate count without increasing unsafe fallbacks.",
+      "name": "candidate_generator_improvement",
+      "priority": "P0",
+      "required": true
+    },
+    {
+      "goal": "Make the ranker prefer stronger evidence-backed candidates.",
+      "measurement": "Track ranker evidence fields and compare candidate selection before and after changes.",
+      "name": "ranker_evidence_upgrade",
+      "priority": "P1",
+      "required": true
+    },
+    {
+      "goal": "Keep the full pipeline green while changing solver behavior.",
+      "measurement": "Full suite remains green and submission/upload/authentication flags remain false.",
+      "name": "regression_benchmark",
+      "priority": "P1",
+      "required": true
+    },
+    {
+      "goal": "Permit a later manual submission decision only after measurable solver improvement.",
+      "measurement": "Produce a final competitive readiness audit with no unsupported competitive claim.",
+      "name": "competitive_readiness_audit",
+      "priority": "P2",
+      "required": true
+    }
+  ]
+}

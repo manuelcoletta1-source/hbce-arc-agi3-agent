@@ -1,0 +1,53 @@
+ARC AGI3 MILESTONE 7 COMPETITIVE SOLVER IMPROVEMENT PLAN MANIFEST v1
+plan_id=MILESTONE-7-COMPETITIVE-SOLVER-PLAN-E11E391652C7
+signature=E11E391652C71EF6
+status=MILESTONE_7_COMPETITIVE_SOLVER_IMPROVEMENT_PLAN_READY
+baseline_commit=8e26ed1 Close ARC AGI3 milestone 6 real submission readiness
+plan_mode=COMPETITIVE_SOLVER_IMPROVEMENT_PLAN_ONLY_NO_UPLOAD
+plan_verdict=MILESTONE_7_OPEN_COMPETITIVE_SOLVER_IMPROVEMENT_REQUIRED
+next_allowed_stage=MILESTONE_7_TASK_2_BASELINE_SOLVER_FAILURE_TAXONOMY
+workstream_count=6
+required_workstream_count=6
+priority_p0_count=3
+measurement_count=6
+task_count=10
+plan_gate_count=34
+passed_gate_count=34
+plan_issue_count=0
+plan_ready=True
+plan_locked=True
+milestone_7_open=True
+solver_improvement_required=True
+competitive_claim_absent=True
+manual_submission_allowed=False
+manual_upload_performed=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+real_submission_created=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+WORKSTREAMS
+P0 baseline_failure_taxonomy required=True measurement=Produce a local failure taxonomy with closed and open failure classes.
+P0 task_family_solver_expansion required=True measurement=Add family-specific improvement records and regression-safe solver paths.
+P0 candidate_generator_improvement required=True measurement=Increase deterministic valid candidate count without increasing unsafe fallbacks.
+P1 ranker_evidence_upgrade required=True measurement=Track ranker evidence fields and compare candidate selection before and after changes.
+P1 regression_benchmark required=True measurement=Full suite remains green and submission/upload/authentication flags remain false.
+P2 competitive_readiness_audit required=True measurement=Produce a final competitive readiness audit with no unsupported competitive claim.
+
+TASKS
+Task 1 Competitive Solver Improvement Plan v1 status=CURRENT_TASK_READY output=Milestone 7 plan, gates, workstreams, and no-upload boundary.
+Task 2 Baseline Solver Failure Taxonomy v1 status=PLANNED output=Failure classes from current local solver behavior.
+Task 3 Task-Family Solver Expansion v1 status=PLANNED output=Family-specific deterministic solver improvements.
+Task 4 Candidate Generator Improvement v1 status=PLANNED output=Improved candidate generation and candidate diversity guard.
+Task 5 Ranker Evidence Upgrade v1 status=PLANNED output=Evidence-aware ranker signals and selection audit.
+Task 6 Regression Benchmark v1 status=PLANNED output=Regression proof that solver changes preserve public-safe boundary.
+Task 7 Local Score Improvement Report v1 status=PLANNED output=Measured improvement report from local deterministic evaluation.
+Task 8 Submission Candidate Rebuild v1 status=PLANNED output=Rebuilt local candidate after solver improvements.
+Task 9 Final Competitive Readiness Audit v1 status=PLANNED output=Final audit before any manual submission decision.
+Task 10 Manual Submission Decision Closure v1 status=PLANNED output=Human decision closure with upload still not automatic.
