@@ -1,0 +1,58 @@
+# ARC AGI3 Milestone #6 - Submission Candidate Final Audit v1
+
+- status: MILESTONE_6_SUBMISSION_CANDIDATE_FINAL_AUDIT_READY
+- audit_id: MILESTONE-6-SUBMISSION-CANDIDATE-AUDIT-EADE0C77C951
+- signature: EADE0C77C9519045
+- baseline_commit: d475a03 Add ARC AGI3 frozen package integrity verification
+- audit_mode: SUBMISSION_CANDIDATE_FINAL_AUDIT_ONLY_NO_UPLOAD
+- audit_scope: FINAL_REVIEW_OF_FROZEN_CANDIDATE_INTEGRITY_AND_BOUNDARY_NO_EXECUTION
+- audit_verdict: FINAL_AUDIT_PASS_REAL_SUBMISSION_STILL_BLOCKED_PENDING_SOLVER_IMPROVEMENT
+- audited_source_count: 6
+- ready_source_count: 6
+- source_hash_count: 6
+- audit_gate_count: 37
+- passed_gate_count: 37
+- audit_issue_count: 0
+- audit_ready: True
+- audit_locked: True
+- solver_improvement_required: True
+- competitive_claim_absent: True
+- manual_upload_required: True
+- real_submission_allowed: False
+- kaggle_submission_sent: False
+- upload_performed: False
+
+## Audited sources
+
+- frozen_package_integrity_verification: ready=True sha256_16=449FD23635957DDC artifact_id=MILESTONE-6-FROZEN-PACKAGE-INTEGRITY-4C2880500A59
+- real_submission_package_freeze: ready=True sha256_16=BEB93CB3C73A732A artifact_id=MILESTONE-6-REAL-SUBMISSION-FREEZE-9E37415967F8
+- manual_submission_execution_gate: ready=True sha256_16=72EB008A58BB882B artifact_id=MILESTONE-6-MANUAL-SUBMISSION-GATE-AB82FA104158
+- real_submission_precheck_gate: ready=True sha256_16=8CDC6485AF9D19A7 artifact_id=MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7
+- submission_candidate_dry_run_package: ready=True sha256_16=15D64BEFB2AA4A24 artifact_id=MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87
+- public_release_summary: ready=True sha256_16=D69B74902B9639EA artifact_id=MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F
+
+## Final audit decision
+
+The candidate is structurally ready, frozen, and integrity-verified. Real submission remains blocked pending solver improvement and explicit human manual execution.
+
+## Markers
+
+ARC_AGI3_MILESTONE_6_SUBMISSION_CANDIDATE_FINAL_AUDIT_V1_READY=true
+ARC_AGI3_MILESTONE_6_SUBMISSION_CANDIDATE_FINAL_AUDIT_VALID=true
+ARC_AGI3_MILESTONE_6_AUDIT_MODE=SUBMISSION_CANDIDATE_FINAL_AUDIT_ONLY_NO_UPLOAD
+ARC_AGI3_MILESTONE_6_AUDIT_VERDICT=FINAL_AUDIT_PASS_REAL_SUBMISSION_STILL_BLOCKED_PENDING_SOLVER_IMPROVEMENT
+ARC_AGI3_MILESTONE_6_AUDIT_READY=true
+ARC_AGI3_MILESTONE_6_AUDIT_LOCKED=true
+ARC_AGI3_MILESTONE_6_SOLVER_IMPROVEMENT_REQUIRED=true
+ARC_AGI3_MILESTONE_6_COMPETITIVE_CLAIM_ABSENT=true
+ARC_AGI3_MILESTONE_6_MANUAL_UPLOAD_REQUIRED=true
+ARC_AGI3_MILESTONE_6_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_6_READY_FOR_REAL_KAGGLE_SUBMISSION=false
+ARC_AGI3_MILESTONE_6_REAL_SUBMISSION_CREATED=false
+ARC_AGI3_MILESTONE_6_UPLOAD_PERFORMED=false
+ARC_AGI3_MILESTONE_6_KAGGLE_AUTHENTICATION_PERFORMED=false
+ARC_AGI3_MILESTONE_6_BASELINE_INTEGRITY_COMMIT=d475a03
+ARC_AGI3_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
