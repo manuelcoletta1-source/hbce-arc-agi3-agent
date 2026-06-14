@@ -1,0 +1,41 @@
+ARC AGI3 MILESTONE 7 BASELINE SOLVER FAILURE TAXONOMY MANIFEST v1
+taxonomy_id=MILESTONE-7-FAILURE-TAXONOMY-2F64CB679DF9
+signature=2F64CB679DF90127
+status=MILESTONE_7_BASELINE_SOLVER_FAILURE_TAXONOMY_READY
+baseline_commit=70a8d44 Open ARC AGI3 milestone 7 competitive solver improvement
+taxonomy_mode=BASELINE_SOLVER_FAILURE_TAXONOMY_ONLY_NO_UPLOAD
+taxonomy_verdict=BASELINE_FAILURE_TAXONOMY_READY_SOLVER_IMPROVEMENT_REQUIRED
+next_allowed_stage=MILESTONE_7_TASK_3_TASK_FAMILY_SOLVER_EXPANSION
+failure_class_count=7
+open_failure_count=7
+closed_failure_count=0
+priority_p0_count=4
+target_task_count=5
+taxonomy_gate_count=40
+passed_gate_count=40
+taxonomy_issue_count=0
+taxonomy_ready=True
+taxonomy_locked=True
+solver_improvement_required=True
+competitive_claim_absent=True
+manual_submission_allowed=False
+manual_upload_performed=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+real_submission_created=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+FAILURE_CLASSES
+P0 color_transform_undercoverage family=color_mapping open=True closed=False target_task=Task 3 Task-Family Solver Expansion v1 measurement=Increase exact or partial match rate on deterministic color-family local cases.
+P0 object_segmentation_undercoverage family=object_model open=True closed=False target_task=Task 3 Task-Family Solver Expansion v1 measurement=Track object-family cases and verify deterministic object-aware candidate selection.
+P0 spatial_symmetry_undercoverage family=shape_symmetry open=True closed=False target_task=Task 3 Task-Family Solver Expansion v1 measurement=Improve deterministic local matches on symmetry and geometry families.
+P0 candidate_generator_low_diversity family=candidate_generation open=True closed=False target_task=Task 4 Candidate Generator Improvement v1 measurement=Increase deterministic valid candidate count while keeping full test suite green.
+P1 ranker_evidence_weakness family=candidate_ranking open=True closed=False target_task=Task 5 Ranker Evidence Upgrade v1 measurement=Show improved top-1 candidate selection on deterministic local benchmark cases.
+P1 regression_guard_incomplete family=regression_safety open=True closed=False target_task=Task 6 Regression Benchmark v1 measurement=Full suite remains green and old deterministic artifacts remain compatible.
+P2 competitive_score_evidence_absent family=competitive_readiness open=True closed=False target_task=Task 7 Local Score Improvement Report v1 measurement=Produce a local improvement report with before/after metrics and no unsupported claim.
