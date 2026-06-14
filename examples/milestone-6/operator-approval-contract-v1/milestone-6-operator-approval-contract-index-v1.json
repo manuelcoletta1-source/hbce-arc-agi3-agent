@@ -1,0 +1,20 @@
+{
+  "baseline_commit": "5e1bd2e Add ARC AGI3 real submission decision layer",
+  "contract_mode": "OPERATOR_APPROVAL_CONTRACT_ONLY_NO_APPROVAL",
+  "contract_scope": "DEFINE_OPERATOR_APPROVAL_REQUIREMENTS_NO_UPLOAD_NO_API",
+  "contract_verdict": "OPERATOR_APPROVAL_REQUIRED_BUT_NOT_GRANTED",
+  "depends_on_decision_layer": "MILESTONE-6-REAL-SUBMISSION-DECISION-320E1E2DCDCC",
+  "external_api_dependency": false,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "milestone": "Milestone #6",
+  "operator_approval_granted": false,
+  "operator_approval_required": true,
+  "private_core_exposure": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "required_declaration_count": 8,
+  "task": "Task 2",
+  "upload_performed": false
+}

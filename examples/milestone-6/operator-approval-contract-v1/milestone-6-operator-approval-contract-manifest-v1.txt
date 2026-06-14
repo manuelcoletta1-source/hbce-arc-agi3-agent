@@ -1,0 +1,88 @@
+ARC AGI3 MILESTONE 6 OPERATOR APPROVAL CONTRACT MANIFEST v1
+contract_id=MILESTONE-6-OPERATOR-APPROVAL-CONTRACT-471934E97FAC
+signature=471934E97FAC152E
+status=MILESTONE_6_OPERATOR_APPROVAL_CONTRACT_READY
+baseline_commit=5e1bd2e Add ARC AGI3 real submission decision layer
+decision_layer_id=MILESTONE-6-REAL-SUBMISSION-DECISION-320E1E2DCDCC
+contract_mode=OPERATOR_APPROVAL_CONTRACT_ONLY_NO_APPROVAL
+contract_scope=DEFINE_OPERATOR_APPROVAL_REQUIREMENTS_NO_UPLOAD_NO_API
+contract_verdict=OPERATOR_APPROVAL_REQUIRED_BUT_NOT_GRANTED
+required_declaration_count=8
+provided_declaration_count=0
+accepted_declaration_count=0
+contract_gate_count=19
+passed_gate_count=19
+contract_issue_count=0
+warning_count=0
+operator_approval_contract_ready=True
+operator_approval_required=True
+operator_approval_granted=False
+operator_approval_received=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+real_submission_created=False
+kaggle_submission_sent=False
+upload_performed=False
+
+REQUIRED_OPERATOR_DECLARATIONS
+operator_confirms_real_submission_intent required=True provided=False accepted=False status=PENDING_EXPLICIT_OPERATOR_APPROVAL
+operator_confirms_kaggle_rules_reviewed required=True provided=False accepted=False status=PENDING_EXPLICIT_OPERATOR_APPROVAL
+operator_confirms_submission_file_reviewed required=True provided=False accepted=False status=PENDING_EXPLICIT_OPERATOR_APPROVAL
+operator_confirms_no_private_core_exposure required=True provided=False accepted=False status=PENDING_EXPLICIT_OPERATOR_APPROVAL
+operator_confirms_no_api_keys_or_secrets required=True provided=False accepted=False status=PENDING_EXPLICIT_OPERATOR_APPROVAL
+operator_confirms_no_external_api_dependency required=True provided=False accepted=False status=PENDING_EXPLICIT_OPERATOR_APPROVAL
+operator_confirms_no_legal_certification_claim required=True provided=False accepted=False status=PENDING_EXPLICIT_OPERATOR_APPROVAL
+operator_accepts_manual_submission_responsibility required=True provided=False accepted=False status=PENDING_EXPLICIT_OPERATOR_APPROVAL
+
+CONTRACT_GATES
+decision_layer_artifact_present passed=True severity=PASS
+decision_layer_ready passed=True severity=PASS
+decision_layer_valid passed=True severity=PASS
+decision_layer_blocks_submission passed=True severity=PASS
+operator_approval_required passed=True severity=PASS
+operator_approval_contract_defined passed=True severity=PASS
+required_declarations_defined passed=True severity=PASS
+required_declarations_not_granted passed=True severity=PASS
+operator_approval_not_granted passed=True severity=PASS
+real_submission_allowed_false passed=True severity=PASS
+ready_for_real_kaggle_submission_false passed=True severity=PASS
+real_submission_not_created passed=True severity=PASS
+kaggle_submission_not_sent passed=True severity=PASS
+upload_not_performed passed=True severity=PASS
+no_external_api_dependency passed=True severity=PASS
+no_secrets_or_api_keys passed=True severity=PASS
+no_private_core_exposure passed=True severity=PASS
+no_legal_certification passed=True severity=PASS
+contract_only_mode passed=True severity=PASS
+
+CONTRACT_ISSUES
+decision_layer_artifact_missing active=False severity=BLOCKING
+decision_layer_not_ready active=False severity=BLOCKING
+decision_layer_invalid active=False severity=BLOCKING
+decision_layer_allows_submission active=False severity=BLOCKING
+operator_approval_not_required active=False severity=BLOCKING
+operator_approval_contract_missing active=False severity=BLOCKING
+required_declarations_missing active=False severity=BLOCKING
+required_declarations_already_granted active=False severity=BLOCKING
+operator_approval_granted_unexpectedly active=False severity=BLOCKING
+real_submission_allowed_true active=False severity=BLOCKING
+ready_for_real_kaggle_submission_true active=False severity=BLOCKING
+real_submission_created active=False severity=BLOCKING
+kaggle_submission_already_sent active=False severity=BLOCKING
+upload_performed active=False severity=BLOCKING
+external_api_dependency_detected active=False severity=BLOCKING
+secrets_or_api_keys_detected active=False severity=BLOCKING
+private_core_exposure_detected active=False severity=BLOCKING
+legal_certification_claim_detected active=False severity=BLOCKING
+contract_mode_invalid active=False severity=BLOCKING
+
+BOUNDARY
+public_safe=true
+deterministic=true
+local_only=true
+dry_run_only=true
+external_api_dependency=false
+contains_api_keys=false
+kaggle_submission_sent=false
+private_core_exposure=false
+legal_certification=false
