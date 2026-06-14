@@ -1,0 +1,12 @@
+{
+  "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+  "kaggle_submission_sent": false,
+  "submission_filename": "submission.json",
+  "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+  "task_count": 3,
+  "task_ids": [
+    "SMOKE-TASK-IDENTITY-2X2",
+    "SMOKE-TASK-COLOR-REMAP-2X2",
+    "SMOKE-TASK-OBJECT-FILL-3X3"
+  ]
+}

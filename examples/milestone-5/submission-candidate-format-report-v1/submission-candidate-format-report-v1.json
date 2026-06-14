@@ -1,0 +1,261 @@
+{
+  "baseline_commit": "47d47d2 Add ARC AGI3 local submission smoke test",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+  "candidate_preview": {
+    "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+    "kaggle_submission_sent": false,
+    "submission_filename": "submission.json",
+    "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+    "task_count": 3,
+    "task_ids": [
+      "SMOKE-TASK-IDENTITY-2X2",
+      "SMOKE-TASK-COLOR-REMAP-2X2",
+      "SMOKE-TASK-OBJECT-FILL-3X3"
+    ]
+  },
+  "candidate_task_count": 3,
+  "format_gate_count": 14,
+  "format_gates": [
+    {
+      "description": "Local submission smoke test artifact is present.",
+      "name": "local_smoke_test_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Local smoke-only candidate artifact is present.",
+      "name": "local_candidate_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Local submission smoke test exposes ready status.",
+      "name": "local_smoke_test_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate kind is smoke-only and local.",
+      "name": "local_candidate_kind_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate declares expected submission filename submission.json.",
+      "name": "submission_filename_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate declares local smoke-only no-upload mode.",
+      "name": "submission_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate has a non-empty task list.",
+      "name": "candidate_tasks_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate task count matches smoke test task count.",
+      "name": "candidate_task_count_matches_smoke_test",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Every candidate task has a valid task_id.",
+      "name": "all_task_ids_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Every candidate task has attempt_1 and attempt_2.",
+      "name": "all_attempt_keys_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Every candidate attempt is a rectangular 0-9 integer grid.",
+      "name": "all_attempt_grids_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate can be serialized as JSON.",
+      "name": "candidate_json_serializable",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate metadata preserves public safety boundary.",
+      "name": "candidate_boundary_intact",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate has not been sent to Kaggle.",
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "format_issue_count": 0,
+  "format_issues": [
+    {
+      "active": false,
+      "description": "Local submission smoke test artifact is missing.",
+      "name": "missing_local_smoke_test",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Local submission candidate artifact is missing.",
+      "name": "missing_local_candidate",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Local submission smoke test is not ready.",
+      "name": "local_smoke_test_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate kind is not the expected smoke-only local kind.",
+      "name": "candidate_kind_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate filename is not submission.json.",
+      "name": "submission_filename_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate mode is not local smoke-only no-upload.",
+      "name": "submission_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate task list is missing or empty.",
+      "name": "candidate_tasks_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate task count does not match smoke test task count.",
+      "name": "candidate_task_count_mismatch",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more task_id values are invalid.",
+      "name": "task_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more attempt_1/attempt_2 keys are missing.",
+      "name": "attempt_key_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more attempt grids are invalid.",
+      "name": "attempt_grid_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate cannot be serialized as JSON.",
+      "name": "candidate_json_not_serializable",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate public safety boundary is not intact.",
+      "name": "boundary_violation",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate appears to have been sent to Kaggle.",
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    }
+  ],
+  "kaggle_submission_sent": false,
+  "local_smoke_id": "MILESTONE-5-LOCAL-SMOKE-0F0FDCE696D4",
+  "local_smoke_signature": "0F0FDCE696D480F9",
+  "metadata": {
+    "depends_on_local_submission_smoke_test": true,
+    "milestone": "Milestone #5",
+    "report_kind": "SUBMISSION_CANDIDATE_FORMAT_REPORT",
+    "source": "milestone_5_submission_candidate_format_report_v1",
+    "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+    "task": "Task 8",
+    "upload_performed": false
+  },
+  "milestone": "Milestone #5",
+  "next_actions": [
+    "create_submission_candidate_dry_run_v1",
+    "close_milestone_5_submission_preparation_v1"
+  ],
+  "passed_gate_count": 14,
+  "ready_for_milestone_5_closure": true,
+  "ready_for_real_kaggle_submission": false,
+  "ready_for_submission_candidate_dry_run": true,
+  "report_id": "MILESTONE-5-CANDIDATE-FORMAT-05303A620DD2",
+  "signature": "05303A620DD2F362",
+  "status": "MILESTONE_5_SUBMISSION_CANDIDATE_FORMAT_REPORT_READY",
+  "submission_filename": "submission.json",
+  "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+  "task": "Task 8",
+  "task_format_statuses": [
+    {
+      "attempt_1_grid_valid": true,
+      "attempt_2_grid_valid": true,
+      "has_attempt_1": true,
+      "has_attempt_2": true,
+      "has_task_id": true,
+      "task_id": "SMOKE-TASK-IDENTITY-2X2",
+      "valid": true
+    },
+    {
+      "attempt_1_grid_valid": true,
+      "attempt_2_grid_valid": true,
+      "has_attempt_1": true,
+      "has_attempt_2": true,
+      "has_task_id": true,
+      "task_id": "SMOKE-TASK-COLOR-REMAP-2X2",
+      "valid": true
+    },
+    {
+      "attempt_1_grid_valid": true,
+      "attempt_2_grid_valid": true,
+      "has_attempt_1": true,
+      "has_attempt_2": true,
+      "has_task_id": true,
+      "task_id": "SMOKE-TASK-OBJECT-FILL-3X3",
+      "valid": true
+    }
+  ],
+  "title": "Submission Candidate Format Report v1",
+  "valid_task_count": 3,
+  "warning_count": 0
+}
