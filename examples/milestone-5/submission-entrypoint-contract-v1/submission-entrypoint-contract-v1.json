@@ -1,0 +1,138 @@
+{
+  "allowed_actions": [
+    "read_local_public_artifacts",
+    "validate_local_contract",
+    "render_contract_report",
+    "render_contract_manifest",
+    "run_local_tests",
+    "produce_dry_run_metadata"
+  ],
+  "baseline_commit": "8dfb106 Add ARC AGI3 Kaggle submission dry-run package",
+  "blocked_actions": [
+    "kaggle_api_authentication",
+    "kaggle_api_submission",
+    "network_upload",
+    "external_api_call",
+    "secret_or_token_read",
+    "private_core_export",
+    "legal_certification_claim"
+  ],
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "checks": {
+    "allowed_actions_count_is_6": true,
+    "blocked_actions_count_is_7": true,
+    "contains_api_keys_false": true,
+    "deterministic": true,
+    "dry_run_only": true,
+    "dry_run_package_kaggle_submission_not_sent": true,
+    "dry_run_package_local_only": true,
+    "dry_run_package_present": true,
+    "dry_run_package_ready": true,
+    "dry_run_package_real_submission_blocked": true,
+    "dry_run_package_validated": true,
+    "entrypoint_mode_contract_only": true,
+    "entrypoint_runtime_local_only": true,
+    "expected_output_file_is_submission_json": true,
+    "expected_outputs_count_is_4": true,
+    "external_api_call_blocked": true,
+    "external_api_dependency_false": true,
+    "kaggle_api_submission_blocked": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "network_upload_blocked": true,
+    "private_core_exposure_false": true,
+    "public_safe": true,
+    "required_inputs_count_is_5": true
+  },
+  "contract_id": "MILESTONE-5-ENTRYPOINT-CONTRACT-DDF92647579C",
+  "dry_run_package_id": "MILESTONE-5-DRY-RUN-PACKAGE-09867B871A64",
+  "dry_run_package_signature": "09867B871A647F41",
+  "entrypoint_mode": "CONTRACT_ONLY_LOCAL_DRY_RUN",
+  "entrypoint_name": "arc_agi3_submission_entrypoint",
+  "entrypoint_runtime": "PYTHON_LOCAL_ONLY",
+  "expected_output_file": "submission.json",
+  "expected_outputs": [
+    {
+      "name": "submission_candidate_path",
+      "path": "submission.json",
+      "produced_by_contract_task": false
+    },
+    {
+      "name": "entrypoint_report_json",
+      "path": "submission-entrypoint-contract-v1.json",
+      "produced_by_contract_task": true
+    },
+    {
+      "name": "entrypoint_report_markdown",
+      "path": "submission-entrypoint-contract-v1.md",
+      "produced_by_contract_task": true
+    },
+    {
+      "name": "entrypoint_contract_manifest",
+      "path": "submission-entrypoint-contract-manifest-v1.txt",
+      "produced_by_contract_task": true
+    }
+  ],
+  "expected_smoke_mode": "LOCAL_CONTRACT_SMOKE_ONLY",
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "contract_kind": "SUBMISSION_ENTRYPOINT_CONTRACT",
+    "depends_on_kaggle_submission_dry_run_package": true,
+    "milestone": "Milestone #5",
+    "source": "milestone_5_submission_entrypoint_contract_v1",
+    "submission_mode": "CONTRACT_ONLY_LOCAL_DRY_RUN",
+    "task": "Task 4",
+    "upload_performed": false
+  },
+  "milestone": "Milestone #5",
+  "next_actions": [
+    "create_public_safety_and_boundary_checklist_v1",
+    "create_kaggle_submission_preflight_report_v1",
+    "create_local_submission_smoke_test_v1",
+    "create_submission_candidate_format_report_v1",
+    "close_milestone_5_submission_preparation_v1"
+  ],
+  "ready_for_local_submission_smoke_test": true,
+  "required_inputs": [
+    {
+      "description": "Path to local repository root.",
+      "name": "repo_root",
+      "required": true
+    },
+    {
+      "description": "src/hbce_arc_agi3 local source tree.",
+      "name": "source_package",
+      "required": true
+    },
+    {
+      "description": "tests local validation suite.",
+      "name": "test_suite",
+      "required": true
+    },
+    {
+      "description": "Milestone #5 Task 3 dry-run package JSON.",
+      "name": "dry_run_package",
+      "required": true
+    },
+    {
+      "description": "Milestone #5 Task 2 public repo release index JSON.",
+      "name": "public_repo_index",
+      "required": true
+    }
+  ],
+  "signature": "DDF92647579C4F56",
+  "status": "MILESTONE_5_SUBMISSION_ENTRYPOINT_CONTRACT_READY",
+  "task": "Task 4",
+  "title": "Submission Entrypoint Contract v1"
+}
