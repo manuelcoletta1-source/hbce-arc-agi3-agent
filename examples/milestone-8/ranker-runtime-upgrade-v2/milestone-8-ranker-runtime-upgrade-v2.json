@@ -1,0 +1,1094 @@
+{
+  "baseline_commit": "3ea3687 Add ARC AGI3 candidate generator runtime upgrade",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "evidence_field_count": 8,
+  "evidence_fields": [
+    "case_id",
+    "family",
+    "operation",
+    "priority",
+    "passed",
+    "evidence_score",
+    "expected_status",
+    "actual_status"
+  ],
+  "family_count": 4,
+  "family_coverage": [
+    "color_mapping",
+    "cross_family_composition",
+    "object_model",
+    "shape_symmetry"
+  ],
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_8_ranker_runtime_upgrade_v2"
+  },
+  "milestone": "Milestone #8",
+  "next_allowed_stage": "MILESTONE_8_TASK_6_EXPANDED_RUNTIME_BENCHMARK_V2",
+  "passed_gate_count": 60,
+  "public_leaderboard_claim_absent": true,
+  "ranker_candidates_deduplicated": true,
+  "ranker_candidates_ranked": true,
+  "ranker_case_count": 8,
+  "ranker_cases": [
+    {
+      "case_id": "ranker_runtime_color_hint_top_candidate_v2",
+      "expected_status": "PASS",
+      "family": "color_mapping",
+      "operation": "ranker_runtime_family_hint_boost",
+      "priority": "P0"
+    },
+    {
+      "case_id": "ranker_runtime_object_hint_top_candidate_v2",
+      "expected_status": "PASS",
+      "family": "object_model",
+      "operation": "ranker_runtime_family_hint_boost",
+      "priority": "P0"
+    },
+    {
+      "case_id": "ranker_runtime_shape_hint_top_candidate_v2",
+      "expected_status": "PASS",
+      "family": "shape_symmetry",
+      "operation": "ranker_runtime_family_hint_boost",
+      "priority": "P0"
+    },
+    {
+      "case_id": "ranker_runtime_no_hint_score_order_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_score_candidate",
+      "priority": "P0"
+    },
+    {
+      "case_id": "ranker_runtime_deduplicate_candidates_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_deduplicate_by_signature",
+      "priority": "P0"
+    },
+    {
+      "case_id": "ranker_runtime_deterministic_order_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_stable_tie_break",
+      "priority": "P0"
+    },
+    {
+      "case_id": "ranker_runtime_rank_fields_complete_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_rank_assignment",
+      "priority": "P0"
+    },
+    {
+      "case_id": "ranker_runtime_boundary_guard_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_boundary_guard",
+      "priority": "P0"
+    }
+  ],
+  "ranker_failure_count": 0,
+  "ranker_families": [
+    "color_mapping",
+    "object_model",
+    "shape_symmetry",
+    "cross_family_composition"
+  ],
+  "ranker_family_policy_applied": true,
+  "ranker_gate_count": 60,
+  "ranker_gates": [
+    {
+      "name": "runtime_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_next_stage_matches_task_5",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_gate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_issue_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "family_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_policy_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_operation_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_ranked_candidate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "evidence_field_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_policies_priority_p0",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_priority_p0",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_expected_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "color_hint_top_candidate_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "object_hint_top_candidate_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "shape_hint_top_candidate_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "no_hint_score_order_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deduplicate_candidates_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic_order_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rank_fields_complete_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_guard_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_ranker_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_family_coverage_color_mapping",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_family_coverage_object_model",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_family_coverage_shape_symmetry",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_family_coverage_cross_family_composition",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_runtime_upgrade_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_candidates_ranked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_candidates_deduplicated",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_family_policy_applied",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "ranker_id": "MILESTONE-8-RANKER-RUNTIME-3126FE509067",
+  "ranker_index": {
+    "baseline_commit": "3ea3687 Add ARC AGI3 candidate generator runtime upgrade",
+    "depends_on_runtime": "MILESTONE-8-CANDIDATE-RUNTIME-5BE32CCFE785",
+    "external_api_dependency": false,
+    "family_count": 4,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #8",
+    "next_allowed_stage": "MILESTONE_8_TASK_6_EXPANDED_RUNTIME_BENCHMARK_V2",
+    "private_core_exposure": false,
+    "ranker_case_count": 8,
+    "ranker_failure_count": 0,
+    "ranker_locked": true,
+    "ranker_mode": "RANKER_RUNTIME_UPGRADE_V2_LOCAL_ONLY",
+    "ranker_operation_count": 8,
+    "ranker_pass_count": 8,
+    "ranker_policy_count": 4,
+    "ranker_ready": true,
+    "ranker_scope": "RANK_RUNTIME_GENERATED_CANDIDATES_WITH_FAMILY_AWARE_POLICY",
+    "ranker_verdict": "RANKER_RUNTIME_UPGRADE_V2_READY_FOR_EXPANDED_RUNTIME_BENCHMARK",
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "sample_ranked_candidate_count": 4,
+    "task": "Task 5",
+    "upload_performed": false
+  },
+  "ranker_issue_count": 0,
+  "ranker_issues": [
+    {
+      "active": false,
+      "name": "runtime_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_next_stage_mismatch",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_gate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_issue_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_policy_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_operation_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_ranked_candidate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "evidence_field_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "policy_priority_not_p0",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "case_priority_not_p0",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "case_expected_status_not_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "color_hint_top_candidate_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "object_hint_top_candidate_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "shape_hint_top_candidate_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "no_hint_score_order_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deduplicate_candidates_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic_order_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rank_fields_complete_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_guard_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_case_failure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_family_coverage_color_mapping_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_family_coverage_object_model_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_family_coverage_shape_symmetry_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_family_coverage_cross_family_composition_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_runtime_upgrade_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_candidates_not_ranked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_candidates_not_deduplicated",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_family_policy_not_applied",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only_false",
+      "severity": "BLOCKING"
+    }
+  ],
+  "ranker_locked": true,
+  "ranker_mode": "RANKER_RUNTIME_UPGRADE_V2_LOCAL_ONLY",
+  "ranker_operation_count": 8,
+  "ranker_operations": [
+    "ranker_runtime_score_candidate",
+    "ranker_runtime_family_hint_boost",
+    "ranker_runtime_operation_quality_bonus",
+    "ranker_runtime_deduplicate_by_signature",
+    "ranker_runtime_stable_tie_break",
+    "ranker_runtime_rank_assignment",
+    "ranker_runtime_cross_family_policy",
+    "ranker_runtime_boundary_guard"
+  ],
+  "ranker_pass_count": 8,
+  "ranker_policies": [
+    {
+      "family": "color_mapping",
+      "hint_weight": 30.0,
+      "policy_id": "ranker_policy_color_mapping_v2",
+      "priority": "P0"
+    },
+    {
+      "family": "object_model",
+      "hint_weight": 30.0,
+      "policy_id": "ranker_policy_object_model_v2",
+      "priority": "P0"
+    },
+    {
+      "family": "shape_symmetry",
+      "hint_weight": 30.0,
+      "policy_id": "ranker_policy_shape_symmetry_v2",
+      "priority": "P0"
+    },
+    {
+      "family": "cross_family_composition",
+      "hint_weight": 0.0,
+      "policy_id": "ranker_policy_cross_family_composition_v2",
+      "priority": "P0"
+    }
+  ],
+  "ranker_policy_count": 4,
+  "ranker_ready": true,
+  "ranker_record": {
+    "baseline_runtime_id": "MILESTONE-8-CANDIDATE-RUNTIME-5BE32CCFE785",
+    "boundary_control_count": 9,
+    "contains_api_keys": false,
+    "evidence_field_count": 8,
+    "external_api_dependency": false,
+    "family_count": 4,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "next_allowed_stage": "MILESTONE_8_TASK_6_EXPANDED_RUNTIME_BENCHMARK_V2",
+    "private_core_exposure": false,
+    "public_leaderboard_claim_absent": true,
+    "ranker_candidates_deduplicated": true,
+    "ranker_candidates_ranked": true,
+    "ranker_case_count": 8,
+    "ranker_failure_count": 0,
+    "ranker_family_policy_applied": true,
+    "ranker_locked": true,
+    "ranker_mode": "RANKER_RUNTIME_UPGRADE_V2_LOCAL_ONLY",
+    "ranker_operation_count": 8,
+    "ranker_pass_count": 8,
+    "ranker_policy_count": 4,
+    "ranker_ready": true,
+    "ranker_runtime_upgrade_created": true,
+    "ranker_scope": "RANK_RUNTIME_GENERATED_CANDIDATES_WITH_FAMILY_AWARE_POLICY",
+    "ranker_verdict": "RANKER_RUNTIME_UPGRADE_V2_READY_FOR_EXPANDED_RUNTIME_BENCHMARK",
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "regression_guard_count": 8,
+    "runtime_next_stage": "MILESTONE_8_TASK_5_RANKER_RUNTIME_UPGRADE_V2",
+    "runtime_ready": true,
+    "sample_ranked_candidate_count": 4,
+    "score_claim_absent": true,
+    "upload_performed": false
+  },
+  "ranker_results": [
+    {
+      "actual_status": "PASS",
+      "case_id": "ranker_runtime_color_hint_top_candidate_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "color_mapping",
+      "operation": "ranker_runtime_family_hint_boost",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "ranker_runtime_object_hint_top_candidate_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "object_model",
+      "operation": "ranker_runtime_family_hint_boost",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "ranker_runtime_shape_hint_top_candidate_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "shape_symmetry",
+      "operation": "ranker_runtime_family_hint_boost",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "ranker_runtime_no_hint_score_order_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_score_candidate",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "ranker_runtime_deduplicate_candidates_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_deduplicate_by_signature",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "ranker_runtime_deterministic_order_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_stable_tie_break",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "ranker_runtime_rank_fields_complete_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_rank_assignment",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "ranker_runtime_boundary_guard_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "ranker_runtime_boundary_guard",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "ranker_runtime_upgrade_created": true,
+  "ranker_scope": "RANK_RUNTIME_GENERATED_CANDIDATES_WITH_FAMILY_AWARE_POLICY",
+  "ranker_verdict": "RANKER_RUNTIME_UPGRADE_V2_READY_FOR_EXPANDED_RUNTIME_BENCHMARK",
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "regression_guard_count": 8,
+  "regression_guards": [
+    "guard_ranker_uses_generated_candidates",
+    "guard_ranker_family_hint_policy",
+    "guard_ranker_evidence_score_order",
+    "guard_ranker_deduplication",
+    "guard_ranker_stable_tie_break",
+    "guard_ranker_rank_assignment",
+    "guard_ranker_metadata_fields",
+    "guard_ranker_no_submission_side_effect"
+  ],
+  "runtime_source": {
+    "path": "examples/milestone-8/candidate-generator-runtime-upgrade-v2/milestone-8-candidate-generator-runtime-upgrade-v2.json",
+    "present": true,
+    "runtime_id": "MILESTONE-8-CANDIDATE-RUNTIME-5BE32CCFE785",
+    "sha256": "acad8b0d9f229f5233e04d7065c1060e38ac802d2b957194eb2357c4f08a0fa9",
+    "sha256_16": "ACAD8B0D9F229F52",
+    "status": "MILESTONE_8_CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2_READY"
+  },
+  "sample_ranked_candidate_count": 4,
+  "sample_ranked_candidates": [
+    {
+      "candidate_id": "runtime_v2_object_translate_largest_right",
+      "evidence_score": 74.0,
+      "family": "object_model",
+      "grid": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "operation": "runtime_object_translate_largest_right",
+      "rank_signal": "074.00:A5333A1461B4B551",
+      "ranker_family_hint": "object_model",
+      "ranker_operation_bonus": 6.0,
+      "ranker_original_index": 1,
+      "ranker_policy_applied": true,
+      "ranker_rank": 1,
+      "ranker_ready": true,
+      "ranker_runtime_upgrade": "ranker_runtime_upgrade_v2",
+      "ranker_score": 110.0,
+      "runtime_candidate_ready": true,
+      "runtime_rank": 2,
+      "runtime_upgrade": "candidate_generator_runtime_upgrade_v2",
+      "signature": "A5333A1461B4B551"
+    },
+    {
+      "candidate_id": "runtime_v2_object_translate_largest_down",
+      "evidence_score": 73.0,
+      "family": "object_model",
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "operation": "runtime_object_translate_largest_down",
+      "rank_signal": "073.00:1B4949637E5629BB",
+      "ranker_family_hint": "object_model",
+      "ranker_operation_bonus": 5.0,
+      "ranker_original_index": 2,
+      "ranker_policy_applied": true,
+      "ranker_rank": 2,
+      "ranker_ready": true,
+      "ranker_runtime_upgrade": "ranker_runtime_upgrade_v2",
+      "ranker_score": 108.0,
+      "runtime_candidate_ready": true,
+      "runtime_rank": 3,
+      "runtime_upgrade": "candidate_generator_runtime_upgrade_v2",
+      "signature": "1B4949637E5629BB"
+    },
+    {
+      "candidate_id": "runtime_v2_color_mapping_non_background_shift",
+      "evidence_score": 76.0,
+      "family": "color_mapping",
+      "grid": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "operation": "runtime_color_mapping_non_background_shift",
+      "rank_signal": "076.00:E74E2D8EF50D5E48",
+      "ranker_family_hint": "object_model",
+      "ranker_operation_bonus": 5.0,
+      "ranker_original_index": 0,
+      "ranker_policy_applied": true,
+      "ranker_rank": 3,
+      "ranker_ready": true,
+      "ranker_runtime_upgrade": "ranker_runtime_upgrade_v2",
+      "ranker_score": 81.0,
+      "runtime_candidate_ready": true,
+      "runtime_rank": 1,
+      "runtime_upgrade": "candidate_generator_runtime_upgrade_v2",
+      "signature": "E74E2D8EF50D5E48"
+    },
+    {
+      "candidate_id": "runtime_v2_shape_reflect_vertical",
+      "evidence_score": 71.0,
+      "family": "shape_symmetry",
+      "grid": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "operation": "runtime_shape_reflect_vertical",
+      "rank_signal": "071.00:7152536C94278C3F",
+      "ranker_family_hint": "object_model",
+      "ranker_operation_bonus": 4.0,
+      "ranker_original_index": 3,
+      "ranker_policy_applied": true,
+      "ranker_rank": 4,
+      "ranker_ready": true,
+      "ranker_runtime_upgrade": "ranker_runtime_upgrade_v2",
+      "ranker_score": 75.0,
+      "runtime_candidate_ready": true,
+      "runtime_rank": 4,
+      "runtime_upgrade": "candidate_generator_runtime_upgrade_v2",
+      "signature": "7152536C94278C3F"
+    }
+  ],
+  "score_claim_absent": true,
+  "signature": "3126FE509067C21F",
+  "status": "MILESTONE_8_RANKER_RUNTIME_UPGRADE_V2_READY",
+  "task": "Task 5",
+  "title": "Ranker Runtime Upgrade v2",
+  "upload_performed": false,
+  "warning_count": 0
+}

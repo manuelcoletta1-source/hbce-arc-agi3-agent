@@ -1,0 +1,56 @@
+from hbce_arc_agi3.milestone_8_ranker_runtime_upgrade import (
+    run_milestone_8_ranker_runtime_upgrade_pipeline,
+)
+
+
+def main() -> None:
+    payload = run_milestone_8_ranker_runtime_upgrade_pipeline()
+    ranker = payload["ranker"]
+
+    print(payload["status"])
+    print(payload["ranker_status"])
+    print(payload["validation_status"])
+    print(payload["ranker_id"])
+    print(payload["signature"])
+    print(ranker["baseline_commit"])
+    print(payload["ranker_mode"])
+    print(payload["ranker_verdict"])
+    print(payload["next_allowed_stage"])
+    print(payload["family_count"])
+    print(payload["ranker_policy_count"])
+    print(payload["ranker_operation_count"])
+    print(payload["ranker_case_count"])
+    print(payload["ranker_pass_count"])
+    print(payload["ranker_failure_count"])
+    print(payload["sample_ranked_candidate_count"])
+    print(payload["evidence_field_count"])
+    print(payload["regression_guard_count"])
+    print(payload["boundary_control_count"])
+    print(payload["ranker_gate_count"])
+    print(payload["passed_gate_count"])
+    print(payload["ranker_issue_count"])
+    print(payload["warning_count"])
+    print(payload["ranker_ready"])
+    print(payload["ranker_locked"])
+    print(payload["ranker_runtime_upgrade_created"])
+    print(payload["ranker_candidates_ranked"])
+    print(payload["ranker_candidates_deduplicated"])
+    print(payload["ranker_family_policy_applied"])
+    print(payload["real_submission_created"])
+    print(payload["real_submission_allowed"])
+    print(payload["ready_for_real_kaggle_submission"])
+    print(payload["kaggle_submission_sent"])
+    print(payload["upload_performed"])
+    print(payload["kaggle_authentication_performed"])
+    print(all(result["passed"] for result in ranker["ranker_results"]))
+    print(all(item["passed"] for item in ranker["ranker_gates"]))
+    print(all(item["active"] is False for item in ranker["ranker_issues"]))
+    print(payload["artifacts"]["json_path"])
+    print(payload["artifacts"]["markdown_path"])
+    print(payload["artifacts"]["manifest_path"])
+    print(payload["artifacts"]["index_path"])
+    print(payload["metadata"])
+
+
+if __name__ == "__main__":
+    main()
