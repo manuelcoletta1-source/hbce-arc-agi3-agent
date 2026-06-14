@@ -1,0 +1,720 @@
+{
+  "audit_gate_count": 57,
+  "audit_issue_count": 0,
+  "audit_real_submission_decision": "NOT_READY",
+  "audit_real_submission_readiness": "BLOCKED",
+  "baseline_commit": "4c6e68d Add ARC AGI3 final competitive readiness audit",
+  "benchmark_target_count": 8,
+  "benchmark_targets": [
+    "benchmark_color_palette_transfer_v2",
+    "benchmark_color_background_guard_v2",
+    "benchmark_object_component_delta_v2",
+    "benchmark_object_spatial_transform_v2",
+    "benchmark_shape_axis_reflection_v2",
+    "benchmark_shape_translation_bounds_v2",
+    "benchmark_cross_family_candidate_merge_v2",
+    "benchmark_cross_family_ranker_signal_v2"
+  ],
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "control_count": 10,
+  "control_flags": [
+    "local_only",
+    "dry_run_only",
+    "deterministic",
+    "public_safe",
+    "no_kaggle_auth",
+    "no_upload",
+    "no_external_api",
+    "no_private_core",
+    "no_legal_certification",
+    "no_score_claim"
+  ],
+  "final_audit_source": {
+    "audit_id": "MILESTONE-7-FINAL-READINESS-AUDIT-64E918A0106F",
+    "path": "examples/milestone-7/final-competitive-readiness-audit-v1/milestone-7-final-competitive-readiness-audit-v1.json",
+    "present": true,
+    "sha256": "e1cfcb1b62c031c6bf50d23dcca19624b31a749823562d43a93b9c63e524b452",
+    "sha256_16": "E1CFCB1B62C031C6",
+    "status": "MILESTONE_7_FINAL_COMPETITIVE_READINESS_AUDIT_READY"
+  },
+  "iteration_families": [
+    {
+      "family_id": "milestone_8_color_mapping_solver_v2",
+      "objective": "Improve palette transfer, background preservation, and bounded recoloring decisions.",
+      "priority": "P0",
+      "ready_for_kernel_v2": true,
+      "risk": "False color remapping or background corruption.",
+      "source_family": "color_mapping"
+    },
+    {
+      "family_id": "milestone_8_object_model_solver_v2",
+      "objective": "Improve component counting, object delta tracking, and local spatial transformations.",
+      "priority": "P0",
+      "ready_for_kernel_v2": true,
+      "risk": "Object loss, object duplication, or unstable spatial movement.",
+      "source_family": "object_model"
+    },
+    {
+      "family_id": "milestone_8_shape_symmetry_solver_v2",
+      "objective": "Improve axis symmetry, reflection, translation bounds, and shape-preserving operations.",
+      "priority": "P0",
+      "ready_for_kernel_v2": true,
+      "risk": "Shape deformation or invalid symmetry generalization.",
+      "source_family": "shape_symmetry"
+    },
+    {
+      "family_id": "milestone_8_cross_family_composition_solver_v2",
+      "objective": "Combine color, object, and shape evidence without breaking deterministic ranking.",
+      "priority": "P0",
+      "ready_for_kernel_v2": true,
+      "risk": "Over-composition, noisy candidate explosion, or ranker instability.",
+      "source_family": "cross_family_composition"
+    }
+  ],
+  "iteration_family_count": 4,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_8_competitive_solver_iteration_plan_v2"
+  },
+  "milestone": "Milestone #8",
+  "next_allowed_stage": "MILESTONE_8_TASK_2_COMPETITIVE_SOLVER_KERNEL_V2",
+  "passed_gate_count": 42,
+  "plan_gate_count": 42,
+  "plan_gates": [
+    {
+      "name": "audit_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_next_stage_matches_milestone_8",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_real_submission_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_solver_iteration_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "iteration_family_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "solver_iteration_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_target_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_section_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_queue_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_priority_p0",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_ready_for_kernel_v2",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_solver_iterations_runtime_targeted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_targets_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guards_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_queue_commit_expected",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_solver_iteration_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "plan_id": "MILESTONE-8-COMPETITIVE-SOLVER-PLAN-8A28F54A53F5",
+  "plan_index": {
+    "baseline_commit": "4c6e68d Add ARC AGI3 final competitive readiness audit",
+    "benchmark_target_count": 8,
+    "control_count": 10,
+    "depends_on_audit": "MILESTONE-7-FINAL-READINESS-AUDIT-64E918A0106F",
+    "external_api_dependency": false,
+    "iteration_family_count": 4,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #8",
+    "next_allowed_stage": "MILESTONE_8_TASK_2_COMPETITIVE_SOLVER_KERNEL_V2",
+    "plan_locked": true,
+    "plan_mode": "COMPETITIVE_SOLVER_ITERATION_PLAN_ONLY_NO_UPLOAD",
+    "plan_ready": true,
+    "plan_scope": "OPEN_MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_FROM_FINAL_AUDIT",
+    "plan_verdict": "COMPETITIVE_SOLVER_ITERATION_PLAN_READY_FOR_SOLVER_KERNEL_V2",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "regression_guard_count": 8,
+    "runtime_solver_iteration_required": true,
+    "solver_iteration_count": 8,
+    "task": "Task 1",
+    "task_queue_count": 5,
+    "upload_performed": false
+  },
+  "plan_issue_count": 0,
+  "plan_issues": [
+    {
+      "active": false,
+      "name": "audit_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_next_stage_mismatch",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_real_submission_not_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_solver_iteration_not_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "iteration_family_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "solver_iteration_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_target_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_section_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_queue_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_priority_not_p0",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_not_ready_for_kernel_v2",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "solver_iteration_not_runtime_targeted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_targets_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guards_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_queue_commit_not_expected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_solver_iteration_not_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_detected",
+      "severity": "BLOCKING"
+    }
+  ],
+  "plan_locked": true,
+  "plan_mode": "COMPETITIVE_SOLVER_ITERATION_PLAN_ONLY_NO_UPLOAD",
+  "plan_ready": true,
+  "plan_record": {
+    "audit_ready": true,
+    "audit_real_submission_decision": "NOT_READY",
+    "audit_real_submission_readiness": "BLOCKED",
+    "audit_solver_iteration_required": true,
+    "baseline_audit_id": "MILESTONE-7-FINAL-READINESS-AUDIT-64E918A0106F",
+    "benchmark_target_count": 8,
+    "contains_api_keys": false,
+    "control_count": 10,
+    "external_api_dependency": false,
+    "iteration_family_count": 4,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "next_allowed_stage": "MILESTONE_8_TASK_2_COMPETITIVE_SOLVER_KERNEL_V2",
+    "plan_locked": true,
+    "plan_mode": "COMPETITIVE_SOLVER_ITERATION_PLAN_ONLY_NO_UPLOAD",
+    "plan_ready": true,
+    "plan_scope": "OPEN_MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_FROM_FINAL_AUDIT",
+    "plan_section_count": 8,
+    "plan_verdict": "COMPETITIVE_SOLVER_ITERATION_PLAN_READY_FOR_SOLVER_KERNEL_V2",
+    "private_core_exposure": false,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "regression_guard_count": 8,
+    "runtime_solver_iteration_required": true,
+    "score_claim_absent": true,
+    "solver_iteration_count": 8,
+    "task_queue_count": 5,
+    "upload_performed": false
+  },
+  "plan_scope": "OPEN_MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_FROM_FINAL_AUDIT",
+  "plan_section_count": 8,
+  "plan_sections": [
+    "baseline_audit",
+    "iteration_families",
+    "solver_iteration_queue",
+    "benchmark_targets",
+    "regression_guards",
+    "submission_boundary",
+    "task_queue",
+    "next_stage"
+  ],
+  "plan_verdict": "COMPETITIVE_SOLVER_ITERATION_PLAN_READY_FOR_SOLVER_KERNEL_V2",
+  "public_leaderboard_claim_absent": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "regression_guard_count": 8,
+  "regression_guards": [
+    "guard_no_background_corruption_v2",
+    "guard_no_object_loss_v2",
+    "guard_no_object_duplication_v2",
+    "guard_no_shape_deformation_v2",
+    "guard_no_unbounded_translation_v2",
+    "guard_no_candidate_explosion_v2",
+    "guard_no_ranker_tie_instability_v2",
+    "guard_no_real_submission_side_effect_v2"
+  ],
+  "runtime_solver_iteration_required": true,
+  "score_claim_absent": true,
+  "signature": "8A28F54A53F580AE",
+  "solver_iteration_count": 8,
+  "solver_iterations": [
+    {
+      "expected_effect": "Stronger palette mapping candidates.",
+      "family": "color_mapping",
+      "iteration_id": "solver_v2_color_palette_transfer",
+      "iteration_type": "COLOR_TRANSFER",
+      "runtime_solver_target": true
+    },
+    {
+      "expected_effect": "Lower background corruption.",
+      "family": "color_mapping",
+      "iteration_id": "solver_v2_color_background_guard",
+      "iteration_type": "BACKGROUND_PRESERVATION",
+      "runtime_solver_target": true
+    },
+    {
+      "expected_effect": "Better component-count transformations.",
+      "family": "object_model",
+      "iteration_id": "solver_v2_object_component_delta",
+      "iteration_type": "OBJECT_COMPONENT_DELTA",
+      "runtime_solver_target": true
+    },
+    {
+      "expected_effect": "Better object movement and displacement candidates.",
+      "family": "object_model",
+      "iteration_id": "solver_v2_object_spatial_transform",
+      "iteration_type": "OBJECT_SPATIAL_TRANSFORM",
+      "runtime_solver_target": true
+    },
+    {
+      "expected_effect": "Better reflection and symmetry candidates.",
+      "family": "shape_symmetry",
+      "iteration_id": "solver_v2_shape_axis_reflection",
+      "iteration_type": "AXIS_REFLECTION",
+      "runtime_solver_target": true
+    },
+    {
+      "expected_effect": "Safer bounded geometric transforms.",
+      "family": "shape_symmetry",
+      "iteration_id": "solver_v2_shape_translation_bounds",
+      "iteration_type": "TRANSLATION_BOUNDS",
+      "runtime_solver_target": true
+    },
+    {
+      "expected_effect": "Combine family candidates without candidate explosion.",
+      "family": "cross_family_composition",
+      "iteration_id": "solver_v2_cross_family_candidate_merge",
+      "iteration_type": "CANDIDATE_MERGE",
+      "runtime_solver_target": true
+    },
+    {
+      "expected_effect": "Improve deterministic ranker scoring across families.",
+      "family": "cross_family_composition",
+      "iteration_id": "solver_v2_cross_family_ranker_signal",
+      "iteration_type": "RANKER_SIGNAL_COMPOSITION",
+      "runtime_solver_target": true
+    }
+  ],
+  "status": "MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_PLAN_READY",
+  "task": "Task 1",
+  "task_queue": [
+    {
+      "commit_expected": true,
+      "name": "Competitive Solver Kernel v2",
+      "purpose": "Implement local deterministic solver kernel improvements.",
+      "task": "Milestone #8 Task 2"
+    },
+    {
+      "commit_expected": true,
+      "name": "Family Benchmark Cases v2",
+      "purpose": "Create local benchmark fixtures for v2 solver families.",
+      "task": "Milestone #8 Task 3"
+    },
+    {
+      "commit_expected": true,
+      "name": "Candidate Generator Runtime Upgrade v2",
+      "purpose": "Wire v2 solver outputs into candidate generation.",
+      "task": "Milestone #8 Task 4"
+    },
+    {
+      "commit_expected": true,
+      "name": "Ranker Runtime Upgrade v2",
+      "purpose": "Improve ranking using v2 cross-family evidence.",
+      "task": "Milestone #8 Task 5"
+    },
+    {
+      "commit_expected": true,
+      "name": "Milestone 8 Regression Benchmark v2",
+      "purpose": "Measure v2 solver behavior without submission claims.",
+      "task": "Milestone #8 Task 6"
+    }
+  ],
+  "task_queue_count": 5,
+  "title": "Competitive Solver Iteration Plan v2",
+  "upload_performed": false,
+  "warning_count": 0
+}

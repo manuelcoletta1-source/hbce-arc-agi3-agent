@@ -1,0 +1,56 @@
+ARC AGI3 MILESTONE 8 COMPETITIVE SOLVER ITERATION PLAN MANIFEST v2
+plan_id=MILESTONE-8-COMPETITIVE-SOLVER-PLAN-8A28F54A53F5
+signature=8A28F54A53F580AE
+status=MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_PLAN_READY
+baseline_commit=4c6e68d Add ARC AGI3 final competitive readiness audit
+plan_mode=COMPETITIVE_SOLVER_ITERATION_PLAN_ONLY_NO_UPLOAD
+plan_verdict=COMPETITIVE_SOLVER_ITERATION_PLAN_READY_FOR_SOLVER_KERNEL_V2
+next_allowed_stage=MILESTONE_8_TASK_2_COMPETITIVE_SOLVER_KERNEL_V2
+audit_real_submission_readiness=BLOCKED
+audit_real_submission_decision=NOT_READY
+iteration_family_count=4
+solver_iteration_count=8
+benchmark_target_count=8
+regression_guard_count=8
+control_count=10
+plan_section_count=8
+task_queue_count=5
+plan_gate_count=42
+passed_gate_count=42
+plan_issue_count=0
+plan_ready=True
+plan_locked=True
+runtime_solver_iteration_required=True
+real_submission_created=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+ITERATION_FAMILIES
+P0 milestone_8_color_mapping_solver_v2 family=color_mapping ready_for_kernel_v2=True
+P0 milestone_8_object_model_solver_v2 family=object_model ready_for_kernel_v2=True
+P0 milestone_8_shape_symmetry_solver_v2 family=shape_symmetry ready_for_kernel_v2=True
+P0 milestone_8_cross_family_composition_solver_v2 family=cross_family_composition ready_for_kernel_v2=True
+
+SOLVER_ITERATIONS
+solver_v2_color_palette_transfer family=color_mapping type=COLOR_TRANSFER runtime_solver_target=True
+solver_v2_color_background_guard family=color_mapping type=BACKGROUND_PRESERVATION runtime_solver_target=True
+solver_v2_object_component_delta family=object_model type=OBJECT_COMPONENT_DELTA runtime_solver_target=True
+solver_v2_object_spatial_transform family=object_model type=OBJECT_SPATIAL_TRANSFORM runtime_solver_target=True
+solver_v2_shape_axis_reflection family=shape_symmetry type=AXIS_REFLECTION runtime_solver_target=True
+solver_v2_shape_translation_bounds family=shape_symmetry type=TRANSLATION_BOUNDS runtime_solver_target=True
+solver_v2_cross_family_candidate_merge family=cross_family_composition type=CANDIDATE_MERGE runtime_solver_target=True
+solver_v2_cross_family_ranker_signal family=cross_family_composition type=RANKER_SIGNAL_COMPOSITION runtime_solver_target=True
+
+TASK_QUEUE
+Milestone #8 Task 2 name=Competitive Solver Kernel v2 commit_expected=True
+Milestone #8 Task 3 name=Family Benchmark Cases v2 commit_expected=True
+Milestone #8 Task 4 name=Candidate Generator Runtime Upgrade v2 commit_expected=True
+Milestone #8 Task 5 name=Ranker Runtime Upgrade v2 commit_expected=True
+Milestone #8 Task 6 name=Milestone 8 Regression Benchmark v2 commit_expected=True

@@ -1,0 +1,57 @@
+# ARC AGI3 Milestone #8 - Competitive Solver Iteration Plan v2
+
+- status: MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_PLAN_READY
+- plan_id: MILESTONE-8-COMPETITIVE-SOLVER-PLAN-8A28F54A53F5
+- signature: 8A28F54A53F580AE
+- baseline_commit: 4c6e68d Add ARC AGI3 final competitive readiness audit
+- plan_mode: COMPETITIVE_SOLVER_ITERATION_PLAN_ONLY_NO_UPLOAD
+- plan_scope: OPEN_MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_FROM_FINAL_AUDIT
+- plan_verdict: COMPETITIVE_SOLVER_ITERATION_PLAN_READY_FOR_SOLVER_KERNEL_V2
+- next_allowed_stage: MILESTONE_8_TASK_2_COMPETITIVE_SOLVER_KERNEL_V2
+- audit_real_submission_readiness: BLOCKED
+- audit_real_submission_decision: NOT_READY
+- iteration_family_count: 4
+- solver_iteration_count: 8
+- benchmark_target_count: 8
+- regression_guard_count: 8
+- task_queue_count: 5
+- plan_gate_count: 42
+- passed_gate_count: 42
+- plan_issue_count: 0
+- runtime_solver_iteration_required: True
+
+## Iteration families
+
+- P0 milestone_8_color_mapping_solver_v2 / family=color_mapping / ready_for_kernel_v2=True
+- P0 milestone_8_object_model_solver_v2 / family=object_model / ready_for_kernel_v2=True
+- P0 milestone_8_shape_symmetry_solver_v2 / family=shape_symmetry / ready_for_kernel_v2=True
+- P0 milestone_8_cross_family_composition_solver_v2 / family=cross_family_composition / ready_for_kernel_v2=True
+
+## Decision
+
+Milestone #8 is open. The next stage is Competitive Solver Kernel v2.
+
+## Markers
+
+ARC_AGI3_MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_PLAN_V2_READY=true
+ARC_AGI3_MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_PLAN_VALID=true
+ARC_AGI3_MILESTONE_8_PLAN_MODE=COMPETITIVE_SOLVER_ITERATION_PLAN_ONLY_NO_UPLOAD
+ARC_AGI3_MILESTONE_8_PLAN_VERDICT=COMPETITIVE_SOLVER_ITERATION_PLAN_READY_FOR_SOLVER_KERNEL_V2
+ARC_AGI3_MILESTONE_8_BASELINE_AUDIT_COMMIT=4c6e68d
+ARC_AGI3_MILESTONE_8_ITERATION_FAMILY_COUNT=4
+ARC_AGI3_MILESTONE_8_SOLVER_ITERATION_COUNT=8
+ARC_AGI3_MILESTONE_8_BENCHMARK_TARGET_COUNT=8
+ARC_AGI3_MILESTONE_8_REGRESSION_GUARD_COUNT=8
+ARC_AGI3_MILESTONE_8_CONTROL_COUNT=10
+ARC_AGI3_MILESTONE_8_TASK_QUEUE_COUNT=5
+ARC_AGI3_MILESTONE_8_RUNTIME_SOLVER_ITERATION_REQUIRED=true
+ARC_AGI3_MILESTONE_8_NEXT_STAGE=MILESTONE_8_TASK_2_COMPETITIVE_SOLVER_KERNEL_V2
+ARC_AGI3_MILESTONE_8_REAL_SUBMISSION_CREATED=false
+ARC_AGI3_MILESTONE_8_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_8_READY_FOR_REAL_KAGGLE_SUBMISSION=false
+ARC_AGI3_MILESTONE_8_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_8_UPLOAD_PERFORMED=false
+ARC_AGI3_MILESTONE_8_KAGGLE_AUTHENTICATION_PERFORMED=false
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
