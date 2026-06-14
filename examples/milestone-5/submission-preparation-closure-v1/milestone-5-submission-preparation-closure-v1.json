@@ -1,0 +1,435 @@
+{
+  "baseline_commit": "b632fc3 Add ARC AGI3 submission candidate dry-run package",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "closed_task_count": 9,
+  "closure_gate_count": 20,
+  "closure_gates": [
+    {
+      "description": "All Milestone #5 Task 1-9 artifacts are present.",
+      "name": "all_task_artifacts_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "All Milestone #5 Task 1-9 artifacts expose ready status.",
+      "name": "all_task_artifacts_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 closure chain contains nine tasks.",
+      "name": "task_chain_count_is_9",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Every Milestone #5 task has a linked commit.",
+      "name": "task_chain_commits_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Task commit chain is in canonical order.",
+      "name": "task_chain_order_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Task 9 dry-run package is ready.",
+      "name": "dry_run_package_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Task 8 format report is ready.",
+      "name": "format_report_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Task 7 local smoke test is ready.",
+      "name": "local_smoke_test_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Task 6 preflight report is ready.",
+      "name": "preflight_report_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Task 5 public safety checklist is ready.",
+      "name": "public_safety_boundary_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Smoke-only submission candidate is present.",
+      "name": "submission_candidate_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 submission preparation is closed.",
+      "name": "submission_preparation_closed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps public_safe=true.",
+      "name": "boundary_public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps local_only=true.",
+      "name": "boundary_local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps dry_run_only=true.",
+      "name": "boundary_dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps external_api_dependency=false.",
+      "name": "no_external_api_dependency",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps private_core_exposure=false.",
+      "name": "no_private_core_exposure",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps legal_certification=false.",
+      "name": "no_legal_certification",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Boundary keeps kaggle_submission_sent=false.",
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Closure keeps ready_for_real_kaggle_submission=false.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "closure_id": "MILESTONE-5-SUBMISSION-CLOSURE-876E09DA2D13",
+  "closure_index": {
+    "closure_kind": "SUBMISSION_PREPARATION_CLOSURE",
+    "commit_chain": [
+      "2f02f5d Open ARC AGI3 milestone 5 public readiness audit",
+      "e983e88 Add ARC AGI3 public repo release index",
+      "8dfb106 Add ARC AGI3 Kaggle submission dry-run package",
+      "77da7ae Add ARC AGI3 submission entrypoint contract",
+      "9c3c7e2 Add ARC AGI3 public safety boundary checklist",
+      "3c56cd7 Add ARC AGI3 Kaggle submission preflight report",
+      "47d47d2 Add ARC AGI3 local submission smoke test",
+      "d2f2750 Add ARC AGI3 submission candidate format report",
+      "b632fc3 Add ARC AGI3 submission candidate dry-run package"
+    ],
+    "external_api_dependency": false,
+    "final_package_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+    "final_package_signature": "7B89C4D5AA872D5B",
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #5",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "ready_task_count": 9,
+    "real_kaggle_submission_created": false,
+    "submission_preparation_closed": true,
+    "task_count": 9
+  },
+  "closure_issue_count": 0,
+  "closure_issues": [
+    {
+      "active": false,
+      "description": "One or more Milestone #5 task artifacts are missing.",
+      "name": "missing_task_artifact",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more Milestone #5 task artifacts are not ready.",
+      "name": "task_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Task chain does not contain exactly nine tasks.",
+      "name": "task_chain_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more task commits are missing.",
+      "name": "task_chain_commit_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Task commit chain is not in canonical order.",
+      "name": "task_chain_order_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Task 9 dry-run package is not ready.",
+      "name": "dry_run_package_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Task 8 format report is not ready.",
+      "name": "format_report_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Task 7 local smoke test is not ready.",
+      "name": "local_smoke_test_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Task 6 preflight report is not ready.",
+      "name": "preflight_report_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Task 5 public safety checklist is not ready.",
+      "name": "public_safety_boundary_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Smoke-only submission candidate is not ready.",
+      "name": "submission_candidate_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Submission preparation closure flag is not active.",
+      "name": "submission_preparation_not_closed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "public_safe boundary is not true.",
+      "name": "boundary_not_public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "local_only boundary is not true.",
+      "name": "boundary_not_local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "dry_run_only boundary is not true.",
+      "name": "boundary_not_dry_run_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "external_api_dependency is not false.",
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "private_core_exposure is not false.",
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "legal_certification is not false.",
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "kaggle_submission_sent is not false.",
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "ready_for_real_kaggle_submission is not false.",
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    }
+  ],
+  "final_package_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+  "final_package_signature": "7B89C4D5AA872D5B",
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "archive_created": false,
+    "closure_kind": "SUBMISSION_PREPARATION_CLOSURE",
+    "depends_on_submission_candidate_dry_run_package": true,
+    "milestone": "Milestone #5",
+    "real_kaggle_submission_created": false,
+    "source": "milestone_5_submission_preparation_closure_v1",
+    "task": "Task 10",
+    "upload_performed": false
+  },
+  "milestone": "Milestone #5",
+  "next_actions": [
+    "prepare_public_release_summary_v1",
+    "prepare_real_kaggle_submission_only_after_explicit_operator_approval"
+  ],
+  "passed_gate_count": 20,
+  "ready_for_public_release_summary": true,
+  "ready_for_real_kaggle_submission": false,
+  "ready_task_count": 9,
+  "signature": "876E09DA2D13FB97",
+  "status": "MILESTONE_5_SUBMISSION_PREPARATION_CLOSURE_READY",
+  "submission_preparation_closed": true,
+  "task": "Task 10",
+  "task_statuses": [
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_READINESS_BASELINE_AUDIT_READY",
+      "artifact_id": "MILESTONE-5-PUBLIC-READINESS-AUDIT-C0CB02F634E9",
+      "artifact_path": "examples/milestone-5/public-readiness-baseline-audit-v1/public-readiness-baseline-audit-v1.json",
+      "commit": "2f02f5d Open ARC AGI3 milestone 5 public readiness audit",
+      "description": "Public readiness baseline audit.",
+      "expected_status": "MILESTONE_5_PUBLIC_READINESS_BASELINE_AUDIT_READY",
+      "name": "public_readiness_baseline_audit",
+      "present": true,
+      "ready": true,
+      "sha256_16": "9EAB52B764024A2E",
+      "task_number": 1
+    },
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_REPO_RELEASE_INDEX_READY",
+      "artifact_id": "MILESTONE-5-PUBLIC-REPO-INDEX-C68600E44E70",
+      "artifact_path": "examples/milestone-5/public-repo-release-index-v1/public-repo-release-index-v1.json",
+      "commit": "e983e88 Add ARC AGI3 public repo release index",
+      "description": "Public repo release index.",
+      "expected_status": "MILESTONE_5_PUBLIC_REPO_RELEASE_INDEX_READY",
+      "name": "public_repo_release_index",
+      "present": true,
+      "ready": true,
+      "sha256_16": "5EF31781163CBBE8",
+      "task_number": 2
+    },
+    {
+      "actual_status": "MILESTONE_5_KAGGLE_SUBMISSION_DRY_RUN_PACKAGE_READY",
+      "artifact_id": "MILESTONE-5-DRY-RUN-PACKAGE-09867B871A64",
+      "artifact_path": "examples/milestone-5/kaggle-submission-dry-run-package-v1/kaggle-submission-dry-run-package-v1.json",
+      "commit": "8dfb106 Add ARC AGI3 Kaggle submission dry-run package",
+      "description": "Kaggle submission dry-run package.",
+      "expected_status": "MILESTONE_5_KAGGLE_SUBMISSION_DRY_RUN_PACKAGE_READY",
+      "name": "kaggle_submission_dry_run_package",
+      "present": true,
+      "ready": true,
+      "sha256_16": "3EFDFDA3C9E5BB86",
+      "task_number": 3
+    },
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_ENTRYPOINT_CONTRACT_READY",
+      "artifact_id": "MILESTONE-5-ENTRYPOINT-CONTRACT-DDF92647579C",
+      "artifact_path": "examples/milestone-5/submission-entrypoint-contract-v1/submission-entrypoint-contract-v1.json",
+      "commit": "77da7ae Add ARC AGI3 submission entrypoint contract",
+      "description": "Submission entrypoint contract.",
+      "expected_status": "MILESTONE_5_SUBMISSION_ENTRYPOINT_CONTRACT_READY",
+      "name": "submission_entrypoint_contract",
+      "present": true,
+      "ready": true,
+      "sha256_16": "911647BE36A1C7AD",
+      "task_number": 4
+    },
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+      "artifact_id": "MILESTONE-5-SAFETY-CHECKLIST-4609EB912767",
+      "artifact_path": "examples/milestone-5/public-safety-boundary-checklist-v1/public-safety-boundary-checklist-v1.json",
+      "commit": "9c3c7e2 Add ARC AGI3 public safety boundary checklist",
+      "description": "Public safety boundary checklist.",
+      "expected_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+      "name": "public_safety_boundary_checklist",
+      "present": true,
+      "ready": true,
+      "sha256_16": "E10096494F15DC71",
+      "task_number": 5
+    },
+    {
+      "actual_status": "MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY",
+      "artifact_id": "MILESTONE-5-PREFLIGHT-REPORT-2BE57C675A9B",
+      "artifact_path": "examples/milestone-5/kaggle-submission-preflight-report-v1/kaggle-submission-preflight-report-v1.json",
+      "commit": "3c56cd7 Add ARC AGI3 Kaggle submission preflight report",
+      "description": "Kaggle submission preflight report.",
+      "expected_status": "MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY",
+      "name": "kaggle_submission_preflight_report",
+      "present": true,
+      "ready": true,
+      "sha256_16": "799DCFAD290C78E6",
+      "task_number": 6
+    },
+    {
+      "actual_status": "MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY",
+      "artifact_id": "MILESTONE-5-LOCAL-SMOKE-0F0FDCE696D4",
+      "artifact_path": "examples/milestone-5/local-submission-smoke-test-v1/local-submission-smoke-test-v1.json",
+      "commit": "47d47d2 Add ARC AGI3 local submission smoke test",
+      "description": "Local submission smoke test.",
+      "expected_status": "MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY",
+      "name": "local_submission_smoke_test",
+      "present": true,
+      "ready": true,
+      "sha256_16": "6186E30D0D9DAF08",
+      "task_number": 7
+    },
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_CANDIDATE_FORMAT_REPORT_READY",
+      "artifact_id": "MILESTONE-5-CANDIDATE-FORMAT-05303A620DD2",
+      "artifact_path": "examples/milestone-5/submission-candidate-format-report-v1/submission-candidate-format-report-v1.json",
+      "commit": "d2f2750 Add ARC AGI3 submission candidate format report",
+      "description": "Submission candidate format report.",
+      "expected_status": "MILESTONE_5_SUBMISSION_CANDIDATE_FORMAT_REPORT_READY",
+      "name": "submission_candidate_format_report",
+      "present": true,
+      "ready": true,
+      "sha256_16": "2AE350CF32308D83",
+      "task_number": 8
+    },
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY",
+      "artifact_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+      "artifact_path": "examples/milestone-5/submission-candidate-dry-run-package-v1/submission-candidate-dry-run-package-v1.json",
+      "commit": "b632fc3 Add ARC AGI3 submission candidate dry-run package",
+      "description": "Submission candidate dry-run package.",
+      "expected_status": "MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY",
+      "name": "submission_candidate_dry_run_package",
+      "present": true,
+      "ready": true,
+      "sha256_16": "15D64BEFB2AA4A24",
+      "task_number": 9
+    }
+  ],
+  "title": "Milestone 5 Submission Preparation Closure v1",
+  "warning_count": 0
+}

@@ -1,0 +1,26 @@
+{
+  "closure_kind": "SUBMISSION_PREPARATION_CLOSURE",
+  "commit_chain": [
+    "2f02f5d Open ARC AGI3 milestone 5 public readiness audit",
+    "e983e88 Add ARC AGI3 public repo release index",
+    "8dfb106 Add ARC AGI3 Kaggle submission dry-run package",
+    "77da7ae Add ARC AGI3 submission entrypoint contract",
+    "9c3c7e2 Add ARC AGI3 public safety boundary checklist",
+    "3c56cd7 Add ARC AGI3 Kaggle submission preflight report",
+    "47d47d2 Add ARC AGI3 local submission smoke test",
+    "d2f2750 Add ARC AGI3 submission candidate format report",
+    "b632fc3 Add ARC AGI3 submission candidate dry-run package"
+  ],
+  "external_api_dependency": false,
+  "final_package_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+  "final_package_signature": "7B89C4D5AA872D5B",
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "milestone": "Milestone #5",
+  "private_core_exposure": false,
+  "ready_for_real_kaggle_submission": false,
+  "ready_task_count": 9,
+  "real_kaggle_submission_created": false,
+  "submission_preparation_closed": true,
+  "task_count": 9
+}
