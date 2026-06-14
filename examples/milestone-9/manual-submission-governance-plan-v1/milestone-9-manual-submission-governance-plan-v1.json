@@ -1,0 +1,877 @@
+{
+  "accepted_declaration_count": 0,
+  "baseline_commit": "bc568bc Close ARC AGI3 milestone 8 competitive solver iteration",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "governance_phase_count": 5,
+  "governance_phases": [
+    {
+      "name": "manual_submission_governance_plan",
+      "phase": "Phase 1",
+      "status": "THIS_TASK_READY"
+    },
+    {
+      "name": "operator_declaration_package",
+      "phase": "Phase 2",
+      "status": "NEXT"
+    },
+    {
+      "name": "local_candidate_manual_review",
+      "phase": "Phase 3",
+      "status": "PENDING"
+    },
+    {
+      "name": "real_submission_preflight_gate",
+      "phase": "Phase 4",
+      "status": "PENDING"
+    },
+    {
+      "name": "explicit_operator_approval_or_keep_blocked",
+      "phase": "Phase 5",
+      "status": "PENDING"
+    }
+  ],
+  "governance_plan_created": true,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "manual_submission_governance_opened": true,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_9_manual_submission_governance_plan_v1"
+  },
+  "milestone": "Milestone #9",
+  "milestone_8_closure_source": {
+    "closure_id": "MILESTONE-8-CLOSURE-REPORT-BB73E0709EB0",
+    "path": "examples/milestone-8/milestone-8-closure-report-v2/milestone-8-closure-report-v2.json",
+    "present": true,
+    "sha256": "076e6b593f83b58a24eda74987b47967441a8651832dda55d21cf1c0124f2a8e",
+    "sha256_16": "076E6B593F83B58A",
+    "status": "MILESTONE_8_CLOSURE_REPORT_V2_READY"
+  },
+  "milestone_9_open": true,
+  "next_allowed_stage": "MILESTONE_9_TASK_2_OPERATOR_DECLARATION_PACKAGE_V1",
+  "operator_approval_contract_ready": true,
+  "operator_approval_granted": false,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "operator_approval_state": {
+    "accepted_declaration_count": 0,
+    "accepted_declarations": [],
+    "approval_contract_ready": true,
+    "approval_gate_verdict": "MANUAL_APPROVAL_REQUIRED_BUT_NOT_GRANTED",
+    "operator_approval_granted": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "provided_declaration_count": 0,
+    "provided_declarations": [],
+    "required_declaration_count": 8,
+    "required_declarations": [
+      "operator_confirms_real_submission_intent",
+      "operator_confirms_kaggle_rules_review",
+      "operator_confirms_no_private_core_exposure",
+      "operator_confirms_no_api_keys_or_secret_material",
+      "operator_confirms_local_candidate_package_review",
+      "operator_confirms_manual_upload_responsibility",
+      "operator_confirms_no_legal_certification_claim",
+      "operator_confirms_irreversible_external_submission_awareness"
+    ]
+  },
+  "passed_gate_count": 47,
+  "plan_case_count": 10,
+  "plan_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "governance_milestone_8_closure_source_ready_v1",
+      "operation": "verify_milestone_8_closure_report"
+    },
+    {
+      "area": "milestone_state",
+      "case_id": "governance_milestone_9_open_state_valid_v1",
+      "operation": "verify_milestone_9_open_state"
+    },
+    {
+      "area": "governance_plan",
+      "case_id": "governance_phase_plan_defined_v1",
+      "operation": "verify_governance_phase_plan"
+    },
+    {
+      "area": "operator_approval",
+      "case_id": "governance_required_declarations_defined_v1",
+      "operation": "verify_required_operator_declarations"
+    },
+    {
+      "area": "pre_submission_gate",
+      "case_id": "governance_pre_submission_gates_defined_v1",
+      "operation": "verify_pre_submission_gate_set"
+    },
+    {
+      "area": "operator_approval",
+      "case_id": "governance_no_operator_approval_yet_v1",
+      "operation": "verify_operator_approval_absent"
+    },
+    {
+      "area": "submission",
+      "case_id": "governance_real_submission_still_blocked_v1",
+      "operation": "verify_real_submission_blocked"
+    },
+    {
+      "area": "boundary",
+      "case_id": "governance_no_upload_no_auth_v1",
+      "operation": "verify_no_upload_no_auth"
+    },
+    {
+      "area": "claim_boundary",
+      "case_id": "governance_no_score_or_leaderboard_claim_v1",
+      "operation": "verify_no_score_or_leaderboard_claim"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "governance_next_stage_valid_v1",
+      "operation": "verify_operator_declaration_package_next"
+    }
+  ],
+  "plan_checks": {
+    "accepted_declaration_count_zero": true,
+    "governance_phase_count_valid": true,
+    "kaggle_authentication_not_performed": true,
+    "kaggle_submission_not_sent": true,
+    "milestone_8_closed": true,
+    "milestone_8_closed_task_count_valid": true,
+    "milestone_8_closure_artifact_present": true,
+    "milestone_8_closure_artifact_ready": true,
+    "milestone_8_closure_artifact_valid": true,
+    "milestone_8_next_state_pending_manual_approval": true,
+    "milestone_8_real_submission_blocked": true,
+    "milestone_9_open_state_valid": true,
+    "next_stage_valid": true,
+    "operator_approval_not_granted": true,
+    "operator_approval_not_received": true,
+    "operator_approval_required": true,
+    "pre_submission_gate_count_valid": true,
+    "provided_declaration_count_zero": true,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission_false": true,
+    "real_submission_allowed_false": true,
+    "real_submission_not_created": true,
+    "required_declaration_count_valid": true,
+    "score_claim_absent": true,
+    "upload_not_performed": true
+  },
+  "plan_failure_count": 0,
+  "plan_gate_count": 47,
+  "plan_gates": [
+    {
+      "name": "milestone_8_closure_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_8_closure_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_8_closure_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_8_closed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_8_closed_task_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_8_real_submission_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_8_next_state_pending_manual_approval",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_9_open",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "governance_phase_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "pre_submission_gate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_plan_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "required_declaration_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "provided_declaration_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "accepted_declaration_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_not_granted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_not_received",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "governance_plan_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_submission_governance_opened",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_contract_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "plan_id": "MILESTONE-9-GOVERNANCE-PLAN-F245F8911F10",
+  "plan_index": {
+    "accepted_declaration_count": 0,
+    "baseline_commit": "bc568bc Close ARC AGI3 milestone 8 competitive solver iteration",
+    "depends_on_milestone_8_closure": "MILESTONE-8-CLOSURE-REPORT-BB73E0709EB0",
+    "external_api_dependency": false,
+    "governance_phase_count": 5,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #9",
+    "milestone_9_open": true,
+    "next_allowed_stage": "MILESTONE_9_TASK_2_OPERATOR_DECLARATION_PACKAGE_V1",
+    "operator_approval_granted": false,
+    "operator_approval_required": true,
+    "plan_case_count": 10,
+    "plan_failure_count": 0,
+    "plan_locked": true,
+    "plan_mode": "MILESTONE_9_MANUAL_SUBMISSION_GOVERNANCE_PLAN_V1_LOCAL_ONLY",
+    "plan_pass_count": 10,
+    "plan_ready": true,
+    "plan_scope": "OPEN_MANUAL_SUBMISSION_APPROVAL_AND_REAL_SUBMISSION_GOVERNANCE",
+    "plan_verdict": "MILESTONE_9_OPEN_REAL_SUBMISSION_BLOCKED_PENDING_EXPLICIT_OPERATOR_APPROVAL",
+    "pre_submission_gate_count": 12,
+    "private_core_exposure": false,
+    "provided_declaration_count": 0,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "required_declaration_count": 8,
+    "task": "Task 1",
+    "upload_performed": false
+  },
+  "plan_issue_count": 0,
+  "plan_issues": [
+    {
+      "active": false,
+      "name": "milestone_8_closure_artifact_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_8_closure_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_8_closure_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_8_closed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_8_closed_task_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_8_real_submission_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_8_next_state_pending_manual_approval",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_9_open",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "governance_phase_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "pre_submission_gate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_plan_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "required_declaration_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "provided_declaration_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "accepted_declaration_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_granted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_received",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "governance_plan_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_submission_governance_opened",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_contract_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "contains_api_keys_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "plan_locked": true,
+  "plan_mode": "MILESTONE_9_MANUAL_SUBMISSION_GOVERNANCE_PLAN_V1_LOCAL_ONLY",
+  "plan_pass_count": 10,
+  "plan_ready": true,
+  "plan_record": {
+    "accepted_declaration_count": 0,
+    "baseline_milestone_8_closure_id": "MILESTONE-8-CLOSURE-REPORT-BB73E0709EB0",
+    "boundary_control_count": 9,
+    "contains_api_keys": false,
+    "external_api_dependency": false,
+    "governance_phase_count": 5,
+    "governance_plan_created": true,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_submission_governance_opened": true,
+    "milestone_8_closed": true,
+    "milestone_9_open": true,
+    "next_allowed_stage": "MILESTONE_9_TASK_2_OPERATOR_DECLARATION_PACKAGE_V1",
+    "operator_approval_contract_ready": true,
+    "operator_approval_granted": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "plan_case_count": 10,
+    "plan_failure_count": 0,
+    "plan_locked": true,
+    "plan_mode": "MILESTONE_9_MANUAL_SUBMISSION_GOVERNANCE_PLAN_V1_LOCAL_ONLY",
+    "plan_pass_count": 10,
+    "plan_ready": true,
+    "plan_scope": "OPEN_MANUAL_SUBMISSION_APPROVAL_AND_REAL_SUBMISSION_GOVERNANCE",
+    "plan_verdict": "MILESTONE_9_OPEN_REAL_SUBMISSION_BLOCKED_PENDING_EXPLICIT_OPERATOR_APPROVAL",
+    "pre_submission_gate_count": 12,
+    "private_core_exposure": false,
+    "provided_declaration_count": 0,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "regression_guard_count": 12,
+    "required_declaration_count": 8,
+    "score_claim_absent": true,
+    "upload_performed": false
+  },
+  "plan_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "governance_milestone_8_closure_source_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_milestone_8_closure_report",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "milestone_state",
+      "case_id": "governance_milestone_9_open_state_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_milestone_9_open_state",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "governance_plan",
+      "case_id": "governance_phase_plan_defined_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_governance_phase_plan",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "operator_approval",
+      "case_id": "governance_required_declarations_defined_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_required_operator_declarations",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "pre_submission_gate",
+      "case_id": "governance_pre_submission_gates_defined_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_pre_submission_gate_set",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "operator_approval",
+      "case_id": "governance_no_operator_approval_yet_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_operator_approval_absent",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission",
+      "case_id": "governance_real_submission_still_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "governance_no_upload_no_auth_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_upload_no_auth",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "claim_boundary",
+      "case_id": "governance_no_score_or_leaderboard_claim_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_score_or_leaderboard_claim",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "governance_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_operator_declaration_package_next",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "plan_scope": "OPEN_MANUAL_SUBMISSION_APPROVAL_AND_REAL_SUBMISSION_GOVERNANCE",
+  "plan_verdict": "MILESTONE_9_OPEN_REAL_SUBMISSION_BLOCKED_PENDING_EXPLICIT_OPERATOR_APPROVAL",
+  "pre_submission_gate_count": 12,
+  "pre_submission_gates": [
+    "milestone_8_closure_report_verified",
+    "release_decision_layer_verified",
+    "local_submission_candidate_identified",
+    "manual_review_package_ready",
+    "operator_identity_confirmed",
+    "operator_declarations_completed",
+    "kaggle_rules_review_confirmed",
+    "secret_material_absence_confirmed",
+    "private_core_exposure_absence_confirmed",
+    "legal_certification_claim_absence_confirmed",
+    "manual_upload_responsibility_confirmed",
+    "final_operator_approval_confirmed"
+  ],
+  "provided_declaration_count": 0,
+  "public_leaderboard_claim_absent": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "regression_guard_count": 12,
+  "regression_guards": [
+    "guard_governance_uses_milestone_8_closure_artifact",
+    "guard_governance_does_not_submit",
+    "guard_governance_does_not_authenticate",
+    "guard_governance_does_not_upload",
+    "guard_governance_requires_operator_approval",
+    "guard_governance_operator_approval_absent",
+    "guard_governance_declarations_required",
+    "guard_governance_pre_submission_gates_required",
+    "guard_governance_no_score_claim",
+    "guard_governance_no_leaderboard_claim",
+    "guard_governance_no_private_core_exposure",
+    "guard_governance_no_legal_certification"
+  ],
+  "required_declaration_count": 8,
+  "score_claim_absent": true,
+  "signature": "F245F8911F10E874",
+  "status": "MILESTONE_9_MANUAL_SUBMISSION_GOVERNANCE_PLAN_V1_READY",
+  "task": "Task 1",
+  "title": "Manual Submission Governance Plan v1",
+  "upload_performed": false,
+  "warning_count": 0
+}
