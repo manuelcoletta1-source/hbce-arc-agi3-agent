@@ -1,0 +1,367 @@
+{
+  "artifact_statuses": [
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_CANDIDATE_FORMAT_REPORT_READY",
+      "expected_status": "MILESTONE_5_SUBMISSION_CANDIDATE_FORMAT_REPORT_READY",
+      "name": "submission_candidate_format_report",
+      "path": "examples/milestone-5/submission-candidate-format-report-v1/submission-candidate-format-report-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "2AE350CF32308D83"
+    },
+    {
+      "actual_status": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+      "expected_status": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+      "name": "local_submission_candidate_smoke_only",
+      "path": "examples/milestone-5/local-submission-smoke-test-v1/local-submission-candidate-smoke-only-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "6EF4BA5C672A5CEC"
+    },
+    {
+      "actual_status": "MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY",
+      "expected_status": "MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY",
+      "name": "local_submission_smoke_test",
+      "path": "examples/milestone-5/local-submission-smoke-test-v1/local-submission-smoke-test-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "6186E30D0D9DAF08"
+    },
+    {
+      "actual_status": "MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY",
+      "expected_status": "MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY",
+      "name": "kaggle_submission_preflight_report",
+      "path": "examples/milestone-5/kaggle-submission-preflight-report-v1/kaggle-submission-preflight-report-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "799DCFAD290C78E6"
+    },
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+      "expected_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+      "name": "public_safety_boundary_checklist",
+      "path": "examples/milestone-5/public-safety-boundary-checklist-v1/public-safety-boundary-checklist-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "E10096494F15DC71"
+    }
+  ],
+  "baseline_commit": "d2f2750 Add ARC AGI3 submission candidate format report",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+  "candidate_task_count": 3,
+  "dry_run_index": {
+    "artifact_count": 5,
+    "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+    "contains_archive": false,
+    "contains_real_kaggle_submission": false,
+    "contains_upload_step": false,
+    "package_mode": "LOCAL_DRY_RUN_PACKAGE_ONLY_NO_ARCHIVE_NO_UPLOAD",
+    "ready_artifact_count": 5,
+    "source_artifacts": [
+      {
+        "actual_status": "MILESTONE_5_SUBMISSION_CANDIDATE_FORMAT_REPORT_READY",
+        "expected_status": "MILESTONE_5_SUBMISSION_CANDIDATE_FORMAT_REPORT_READY",
+        "name": "submission_candidate_format_report",
+        "path": "examples/milestone-5/submission-candidate-format-report-v1/submission-candidate-format-report-v1.json",
+        "present": true,
+        "ready": true,
+        "sha256_16": "2AE350CF32308D83"
+      },
+      {
+        "actual_status": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+        "expected_status": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+        "name": "local_submission_candidate_smoke_only",
+        "path": "examples/milestone-5/local-submission-smoke-test-v1/local-submission-candidate-smoke-only-v1.json",
+        "present": true,
+        "ready": true,
+        "sha256_16": "6EF4BA5C672A5CEC"
+      },
+      {
+        "actual_status": "MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY",
+        "expected_status": "MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY",
+        "name": "local_submission_smoke_test",
+        "path": "examples/milestone-5/local-submission-smoke-test-v1/local-submission-smoke-test-v1.json",
+        "present": true,
+        "ready": true,
+        "sha256_16": "6186E30D0D9DAF08"
+      },
+      {
+        "actual_status": "MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY",
+        "expected_status": "MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY",
+        "name": "kaggle_submission_preflight_report",
+        "path": "examples/milestone-5/kaggle-submission-preflight-report-v1/kaggle-submission-preflight-report-v1.json",
+        "present": true,
+        "ready": true,
+        "sha256_16": "799DCFAD290C78E6"
+      },
+      {
+        "actual_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+        "expected_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+        "name": "public_safety_boundary_checklist",
+        "path": "examples/milestone-5/public-safety-boundary-checklist-v1/public-safety-boundary-checklist-v1.json",
+        "present": true,
+        "ready": true,
+        "sha256_16": "E10096494F15DC71"
+      }
+    ],
+    "submission_filename": "submission.json",
+    "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD"
+  },
+  "dry_run_package_ready": true,
+  "format_report_id": "MILESTONE-5-CANDIDATE-FORMAT-05303A620DD2",
+  "format_report_signature": "05303A620DD2F362",
+  "kaggle_submission_sent": false,
+  "local_smoke_id": "MILESTONE-5-LOCAL-SMOKE-0F0FDCE696D4",
+  "local_smoke_signature": "0F0FDCE696D480F9",
+  "metadata": {
+    "archive_created": false,
+    "depends_on_submission_candidate_format_report": true,
+    "milestone": "Milestone #5",
+    "package_kind": "SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE",
+    "package_mode": "LOCAL_DRY_RUN_PACKAGE_ONLY_NO_ARCHIVE_NO_UPLOAD",
+    "source": "milestone_5_submission_candidate_dry_run_package_v1",
+    "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+    "task": "Task 9",
+    "upload_performed": false
+  },
+  "milestone": "Milestone #5",
+  "next_actions": [
+    "close_milestone_5_submission_preparation_v1",
+    "prepare_public_release_summary_v1"
+  ],
+  "package_artifact_count": 5,
+  "package_gate_count": 16,
+  "package_gates": [
+    {
+      "description": "Submission candidate format report artifact is present.",
+      "name": "format_report_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Submission candidate format report exposes ready status.",
+      "name": "format_report_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Local smoke-only submission candidate artifact is present.",
+      "name": "local_candidate_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Local candidate kind, filename, mode, and submission flag are valid.",
+      "name": "local_candidate_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Local submission smoke test exposes ready status.",
+      "name": "local_smoke_test_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Kaggle submission preflight report exposes ready status.",
+      "name": "preflight_report_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Public safety boundary checklist exposes ready status.",
+      "name": "public_safety_checklist_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "All required dry-run package artifacts are present.",
+      "name": "all_package_artifacts_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "All required dry-run package artifacts are ready.",
+      "name": "all_package_artifacts_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate task count matches the format report.",
+      "name": "candidate_task_count_matches_format_report",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Format report allows candidate dry-run packaging.",
+      "name": "format_report_allows_dry_run",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate boundary remains intact.",
+      "name": "boundary_intact",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate is JSON serializable.",
+      "name": "candidate_json_serializable",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Package mode is local-only dry-run.",
+      "name": "package_mode_local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Package mode does not create an archive and does not upload.",
+      "name": "package_no_archive_no_upload",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No Kaggle submission has been sent.",
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "package_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+  "package_issue_count": 0,
+  "package_issues": [
+    {
+      "active": false,
+      "description": "Submission candidate format report artifact is missing.",
+      "name": "format_report_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Submission candidate format report is not ready.",
+      "name": "format_report_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Local candidate artifact is missing.",
+      "name": "local_candidate_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Local candidate kind, filename, mode, or submission flag is invalid.",
+      "name": "local_candidate_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Local submission smoke test is not ready.",
+      "name": "local_smoke_test_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Kaggle submission preflight report is not ready.",
+      "name": "preflight_report_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Public safety boundary checklist is not ready.",
+      "name": "public_safety_checklist_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more required package artifacts is missing.",
+      "name": "package_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more required package artifacts is not ready.",
+      "name": "package_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate task count does not match the format report.",
+      "name": "candidate_task_count_mismatch",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Format report does not allow candidate dry-run packaging.",
+      "name": "format_report_dry_run_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate boundary is not intact.",
+      "name": "boundary_violation",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate cannot be serialized to JSON.",
+      "name": "candidate_json_not_serializable",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Package mode is not local dry-run package only.",
+      "name": "package_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Package mode suggests archive or upload behavior.",
+      "name": "archive_or_upload_mode_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Candidate appears to have been sent to Kaggle.",
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    }
+  ],
+  "package_mode": "LOCAL_DRY_RUN_PACKAGE_ONLY_NO_ARCHIVE_NO_UPLOAD",
+  "passed_gate_count": 16,
+  "ready_artifact_count": 5,
+  "ready_for_milestone_5_closure": true,
+  "ready_for_real_kaggle_submission": false,
+  "signature": "7B89C4D5AA872D5B",
+  "status": "MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY",
+  "submission_candidate_preview": {
+    "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+    "kaggle_submission_sent": false,
+    "submission_filename": "submission.json",
+    "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+    "task_count": 3,
+    "task_ids": [
+      "SMOKE-TASK-IDENTITY-2X2",
+      "SMOKE-TASK-COLOR-REMAP-2X2",
+      "SMOKE-TASK-OBJECT-FILL-3X3"
+    ]
+  },
+  "submission_filename": "submission.json",
+  "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+  "task": "Task 9",
+  "title": "Submission Candidate Dry-Run Package v1",
+  "warning_count": 0
+}

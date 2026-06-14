@@ -1,0 +1,73 @@
+ARC AGI3 SUBMISSION CANDIDATE DRY-RUN PACKAGE MANIFEST v1
+package_id=MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87
+signature=7B89C4D5AA872D5B
+status=MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY
+package_mode=LOCAL_DRY_RUN_PACKAGE_ONLY_NO_ARCHIVE_NO_UPLOAD
+candidate_kind=LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY
+submission_filename=submission.json
+submission_mode=LOCAL_SMOKE_ONLY_NO_UPLOAD
+package_artifact_count=5
+ready_artifact_count=5
+package_gate_count=16
+passed_gate_count=16
+package_issue_count=0
+warning_count=0
+candidate_task_count=3
+dry_run_package_ready=True
+ready_for_milestone_5_closure=True
+ready_for_real_kaggle_submission=False
+kaggle_submission_sent=False
+
+ARTIFACT_STATUSES
+submission_candidate_format_report present=True ready=True sha256_16=2AE350CF32308D83
+local_submission_candidate_smoke_only present=True ready=True sha256_16=6EF4BA5C672A5CEC
+local_submission_smoke_test present=True ready=True sha256_16=6186E30D0D9DAF08
+kaggle_submission_preflight_report present=True ready=True sha256_16=799DCFAD290C78E6
+public_safety_boundary_checklist present=True ready=True sha256_16=E10096494F15DC71
+
+PACKAGE_GATES
+format_report_present passed=True severity=PASS
+format_report_ready passed=True severity=PASS
+local_candidate_present passed=True severity=PASS
+local_candidate_valid passed=True severity=PASS
+local_smoke_test_ready passed=True severity=PASS
+preflight_report_ready passed=True severity=PASS
+public_safety_checklist_ready passed=True severity=PASS
+all_package_artifacts_present passed=True severity=PASS
+all_package_artifacts_ready passed=True severity=PASS
+candidate_task_count_matches_format_report passed=True severity=PASS
+format_report_allows_dry_run passed=True severity=PASS
+boundary_intact passed=True severity=PASS
+candidate_json_serializable passed=True severity=PASS
+package_mode_local_only passed=True severity=PASS
+package_no_archive_no_upload passed=True severity=PASS
+kaggle_submission_not_sent passed=True severity=PASS
+
+PACKAGE_ISSUES
+format_report_missing active=False severity=BLOCKING
+format_report_not_ready active=False severity=BLOCKING
+local_candidate_missing active=False severity=BLOCKING
+local_candidate_invalid active=False severity=BLOCKING
+local_smoke_test_not_ready active=False severity=BLOCKING
+preflight_report_not_ready active=False severity=BLOCKING
+public_safety_checklist_not_ready active=False severity=BLOCKING
+package_artifact_missing active=False severity=BLOCKING
+package_artifact_not_ready active=False severity=BLOCKING
+candidate_task_count_mismatch active=False severity=BLOCKING
+format_report_dry_run_not_allowed active=False severity=BLOCKING
+boundary_violation active=False severity=BLOCKING
+candidate_json_not_serializable active=False severity=BLOCKING
+package_mode_invalid active=False severity=BLOCKING
+archive_or_upload_mode_detected active=False severity=BLOCKING
+kaggle_submission_already_sent active=False severity=BLOCKING
+
+BOUNDARY
+public_safe=true
+deterministic=true
+local_only=true
+dry_run_only=true
+external_api_dependency=false
+contains_api_keys=false
+kaggle_submission_sent=false
+private_core_exposure=false
+legal_certification=false

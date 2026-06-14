@@ -1,0 +1,58 @@
+{
+  "artifact_count": 5,
+  "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+  "contains_archive": false,
+  "contains_real_kaggle_submission": false,
+  "contains_upload_step": false,
+  "package_mode": "LOCAL_DRY_RUN_PACKAGE_ONLY_NO_ARCHIVE_NO_UPLOAD",
+  "ready_artifact_count": 5,
+  "source_artifacts": [
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_CANDIDATE_FORMAT_REPORT_READY",
+      "expected_status": "MILESTONE_5_SUBMISSION_CANDIDATE_FORMAT_REPORT_READY",
+      "name": "submission_candidate_format_report",
+      "path": "examples/milestone-5/submission-candidate-format-report-v1/submission-candidate-format-report-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "2AE350CF32308D83"
+    },
+    {
+      "actual_status": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+      "expected_status": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+      "name": "local_submission_candidate_smoke_only",
+      "path": "examples/milestone-5/local-submission-smoke-test-v1/local-submission-candidate-smoke-only-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "6EF4BA5C672A5CEC"
+    },
+    {
+      "actual_status": "MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY",
+      "expected_status": "MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY",
+      "name": "local_submission_smoke_test",
+      "path": "examples/milestone-5/local-submission-smoke-test-v1/local-submission-smoke-test-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "6186E30D0D9DAF08"
+    },
+    {
+      "actual_status": "MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY",
+      "expected_status": "MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY",
+      "name": "kaggle_submission_preflight_report",
+      "path": "examples/milestone-5/kaggle-submission-preflight-report-v1/kaggle-submission-preflight-report-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "799DCFAD290C78E6"
+    },
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+      "expected_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+      "name": "public_safety_boundary_checklist",
+      "path": "examples/milestone-5/public-safety-boundary-checklist-v1/public-safety-boundary-checklist-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "E10096494F15DC71"
+    }
+  ],
+  "submission_filename": "submission.json",
+  "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD"
+}
