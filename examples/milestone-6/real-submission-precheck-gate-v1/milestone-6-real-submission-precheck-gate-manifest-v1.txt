@@ -1,0 +1,27 @@
+ARC AGI3 MILESTONE 6 REAL SUBMISSION PRECHECK GATE MANIFEST v1
+precheck_id=MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7
+signature=3273A65E5AF7AFB7
+status=MILESTONE_6_REAL_SUBMISSION_PRECHECK_GATE_READY
+baseline_commit=f495641 Add ARC AGI3 operator approval declaration
+precheck_mode=REAL_SUBMISSION_PRECHECK_GATE_ONLY_NO_SUBMISSION
+precheck_scope=VERIFY_REAL_SUBMISSION_READINESS_NO_UPLOAD_NO_API
+precheck_verdict=PRECHECK_PASS_REAL_SUBMISSION_STILL_BLOCKED_BY_MANUAL_EXECUTION_GATE
+artifact_count=3
+ready_artifact_count=3
+precheck_gate_count=25
+passed_gate_count=25
+precheck_issue_count=0
+precheck_gate_ready=True
+precheck_passed=True
+operator_approval_granted=True
+manual_execution_gate_required=True
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+real_submission_created=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
