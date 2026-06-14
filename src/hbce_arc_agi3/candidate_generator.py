@@ -108,6 +108,66 @@ def most_common_foreground_color(
     return sorted(counter.items(), key=lambda item: (-item[1], item[0]))[0][0]
 
 
+
+def generalize_unseen_foreground_color_mapping(
+    grid: Sequence[Sequence[int]],
+    stable_mappings: Any,
+    *,
+    background_color: int = 0,
+) -> Grid:
+    """Map unseen foreground colors to the dominant learned foreground output.
+
+    Accepts the detector's ColorMapping objects as well as plain dictionaries.
+    If observed foreground source colors converge to one non-background target,
+    unseen foreground colors in the test grid are mapped to that target.
+    """
+
+    normalized = normalize_grid(grid, field_name="grid")
+    normalized_mappings: Dict[int, int] = {}
+
+    if isinstance(stable_mappings, Mapping):
+        for source, target in stable_mappings.items():
+            normalized_mappings[int(source)] = int(target)
+    else:
+        for item in stable_mappings:
+            if isinstance(item, Mapping):
+                source = item.get("source_color")
+                target = item.get("target_color")
+            else:
+                source = getattr(item, "source_color", None)
+                target = getattr(item, "target_color", None)
+
+            if source is None or target is None:
+                continue
+
+            normalized_mappings[int(source)] = int(target)
+
+    foreground_targets = {
+        target
+        for source, target in normalized_mappings.items()
+        if source != background_color and target != background_color
+    }
+
+    if len(foreground_targets) != 1:
+        return normalized
+
+    dominant_target = next(iter(foreground_targets))
+
+    result: Grid = []
+    for row in normalized:
+        result_row = []
+        for value in row:
+            cell = int(value)
+            if cell == background_color:
+                result_row.append(background_color)
+            elif cell in normalized_mappings:
+                result_row.append(normalized_mappings[cell])
+            else:
+                result_row.append(dominant_target)
+        result.append(result_row)
+
+    return result
+
 def transform_mask_by_type(mask: Sequence[Sequence[int]], transform_type: Optional[str]) -> Mask:
     normalized = normalize_mask(mask)
 
@@ -344,6 +404,12 @@ def generate_candidates(
     color_grid = apply_stable_color_mapping(
         normalized_test,
         color_report.stable_mappings,
+    )
+
+    color_grid = generalize_unseen_foreground_color_mapping(
+        color_grid,
+        color_report.stable_mappings,
+        background_color=background_color,
     )
 
     shape_transform = shape_report.stable_transform_type or shape_report.dominant_transform_type

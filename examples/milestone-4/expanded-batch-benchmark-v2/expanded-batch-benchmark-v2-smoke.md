@@ -4,8 +4,8 @@
 
 - status: `EXPANDED_BATCH_BENCHMARK_PIPELINE_READY`
 - validation: `EXPANDED_BATCH_BENCHMARK_VALID`
-- benchmark_id: `EXPANDED-BATCH-BENCHMARK-A555E4818652`
-- signature: `A555E48186526A8F`
+- benchmark_id: `EXPANDED-BATCH-BENCHMARK-E9B711359952`
+- signature: `E9B7113599525583`
 
 ## Metrics
 
@@ -13,18 +13,18 @@
 - tasks_processed: `3`
 - candidate_generation_success_rate: `1.0`
 - ranking_success_rate: `1.0`
-- best_candidate_match_rate: `0.6667`
-- average_best_score: `0.965`
-- best_task_score: `0.9775`
-- worst_task_score: `0.94`
+- best_candidate_match_rate: `1.0`
+- average_best_score: `0.9458`
+- best_task_score: `1.0`
+- worst_task_score: `0.8975`
 
 ## Task results
 
 | task_id | family | candidates | best_type | best_score | match |
 |---|---|---:|---|---:|---:|
 | EXPANDED-BATCH-V2-COLOR-SHAPE-SMOKE | color_shape_combined | 4 | COLOR_SHAPE_COMBINED | 0.94 | True |
-| EXPANDED-BATCH-V2-IDENTITY | identity_baseline | 4 | COLOR_SHAPE_COMBINED | 0.9775 | True |
-| EXPANDED-BATCH-V2-COLOR-ONLY | color_transform | 4 | COLOR_SHAPE_COMBINED | 0.9775 | False |
+| EXPANDED-BATCH-V2-IDENTITY | identity_baseline | 4 | COLOR_SHAPE_COMBINED | 0.8975 | True |
+| EXPANDED-BATCH-V2-COLOR-ONLY | color_transform | 4 | COLOR_REMAP | 1.0 | True |
 
 ## Boundary
 

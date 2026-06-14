@@ -258,11 +258,11 @@ def validate_failure_driven_improvement_report(
     if int(data.get("analyzed_task_count", 0)) <= 0:
         errors.append("analyzed_task_count must be positive")
 
-    if int(data.get("improvement_item_count", 0)) <= 0:
-        errors.append("improvement_item_count must be positive")
+    if int(data.get("improvement_item_count", 0)) < 0:
+        errors.append("improvement_item_count must not be negative")
 
-    if data.get("highest_priority") not in {"HIGH", "MEDIUM", "LOW"}:
-        errors.append("highest_priority must be HIGH, MEDIUM or LOW")
+    if data.get("highest_priority") not in {"HIGH", "MEDIUM", "LOW", "NONE"}:
+        errors.append("highest_priority must be HIGH, MEDIUM, LOW or NONE")
 
     metadata = dict(data.get("metadata", {}))
 

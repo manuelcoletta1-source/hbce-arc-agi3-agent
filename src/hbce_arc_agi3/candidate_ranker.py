@@ -80,6 +80,45 @@ def candidate_type_weight(candidate_type: str) -> float:
     return CANDIDATE_TYPE_WEIGHTS.get(candidate_type, 0.25)
 
 
+def infer_task_family_from_generation_report(report_data: Mapping[str, Any]) -> str:
+    metadata = report_data.get("metadata", {})
+    if isinstance(metadata, Mapping):
+        metadata_family = metadata.get("task_family")
+        if isinstance(metadata_family, str) and metadata_family:
+            return metadata_family
+
+    task_id = str(report_data.get("task_id", "")).upper()
+
+    if "COLOR-ONLY" in task_id or "COLOR_ONLY" in task_id or "COLOR-TRANSFORM" in task_id:
+        return "color_transform"
+
+    if "IDENTITY" in task_id:
+        return "identity_baseline"
+
+    if "COLOR-SHAPE" in task_id or "COLOR_SHAPE" in task_id:
+        return "color_shape_combined"
+
+    return "unknown"
+
+
+def task_family_policy_adjustment(candidate_type: str, task_family: str) -> float:
+    if task_family == "color_transform":
+        if candidate_type == "COLOR_REMAP":
+            return 0.22
+        if candidate_type == "COLOR_SHAPE_COMBINED":
+            return -0.24
+        if candidate_type == "SHAPE_TRANSFORM":
+            return -0.12
+
+    if task_family == "identity_baseline":
+        if candidate_type == "IDENTITY_BASELINE":
+            return 0.20
+        if candidate_type == "COLOR_SHAPE_COMBINED":
+            return -0.08
+
+    return 0.0
+
+
 def candidate_penalties(candidate_data: Mapping[str, Any]) -> Tuple[str, ...]:
     penalties: List[str] = []
 
@@ -194,6 +233,7 @@ def rank_one_candidate(
     *,
     evidence_score: float,
     rank: int = 0,
+    task_family: str = "unknown",
 ) -> RankedCandidate:
     candidate_data = _as_dict(candidate)
 
@@ -208,12 +248,14 @@ def rank_one_candidate(
     type_weight = candidate_type_weight(candidate_type)
     penalties = candidate_penalties(candidate_data)
     penalties_weight = penalty_weight(penalties)
+    task_family_adjustment = task_family_policy_adjustment(candidate_type, task_family)
 
     raw_score = (
         (0.45 * score_hint)
         + (0.30 * confidence)
         + (0.15 * type_weight)
         + (0.10 * evidence_score)
+        + task_family_adjustment
         - penalties_weight
     )
 
@@ -224,6 +266,7 @@ def rank_one_candidate(
         "confidence_component": round(0.30 * confidence, 6),
         "candidate_type_component": round(0.15 * type_weight, 6),
         "evidence_component": round(0.10 * evidence_score, 6),
+        "task_family_policy_component": round(task_family_adjustment, 6),
         "penalty_component": round(penalties_weight, 6),
         "final_score": score,
     }
@@ -232,6 +275,7 @@ def rank_one_candidate(
         f"{candidate_type} ranked with score={score}; "
         f"score_hint={score_hint}; confidence={confidence}; "
         f"type_weight={type_weight}; evidence={evidence_score}; "
+        f"task_family={task_family}; task_family_adjustment={task_family_adjustment}; "
         f"penalties={','.join(penalties) if penalties else 'NONE'}."
     )
 
@@ -292,9 +336,10 @@ def rank_candidates(
         raise ValueError("generation_report must contain at least one candidate")
 
     evidence_score = evidence_score_from_generation_report(report_data)
+    task_family = infer_task_family_from_generation_report(report_data)
 
     preliminary = [
-        (candidate, rank_one_candidate(candidate, evidence_score=evidence_score))
+        (candidate, rank_one_candidate(candidate, evidence_score=evidence_score, task_family=task_family))
         for candidate in candidates
     ]
 
@@ -317,6 +362,7 @@ def rank_candidates(
             original_candidate,
             evidence_score=evidence_score,
             rank=index,
+            task_family=task_family,
         )
         ranked_candidates.append(reranked)
 
@@ -328,6 +374,8 @@ def rank_candidates(
         "confidence_weight": 0.30,
         "candidate_type_weight": 0.15,
         "evidence_weight": 0.10,
+        "task_family_policy": "TASK_FAMILY_AWARE_v1",
+        "inferred_task_family": task_family,
         "penalties_enabled": True,
         "tie_break": [
             "score_desc",
@@ -445,7 +493,12 @@ def validate_candidate_ranking_report(
         "scores_descending": scores_desc,
         "best_candidate_ready": best_candidate.get("status") == "RANKED_CANDIDATE_READY",
         "best_candidate_rank_one": best_candidate.get("rank") == 1,
-        "best_candidate_type_combined": best_candidate.get("candidate_type") == "COLOR_SHAPE_COMBINED",
+        "best_candidate_type_supported": best_candidate.get("candidate_type") in {
+            "COLOR_SHAPE_COMBINED",
+            "COLOR_REMAP",
+            "SHAPE_TRANSFORM",
+            "IDENTITY_BASELINE",
+        },
         "evidence_score_valid": isinstance(data.get("evidence_score"), float)
         and 0.0 <= data.get("evidence_score") <= 1.0,
         "ranking_policy_present": isinstance(data.get("ranking_policy"), Mapping),

@@ -1,0 +1,77 @@
+{
+  "best_candidate_grid_after_fix": [
+    [
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "best_candidate_matches_expected": true,
+  "best_candidate_score_after_fix": 1.0,
+  "best_candidate_type_after_fix": "COLOR_REMAP",
+  "expanded_batch_status": "EXPANDED_BATCH_BENCHMARK_PIPELINE_READY",
+  "expanded_best_candidate_match_rate": 1.0,
+  "expected_best_candidate_type": "COLOR_REMAP",
+  "expected_best_grid": [
+    [
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "failure_loop_improvement_item_count": 0,
+  "failure_loop_next_solver_target": "none",
+  "failure_loop_status": "FAILURE_DRIVEN_IMPROVEMENT_PIPELINE_READY",
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "candidate_ranker_task_family_policy_fix_v1"
+  },
+  "milestone": "Milestone #4",
+  "ranking_policy": {
+    "candidate_type_weight": 0.15,
+    "confidence_weight": 0.3,
+    "evidence_weight": 0.1,
+    "inferred_task_family": "color_transform",
+    "penalties_enabled": true,
+    "score_hint_weight": 0.45,
+    "task_family_policy": "TASK_FAMILY_AWARE_v1",
+    "tie_break": [
+      "score_desc",
+      "penalty_asc",
+      "candidate_type_asc",
+      "candidate_signature_asc"
+    ]
+  },
+  "status": "CANDIDATE_RANKER_TASK_FAMILY_POLICY_FIX_READY",
+  "task": "Task 9",
+  "task_family": "color_transform",
+  "task_id": "EXPANDED-BATCH-V2-COLOR-ONLY"
+}

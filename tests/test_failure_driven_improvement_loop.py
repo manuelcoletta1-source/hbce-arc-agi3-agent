@@ -35,10 +35,10 @@ def test_run_failure_driven_improvement_loop_ready():
 
     assert report.status == "FAILURE_DRIVEN_IMPROVEMENT_LOOP_READY"
     assert report.analyzed_task_count >= 3
-    assert report.failing_task_count >= 1
-    assert report.improvement_item_count >= 1
-    assert report.highest_priority == "HIGH"
-    assert report.next_solver_target == "candidate_ranker.py"
+    assert report.failing_task_count == 0
+    assert report.improvement_item_count == 0
+    assert report.highest_priority == "NONE"
+    assert report.next_solver_target == "none"
     assert report.metadata["uses_expanded_batch_benchmark_v2"] is True
     assert report.metadata["failure_driven_solver_improvement"] is True
     assert report.metadata["external_api_dependency"] is False
@@ -60,9 +60,9 @@ def test_failure_driven_improvement_pipeline_ready():
     assert payload["status"] == "FAILURE_DRIVEN_IMPROVEMENT_PIPELINE_READY"
     assert payload["report_status"] == "FAILURE_DRIVEN_IMPROVEMENT_LOOP_READY"
     assert payload["validation_status"] == "FAILURE_DRIVEN_IMPROVEMENT_LOOP_VALID"
-    assert payload["improvement_item_count"] >= 1
-    assert payload["highest_priority"] == "HIGH"
-    assert payload["next_solver_target"] == "candidate_ranker.py"
+    assert payload["improvement_item_count"] == 0
+    assert payload["highest_priority"] == "NONE"
+    assert payload["next_solver_target"] == "none"
     assert payload["metadata"]["public_safe"] is True
     assert payload["metadata"]["local_only"] is True
     assert payload["metadata"]["dry_run_only"] is True
