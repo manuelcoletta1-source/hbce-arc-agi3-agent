@@ -1,0 +1,449 @@
+{
+  "accepted_declaration_count": 8,
+  "baseline_commit": "34e7763 Add ARC AGI3 operator approval contract",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "declaration_gate_count": 22,
+  "declaration_gates": [
+    {
+      "description": "Operator approval contract artifact is present.",
+      "name": "operator_approval_contract_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Operator approval contract is ready.",
+      "name": "operator_approval_contract_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Operator approval contract has id and signature.",
+      "name": "operator_approval_contract_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Contract requires operator approval.",
+      "name": "contract_requires_operator_approval",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Contract itself did not grant approval.",
+      "name": "contract_does_not_grant_approval",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Declaration mode is valid.",
+      "name": "declaration_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Required declarations are loaded from the contract.",
+      "name": "required_declarations_loaded",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "All required declarations are declared.",
+      "name": "all_required_declarations_declared",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "All required declarations are accepted.",
+      "name": "all_required_declarations_accepted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Operator approval is declared.",
+      "name": "operator_approval_declared",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Operator approval declaration is received.",
+      "name": "operator_approval_received",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Operator approval is granted as declaration artifact only.",
+      "name": "operator_approval_granted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Real submission remains disallowed.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Ready for real Kaggle submission remains false.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No real submission has been created.",
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No Kaggle submission has been sent.",
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No upload has been performed.",
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No external API dependency is present.",
+      "name": "no_external_api_dependency",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No secrets or API keys are required or present.",
+      "name": "no_secrets_or_api_keys",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No private core exposure is present.",
+      "name": "no_private_core_exposure",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No legal certification claim is present.",
+      "name": "no_legal_certification",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "A later precheck gate is still required.",
+      "name": "precheck_gate_still_required",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "declaration_id": "MILESTONE-6-OPERATOR-APPROVAL-DECLARATION-1E7999F68004",
+  "declaration_index": {
+    "accepted_declaration_count": 8,
+    "baseline_commit": "34e7763 Add ARC AGI3 operator approval contract",
+    "declaration_mode": "OPERATOR_APPROVAL_DECLARATION_ONLY_NO_SUBMISSION",
+    "declaration_scope": "DECLARE_OPERATOR_APPROVAL_NO_UPLOAD_NO_API",
+    "declaration_verdict": "OPERATOR_APPROVAL_DECLARED_REAL_SUBMISSION_STILL_BLOCKED",
+    "declared_declaration_count": 8,
+    "depends_on_operator_approval_contract": "MILESTONE-6-OPERATOR-APPROVAL-CONTRACT-471934E97FAC",
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #6",
+    "operator_approval_declared": true,
+    "operator_approval_granted": true,
+    "operator_approval_received": true,
+    "precheck_gate_required": true,
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "required_declaration_count": 8,
+    "task": "Task 3",
+    "upload_performed": false
+  },
+  "declaration_issue_count": 0,
+  "declaration_issues": [
+    {
+      "active": false,
+      "description": "Operator approval contract artifact is missing.",
+      "name": "operator_approval_contract_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Operator approval contract is not ready.",
+      "name": "operator_approval_contract_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Operator approval contract id/signature is missing.",
+      "name": "operator_approval_contract_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Contract does not require operator approval.",
+      "name": "contract_does_not_require_operator_approval",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Contract already grants approval unexpectedly.",
+      "name": "contract_already_grants_approval",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Declaration mode is invalid.",
+      "name": "declaration_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Required declarations are missing.",
+      "name": "required_declarations_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Required declarations are not declared.",
+      "name": "required_declarations_not_declared",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Required declarations are not accepted.",
+      "name": "required_declarations_not_accepted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Operator approval is not declared.",
+      "name": "operator_approval_not_declared",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Operator approval declaration is not received.",
+      "name": "operator_approval_not_received",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Operator approval declaration is not granted.",
+      "name": "operator_approval_not_granted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Real submission is allowed unexpectedly.",
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Ready for real Kaggle submission is true unexpectedly.",
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "A real submission appears to have been created.",
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "A Kaggle submission appears to have been sent.",
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "An upload appears to have been performed.",
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "External API dependency detected.",
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Secrets or API keys detected.",
+      "name": "secrets_or_api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Private core exposure detected.",
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Legal certification claim detected.",
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Precheck gate is not required.",
+      "name": "precheck_gate_not_required",
+      "severity": "BLOCKING"
+    }
+  ],
+  "declaration_mode": "OPERATOR_APPROVAL_DECLARATION_ONLY_NO_SUBMISSION",
+  "declaration_record": {
+    "accepted_declaration_count": 8,
+    "archive_created_for_upload": false,
+    "boundary_intact": true,
+    "contains_api_keys": false,
+    "contract_did_not_grant_approval": true,
+    "contract_required_approval": true,
+    "declaration_mode": "OPERATOR_APPROVAL_DECLARATION_ONLY_NO_SUBMISSION",
+    "declaration_scope": "DECLARE_OPERATOR_APPROVAL_NO_UPLOAD_NO_API",
+    "declaration_verdict": "OPERATOR_APPROVAL_DECLARED_REAL_SUBMISSION_STILL_BLOCKED",
+    "declared_declaration_count": 8,
+    "declared_operator_declarations": [
+      {
+        "accepted": true,
+        "declared": true,
+        "name": "operator_confirms_real_submission_intent",
+        "provided": true,
+        "required": true,
+        "status": "DECLARED_AND_ACCEPTED_FOR_DECISION_CHAIN"
+      },
+      {
+        "accepted": true,
+        "declared": true,
+        "name": "operator_confirms_kaggle_rules_reviewed",
+        "provided": true,
+        "required": true,
+        "status": "DECLARED_AND_ACCEPTED_FOR_DECISION_CHAIN"
+      },
+      {
+        "accepted": true,
+        "declared": true,
+        "name": "operator_confirms_submission_file_reviewed",
+        "provided": true,
+        "required": true,
+        "status": "DECLARED_AND_ACCEPTED_FOR_DECISION_CHAIN"
+      },
+      {
+        "accepted": true,
+        "declared": true,
+        "name": "operator_confirms_no_private_core_exposure",
+        "provided": true,
+        "required": true,
+        "status": "DECLARED_AND_ACCEPTED_FOR_DECISION_CHAIN"
+      },
+      {
+        "accepted": true,
+        "declared": true,
+        "name": "operator_confirms_no_api_keys_or_secrets",
+        "provided": true,
+        "required": true,
+        "status": "DECLARED_AND_ACCEPTED_FOR_DECISION_CHAIN"
+      },
+      {
+        "accepted": true,
+        "declared": true,
+        "name": "operator_confirms_no_external_api_dependency",
+        "provided": true,
+        "required": true,
+        "status": "DECLARED_AND_ACCEPTED_FOR_DECISION_CHAIN"
+      },
+      {
+        "accepted": true,
+        "declared": true,
+        "name": "operator_confirms_no_legal_certification_claim",
+        "provided": true,
+        "required": true,
+        "status": "DECLARED_AND_ACCEPTED_FOR_DECISION_CHAIN"
+      },
+      {
+        "accepted": true,
+        "declared": true,
+        "name": "operator_accepts_manual_submission_responsibility",
+        "provided": true,
+        "required": true,
+        "status": "DECLARED_AND_ACCEPTED_FOR_DECISION_CHAIN"
+      }
+    ],
+    "depends_on_contract_verdict": "OPERATOR_APPROVAL_REQUIRED_BUT_NOT_GRANTED",
+    "depends_on_operator_approval_contract_id": "MILESTONE-6-OPERATOR-APPROVAL-CONTRACT-471934E97FAC",
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "next_allowed_stage": "REAL_SUBMISSION_PRECHECK_GATE_REQUIRED",
+    "operator_approval_declaration_ready": true,
+    "operator_approval_declared": true,
+    "operator_approval_granted": true,
+    "operator_approval_received": true,
+    "operator_approval_required": true,
+    "operator_identity_verified_for_submission": false,
+    "precheck_gate_required": true,
+    "private_core_exposure": false,
+    "provided_declaration_count": 8,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "required_declaration_count": 8,
+    "secrets_required": false,
+    "upload_performed": false
+  },
+  "declaration_scope": "DECLARE_OPERATOR_APPROVAL_NO_UPLOAD_NO_API",
+  "declaration_verdict": "OPERATOR_APPROVAL_DECLARED_REAL_SUBMISSION_STILL_BLOCKED",
+  "declared_declaration_count": 8,
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_6_operator_approval_declaration_v1"
+  },
+  "milestone": "Milestone #6",
+  "next_allowed_stage": "REAL_SUBMISSION_PRECHECK_GATE_REQUIRED",
+  "operator_approval_contract_id": "MILESTONE-6-OPERATOR-APPROVAL-CONTRACT-471934E97FAC",
+  "operator_approval_contract_signature": "471934E97FAC152E",
+  "operator_approval_contract_verdict": "OPERATOR_APPROVAL_REQUIRED_BUT_NOT_GRANTED",
+  "operator_approval_declaration_ready": true,
+  "operator_approval_declared": true,
+  "operator_approval_granted": true,
+  "operator_approval_received": true,
+  "operator_approval_required": true,
+  "passed_gate_count": 22,
+  "precheck_gate_required": true,
+  "provided_declaration_count": 8,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "required_declaration_count": 8,
+  "signature": "1E7999F680047C96",
+  "status": "MILESTONE_6_OPERATOR_APPROVAL_DECLARATION_READY",
+  "task": "Task 3",
+  "title": "Operator Approval Declaration v1",
+  "upload_performed": false,
+  "warning_count": 0
+}
