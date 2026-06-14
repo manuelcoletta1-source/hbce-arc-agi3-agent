@@ -1,0 +1,428 @@
+{
+  "artifact_integrity_checks": [
+    {
+      "actual_status": "MILESTONE_6_MANUAL_SUBMISSION_EXECUTION_GATE_READY",
+      "artifact_id": "MILESTONE-6-MANUAL-SUBMISSION-GATE-AB82FA104158",
+      "current_sha256": "72eb008a58bb882ba32536f5bd30cb1c7ae0e010d766719dc37096c2d1807a61",
+      "current_sha256_16": "72EB008A58BB882B",
+      "expected_status": "MILESTONE_6_MANUAL_SUBMISSION_EXECUTION_GATE_READY",
+      "hash_match": true,
+      "name": "manual_submission_execution_gate",
+      "path": "examples/milestone-6/manual-submission-execution-gate-v1/milestone-6-manual-submission-execution-gate-v1.json",
+      "present": true,
+      "ready": true,
+      "recorded_sha256": "72eb008a58bb882ba32536f5bd30cb1c7ae0e010d766719dc37096c2d1807a61",
+      "recorded_sha256_16": "72EB008A58BB882B"
+    },
+    {
+      "actual_status": "MILESTONE_6_REAL_SUBMISSION_PRECHECK_GATE_READY",
+      "artifact_id": "MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7",
+      "current_sha256": "8cdc6485af9d19a72f5bae5bd9fa4e149d721892cb615f291ced2aa422282100",
+      "current_sha256_16": "8CDC6485AF9D19A7",
+      "expected_status": "MILESTONE_6_REAL_SUBMISSION_PRECHECK_GATE_READY",
+      "hash_match": true,
+      "name": "real_submission_precheck_gate",
+      "path": "examples/milestone-6/real-submission-precheck-gate-v1/milestone-6-real-submission-precheck-gate-v1.json",
+      "present": true,
+      "ready": true,
+      "recorded_sha256": "8cdc6485af9d19a72f5bae5bd9fa4e149d721892cb615f291ced2aa422282100",
+      "recorded_sha256_16": "8CDC6485AF9D19A7"
+    },
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY",
+      "artifact_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+      "current_sha256": "15d64befb2aa4a24a348e9626013dd5f421d5d3839dbe4983c1679d6e0466e7a",
+      "current_sha256_16": "15D64BEFB2AA4A24",
+      "expected_status": "MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY",
+      "hash_match": true,
+      "name": "submission_candidate_dry_run_package",
+      "path": "examples/milestone-5/submission-candidate-dry-run-package-v1/submission-candidate-dry-run-package-v1.json",
+      "present": true,
+      "ready": true,
+      "recorded_sha256": "15d64befb2aa4a24a348e9626013dd5f421d5d3839dbe4983c1679d6e0466e7a",
+      "recorded_sha256_16": "15D64BEFB2AA4A24"
+    },
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_RELEASE_SUMMARY_READY",
+      "artifact_id": "MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F",
+      "current_sha256": "d69b74902b9639ea948e2cd3655294ed87dd7441edece90c0be2fbd829bac9c8",
+      "current_sha256_16": "D69B74902B9639EA",
+      "expected_status": "MILESTONE_5_PUBLIC_RELEASE_SUMMARY_READY",
+      "hash_match": true,
+      "name": "public_release_summary",
+      "path": "examples/milestone-5/public-release-summary-v1/milestone-5-public-release-summary-v1.json",
+      "present": true,
+      "ready": true,
+      "recorded_sha256": "d69b74902b9639ea948e2cd3655294ed87dd7441edece90c0be2fbd829bac9c8",
+      "recorded_sha256_16": "D69B74902B9639EA"
+    }
+  ],
+  "baseline_commit": "88e783e Add ARC AGI3 real submission package freeze",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "frozen_artifact_count": 4,
+  "integrity_gate_count": 26,
+  "integrity_gates": [
+    {
+      "name": "freeze_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "freeze_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "freeze_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "freeze_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "freeze_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "frozen_artifact_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_frozen_artifact_paths_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_frozen_artifacts_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_recorded_hashes_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_current_hashes_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_hashes_match",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "integrity_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "integrity_verification_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "integrity_verified",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "integrity_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_execution_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "integrity_id": "MILESTONE-6-FROZEN-PACKAGE-INTEGRITY-4C2880500A59",
+  "integrity_index": {
+    "baseline_commit": "88e783e Add ARC AGI3 real submission package freeze",
+    "depends_on_freeze": "MILESTONE-6-REAL-SUBMISSION-FREEZE-9E37415967F8",
+    "external_api_dependency": false,
+    "frozen_artifact_count": 4,
+    "integrity_locked": true,
+    "integrity_mode": "FROZEN_PACKAGE_INTEGRITY_VERIFICATION_ONLY_NO_UPLOAD",
+    "integrity_ready": true,
+    "integrity_scope": "REHASH_FROZEN_ARTIFACTS_COMPARE_WITH_FREEZE_RECORD",
+    "integrity_verdict": "FROZEN_PACKAGE_INTEGRITY_VERIFIED_NO_SUBMISSION",
+    "integrity_verified": true,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_execution_performed": false,
+    "matched_hash_count": 4,
+    "milestone": "Milestone #6",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "task": "Task 7",
+    "upload_performed": false,
+    "verified_artifact_count": 4
+  },
+  "integrity_issue_count": 0,
+  "integrity_issues": [
+    {
+      "active": false,
+      "name": "freeze_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "freeze_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "freeze_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "freeze_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "freeze_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "frozen_artifact_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "frozen_artifact_path_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "frozen_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "recorded_hash_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "current_hash_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "hash_mismatch_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "integrity_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "integrity_verification_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "integrity_not_verified",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "integrity_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_execution_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    }
+  ],
+  "integrity_locked": true,
+  "integrity_mode": "FROZEN_PACKAGE_INTEGRITY_VERIFICATION_ONLY_NO_UPLOAD",
+  "integrity_ready": true,
+  "integrity_record": {
+    "boundary_intact": true,
+    "contains_api_keys": false,
+    "external_api_dependency": false,
+    "freeze_id": "MILESTONE-6-REAL-SUBMISSION-FREEZE-9E37415967F8",
+    "freeze_locked": true,
+    "freeze_ready": true,
+    "freeze_signature": "9E37415967F8EBE1",
+    "frozen_artifact_count": 4,
+    "integrity_locked": true,
+    "integrity_mode": "FROZEN_PACKAGE_INTEGRITY_VERIFICATION_ONLY_NO_UPLOAD",
+    "integrity_scope": "REHASH_FROZEN_ARTIFACTS_COMPARE_WITH_FREEZE_RECORD",
+    "integrity_verdict": "FROZEN_PACKAGE_INTEGRITY_VERIFIED_NO_SUBMISSION",
+    "integrity_verification_ready": true,
+    "integrity_verified": true,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_execution_performed": false,
+    "matched_hash_count": 4,
+    "next_allowed_stage": "SUBMISSION_CANDIDATE_FINAL_AUDIT_REQUIRED",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "upload_performed": false,
+    "verified_artifact_count": 4
+  },
+  "integrity_scope": "REHASH_FROZEN_ARTIFACTS_COMPARE_WITH_FREEZE_RECORD",
+  "integrity_verdict": "FROZEN_PACKAGE_INTEGRITY_VERIFIED_NO_SUBMISSION",
+  "integrity_verified": true,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "manual_execution_performed": false,
+  "matched_hash_count": 4,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_6_frozen_package_integrity_verification_v1"
+  },
+  "milestone": "Milestone #6",
+  "next_allowed_stage": "SUBMISSION_CANDIDATE_FINAL_AUDIT_REQUIRED",
+  "passed_gate_count": 26,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "signature": "4C2880500A598EE2",
+  "status": "MILESTONE_6_FROZEN_PACKAGE_INTEGRITY_VERIFICATION_READY",
+  "task": "Task 7",
+  "title": "Frozen Package Integrity Verification v1",
+  "upload_performed": false,
+  "verified_artifact_count": 4,
+  "warning_count": 0
+}
