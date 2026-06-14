@@ -1,0 +1,1174 @@
+{
+  "baseline_commit": "c68ab45 Add ARC AGI3 expanded runtime benchmark",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "candidate_outputs_deduplicated": true,
+  "candidate_outputs_ranked": true,
+  "candidate_payload_signature": "4A84F8136BD61B3F",
+  "evidence_field_count": 8,
+  "evidence_fields": [
+    "case_id",
+    "family",
+    "operation",
+    "priority",
+    "passed",
+    "evidence_score",
+    "expected_status",
+    "actual_status"
+  ],
+  "expanded_benchmark_source": {
+    "benchmark_id": "MILESTONE-8-EXPANDED-RUNTIME-AF25D4E1D4E6",
+    "path": "examples/milestone-8/expanded-runtime-benchmark-v2/milestone-8-expanded-runtime-benchmark-v2.json",
+    "present": true,
+    "sha256": "9f2c714859a917c80e63a334b9eb535a98b6cebbb6c1ff1c708cdb1dd47e8a16",
+    "sha256_16": "9F2C714859A917C8",
+    "status": "MILESTONE_8_EXPANDED_RUNTIME_BENCHMARK_V2_READY"
+  },
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "local_submission_candidate": {
+    "candidate_format": "ARC_AGI3_LOCAL_SUBMISSION_CANDIDATE_V2",
+    "candidate_outputs_deduplicated": true,
+    "candidate_outputs_ranked": true,
+    "candidate_payload_signature": "4A84F8136BD61B3F",
+    "candidates": [
+      {
+        "candidate_ready": true,
+        "family_hint": "color_mapping",
+        "profile_family": "color_mapping",
+        "ranked_candidate_count": 5,
+        "ranker_rank": 1,
+        "ranker_score": 128.0,
+        "runtime_candidate_count": 5,
+        "selected_candidate_id": "runtime_v2_color_mapping_from_training_pair",
+        "selected_family": "color_mapping",
+        "selected_grid": [
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            4,
+            3,
+            0
+          ]
+        ],
+        "selected_operation": "runtime_color_mapping_from_training_pair",
+        "signature": "627B4CCA3EA34C5B",
+        "solution_count": 1,
+        "task_id": "submission_refresh_color_mapping_probe_v2"
+      },
+      {
+        "candidate_ready": true,
+        "family_hint": "object_model",
+        "profile_family": "object_model",
+        "ranked_candidate_count": 4,
+        "ranker_rank": 1,
+        "ranker_score": 110.0,
+        "runtime_candidate_count": 4,
+        "selected_candidate_id": "runtime_v2_object_translate_largest_right",
+        "selected_family": "object_model",
+        "selected_grid": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            5,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "selected_operation": "runtime_object_translate_largest_right",
+        "signature": "83BC686A7D49C1BC",
+        "solution_count": 1,
+        "task_id": "submission_refresh_object_model_probe_v2"
+      },
+      {
+        "candidate_ready": true,
+        "family_hint": "shape_symmetry",
+        "profile_family": "shape_symmetry",
+        "ranked_candidate_count": 5,
+        "ranker_rank": 1,
+        "ranker_score": 107.0,
+        "runtime_candidate_count": 5,
+        "selected_candidate_id": "runtime_v2_shape_reflect_horizontal",
+        "selected_family": "shape_symmetry",
+        "selected_grid": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "selected_operation": "runtime_shape_reflect_horizontal",
+        "signature": "092FA0CBB4FB4E1B",
+        "solution_count": 1,
+        "task_id": "submission_refresh_shape_symmetry_probe_v2"
+      },
+      {
+        "candidate_ready": true,
+        "family_hint": "none",
+        "profile_family": "cross_family_composition",
+        "ranked_candidate_count": 4,
+        "ranker_rank": 1,
+        "ranker_score": 83.0,
+        "runtime_candidate_count": 4,
+        "selected_candidate_id": "runtime_v2_color_mapping_non_background_shift",
+        "selected_family": "color_mapping",
+        "selected_grid": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "selected_operation": "runtime_color_mapping_non_background_shift",
+        "signature": "E74E2D8EF50D5E48",
+        "solution_count": 1,
+        "task_id": "submission_refresh_cross_family_probe_v2"
+      }
+    ],
+    "dry_run_only": true,
+    "kaggle_submission_sent": false,
+    "local_only": true,
+    "profile_families": [
+      "color_mapping",
+      "object_model",
+      "shape_symmetry",
+      "cross_family_composition"
+    ],
+    "selected_candidate_signatures": [
+      "627B4CCA3EA34C5B",
+      "83BC686A7D49C1BC",
+      "092FA0CBB4FB4E1B",
+      "E74E2D8EF50D5E48"
+    ],
+    "solution_count": 4,
+    "submission_candidate_count": 4,
+    "task_count": 4
+  },
+  "local_submission_candidate_created": true,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_8_submission_candidate_refresh_v2"
+  },
+  "milestone": "Milestone #8",
+  "next_allowed_stage": "MILESTONE_8_TASK_8_FINAL_COMPETITIVE_READINESS_REFRESH_V2",
+  "passed_gate_count": 60,
+  "profile_family_coverage": [
+    "color_mapping",
+    "cross_family_composition",
+    "object_model",
+    "shape_symmetry"
+  ],
+  "public_leaderboard_claim_absent": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "refresh_case_count": 8,
+  "refresh_cases": [
+    {
+      "case_id": "refresh_expanded_benchmark_source_ready_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_source_expanded_benchmark",
+      "priority": "P0"
+    },
+    {
+      "case_id": "refresh_candidate_count_valid_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_candidate_count",
+      "priority": "P0"
+    },
+    {
+      "case_id": "refresh_profile_family_coverage_valid_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_profile_family_coverage",
+      "priority": "P0"
+    },
+    {
+      "case_id": "refresh_selected_candidate_grids_valid_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_selected_candidate_grid_validation",
+      "priority": "P0"
+    },
+    {
+      "case_id": "refresh_ranker_score_order_available_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_ranker_score_presence",
+      "priority": "P0"
+    },
+    {
+      "case_id": "refresh_deterministic_repeatability_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_deterministic_repeatability",
+      "priority": "P0"
+    },
+    {
+      "case_id": "refresh_manifest_index_ready_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_manifest_index_artifacts",
+      "priority": "P0"
+    },
+    {
+      "case_id": "refresh_submission_boundary_guard_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_submission_boundary_guard",
+      "priority": "P0"
+    }
+  ],
+  "refresh_failure_count": 0,
+  "refresh_gate_count": 60,
+  "refresh_gates": [
+    {
+      "name": "expanded_benchmark_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expanded_benchmark_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expanded_benchmark_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expanded_benchmark_next_stage_matches_task_7",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expanded_benchmark_gate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expanded_benchmark_issue_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expanded_benchmark_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expanded_benchmark_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "evidence_field_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_priority_p0",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_expected_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "source_ready_case_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_count_case_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "family_coverage_case_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_grids_case_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_score_case_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "repeatability_case_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manifest_index_case_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_guard_case_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_refresh_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_refresh_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_submission_candidate_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_manifest_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_index_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_hash_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_outputs_deduplicated",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_outputs_ranked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "profile_family_coverage_color_mapping",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "profile_family_coverage_object_model",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "profile_family_coverage_shape_symmetry",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "profile_family_coverage_cross_family_composition",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "refresh_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+  "refresh_index": {
+    "baseline_commit": "c68ab45 Add ARC AGI3 expanded runtime benchmark",
+    "candidate_payload_signature": "4A84F8136BD61B3F",
+    "depends_on_expanded_benchmark": "MILESTONE-8-EXPANDED-RUNTIME-AF25D4E1D4E6",
+    "external_api_dependency": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #8",
+    "next_allowed_stage": "MILESTONE_8_TASK_8_FINAL_COMPETITIVE_READINESS_REFRESH_V2",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "refresh_case_count": 8,
+    "refresh_failure_count": 0,
+    "refresh_locked": true,
+    "refresh_mode": "SUBMISSION_CANDIDATE_REFRESH_V2_LOCAL_ONLY",
+    "refresh_pass_count": 8,
+    "refresh_ready": true,
+    "refresh_scope": "REFRESH_LOCAL_SUBMISSION_CANDIDATE_FROM_EXPANDED_RUNTIME_STACK",
+    "refresh_verdict": "SUBMISSION_CANDIDATE_REFRESH_V2_READY_FOR_FINAL_COMPETITIVE_READINESS_REFRESH",
+    "submission_candidate_count": 4,
+    "task": "Task 7",
+    "task_count": 4,
+    "upload_performed": false
+  },
+  "refresh_issue_count": 0,
+  "refresh_issues": [
+    {
+      "active": false,
+      "name": "expanded_benchmark_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expanded_benchmark_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expanded_benchmark_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expanded_benchmark_next_stage_mismatch",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expanded_benchmark_gate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expanded_benchmark_issue_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expanded_benchmark_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expanded_benchmark_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "evidence_field_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "case_priority_not_p0",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "case_expected_status_not_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "source_ready_case_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_count_case_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_coverage_case_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_grids_case_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_score_case_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "repeatability_case_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manifest_index_case_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_guard_case_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_case_failure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_refresh_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_submission_candidate_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_manifest_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_index_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_hash_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_outputs_not_deduplicated",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_outputs_not_ranked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "profile_family_coverage_color_mapping_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "profile_family_coverage_object_model_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "profile_family_coverage_shape_symmetry_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "profile_family_coverage_cross_family_composition_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only_false",
+      "severity": "BLOCKING"
+    }
+  ],
+  "refresh_locked": true,
+  "refresh_mode": "SUBMISSION_CANDIDATE_REFRESH_V2_LOCAL_ONLY",
+  "refresh_pass_count": 8,
+  "refresh_ready": true,
+  "refresh_record": {
+    "baseline_expanded_benchmark_id": "MILESTONE-8-EXPANDED-RUNTIME-AF25D4E1D4E6",
+    "boundary_control_count": 9,
+    "candidate_outputs_deduplicated": true,
+    "candidate_outputs_ranked": true,
+    "contains_api_keys": false,
+    "evidence_field_count": 8,
+    "expanded_benchmark_next_stage": "MILESTONE_8_TASK_7_SUBMISSION_CANDIDATE_REFRESH_V2",
+    "expanded_benchmark_ready": true,
+    "external_api_dependency": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_submission_candidate_created": true,
+    "next_allowed_stage": "MILESTONE_8_TASK_8_FINAL_COMPETITIVE_READINESS_REFRESH_V2",
+    "private_core_exposure": false,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "refresh_case_count": 8,
+    "refresh_failure_count": 0,
+    "refresh_locked": true,
+    "refresh_mode": "SUBMISSION_CANDIDATE_REFRESH_V2_LOCAL_ONLY",
+    "refresh_pass_count": 8,
+    "refresh_ready": true,
+    "refresh_scope": "REFRESH_LOCAL_SUBMISSION_CANDIDATE_FROM_EXPANDED_RUNTIME_STACK",
+    "refresh_verdict": "SUBMISSION_CANDIDATE_REFRESH_V2_READY_FOR_FINAL_COMPETITIVE_READINESS_REFRESH",
+    "regression_guard_count": 10,
+    "score_claim_absent": true,
+    "submission_candidate_count": 4,
+    "submission_candidate_hash_available": true,
+    "submission_candidate_index_created": true,
+    "submission_candidate_manifest_created": true,
+    "submission_candidate_refresh_created": true,
+    "task_count": 4,
+    "upload_performed": false
+  },
+  "refresh_results": [
+    {
+      "actual_status": "PASS",
+      "case_id": "refresh_expanded_benchmark_source_ready_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_source_expanded_benchmark",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "refresh_candidate_count_valid_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_candidate_count",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "refresh_profile_family_coverage_valid_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_profile_family_coverage",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "refresh_selected_candidate_grids_valid_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_selected_candidate_grid_validation",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "refresh_ranker_score_order_available_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_ranker_score_presence",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "refresh_deterministic_repeatability_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_deterministic_repeatability",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "refresh_manifest_index_ready_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_manifest_index_artifacts",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "refresh_submission_boundary_guard_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "refresh_submission_boundary_guard",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "refresh_scope": "REFRESH_LOCAL_SUBMISSION_CANDIDATE_FROM_EXPANDED_RUNTIME_STACK",
+  "refresh_verdict": "SUBMISSION_CANDIDATE_REFRESH_V2_READY_FOR_FINAL_COMPETITIVE_READINESS_REFRESH",
+  "regression_guard_count": 10,
+  "regression_guards": [
+    "guard_refresh_uses_expanded_benchmark",
+    "guard_refresh_uses_ranker_runtime",
+    "guard_refresh_candidate_count",
+    "guard_refresh_family_coverage",
+    "guard_refresh_grid_validation",
+    "guard_refresh_score_fields",
+    "guard_refresh_deduplication",
+    "guard_refresh_repeatability",
+    "guard_refresh_manifest_index",
+    "guard_refresh_no_submission_side_effect"
+  ],
+  "score_claim_absent": true,
+  "signature": "14D9AAA149C0A2F7",
+  "status": "MILESTONE_8_SUBMISSION_CANDIDATE_REFRESH_V2_READY",
+  "submission_candidate_count": 4,
+  "submission_candidate_hash_available": true,
+  "submission_candidate_index_created": true,
+  "submission_candidate_manifest_created": true,
+  "submission_candidate_refresh_created": true,
+  "task": "Task 7",
+  "task_count": 4,
+  "task_fixtures": [
+    {
+      "family_hint": "color_mapping",
+      "input_grid": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "profile_family": "color_mapping",
+      "task_id": "submission_refresh_color_mapping_probe_v2",
+      "training_input": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "training_output": [
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "family_hint": "object_model",
+      "input_grid": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "profile_family": "object_model",
+      "task_id": "submission_refresh_object_model_probe_v2",
+      "training_input": null,
+      "training_output": null
+    },
+    {
+      "family_hint": "shape_symmetry",
+      "input_grid": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "profile_family": "shape_symmetry",
+      "task_id": "submission_refresh_shape_symmetry_probe_v2",
+      "training_input": null,
+      "training_output": null
+    },
+    {
+      "family_hint": null,
+      "input_grid": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "profile_family": "cross_family_composition",
+      "task_id": "submission_refresh_cross_family_probe_v2",
+      "training_input": null,
+      "training_output": null
+    }
+  ],
+  "title": "Submission Candidate Refresh v2",
+  "upload_performed": false,
+  "warning_count": 0
+}

@@ -1,0 +1,149 @@
+{
+  "candidate_format": "ARC_AGI3_LOCAL_SUBMISSION_CANDIDATE_V2",
+  "candidate_outputs_deduplicated": true,
+  "candidate_outputs_ranked": true,
+  "candidate_payload_signature": "4A84F8136BD61B3F",
+  "candidates": [
+    {
+      "candidate_ready": true,
+      "family_hint": "color_mapping",
+      "profile_family": "color_mapping",
+      "ranked_candidate_count": 5,
+      "ranker_rank": 1,
+      "ranker_score": 128.0,
+      "runtime_candidate_count": 5,
+      "selected_candidate_id": "runtime_v2_color_mapping_from_training_pair",
+      "selected_family": "color_mapping",
+      "selected_grid": [
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          4,
+          3,
+          0
+        ]
+      ],
+      "selected_operation": "runtime_color_mapping_from_training_pair",
+      "signature": "627B4CCA3EA34C5B",
+      "solution_count": 1,
+      "task_id": "submission_refresh_color_mapping_probe_v2"
+    },
+    {
+      "candidate_ready": true,
+      "family_hint": "object_model",
+      "profile_family": "object_model",
+      "ranked_candidate_count": 4,
+      "ranker_rank": 1,
+      "ranker_score": 110.0,
+      "runtime_candidate_count": 4,
+      "selected_candidate_id": "runtime_v2_object_translate_largest_right",
+      "selected_family": "object_model",
+      "selected_grid": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "selected_operation": "runtime_object_translate_largest_right",
+      "signature": "83BC686A7D49C1BC",
+      "solution_count": 1,
+      "task_id": "submission_refresh_object_model_probe_v2"
+    },
+    {
+      "candidate_ready": true,
+      "family_hint": "shape_symmetry",
+      "profile_family": "shape_symmetry",
+      "ranked_candidate_count": 5,
+      "ranker_rank": 1,
+      "ranker_score": 107.0,
+      "runtime_candidate_count": 5,
+      "selected_candidate_id": "runtime_v2_shape_reflect_horizontal",
+      "selected_family": "shape_symmetry",
+      "selected_grid": [
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "selected_operation": "runtime_shape_reflect_horizontal",
+      "signature": "092FA0CBB4FB4E1B",
+      "solution_count": 1,
+      "task_id": "submission_refresh_shape_symmetry_probe_v2"
+    },
+    {
+      "candidate_ready": true,
+      "family_hint": "none",
+      "profile_family": "cross_family_composition",
+      "ranked_candidate_count": 4,
+      "ranker_rank": 1,
+      "ranker_score": 83.0,
+      "runtime_candidate_count": 4,
+      "selected_candidate_id": "runtime_v2_color_mapping_non_background_shift",
+      "selected_family": "color_mapping",
+      "selected_grid": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "selected_operation": "runtime_color_mapping_non_background_shift",
+      "signature": "E74E2D8EF50D5E48",
+      "solution_count": 1,
+      "task_id": "submission_refresh_cross_family_probe_v2"
+    }
+  ],
+  "dry_run_only": true,
+  "kaggle_submission_sent": false,
+  "local_only": true,
+  "profile_families": [
+    "color_mapping",
+    "object_model",
+    "shape_symmetry",
+    "cross_family_composition"
+  ],
+  "selected_candidate_signatures": [
+    "627B4CCA3EA34C5B",
+    "83BC686A7D49C1BC",
+    "092FA0CBB4FB4E1B",
+    "E74E2D8EF50D5E48"
+  ],
+  "solution_count": 4,
+  "submission_candidate_count": 4,
+  "task_count": 4
+}

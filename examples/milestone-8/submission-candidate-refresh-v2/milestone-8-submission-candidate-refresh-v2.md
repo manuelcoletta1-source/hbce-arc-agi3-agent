@@ -1,0 +1,54 @@
+# ARC AGI3 Milestone #8 - Submission Candidate Refresh v2
+
+- status: MILESTONE_8_SUBMISSION_CANDIDATE_REFRESH_V2_READY
+- refresh_id: MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0
+- signature: 14D9AAA149C0A2F7
+- candidate_payload_signature: 4A84F8136BD61B3F
+- baseline_commit: c68ab45 Add ARC AGI3 expanded runtime benchmark
+- refresh_mode: SUBMISSION_CANDIDATE_REFRESH_V2_LOCAL_ONLY
+- refresh_scope: REFRESH_LOCAL_SUBMISSION_CANDIDATE_FROM_EXPANDED_RUNTIME_STACK
+- refresh_verdict: SUBMISSION_CANDIDATE_REFRESH_V2_READY_FOR_FINAL_COMPETITIVE_READINESS_REFRESH
+- next_allowed_stage: MILESTONE_8_TASK_8_FINAL_COMPETITIVE_READINESS_REFRESH_V2
+- task_count: 4
+- submission_candidate_count: 4
+- refresh_case_count: 8
+- refresh_pass_count: 8
+- refresh_failure_count: 0
+- refresh_gate_count: 60
+- passed_gate_count: 60
+- refresh_issue_count: 0
+- refresh_ready: True
+
+## Selected local candidates
+
+- submission_refresh_color_mapping_probe_v2 / profile_family=color_mapping / selected_family=color_mapping / operation=runtime_color_mapping_from_training_pair / ranker_score=128.0
+- submission_refresh_object_model_probe_v2 / profile_family=object_model / selected_family=object_model / operation=runtime_object_translate_largest_right / ranker_score=110.0
+- submission_refresh_shape_symmetry_probe_v2 / profile_family=shape_symmetry / selected_family=shape_symmetry / operation=runtime_shape_reflect_horizontal / ranker_score=107.0
+- submission_refresh_cross_family_probe_v2 / profile_family=cross_family_composition / selected_family=color_mapping / operation=runtime_color_mapping_non_background_shift / ranker_score=83.0
+
+## Decision
+
+Submission Candidate Refresh v2 is ready for final competitive readiness refresh.
+
+## Markers
+
+ARC_AGI3_MILESTONE_8_SUBMISSION_CANDIDATE_REFRESH_V2_READY=true
+ARC_AGI3_MILESTONE_8_SUBMISSION_CANDIDATE_REFRESH_V2_VALID=true
+ARC_AGI3_MILESTONE_8_REFRESH_MODE=SUBMISSION_CANDIDATE_REFRESH_V2_LOCAL_ONLY
+ARC_AGI3_MILESTONE_8_REFRESH_VERDICT=SUBMISSION_CANDIDATE_REFRESH_V2_READY_FOR_FINAL_COMPETITIVE_READINESS_REFRESH
+ARC_AGI3_MILESTONE_8_BASELINE_EXPANDED_BENCHMARK_COMMIT=c68ab45
+ARC_AGI3_MILESTONE_8_TASK_COUNT=4
+ARC_AGI3_MILESTONE_8_SUBMISSION_CANDIDATE_COUNT=4
+ARC_AGI3_MILESTONE_8_REFRESH_CASE_COUNT=8
+ARC_AGI3_MILESTONE_8_REFRESH_PASS_COUNT=8
+ARC_AGI3_MILESTONE_8_REFRESH_FAILURE_COUNT=0
+ARC_AGI3_MILESTONE_8_NEXT_STAGE=MILESTONE_8_TASK_8_FINAL_COMPETITIVE_READINESS_REFRESH_V2
+ARC_AGI3_MILESTONE_8_REAL_SUBMISSION_CREATED=false
+ARC_AGI3_MILESTONE_8_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_8_READY_FOR_REAL_KAGGLE_SUBMISSION=false
+ARC_AGI3_MILESTONE_8_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_8_UPLOAD_PERFORMED=false
+ARC_AGI3_MILESTONE_8_KAGGLE_AUTHENTICATION_PERFORMED=false
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
