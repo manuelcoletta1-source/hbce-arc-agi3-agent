@@ -1,0 +1,61 @@
+# ARC AGI3 Milestone #8 - Expanded Runtime Benchmark v2
+
+- status: MILESTONE_8_EXPANDED_RUNTIME_BENCHMARK_V2_READY
+- benchmark_id: MILESTONE-8-EXPANDED-RUNTIME-AF25D4E1D4E6
+- signature: AF25D4E1D4E6C9F5
+- baseline_commit: 537b277 Add ARC AGI3 ranker runtime upgrade
+- benchmark_mode: EXPANDED_RUNTIME_BENCHMARK_V2_LOCAL_ONLY
+- benchmark_scope: STRESS_RUNTIME_GENERATOR_AND_RANKER_ON_EXPANDED_LOCAL_CASES
+- benchmark_verdict: EXPANDED_RUNTIME_BENCHMARK_V2_READY_FOR_SUBMISSION_CANDIDATE_REFRESH
+- next_allowed_stage: MILESTONE_8_TASK_7_SUBMISSION_CANDIDATE_REFRESH_V2
+- family_count: 4
+- expanded_case_count: 12
+- expanded_pass_count: 12
+- expanded_failure_count: 0
+- sample_ranked_candidate_count: 4
+- benchmark_gate_count: 61
+- passed_gate_count: 61
+- benchmark_issue_count: 0
+- benchmark_ready: True
+
+## Expanded results
+
+- expanded_runtime_color_hint_top_family_v2 / family=color_mapping / operation=expanded_rank_color_family_hint / passed=True
+- expanded_runtime_color_training_pair_top_operation_v2 / family=color_mapping / operation=expanded_rank_color_training_pair / passed=True
+- expanded_runtime_color_background_guard_v2 / family=color_mapping / operation=expanded_preserve_background / passed=True
+- expanded_runtime_object_hint_top_family_v2 / family=object_model / operation=expanded_rank_object_family_hint / passed=True
+- expanded_runtime_object_right_candidate_exists_v2 / family=object_model / operation=expanded_object_translate_right / passed=True
+- expanded_runtime_object_down_candidate_exists_v2 / family=object_model / operation=expanded_object_translate_down / passed=True
+- expanded_runtime_shape_hint_top_family_v2 / family=shape_symmetry / operation=expanded_rank_shape_family_hint / passed=True
+- expanded_runtime_shape_reflection_candidates_exist_v2 / family=shape_symmetry / operation=expanded_shape_reflection_candidates / passed=True
+- expanded_runtime_cross_family_score_order_v2 / family=cross_family_composition / operation=expanded_cross_family_score_order / passed=True
+- expanded_runtime_cross_family_deduplication_v2 / family=cross_family_composition / operation=expanded_cross_family_deduplication / passed=True
+- expanded_runtime_deterministic_repeatability_v2 / family=cross_family_composition / operation=expanded_deterministic_repeatability / passed=True
+- expanded_runtime_boundary_guard_v2 / family=cross_family_composition / operation=expanded_runtime_boundary_guard / passed=True
+
+## Decision
+
+Expanded Runtime Benchmark v2 is ready for submission candidate refresh.
+
+## Markers
+
+ARC_AGI3_MILESTONE_8_EXPANDED_RUNTIME_BENCHMARK_V2_READY=true
+ARC_AGI3_MILESTONE_8_EXPANDED_RUNTIME_BENCHMARK_V2_VALID=true
+ARC_AGI3_MILESTONE_8_BENCHMARK_MODE=EXPANDED_RUNTIME_BENCHMARK_V2_LOCAL_ONLY
+ARC_AGI3_MILESTONE_8_BENCHMARK_VERDICT=EXPANDED_RUNTIME_BENCHMARK_V2_READY_FOR_SUBMISSION_CANDIDATE_REFRESH
+ARC_AGI3_MILESTONE_8_BASELINE_RANKER_COMMIT=537b277
+ARC_AGI3_MILESTONE_8_FAMILY_COUNT=4
+ARC_AGI3_MILESTONE_8_EXPANDED_CASE_COUNT=12
+ARC_AGI3_MILESTONE_8_EXPANDED_PASS_COUNT=12
+ARC_AGI3_MILESTONE_8_EXPANDED_FAILURE_COUNT=0
+ARC_AGI3_MILESTONE_8_SAMPLE_RANKED_CANDIDATE_COUNT=4
+ARC_AGI3_MILESTONE_8_NEXT_STAGE=MILESTONE_8_TASK_7_SUBMISSION_CANDIDATE_REFRESH_V2
+ARC_AGI3_MILESTONE_8_REAL_SUBMISSION_CREATED=false
+ARC_AGI3_MILESTONE_8_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_8_READY_FOR_REAL_KAGGLE_SUBMISSION=false
+ARC_AGI3_MILESTONE_8_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_8_UPLOAD_PERFORMED=false
+ARC_AGI3_MILESTONE_8_KAGGLE_AUTHENTICATION_PERFORMED=false
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
