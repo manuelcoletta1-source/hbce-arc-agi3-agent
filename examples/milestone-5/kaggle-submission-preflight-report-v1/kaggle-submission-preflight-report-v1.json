@@ -1,0 +1,218 @@
+{
+  "baseline_commit": "9c3c7e2 Add ARC AGI3 public safety boundary checklist",
+  "blocking_issue_count": 0,
+  "blocking_issues": [
+    {
+      "active": false,
+      "description": "One or more required preflight source artifacts is missing.",
+      "name": "missing_required_source",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more required preflight source artifacts does not expose the expected ready status.",
+      "name": "source_status_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more public safety boundary flags does not match the expected value.",
+      "name": "boundary_violation",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "One or more mandatory blocked actions is missing.",
+      "name": "blocked_action_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "A Kaggle submission appears to have already been sent.",
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "External API dependency is detected.",
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Private core exposure is detected.",
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Legal certification claim is detected.",
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    }
+  ],
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "depends_on_public_safety_boundary_checklist": true,
+    "milestone": "Milestone #5",
+    "report_kind": "KAGGLE_SUBMISSION_PREFLIGHT_REPORT",
+    "source": "milestone_5_kaggle_submission_preflight_report_v1",
+    "submission_mode": "LOCAL_DRY_RUN_ONLY",
+    "task": "Task 6",
+    "upload_performed": false
+  },
+  "milestone": "Milestone #5",
+  "next_actions": [
+    "create_local_submission_smoke_test_v1",
+    "create_submission_candidate_format_report_v1",
+    "create_submission_candidate_dry_run_v1",
+    "close_milestone_5_submission_preparation_v1"
+  ],
+  "passed_gate_count": 12,
+  "preflight_gate_count": 12,
+  "preflight_gates": [
+    {
+      "description": "Milestone #5 baseline readiness audit is present and ready.",
+      "name": "baseline_audit_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 public repo release index is present and ready.",
+      "name": "public_repo_release_index_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 Kaggle dry-run package is present and ready.",
+      "name": "dry_run_package_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 submission entrypoint contract is present and ready.",
+      "name": "submission_entrypoint_contract_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 public safety checklist is present and ready.",
+      "name": "public_safety_boundary_checklist_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "All required preflight sources exist locally.",
+      "name": "all_required_sources_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "All required preflight sources expose their expected ready status.",
+      "name": "all_required_sources_status_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "All required public safety boundary flags match expected values.",
+      "name": "all_boundaries_intact",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "All mandatory blocked actions are confirmed.",
+      "name": "all_blocked_actions_confirmed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No Kaggle submission has been sent.",
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "The project is ready for local submission smoke test creation.",
+      "name": "ready_for_local_submission_smoke_test",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "The project is ready for submission candidate format report creation.",
+      "name": "ready_for_submission_candidate_format_report",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "ready_for_local_submission_smoke_test": true,
+  "ready_for_real_kaggle_submission": false,
+  "ready_for_submission_candidate_format_report": true,
+  "ready_source_count": 5,
+  "report_id": "MILESTONE-5-PREFLIGHT-REPORT-2BE57C675A9B",
+  "required_source_count": 5,
+  "safety_checklist_id": "MILESTONE-5-SAFETY-CHECKLIST-4609EB912767",
+  "safety_checklist_signature": "4609EB9127676E2D",
+  "signature": "2BE57C675A9BE695",
+  "source_statuses": [
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_READINESS_BASELINE_AUDIT_READY",
+      "expected_status": "MILESTONE_5_PUBLIC_READINESS_BASELINE_AUDIT_READY",
+      "name": "public_readiness_baseline_audit",
+      "path": "examples/milestone-5/public-readiness-baseline-audit-v1/public-readiness-baseline-audit-v1.json",
+      "present": true,
+      "ready": true,
+      "signature": "C0CB02F634E94250"
+    },
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_REPO_RELEASE_INDEX_READY",
+      "expected_status": "MILESTONE_5_PUBLIC_REPO_RELEASE_INDEX_READY",
+      "name": "public_repo_release_index",
+      "path": "examples/milestone-5/public-repo-release-index-v1/public-repo-release-index-v1.json",
+      "present": true,
+      "ready": true,
+      "signature": "C68600E44E70227A"
+    },
+    {
+      "actual_status": "MILESTONE_5_KAGGLE_SUBMISSION_DRY_RUN_PACKAGE_READY",
+      "expected_status": "MILESTONE_5_KAGGLE_SUBMISSION_DRY_RUN_PACKAGE_READY",
+      "name": "kaggle_submission_dry_run_package",
+      "path": "examples/milestone-5/kaggle-submission-dry-run-package-v1/kaggle-submission-dry-run-package-v1.json",
+      "present": true,
+      "ready": true,
+      "signature": "09867B871A647F41"
+    },
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_ENTRYPOINT_CONTRACT_READY",
+      "expected_status": "MILESTONE_5_SUBMISSION_ENTRYPOINT_CONTRACT_READY",
+      "name": "submission_entrypoint_contract",
+      "path": "examples/milestone-5/submission-entrypoint-contract-v1/submission-entrypoint-contract-v1.json",
+      "present": true,
+      "ready": true,
+      "signature": "DDF92647579C4F56"
+    },
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+      "expected_status": "MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY",
+      "name": "public_safety_boundary_checklist",
+      "path": "examples/milestone-5/public-safety-boundary-checklist-v1/public-safety-boundary-checklist-v1.json",
+      "present": true,
+      "ready": true,
+      "signature": "4609EB9127676E2D"
+    }
+  ],
+  "status": "MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY",
+  "task": "Task 6",
+  "title": "Kaggle Submission Preflight Report v1",
+  "warning_count": 0
+}

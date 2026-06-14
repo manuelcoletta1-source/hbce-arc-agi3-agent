@@ -1,0 +1,56 @@
+ARC AGI3 KAGGLE SUBMISSION PREFLIGHT REPORT MANIFEST v1
+report_id=MILESTONE-5-PREFLIGHT-REPORT-2BE57C675A9B
+signature=2BE57C675A9BE695
+status=MILESTONE_5_KAGGLE_SUBMISSION_PREFLIGHT_REPORT_READY
+required_source_count=5
+ready_source_count=5
+preflight_gate_count=12
+passed_gate_count=12
+blocking_issue_count=0
+warning_count=0
+ready_for_local_submission_smoke_test=True
+ready_for_submission_candidate_format_report=True
+ready_for_real_kaggle_submission=False
+kaggle_submission_sent=False
+
+SOURCE_STATUSES
+public_readiness_baseline_audit present=True ready=True status=MILESTONE_5_PUBLIC_READINESS_BASELINE_AUDIT_READY
+public_repo_release_index present=True ready=True status=MILESTONE_5_PUBLIC_REPO_RELEASE_INDEX_READY
+kaggle_submission_dry_run_package present=True ready=True status=MILESTONE_5_KAGGLE_SUBMISSION_DRY_RUN_PACKAGE_READY
+submission_entrypoint_contract present=True ready=True status=MILESTONE_5_SUBMISSION_ENTRYPOINT_CONTRACT_READY
+public_safety_boundary_checklist present=True ready=True status=MILESTONE_5_PUBLIC_SAFETY_BOUNDARY_CHECKLIST_READY
+
+PREFLIGHT_GATES
+baseline_audit_ready passed=True severity=PASS
+public_repo_release_index_ready passed=True severity=PASS
+dry_run_package_ready passed=True severity=PASS
+submission_entrypoint_contract_ready passed=True severity=PASS
+public_safety_boundary_checklist_ready passed=True severity=PASS
+all_required_sources_present passed=True severity=PASS
+all_required_sources_status_ready passed=True severity=PASS
+all_boundaries_intact passed=True severity=PASS
+all_blocked_actions_confirmed passed=True severity=PASS
+kaggle_submission_not_sent passed=True severity=PASS
+ready_for_local_submission_smoke_test passed=True severity=PASS
+ready_for_submission_candidate_format_report passed=True severity=PASS
+
+BLOCKING_ISSUES
+missing_required_source active=False severity=BLOCKING
+source_status_not_ready active=False severity=BLOCKING
+boundary_violation active=False severity=BLOCKING
+blocked_action_missing active=False severity=BLOCKING
+kaggle_submission_already_sent active=False severity=BLOCKING
+external_api_dependency_detected active=False severity=BLOCKING
+private_core_exposure_detected active=False severity=BLOCKING
+legal_certification_claim_detected active=False severity=BLOCKING
+
+BOUNDARY
+public_safe=true
+deterministic=true
+local_only=true
+dry_run_only=true
+external_api_dependency=false
+contains_api_keys=false
+kaggle_submission_sent=false
+private_core_exposure=false
+legal_certification=false
