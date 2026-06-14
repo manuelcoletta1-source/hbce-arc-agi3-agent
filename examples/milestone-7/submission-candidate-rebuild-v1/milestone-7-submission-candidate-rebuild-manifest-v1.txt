@@ -1,0 +1,58 @@
+ARC AGI3 MILESTONE 7 SUBMISSION CANDIDATE REBUILD MANIFEST v1
+candidate_id=MILESTONE-7-SUBMISSION-CANDIDATE-8D90488FFD29
+signature=8D90488FFD295CE7
+status=MILESTONE_7_SUBMISSION_CANDIDATE_REBUILD_READY
+baseline_commit=bc41cd1 Add ARC AGI3 local score improvement report
+rebuild_mode=SUBMISSION_CANDIDATE_REBUILD_ONLY_NO_UPLOAD
+rebuild_verdict=SUBMISSION_CANDIDATE_REBUILD_READY_FOR_FINAL_COMPETITIVE_READINESS_AUDIT
+next_allowed_stage=MILESTONE_7_TASK_9_FINAL_COMPETITIVE_READINESS_AUDIT
+source_count=5
+rebuild_component_count=5
+candidate_file_count=4
+readiness_check_count=8
+boundary_control_count=9
+audit_chain_count=7
+family_report_count=3
+local_measurement_count=6
+regression_pass_count=6
+regression_failure_count=0
+rebuild_gate_count=54
+passed_gate_count=54
+rebuild_issue_count=0
+rebuild_ready=True
+rebuild_locked=True
+runtime_solver_modified=False
+ranker_runtime_modified=False
+benchmark_runtime_modified=False
+report_runtime_modified=False
+candidate_runtime_modified=False
+local_submission_candidate_created=True
+real_submission_created=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+final_competitive_readiness_audit_required=True
+manual_submission_allowed=False
+manual_upload_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+SOURCE_ARTIFACTS
+task_3_task_family_solver_expansion present=True status_valid=True sha256_16=7A10AA82B43474FF path=examples/milestone-7/task-family-solver-expansion-v1/milestone-7-task-family-solver-expansion-v1.json
+task_4_candidate_generator_improvement present=True status_valid=True sha256_16=F085382F0585F132 path=examples/milestone-7/candidate-generator-improvement-v1/milestone-7-candidate-generator-improvement-v1.json
+task_5_ranker_evidence_upgrade present=True status_valid=True sha256_16=F1DFB7E9D299E97D path=examples/milestone-7/ranker-evidence-upgrade-v1/milestone-7-ranker-evidence-upgrade-v1.json
+task_6_regression_benchmark present=True status_valid=True sha256_16=96EBC9F3FEE1A1A5 path=examples/milestone-7/regression-benchmark-v1/milestone-7-regression-benchmark-v1.json
+task_7_local_score_improvement_report present=True status_valid=True sha256_16=037ADAA4953C2E3C path=examples/milestone-7/local-score-improvement-report-v1/milestone-7-local-score-improvement-report-v1.json
+
+AUDIT_CHAIN
+Task 1 commit=70a8d44 label=Competitive Solver Improvement Plan
+Task 2 commit=fb770e3 label=Baseline Solver Failure Taxonomy
+Task 3 commit=3ec630b label=Task-Family Solver Expansion
+Task 4 commit=0dfd280 label=Candidate Generator Improvement
+Task 5 commit=f4035fa label=Ranker Evidence Upgrade
+Task 6 commit=92efad5 label=Regression Benchmark
+Task 7 commit=bc41cd1 label=Local Score Improvement Report

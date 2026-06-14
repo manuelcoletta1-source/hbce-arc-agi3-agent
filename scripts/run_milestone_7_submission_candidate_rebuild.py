@@ -1,0 +1,57 @@
+from hbce_arc_agi3.milestone_7_submission_candidate_rebuild import (
+    run_milestone_7_submission_candidate_rebuild_pipeline,
+)
+
+
+def main() -> None:
+    payload = run_milestone_7_submission_candidate_rebuild_pipeline()
+    candidate = payload["candidate"]
+
+    print(payload["status"])
+    print(payload["candidate_status"])
+    print(payload["validation_status"])
+    print(payload["candidate_id"])
+    print(payload["signature"])
+    print(candidate["baseline_commit"])
+    print(payload["rebuild_mode"])
+    print(payload["rebuild_verdict"])
+    print(payload["next_allowed_stage"])
+    print(payload["source_count"])
+    print(payload["rebuild_component_count"])
+    print(payload["candidate_file_count"])
+    print(payload["readiness_check_count"])
+    print(payload["boundary_control_count"])
+    print(payload["audit_chain_count"])
+    print(payload["family_report_count"])
+    print(payload["local_measurement_count"])
+    print(payload["regression_pass_count"])
+    print(payload["regression_failure_count"])
+    print(payload["rebuild_gate_count"])
+    print(payload["passed_gate_count"])
+    print(payload["rebuild_issue_count"])
+    print(payload["warning_count"])
+    print(payload["rebuild_ready"])
+    print(payload["rebuild_locked"])
+    print(payload["local_submission_candidate_created"])
+    print(payload["real_submission_created"])
+    print(payload["real_submission_allowed"])
+    print(payload["ready_for_real_kaggle_submission"])
+    print(payload["kaggle_submission_sent"])
+    print(payload["upload_performed"])
+    print(payload["kaggle_authentication_performed"])
+    print(payload["final_competitive_readiness_audit_required"])
+    print(payload["runtime_solver_modified"])
+    print(payload["candidate_runtime_modified"])
+    print(all(item["present"] for item in candidate["source_artifacts"]))
+    print(all(item["status_valid"] for item in candidate["source_artifacts"]))
+    print(all(item["passed"] for item in candidate["rebuild_gates"]))
+    print(all(item["active"] is False for item in candidate["rebuild_issues"]))
+    print(payload["artifacts"]["json_path"])
+    print(payload["artifacts"]["markdown_path"])
+    print(payload["artifacts"]["manifest_path"])
+    print(payload["artifacts"]["index_path"])
+    print(payload["metadata"])
+
+
+if __name__ == "__main__":
+    main()

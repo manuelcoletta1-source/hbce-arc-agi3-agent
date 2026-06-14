@@ -1,0 +1,71 @@
+# ARC AGI3 Milestone #7 - Submission Candidate Rebuild v1
+
+- status: MILESTONE_7_SUBMISSION_CANDIDATE_REBUILD_READY
+- candidate_id: MILESTONE-7-SUBMISSION-CANDIDATE-8D90488FFD29
+- signature: 8D90488FFD295CE7
+- baseline_commit: bc41cd1 Add ARC AGI3 local score improvement report
+- rebuild_mode: SUBMISSION_CANDIDATE_REBUILD_ONLY_NO_UPLOAD
+- rebuild_scope: REBUILD_LOCAL_SUBMISSION_CANDIDATE_FROM_MILESTONE_7_IMPROVEMENT_CHAIN
+- rebuild_verdict: SUBMISSION_CANDIDATE_REBUILD_READY_FOR_FINAL_COMPETITIVE_READINESS_AUDIT
+- next_allowed_stage: MILESTONE_7_TASK_9_FINAL_COMPETITIVE_READINESS_AUDIT
+- source_count: 5
+- rebuild_component_count: 5
+- candidate_file_count: 4
+- readiness_check_count: 8
+- boundary_control_count: 9
+- audit_chain_count: 7
+- family_report_count: 3
+- local_measurement_count: 6
+- regression_pass_count: 6
+- regression_failure_count: 0
+- rebuild_gate_count: 54
+- passed_gate_count: 54
+- rebuild_issue_count: 0
+- rebuild_ready: True
+- local_submission_candidate_created: True
+- real_submission_created: False
+- real_submission_allowed: False
+- kaggle_submission_sent: False
+- upload_performed: False
+
+## Source artifacts
+
+- task_3_task_family_solver_expansion / present=True / status_valid=True / sha256_16=7A10AA82B43474FF
+- task_4_candidate_generator_improvement / present=True / status_valid=True / sha256_16=F085382F0585F132
+- task_5_ranker_evidence_upgrade / present=True / status_valid=True / sha256_16=F1DFB7E9D299E97D
+- task_6_regression_benchmark / present=True / status_valid=True / sha256_16=96EBC9F3FEE1A1A5
+- task_7_local_score_improvement_report / present=True / status_valid=True / sha256_16=037ADAA4953C2E3C
+
+## Decision
+
+Local submission candidate rebuild is ready for final competitive readiness audit.
+
+## Markers
+
+ARC_AGI3_MILESTONE_7_SUBMISSION_CANDIDATE_REBUILD_V1_READY=true
+ARC_AGI3_MILESTONE_7_SUBMISSION_CANDIDATE_REBUILD_VALID=true
+ARC_AGI3_MILESTONE_7_REBUILD_MODE=SUBMISSION_CANDIDATE_REBUILD_ONLY_NO_UPLOAD
+ARC_AGI3_MILESTONE_7_REBUILD_VERDICT=SUBMISSION_CANDIDATE_REBUILD_READY_FOR_FINAL_COMPETITIVE_READINESS_AUDIT
+ARC_AGI3_MILESTONE_7_SOURCE_COUNT=5
+ARC_AGI3_MILESTONE_7_REBUILD_COMPONENT_COUNT=5
+ARC_AGI3_MILESTONE_7_CANDIDATE_FILE_COUNT=4
+ARC_AGI3_MILESTONE_7_READINESS_CHECK_COUNT=8
+ARC_AGI3_MILESTONE_7_BOUNDARY_CONTROL_COUNT=9
+ARC_AGI3_MILESTONE_7_AUDIT_CHAIN_COUNT=7
+ARC_AGI3_MILESTONE_7_FAMILY_REPORT_COUNT=3
+ARC_AGI3_MILESTONE_7_LOCAL_MEASUREMENT_COUNT=6
+ARC_AGI3_MILESTONE_7_REGRESSION_PASS_COUNT=6
+ARC_AGI3_MILESTONE_7_REGRESSION_FAILURE_COUNT=0
+ARC_AGI3_MILESTONE_7_LOCAL_SUBMISSION_CANDIDATE_CREATED=true
+ARC_AGI3_MILESTONE_7_REAL_SUBMISSION_CREATED=false
+ARC_AGI3_MILESTONE_7_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_7_READY_FOR_REAL_KAGGLE_SUBMISSION=false
+ARC_AGI3_MILESTONE_7_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_7_UPLOAD_PERFORMED=false
+ARC_AGI3_MILESTONE_7_KAGGLE_AUTHENTICATION_PERFORMED=false
+ARC_AGI3_MILESTONE_7_FINAL_COMPETITIVE_READINESS_AUDIT_REQUIRED=true
+ARC_AGI3_MILESTONE_7_NEXT_STAGE=MILESTONE_7_TASK_9_FINAL_COMPETITIVE_READINESS_AUDIT
+ARC_AGI3_MILESTONE_7_BASELINE_REPORT_COMMIT=bc41cd1
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
