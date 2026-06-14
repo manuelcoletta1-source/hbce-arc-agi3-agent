@@ -1,0 +1,55 @@
+ARC AGI3 MILESTONE 8 FINAL COMPETITIVE READINESS REFRESH MANIFEST v2
+final_id=MILESTONE-8-FINAL-READINESS-REFRESH-BCFE05E90309
+signature=BCFE05E90309ED58
+status=MILESTONE_8_FINAL_COMPETITIVE_READINESS_REFRESH_V2_READY
+baseline_commit=0e7e086 Add ARC AGI3 submission candidate refresh
+final_mode=FINAL_COMPETITIVE_READINESS_REFRESH_V2_LOCAL_ONLY
+final_verdict=FINAL_COMPETITIVE_READINESS_REFRESH_V2_COMPLETE_REAL_SUBMISSION_STILL_BLOCKED
+next_allowed_stage=MILESTONE_8_TASK_9_RELEASE_DECISION_LAYER_OR_MANUAL_SUBMISSION_REVIEW
+closed_task_count=7
+source_commit_count=7
+readiness_check_count=14
+audit_case_count=10
+audit_pass_count=10
+audit_failure_count=0
+submission_candidate_count=4
+final_gate_count=48
+passed_gate_count=48
+final_issue_count=0
+final_ready=True
+final_locked=True
+final_competitive_readiness_refresh_created=True
+final_artifact_package_ready=True
+final_chain_verified=True
+local_submission_candidate_verified=True
+real_submission_created=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+SOURCE_COMMITS
+Task 1 commit=69af006 title=Add ARC AGI3 competitive solver iteration plan
+Task 2 commit=4a93654 title=Add ARC AGI3 competitive solver kernel
+Task 3 commit=1df6919 title=Add ARC AGI3 family benchmark cases
+Task 4 commit=3ea3687 title=Add ARC AGI3 candidate generator runtime upgrade
+Task 5 commit=537b277 title=Add ARC AGI3 ranker runtime upgrade
+Task 6 commit=c68ab45 title=Add ARC AGI3 expanded runtime benchmark
+Task 7 commit=0e7e086 title=Add ARC AGI3 submission candidate refresh
+
+AUDIT_RESULTS
+final_refresh_source_artifact_ready_v2 area=source_binding operation=verify_submission_candidate_refresh_artifact passed=True evidence_score=100
+final_refresh_local_candidate_payload_ready_v2 area=candidate_payload operation=verify_local_submission_candidate_payload passed=True evidence_score=100
+final_refresh_task_chain_complete_v2 area=chain operation=verify_task_1_to_task_7_chain passed=True evidence_score=100
+final_refresh_candidate_count_valid_v2 area=candidate_payload operation=verify_candidate_count passed=True evidence_score=100
+final_refresh_candidate_hash_available_v2 area=candidate_payload operation=verify_candidate_payload_hash passed=True evidence_score=100
+final_refresh_artifact_index_ready_v2 area=artifact operation=verify_artifact_index_and_manifest passed=True evidence_score=100
+final_refresh_readiness_checks_pass_v2 area=readiness operation=verify_readiness_check_matrix passed=True evidence_score=100
+final_refresh_boundary_controls_pass_v2 area=boundary operation=verify_no_upload_no_submission_no_auth passed=True evidence_score=100
+final_refresh_submission_still_blocked_v2 area=submission operation=verify_real_submission_still_blocked passed=True evidence_score=100
+final_refresh_next_stage_valid_v2 area=next_stage operation=verify_next_manual_decision_layer passed=True evidence_score=100

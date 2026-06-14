@@ -1,0 +1,847 @@
+{
+  "audit_case_count": 10,
+  "audit_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "final_refresh_source_artifact_ready_v2",
+      "operation": "verify_submission_candidate_refresh_artifact"
+    },
+    {
+      "area": "candidate_payload",
+      "case_id": "final_refresh_local_candidate_payload_ready_v2",
+      "operation": "verify_local_submission_candidate_payload"
+    },
+    {
+      "area": "chain",
+      "case_id": "final_refresh_task_chain_complete_v2",
+      "operation": "verify_task_1_to_task_7_chain"
+    },
+    {
+      "area": "candidate_payload",
+      "case_id": "final_refresh_candidate_count_valid_v2",
+      "operation": "verify_candidate_count"
+    },
+    {
+      "area": "candidate_payload",
+      "case_id": "final_refresh_candidate_hash_available_v2",
+      "operation": "verify_candidate_payload_hash"
+    },
+    {
+      "area": "artifact",
+      "case_id": "final_refresh_artifact_index_ready_v2",
+      "operation": "verify_artifact_index_and_manifest"
+    },
+    {
+      "area": "readiness",
+      "case_id": "final_refresh_readiness_checks_pass_v2",
+      "operation": "verify_readiness_check_matrix"
+    },
+    {
+      "area": "boundary",
+      "case_id": "final_refresh_boundary_controls_pass_v2",
+      "operation": "verify_no_upload_no_submission_no_auth"
+    },
+    {
+      "area": "submission",
+      "case_id": "final_refresh_submission_still_blocked_v2",
+      "operation": "verify_real_submission_still_blocked"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "final_refresh_next_stage_valid_v2",
+      "operation": "verify_next_manual_decision_layer"
+    }
+  ],
+  "audit_failure_count": 0,
+  "audit_pass_count": 10,
+  "audit_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "final_refresh_source_artifact_ready_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_submission_candidate_refresh_artifact",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "candidate_payload",
+      "case_id": "final_refresh_local_candidate_payload_ready_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_local_submission_candidate_payload",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "chain",
+      "case_id": "final_refresh_task_chain_complete_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_task_1_to_task_7_chain",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "candidate_payload",
+      "case_id": "final_refresh_candidate_count_valid_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_candidate_count",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "candidate_payload",
+      "case_id": "final_refresh_candidate_hash_available_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_candidate_payload_hash",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "artifact",
+      "case_id": "final_refresh_artifact_index_ready_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_artifact_index_and_manifest",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "readiness",
+      "case_id": "final_refresh_readiness_checks_pass_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_readiness_check_matrix",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "final_refresh_boundary_controls_pass_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_upload_no_submission_no_auth",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission",
+      "case_id": "final_refresh_submission_still_blocked_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_still_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "final_refresh_next_stage_valid_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_manual_decision_layer",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "baseline_commit": "0e7e086 Add ARC AGI3 submission candidate refresh",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "closed_task_count": 7,
+  "final_artifact_package_ready": true,
+  "final_chain_verified": true,
+  "final_competitive_readiness_refresh_created": true,
+  "final_gate_count": 48,
+  "final_gates": [
+    {
+      "name": "source_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_candidate_payload_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_chain_complete",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_hash_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "artifact_index_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "readiness_checks_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_controls_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_still_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closed_task_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "source_commit_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "readiness_check_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_gate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_issue_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "refresh_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_competitive_readiness_refresh_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_artifact_package_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_chain_verified",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_submission_candidate_verified",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "final_id": "MILESTONE-8-FINAL-READINESS-REFRESH-BCFE05E90309",
+  "final_index": {
+    "audit_case_count": 10,
+    "audit_failure_count": 0,
+    "audit_pass_count": 10,
+    "baseline_commit": "0e7e086 Add ARC AGI3 submission candidate refresh",
+    "candidate_payload_signature": "4A84F8136BD61B3F",
+    "closed_task_count": 7,
+    "depends_on_refresh": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "external_api_dependency": false,
+    "final_locked": true,
+    "final_mode": "FINAL_COMPETITIVE_READINESS_REFRESH_V2_LOCAL_ONLY",
+    "final_ready": true,
+    "final_scope": "AUDIT_MILESTONE_8_REFRESHED_COMPETITIVE_PACKAGE",
+    "final_verdict": "FINAL_COMPETITIVE_READINESS_REFRESH_V2_COMPLETE_REAL_SUBMISSION_STILL_BLOCKED",
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #8",
+    "next_allowed_stage": "MILESTONE_8_TASK_9_RELEASE_DECISION_LAYER_OR_MANUAL_SUBMISSION_REVIEW",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "source_commit_count": 7,
+    "submission_candidate_count": 4,
+    "task": "Task 8",
+    "upload_performed": false
+  },
+  "final_issue_count": 0,
+  "final_issues": [
+    {
+      "active": false,
+      "name": "source_artifact_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_candidate_payload_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_chain_complete",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_hash_available",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "artifact_index_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "readiness_checks_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_controls_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_still_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closed_task_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "source_commit_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "readiness_check_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_failed_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_gate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_issue_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_failed_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "refresh_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_competitive_readiness_refresh_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_artifact_package_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_chain_verified",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_submission_candidate_verified",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "contains_api_keys_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "final_locked": true,
+  "final_mode": "FINAL_COMPETITIVE_READINESS_REFRESH_V2_LOCAL_ONLY",
+  "final_ready": true,
+  "final_record": {
+    "audit_case_count": 10,
+    "audit_failure_count": 0,
+    "audit_pass_count": 10,
+    "baseline_refresh_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "boundary_control_count": 9,
+    "candidate_payload_signature": "4A84F8136BD61B3F",
+    "closed_task_count": 7,
+    "contains_api_keys": false,
+    "external_api_dependency": false,
+    "final_artifact_package_ready": true,
+    "final_chain_verified": true,
+    "final_competitive_readiness_refresh_created": true,
+    "final_locked": true,
+    "final_mode": "FINAL_COMPETITIVE_READINESS_REFRESH_V2_LOCAL_ONLY",
+    "final_ready": true,
+    "final_scope": "AUDIT_MILESTONE_8_REFRESHED_COMPETITIVE_PACKAGE",
+    "final_verdict": "FINAL_COMPETITIVE_READINESS_REFRESH_V2_COMPLETE_REAL_SUBMISSION_STILL_BLOCKED",
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_submission_candidate_verified": true,
+    "next_allowed_stage": "MILESTONE_8_TASK_9_RELEASE_DECISION_LAYER_OR_MANUAL_SUBMISSION_REVIEW",
+    "private_core_exposure": false,
+    "public_leaderboard_claim_absent": true,
+    "readiness_check_count": 14,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "refresh_ready": true,
+    "regression_guard_count": 12,
+    "score_claim_absent": true,
+    "source_commit_count": 7,
+    "submission_candidate_count": 4,
+    "upload_performed": false
+  },
+  "final_scope": "AUDIT_MILESTONE_8_REFRESHED_COMPETITIVE_PACKAGE",
+  "final_verdict": "FINAL_COMPETITIVE_READINESS_REFRESH_V2_COMPLETE_REAL_SUBMISSION_STILL_BLOCKED",
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "local_candidate_source": {
+    "candidate_format": "ARC_AGI3_LOCAL_SUBMISSION_CANDIDATE_V2",
+    "candidate_payload_signature": "4A84F8136BD61B3F",
+    "path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-local-submission-candidate-v2.json",
+    "present": true,
+    "sha256": "066ecf48968d0933a1988a6876ca446452de5e0992d7f1c061f4ff977278cda4",
+    "sha256_16": "066ECF48968D0933"
+  },
+  "local_submission_candidate_verified": true,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_8_final_competitive_readiness_refresh_v2"
+  },
+  "milestone": "Milestone #8",
+  "next_allowed_stage": "MILESTONE_8_TASK_9_RELEASE_DECISION_LAYER_OR_MANUAL_SUBMISSION_REVIEW",
+  "passed_gate_count": 48,
+  "public_leaderboard_claim_absent": true,
+  "readiness_check_count": 14,
+  "readiness_checks": {
+    "boundary_controls_preserved": true,
+    "candidate_payload_hash_available": true,
+    "full_suite_passed_before_commit": true,
+    "local_candidate_artifact_present": true,
+    "local_candidate_payload_ready": true,
+    "next_stage_valid": true,
+    "real_submission_still_blocked": true,
+    "refresh_artifact_present": true,
+    "refresh_artifact_ready": true,
+    "refresh_artifact_valid": true,
+    "refresh_tests_passed_before_commit": true,
+    "source_commit_count_valid": true,
+    "submission_candidate_count_valid": true,
+    "task_chain_complete": true
+  },
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "refresh_source": {
+    "path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "present": true,
+    "refresh_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "sha256": "0b41088f289425061425c707fce077737ddbe2adcdb6681b9bf9570904a2e13b",
+    "sha256_16": "0B41088F28942506",
+    "status": "MILESTONE_8_SUBMISSION_CANDIDATE_REFRESH_V2_READY"
+  },
+  "regression_guard_count": 12,
+  "regression_guards": [
+    "guard_final_uses_task_7_refresh_artifact",
+    "guard_final_uses_local_submission_candidate_payload",
+    "guard_final_task_chain_count",
+    "guard_final_candidate_count",
+    "guard_final_candidate_hash",
+    "guard_final_refresh_gate_count",
+    "guard_final_refresh_issue_count",
+    "guard_final_artifact_index",
+    "guard_final_no_upload",
+    "guard_final_no_auth",
+    "guard_final_no_kaggle_submission",
+    "guard_final_no_score_claim"
+  ],
+  "score_claim_absent": true,
+  "signature": "BCFE05E90309ED58",
+  "source_commit_count": 7,
+  "source_commits": [
+    {
+      "commit": "69af006",
+      "task": "Task 1",
+      "title": "Add ARC AGI3 competitive solver iteration plan"
+    },
+    {
+      "commit": "4a93654",
+      "task": "Task 2",
+      "title": "Add ARC AGI3 competitive solver kernel"
+    },
+    {
+      "commit": "1df6919",
+      "task": "Task 3",
+      "title": "Add ARC AGI3 family benchmark cases"
+    },
+    {
+      "commit": "3ea3687",
+      "task": "Task 4",
+      "title": "Add ARC AGI3 candidate generator runtime upgrade"
+    },
+    {
+      "commit": "537b277",
+      "task": "Task 5",
+      "title": "Add ARC AGI3 ranker runtime upgrade"
+    },
+    {
+      "commit": "c68ab45",
+      "task": "Task 6",
+      "title": "Add ARC AGI3 expanded runtime benchmark"
+    },
+    {
+      "commit": "0e7e086",
+      "task": "Task 7",
+      "title": "Add ARC AGI3 submission candidate refresh"
+    }
+  ],
+  "status": "MILESTONE_8_FINAL_COMPETITIVE_READINESS_REFRESH_V2_READY",
+  "submission_candidate_count": 4,
+  "task": "Task 8",
+  "title": "Final Competitive Readiness Refresh v2",
+  "upload_performed": false,
+  "warning_count": 0
+}
