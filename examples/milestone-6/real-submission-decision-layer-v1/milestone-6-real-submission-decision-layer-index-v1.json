@@ -1,0 +1,20 @@
+{
+  "baseline_commit": "e9742a1 Add ARC AGI3 milestone 5 public release summary",
+  "decision_mode": "DECISION_LAYER_ONLY_NO_SUBMISSION",
+  "decision_scope": "REAL_SUBMISSION_DECISION_GATE_NO_UPLOAD_NO_API",
+  "decision_verdict": "REAL_SUBMISSION_BLOCKED_PENDING_EXPLICIT_OPERATOR_APPROVAL",
+  "depends_on_dry_run_package": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+  "depends_on_public_release_summary": "MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F",
+  "depends_on_submission_closure": "MILESTONE-5-SUBMISSION-CLOSURE-876E09DA2D13",
+  "external_api_dependency": false,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "milestone": "Milestone #6",
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "private_core_exposure": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "task": "Task 1",
+  "upload_performed": false
+}

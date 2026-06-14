@@ -1,0 +1,351 @@
+{
+  "artifact_count": 3,
+  "artifact_statuses": [
+    {
+      "actual_status": "MILESTONE_5_PUBLIC_RELEASE_SUMMARY_READY",
+      "artifact_id": "MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F",
+      "expected_status": "MILESTONE_5_PUBLIC_RELEASE_SUMMARY_READY",
+      "name": "milestone_5_public_release_summary",
+      "path": "examples/milestone-5/public-release-summary-v1/milestone-5-public-release-summary-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "D69B74902B9639EA"
+    },
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_PREPARATION_CLOSURE_READY",
+      "artifact_id": "MILESTONE-5-SUBMISSION-CLOSURE-876E09DA2D13",
+      "expected_status": "MILESTONE_5_SUBMISSION_PREPARATION_CLOSURE_READY",
+      "name": "milestone_5_submission_preparation_closure",
+      "path": "examples/milestone-5/submission-preparation-closure-v1/milestone-5-submission-preparation-closure-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "78F64C29CE3F2B6C"
+    },
+    {
+      "actual_status": "MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY",
+      "artifact_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+      "expected_status": "MILESTONE_5_SUBMISSION_CANDIDATE_DRY_RUN_PACKAGE_READY",
+      "name": "milestone_5_submission_candidate_dry_run_package",
+      "path": "examples/milestone-5/submission-candidate-dry-run-package-v1/submission-candidate-dry-run-package-v1.json",
+      "present": true,
+      "ready": true,
+      "sha256_16": "15D64BEFB2AA4A24"
+    }
+  ],
+  "baseline_commit": "e9742a1 Add ARC AGI3 milestone 5 public release summary",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "decision_gate_count": 18,
+  "decision_gates": [
+    {
+      "description": "Milestone #5 public release summary artifact is present.",
+      "name": "public_release_summary_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 public release summary is ready.",
+      "name": "public_release_summary_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 submission closure artifact is present.",
+      "name": "submission_closure_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 submission closure is ready.",
+      "name": "submission_closure_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 dry-run package artifact is present.",
+      "name": "dry_run_package_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 dry-run package is ready.",
+      "name": "dry_run_package_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Milestone #5 is closed pass.",
+      "name": "milestone_5_closed_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Explicit operator approval is required before real submission.",
+      "name": "operator_approval_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No operator approval has been received in this layer.",
+      "name": "operator_approval_not_received",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Real submission remains disallowed.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No real submission has been created.",
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No Kaggle submission has been sent.",
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No upload has been performed.",
+      "name": "no_upload_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No external API dependency is present.",
+      "name": "no_external_api_dependency",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No secrets are required or read.",
+      "name": "no_secrets_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No private core exposure is present.",
+      "name": "no_private_core_exposure",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "No legal certification claim is present.",
+      "name": "no_legal_certification",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "description": "Layer mode is decision-only.",
+      "name": "decision_layer_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "decision_id": "MILESTONE-6-REAL-SUBMISSION-DECISION-320E1E2DCDCC",
+  "decision_index": {
+    "baseline_commit": "e9742a1 Add ARC AGI3 milestone 5 public release summary",
+    "decision_mode": "DECISION_LAYER_ONLY_NO_SUBMISSION",
+    "decision_scope": "REAL_SUBMISSION_DECISION_GATE_NO_UPLOAD_NO_API",
+    "decision_verdict": "REAL_SUBMISSION_BLOCKED_PENDING_EXPLICIT_OPERATOR_APPROVAL",
+    "depends_on_dry_run_package": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+    "depends_on_public_release_summary": "MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F",
+    "depends_on_submission_closure": "MILESTONE-5-SUBMISSION-CLOSURE-876E09DA2D13",
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #6",
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "task": "Task 1",
+    "upload_performed": false
+  },
+  "decision_issue_count": 0,
+  "decision_issues": [
+    {
+      "active": false,
+      "description": "Public release summary artifact is missing.",
+      "name": "public_release_summary_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Public release summary is not ready.",
+      "name": "public_release_summary_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Submission closure artifact is missing.",
+      "name": "submission_closure_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Submission closure is not ready.",
+      "name": "submission_closure_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Dry-run package artifact is missing.",
+      "name": "dry_run_package_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Dry-run package is not ready.",
+      "name": "dry_run_package_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Milestone #5 is not closed pass.",
+      "name": "milestone_5_not_closed_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Operator approval is not required.",
+      "name": "operator_approval_not_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Operator approval appears received in an untracked context.",
+      "name": "operator_approval_received_untracked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Real submission is allowed unexpectedly.",
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "A real submission appears to have been created.",
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "A Kaggle submission appears to have been sent.",
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "An upload appears to have been performed.",
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "External API dependency detected.",
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Secrets requirement detected.",
+      "name": "secrets_required_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Private core exposure detected.",
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Legal certification claim detected.",
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "description": "Decision layer mode is invalid.",
+      "name": "decision_layer_mode_invalid",
+      "severity": "BLOCKING"
+    }
+  ],
+  "decision_layer_ready": true,
+  "decision_mode": "DECISION_LAYER_ONLY_NO_SUBMISSION",
+  "decision_record": {
+    "archive_created_for_upload": false,
+    "boundary_intact": true,
+    "contains_api_keys": false,
+    "decision_mode": "DECISION_LAYER_ONLY_NO_SUBMISSION",
+    "decision_scope": "REAL_SUBMISSION_DECISION_GATE_NO_UPLOAD_NO_API",
+    "decision_verdict": "REAL_SUBMISSION_BLOCKED_PENDING_EXPLICIT_OPERATOR_APPROVAL",
+    "dry_run_package_ready": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone_5_closed_pass": true,
+    "next_required_action": "explicit_operator_approval_before_any_real_submission",
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "operator_identity_verified_for_submission": false,
+    "private_core_exposure": false,
+    "public_release_summary_ready": true,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "secrets_required": false,
+    "submission_preparation_closed": true,
+    "upload_performed": false
+  },
+  "decision_scope": "REAL_SUBMISSION_DECISION_GATE_NO_UPLOAD_NO_API",
+  "decision_verdict": "REAL_SUBMISSION_BLOCKED_PENDING_EXPLICIT_OPERATOR_APPROVAL",
+  "dry_run_package_id": "MILESTONE-5-DRY-RUN-CANDIDATE-7B89C4D5AA87",
+  "dry_run_package_signature": "7B89C4D5AA872D5B",
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_6_real_submission_decision_layer_v1"
+  },
+  "milestone": "Milestone #6",
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 18,
+  "public_release_summary_id": "MILESTONE-5-PUBLIC-RELEASE-SUMMARY-B1587904B17F",
+  "public_release_summary_signature": "B1587904B17F2022",
+  "ready_artifact_count": 3,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "signature": "320E1E2DCDCCB4A5",
+  "status": "MILESTONE_6_REAL_SUBMISSION_DECISION_LAYER_READY",
+  "submission_closure_id": "MILESTONE-5-SUBMISSION-CLOSURE-876E09DA2D13",
+  "submission_closure_signature": "876E09DA2D13FB97",
+  "task": "Task 1",
+  "title": "Real Submission Decision Layer v1",
+  "upload_performed": false,
+  "warning_count": 0
+}
