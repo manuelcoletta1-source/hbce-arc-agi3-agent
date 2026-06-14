@@ -1,0 +1,153 @@
+{
+  "baseline_audit_id": "MILESTONE-5-PUBLIC-READINESS-AUDIT-C0CB02F634E9",
+  "baseline_audit_signature": "C0CB02F634E94250",
+  "baseline_commit": "2f02f5d Open ARC AGI3 milestone 5 public readiness audit",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "checks": {
+    "all_indexed_artifacts_present": true,
+    "baseline_audit_present": true,
+    "baseline_audit_ready": true,
+    "baseline_audit_validated": true,
+    "baseline_kaggle_submission_not_sent": true,
+    "contains_api_keys_false": true,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency_false": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "next_actions_present": true,
+    "private_core_exposure_false": true,
+    "public_safe": true,
+    "release_sections_present": true
+  },
+  "index_id": "MILESTONE-5-PUBLIC-REPO-INDEX-C68600E44E70",
+  "indexed_artifact_count": 14,
+  "indexed_artifacts": [
+    {
+      "category": "milestone_5",
+      "path": "docs/milestone-5-public-readiness-baseline-audit-v1.md",
+      "present": true,
+      "title": "Milestone #5 baseline audit document"
+    },
+    {
+      "category": "milestone_5",
+      "path": "examples/milestone-5/public-readiness-baseline-audit-v1/public-readiness-baseline-audit-v1.json",
+      "present": true,
+      "title": "Milestone #5 baseline audit JSON"
+    },
+    {
+      "category": "milestone_5",
+      "path": "examples/milestone-5/public-readiness-baseline-audit-v1/public-readiness-baseline-audit-v1.md",
+      "present": true,
+      "title": "Milestone #5 baseline audit Markdown"
+    },
+    {
+      "category": "milestone_4",
+      "path": "docs/milestone-4-solver-engine-closure-v1.md",
+      "present": true,
+      "title": "Milestone #4 solver engine closure document"
+    },
+    {
+      "category": "milestone_4",
+      "path": "examples/closures/milestone-4/milestone-4-solver-engine-closure.json",
+      "present": true,
+      "title": "Milestone #4 solver engine closure JSON"
+    },
+    {
+      "category": "milestone_4",
+      "path": "examples/closures/milestone-4/milestone-4-solver-engine-closure.md",
+      "present": true,
+      "title": "Milestone #4 solver engine closure Markdown"
+    },
+    {
+      "category": "milestone_4",
+      "path": "docs/candidate-ranker-task-family-policy-fix-v1.md",
+      "present": true,
+      "title": "Candidate ranker task-family policy fix document"
+    },
+    {
+      "category": "milestone_4",
+      "path": "examples/milestone-4/candidate-ranker-task-family-policy-fix-v1/candidate-ranker-task-family-policy-fix-v1-smoke.json",
+      "present": true,
+      "title": "Candidate ranker task-family policy fix JSON"
+    },
+    {
+      "category": "milestone_4",
+      "path": "examples/milestone-4/expanded-batch-benchmark-v2/expanded-batch-benchmark-v2-smoke.json",
+      "present": true,
+      "title": "Expanded batch benchmark v2 JSON"
+    },
+    {
+      "category": "milestone_4",
+      "path": "examples/milestone-4/failure-driven-improvement-loop-v1/failure-driven-improvement-loop-v1-smoke.json",
+      "present": true,
+      "title": "Failure-driven improvement loop v1 JSON"
+    },
+    {
+      "category": "repository_root",
+      "path": "README.md",
+      "present": true,
+      "title": "Public package README"
+    },
+    {
+      "category": "repository_root",
+      "path": "LICENSE",
+      "present": true,
+      "title": "Project license"
+    },
+    {
+      "category": "source_tree",
+      "path": "src/hbce_arc_agi3",
+      "present": true,
+      "title": "Python package source"
+    },
+    {
+      "category": "test_tree",
+      "path": "tests",
+      "present": true,
+      "title": "Test suite"
+    }
+  ],
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "depends_on_public_readiness_baseline": true,
+    "index_kind": "PUBLIC_REPO_RELEASE_INDEX",
+    "milestone": "Milestone #5",
+    "source": "milestone_5_public_repo_release_index_v1",
+    "submission_mode": "DRY_RUN_ONLY",
+    "task": "Task 2"
+  },
+  "milestone": "Milestone #5",
+  "next_actions": [
+    "create_kaggle_submission_dry_run_package_v1",
+    "create_submission_entrypoint_contract_v1",
+    "create_public_safety_and_boundary_checklist_v1",
+    "create_kaggle_submission_preflight_report_v1",
+    "close_milestone_5_submission_preparation_v1"
+  ],
+  "ready_for_public_index_release": true,
+  "release_sections": [
+    "repository_root",
+    "milestone_4_solver_engine_closure",
+    "milestone_5_public_readiness",
+    "candidate_generation_and_ranking",
+    "benchmark_and_failure_loop",
+    "public_boundary",
+    "next_submission_preparation_steps"
+  ],
+  "signature": "C68600E44E70227A",
+  "status": "MILESTONE_5_PUBLIC_REPO_RELEASE_INDEX_READY",
+  "task": "Task 2",
+  "title": "Public Repo Release Index v1"
+}
