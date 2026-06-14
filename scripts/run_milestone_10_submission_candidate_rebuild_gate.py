@@ -1,0 +1,58 @@
+from hbce_arc_agi3.milestone_10_submission_candidate_rebuild_gate import (
+    run_milestone_10_submission_candidate_rebuild_gate_pipeline,
+)
+
+
+def main() -> None:
+    payload = run_milestone_10_submission_candidate_rebuild_gate_pipeline()
+    gate = payload["gate"]
+
+    print(payload["status"])
+    print(payload["gate_status"])
+    print(payload["validation_status"])
+    print(payload["rebuild_gate_id"])
+    print(payload["signature"])
+    print(gate["baseline_commit"])
+    print(payload["gate_mode"])
+    print(payload["gate_verdict"])
+    print(payload["next_allowed_stage"])
+    print(payload["rebuild_gate_ready"])
+    print(payload["rebuild_gate_created"])
+    print(payload["rebuild_gate_passed"])
+    print(payload["local_candidate_rebuild_allowed"])
+    print(payload["selected_candidate_id"])
+    print(payload["candidate_package_id"])
+    print(payload["submission_candidate_rebuild_required_next"])
+    print(payload["real_submission_candidate_created"])
+    print(payload["submission_json_created"])
+    print(payload["upload_package_created"])
+    print(payload["rebuild_gate_check_count"])
+    print(payload["rebuild_gate_case_count"])
+    print(payload["rebuild_gate_pass_count"])
+    print(payload["rebuild_gate_failure_count"])
+    print(payload["rebuild_gate_gate_count"])
+    print(payload["passed_gate_count"])
+    print(payload["rebuild_gate_issue_count"])
+    print(payload["warning_count"])
+    print(payload["real_submission_decision"])
+    print(payload["real_submission_allowed"])
+    print(payload["manual_upload_allowed"])
+    print(payload["kaggle_authentication_allowed"])
+    print(payload["kaggle_submission_sent"])
+    print(payload["fail_closed_required"])
+    print(payload["fail_closed_active"])
+    print(gate["source_summary"]["candidate_refresh_id"])
+    print(gate["source_summary"]["previous_refresh_id"])
+    print(gate["source_summary"]["previous_candidate_id"])
+    print(all(result["passed"] for result in gate["rebuild_gate_results"]))
+    print(all(item["passed"] for item in gate["rebuild_gate_gates"]))
+    print(all(item["active"] is False for item in gate["rebuild_gate_issues"]))
+    print(payload["artifacts"]["json_path"])
+    print(payload["artifacts"]["markdown_path"])
+    print(payload["artifacts"]["manifest_path"])
+    print(payload["artifacts"]["index_path"])
+    print(payload["metadata"])
+
+
+if __name__ == "__main__":
+    main()

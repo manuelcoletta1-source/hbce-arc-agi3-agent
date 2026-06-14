@@ -1,0 +1,75 @@
+# ARC AGI3 Milestone #10 - Submission Candidate Rebuild Gate v1
+
+- status: MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_GATE_V1_READY
+- rebuild_gate_id: MILESTONE-10-REBUILD-GATE-1CA22527EBF1
+- signature: 1CA22527EBF104E7
+- baseline_commit: ccb7a12 Add ARC AGI3 candidate refresh
+- gate_mode: MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_GATE_V1_LOCAL_ONLY
+- gate_scope: LOCAL_REBUILD_GATE_NO_SUBMISSION_JSON_NO_UPLOAD
+- gate_verdict: REBUILD_GATE_PASS_LOCAL_CANDIDATE_REBUILD_ALLOWED_REAL_SUBMISSION_BLOCKED
+- next_allowed_stage: MILESTONE_10_TASK_8_SUBMISSION_CANDIDATE_REBUILD_V1
+- rebuild_gate_ready: True
+- rebuild_gate_passed: True
+- local_candidate_rebuild_allowed: True
+- selected_candidate_id: M10-CANDIDATE-BALANCED-PATCH-STACK-v1
+- candidate_package_id: MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D
+- submission_candidate_rebuild_required_next: True
+- real_submission_candidate_created: False
+- submission_json_created: False
+- upload_package_created: False
+- real_submission_decision: NOT_AUTHORIZED
+- real_submission_allowed: False
+- fail_closed_active: True
+
+## Gate decision
+
+- decision: ALLOW_LOCAL_SUBMISSION_CANDIDATE_REBUILD_ONLY
+- operator_approval_required_for_real_submission: True
+
+## Validation results
+
+- m10_rebuild_gate_candidate_source_ready_v1 / area=source_binding / operation=verify_candidate_refresh_source / passed=True
+- m10_rebuild_gate_selected_candidate_valid_v1 / area=selected_candidate / operation=verify_selected_candidate / passed=True
+- m10_rebuild_gate_candidate_package_ready_v1 / area=candidate_package / operation=verify_candidate_package / passed=True
+- m10_rebuild_gate_local_rebuild_allowed_v1 / area=rebuild_gate / operation=verify_local_rebuild_allowed / passed=True
+- m10_rebuild_gate_real_submission_candidate_blocked_v1 / area=submission_boundary / operation=verify_real_submission_candidate_blocked / passed=True
+- m10_rebuild_gate_submission_json_blocked_v1 / area=submission_boundary / operation=verify_submission_json_blocked / passed=True
+- m10_rebuild_gate_upload_package_blocked_v1 / area=submission_boundary / operation=verify_upload_package_blocked / passed=True
+- m10_rebuild_gate_fail_closed_preserved_v1 / area=fail_closed / operation=verify_fail_closed_preserved / passed=True
+- m10_rebuild_gate_boundary_controls_preserved_v1 / area=boundary / operation=verify_boundary_controls / passed=True
+- m10_rebuild_gate_next_stage_valid_v1 / area=next_stage / operation=verify_submission_candidate_rebuild_next / passed=True
+
+## Decision
+
+The local rebuild gate passes. The next stage may rebuild a local submission candidate package, while real Kaggle submission remains blocked.
+
+## Markers
+
+ARC_AGI3_MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_GATE_V1_READY=true
+ARC_AGI3_MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_GATE_V1_VALID=true
+ARC_AGI3_MILESTONE_10_REBUILD_GATE_READY=true
+ARC_AGI3_MILESTONE_10_REBUILD_GATE_PASSED=true
+ARC_AGI3_MILESTONE_10_GATE_MODE=MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_GATE_V1_LOCAL_ONLY
+ARC_AGI3_MILESTONE_10_GATE_VERDICT=REBUILD_GATE_PASS_LOCAL_CANDIDATE_REBUILD_ALLOWED_REAL_SUBMISSION_BLOCKED
+ARC_AGI3_MILESTONE_10_BASELINE_COMMIT=ccb7a12
+ARC_AGI3_MILESTONE_10_NEXT_STAGE=MILESTONE_10_TASK_8_SUBMISSION_CANDIDATE_REBUILD_V1
+ARC_AGI3_MILESTONE_10_SELECTED_CANDIDATE_ID=M10-CANDIDATE-BALANCED-PATCH-STACK-v1
+ARC_AGI3_MILESTONE_10_LOCAL_CANDIDATE_REBUILD_ALLOWED=true
+ARC_AGI3_MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_REQUIRED_NEXT=true
+ARC_AGI3_MILESTONE_10_REAL_SUBMISSION_CANDIDATE_CREATED=false
+ARC_AGI3_MILESTONE_10_SUBMISSION_JSON_CREATED=false
+ARC_AGI3_MILESTONE_10_UPLOAD_PACKAGE_CREATED=false
+ARC_AGI3_MILESTONE_10_REBUILD_GATE_CHECK_COUNT=28
+ARC_AGI3_MILESTONE_10_REBUILD_GATE_CASE_COUNT=10
+ARC_AGI3_MILESTONE_10_REBUILD_GATE_PASS_COUNT=10
+ARC_AGI3_MILESTONE_10_REBUILD_GATE_FAILURE_COUNT=0
+ARC_AGI3_MILESTONE_10_REAL_SUBMISSION_DECISION=NOT_AUTHORIZED
+ARC_AGI3_MILESTONE_10_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_10_MANUAL_UPLOAD_ALLOWED=false
+ARC_AGI3_MILESTONE_10_KAGGLE_AUTHENTICATION_ALLOWED=false
+ARC_AGI3_MILESTONE_10_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_10_FAIL_CLOSED_REQUIRED=true
+ARC_AGI3_MILESTONE_10_FAIL_CLOSED_ACTIVE=true
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
