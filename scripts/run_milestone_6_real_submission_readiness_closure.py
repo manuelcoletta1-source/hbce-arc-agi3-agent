@@ -1,0 +1,58 @@
+from hbce_arc_agi3.milestone_6_real_submission_readiness_closure import (
+    run_milestone_6_real_submission_readiness_closure_pipeline,
+)
+
+
+def main() -> None:
+    payload = run_milestone_6_real_submission_readiness_closure_pipeline()
+    closure = payload["closure"]
+
+    print(payload["status"])
+    print(payload["closure_status"])
+    print(payload["validation_status"])
+    print(payload["closure_id"])
+    print(payload["signature"])
+    print(closure["baseline_commit"])
+    print(payload["closure_mode"])
+    print(payload["closure_verdict"])
+    print(payload["next_allowed_stage"])
+    print(payload["closure_source_count"])
+    print(payload["ready_source_count"])
+    print(payload["source_hash_count"])
+    print(payload["closed_task_count"])
+    print(payload["closure_gate_count"])
+    print(payload["passed_gate_count"])
+    print(payload["closure_issue_count"])
+    print(payload["warning_count"])
+    print(payload["closure_ready"])
+    print(payload["closure_locked"])
+    print(payload["milestone_closed"])
+    print(payload["package_prepared"])
+    print(payload["package_frozen"])
+    print(payload["integrity_verified"])
+    print(payload["final_audit_passed"])
+    print(payload["solver_improvement_required"])
+    print(payload["solver_improvement_started"])
+    print(payload["solver_improvement_completed"])
+    print(payload["competitive_claim_absent"])
+    print(payload["manual_upload_required"])
+    print(payload["manual_execution_performed"])
+    print(payload["real_submission_allowed"])
+    print(payload["ready_for_real_kaggle_submission"])
+    print(payload["real_submission_created"])
+    print(payload["kaggle_submission_sent"])
+    print(payload["upload_performed"])
+    print(payload["kaggle_authentication_performed"])
+    print(all(item["ready"] for item in closure["closure_sources"]))
+    print(all(item["sha256"] != "MISSING_HASH" for item in closure["closure_sources"]))
+    print(all(item["passed"] for item in closure["closure_gates"]))
+    print(all(item["active"] is False for item in closure["closure_issues"]))
+    print(payload["artifacts"]["json_path"])
+    print(payload["artifacts"]["markdown_path"])
+    print(payload["artifacts"]["manifest_path"])
+    print(payload["artifacts"]["index_path"])
+    print(payload["metadata"])
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,46 @@
+ARC AGI3 MILESTONE 6 REAL SUBMISSION READINESS CLOSURE MANIFEST v1
+closure_id=MILESTONE-6-READINESS-CLOSURE-F553E38B9FE9
+signature=F553E38B9FE9F39C
+status=MILESTONE_6_REAL_SUBMISSION_READINESS_CLOSURE_READY
+baseline_commit=5a4d69a Add ARC AGI3 solver improvement before real submission
+closure_mode=REAL_SUBMISSION_READINESS_CLOSURE_ONLY_NO_UPLOAD
+closure_verdict=MILESTONE_6_CLOSED_REAL_SUBMISSION_NOT_READY_SOLVER_IMPROVEMENT_REQUIRED
+next_allowed_stage=OPEN_MILESTONE_7_COMPETITIVE_SOLVER_IMPROVEMENT
+closure_source_count=6
+ready_source_count=6
+source_hash_count=6
+closed_task_count=10
+closure_gate_count=44
+passed_gate_count=44
+closure_issue_count=0
+closure_ready=True
+closure_locked=True
+milestone_closed=True
+package_prepared=True
+package_frozen=True
+integrity_verified=True
+final_audit_passed=True
+solver_improvement_required=True
+solver_improvement_started=True
+solver_improvement_completed=False
+competitive_claim_absent=True
+manual_upload_required=True
+manual_execution_performed=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+real_submission_created=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+CLOSURE_SOURCES
+solver_improvement_before_real_submission present=True ready=True sha256=a076dc87273253ad4052c0cf825959029fa11c735f14854b04146a8160811c8a artifact_id=MILESTONE-6-SOLVER-IMPROVEMENT-6232860E69C6 path=examples/milestone-6/solver-improvement-before-real-submission-v1/milestone-6-solver-improvement-before-real-submission-v1.json
+submission_candidate_final_audit present=True ready=True sha256=fea04a4ddc592a4e34f4198865df75a1e93cf8400a4692efd8209fbb235702d2 artifact_id=MILESTONE-6-SUBMISSION-CANDIDATE-AUDIT-EADE0C77C951 path=examples/milestone-6/submission-candidate-final-audit-v1/milestone-6-submission-candidate-final-audit-v1.json
+frozen_package_integrity_verification present=True ready=True sha256=449fd23635957ddc638eacd828a1b9504268f1218aacc561abbc0be8e7863089 artifact_id=MILESTONE-6-FROZEN-PACKAGE-INTEGRITY-4C2880500A59 path=examples/milestone-6/frozen-package-integrity-verification-v1/milestone-6-frozen-package-integrity-verification-v1.json
+real_submission_package_freeze present=True ready=True sha256=beb93cb3c73a732af94d3096e558ebb30e71bdf776ef70bdfa115f9306d85df5 artifact_id=MILESTONE-6-REAL-SUBMISSION-FREEZE-9E37415967F8 path=examples/milestone-6/real-submission-package-freeze-v1/milestone-6-real-submission-package-freeze-v1.json
+manual_submission_execution_gate present=True ready=True sha256=72eb008a58bb882ba32536f5bd30cb1c7ae0e010d766719dc37096c2d1807a61 artifact_id=MILESTONE-6-MANUAL-SUBMISSION-GATE-AB82FA104158 path=examples/milestone-6/manual-submission-execution-gate-v1/milestone-6-manual-submission-execution-gate-v1.json
+real_submission_precheck_gate present=True ready=True sha256=8cdc6485af9d19a72f5bae5bd9fa4e149d721892cb615f291ced2aa422282100 artifact_id=MILESTONE-6-REAL-SUBMISSION-PRECHECK-3273A65E5AF7 path=examples/milestone-6/real-submission-precheck-gate-v1/milestone-6-real-submission-precheck-gate-v1.json
