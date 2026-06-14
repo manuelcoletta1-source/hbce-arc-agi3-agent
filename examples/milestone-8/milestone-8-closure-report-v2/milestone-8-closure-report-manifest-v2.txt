@@ -1,0 +1,64 @@
+ARC AGI3 MILESTONE 8 CLOSURE REPORT MANIFEST v2
+closure_id=MILESTONE-8-CLOSURE-REPORT-BB73E0709EB0
+signature=BB73E0709EB04CB4
+status=MILESTONE_8_CLOSURE_REPORT_V2_READY
+baseline_commit=db17554 Add ARC AGI3 release decision layer
+closure_mode=MILESTONE_8_CLOSURE_REPORT_V2_LOCAL_ONLY
+closure_verdict=MILESTONE_8_CLOSED_PACKAGE_READY_FOR_MANUAL_REVIEW_REAL_SUBMISSION_BLOCKED
+next_allowed_stage=MILESTONE_8_CLOSED_PENDING_MANUAL_SUBMISSION_APPROVAL
+milestone_8_closed=True
+closed_task_count=9
+source_commit_count=9
+closure_case_count=10
+closure_pass_count=10
+closure_failure_count=0
+closure_gate_count=51
+passed_gate_count=51
+closure_issue_count=0
+closure_ready=True
+closure_locked=True
+closure_report_created=True
+milestone_chain_verified=True
+release_decision_layer_verified=True
+manual_review_package_ready=True
+approval_contract_preserved=True
+package_ready_for_manual_review=True
+operator_approval_required=True
+operator_approval_granted=False
+operator_approval_received=False
+required_declaration_count=8
+provided_declaration_count=0
+accepted_declaration_count=0
+real_submission_created=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+SOURCE_COMMITS
+Task 1 commit=69af006 title=Add ARC AGI3 competitive solver iteration plan
+Task 2 commit=4a93654 title=Add ARC AGI3 competitive solver kernel
+Task 3 commit=1df6919 title=Add ARC AGI3 family benchmark cases
+Task 4 commit=3ea3687 title=Add ARC AGI3 candidate generator runtime upgrade
+Task 5 commit=537b277 title=Add ARC AGI3 ranker runtime upgrade
+Task 6 commit=c68ab45 title=Add ARC AGI3 expanded runtime benchmark
+Task 7 commit=0e7e086 title=Add ARC AGI3 submission candidate refresh
+Task 8 commit=cb52cd2 title=Add ARC AGI3 final competitive readiness refresh
+Task 9 commit=db17554 title=Add ARC AGI3 release decision layer
+
+CLOSURE_RESULTS
+closure_decision_layer_source_ready_v2 area=source_binding operation=verify_release_decision_layer_artifact passed=True evidence_score=100
+closure_task_chain_complete_v2 area=chain operation=verify_task_1_to_9_chain passed=True evidence_score=100
+closure_manual_review_package_ready_v2 area=manual_review operation=verify_manual_review_package_ready passed=True evidence_score=100
+closure_operator_approval_contract_preserved_v2 area=operator_approval operation=verify_operator_approval_contract passed=True evidence_score=100
+closure_real_submission_still_blocked_v2 area=submission operation=verify_real_submission_still_blocked passed=True evidence_score=100
+closure_no_upload_no_auth_v2 area=boundary operation=verify_no_upload_no_auth passed=True evidence_score=100
+closure_no_score_or_leaderboard_claim_v2 area=claim_boundary operation=verify_no_score_or_leaderboard_claim passed=True evidence_score=100
+closure_artifact_package_ready_v2 area=artifact operation=verify_closure_artifact_package passed=True evidence_score=100
+closure_milestone_closed_state_valid_v2 area=closure operation=verify_milestone_closed_state passed=True evidence_score=100
+closure_next_stage_valid_v2 area=next_stage operation=verify_closed_pending_manual_approval passed=True evidence_score=100

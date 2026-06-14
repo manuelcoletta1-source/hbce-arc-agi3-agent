@@ -1,0 +1,914 @@
+{
+  "accepted_declaration_count": 0,
+  "approval_contract_preserved": true,
+  "baseline_commit": "db17554 Add ARC AGI3 release decision layer",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "closed_task_count": 9,
+  "closure_case_count": 10,
+  "closure_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "closure_decision_layer_source_ready_v2",
+      "operation": "verify_release_decision_layer_artifact"
+    },
+    {
+      "area": "chain",
+      "case_id": "closure_task_chain_complete_v2",
+      "operation": "verify_task_1_to_9_chain"
+    },
+    {
+      "area": "manual_review",
+      "case_id": "closure_manual_review_package_ready_v2",
+      "operation": "verify_manual_review_package_ready"
+    },
+    {
+      "area": "operator_approval",
+      "case_id": "closure_operator_approval_contract_preserved_v2",
+      "operation": "verify_operator_approval_contract"
+    },
+    {
+      "area": "submission",
+      "case_id": "closure_real_submission_still_blocked_v2",
+      "operation": "verify_real_submission_still_blocked"
+    },
+    {
+      "area": "boundary",
+      "case_id": "closure_no_upload_no_auth_v2",
+      "operation": "verify_no_upload_no_auth"
+    },
+    {
+      "area": "claim_boundary",
+      "case_id": "closure_no_score_or_leaderboard_claim_v2",
+      "operation": "verify_no_score_or_leaderboard_claim"
+    },
+    {
+      "area": "artifact",
+      "case_id": "closure_artifact_package_ready_v2",
+      "operation": "verify_closure_artifact_package"
+    },
+    {
+      "area": "closure",
+      "case_id": "closure_milestone_closed_state_valid_v2",
+      "operation": "verify_milestone_closed_state"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "closure_next_stage_valid_v2",
+      "operation": "verify_closed_pending_manual_approval"
+    }
+  ],
+  "closure_checks": {
+    "accepted_declaration_count_zero": true,
+    "approval_contract_ready": true,
+    "closed_task_count_valid": true,
+    "decision_artifact_package_ready": true,
+    "decision_failure_count_zero": true,
+    "decision_issue_count_zero": true,
+    "decision_layer_artifact_present": true,
+    "decision_layer_artifact_ready": true,
+    "decision_layer_artifact_valid": true,
+    "decision_layer_next_stage_matches_task_10": true,
+    "decision_layer_ready": true,
+    "decision_pass_count_valid": true,
+    "final_package_verified": true,
+    "kaggle_authentication_not_performed": true,
+    "kaggle_submission_not_sent": true,
+    "manual_review_package_ready": true,
+    "milestone_closed_state_valid": true,
+    "operator_approval_not_granted": true,
+    "operator_approval_not_received": true,
+    "operator_approval_required": true,
+    "package_ready_for_manual_review": true,
+    "provided_declaration_count_zero": true,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission_false": true,
+    "real_submission_allowed_false": true,
+    "real_submission_not_created": true,
+    "required_declaration_count_valid": true,
+    "score_claim_absent": true,
+    "source_commit_count_valid": true,
+    "task_chain_ends_with_task_9": true,
+    "upload_not_performed": true
+  },
+  "closure_failure_count": 0,
+  "closure_gate_count": 51,
+  "closure_gates": [
+    {
+      "name": "decision_layer_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "decision_layer_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "decision_layer_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "decision_layer_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "decision_layer_next_stage_matches_task_10",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "decision_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "decision_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "decision_issue_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closed_task_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "source_commit_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_chain_ends_with_task_9",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_8_closed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "required_declaration_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "provided_declaration_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "accepted_declaration_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_closure_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_report_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_chain_verified",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "release_decision_layer_verified",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_review_package_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "approval_contract_preserved",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_not_granted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_not_received",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "closure_id": "MILESTONE-8-CLOSURE-REPORT-BB73E0709EB0",
+  "closure_index": {
+    "accepted_declaration_count": 0,
+    "baseline_commit": "db17554 Add ARC AGI3 release decision layer",
+    "closed_task_count": 9,
+    "closure_case_count": 10,
+    "closure_failure_count": 0,
+    "closure_locked": true,
+    "closure_mode": "MILESTONE_8_CLOSURE_REPORT_V2_LOCAL_ONLY",
+    "closure_pass_count": 10,
+    "closure_ready": true,
+    "closure_scope": "CLOSE_MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_V2",
+    "closure_verdict": "MILESTONE_8_CLOSED_PACKAGE_READY_FOR_MANUAL_REVIEW_REAL_SUBMISSION_BLOCKED",
+    "depends_on_release_decision": "MILESTONE-8-RELEASE-DECISION-DBB586C74FA0",
+    "external_api_dependency": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #8",
+    "milestone_8_closed": true,
+    "next_allowed_stage": "MILESTONE_8_CLOSED_PENDING_MANUAL_SUBMISSION_APPROVAL",
+    "operator_approval_granted": false,
+    "operator_approval_required": true,
+    "package_ready_for_manual_review": true,
+    "private_core_exposure": false,
+    "provided_declaration_count": 0,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "required_declaration_count": 8,
+    "source_commit_count": 9,
+    "task": "Task 10",
+    "upload_performed": false
+  },
+  "closure_issue_count": 0,
+  "closure_issues": [
+    {
+      "active": false,
+      "name": "decision_layer_artifact_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "decision_layer_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "decision_layer_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "decision_layer_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "decision_layer_next_stage_matches_task_10",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "decision_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "decision_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "decision_issue_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closed_task_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "source_commit_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_chain_ends_with_task_9",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_8_closed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "required_declaration_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "provided_declaration_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "accepted_declaration_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_closure_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_report_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_chain_verified",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "release_decision_layer_verified",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_review_package_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "approval_contract_preserved",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_granted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_received",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "contains_api_keys_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "closure_locked": true,
+  "closure_mode": "MILESTONE_8_CLOSURE_REPORT_V2_LOCAL_ONLY",
+  "closure_pass_count": 10,
+  "closure_ready": true,
+  "closure_record": {
+    "accepted_declaration_count": 0,
+    "approval_contract_preserved": true,
+    "baseline_decision_id": "MILESTONE-8-RELEASE-DECISION-DBB586C74FA0",
+    "boundary_control_count": 9,
+    "closed_task_count": 9,
+    "closure_case_count": 10,
+    "closure_failure_count": 0,
+    "closure_locked": true,
+    "closure_mode": "MILESTONE_8_CLOSURE_REPORT_V2_LOCAL_ONLY",
+    "closure_pass_count": 10,
+    "closure_ready": true,
+    "closure_report_created": true,
+    "closure_scope": "CLOSE_MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_V2",
+    "closure_verdict": "MILESTONE_8_CLOSED_PACKAGE_READY_FOR_MANUAL_REVIEW_REAL_SUBMISSION_BLOCKED",
+    "contains_api_keys": false,
+    "decision_layer_ready": true,
+    "external_api_dependency": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_review_package_ready": true,
+    "milestone_8_closed": true,
+    "milestone_chain_verified": true,
+    "next_allowed_stage": "MILESTONE_8_CLOSED_PENDING_MANUAL_SUBMISSION_APPROVAL",
+    "operator_approval_granted": true,
+    "operator_approval_received": true,
+    "operator_approval_required": true,
+    "package_ready_for_manual_review": true,
+    "private_core_exposure": false,
+    "provided_declaration_count": 0,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "regression_guard_count": 12,
+    "release_decision_layer_verified": true,
+    "required_declaration_count": 8,
+    "score_claim_absent": true,
+    "source_commit_count": 9,
+    "upload_performed": false
+  },
+  "closure_report_created": true,
+  "closure_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "closure_decision_layer_source_ready_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_release_decision_layer_artifact",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "chain",
+      "case_id": "closure_task_chain_complete_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_task_1_to_9_chain",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "manual_review",
+      "case_id": "closure_manual_review_package_ready_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_manual_review_package_ready",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "operator_approval",
+      "case_id": "closure_operator_approval_contract_preserved_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_operator_approval_contract",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission",
+      "case_id": "closure_real_submission_still_blocked_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_still_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "closure_no_upload_no_auth_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_upload_no_auth",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "claim_boundary",
+      "case_id": "closure_no_score_or_leaderboard_claim_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_score_or_leaderboard_claim",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "artifact",
+      "case_id": "closure_artifact_package_ready_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_closure_artifact_package",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "closure",
+      "case_id": "closure_milestone_closed_state_valid_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_milestone_closed_state",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "closure_next_stage_valid_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_closed_pending_manual_approval",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "closure_scope": "CLOSE_MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_V2",
+  "closure_verdict": "MILESTONE_8_CLOSED_PACKAGE_READY_FOR_MANUAL_REVIEW_REAL_SUBMISSION_BLOCKED",
+  "decision_layer_source": {
+    "decision_id": "MILESTONE-8-RELEASE-DECISION-DBB586C74FA0",
+    "path": "examples/milestone-8/release-decision-layer-v2/milestone-8-release-decision-layer-v2.json",
+    "present": true,
+    "sha256": "01a5598dc4e29bff48ee44b92102d4b36742a852441c149713251cd829b38fe6",
+    "sha256_16": "01A5598DC4E29BFF",
+    "status": "MILESTONE_8_RELEASE_DECISION_LAYER_V2_READY"
+  },
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "manual_review_package_ready": true,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_8_closure_report_v2"
+  },
+  "milestone": "Milestone #8",
+  "milestone_8_closed": true,
+  "milestone_chain_verified": true,
+  "next_allowed_stage": "MILESTONE_8_CLOSED_PENDING_MANUAL_SUBMISSION_APPROVAL",
+  "operator_approval_granted": false,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "package_ready_for_manual_review": true,
+  "passed_gate_count": 51,
+  "provided_declaration_count": 0,
+  "public_leaderboard_claim_absent": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "regression_guard_count": 12,
+  "regression_guards": [
+    "guard_closure_uses_task_9_release_decision_artifact",
+    "guard_closure_task_chain_count",
+    "guard_closure_source_commit_count",
+    "guard_closure_manual_review_package_ready",
+    "guard_closure_operator_approval_required",
+    "guard_closure_operator_approval_absent",
+    "guard_closure_real_submission_blocked",
+    "guard_closure_upload_blocked",
+    "guard_closure_authentication_blocked",
+    "guard_closure_no_score_claim",
+    "guard_closure_no_leaderboard_claim",
+    "guard_closure_final_state_closed"
+  ],
+  "release_decision_layer_verified": true,
+  "required_declaration_count": 8,
+  "score_claim_absent": true,
+  "signature": "BB73E0709EB04CB4",
+  "source_commit_count": 9,
+  "source_commits": [
+    {
+      "commit": "69af006",
+      "task": "Task 1",
+      "title": "Add ARC AGI3 competitive solver iteration plan"
+    },
+    {
+      "commit": "4a93654",
+      "task": "Task 2",
+      "title": "Add ARC AGI3 competitive solver kernel"
+    },
+    {
+      "commit": "1df6919",
+      "task": "Task 3",
+      "title": "Add ARC AGI3 family benchmark cases"
+    },
+    {
+      "commit": "3ea3687",
+      "task": "Task 4",
+      "title": "Add ARC AGI3 candidate generator runtime upgrade"
+    },
+    {
+      "commit": "537b277",
+      "task": "Task 5",
+      "title": "Add ARC AGI3 ranker runtime upgrade"
+    },
+    {
+      "commit": "c68ab45",
+      "task": "Task 6",
+      "title": "Add ARC AGI3 expanded runtime benchmark"
+    },
+    {
+      "commit": "0e7e086",
+      "task": "Task 7",
+      "title": "Add ARC AGI3 submission candidate refresh"
+    },
+    {
+      "commit": "cb52cd2",
+      "task": "Task 8",
+      "title": "Add ARC AGI3 final competitive readiness refresh"
+    },
+    {
+      "commit": "db17554",
+      "task": "Task 9",
+      "title": "Add ARC AGI3 release decision layer"
+    }
+  ],
+  "status": "MILESTONE_8_CLOSURE_REPORT_V2_READY",
+  "task": "Task 10",
+  "title": "Milestone 8 Closure Report v2",
+  "upload_performed": false,
+  "warning_count": 0
+}
