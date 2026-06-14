@@ -1,0 +1,157 @@
+{
+  "baseline_commit": "e983e88 Add ARC AGI3 public repo release index",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "checks": {
+    "all_source_artifacts_present": true,
+    "contains_api_keys_false": true,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency_false": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "package_mode_is_manifest_only": true,
+    "planned_release_file_count_is_3": true,
+    "private_core_exposure_false": true,
+    "public_repo_index_kaggle_submission_not_sent": true,
+    "public_repo_index_present": true,
+    "public_repo_index_ready": true,
+    "public_repo_index_validated": true,
+    "public_safe": true,
+    "real_submission_blocked": true,
+    "submission_mode_is_local_dry_run_only": true
+  },
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "depends_on_public_repo_release_index": true,
+    "milestone": "Milestone #5",
+    "package_kind": "KAGGLE_SUBMISSION_DRY_RUN_PACKAGE",
+    "source": "milestone_5_kaggle_submission_dry_run_package_v1",
+    "submission_mode": "LOCAL_DRY_RUN_ONLY",
+    "task": "Task 3",
+    "upload_performed": false
+  },
+  "milestone": "Milestone #5",
+  "next_actions": [
+    "create_submission_entrypoint_contract_v1",
+    "create_public_safety_and_boundary_checklist_v1",
+    "create_kaggle_submission_preflight_report_v1",
+    "create_local_submission_smoke_test_v1",
+    "close_milestone_5_submission_preparation_v1"
+  ],
+  "package_id": "MILESTONE-5-DRY-RUN-PACKAGE-09867B871A64",
+  "package_mode": "MANIFEST_ONLY_NO_ARCHIVE_NO_UPLOAD",
+  "package_source_artifact_count": 15,
+  "planned_release_file_count": 3,
+  "public_repo_index_id": "MILESTONE-5-PUBLIC-REPO-INDEX-C68600E44E70",
+  "public_repo_index_signature": "C68600E44E70227A",
+  "ready_for_submission_entrypoint_contract": true,
+  "real_submission_blocked": true,
+  "signature": "09867B871A647F41",
+  "source_artifacts": [
+    {
+      "category": "repository_root",
+      "path": "README.md",
+      "present": true,
+      "title": "Repository README"
+    },
+    {
+      "category": "repository_root",
+      "path": "LICENSE",
+      "present": true,
+      "title": "Repository license"
+    },
+    {
+      "category": "source_tree",
+      "path": "src/hbce_arc_agi3",
+      "present": true,
+      "title": "Python source package"
+    },
+    {
+      "category": "test_tree",
+      "path": "tests",
+      "present": true,
+      "title": "Test suite"
+    },
+    {
+      "category": "milestone_5",
+      "path": "docs/milestone-5-public-repo-release-index-v1.md",
+      "present": true,
+      "title": "Milestone #5 public repo release index doc"
+    },
+    {
+      "category": "milestone_5",
+      "path": "examples/milestone-5/public-repo-release-index-v1/public-repo-release-index-v1.json",
+      "present": true,
+      "title": "Milestone #5 public repo release index JSON"
+    },
+    {
+      "category": "milestone_5",
+      "path": "examples/milestone-5/public-repo-release-index-v1/public-repo-release-index-v1.md",
+      "present": true,
+      "title": "Milestone #5 public repo release index Markdown"
+    },
+    {
+      "category": "milestone_5",
+      "path": "docs/milestone-5-public-readiness-baseline-audit-v1.md",
+      "present": true,
+      "title": "Milestone #5 baseline audit doc"
+    },
+    {
+      "category": "milestone_5",
+      "path": "examples/milestone-5/public-readiness-baseline-audit-v1/public-readiness-baseline-audit-v1.json",
+      "present": true,
+      "title": "Milestone #5 baseline audit JSON"
+    },
+    {
+      "category": "milestone_4",
+      "path": "docs/milestone-4-solver-engine-closure-v1.md",
+      "present": true,
+      "title": "Milestone #4 closure doc"
+    },
+    {
+      "category": "milestone_4",
+      "path": "examples/closures/milestone-4/milestone-4-solver-engine-closure.json",
+      "present": true,
+      "title": "Milestone #4 closure JSON"
+    },
+    {
+      "category": "milestone_4",
+      "path": "docs/candidate-ranker-task-family-policy-fix-v1.md",
+      "present": true,
+      "title": "Candidate ranker policy fix doc"
+    },
+    {
+      "category": "milestone_4",
+      "path": "examples/milestone-4/candidate-ranker-task-family-policy-fix-v1/candidate-ranker-task-family-policy-fix-v1-smoke.json",
+      "present": true,
+      "title": "Candidate ranker policy fix JSON"
+    },
+    {
+      "category": "milestone_4",
+      "path": "examples/milestone-4/expanded-batch-benchmark-v2/expanded-batch-benchmark-v2-smoke.json",
+      "present": true,
+      "title": "Expanded batch benchmark JSON"
+    },
+    {
+      "category": "milestone_4",
+      "path": "examples/milestone-4/failure-driven-improvement-loop-v1/failure-driven-improvement-loop-v1-smoke.json",
+      "present": true,
+      "title": "Failure-driven improvement loop JSON"
+    }
+  ],
+  "status": "MILESTONE_5_KAGGLE_SUBMISSION_DRY_RUN_PACKAGE_READY",
+  "submission_mode": "LOCAL_DRY_RUN_ONLY",
+  "task": "Task 3",
+  "title": "Kaggle Submission Dry-Run Package v1"
+}

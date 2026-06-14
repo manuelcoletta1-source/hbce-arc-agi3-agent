@@ -1,0 +1,36 @@
+ARC AGI3 KAGGLE SUBMISSION DRY-RUN MANIFEST v1
+package_id=MILESTONE-5-DRY-RUN-PACKAGE-09867B871A64
+signature=09867B871A647F41
+status=MILESTONE_5_KAGGLE_SUBMISSION_DRY_RUN_PACKAGE_READY
+submission_mode=LOCAL_DRY_RUN_ONLY
+kaggle_submission_sent=False
+real_submission_blocked=True
+source_artifact_count=15
+
+SOURCE_ARTIFACTS
+True :: repository_root :: README.md :: Repository README
+True :: repository_root :: LICENSE :: Repository license
+True :: source_tree :: src/hbce_arc_agi3 :: Python source package
+True :: test_tree :: tests :: Test suite
+True :: milestone_5 :: docs/milestone-5-public-repo-release-index-v1.md :: Milestone #5 public repo release index doc
+True :: milestone_5 :: examples/milestone-5/public-repo-release-index-v1/public-repo-release-index-v1.json :: Milestone #5 public repo release index JSON
+True :: milestone_5 :: examples/milestone-5/public-repo-release-index-v1/public-repo-release-index-v1.md :: Milestone #5 public repo release index Markdown
+True :: milestone_5 :: docs/milestone-5-public-readiness-baseline-audit-v1.md :: Milestone #5 baseline audit doc
+True :: milestone_5 :: examples/milestone-5/public-readiness-baseline-audit-v1/public-readiness-baseline-audit-v1.json :: Milestone #5 baseline audit JSON
+True :: milestone_4 :: docs/milestone-4-solver-engine-closure-v1.md :: Milestone #4 closure doc
+True :: milestone_4 :: examples/closures/milestone-4/milestone-4-solver-engine-closure.json :: Milestone #4 closure JSON
+True :: milestone_4 :: docs/candidate-ranker-task-family-policy-fix-v1.md :: Candidate ranker policy fix doc
+True :: milestone_4 :: examples/milestone-4/candidate-ranker-task-family-policy-fix-v1/candidate-ranker-task-family-policy-fix-v1-smoke.json :: Candidate ranker policy fix JSON
+True :: milestone_4 :: examples/milestone-4/expanded-batch-benchmark-v2/expanded-batch-benchmark-v2-smoke.json :: Expanded batch benchmark JSON
+True :: milestone_4 :: examples/milestone-4/failure-driven-improvement-loop-v1/failure-driven-improvement-loop-v1-smoke.json :: Failure-driven improvement loop JSON
+
+BOUNDARY
+public_safe=true
+deterministic=true
+local_only=true
+dry_run_only=true
+external_api_dependency=false
+contains_api_keys=false
+kaggle_submission_sent=false
+private_core_exposure=false
+legal_certification=false
