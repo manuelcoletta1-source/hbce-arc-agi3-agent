@@ -1,0 +1,676 @@
+{
+  "baseline_commit": "fb770e3 Add ARC AGI3 baseline solver failure taxonomy",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "competitive_claim_absent": true,
+  "expansion_gate_count": 44,
+  "expansion_gates": [
+    {
+      "name": "taxonomy_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "taxonomy_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "taxonomy_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "taxonomy_requires_solver_improvement",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "taxonomy_next_stage_matches_task_3",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expansion_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expansion_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expansion_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expansion_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "expansion_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "family_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "source_failure_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "strategy_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_priority_p0",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_have_source_failure",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_source_failures_found_in_taxonomy",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_have_solver_branch",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_have_purpose",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_have_strategies",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_have_inputs_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_have_output_candidate_type",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_have_measurement",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_have_regression_guards",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_registry_implemented",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_solver_not_modified",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_families_ready_for_task_4",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "color_mapping_family_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "object_model_family_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "shape_symmetry_family_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "competitive_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_submission_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "expansion_id": "MILESTONE-7-TASK-FAMILY-EXPANSION-3737879E7B20",
+  "expansion_index": {
+    "baseline_commit": "fb770e3 Add ARC AGI3 baseline solver failure taxonomy",
+    "competitive_claim_absent": true,
+    "depends_on_taxonomy": "MILESTONE-7-FAILURE-TAXONOMY-2F64CB679DF9",
+    "expansion_locked": true,
+    "expansion_mode": "TASK_FAMILY_SOLVER_EXPANSION_ONLY_NO_UPLOAD",
+    "expansion_ready": true,
+    "expansion_scope": "EXPAND_SOLVER_BRANCHES_FROM_BASELINE_FAILURE_TAXONOMY",
+    "expansion_verdict": "TASK_FAMILY_SOLVER_EXPANSION_READY_FOR_CANDIDATE_GENERATOR_IMPROVEMENT",
+    "external_api_dependency": false,
+    "family_count": 3,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_submission_allowed": false,
+    "manual_upload_performed": false,
+    "milestone": "Milestone #7",
+    "next_allowed_stage": "MILESTONE_7_TASK_4_CANDIDATE_GENERATOR_IMPROVEMENT",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "regression_guard_count": 9,
+    "runtime_solver_modified": false,
+    "solver_improvement_required": true,
+    "source_failure_count": 3,
+    "strategy_count": 10,
+    "task": "Task 3",
+    "upload_performed": false
+  },
+  "expansion_issue_count": 0,
+  "expansion_issues": [
+    {
+      "active": false,
+      "name": "taxonomy_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "taxonomy_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "taxonomy_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "taxonomy_does_not_require_solver_improvement",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "taxonomy_next_stage_mismatch",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expansion_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expansion_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expansion_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expansion_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "expansion_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "source_failure_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "strategy_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_priority_not_p0",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_source_failure_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "source_failure_not_found_in_taxonomy",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "solver_branch_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_purpose_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_strategies_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_inputs_required_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "output_candidate_type_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_measurement_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_regression_guards_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_registry_not_implemented",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_solver_modified",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_not_ready_for_task_4",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "color_mapping_family_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "object_model_family_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "shape_symmetry_family_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "competitive_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_submission_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    }
+  ],
+  "expansion_locked": true,
+  "expansion_mode": "TASK_FAMILY_SOLVER_EXPANSION_ONLY_NO_UPLOAD",
+  "expansion_ready": true,
+  "expansion_record": {
+    "boundary_intact": true,
+    "candidate_generator_dependency": "MILESTONE_7_TASK_4_CANDIDATE_GENERATOR_IMPROVEMENT",
+    "competitive_claim_absent": true,
+    "contains_api_keys": false,
+    "expansion_locked": true,
+    "expansion_mode": "TASK_FAMILY_SOLVER_EXPANSION_ONLY_NO_UPLOAD",
+    "expansion_ready": true,
+    "expansion_scope": "EXPAND_SOLVER_BRANCHES_FROM_BASELINE_FAILURE_TAXONOMY",
+    "expansion_verdict": "TASK_FAMILY_SOLVER_EXPANSION_READY_FOR_CANDIDATE_GENERATOR_IMPROVEMENT",
+    "external_api_dependency": false,
+    "families": [
+      "color_mapping",
+      "object_model",
+      "shape_symmetry"
+    ],
+    "family_count": 3,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_submission_allowed": false,
+    "manual_upload_performed": false,
+    "next_allowed_stage": "MILESTONE_7_TASK_4_CANDIDATE_GENERATOR_IMPROVEMENT",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "regression_guard_count": 9,
+    "runtime_solver_modified": false,
+    "solver_family_registry_ready": true,
+    "solver_improvement_required": true,
+    "source_failure_count": 3,
+    "source_failures": [
+      "color_transform_undercoverage",
+      "object_segmentation_undercoverage",
+      "spatial_symmetry_undercoverage"
+    ],
+    "strategy_count": 10,
+    "taxonomy_id": "MILESTONE-7-FAILURE-TAXONOMY-2F64CB679DF9",
+    "taxonomy_ready": true,
+    "taxonomy_solver_improvement_required": true,
+    "upload_performed": false
+  },
+  "expansion_scope": "EXPAND_SOLVER_BRANCHES_FROM_BASELINE_FAILURE_TAXONOMY",
+  "expansion_verdict": "TASK_FAMILY_SOLVER_EXPANSION_READY_FOR_CANDIDATE_GENERATOR_IMPROVEMENT",
+  "family_count": 3,
+  "family_expansions": [
+    {
+      "family": "color_mapping",
+      "family_id": "color_mapping_family_v1",
+      "implemented_as_registry": true,
+      "inputs_required": [
+        "train_input_grid",
+        "train_output_grid",
+        "test_input_grid",
+        "palette_signature"
+      ],
+      "measurement": "Increase exact or partial match rate on deterministic color-family local cases.",
+      "output_candidate_type": "COLOR_TRANSFORM_CANDIDATE",
+      "priority": "P0",
+      "purpose": "Detect and generate deterministic color remap and palette transformation candidates.",
+      "ready_for_task_4": true,
+      "regression_guards": [
+        "no_random_palette_search",
+        "preserve_grid_dimensions",
+        "full_suite_must_remain_green"
+      ],
+      "runtime_solver_modified": false,
+      "solver_branch": "solver_family_color_mapping_v1",
+      "source_failure_class": "color_transform_undercoverage",
+      "strategies": [
+        "stable_color_remap_detection",
+        "palette_swap_candidate_generation",
+        "background_foreground_color_preservation",
+        "color_histogram_signature_match"
+      ]
+    },
+    {
+      "family": "object_model",
+      "family_id": "object_model_family_v1",
+      "implemented_as_registry": true,
+      "inputs_required": [
+        "component_map",
+        "object_bounding_boxes",
+        "object_color_signature",
+        "train_input_output_object_delta"
+      ],
+      "measurement": "Track object-family cases and verify deterministic object-aware candidate selection.",
+      "output_candidate_type": "OBJECT_MODEL_CANDIDATE",
+      "priority": "P0",
+      "purpose": "Detect connected components, object identity, object relations, and object movement candidates.",
+      "ready_for_task_4": true,
+      "regression_guards": [
+        "no_unbounded_component_search",
+        "preserve_object_count_when_required",
+        "full_suite_must_remain_green"
+      ],
+      "runtime_solver_modified": false,
+      "solver_branch": "solver_family_object_model_v1",
+      "source_failure_class": "object_segmentation_undercoverage",
+      "strategies": [
+        "connected_component_signature_detection",
+        "bounding_box_relation_candidate_generation",
+        "object_count_preservation_check"
+      ]
+    },
+    {
+      "family": "shape_symmetry",
+      "family_id": "shape_symmetry_family_v1",
+      "implemented_as_registry": true,
+      "inputs_required": [
+        "shape_signature",
+        "axis_symmetry_signature",
+        "rotation_equivalence_signature",
+        "train_input_output_spatial_delta"
+      ],
+      "measurement": "Improve deterministic local matches on symmetry and geometry families.",
+      "output_candidate_type": "SHAPE_SYMMETRY_CANDIDATE",
+      "priority": "P0",
+      "purpose": "Detect reflection, rotation, translation, crop/expand, and symmetry-completion candidates.",
+      "ready_for_task_4": true,
+      "regression_guards": [
+        "no_random_geometric_search",
+        "preserve_valid_grid_bounds",
+        "full_suite_must_remain_green"
+      ],
+      "runtime_solver_modified": false,
+      "solver_branch": "solver_family_shape_symmetry_v1",
+      "source_failure_class": "spatial_symmetry_undercoverage",
+      "strategies": [
+        "reflection_rotation_candidate_generation",
+        "translation_crop_expand_signature_match",
+        "symmetry_completion_candidate_generation"
+      ]
+    }
+  ],
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "manual_submission_allowed": false,
+  "manual_upload_performed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_7_task_family_solver_expansion_v1"
+  },
+  "milestone": "Milestone #7",
+  "milestone_7_taxonomy_source": {
+    "actual_status": "MILESTONE_7_BASELINE_SOLVER_FAILURE_TAXONOMY_READY",
+    "artifact_id": "MILESTONE-7-FAILURE-TAXONOMY-2F64CB679DF9",
+    "expected_status": "MILESTONE_7_BASELINE_SOLVER_FAILURE_TAXONOMY_READY",
+    "name": "milestone_7_baseline_solver_failure_taxonomy",
+    "path": "examples/milestone-7/baseline-solver-failure-taxonomy-v1/milestone-7-baseline-solver-failure-taxonomy-v1.json",
+    "present": true,
+    "ready": true,
+    "sha256": "e4db0d319f2a5ed09090995b842d740d2a56e80cceda854058e6ef15b5d77675",
+    "sha256_16": "E4DB0D319F2A5ED0"
+  },
+  "next_allowed_stage": "MILESTONE_7_TASK_4_CANDIDATE_GENERATOR_IMPROVEMENT",
+  "passed_gate_count": 44,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "regression_guard_count": 9,
+  "runtime_solver_modified": false,
+  "signature": "3737879E7B209FB2",
+  "solver_family_registry_ready": true,
+  "solver_improvement_required": true,
+  "source_failure_count": 3,
+  "status": "MILESTONE_7_TASK_FAMILY_SOLVER_EXPANSION_READY",
+  "strategy_count": 10,
+  "task": "Task 3",
+  "title": "Task-Family Solver Expansion v1",
+  "upload_performed": false,
+  "warning_count": 0
+}
