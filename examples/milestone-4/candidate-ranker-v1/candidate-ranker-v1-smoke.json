@@ -1,0 +1,423 @@
+{
+  "best_candidate_matches_expected_smoke": true,
+  "best_candidate_score": 0.94,
+  "best_candidate_signature": "2514D12A5036C7C7",
+  "best_candidate_type": "COLOR_SHAPE_COMBINED",
+  "candidate_count": 4,
+  "evidence_score": 1.0,
+  "metadata": {
+    "agentic_state_feature": true,
+    "candidate_ranker_output": true,
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "expanded_batch_benchmark_input": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "leaderboard_target_leader_score": 1.3,
+    "leaderboard_target_podium_attack_score": 0.68,
+    "leaderboard_target_top_10_entry_score": 0.6,
+    "leaderboard_target_top_5_score": 0.65,
+    "local_only": true,
+    "milestone": "Milestone #4",
+    "private_core_exposure": false,
+    "prize_oriented_solver_target": true,
+    "public_safe": true,
+    "score_oriented": true,
+    "source": "candidate_ranker_v1",
+    "task": "Task 6",
+    "uses_candidate_generator_v1": true,
+    "uses_color_transform_detector_v1": true,
+    "uses_grid_object_extractor_v1": true,
+    "uses_shape_symmetry_detector_v1": true
+  },
+  "ranker_status": "CANDIDATE_RANKING_READY",
+  "ranking_report": {
+    "best_candidate": {
+      "applied_transforms": [
+        "stable_color_mapping",
+        "ROTATE_90"
+      ],
+      "candidate_grid": [
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "candidate_grid_signature": "4624E33BF900B7CA",
+      "candidate_id": "ARC-AGI3-CANDIDATE-3E792F2E5117",
+      "candidate_signature": "3E792F2E511716F9",
+      "candidate_type": "COLOR_SHAPE_COMBINED",
+      "explanation": "COLOR_SHAPE_COMBINED ranked with score=0.94; score_hint=0.95; confidence=0.875; type_weight=1.0; evidence=1.0; penalties=NONE.",
+      "metadata": {
+        "agentic_state_feature": true,
+        "candidate_generator_input": true,
+        "candidate_ranker_output": true,
+        "contains_api_keys": false,
+        "deterministic": true,
+        "dry_run_only": true,
+        "external_api_dependency": false,
+        "kaggle_submission_sent": false,
+        "local_only": true,
+        "milestone": "Milestone #4",
+        "private_core_exposure": false,
+        "prize_oriented_solver_target": true,
+        "public_safe": true,
+        "score_oriented": true,
+        "source": "candidate_ranker_v1",
+        "task": "Task 6"
+      },
+      "penalties": [],
+      "rank": 1,
+      "score": 0.94,
+      "score_breakdown": {
+        "candidate_type_component": 0.15,
+        "confidence_component": 0.2625,
+        "evidence_component": 0.1,
+        "final_score": 0.94,
+        "penalty_component": 0,
+        "score_hint_component": 0.4275
+      },
+      "signature": "2514D12A5036C7C7",
+      "status": "RANKED_CANDIDATE_READY"
+    },
+    "candidate_count": 4,
+    "evidence_score": 1.0,
+    "generation_id": "CANDIDATE-GENERATION-EDBF7855D4FE",
+    "metadata": {
+      "agentic_state_feature": true,
+      "candidate_ranker_output": true,
+      "contains_api_keys": false,
+      "deterministic": true,
+      "dry_run_only": true,
+      "expanded_batch_benchmark_input": true,
+      "external_api_dependency": false,
+      "kaggle_submission_sent": false,
+      "leaderboard_target_leader_score": 1.3,
+      "leaderboard_target_podium_attack_score": 0.68,
+      "leaderboard_target_top_10_entry_score": 0.6,
+      "leaderboard_target_top_5_score": 0.65,
+      "local_only": true,
+      "milestone": "Milestone #4",
+      "private_core_exposure": false,
+      "prize_oriented_solver_target": true,
+      "public_safe": true,
+      "score_oriented": true,
+      "source": "candidate_ranker_v1",
+      "task": "Task 6",
+      "uses_candidate_generator_v1": true,
+      "uses_color_transform_detector_v1": true,
+      "uses_grid_object_extractor_v1": true,
+      "uses_shape_symmetry_detector_v1": true
+    },
+    "ranked_candidates": [
+      {
+        "applied_transforms": [
+          "stable_color_mapping",
+          "ROTATE_90"
+        ],
+        "candidate_grid": [
+          [
+            0,
+            3,
+            3
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "candidate_grid_signature": "4624E33BF900B7CA",
+        "candidate_id": "ARC-AGI3-CANDIDATE-3E792F2E5117",
+        "candidate_signature": "3E792F2E511716F9",
+        "candidate_type": "COLOR_SHAPE_COMBINED",
+        "explanation": "COLOR_SHAPE_COMBINED ranked with score=0.94; score_hint=0.95; confidence=0.875; type_weight=1.0; evidence=1.0; penalties=NONE.",
+        "metadata": {
+          "agentic_state_feature": true,
+          "candidate_generator_input": true,
+          "candidate_ranker_output": true,
+          "contains_api_keys": false,
+          "deterministic": true,
+          "dry_run_only": true,
+          "external_api_dependency": false,
+          "kaggle_submission_sent": false,
+          "local_only": true,
+          "milestone": "Milestone #4",
+          "private_core_exposure": false,
+          "prize_oriented_solver_target": true,
+          "public_safe": true,
+          "score_oriented": true,
+          "source": "candidate_ranker_v1",
+          "task": "Task 6"
+        },
+        "penalties": [],
+        "rank": 1,
+        "score": 0.94,
+        "score_breakdown": {
+          "candidate_type_component": 0.15,
+          "confidence_component": 0.2625,
+          "evidence_component": 0.1,
+          "final_score": 0.94,
+          "penalty_component": 0,
+          "score_hint_component": 0.4275
+        },
+        "signature": "2514D12A5036C7C7",
+        "status": "RANKED_CANDIDATE_READY"
+      },
+      {
+        "applied_transforms": [
+          "ROTATE_90"
+        ],
+        "candidate_grid": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "candidate_grid_signature": "8D0E8C132420BA7F",
+        "candidate_id": "ARC-AGI3-CANDIDATE-7B7EBB67FE53",
+        "candidate_signature": "7B7EBB67FE53742C",
+        "candidate_type": "SHAPE_TRANSFORM",
+        "explanation": "SHAPE_TRANSFORM ranked with score=0.838; score_hint=0.7; confidence=1.0; type_weight=0.82; evidence=1.0; penalties=NONE.",
+        "metadata": {
+          "agentic_state_feature": true,
+          "candidate_generator_input": true,
+          "candidate_ranker_output": true,
+          "contains_api_keys": false,
+          "deterministic": true,
+          "dry_run_only": true,
+          "external_api_dependency": false,
+          "kaggle_submission_sent": false,
+          "local_only": true,
+          "milestone": "Milestone #4",
+          "private_core_exposure": false,
+          "prize_oriented_solver_target": true,
+          "public_safe": true,
+          "score_oriented": true,
+          "source": "candidate_ranker_v1",
+          "task": "Task 6"
+        },
+        "penalties": [],
+        "rank": 2,
+        "score": 0.838,
+        "score_breakdown": {
+          "candidate_type_component": 0.123,
+          "confidence_component": 0.3,
+          "evidence_component": 0.1,
+          "final_score": 0.838,
+          "penalty_component": 0,
+          "score_hint_component": 0.315
+        },
+        "signature": "4818A144B8F31312",
+        "status": "RANKED_CANDIDATE_READY"
+      },
+      {
+        "applied_transforms": [
+          "stable_color_mapping"
+        ],
+        "candidate_grid": [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            3,
+            3
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "candidate_grid_signature": "C53CF58B6F6B27A2",
+        "candidate_id": "ARC-AGI3-CANDIDATE-FC4C9C88E1CE",
+        "candidate_signature": "FC4C9C88E1CEB528",
+        "candidate_type": "COLOR_REMAP",
+        "explanation": "COLOR_REMAP ranked with score=0.73; score_hint=0.65; confidence=0.75; type_weight=0.75; evidence=1.0; penalties=NONE.",
+        "metadata": {
+          "agentic_state_feature": true,
+          "candidate_generator_input": true,
+          "candidate_ranker_output": true,
+          "contains_api_keys": false,
+          "deterministic": true,
+          "dry_run_only": true,
+          "external_api_dependency": false,
+          "kaggle_submission_sent": false,
+          "local_only": true,
+          "milestone": "Milestone #4",
+          "private_core_exposure": false,
+          "prize_oriented_solver_target": true,
+          "public_safe": true,
+          "score_oriented": true,
+          "source": "candidate_ranker_v1",
+          "task": "Task 6"
+        },
+        "penalties": [],
+        "rank": 3,
+        "score": 0.73,
+        "score_breakdown": {
+          "candidate_type_component": 0.1125,
+          "confidence_component": 0.225,
+          "evidence_component": 0.1,
+          "final_score": 0.73,
+          "penalty_component": 0,
+          "score_hint_component": 0.2925
+        },
+        "signature": "9E94C50B7F3977B1",
+        "status": "RANKED_CANDIDATE_READY"
+      },
+      {
+        "applied_transforms": [
+          "identity"
+        ],
+        "candidate_grid": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "candidate_grid_signature": "B22F5EED02A9F3C4",
+        "candidate_id": "ARC-AGI3-CANDIDATE-4FFFCD3D3A3F",
+        "candidate_signature": "4FFFCD3D3A3FAFAD",
+        "candidate_type": "IDENTITY_BASELINE",
+        "explanation": "IDENTITY_BASELINE ranked with score=0.0; score_hint=0.1; confidence=0.1; type_weight=0.15; evidence=1.0; penalties=LOW_CONFIDENCE,LOW_SCORE_HINT,IDENTITY_BASELINE_LOW_PRIORITY.",
+        "metadata": {
+          "agentic_state_feature": true,
+          "candidate_generator_input": true,
+          "candidate_ranker_output": true,
+          "contains_api_keys": false,
+          "deterministic": true,
+          "dry_run_only": true,
+          "external_api_dependency": false,
+          "kaggle_submission_sent": false,
+          "local_only": true,
+          "milestone": "Milestone #4",
+          "private_core_exposure": false,
+          "prize_oriented_solver_target": true,
+          "public_safe": true,
+          "score_oriented": true,
+          "source": "candidate_ranker_v1",
+          "task": "Task 6"
+        },
+        "penalties": [
+          "LOW_CONFIDENCE",
+          "LOW_SCORE_HINT",
+          "IDENTITY_BASELINE_LOW_PRIORITY"
+        ],
+        "rank": 4,
+        "score": 0.0,
+        "score_breakdown": {
+          "candidate_type_component": 0.0225,
+          "confidence_component": 0.03,
+          "evidence_component": 0.1,
+          "final_score": 0.0,
+          "penalty_component": 0.23,
+          "score_hint_component": 0.045
+        },
+        "signature": "5F8CBF1B09E2B4B5",
+        "status": "RANKED_CANDIDATE_READY"
+      }
+    ],
+    "ranking_id": "CANDIDATE-RANKING-92172049C00B",
+    "ranking_policy": {
+      "candidate_type_weight": 0.15,
+      "confidence_weight": 0.3,
+      "evidence_weight": 0.1,
+      "penalties_enabled": true,
+      "score_hint_weight": 0.45,
+      "tie_break": [
+        "score_desc",
+        "penalty_asc",
+        "candidate_type_asc",
+        "candidate_signature_asc"
+      ]
+    },
+    "signature": "92172049C00B9EE3",
+    "status": "CANDIDATE_RANKING_READY",
+    "task_id": "MILESTONE-4-TASK-5-SMOKE"
+  },
+  "signature": "92172049C00B9EE3",
+  "status": "CANDIDATE_RANKER_PIPELINE_READY",
+  "validation": {
+    "best_candidate_score": 0.94,
+    "best_candidate_signature": "2514D12A5036C7C7",
+    "best_candidate_type": "COLOR_SHAPE_COMBINED",
+    "candidate_count": 4,
+    "checks": {
+      "best_candidate_rank_one": true,
+      "best_candidate_ready": true,
+      "best_candidate_type_combined": true,
+      "candidate_count_minimum": true,
+      "candidate_count_valid": true,
+      "contains_api_keys_false": true,
+      "evidence_score_valid": true,
+      "external_api_dependency_false": true,
+      "generation_id_present": true,
+      "kaggle_submission_sent_false": true,
+      "metadata_candidate_ranker_output": true,
+      "metadata_deterministic": true,
+      "metadata_dry_run_only": true,
+      "metadata_expanded_batch_benchmark_input": true,
+      "metadata_local_only": true,
+      "metadata_prize_oriented_solver_target": true,
+      "metadata_public_safe": true,
+      "metadata_score_oriented": true,
+      "metadata_uses_candidate_generator": true,
+      "private_core_exposure_false": true,
+      "ranked_candidates_valid": true,
+      "ranking_id_present": true,
+      "ranking_policy_present": true,
+      "scores_descending": true,
+      "signature_present": true,
+      "status_ready": true,
+      "task_id_present": true
+    },
+    "ranking_id": "CANDIDATE-RANKING-92172049C00B",
+    "signature": "92172049C00B9EE3",
+    "status": "CANDIDATE_RANKING_VALID",
+    "valid": true
+  },
+  "validation_status": "CANDIDATE_RANKING_VALID"
+}
