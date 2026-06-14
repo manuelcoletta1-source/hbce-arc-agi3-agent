@@ -1,0 +1,57 @@
+ARC AGI3 MILESTONE 10 CANDIDATE REFRESH MANIFEST v1
+candidate_refresh_id=MILESTONE-10-CANDIDATE-REFRESH-A684C4B45643
+signature=A684C4B456433B72
+status=MILESTONE_10_CANDIDATE_REFRESH_V1_READY
+baseline_commit=ed3aa9d Add ARC AGI3 benchmark refresh
+candidate_mode=MILESTONE_10_CANDIDATE_REFRESH_V1_LOCAL_ONLY
+candidate_verdict=CANDIDATE_REFRESH_READY_FOR_SUBMISSION_CANDIDATE_REBUILD_GATE
+next_allowed_stage=MILESTONE_10_TASK_7_SUBMISSION_CANDIDATE_REBUILD_GATE_V1
+candidate_ready=True
+candidate_refresh_created=True
+candidate_refresh_ready=True
+candidate_count=4
+ranked_candidate_count=4
+selected_candidate_count=1
+selected_candidate_id=M10-CANDIDATE-BALANCED-PATCH-STACK-v1
+candidate_package_id=MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D
+candidate_artifact_created=True
+real_submission_candidate_created=False
+submission_json_created=False
+upload_package_created=False
+candidate_check_count=26
+candidate_case_count=10
+candidate_pass_count=10
+candidate_failure_count=0
+candidate_gate_count=67
+passed_gate_count=67
+candidate_issue_count=0
+rebuild_gate_required_next=True
+real_submission_decision=NOT_AUTHORIZED
+real_submission_allowed=False
+manual_upload_allowed=False
+kaggle_authentication_allowed=False
+kaggle_submission_sent=False
+fail_closed_required=True
+fail_closed_active=True
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+CANDIDATE_RANKING
+M10-CANDIDATE-BALANCED-PATCH-STACK-v1 family=balanced_patch_stack score_hint=0.991 confidence=0.93 complexity=3
+M10-CANDIDATE-COMPOSITION-RANKER-v1 family=composition_ranker score_hint=0.984 confidence=0.95 complexity=2
+M10-CANDIDATE-TRACE-STABLE-v1 family=trace_stable score_hint=0.978 confidence=0.9 complexity=2
+M10-CANDIDATE-SYMMETRY-OBJECT-v1 family=symmetry_object score_hint=0.972 confidence=0.91 complexity=2
+
+CANDIDATE_VALIDATION_RESULTS
+m10_candidate_refresh_benchmark_source_ready_v1 area=source_binding operation=verify_benchmark_refresh_source passed=True evidence_score=100
+m10_candidate_refresh_catalog_ready_v1 area=candidate_catalog operation=verify_candidate_catalog passed=True evidence_score=100
+m10_candidate_refresh_ranking_ready_v1 area=candidate_ranking operation=verify_candidate_ranking passed=True evidence_score=100
+m10_candidate_refresh_selected_candidate_ready_v1 area=candidate_selection operation=verify_selected_candidate passed=True evidence_score=100
+m10_candidate_refresh_package_ready_v1 area=candidate_package operation=verify_candidate_package passed=True evidence_score=100
+m10_candidate_refresh_trace_ready_v1 area=traceability operation=verify_candidate_trace passed=True evidence_score=100
+m10_candidate_refresh_no_submission_json_v1 area=submission_boundary operation=verify_no_submission_json passed=True evidence_score=100
+m10_candidate_refresh_real_submission_blocked_v1 area=submission_boundary operation=verify_real_submission_blocked passed=True evidence_score=100
+m10_candidate_refresh_fail_closed_preserved_v1 area=fail_closed operation=verify_fail_closed_preserved passed=True evidence_score=100
+m10_candidate_refresh_next_stage_valid_v1 area=next_stage operation=verify_rebuild_gate_next passed=True evidence_score=100
