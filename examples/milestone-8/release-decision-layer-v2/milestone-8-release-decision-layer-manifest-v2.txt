@@ -1,0 +1,71 @@
+ARC AGI3 MILESTONE 8 RELEASE DECISION LAYER MANIFEST v2
+decision_id=MILESTONE-8-RELEASE-DECISION-DBB586C74FA0
+signature=DBB586C74FA0F6BC
+status=MILESTONE_8_RELEASE_DECISION_LAYER_V2_READY
+baseline_commit=cb52cd2 Add ARC AGI3 final competitive readiness refresh
+decision_mode=RELEASE_DECISION_LAYER_V2_MANUAL_REVIEW_ONLY
+decision_verdict=RELEASE_DECISION_LAYER_READY_MANUAL_APPROVAL_REQUIRED_REAL_SUBMISSION_BLOCKED
+next_allowed_stage=MILESTONE_8_TASK_10_MILESTONE_8_CLOSURE_REPORT_V2
+package_ready_for_manual_review=True
+operator_approval_required=True
+operator_approval_granted=False
+operator_approval_received=False
+required_declaration_count=8
+provided_declaration_count=0
+accepted_declaration_count=0
+closed_task_count=8
+source_commit_count=8
+decision_case_count=10
+decision_pass_count=10
+decision_failure_count=0
+decision_gate_count=48
+passed_gate_count=48
+decision_issue_count=0
+decision_ready=True
+decision_locked=True
+release_decision_layer_created=True
+manual_review_package_ready=True
+final_package_verified=True
+approval_contract_ready=True
+real_submission_created=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+REQUIRED_OPERATOR_DECLARATIONS
+operator_confirms_real_submission_intent
+operator_confirms_kaggle_rules_review
+operator_confirms_no_private_core_exposure
+operator_confirms_no_api_keys_or_secret_material
+operator_confirms_local_candidate_package_review
+operator_confirms_manual_upload_responsibility
+operator_confirms_no_legal_certification_claim
+operator_confirms_irreversible_external_submission_awareness
+
+SOURCE_COMMITS
+Task 1 commit=69af006 title=Add ARC AGI3 competitive solver iteration plan
+Task 2 commit=4a93654 title=Add ARC AGI3 competitive solver kernel
+Task 3 commit=1df6919 title=Add ARC AGI3 family benchmark cases
+Task 4 commit=3ea3687 title=Add ARC AGI3 candidate generator runtime upgrade
+Task 5 commit=537b277 title=Add ARC AGI3 ranker runtime upgrade
+Task 6 commit=c68ab45 title=Add ARC AGI3 expanded runtime benchmark
+Task 7 commit=0e7e086 title=Add ARC AGI3 submission candidate refresh
+Task 8 commit=cb52cd2 title=Add ARC AGI3 final competitive readiness refresh
+
+DECISION_RESULTS
+decision_final_refresh_source_ready_v2 area=source_binding operation=verify_final_refresh_artifact passed=True evidence_score=100
+decision_package_ready_for_manual_review_v2 area=package_readiness operation=verify_package_ready passed=True evidence_score=100
+decision_chain_task_1_to_8_complete_v2 area=chain operation=verify_task_1_to_8_chain passed=True evidence_score=100
+decision_required_declarations_defined_v2 area=operator_approval operation=verify_required_declaration_contract passed=True evidence_score=100
+decision_no_operator_approval_provided_v2 area=operator_approval operation=verify_no_operator_approval_in_dry_run passed=True evidence_score=100
+decision_real_submission_blocked_v2 area=submission operation=verify_real_submission_blocked passed=True evidence_score=100
+decision_no_upload_no_auth_v2 area=boundary operation=verify_no_upload_no_auth passed=True evidence_score=100
+decision_no_score_or_leaderboard_claim_v2 area=claim_boundary operation=verify_no_score_or_leaderboard_claim passed=True evidence_score=100
+decision_manual_review_package_ready_v2 area=manual_review operation=verify_manual_review_package_ready passed=True evidence_score=100
+decision_next_stage_closure_valid_v2 area=next_stage operation=verify_next_closure_stage passed=True evidence_score=100
