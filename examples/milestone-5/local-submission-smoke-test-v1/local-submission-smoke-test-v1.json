@@ -1,0 +1,293 @@
+{
+  "baseline_commit": "3c56cd7 Add ARC AGI3 Kaggle submission preflight report",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+  "candidate_task_count": 3,
+  "checks": {
+    "all_smoke_cases_passed": true,
+    "boundary_intact": true,
+    "candidate_contains_api_keys_false": true,
+    "candidate_external_api_dependency_false": true,
+    "candidate_kaggle_submission_not_sent": true,
+    "candidate_kind_smoke_only": true,
+    "candidate_legal_certification_false": true,
+    "candidate_private_core_exposure_false": true,
+    "candidate_task_count_matches_smoke_cases": true,
+    "expected_submission_filename_is_submission_json": true,
+    "preflight_kaggle_submission_not_sent": true,
+    "preflight_ready_for_local_submission_smoke_test": true,
+    "preflight_ready_for_real_kaggle_submission_false": true,
+    "preflight_report_present": true,
+    "preflight_report_ready": true,
+    "smoke_case_count_is_3": true,
+    "smoke_mode_local_only_no_upload": true
+  },
+  "expected_submission_filename": "submission.json",
+  "kaggle_submission_sent": false,
+  "local_submission_candidate": {
+    "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+    "kaggle_submission_sent": false,
+    "metadata": {
+      "contains_api_keys": false,
+      "deterministic": true,
+      "dry_run_only": true,
+      "external_api_dependency": false,
+      "legal_certification": false,
+      "local_only": true,
+      "private_core_exposure": false,
+      "public_safe": true
+    },
+    "submission_filename": "submission.json",
+    "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+    "tasks": [
+      {
+        "attempt_1": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "attempt_2": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "task_id": "SMOKE-TASK-IDENTITY-2X2"
+      },
+      {
+        "attempt_1": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "attempt_2": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "task_id": "SMOKE-TASK-COLOR-REMAP-2X2"
+      },
+      {
+        "attempt_1": [
+          [
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        "attempt_2": [
+          [
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            3
+          ]
+        ],
+        "task_id": "SMOKE-TASK-OBJECT-FILL-3X3"
+      }
+    ]
+  },
+  "metadata": {
+    "depends_on_kaggle_submission_preflight_report": true,
+    "milestone": "Milestone #5",
+    "smoke_kind": "LOCAL_SUBMISSION_SMOKE_TEST",
+    "source": "milestone_5_local_submission_smoke_test_v1",
+    "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+    "task": "Task 7",
+    "upload_performed": false
+  },
+  "milestone": "Milestone #5",
+  "next_actions": [
+    "create_submission_candidate_format_report_v1",
+    "create_submission_candidate_dry_run_v1",
+    "close_milestone_5_submission_preparation_v1"
+  ],
+  "preflight_report_id": "MILESTONE-5-PREFLIGHT-REPORT-2BE57C675A9B",
+  "preflight_report_signature": "2BE57C675A9BE695",
+  "ready_for_real_kaggle_submission": false,
+  "ready_for_submission_candidate_format_report": true,
+  "signature": "0F0FDCE696D480F9",
+  "smoke_case_count": 3,
+  "smoke_case_passed_count": 3,
+  "smoke_cases": [
+    {
+      "expected_output_grid": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "input_grid": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "passed": true,
+      "predicted_output_grid": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "strategy": "identity_grid_passthrough",
+      "task_id": "SMOKE-TASK-IDENTITY-2X2"
+    },
+    {
+      "expected_output_grid": [
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "input_grid": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "passed": true,
+      "predicted_output_grid": [
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "strategy": "foreground_to_constant_color",
+      "task_id": "SMOKE-TASK-COLOR-REMAP-2X2"
+    },
+    {
+      "expected_output_grid": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "input_grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "passed": true,
+      "predicted_output_grid": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "strategy": "single_object_fill",
+      "task_id": "SMOKE-TASK-OBJECT-FILL-3X3"
+    }
+  ],
+  "smoke_id": "MILESTONE-5-LOCAL-SMOKE-0F0FDCE696D4",
+  "smoke_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+  "status": "MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY",
+  "task": "Task 7",
+  "title": "Local Submission Smoke Test v1"
+}

@@ -1,0 +1,101 @@
+{
+  "candidate_kind": "LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY",
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "submission_filename": "submission.json",
+  "submission_mode": "LOCAL_SMOKE_ONLY_NO_UPLOAD",
+  "tasks": [
+    {
+      "attempt_1": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "attempt_2": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "task_id": "SMOKE-TASK-IDENTITY-2X2"
+    },
+    {
+      "attempt_1": [
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "attempt_2": [
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "task_id": "SMOKE-TASK-COLOR-REMAP-2X2"
+    },
+    {
+      "attempt_1": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "attempt_2": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "task_id": "SMOKE-TASK-OBJECT-FILL-3X3"
+    }
+  ]
+}

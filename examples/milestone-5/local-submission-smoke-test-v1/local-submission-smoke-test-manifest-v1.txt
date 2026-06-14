@@ -1,0 +1,29 @@
+ARC AGI3 LOCAL SUBMISSION SMOKE TEST MANIFEST v1
+smoke_id=MILESTONE-5-LOCAL-SMOKE-0F0FDCE696D4
+signature=0F0FDCE696D480F9
+status=MILESTONE_5_LOCAL_SUBMISSION_SMOKE_TEST_READY
+smoke_mode=LOCAL_SMOKE_ONLY_NO_UPLOAD
+candidate_kind=LOCAL_SUBMISSION_CANDIDATE_SMOKE_ONLY
+expected_submission_filename=submission.json
+smoke_case_count=3
+smoke_case_passed_count=3
+candidate_task_count=3
+ready_for_submission_candidate_format_report=True
+ready_for_real_kaggle_submission=False
+kaggle_submission_sent=False
+
+SMOKE_CASES
+SMOKE-TASK-IDENTITY-2X2 strategy=identity_grid_passthrough passed=True
+SMOKE-TASK-COLOR-REMAP-2X2 strategy=foreground_to_constant_color passed=True
+SMOKE-TASK-OBJECT-FILL-3X3 strategy=single_object_fill passed=True
+
+BOUNDARY
+public_safe=true
+deterministic=true
+local_only=true
+dry_run_only=true
+external_api_dependency=false
+contains_api_keys=false
+kaggle_submission_sent=false
+private_core_exposure=false
+legal_certification=false
