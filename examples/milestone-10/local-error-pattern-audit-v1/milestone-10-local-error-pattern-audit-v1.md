@@ -1,0 +1,70 @@
+# ARC AGI3 Milestone #10 - Local Error Pattern Audit v1
+
+- status: MILESTONE_10_LOCAL_ERROR_PATTERN_AUDIT_V1_READY
+- audit_id: MILESTONE-10-ERROR-AUDIT-DA2B176A87B9
+- signature: DA2B176A87B932BC
+- baseline_commit: d32678c Open ARC AGI3 milestone 10 local solver improvement
+- audit_mode: MILESTONE_10_LOCAL_ERROR_PATTERN_AUDIT_V1_LOCAL_ONLY
+- audit_scope: LOCAL_SOLVER_ERROR_PATTERN_AUDIT_NO_SUBMISSION
+- audit_verdict: LOCAL_ERROR_PATTERN_AUDIT_READY_FOR_SOLVER_PATCH_PLAN
+- next_allowed_stage: MILESTONE_10_TASK_3_SOLVER_PATCH_PLAN_V1
+- audit_ready: True
+- error_pattern_count: 6
+- solver_target_count: 6
+- real_submission_decision: NOT_AUTHORIZED
+- real_submission_allowed: False
+- fail_closed_active: True
+
+## Error patterns
+
+- ERR-COLOR-REMAP-AMBIGUITY-v1 / family=color_mapping / severity=P1 / target=strengthen unseen foreground color mapping inference
+- ERR-OBJECT-BOUNDARY-EXTRACTION-v1 / family=object_model / severity=P1 / target=add object boundary stability checks
+- ERR-SYMMETRY-AXIS-INFERENCE-v1 / family=shape_symmetry / severity=P2 / target=rank symmetry axes with deterministic tie-break evidence
+- ERR-CROSS-FAMILY-COMPOSITION-ORDER-v1 / family=cross_family_composition / severity=P1 / target=introduce ordered composition scoring
+- ERR-RANKER-TIE-BREAK-EVIDENCE-v1 / family=candidate_ranker / severity=P2 / target=expand ranker tie-break policy with task-family evidence
+- ERR-TRACE-GENERALIZATION-GAP-v1 / family=traceability / severity=P2 / target=increase audit trace fields for local solver decisions
+
+## Audit results
+
+- m10_error_audit_baseline_source_ready_v1 / area=source_binding / operation=verify_milestone_10_baseline / passed=True
+- m10_error_audit_fail_closed_preserved_v1 / area=fail_closed / operation=verify_fail_closed_boundary / passed=True
+- m10_error_audit_color_mapping_pattern_v1 / area=solver_family / operation=audit_color_mapping_error_pattern / passed=True
+- m10_error_audit_object_model_pattern_v1 / area=solver_family / operation=audit_object_model_error_pattern / passed=True
+- m10_error_audit_shape_symmetry_pattern_v1 / area=solver_family / operation=audit_shape_symmetry_error_pattern / passed=True
+- m10_error_audit_cross_family_pattern_v1 / area=solver_family / operation=audit_cross_family_error_pattern / passed=True
+- m10_error_audit_ranker_pattern_v1 / area=ranking / operation=audit_ranker_tie_break_pattern / passed=True
+- m10_error_audit_traceability_pattern_v1 / area=traceability / operation=audit_trace_generalization_pattern / passed=True
+- m10_error_audit_patch_targets_ready_v1 / area=patch_planning / operation=verify_patch_targets_ready / passed=True
+- m10_error_audit_next_stage_valid_v1 / area=next_stage / operation=verify_solver_patch_plan_next / passed=True
+
+## Decision
+
+Local error pattern audit is ready. The next stage is the solver patch plan. Real submission remains blocked.
+
+## Markers
+
+ARC_AGI3_MILESTONE_10_LOCAL_ERROR_PATTERN_AUDIT_V1_READY=true
+ARC_AGI3_MILESTONE_10_LOCAL_ERROR_PATTERN_AUDIT_V1_VALID=true
+ARC_AGI3_MILESTONE_10_ERROR_AUDIT_READY=true
+ARC_AGI3_MILESTONE_10_AUDIT_MODE=MILESTONE_10_LOCAL_ERROR_PATTERN_AUDIT_V1_LOCAL_ONLY
+ARC_AGI3_MILESTONE_10_AUDIT_VERDICT=LOCAL_ERROR_PATTERN_AUDIT_READY_FOR_SOLVER_PATCH_PLAN
+ARC_AGI3_MILESTONE_10_BASELINE_COMMIT=d32678c
+ARC_AGI3_MILESTONE_10_NEXT_STAGE=MILESTONE_10_TASK_3_SOLVER_PATCH_PLAN_V1
+ARC_AGI3_MILESTONE_10_ERROR_PATTERN_COUNT=6
+ARC_AGI3_MILESTONE_10_SOLVER_TARGET_COUNT=6
+ARC_AGI3_MILESTONE_10_AUDIT_CHECK_COUNT=20
+ARC_AGI3_MILESTONE_10_AUDIT_CASE_COUNT=10
+ARC_AGI3_MILESTONE_10_AUDIT_PASS_COUNT=10
+ARC_AGI3_MILESTONE_10_AUDIT_FAILURE_COUNT=0
+ARC_AGI3_MILESTONE_10_LOCAL_ERROR_PATTERN_AUDIT_CREATED=true
+ARC_AGI3_MILESTONE_10_LOCAL_ERROR_PATTERN_AUDIT_READY=true
+ARC_AGI3_MILESTONE_10_REAL_SUBMISSION_DECISION=NOT_AUTHORIZED
+ARC_AGI3_MILESTONE_10_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_10_MANUAL_UPLOAD_ALLOWED=false
+ARC_AGI3_MILESTONE_10_KAGGLE_AUTHENTICATION_ALLOWED=false
+ARC_AGI3_MILESTONE_10_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_10_FAIL_CLOSED_REQUIRED=true
+ARC_AGI3_MILESTONE_10_FAIL_CLOSED_ACTIVE=true
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
