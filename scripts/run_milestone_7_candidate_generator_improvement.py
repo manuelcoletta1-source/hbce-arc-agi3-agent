@@ -1,0 +1,57 @@
+from hbce_arc_agi3.milestone_7_candidate_generator_improvement import (
+    run_milestone_7_candidate_generator_improvement_pipeline,
+)
+
+
+def main() -> None:
+    payload = run_milestone_7_candidate_generator_improvement_pipeline()
+    generator = payload["generator"]
+
+    print(payload["status"])
+    print(payload["generator_status"])
+    print(payload["validation_status"])
+    print(payload["generator_id"])
+    print(payload["signature"])
+    print(generator["baseline_commit"])
+    print(payload["generator_mode"])
+    print(payload["generator_verdict"])
+    print(payload["next_allowed_stage"])
+    print(payload["profile_count"])
+    print(payload["source_family_count"])
+    print(payload["template_count"])
+    print(payload["evidence_field_count"])
+    print(payload["deterministic_rule_count"])
+    print(payload["regression_guard_count"])
+    print(payload["max_candidate_count"])
+    print(payload["generator_gate_count"])
+    print(payload["passed_gate_count"])
+    print(payload["generator_issue_count"])
+    print(payload["warning_count"])
+    print(payload["generator_ready"])
+    print(payload["generator_locked"])
+    print(payload["runtime_solver_modified"])
+    print(payload["candidate_generator_profiles_ready"])
+    print(payload["solver_improvement_required"])
+    print(payload["competitive_claim_absent"])
+    print(payload["manual_submission_allowed"])
+    print(payload["manual_upload_performed"])
+    print(payload["real_submission_allowed"])
+    print(payload["ready_for_real_kaggle_submission"])
+    print(payload["real_submission_created"])
+    print(payload["kaggle_submission_sent"])
+    print(payload["upload_performed"])
+    print(payload["kaggle_authentication_performed"])
+    print(all(item["random_search_allowed"] is False for item in generator["generator_profiles"]))
+    print(all(item["unbounded_search_allowed"] is False for item in generator["generator_profiles"]))
+    print(all(item["ready_for_task_5"] for item in generator["generator_profiles"]))
+    print(all(item["passed"] for item in generator["generator_gates"]))
+    print(all(item["active"] is False for item in generator["generator_issues"]))
+    print(payload["artifacts"]["json_path"])
+    print(payload["artifacts"]["markdown_path"])
+    print(payload["artifacts"]["manifest_path"])
+    print(payload["artifacts"]["index_path"])
+    print(payload["metadata"])
+
+
+if __name__ == "__main__":
+    main()

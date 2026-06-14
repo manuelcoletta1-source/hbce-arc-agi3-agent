@@ -1,0 +1,62 @@
+# ARC AGI3 Milestone #7 - Candidate Generator Improvement v1
+
+- status: MILESTONE_7_CANDIDATE_GENERATOR_IMPROVEMENT_READY
+- generator_id: MILESTONE-7-CANDIDATE-GENERATOR-5C5EE350C631
+- signature: 5C5EE350C631E7B5
+- baseline_commit: 3ec630b Add ARC AGI3 task-family solver expansion
+- generator_mode: CANDIDATE_GENERATOR_IMPROVEMENT_ONLY_NO_UPLOAD
+- generator_scope: GENERATE_DETERMINISTIC_CANDIDATE_TEMPLATES_FROM_TASK_FAMILIES
+- generator_verdict: CANDIDATE_GENERATOR_IMPROVEMENT_READY_FOR_RANKER_EVIDENCE_UPGRADE
+- next_allowed_stage: MILESTONE_7_TASK_5_RANKER_EVIDENCE_UPGRADE
+- profile_count: 3
+- source_family_count: 3
+- template_count: 12
+- evidence_field_count: 15
+- deterministic_rule_count: 12
+- regression_guard_count: 9
+- max_candidate_count: 24
+- generator_gate_count: 49
+- passed_gate_count: 49
+- generator_issue_count: 0
+- generator_ready: True
+- runtime_solver_modified: False
+- real_submission_allowed: False
+- kaggle_submission_sent: False
+- upload_performed: False
+
+## Candidate generator profiles
+
+- P0 candidate_generator_color_mapping_v1 / family=color_mapping / branch=candidate_branch_color_mapping_v1 / templates=4 / max_candidate_count=8
+- P0 candidate_generator_object_model_v1 / family=object_model / branch=candidate_branch_object_model_v1 / templates=4 / max_candidate_count=8
+- P0 candidate_generator_shape_symmetry_v1 / family=shape_symmetry / branch=candidate_branch_shape_symmetry_v1 / templates=4 / max_candidate_count=8
+
+## Decision
+
+Candidate generator profiles are ready for ranker evidence upgrade.
+
+## Markers
+
+ARC_AGI3_MILESTONE_7_CANDIDATE_GENERATOR_IMPROVEMENT_V1_READY=true
+ARC_AGI3_MILESTONE_7_CANDIDATE_GENERATOR_IMPROVEMENT_VALID=true
+ARC_AGI3_MILESTONE_7_GENERATOR_MODE=CANDIDATE_GENERATOR_IMPROVEMENT_ONLY_NO_UPLOAD
+ARC_AGI3_MILESTONE_7_GENERATOR_VERDICT=CANDIDATE_GENERATOR_IMPROVEMENT_READY_FOR_RANKER_EVIDENCE_UPGRADE
+ARC_AGI3_MILESTONE_7_PROFILE_COUNT=3
+ARC_AGI3_MILESTONE_7_SOURCE_FAMILY_COUNT=3
+ARC_AGI3_MILESTONE_7_TEMPLATE_COUNT=12
+ARC_AGI3_MILESTONE_7_EVIDENCE_FIELD_COUNT=15
+ARC_AGI3_MILESTONE_7_DETERMINISTIC_RULE_COUNT=12
+ARC_AGI3_MILESTONE_7_REGRESSION_GUARD_COUNT=9
+ARC_AGI3_MILESTONE_7_MAX_CANDIDATE_COUNT=24
+ARC_AGI3_MILESTONE_7_RUNTIME_SOLVER_MODIFIED=false
+ARC_AGI3_MILESTONE_7_CANDIDATE_GENERATOR_PROFILES_READY=true
+ARC_AGI3_MILESTONE_7_NEXT_STAGE=MILESTONE_7_TASK_5_RANKER_EVIDENCE_UPGRADE
+ARC_AGI3_MILESTONE_7_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_7_READY_FOR_REAL_KAGGLE_SUBMISSION=false
+ARC_AGI3_MILESTONE_7_REAL_SUBMISSION_CREATED=false
+ARC_AGI3_MILESTONE_7_UPLOAD_PERFORMED=false
+ARC_AGI3_MILESTONE_7_KAGGLE_AUTHENTICATION_PERFORMED=false
+ARC_AGI3_MILESTONE_7_BASELINE_EXPANSION_COMMIT=3ec630b
+ARC_AGI3_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
