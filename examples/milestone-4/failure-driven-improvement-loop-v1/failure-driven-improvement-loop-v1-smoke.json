@@ -1,0 +1,100 @@
+{
+  "analyzed_task_count": 3,
+  "failing_task_count": 1,
+  "highest_priority": "HIGH",
+  "improvement_item_count": 1,
+  "improvement_loop_id": "FAILURE-DRIVEN-LOOP-6A84DE3E93F1",
+  "improvement_report": {
+    "analyzed_task_count": 3,
+    "failing_task_count": 1,
+    "highest_priority": "HIGH",
+    "improvement_item_count": 1,
+    "improvement_items": [
+      {
+        "expected_best_available": true,
+        "expected_match": false,
+        "failure_type": "COLOR_ONLY_TASK_OVERRANKED_BY_COMBINED_CANDIDATE",
+        "improvement_target_module": "candidate_ranker.py",
+        "metadata": {
+          "dry_run_only": true,
+          "local_only": true,
+          "public_safe": true,
+          "source": "failure_driven_improvement_loop_v1"
+        },
+        "observed_best_candidate": "COLOR_SHAPE_COMBINED",
+        "observed_best_score": 0.9775,
+        "priority": "HIGH",
+        "rationale": "The benchmark indicates that the solver over-prefers a combined candidate even when the task family is pure color transformation.",
+        "recommended_next_action": "Add ranker policy that penalizes COLOR_SHAPE_COMBINED on pure color_transform tasks when a simpler COLOR_REMAP candidate exists.",
+        "signature": "FE188D12D19E1737",
+        "task_family": "color_transform",
+        "task_id": "EXPANDED-BATCH-V2-COLOR-ONLY"
+      }
+    ],
+    "improvement_loop_id": "FAILURE-DRIVEN-LOOP-6A84DE3E93F1",
+    "item_signatures": [
+      "FE188D12D19E1737"
+    ],
+    "matching_task_count": 2,
+    "metadata": {
+      "contains_api_keys": false,
+      "deterministic": true,
+      "dry_run_only": true,
+      "external_api_dependency": false,
+      "failure_driven_solver_improvement": true,
+      "kaggle_submission_sent": false,
+      "legal_certification": false,
+      "local_only": true,
+      "milestone": "Milestone #4",
+      "private_core_exposure": false,
+      "prize_oriented_solver_target": true,
+      "public_safe": true,
+      "score_oriented": true,
+      "source": "failure_driven_improvement_loop_v1",
+      "task": "Task 8",
+      "uses_expanded_batch_benchmark_v2": true
+    },
+    "next_solver_target": "candidate_ranker.py",
+    "signature": "6A84DE3E93F16BD7",
+    "source_benchmark_id": "EXPANDED-BATCH-BENCHMARK-A555E4818652",
+    "source_benchmark_signature": "A555E48186526A8F",
+    "status": "FAILURE_DRIVEN_IMPROVEMENT_LOOP_READY",
+    "task_count": 3
+  },
+  "matching_task_count": 2,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "failure_driven_solver_improvement": true,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "milestone": "Milestone #4",
+    "private_core_exposure": false,
+    "prize_oriented_solver_target": true,
+    "public_safe": true,
+    "score_oriented": true,
+    "source": "failure_driven_improvement_loop_v1",
+    "task": "Task 8",
+    "uses_expanded_batch_benchmark_v2": true
+  },
+  "next_solver_target": "candidate_ranker.py",
+  "report_status": "FAILURE_DRIVEN_IMPROVEMENT_LOOP_READY",
+  "signature": "6A84DE3E93F16BD7",
+  "source_benchmark_id": "EXPANDED-BATCH-BENCHMARK-A555E4818652",
+  "status": "FAILURE_DRIVEN_IMPROVEMENT_PIPELINE_READY",
+  "validation": {
+    "errors": [],
+    "highest_priority": "HIGH",
+    "improvement_item_count": 1,
+    "improvement_loop_id": "FAILURE-DRIVEN-LOOP-6A84DE3E93F1",
+    "next_solver_target": "candidate_ranker.py",
+    "signature": "6A84DE3E93F16BD7",
+    "source_benchmark_id": "EXPANDED-BATCH-BENCHMARK-A555E4818652",
+    "status": "FAILURE_DRIVEN_IMPROVEMENT_LOOP_VALID",
+    "valid": true
+  },
+  "validation_status": "FAILURE_DRIVEN_IMPROVEMENT_LOOP_VALID"
+}
