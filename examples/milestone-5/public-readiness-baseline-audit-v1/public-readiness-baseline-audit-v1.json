@@ -1,0 +1,67 @@
+{
+  "audit_id": "MILESTONE-5-PUBLIC-READINESS-AUDIT-C0CB02F634E9",
+  "baseline_commit": "f97b25d Close ARC AGI3 milestone 4 solver engine",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "checks": {
+    "contains_api_keys_false": true,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency_false": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "milestone_4_closed_task_count_is_9": true,
+    "milestone_4_closure_artifact_present": true,
+    "milestone_4_closure_ready": true,
+    "milestone_4_expanded_match_rate_is_1": true,
+    "milestone_4_failure_loop_closed": true,
+    "milestone_4_kaggle_submission_not_sent": true,
+    "milestone_4_ready_for_next_phase": true,
+    "private_core_exposure_false": true,
+    "public_safe": true,
+    "required_public_readiness_artifacts_present": true
+  },
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "audit_kind": "PUBLIC_READINESS_BASELINE",
+    "depends_on_milestone_4_closure": true,
+    "milestone": "Milestone #5",
+    "source": "milestone_5_public_readiness_baseline_audit_v1",
+    "submission_mode": "DRY_RUN_ONLY",
+    "task": "Task 1"
+  },
+  "milestone": "Milestone #5",
+  "next_actions": [
+    "create_public_repo_release_index_v1",
+    "create_kaggle_submission_dry_run_package_v1",
+    "create_submission_entrypoint_contract_v1",
+    "create_public_safety_and_boundary_checklist_v1",
+    "close_milestone_5_submission_preparation_v1"
+  ],
+  "prior_closure_id": "MILESTONE-4-SOLVER-CLOSURE-526D821DAB2C",
+  "prior_closure_signature": "526D821DAB2CB47C",
+  "ready_for_public_readiness_phase": true,
+  "required_artifacts": {
+    "docs/candidate-ranker-task-family-policy-fix-v1.md": true,
+    "docs/milestone-4-solver-engine-closure-v1.md": true,
+    "examples/closures/milestone-4/milestone-4-solver-engine-closure.json": true,
+    "examples/closures/milestone-4/milestone-4-solver-engine-closure.md": true,
+    "examples/milestone-4/candidate-ranker-task-family-policy-fix-v1/candidate-ranker-task-family-policy-fix-v1-smoke.json": true,
+    "examples/milestone-4/expanded-batch-benchmark-v2/expanded-batch-benchmark-v2-smoke.json": true,
+    "examples/milestone-4/failure-driven-improvement-loop-v1/failure-driven-improvement-loop-v1-smoke.json": true
+  },
+  "signature": "C0CB02F634E94250",
+  "status": "MILESTONE_5_PUBLIC_READINESS_BASELINE_AUDIT_READY",
+  "task": "Task 1",
+  "title": "Public Readiness Baseline Audit v1"
+}
