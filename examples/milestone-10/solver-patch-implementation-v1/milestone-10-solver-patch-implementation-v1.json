@@ -1,0 +1,1390 @@
+{
+  "baseline_commit": "d03c8d0 Add ARC AGI3 solver patch plan",
+  "benchmark_required_next": true,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "fail_closed_active": true,
+  "fail_closed_controls": [
+    "real_submission_decision_not_authorized",
+    "real_submission_allowed_false",
+    "manual_upload_allowed_false",
+    "kaggle_authentication_allowed_false",
+    "kaggle_submission_sent_false",
+    "upload_performed_false",
+    "external_api_dependency_false",
+    "fail_closed_active"
+  ],
+  "fail_closed_required": true,
+  "function_samples": {
+    "color_remap_sample": {
+      "duplicate_target_count": 0,
+      "function": "compute_color_remap_stability_score",
+      "score": 93,
+      "source_color_count": 2,
+      "stable": true,
+      "target_color_count": 2,
+      "unseen_color_count": 1
+    },
+    "composition_order_sample": {
+      "duplicate_count": 0,
+      "function": "score_composition_order",
+      "inversion_count": 0,
+      "operation_count": 4,
+      "score": 100,
+      "stable_order": true,
+      "unknown_count": 0
+    },
+    "object_boundary_sample": {
+      "area": 4,
+      "bbox": {
+        "max_col": 2,
+        "max_row": 2,
+        "min_col": 1,
+        "min_row": 1
+      },
+      "density_x100": 75.0,
+      "empty": false,
+      "function": "extract_object_boundary_signature",
+      "height": 2,
+      "nonzero_count": 3,
+      "width": 2
+    },
+    "ranker_sample": {
+      "best_candidate_id": "candidate_a",
+      "candidate_count": 2,
+      "function": "rank_candidates_by_patch_evidence",
+      "ranked_candidates": [
+        {
+          "candidate_id": "candidate_a",
+          "complexity": 2,
+          "confidence": 0.85,
+          "family_evidence": 3,
+          "rank_key": [
+            0.91,
+            0.85,
+            3,
+            -2,
+            "candidate_a"
+          ],
+          "score_hint": 0.91
+        },
+        {
+          "candidate_id": "candidate_b",
+          "complexity": 3,
+          "confidence": 0.8,
+          "family_evidence": 4,
+          "rank_key": [
+            0.91,
+            0.8,
+            4,
+            -3,
+            "candidate_b"
+          ],
+          "score_hint": 0.91
+        }
+      ]
+    },
+    "symmetry_axis_sample": {
+      "best_axis": "vertical",
+      "best_score": 90,
+      "candidate_count": 3,
+      "function": "rank_symmetry_axis_candidates",
+      "ranked_axes": [
+        {
+          "axis": "vertical",
+          "evidence_count": 3,
+          "penalty": 1,
+          "score": 90
+        },
+        {
+          "axis": "horizontal",
+          "evidence_count": 2,
+          "penalty": 1,
+          "score": 90
+        },
+        {
+          "axis": "diagonal",
+          "evidence_count": 5,
+          "penalty": 0,
+          "score": 80
+        }
+      ]
+    },
+    "trace_sample": {
+      "assumption_count": 2,
+      "assumptions": [
+        "consistent foreground mapping",
+        "zero remains background"
+      ],
+      "family": "color_mapping",
+      "function": "build_trace_generalization_fields",
+      "generalization_trace_hash": "239fd46ab45395c5511e2634130ce529fa94a76064d21b789a228673d6555a22",
+      "generalization_trace_hash_16": "239FD46AB45395C5",
+      "task_id": "local-task-sample",
+      "trace_ready": true
+    }
+  },
+  "implementation_case_count": 10,
+  "implementation_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m10_patch_impl_plan_source_ready_v1",
+      "operation": "verify_patch_plan_source"
+    },
+    {
+      "area": "implementation_catalog",
+      "case_id": "m10_patch_impl_catalog_complete_v1",
+      "operation": "verify_implementation_catalog"
+    },
+    {
+      "area": "implementation",
+      "case_id": "m10_patch_impl_color_remap_ready_v1",
+      "operation": "verify_color_remap_function"
+    },
+    {
+      "area": "implementation",
+      "case_id": "m10_patch_impl_object_boundary_ready_v1",
+      "operation": "verify_object_boundary_function"
+    },
+    {
+      "area": "implementation",
+      "case_id": "m10_patch_impl_symmetry_tiebreak_ready_v1",
+      "operation": "verify_symmetry_tiebreak_function"
+    },
+    {
+      "area": "implementation",
+      "case_id": "m10_patch_impl_composition_scoring_ready_v1",
+      "operation": "verify_composition_scoring_function"
+    },
+    {
+      "area": "implementation",
+      "case_id": "m10_patch_impl_ranker_tiebreak_ready_v1",
+      "operation": "verify_ranker_tiebreak_function"
+    },
+    {
+      "area": "implementation",
+      "case_id": "m10_patch_impl_trace_fields_ready_v1",
+      "operation": "verify_trace_generalization_function"
+    },
+    {
+      "area": "fail_closed",
+      "case_id": "m10_patch_impl_fail_closed_preserved_v1",
+      "operation": "verify_fail_closed_preserved"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m10_patch_impl_next_stage_valid_v1",
+      "operation": "verify_benchmark_refresh_next"
+    }
+  ],
+  "implementation_catalog": [
+    {
+      "creates_submission_candidate": false,
+      "family": "color_mapping",
+      "function_name": "compute_color_remap_stability_score",
+      "implementation_id": "IMPL-COLOR-REMAP-STABILITY-v1",
+      "implemented": true,
+      "local_only": true,
+      "ready_for_benchmark_refresh": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_integration_performed": false,
+      "source_patch_id": "PATCH-COLOR-REMAP-STABILITY-v1",
+      "source_patch_present": true,
+      "target_module": "solver_candidate_generation"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "object_model",
+      "function_name": "extract_object_boundary_signature",
+      "implementation_id": "IMPL-OBJECT-BOUNDARY-STABILITY-v1",
+      "implemented": true,
+      "local_only": true,
+      "ready_for_benchmark_refresh": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_integration_performed": false,
+      "source_patch_id": "PATCH-OBJECT-BOUNDARY-STABILITY-v1",
+      "source_patch_present": true,
+      "target_module": "object_transform_solver"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "shape_symmetry",
+      "function_name": "rank_symmetry_axis_candidates",
+      "implementation_id": "IMPL-SYMMETRY-AXIS-TIEBREAK-v1",
+      "implemented": true,
+      "local_only": true,
+      "ready_for_benchmark_refresh": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_integration_performed": false,
+      "source_patch_id": "PATCH-SYMMETRY-AXIS-TIEBREAK-v1",
+      "source_patch_present": true,
+      "target_module": "shape_symmetry_solver"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "cross_family_composition",
+      "function_name": "score_composition_order",
+      "implementation_id": "IMPL-COMPOSITION-ORDER-SCORING-v1",
+      "implemented": true,
+      "local_only": true,
+      "ready_for_benchmark_refresh": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_integration_performed": false,
+      "source_patch_id": "PATCH-COMPOSITION-ORDER-SCORING-v1",
+      "source_patch_present": true,
+      "target_module": "composed_transform_solver"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "candidate_ranker",
+      "function_name": "rank_candidates_by_patch_evidence",
+      "implementation_id": "IMPL-RANKER-EVIDENCE-TIEBREAK-v1",
+      "implemented": true,
+      "local_only": true,
+      "ready_for_benchmark_refresh": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_integration_performed": false,
+      "source_patch_id": "PATCH-RANKER-EVIDENCE-TIEBREAK-v1",
+      "source_patch_present": true,
+      "target_module": "candidate_ranker"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "traceability",
+      "function_name": "build_trace_generalization_fields",
+      "implementation_id": "IMPL-TRACE-GENERALIZATION-FIELDS-v1",
+      "implemented": true,
+      "local_only": true,
+      "ready_for_benchmark_refresh": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_integration_performed": false,
+      "source_patch_id": "PATCH-TRACE-GENERALIZATION-FIELDS-v1",
+      "source_patch_present": true,
+      "target_module": "audit_trace"
+    }
+  ],
+  "implementation_check_count": 24,
+  "implementation_check_list": [
+    "plan_artifact_exists",
+    "plan_artifact_ready",
+    "plan_signature_present",
+    "plan_next_stage_matches_task_4",
+    "patch_target_count_valid",
+    "patch_step_count_valid",
+    "implementation_function_count_valid",
+    "all_implementations_link_plan_steps",
+    "all_implementation_functions_present",
+    "color_remap_function_ready",
+    "object_boundary_function_ready",
+    "symmetry_axis_function_ready",
+    "composition_scoring_function_ready",
+    "ranker_tiebreak_function_ready",
+    "trace_generalization_function_ready",
+    "implementation_record_created",
+    "implementation_ready",
+    "benchmark_required_next",
+    "fail_closed_required",
+    "fail_closed_active",
+    "real_submission_not_authorized",
+    "real_submission_blocked",
+    "no_private_core_exposure",
+    "no_legal_certification"
+  ],
+  "implementation_checks": {
+    "all_implementation_functions_present": true,
+    "all_implementations_link_plan_steps": true,
+    "all_implementations_local_only": true,
+    "all_implementations_marked_implemented": true,
+    "all_implementations_no_external_api": true,
+    "all_implementations_no_submission_candidate": true,
+    "all_implementations_no_upload": true,
+    "all_implementations_ready_for_benchmark_refresh": true,
+    "benchmark_required_next": true,
+    "boundary_control_count_valid": true,
+    "candidate_count_positive": true,
+    "candidate_id_present": true,
+    "candidate_signature_present": true,
+    "candidate_source_present": true,
+    "color_family_present": true,
+    "color_remap_function_ready": true,
+    "composition_family_present": true,
+    "composition_scoring_function_ready": true,
+    "external_api_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_control_count_valid": true,
+    "fail_closed_required": true,
+    "implementation_case_count_valid": true,
+    "implementation_check_count_valid": true,
+    "implementation_function_count_valid": true,
+    "implementation_mode_valid": true,
+    "implementation_patch_target_count_valid": true,
+    "implementation_record_created": true,
+    "implementation_record_locked": true,
+    "implementation_record_ready": true,
+    "implementation_scope_valid": true,
+    "implementation_verdict_valid": true,
+    "kaggle_authentication_not_allowed": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "manual_upload_not_allowed": true,
+    "next_stage_valid": true,
+    "object_boundary_function_ready": true,
+    "object_family_present": true,
+    "plan_artifact_present": true,
+    "plan_artifact_ready": true,
+    "plan_artifact_valid": true,
+    "plan_commit_valid": true,
+    "plan_locked": true,
+    "plan_next_stage_matches_task_4": true,
+    "plan_patch_step_count_valid": true,
+    "plan_patch_target_count_valid": true,
+    "plan_ready": true,
+    "private_core_exposure_false": true,
+    "ranker_family_present": true,
+    "ranker_tiebreak_function_ready": true,
+    "real_submission_allowed_false": true,
+    "real_submission_decision_not_authorized": true,
+    "runtime_helper_functions_created": true,
+    "runtime_integration_not_performed": true,
+    "solver_runtime_not_modified": true,
+    "submission_candidate_not_created": true,
+    "symmetry_axis_function_ready": true,
+    "symmetry_family_present": true,
+    "trace_generalization_function_ready": true,
+    "traceability_family_present": true
+  },
+  "implementation_failure_count": 0,
+  "implementation_function_count": 6,
+  "implementation_gate_count": 68,
+  "implementation_gates": [
+    {
+      "name": "plan_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_commit_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_next_stage_matches_task_4",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_patch_target_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_patch_step_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_function_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_patch_target_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_implementations_link_plan_steps",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_implementations_marked_implemented",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_implementations_local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_implementations_no_external_api",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_implementations_no_upload",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_implementations_no_submission_candidate",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_implementations_ready_for_benchmark_refresh",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_implementation_functions_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "color_remap_function_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "object_boundary_function_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "symmetry_axis_function_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "composition_scoring_function_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_tiebreak_function_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "trace_generalization_function_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "color_family_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "object_family_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "symmetry_family_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "composition_family_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_family_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "traceability_family_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_source_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_id_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_signature_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_count_positive",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_check_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_record_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_record_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_record_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_helper_functions_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_integration_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "solver_runtime_not_modified",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_required_next",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_decision_not_authorized",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_implementation_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "implementation_id": "MILESTONE-10-SOLVER-PATCH-IMPLEMENTATION-66B561BE6F5F",
+  "implementation_index": {
+    "baseline_commit": "d03c8d0 Add ARC AGI3 solver patch plan",
+    "benchmark_required_next": true,
+    "candidate_count": 4,
+    "candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "candidate_source_path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "depends_on_plan": "MILESTONE-10-SOLVER-PATCH-PLAN-786174DF44F6",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "implementation_function_count": 6,
+    "implementation_mode": "MILESTONE_10_SOLVER_PATCH_IMPLEMENTATION_V1_LOCAL_ONLY",
+    "implementation_ready": true,
+    "implementation_scope": "LOCAL_SOLVER_PATCH_IMPLEMENTATION_NO_SUBMISSION",
+    "implementation_verdict": "SOLVER_PATCH_IMPLEMENTATION_READY_FOR_LOCAL_BENCHMARK_REFRESH",
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_upload_allowed": false,
+    "milestone": "Milestone #10",
+    "next_allowed_stage": "MILESTONE_10_TASK_5_BENCHMARK_REFRESH_V1",
+    "patch_target_count": 6,
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "runtime_helper_functions_created": true,
+    "runtime_integration_performed": false,
+    "solver_patch_implementation_created": true,
+    "solver_patch_implementation_ready": true,
+    "solver_runtime_modified": false,
+    "submission_candidate_created": false,
+    "task": "Task 4"
+  },
+  "implementation_issue_count": 0,
+  "implementation_issues": [
+    {
+      "active": false,
+      "name": "plan_artifact_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_commit_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_next_stage_matches_task_4",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_patch_target_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_patch_step_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_function_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_patch_target_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_implementations_link_plan_steps",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_implementations_marked_implemented",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_implementations_local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_implementations_no_external_api",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_implementations_no_upload",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_implementations_no_submission_candidate",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_implementations_not_ready_for_benchmark_refresh",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_implementation_functions_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "color_remap_function_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "object_boundary_function_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "symmetry_axis_function_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "composition_scoring_function_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_tiebreak_function_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "trace_generalization_function_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "color_family_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "object_family_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "symmetry_family_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "composition_family_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_family_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "traceability_family_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_source_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_id_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_signature_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_count_positive",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_check_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_record_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_record_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_record_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_helper_functions_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_integration_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "solver_runtime_not_modified",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_required_next",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_decision_not_authorized",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_implementation_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_failure_count_zero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "implementation_locked": true,
+  "implementation_mode": "MILESTONE_10_SOLVER_PATCH_IMPLEMENTATION_V1_LOCAL_ONLY",
+  "implementation_pass_count": 10,
+  "implementation_ready": true,
+  "implementation_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m10_patch_impl_plan_source_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_patch_plan_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "implementation_catalog",
+      "case_id": "m10_patch_impl_catalog_complete_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_implementation_catalog",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "implementation",
+      "case_id": "m10_patch_impl_color_remap_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_color_remap_function",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "implementation",
+      "case_id": "m10_patch_impl_object_boundary_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_object_boundary_function",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "implementation",
+      "case_id": "m10_patch_impl_symmetry_tiebreak_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_symmetry_tiebreak_function",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "implementation",
+      "case_id": "m10_patch_impl_composition_scoring_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_composition_scoring_function",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "implementation",
+      "case_id": "m10_patch_impl_ranker_tiebreak_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_ranker_tiebreak_function",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "implementation",
+      "case_id": "m10_patch_impl_trace_fields_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_trace_generalization_function",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "fail_closed",
+      "case_id": "m10_patch_impl_fail_closed_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_fail_closed_preserved",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m10_patch_impl_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_benchmark_refresh_next",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "implementation_scope": "LOCAL_SOLVER_PATCH_IMPLEMENTATION_NO_SUBMISSION",
+  "implementation_state": {
+    "benchmark_required_next": true,
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "implementation_function_count": 6,
+    "implementation_mode": "MILESTONE_10_SOLVER_PATCH_IMPLEMENTATION_V1_LOCAL_ONLY",
+    "implementation_scope": "LOCAL_SOLVER_PATCH_IMPLEMENTATION_NO_SUBMISSION",
+    "implementation_verdict": "SOLVER_PATCH_IMPLEMENTATION_READY_FOR_LOCAL_BENCHMARK_REFRESH",
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_10_TASK_5_BENCHMARK_REFRESH_V1",
+    "patch_target_count": 6,
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "runtime_helper_functions_created": true,
+    "runtime_integration_performed": false,
+    "solver_patch_implementation_created": true,
+    "solver_patch_implementation_locked": true,
+    "solver_patch_implementation_ready": true,
+    "solver_patch_implementation_required": true,
+    "solver_runtime_modified": false,
+    "submission_candidate_created": false
+  },
+  "implementation_verdict": "SOLVER_PATCH_IMPLEMENTATION_READY_FOR_LOCAL_BENCHMARK_REFRESH",
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_10_solver_patch_implementation_v1"
+  },
+  "milestone": "Milestone #10",
+  "next_allowed_stage": "MILESTONE_10_TASK_5_BENCHMARK_REFRESH_V1",
+  "passed_gate_count": 68,
+  "patch_target_count": 6,
+  "plan_source": {
+    "path": "examples/milestone-10/solver-patch-plan-v1/milestone-10-solver-patch-plan-v1.json",
+    "plan_id": "MILESTONE-10-SOLVER-PATCH-PLAN-786174DF44F6",
+    "present": true,
+    "sha256": "81d8f77051ddf1db66f5430432edc199e8146bce8f303d8701a8a9311692b93e",
+    "sha256_16": "81D8F77051DDF1DB",
+    "status": "MILESTONE_10_SOLVER_PATCH_PLAN_V1_READY"
+  },
+  "real_submission_allowed": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "runtime_helper_functions_created": true,
+  "runtime_integration_performed": false,
+  "signature": "66B561BE6F5F1914",
+  "solver_patch_implementation_created": true,
+  "solver_patch_implementation_locked": true,
+  "solver_patch_implementation_ready": true,
+  "solver_runtime_modified": false,
+  "source_summary": {
+    "candidate_count": 4,
+    "candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "candidate_signature": "4A84F8136BD61B3F",
+    "candidate_source_path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "implementation_required_next": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_10_TASK_4_SOLVER_PATCH_IMPLEMENTATION_V1",
+    "patch_step_count": 6,
+    "patch_steps": [
+      {
+        "creates_submission_candidate": false,
+        "family": "color_mapping",
+        "implementation_intent": "add unseen-color remap stability scoring",
+        "local_only": true,
+        "patch_id": "PATCH-COLOR-REMAP-STABILITY-v1",
+        "priority": "P1",
+        "ready_for_implementation": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "runtime_modification_allowed_now": false,
+        "source_pattern_id": "ERR-COLOR-REMAP-AMBIGUITY-v1",
+        "source_pattern_present": true,
+        "target_module": "solver_candidate_generation"
+      },
+      {
+        "creates_submission_candidate": false,
+        "family": "object_model",
+        "implementation_intent": "add object boundary extraction consistency checks",
+        "local_only": true,
+        "patch_id": "PATCH-OBJECT-BOUNDARY-STABILITY-v1",
+        "priority": "P1",
+        "ready_for_implementation": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "runtime_modification_allowed_now": false,
+        "source_pattern_id": "ERR-OBJECT-BOUNDARY-EXTRACTION-v1",
+        "source_pattern_present": true,
+        "target_module": "object_transform_solver"
+      },
+      {
+        "creates_submission_candidate": false,
+        "family": "shape_symmetry",
+        "implementation_intent": "rank symmetry axes with deterministic evidence fields",
+        "local_only": true,
+        "patch_id": "PATCH-SYMMETRY-AXIS-TIEBREAK-v1",
+        "priority": "P2",
+        "ready_for_implementation": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "runtime_modification_allowed_now": false,
+        "source_pattern_id": "ERR-SYMMETRY-AXIS-INFERENCE-v1",
+        "source_pattern_present": true,
+        "target_module": "shape_symmetry_solver"
+      },
+      {
+        "creates_submission_candidate": false,
+        "family": "cross_family_composition",
+        "implementation_intent": "score operation order across color, object, and shape transforms",
+        "local_only": true,
+        "patch_id": "PATCH-COMPOSITION-ORDER-SCORING-v1",
+        "priority": "P1",
+        "ready_for_implementation": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "runtime_modification_allowed_now": false,
+        "source_pattern_id": "ERR-CROSS-FAMILY-COMPOSITION-ORDER-v1",
+        "source_pattern_present": true,
+        "target_module": "composed_transform_solver"
+      },
+      {
+        "creates_submission_candidate": false,
+        "family": "candidate_ranker",
+        "implementation_intent": "expand deterministic ranker tie-break evidence",
+        "local_only": true,
+        "patch_id": "PATCH-RANKER-EVIDENCE-TIEBREAK-v1",
+        "priority": "P2",
+        "ready_for_implementation": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "runtime_modification_allowed_now": false,
+        "source_pattern_id": "ERR-RANKER-TIE-BREAK-EVIDENCE-v1",
+        "source_pattern_present": true,
+        "target_module": "candidate_ranker"
+      },
+      {
+        "creates_submission_candidate": false,
+        "family": "traceability",
+        "implementation_intent": "add local trace fields explaining generalization assumptions",
+        "local_only": true,
+        "patch_id": "PATCH-TRACE-GENERALIZATION-FIELDS-v1",
+        "priority": "P2",
+        "ready_for_implementation": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "runtime_modification_allowed_now": false,
+        "source_pattern_id": "ERR-TRACE-GENERALIZATION-GAP-v1",
+        "source_pattern_present": true,
+        "target_module": "audit_trace"
+      }
+    ],
+    "patch_target_count": 6,
+    "plan_commit": "88acc88 Add ARC AGI3 local error pattern audit",
+    "plan_id": "MILESTONE-10-SOLVER-PATCH-PLAN-786174DF44F6",
+    "plan_locked": true,
+    "plan_path": "examples/milestone-10/solver-patch-plan-v1/milestone-10-solver-patch-plan-v1.json",
+    "plan_present": true,
+    "plan_ready": true,
+    "plan_sha256": "81d8f77051ddf1db66f5430432edc199e8146bce8f303d8701a8a9311692b93e",
+    "plan_sha256_16": "81D8F77051DDF1DB",
+    "plan_signature": "786174DF44F63933",
+    "plan_status": "MILESTONE_10_SOLVER_PATCH_PLAN_V1_READY",
+    "real_submission_allowed": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "runtime_modification_allowed_now": false,
+    "submission_candidate_created": false
+  },
+  "status": "MILESTONE_10_SOLVER_PATCH_IMPLEMENTATION_V1_READY",
+  "submission_candidate_created": false,
+  "task": "Task 4",
+  "title": "Solver Patch Implementation v1",
+  "warning_count": 0
+}

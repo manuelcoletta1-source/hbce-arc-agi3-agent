@@ -1,0 +1,58 @@
+from hbce_arc_agi3.milestone_10_solver_patch_implementation import (
+    run_milestone_10_solver_patch_implementation_pipeline,
+)
+
+
+def main() -> None:
+    payload = run_milestone_10_solver_patch_implementation_pipeline()
+    implementation = payload["implementation"]
+
+    print(payload["status"])
+    print(payload["implementation_status"])
+    print(payload["validation_status"])
+    print(payload["implementation_id"])
+    print(payload["signature"])
+    print(implementation["baseline_commit"])
+    print(payload["implementation_mode"])
+    print(payload["implementation_verdict"])
+    print(payload["next_allowed_stage"])
+    print(payload["implementation_ready"])
+    print(payload["solver_patch_implementation_created"])
+    print(payload["solver_patch_implementation_ready"])
+    print(payload["implementation_function_count"])
+    print(payload["patch_target_count"])
+    print(payload["implementation_check_count"])
+    print(payload["implementation_case_count"])
+    print(payload["implementation_pass_count"])
+    print(payload["implementation_failure_count"])
+    print(payload["implementation_gate_count"])
+    print(payload["passed_gate_count"])
+    print(payload["implementation_issue_count"])
+    print(payload["warning_count"])
+    print(payload["runtime_helper_functions_created"])
+    print(payload["runtime_integration_performed"])
+    print(payload["solver_runtime_modified"])
+    print(payload["submission_candidate_created"])
+    print(payload["benchmark_required_next"])
+    print(payload["real_submission_decision"])
+    print(payload["real_submission_allowed"])
+    print(payload["manual_upload_allowed"])
+    print(payload["kaggle_authentication_allowed"])
+    print(payload["kaggle_submission_sent"])
+    print(payload["fail_closed_required"])
+    print(payload["fail_closed_active"])
+    print(implementation["source_summary"]["plan_id"])
+    print(implementation["source_summary"]["candidate_id"])
+    print(implementation["source_summary"]["candidate_signature"])
+    print(all(result["passed"] for result in implementation["implementation_results"]))
+    print(all(item["passed"] for item in implementation["implementation_gates"]))
+    print(all(item["active"] is False for item in implementation["implementation_issues"]))
+    print(payload["artifacts"]["json_path"])
+    print(payload["artifacts"]["markdown_path"])
+    print(payload["artifacts"]["manifest_path"])
+    print(payload["artifacts"]["index_path"])
+    print(payload["metadata"])
+
+
+if __name__ == "__main__":
+    main()
