@@ -1,0 +1,481 @@
+{
+  "baseline_commit": "e2134e5 Add ARC AGI3 submission candidate final audit",
+  "boundary": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true
+  },
+  "competitive_claim_absent": true,
+  "final_audit_source": {
+    "actual_status": "MILESTONE_6_SUBMISSION_CANDIDATE_FINAL_AUDIT_READY",
+    "artifact_id": "MILESTONE-6-SUBMISSION-CANDIDATE-AUDIT-EADE0C77C951",
+    "expected_status": "MILESTONE_6_SUBMISSION_CANDIDATE_FINAL_AUDIT_READY",
+    "name": "submission_candidate_final_audit",
+    "path": "examples/milestone-6/submission-candidate-final-audit-v1/milestone-6-submission-candidate-final-audit-v1.json",
+    "present": true,
+    "ready": true,
+    "sha256": "fea04a4ddc592a4e34f4198865df75a1e93cf8400a4692efd8209fbb235702d2",
+    "sha256_16": "FEA04A4DDC592A4E"
+  },
+  "improvement_gate_count": 30,
+  "improvement_gates": [
+    {
+      "name": "final_audit_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_audit_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_audit_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_audit_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_audit_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_audit_requires_solver_improvement",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_audit_blocks_real_submission",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "improvement_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "improvement_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "improvement_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "improvement_record_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "improvement_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "improvement_target_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_improvement_targets_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "priority_p0_targets_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "measurement_fields_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_allowed_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "competitive_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_still_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_execution_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "improvement_id": "MILESTONE-6-SOLVER-IMPROVEMENT-6232860E69C6",
+  "improvement_index": {
+    "baseline_commit": "e2134e5 Add ARC AGI3 submission candidate final audit",
+    "competitive_claim_absent": true,
+    "depends_on_final_audit": "MILESTONE-6-SUBMISSION-CANDIDATE-AUDIT-EADE0C77C951",
+    "external_api_dependency": false,
+    "improvement_locked": true,
+    "improvement_mode": "SOLVER_IMPROVEMENT_BEFORE_REAL_SUBMISSION_ONLY_NO_UPLOAD",
+    "improvement_ready": true,
+    "improvement_scope": "DEFINE_MEASURABLE_SOLVER_IMPROVEMENT_TARGETS_BEFORE_MANUAL_SUBMISSION",
+    "improvement_target_count": 6,
+    "improvement_verdict": "SOLVER_IMPROVEMENT_REQUIRED_REAL_SUBMISSION_REMAINS_BLOCKED",
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_execution_performed": false,
+    "manual_upload_required": true,
+    "measurement_count": 6,
+    "milestone": "Milestone #6",
+    "priority_p0_count": 2,
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "required_target_count": 6,
+    "solver_improvement_completed": false,
+    "solver_improvement_required": true,
+    "solver_improvement_started": true,
+    "task": "Task 9",
+    "upload_performed": false
+  },
+  "improvement_issue_count": 0,
+  "improvement_issues": [
+    {
+      "active": false,
+      "name": "final_audit_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_audit_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_audit_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_audit_not_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_audit_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_audit_does_not_require_solver_improvement",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_audit_allows_real_submission",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "improvement_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "improvement_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "improvement_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "improvement_record_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "improvement_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "improvement_target_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "improvement_target_not_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "priority_p0_targets_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "measurement_field_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_allowed_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "competitive_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_not_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_execution_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    }
+  ],
+  "improvement_locked": true,
+  "improvement_mode": "SOLVER_IMPROVEMENT_BEFORE_REAL_SUBMISSION_ONLY_NO_UPLOAD",
+  "improvement_ready": true,
+  "improvement_record": {
+    "boundary_intact": true,
+    "competitive_claim_absent": true,
+    "contains_api_keys": false,
+    "external_api_dependency": false,
+    "final_audit_id": "MILESTONE-6-SUBMISSION-CANDIDATE-AUDIT-EADE0C77C951",
+    "final_audit_locked": true,
+    "final_audit_ready": true,
+    "final_audit_real_submission_allowed": false,
+    "final_audit_solver_improvement_required": true,
+    "improvement_locked": true,
+    "improvement_mode": "SOLVER_IMPROVEMENT_BEFORE_REAL_SUBMISSION_ONLY_NO_UPLOAD",
+    "improvement_ready": true,
+    "improvement_scope": "DEFINE_MEASURABLE_SOLVER_IMPROVEMENT_TARGETS_BEFORE_MANUAL_SUBMISSION",
+    "improvement_target_count": 6,
+    "improvement_verdict": "SOLVER_IMPROVEMENT_REQUIRED_REAL_SUBMISSION_REMAINS_BLOCKED",
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_execution_performed": false,
+    "manual_upload_required": true,
+    "measurement_count": 6,
+    "next_allowed_stage": "MILESTONE_6_REAL_SUBMISSION_READINESS_CLOSURE_AFTER_SOLVER_IMPROVEMENT",
+    "priority_p0_count": 2,
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "required_target_count": 6,
+    "solver_improvement_completed": false,
+    "solver_improvement_required": true,
+    "solver_improvement_started": true,
+    "upload_performed": false
+  },
+  "improvement_scope": "DEFINE_MEASURABLE_SOLVER_IMPROVEMENT_TARGETS_BEFORE_MANUAL_SUBMISSION",
+  "improvement_target_count": 6,
+  "improvement_targets": [
+    {
+      "measurement": "Increase local solved-task count or deterministic candidate match rate on public sample tasks.",
+      "priority": "P0",
+      "reason": "Improve candidate solution quality before any real Kaggle submission decision.",
+      "required_before_submission": true,
+      "target": "solver_candidate_quality"
+    },
+    {
+      "measurement": "Document per-family improvement and verify no regression in existing task-family policy.",
+      "priority": "P0",
+      "reason": "Add or strengthen rules for task families already exposed by the benchmark pipeline.",
+      "required_before_submission": true,
+      "target": "family_specific_rules"
+    },
+    {
+      "measurement": "Show ranker selects expected candidate more often on local deterministic cases.",
+      "priority": "P1",
+      "reason": "Improve ranking between plausible candidates instead of merely preserving safe fallback choices.",
+      "required_before_submission": true,
+      "target": "candidate_ranker_discrimination"
+    },
+    {
+      "measurement": "Generate improvement items from failed cases and close at least one failure class locally.",
+      "priority": "P1",
+      "reason": "Convert known failure classes into actionable solver/ranker improvements.",
+      "required_before_submission": true,
+      "target": "failure_taxonomy_feedback_loop"
+    },
+    {
+      "measurement": "Full suite remains green and no upload/auth/API flags become true.",
+      "priority": "P1",
+      "reason": "Ensure any solver improvement does not break frozen candidate safety boundaries.",
+      "required_before_submission": true,
+      "target": "submission_candidate_regression_guard"
+    },
+    {
+      "measurement": "Keep competitive_claim_absent=true unless evidence is generated by deterministic evaluation.",
+      "priority": "P2",
+      "reason": "Prevent unsupported claims of competitiveness until local evidence improves.",
+      "required_before_submission": true,
+      "target": "competitive_claim_control"
+    }
+  ],
+  "improvement_verdict": "SOLVER_IMPROVEMENT_REQUIRED_REAL_SUBMISSION_REMAINS_BLOCKED",
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "manual_execution_performed": false,
+  "manual_upload_required": true,
+  "measurement_count": 6,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_6_solver_improvement_before_real_submission_v1"
+  },
+  "milestone": "Milestone #6",
+  "next_allowed_stage": "MILESTONE_6_REAL_SUBMISSION_READINESS_CLOSURE_AFTER_SOLVER_IMPROVEMENT",
+  "passed_gate_count": 30,
+  "priority_p0_count": 2,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "required_target_count": 6,
+  "signature": "6232860E69C6CCC9",
+  "solver_improvement_completed": false,
+  "solver_improvement_required": true,
+  "solver_improvement_started": true,
+  "status": "MILESTONE_6_SOLVER_IMPROVEMENT_BEFORE_REAL_SUBMISSION_READY",
+  "task": "Task 9",
+  "title": "Solver Improvement Before Real Submission v1",
+  "upload_performed": false,
+  "warning_count": 0
+}
