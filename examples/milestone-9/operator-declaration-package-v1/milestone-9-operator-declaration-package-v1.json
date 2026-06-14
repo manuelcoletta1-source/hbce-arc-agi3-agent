@@ -1,0 +1,944 @@
+{
+  "accepted_declaration_count": 0,
+  "baseline_commit": "4a716ee Open ARC AGI3 milestone 9 manual submission governance",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "declaration_package_created": true,
+  "declaration_package_ready": true,
+  "declaration_template_count": 8,
+  "declaration_templates": [
+    {
+      "declaration_id": "operator_confirms_real_submission_intent",
+      "required_response": "explicit_yes",
+      "title": "Real submission intent confirmation"
+    },
+    {
+      "declaration_id": "operator_confirms_kaggle_rules_review",
+      "required_response": "explicit_yes",
+      "title": "Kaggle rules review confirmation"
+    },
+    {
+      "declaration_id": "operator_confirms_no_private_core_exposure",
+      "required_response": "explicit_yes",
+      "title": "No private core exposure confirmation"
+    },
+    {
+      "declaration_id": "operator_confirms_no_api_keys_or_secret_material",
+      "required_response": "explicit_yes",
+      "title": "No API keys or secret material confirmation"
+    },
+    {
+      "declaration_id": "operator_confirms_local_candidate_package_review",
+      "required_response": "explicit_yes",
+      "title": "Local candidate package review confirmation"
+    },
+    {
+      "declaration_id": "operator_confirms_manual_upload_responsibility",
+      "required_response": "explicit_yes",
+      "title": "Manual upload responsibility confirmation"
+    },
+    {
+      "declaration_id": "operator_confirms_no_legal_certification_claim",
+      "required_response": "explicit_yes",
+      "title": "No legal certification claim confirmation"
+    },
+    {
+      "declaration_id": "operator_confirms_irreversible_external_submission_awareness",
+      "required_response": "explicit_yes",
+      "title": "Irreversible external submission awareness confirmation"
+    }
+  ],
+  "governance_plan_source": {
+    "path": "examples/milestone-9/manual-submission-governance-plan-v1/milestone-9-manual-submission-governance-plan-v1.json",
+    "plan_id": "MILESTONE-9-GOVERNANCE-PLAN-F245F8911F10",
+    "present": true,
+    "sha256": "5731404902f21eaee270770c326621725cac8b2221342e690cf1ee0945ad4729",
+    "sha256_16": "5731404902F21EAE",
+    "status": "MILESTONE_9_MANUAL_SUBMISSION_GOVERNANCE_PLAN_V1_READY"
+  },
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_9_operator_declaration_package_v1"
+  },
+  "milestone": "Milestone #9",
+  "next_allowed_stage": "MILESTONE_9_TASK_3_LOCAL_CANDIDATE_MANUAL_REVIEW_V1",
+  "operator_approval_granted": false,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "operator_declaration_state": {
+    "accepted_declaration_count": 0,
+    "accepted_declarations": [],
+    "approval_gate_verdict": "DECLARATION_PACKAGE_READY_APPROVAL_NOT_GRANTED",
+    "declaration_package_ready": true,
+    "declaration_template_count": 8,
+    "declaration_templates": [
+      {
+        "declaration_id": "operator_confirms_real_submission_intent",
+        "required_response": "explicit_yes",
+        "title": "Real submission intent confirmation"
+      },
+      {
+        "declaration_id": "operator_confirms_kaggle_rules_review",
+        "required_response": "explicit_yes",
+        "title": "Kaggle rules review confirmation"
+      },
+      {
+        "declaration_id": "operator_confirms_no_private_core_exposure",
+        "required_response": "explicit_yes",
+        "title": "No private core exposure confirmation"
+      },
+      {
+        "declaration_id": "operator_confirms_no_api_keys_or_secret_material",
+        "required_response": "explicit_yes",
+        "title": "No API keys or secret material confirmation"
+      },
+      {
+        "declaration_id": "operator_confirms_local_candidate_package_review",
+        "required_response": "explicit_yes",
+        "title": "Local candidate package review confirmation"
+      },
+      {
+        "declaration_id": "operator_confirms_manual_upload_responsibility",
+        "required_response": "explicit_yes",
+        "title": "Manual upload responsibility confirmation"
+      },
+      {
+        "declaration_id": "operator_confirms_no_legal_certification_claim",
+        "required_response": "explicit_yes",
+        "title": "No legal certification claim confirmation"
+      },
+      {
+        "declaration_id": "operator_confirms_irreversible_external_submission_awareness",
+        "required_response": "explicit_yes",
+        "title": "Irreversible external submission awareness confirmation"
+      }
+    ],
+    "operator_approval_granted": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "provided_declaration_count": 0,
+    "provided_declarations": [],
+    "rejected_declaration_count": 0,
+    "rejected_declarations": [],
+    "required_declaration_count": 8,
+    "required_declarations": [
+      "operator_confirms_real_submission_intent",
+      "operator_confirms_kaggle_rules_review",
+      "operator_confirms_no_private_core_exposure",
+      "operator_confirms_no_api_keys_or_secret_material",
+      "operator_confirms_local_candidate_package_review",
+      "operator_confirms_manual_upload_responsibility",
+      "operator_confirms_no_legal_certification_claim",
+      "operator_confirms_irreversible_external_submission_awareness"
+    ]
+  },
+  "package_case_count": 10,
+  "package_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "declaration_governance_plan_source_ready_v1",
+      "operation": "verify_governance_plan_artifact"
+    },
+    {
+      "area": "declaration_template",
+      "case_id": "declaration_template_set_complete_v1",
+      "operation": "verify_declaration_template_set"
+    },
+    {
+      "area": "operator_approval",
+      "case_id": "declaration_required_count_valid_v1",
+      "operation": "verify_required_declaration_count"
+    },
+    {
+      "area": "operator_approval",
+      "case_id": "declaration_no_operator_submission_yet_v1",
+      "operation": "verify_no_operator_declarations_provided"
+    },
+    {
+      "area": "operator_approval",
+      "case_id": "declaration_no_accepted_declarations_yet_v1",
+      "operation": "verify_no_declarations_accepted"
+    },
+    {
+      "area": "approval_gate",
+      "case_id": "declaration_approval_not_granted_v1",
+      "operation": "verify_approval_not_granted"
+    },
+    {
+      "area": "submission",
+      "case_id": "declaration_real_submission_blocked_v1",
+      "operation": "verify_real_submission_blocked"
+    },
+    {
+      "area": "boundary",
+      "case_id": "declaration_no_upload_no_auth_v1",
+      "operation": "verify_no_upload_no_auth"
+    },
+    {
+      "area": "claim_boundary",
+      "case_id": "declaration_no_score_or_leaderboard_claim_v1",
+      "operation": "verify_no_score_or_leaderboard_claim"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "declaration_next_stage_valid_v1",
+      "operation": "verify_local_candidate_manual_review_next"
+    }
+  ],
+  "package_checks": {
+    "accepted_declaration_count_zero": true,
+    "declaration_package_ready": true,
+    "governance_next_stage_matches_task_2": true,
+    "governance_operator_approval_not_granted": true,
+    "governance_phase_count_valid": true,
+    "governance_plan_artifact_present": true,
+    "governance_plan_artifact_ready": true,
+    "governance_plan_artifact_valid": true,
+    "governance_plan_ready": true,
+    "governance_requires_operator_approval": true,
+    "kaggle_authentication_not_performed": true,
+    "kaggle_submission_not_sent": true,
+    "next_stage_valid": true,
+    "operator_approval_not_granted": true,
+    "operator_approval_not_received": true,
+    "operator_approval_required": true,
+    "pre_submission_gate_count_valid": true,
+    "provided_declaration_count_zero": true,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission_false": true,
+    "real_submission_allowed_false": true,
+    "real_submission_not_created": true,
+    "rejected_declaration_count_zero": true,
+    "required_declaration_count_valid": true,
+    "score_claim_absent": true,
+    "template_count_valid": true,
+    "template_ids_match_governance_required_declarations": true,
+    "template_ids_unique": true,
+    "upload_not_performed": true
+  },
+  "package_failure_count": 0,
+  "package_gate_count": 49,
+  "package_gates": [
+    {
+      "name": "governance_plan_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "governance_plan_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "governance_plan_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "governance_plan_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "governance_next_stage_matches_task_2",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "governance_phase_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "pre_submission_gate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "governance_requires_operator_approval",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "governance_operator_approval_not_granted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "package_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "package_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "package_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "package_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "package_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "declaration_package_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "declaration_package_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "template_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "template_ids_unique",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "template_ids_match_governance_required_declarations",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "package_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "package_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "package_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_package_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "required_declaration_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "provided_declaration_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "accepted_declaration_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rejected_declaration_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_not_granted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_not_received",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "package_id": "MILESTONE-9-DECLARATION-PACKAGE-63E92FAE2DFB",
+  "package_index": {
+    "accepted_declaration_count": 0,
+    "baseline_commit": "4a716ee Open ARC AGI3 milestone 9 manual submission governance",
+    "declaration_package_created": true,
+    "declaration_template_count": 8,
+    "depends_on_governance_plan": "MILESTONE-9-GOVERNANCE-PLAN-F245F8911F10",
+    "external_api_dependency": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #9",
+    "next_allowed_stage": "MILESTONE_9_TASK_3_LOCAL_CANDIDATE_MANUAL_REVIEW_V1",
+    "operator_approval_granted": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "package_case_count": 10,
+    "package_failure_count": 0,
+    "package_locked": true,
+    "package_mode": "MILESTONE_9_OPERATOR_DECLARATION_PACKAGE_V1_LOCAL_ONLY",
+    "package_pass_count": 10,
+    "package_ready": true,
+    "package_scope": "CREATE_OPERATOR_DECLARATION_TEMPLATES_WITHOUT_APPROVAL",
+    "package_verdict": "OPERATOR_DECLARATION_PACKAGE_READY_APPROVAL_NOT_GRANTED_SUBMISSION_BLOCKED",
+    "private_core_exposure": false,
+    "provided_declaration_count": 0,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "rejected_declaration_count": 0,
+    "required_declaration_count": 8,
+    "task": "Task 2",
+    "upload_performed": false
+  },
+  "package_issue_count": 0,
+  "package_issues": [
+    {
+      "active": false,
+      "name": "governance_plan_artifact_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "governance_plan_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "governance_plan_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "governance_plan_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "governance_next_stage_matches_task_2",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "governance_phase_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "pre_submission_gate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "governance_requires_operator_approval",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "governance_operator_approval_not_granted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "package_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "package_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "package_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "package_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "package_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "declaration_package_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "declaration_package_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "template_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "template_ids_unique",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "template_ids_match_governance_required_declarations",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "package_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "package_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "package_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_package_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "required_declaration_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "provided_declaration_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "accepted_declaration_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rejected_declaration_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_granted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_not_received",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "contains_api_keys_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "package_locked": true,
+  "package_mode": "MILESTONE_9_OPERATOR_DECLARATION_PACKAGE_V1_LOCAL_ONLY",
+  "package_pass_count": 10,
+  "package_ready": true,
+  "package_record": {
+    "accepted_declaration_count": 0,
+    "baseline_governance_plan_id": "MILESTONE-9-GOVERNANCE-PLAN-F245F8911F10",
+    "boundary_control_count": 9,
+    "contains_api_keys": false,
+    "declaration_package_created": true,
+    "declaration_package_ready": true,
+    "declaration_template_count": 8,
+    "external_api_dependency": false,
+    "governance_plan_ready": true,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "next_allowed_stage": "MILESTONE_9_TASK_3_LOCAL_CANDIDATE_MANUAL_REVIEW_V1",
+    "operator_approval_granted": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "package_case_count": 10,
+    "package_failure_count": 0,
+    "package_locked": true,
+    "package_mode": "MILESTONE_9_OPERATOR_DECLARATION_PACKAGE_V1_LOCAL_ONLY",
+    "package_pass_count": 10,
+    "package_ready": true,
+    "package_scope": "CREATE_OPERATOR_DECLARATION_TEMPLATES_WITHOUT_APPROVAL",
+    "package_verdict": "OPERATOR_DECLARATION_PACKAGE_READY_APPROVAL_NOT_GRANTED_SUBMISSION_BLOCKED",
+    "private_core_exposure": false,
+    "provided_declaration_count": 0,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "regression_guard_count": 12,
+    "rejected_declaration_count": 0,
+    "required_declaration_count": 8,
+    "score_claim_absent": true,
+    "upload_performed": false
+  },
+  "package_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "declaration_governance_plan_source_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_governance_plan_artifact",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "declaration_template",
+      "case_id": "declaration_template_set_complete_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_declaration_template_set",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "operator_approval",
+      "case_id": "declaration_required_count_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_required_declaration_count",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "operator_approval",
+      "case_id": "declaration_no_operator_submission_yet_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_operator_declarations_provided",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "operator_approval",
+      "case_id": "declaration_no_accepted_declarations_yet_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_declarations_accepted",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "approval_gate",
+      "case_id": "declaration_approval_not_granted_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_approval_not_granted",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission",
+      "case_id": "declaration_real_submission_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "declaration_no_upload_no_auth_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_upload_no_auth",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "claim_boundary",
+      "case_id": "declaration_no_score_or_leaderboard_claim_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_score_or_leaderboard_claim",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "declaration_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_local_candidate_manual_review_next",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "package_scope": "CREATE_OPERATOR_DECLARATION_TEMPLATES_WITHOUT_APPROVAL",
+  "package_verdict": "OPERATOR_DECLARATION_PACKAGE_READY_APPROVAL_NOT_GRANTED_SUBMISSION_BLOCKED",
+  "passed_gate_count": 49,
+  "provided_declaration_count": 0,
+  "public_leaderboard_claim_absent": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "regression_guard_count": 12,
+  "regression_guards": [
+    "guard_declaration_uses_governance_plan_artifact",
+    "guard_declaration_templates_complete",
+    "guard_declaration_templates_unique",
+    "guard_declaration_does_not_accept_operator_approval",
+    "guard_declaration_does_not_submit",
+    "guard_declaration_does_not_authenticate",
+    "guard_declaration_does_not_upload",
+    "guard_declaration_real_submission_blocked",
+    "guard_declaration_no_score_claim",
+    "guard_declaration_no_leaderboard_claim",
+    "guard_declaration_no_private_core_exposure",
+    "guard_declaration_no_legal_certification"
+  ],
+  "rejected_declaration_count": 0,
+  "required_declaration_count": 8,
+  "score_claim_absent": true,
+  "signature": "63E92FAE2DFB9115",
+  "status": "MILESTONE_9_OPERATOR_DECLARATION_PACKAGE_V1_READY",
+  "task": "Task 2",
+  "title": "Operator Declaration Package v1",
+  "upload_performed": false,
+  "warning_count": 0
+}

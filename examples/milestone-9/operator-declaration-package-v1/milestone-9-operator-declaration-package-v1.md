@@ -1,0 +1,75 @@
+# ARC AGI3 Milestone #9 - Operator Declaration Package v1
+
+- status: MILESTONE_9_OPERATOR_DECLARATION_PACKAGE_V1_READY
+- package_id: MILESTONE-9-DECLARATION-PACKAGE-63E92FAE2DFB
+- signature: 63E92FAE2DFB9115
+- baseline_commit: 4a716ee Open ARC AGI3 milestone 9 manual submission governance
+- package_mode: MILESTONE_9_OPERATOR_DECLARATION_PACKAGE_V1_LOCAL_ONLY
+- package_scope: CREATE_OPERATOR_DECLARATION_TEMPLATES_WITHOUT_APPROVAL
+- package_verdict: OPERATOR_DECLARATION_PACKAGE_READY_APPROVAL_NOT_GRANTED_SUBMISSION_BLOCKED
+- next_allowed_stage: MILESTONE_9_TASK_3_LOCAL_CANDIDATE_MANUAL_REVIEW_V1
+- package_ready: True
+- declaration_template_count: 8
+- required_declaration_count: 8
+- provided_declaration_count: 0
+- accepted_declaration_count: 0
+- operator_approval_required: True
+- operator_approval_granted: False
+
+## Declaration templates
+
+- operator_confirms_real_submission_intent: Real submission intent confirmation / required_response=explicit_yes
+- operator_confirms_kaggle_rules_review: Kaggle rules review confirmation / required_response=explicit_yes
+- operator_confirms_no_private_core_exposure: No private core exposure confirmation / required_response=explicit_yes
+- operator_confirms_no_api_keys_or_secret_material: No API keys or secret material confirmation / required_response=explicit_yes
+- operator_confirms_local_candidate_package_review: Local candidate package review confirmation / required_response=explicit_yes
+- operator_confirms_manual_upload_responsibility: Manual upload responsibility confirmation / required_response=explicit_yes
+- operator_confirms_no_legal_certification_claim: No legal certification claim confirmation / required_response=explicit_yes
+- operator_confirms_irreversible_external_submission_awareness: Irreversible external submission awareness confirmation / required_response=explicit_yes
+
+## Package results
+
+- declaration_governance_plan_source_ready_v1 / area=source_binding / operation=verify_governance_plan_artifact / passed=True
+- declaration_template_set_complete_v1 / area=declaration_template / operation=verify_declaration_template_set / passed=True
+- declaration_required_count_valid_v1 / area=operator_approval / operation=verify_required_declaration_count / passed=True
+- declaration_no_operator_submission_yet_v1 / area=operator_approval / operation=verify_no_operator_declarations_provided / passed=True
+- declaration_no_accepted_declarations_yet_v1 / area=operator_approval / operation=verify_no_declarations_accepted / passed=True
+- declaration_approval_not_granted_v1 / area=approval_gate / operation=verify_approval_not_granted / passed=True
+- declaration_real_submission_blocked_v1 / area=submission / operation=verify_real_submission_blocked / passed=True
+- declaration_no_upload_no_auth_v1 / area=boundary / operation=verify_no_upload_no_auth / passed=True
+- declaration_no_score_or_leaderboard_claim_v1 / area=claim_boundary / operation=verify_no_score_or_leaderboard_claim / passed=True
+- declaration_next_stage_valid_v1 / area=next_stage / operation=verify_local_candidate_manual_review_next / passed=True
+
+## Decision
+
+Operator declaration package is ready. No operator approval has been granted. Real submission remains blocked.
+
+## Markers
+
+ARC_AGI3_MILESTONE_9_OPERATOR_DECLARATION_PACKAGE_V1_READY=true
+ARC_AGI3_MILESTONE_9_OPERATOR_DECLARATION_PACKAGE_V1_VALID=true
+ARC_AGI3_MILESTONE_9_DECLARATION_PACKAGE_READY=true
+ARC_AGI3_MILESTONE_9_PACKAGE_MODE=MILESTONE_9_OPERATOR_DECLARATION_PACKAGE_V1_LOCAL_ONLY
+ARC_AGI3_MILESTONE_9_PACKAGE_VERDICT=OPERATOR_DECLARATION_PACKAGE_READY_APPROVAL_NOT_GRANTED_SUBMISSION_BLOCKED
+ARC_AGI3_MILESTONE_9_BASELINE_GOVERNANCE_PLAN_COMMIT=4a716ee
+ARC_AGI3_MILESTONE_9_DECLARATION_TEMPLATE_COUNT=8
+ARC_AGI3_MILESTONE_9_REQUIRED_DECLARATION_COUNT=8
+ARC_AGI3_MILESTONE_9_PROVIDED_DECLARATION_COUNT=0
+ARC_AGI3_MILESTONE_9_ACCEPTED_DECLARATION_COUNT=0
+ARC_AGI3_MILESTONE_9_REJECTED_DECLARATION_COUNT=0
+ARC_AGI3_MILESTONE_9_PACKAGE_CASE_COUNT=10
+ARC_AGI3_MILESTONE_9_PACKAGE_PASS_COUNT=10
+ARC_AGI3_MILESTONE_9_PACKAGE_FAILURE_COUNT=0
+ARC_AGI3_MILESTONE_9_NEXT_STAGE=MILESTONE_9_TASK_3_LOCAL_CANDIDATE_MANUAL_REVIEW_V1
+ARC_AGI3_MILESTONE_9_OPERATOR_APPROVAL_REQUIRED=true
+ARC_AGI3_MILESTONE_9_OPERATOR_APPROVAL_GRANTED=false
+ARC_AGI3_MILESTONE_9_OPERATOR_APPROVAL_RECEIVED=false
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_CREATED=false
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_9_READY_FOR_REAL_KAGGLE_SUBMISSION=false
+ARC_AGI3_MILESTONE_9_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_9_UPLOAD_PERFORMED=false
+ARC_AGI3_MILESTONE_9_KAGGLE_AUTHENTICATION_PERFORMED=false
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false

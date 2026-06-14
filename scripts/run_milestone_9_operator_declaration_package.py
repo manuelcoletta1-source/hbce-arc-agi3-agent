@@ -1,0 +1,57 @@
+from hbce_arc_agi3.milestone_9_operator_declaration_package import (
+    run_milestone_9_operator_declaration_package_pipeline,
+)
+
+
+def main() -> None:
+    payload = run_milestone_9_operator_declaration_package_pipeline()
+    package = payload["package"]
+
+    print(payload["status"])
+    print(payload["package_status"])
+    print(payload["validation_status"])
+    print(payload["package_id"])
+    print(payload["signature"])
+    print(package["baseline_commit"])
+    print(payload["package_mode"])
+    print(payload["package_verdict"])
+    print(payload["next_allowed_stage"])
+    print(payload["package_ready"])
+    print(payload["package_locked"])
+    print(payload["declaration_package_created"])
+    print(payload["declaration_package_ready"])
+    print(payload["declaration_template_count"])
+    print(payload["required_declaration_count"])
+    print(payload["provided_declaration_count"])
+    print(payload["accepted_declaration_count"])
+    print(payload["rejected_declaration_count"])
+    print(payload["package_case_count"])
+    print(payload["package_pass_count"])
+    print(payload["package_failure_count"])
+    print(payload["regression_guard_count"])
+    print(payload["boundary_control_count"])
+    print(payload["package_gate_count"])
+    print(payload["passed_gate_count"])
+    print(payload["package_issue_count"])
+    print(payload["warning_count"])
+    print(payload["operator_approval_required"])
+    print(payload["operator_approval_granted"])
+    print(payload["operator_approval_received"])
+    print(payload["real_submission_created"])
+    print(payload["real_submission_allowed"])
+    print(payload["ready_for_real_kaggle_submission"])
+    print(payload["kaggle_submission_sent"])
+    print(payload["upload_performed"])
+    print(payload["kaggle_authentication_performed"])
+    print(all(result["passed"] for result in package["package_results"]))
+    print(all(item["passed"] for item in package["package_gates"]))
+    print(all(item["active"] is False for item in package["package_issues"]))
+    print(payload["artifacts"]["json_path"])
+    print(payload["artifacts"]["markdown_path"])
+    print(payload["artifacts"]["manifest_path"])
+    print(payload["artifacts"]["index_path"])
+    print(payload["metadata"])
+
+
+if __name__ == "__main__":
+    main()
