@@ -1,0 +1,54 @@
+ARC AGI3 MILESTONE 10 SOLVER PATCH PLAN MANIFEST v1
+plan_id=MILESTONE-10-SOLVER-PATCH-PLAN-786174DF44F6
+signature=786174DF44F63933
+status=MILESTONE_10_SOLVER_PATCH_PLAN_V1_READY
+baseline_commit=88acc88 Add ARC AGI3 local error pattern audit
+plan_mode=MILESTONE_10_SOLVER_PATCH_PLAN_V1_LOCAL_ONLY
+plan_verdict=SOLVER_PATCH_PLAN_READY_FOR_LOCAL_IMPLEMENTATION
+next_allowed_stage=MILESTONE_10_TASK_4_SOLVER_PATCH_IMPLEMENTATION_V1
+plan_ready=True
+solver_patch_plan_created=True
+solver_patch_plan_ready=True
+patch_target_count=6
+patch_step_count=6
+plan_check_count=22
+plan_case_count=10
+plan_pass_count=10
+plan_failure_count=0
+plan_gate_count=57
+passed_gate_count=57
+plan_issue_count=0
+runtime_modification_allowed_now=False
+submission_candidate_created=False
+implementation_required_next=True
+real_submission_decision=NOT_AUTHORIZED
+real_submission_allowed=False
+manual_upload_allowed=False
+kaggle_authentication_allowed=False
+kaggle_submission_sent=False
+fail_closed_required=True
+fail_closed_active=True
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+PATCH_STEPS
+PATCH-COLOR-REMAP-STABILITY-v1 family=color_mapping module=solver_candidate_generation priority=P1 source=ERR-COLOR-REMAP-AMBIGUITY-v1
+PATCH-OBJECT-BOUNDARY-STABILITY-v1 family=object_model module=object_transform_solver priority=P1 source=ERR-OBJECT-BOUNDARY-EXTRACTION-v1
+PATCH-SYMMETRY-AXIS-TIEBREAK-v1 family=shape_symmetry module=shape_symmetry_solver priority=P2 source=ERR-SYMMETRY-AXIS-INFERENCE-v1
+PATCH-COMPOSITION-ORDER-SCORING-v1 family=cross_family_composition module=composed_transform_solver priority=P1 source=ERR-CROSS-FAMILY-COMPOSITION-ORDER-v1
+PATCH-RANKER-EVIDENCE-TIEBREAK-v1 family=candidate_ranker module=candidate_ranker priority=P2 source=ERR-RANKER-TIE-BREAK-EVIDENCE-v1
+PATCH-TRACE-GENERALIZATION-FIELDS-v1 family=traceability module=audit_trace priority=P2 source=ERR-TRACE-GENERALIZATION-GAP-v1
+
+PLAN_RESULTS
+m10_patch_plan_audit_source_ready_v1 area=source_binding operation=verify_error_audit_source passed=True evidence_score=100
+m10_patch_plan_patch_targets_complete_v1 area=patch_targets operation=verify_patch_target_count passed=True evidence_score=100
+m10_patch_plan_color_remap_patch_v1 area=patch_plan operation=plan_color_remap_patch passed=True evidence_score=100
+m10_patch_plan_object_boundary_patch_v1 area=patch_plan operation=plan_object_boundary_patch passed=True evidence_score=100
+m10_patch_plan_symmetry_patch_v1 area=patch_plan operation=plan_symmetry_patch passed=True evidence_score=100
+m10_patch_plan_composition_patch_v1 area=patch_plan operation=plan_composition_patch passed=True evidence_score=100
+m10_patch_plan_ranker_patch_v1 area=patch_plan operation=plan_ranker_patch passed=True evidence_score=100
+m10_patch_plan_traceability_patch_v1 area=patch_plan operation=plan_traceability_patch passed=True evidence_score=100
+m10_patch_plan_fail_closed_preserved_v1 area=fail_closed operation=verify_fail_closed_preserved passed=True evidence_score=100
+m10_patch_plan_next_stage_valid_v1 area=next_stage operation=verify_implementation_next passed=True evidence_score=100

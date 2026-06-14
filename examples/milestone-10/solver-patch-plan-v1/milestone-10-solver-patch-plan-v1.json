@@ -1,0 +1,1130 @@
+{
+  "audit_source": {
+    "audit_id": "MILESTONE-10-ERROR-AUDIT-DA2B176A87B9",
+    "path": "examples/milestone-10/local-error-pattern-audit-v1/milestone-10-local-error-pattern-audit-v1.json",
+    "present": true,
+    "sha256": "7f983e5c5b63cc992ebc3884441abb10eef996a374ce16279b6b72edd2d29e94",
+    "sha256_16": "7F983E5C5B63CC99",
+    "status": "MILESTONE_10_LOCAL_ERROR_PATTERN_AUDIT_V1_READY"
+  },
+  "baseline_commit": "88acc88 Add ARC AGI3 local error pattern audit",
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "fail_closed_active": true,
+  "fail_closed_controls": [
+    "real_submission_decision_not_authorized",
+    "real_submission_allowed_false",
+    "manual_upload_allowed_false",
+    "kaggle_authentication_allowed_false",
+    "kaggle_submission_sent_false",
+    "upload_performed_false",
+    "external_api_dependency_false",
+    "fail_closed_active"
+  ],
+  "fail_closed_required": true,
+  "implementation_required_next": true,
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_10_solver_patch_plan_v1"
+  },
+  "milestone": "Milestone #10",
+  "next_allowed_stage": "MILESTONE_10_TASK_4_SOLVER_PATCH_IMPLEMENTATION_V1",
+  "passed_gate_count": 57,
+  "patch_step_count": 6,
+  "patch_steps": [
+    {
+      "creates_submission_candidate": false,
+      "family": "color_mapping",
+      "implementation_intent": "add unseen-color remap stability scoring",
+      "local_only": true,
+      "patch_id": "PATCH-COLOR-REMAP-STABILITY-v1",
+      "priority": "P1",
+      "ready_for_implementation": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_modification_allowed_now": false,
+      "source_pattern_id": "ERR-COLOR-REMAP-AMBIGUITY-v1",
+      "source_pattern_present": true,
+      "target_module": "solver_candidate_generation"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "object_model",
+      "implementation_intent": "add object boundary extraction consistency checks",
+      "local_only": true,
+      "patch_id": "PATCH-OBJECT-BOUNDARY-STABILITY-v1",
+      "priority": "P1",
+      "ready_for_implementation": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_modification_allowed_now": false,
+      "source_pattern_id": "ERR-OBJECT-BOUNDARY-EXTRACTION-v1",
+      "source_pattern_present": true,
+      "target_module": "object_transform_solver"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "shape_symmetry",
+      "implementation_intent": "rank symmetry axes with deterministic evidence fields",
+      "local_only": true,
+      "patch_id": "PATCH-SYMMETRY-AXIS-TIEBREAK-v1",
+      "priority": "P2",
+      "ready_for_implementation": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_modification_allowed_now": false,
+      "source_pattern_id": "ERR-SYMMETRY-AXIS-INFERENCE-v1",
+      "source_pattern_present": true,
+      "target_module": "shape_symmetry_solver"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "cross_family_composition",
+      "implementation_intent": "score operation order across color, object, and shape transforms",
+      "local_only": true,
+      "patch_id": "PATCH-COMPOSITION-ORDER-SCORING-v1",
+      "priority": "P1",
+      "ready_for_implementation": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_modification_allowed_now": false,
+      "source_pattern_id": "ERR-CROSS-FAMILY-COMPOSITION-ORDER-v1",
+      "source_pattern_present": true,
+      "target_module": "composed_transform_solver"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "candidate_ranker",
+      "implementation_intent": "expand deterministic ranker tie-break evidence",
+      "local_only": true,
+      "patch_id": "PATCH-RANKER-EVIDENCE-TIEBREAK-v1",
+      "priority": "P2",
+      "ready_for_implementation": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_modification_allowed_now": false,
+      "source_pattern_id": "ERR-RANKER-TIE-BREAK-EVIDENCE-v1",
+      "source_pattern_present": true,
+      "target_module": "candidate_ranker"
+    },
+    {
+      "creates_submission_candidate": false,
+      "family": "traceability",
+      "implementation_intent": "add local trace fields explaining generalization assumptions",
+      "local_only": true,
+      "patch_id": "PATCH-TRACE-GENERALIZATION-FIELDS-v1",
+      "priority": "P2",
+      "ready_for_implementation": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false,
+      "runtime_modification_allowed_now": false,
+      "source_pattern_id": "ERR-TRACE-GENERALIZATION-GAP-v1",
+      "source_pattern_present": true,
+      "target_module": "audit_trace"
+    }
+  ],
+  "patch_target_count": 6,
+  "plan_case_count": 10,
+  "plan_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m10_patch_plan_audit_source_ready_v1",
+      "operation": "verify_error_audit_source"
+    },
+    {
+      "area": "patch_targets",
+      "case_id": "m10_patch_plan_patch_targets_complete_v1",
+      "operation": "verify_patch_target_count"
+    },
+    {
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_color_remap_patch_v1",
+      "operation": "plan_color_remap_patch"
+    },
+    {
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_object_boundary_patch_v1",
+      "operation": "plan_object_boundary_patch"
+    },
+    {
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_symmetry_patch_v1",
+      "operation": "plan_symmetry_patch"
+    },
+    {
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_composition_patch_v1",
+      "operation": "plan_composition_patch"
+    },
+    {
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_ranker_patch_v1",
+      "operation": "plan_ranker_patch"
+    },
+    {
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_traceability_patch_v1",
+      "operation": "plan_traceability_patch"
+    },
+    {
+      "area": "fail_closed",
+      "case_id": "m10_patch_plan_fail_closed_preserved_v1",
+      "operation": "verify_fail_closed_preserved"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m10_patch_plan_next_stage_valid_v1",
+      "operation": "verify_implementation_next"
+    }
+  ],
+  "plan_check_count": 22,
+  "plan_check_list": [
+    "audit_artifact_exists",
+    "audit_artifact_ready",
+    "audit_signature_present",
+    "audit_next_stage_matches_task_3",
+    "error_pattern_count_valid",
+    "solver_target_count_valid",
+    "patch_target_count_valid",
+    "patch_step_count_valid",
+    "all_patch_steps_link_source_patterns",
+    "all_patch_steps_local_only",
+    "runtime_modification_blocked_now",
+    "next_stage_implementation_valid",
+    "fail_closed_required",
+    "fail_closed_active",
+    "real_submission_not_authorized",
+    "real_submission_blocked",
+    "manual_upload_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_submission_absent",
+    "plan_record_created",
+    "no_private_core_exposure",
+    "no_legal_certification"
+  ],
+  "plan_checks": {
+    "all_patch_steps_link_source_patterns": true,
+    "all_patch_steps_local_only": true,
+    "all_patch_steps_no_external_api": true,
+    "all_patch_steps_no_submission_candidate": true,
+    "all_patch_steps_no_upload": true,
+    "all_patch_steps_ready_for_implementation": true,
+    "audit_artifact_present": true,
+    "audit_artifact_ready": true,
+    "audit_artifact_valid": true,
+    "audit_commit_valid": true,
+    "audit_locked": true,
+    "audit_next_stage_matches_task_3": true,
+    "audit_ready": true,
+    "boundary_control_count_valid": true,
+    "candidate_count_positive": true,
+    "candidate_id_present": true,
+    "candidate_signature_present": true,
+    "candidate_source_present": true,
+    "color_patch_present": true,
+    "composition_patch_present": true,
+    "error_pattern_count_valid": true,
+    "external_api_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_control_count_valid": true,
+    "fail_closed_required": true,
+    "implementation_required_next": true,
+    "kaggle_authentication_not_allowed": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "manual_upload_not_allowed": true,
+    "next_stage_valid": true,
+    "object_patch_present": true,
+    "patch_step_count_valid": true,
+    "patch_target_count_valid": true,
+    "plan_case_count_valid": true,
+    "plan_check_count_valid": true,
+    "plan_mode_valid": true,
+    "plan_record_created": true,
+    "plan_record_locked": true,
+    "plan_record_ready": true,
+    "plan_scope_valid": true,
+    "plan_verdict_valid": true,
+    "private_core_exposure_false": true,
+    "ranker_patch_present": true,
+    "real_submission_allowed_false": true,
+    "real_submission_decision_not_authorized": true,
+    "runtime_modification_blocked_now": true,
+    "solver_target_count_valid": true,
+    "symmetry_patch_present": true,
+    "traceability_patch_present": true
+  },
+  "plan_failure_count": 0,
+  "plan_gate_count": 57,
+  "plan_gates": [
+    {
+      "name": "audit_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_commit_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_next_stage_matches_task_3",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "audit_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "error_pattern_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "solver_target_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "patch_target_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "patch_step_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_patch_steps_link_source_patterns",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_patch_steps_local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_patch_steps_no_external_api",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_patch_steps_no_upload",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_patch_steps_no_submission_candidate",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_patch_steps_ready_for_implementation",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_modification_blocked_now",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "color_patch_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "object_patch_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "symmetry_patch_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "composition_patch_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_patch_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "traceability_patch_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_source_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_id_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_signature_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_count_positive",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_check_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_record_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_record_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_record_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_required_next",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_decision_not_authorized",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_plan_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "plan_id": "MILESTONE-10-SOLVER-PATCH-PLAN-786174DF44F6",
+  "plan_index": {
+    "baseline_commit": "88acc88 Add ARC AGI3 local error pattern audit",
+    "candidate_count": 4,
+    "candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "candidate_source_path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "depends_on_audit": "MILESTONE-10-ERROR-AUDIT-DA2B176A87B9",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_upload_allowed": false,
+    "milestone": "Milestone #10",
+    "next_allowed_stage": "MILESTONE_10_TASK_4_SOLVER_PATCH_IMPLEMENTATION_V1",
+    "patch_step_count": 6,
+    "patch_target_count": 6,
+    "plan_mode": "MILESTONE_10_SOLVER_PATCH_PLAN_V1_LOCAL_ONLY",
+    "plan_ready": true,
+    "plan_scope": "LOCAL_SOLVER_PATCH_PLAN_NO_RUNTIME_MODIFICATION",
+    "plan_verdict": "SOLVER_PATCH_PLAN_READY_FOR_LOCAL_IMPLEMENTATION",
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "runtime_modification_allowed_now": false,
+    "solver_patch_plan_created": true,
+    "solver_patch_plan_ready": true,
+    "submission_candidate_created": false,
+    "task": "Task 3"
+  },
+  "plan_issue_count": 0,
+  "plan_issues": [
+    {
+      "active": false,
+      "name": "audit_artifact_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_commit_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_next_stage_matches_task_3",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "audit_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "error_pattern_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "solver_target_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "patch_target_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "patch_step_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_patch_steps_link_source_patterns",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_patch_steps_local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_patch_steps_no_external_api",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_patch_steps_no_upload",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_patch_steps_no_submission_candidate",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_patch_steps_not_ready_for_implementation",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_modification_blocked_now",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "color_patch_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "object_patch_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "symmetry_patch_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "composition_patch_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_patch_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "traceability_patch_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_source_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_id_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_signature_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_count_positive",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_check_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_record_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_record_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_record_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_required_next",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_decision_not_authorized",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_plan_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_failure_count_zero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "plan_locked": true,
+  "plan_mode": "MILESTONE_10_SOLVER_PATCH_PLAN_V1_LOCAL_ONLY",
+  "plan_pass_count": 10,
+  "plan_ready": true,
+  "plan_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m10_patch_plan_audit_source_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_error_audit_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "patch_targets",
+      "case_id": "m10_patch_plan_patch_targets_complete_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_patch_target_count",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_color_remap_patch_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "plan_color_remap_patch",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_object_boundary_patch_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "plan_object_boundary_patch",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_symmetry_patch_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "plan_symmetry_patch",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_composition_patch_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "plan_composition_patch",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_ranker_patch_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "plan_ranker_patch",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "patch_plan",
+      "case_id": "m10_patch_plan_traceability_patch_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "plan_traceability_patch",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "fail_closed",
+      "case_id": "m10_patch_plan_fail_closed_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_fail_closed_preserved",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m10_patch_plan_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_implementation_next",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "plan_scope": "LOCAL_SOLVER_PATCH_PLAN_NO_RUNTIME_MODIFICATION",
+  "plan_state": {
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "implementation_required_next": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_10_TASK_4_SOLVER_PATCH_IMPLEMENTATION_V1",
+    "patch_step_count": 6,
+    "patch_target_count": 6,
+    "plan_mode": "MILESTONE_10_SOLVER_PATCH_PLAN_V1_LOCAL_ONLY",
+    "plan_scope": "LOCAL_SOLVER_PATCH_PLAN_NO_RUNTIME_MODIFICATION",
+    "plan_verdict": "SOLVER_PATCH_PLAN_READY_FOR_LOCAL_IMPLEMENTATION",
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "runtime_modification_allowed_now": false,
+    "solver_patch_plan_created": true,
+    "solver_patch_plan_locked": true,
+    "solver_patch_plan_ready": true,
+    "solver_patch_plan_required": true,
+    "submission_candidate_created": false
+  },
+  "plan_verdict": "SOLVER_PATCH_PLAN_READY_FOR_LOCAL_IMPLEMENTATION",
+  "real_submission_allowed": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "runtime_modification_allowed_now": false,
+  "signature": "786174DF44F63933",
+  "solver_patch_plan_created": true,
+  "solver_patch_plan_locked": true,
+  "solver_patch_plan_ready": true,
+  "source_summary": {
+    "audit_id": "MILESTONE-10-ERROR-AUDIT-DA2B176A87B9",
+    "audit_locked": true,
+    "audit_path": "examples/milestone-10/local-error-pattern-audit-v1/milestone-10-local-error-pattern-audit-v1.json",
+    "audit_present": true,
+    "audit_ready": true,
+    "audit_sha256": "7f983e5c5b63cc992ebc3884441abb10eef996a374ce16279b6b72edd2d29e94",
+    "audit_sha256_16": "7F983E5C5B63CC99",
+    "audit_signature": "DA2B176A87B932BC",
+    "audit_status": "MILESTONE_10_LOCAL_ERROR_PATTERN_AUDIT_V1_READY",
+    "baseline_commit": "d32678c Open ARC AGI3 milestone 10 local solver improvement",
+    "candidate_count": 4,
+    "candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "candidate_signature": "4A84F8136BD61B3F",
+    "candidate_source_path": "examples/milestone-8/submission-candidate-refresh-v2/milestone-8-submission-candidate-refresh-v2.json",
+    "error_pattern_count": 6,
+    "error_patterns": [
+      {
+        "candidate_operation": "COLOR_REMAP",
+        "description": "foreground color remap can be correct locally but under-specified when unseen colors appear",
+        "family": "color_mapping",
+        "local_only": true,
+        "patch_target": "strengthen unseen foreground color mapping inference",
+        "pattern_id": "ERR-COLOR-REMAP-AMBIGUITY-v1",
+        "ready_for_patch_plan": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "severity": "P1"
+      },
+      {
+        "candidate_operation": "OBJECT_TRANSFORM",
+        "description": "object boundary extraction can overfit to visible training objects",
+        "family": "object_model",
+        "local_only": true,
+        "patch_target": "add object boundary stability checks",
+        "pattern_id": "ERR-OBJECT-BOUNDARY-EXTRACTION-v1",
+        "ready_for_patch_plan": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "severity": "P1"
+      },
+      {
+        "candidate_operation": "SYMMETRY_TRANSFORM",
+        "description": "symmetry axis selection can be ambiguous when multiple axes score similarly",
+        "family": "shape_symmetry",
+        "local_only": true,
+        "patch_target": "rank symmetry axes with deterministic tie-break evidence",
+        "pattern_id": "ERR-SYMMETRY-AXIS-INFERENCE-v1",
+        "ready_for_patch_plan": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "severity": "P2"
+      },
+      {
+        "candidate_operation": "COMPOSED_TRANSFORM",
+        "description": "composition order between color, object, and shape operations can alter final grid output",
+        "family": "cross_family_composition",
+        "local_only": true,
+        "patch_target": "introduce ordered composition scoring",
+        "pattern_id": "ERR-CROSS-FAMILY-COMPOSITION-ORDER-v1",
+        "ready_for_patch_plan": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "severity": "P1"
+      },
+      {
+        "candidate_operation": "RANKING_POLICY",
+        "description": "candidate ranking may need stronger deterministic evidence when multiple candidates tie",
+        "family": "candidate_ranker",
+        "local_only": true,
+        "patch_target": "expand ranker tie-break policy with task-family evidence",
+        "pattern_id": "ERR-RANKER-TIE-BREAK-EVIDENCE-v1",
+        "ready_for_patch_plan": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "severity": "P2"
+      },
+      {
+        "candidate_operation": "TRACE_AUDIT",
+        "description": "trace output can show success without enough explanation of why generalization should hold",
+        "family": "traceability",
+        "local_only": true,
+        "patch_target": "increase audit trace fields for local solver decisions",
+        "pattern_id": "ERR-TRACE-GENERALIZATION-GAP-v1",
+        "ready_for_patch_plan": true,
+        "requires_external_api": false,
+        "requires_kaggle_upload": false,
+        "severity": "P2"
+      }
+    ],
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_10_TASK_3_SOLVER_PATCH_PLAN_V1",
+    "real_submission_allowed": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "solver_target_count": 6
+  },
+  "status": "MILESTONE_10_SOLVER_PATCH_PLAN_V1_READY",
+  "submission_candidate_created": false,
+  "task": "Task 3",
+  "title": "Solver Patch Plan v1",
+  "warning_count": 0
+}
