@@ -1,0 +1,681 @@
+{
+  "baseline_commit": "69af006 Add ARC AGI3 competitive solver iteration plan",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "kernel_families": [
+    "color_mapping",
+    "object_model",
+    "shape_symmetry",
+    "cross_family_composition"
+  ],
+  "kernel_family_count": 4,
+  "kernel_gate_count": 51,
+  "kernel_gates": [
+    {
+      "name": "plan_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_next_stage_matches_task_2",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_family_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_operation_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_gate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "plan_issue_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "color_mapping_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "background_guard_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "component_detection_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "component_translation_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "horizontal_reflection_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "vertical_reflection_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_merge_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_signal_available",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_color_palette_transfer_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_background_guard_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_component_detection_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_translation_right_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_translation_down_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_reflect_horizontal_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_reflect_vertical_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "sample_candidate_ranker_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "solver_kernel_v2_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_solver_iteration_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "kernel_id": "MILESTONE-8-SOLVER-KERNEL-7168314DD60D",
+  "kernel_index": {
+    "baseline_commit": "69af006 Add ARC AGI3 competitive solver iteration plan",
+    "depends_on_plan": "MILESTONE-8-COMPETITIVE-SOLVER-PLAN-8A28F54A53F5",
+    "external_api_dependency": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "kernel_family_count": 4,
+    "kernel_locked": true,
+    "kernel_mode": "COMPETITIVE_SOLVER_KERNEL_V2_LOCAL_ONLY",
+    "kernel_operation_count": 8,
+    "kernel_ready": true,
+    "kernel_scope": "IMPLEMENT_DETERMINISTIC_LOCAL_SOLVER_KERNEL_V2",
+    "kernel_verdict": "COMPETITIVE_SOLVER_KERNEL_V2_READY_FOR_FAMILY_BENCHMARK_CASES",
+    "legal_certification": false,
+    "milestone": "Milestone #8",
+    "next_allowed_stage": "MILESTONE_8_TASK_3_FAMILY_BENCHMARK_CASES_V2",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "regression_guard_count": 8,
+    "runtime_solver_iteration_performed": true,
+    "sample_case_count": 8,
+    "solver_kernel_v2_created": true,
+    "task": "Task 2",
+    "upload_performed": false
+  },
+  "kernel_issue_count": 0,
+  "kernel_issues": [
+    {
+      "active": false,
+      "name": "plan_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_next_stage_mismatch",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_family_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_operation_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_gate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "plan_issue_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "color_mapping_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "background_guard_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "component_detection_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "component_translation_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "horizontal_reflection_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "vertical_reflection_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_merge_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_signal_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_color_palette_transfer_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_background_guard_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_component_detection_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_translation_right_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_translation_down_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_reflect_horizontal_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_reflect_vertical_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "sample_candidate_ranker_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "solver_kernel_v2_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_solver_iteration_not_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only_false",
+      "severity": "BLOCKING"
+    }
+  ],
+  "kernel_locked": true,
+  "kernel_mode": "COMPETITIVE_SOLVER_KERNEL_V2_LOCAL_ONLY",
+  "kernel_operation_count": 8,
+  "kernel_operations": [
+    "infer_color_mapping",
+    "apply_color_mapping",
+    "detect_connected_components",
+    "translate_component",
+    "reflect_grid_horizontal",
+    "reflect_grid_vertical",
+    "merge_candidate_sets",
+    "rank_kernel_candidates"
+  ],
+  "kernel_ready": true,
+  "kernel_record": {
+    "baseline_plan_id": "MILESTONE-8-COMPETITIVE-SOLVER-PLAN-8A28F54A53F5",
+    "boundary_control_count": 9,
+    "contains_api_keys": false,
+    "external_api_dependency": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "kernel_family_count": 4,
+    "kernel_locked": true,
+    "kernel_mode": "COMPETITIVE_SOLVER_KERNEL_V2_LOCAL_ONLY",
+    "kernel_operation_count": 8,
+    "kernel_ready": true,
+    "kernel_scope": "IMPLEMENT_DETERMINISTIC_LOCAL_SOLVER_KERNEL_V2",
+    "kernel_verdict": "COMPETITIVE_SOLVER_KERNEL_V2_READY_FOR_FAMILY_BENCHMARK_CASES",
+    "legal_certification": false,
+    "next_allowed_stage": "MILESTONE_8_TASK_3_FAMILY_BENCHMARK_CASES_V2",
+    "plan_next_stage": "MILESTONE_8_TASK_2_COMPETITIVE_SOLVER_KERNEL_V2",
+    "plan_ready": true,
+    "private_core_exposure": false,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "regression_guard_count": 8,
+    "runtime_solver_iteration_performed": true,
+    "sample_case_count": 8,
+    "score_claim_absent": true,
+    "solver_kernel_v2_created": true,
+    "upload_performed": false
+  },
+  "kernel_scope": "IMPLEMENT_DETERMINISTIC_LOCAL_SOLVER_KERNEL_V2",
+  "kernel_verdict": "COMPETITIVE_SOLVER_KERNEL_V2_READY_FOR_FAMILY_BENCHMARK_CASES",
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_8_competitive_solver_kernel_v2"
+  },
+  "milestone": "Milestone #8",
+  "next_allowed_stage": "MILESTONE_8_TASK_3_FAMILY_BENCHMARK_CASES_V2",
+  "passed_gate_count": 51,
+  "plan_source": {
+    "path": "examples/milestone-8/competitive-solver-iteration-plan-v2/milestone-8-competitive-solver-iteration-plan-v2.json",
+    "plan_id": "MILESTONE-8-COMPETITIVE-SOLVER-PLAN-8A28F54A53F5",
+    "present": true,
+    "sha256": "d22f38d88adf3388584b270be768b09eccf765955c158dd2849084321f91c0a7",
+    "sha256_16": "D22F38D88ADF3388",
+    "status": "MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_PLAN_READY"
+  },
+  "public_leaderboard_claim_absent": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "regression_guard_count": 8,
+  "regression_guards": [
+    "guard_rectangular_grid",
+    "guard_background_preservation",
+    "guard_color_mapping_conflict_resolution",
+    "guard_component_count_stability",
+    "guard_translation_bounds",
+    "guard_shape_reflection_dimension_stability",
+    "guard_candidate_deduplication",
+    "guard_no_submission_side_effect"
+  ],
+  "runtime_solver_iteration_performed": true,
+  "sample_case_count": 8,
+  "sample_cases": [
+    "sample_color_palette_transfer_v2",
+    "sample_color_background_guard_v2",
+    "sample_object_component_delta_v2",
+    "sample_object_spatial_shift_right_v2",
+    "sample_object_spatial_shift_down_v2",
+    "sample_shape_reflect_horizontal_v2",
+    "sample_shape_reflect_vertical_v2",
+    "sample_cross_family_ranker_signal_v2"
+  ],
+  "sample_results": {
+    "sample_background_guard_pass": true,
+    "sample_candidate_ranker_pass": true,
+    "sample_color_palette_transfer_pass": true,
+    "sample_component_detection_pass": true,
+    "sample_reflect_horizontal_pass": true,
+    "sample_reflect_vertical_pass": true,
+    "sample_translation_down_pass": true,
+    "sample_translation_right_pass": true
+  },
+  "score_claim_absent": true,
+  "signature": "7168314DD60DA402",
+  "solver_kernel_v2_created": true,
+  "status": "MILESTONE_8_COMPETITIVE_SOLVER_KERNEL_V2_READY",
+  "task": "Task 2",
+  "title": "Competitive Solver Kernel v2",
+  "upload_performed": false,
+  "warning_count": 0
+}
