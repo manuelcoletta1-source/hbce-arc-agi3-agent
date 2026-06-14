@@ -1,0 +1,93 @@
+# ARC AGI3 Milestone #9 - Real Submission Decision Record v1
+
+- status: MILESTONE_9_REAL_SUBMISSION_DECISION_RECORD_V1_READY
+- decision_id: MILESTONE-9-DECISION-RECORD-9A26E4A69A78
+- signature: 9A26E4A69A7896DC
+- baseline_commit: 649509b Add ARC AGI3 operator approval gate
+- decision_mode: MILESTONE_9_REAL_SUBMISSION_DECISION_RECORD_V1_LOCAL_ONLY
+- decision_scope: RECORD_REAL_SUBMISSION_NOT_AUTHORIZED_OPERATOR_APPROVAL_ABSENT
+- decision_verdict: REAL_SUBMISSION_DECISION_RECORDED_NOT_AUTHORIZED_SUBMISSION_BLOCKED
+- next_allowed_stage: MILESTONE_9_TASK_7_REAL_SUBMISSION_BLOCKED_CLOSURE_V1
+- decision_ready: True
+- real_submission_decision_record_created: True
+- real_submission_decision: NOT_AUTHORIZED
+- real_submission_decision_reason: OPERATOR_APPROVAL_NOT_GRANTED
+- real_submission_decision_verdict: SUBMISSION_BLOCKED_OPERATOR_APPROVAL_ABSENT
+- required_declaration_count: 8
+- provided_declaration_count: 0
+- accepted_declaration_count: 0
+- explicit_operator_approval_phrase_received: False
+- operator_approval_required: True
+- operator_approval_granted: False
+
+## Decision checks
+
+- approval_gate_artifact_exists
+- approval_gate_artifact_ready
+- approval_gate_ready
+- approval_gate_closed
+- required_declarations_present
+- provided_declarations_absent
+- accepted_declarations_absent
+- explicit_operator_approval_absent
+- operator_approval_not_granted
+- decision_record_created
+- decision_not_authorized
+- manual_upload_blocked
+- authentication_blocked
+- real_submission_blocked
+- kaggle_submission_absent
+- claim_boundary_preserved
+
+## Decision results
+
+- decision_approval_gate_source_ready_v1 / area=source_binding / operation=verify_operator_approval_gate / passed=True
+- decision_required_declarations_present_v1 / area=operator_declarations / operation=verify_required_declaration_count / passed=True
+- decision_no_declarations_accepted_v1 / area=operator_declarations / operation=verify_no_accepted_declarations / passed=True
+- decision_explicit_operator_approval_absent_v1 / area=operator_approval / operation=verify_explicit_approval_absent / passed=True
+- decision_operator_approval_not_granted_v1 / area=approval_gate / operation=verify_operator_approval_not_granted / passed=True
+- decision_real_submission_not_authorized_v1 / area=decision / operation=verify_real_submission_not_authorized / passed=True
+- decision_manual_upload_blocked_v1 / area=upload_gate / operation=verify_manual_upload_blocked / passed=True
+- decision_no_auth_no_upload_v1 / area=boundary / operation=verify_no_auth_no_upload / passed=True
+- decision_no_score_or_leaderboard_claim_v1 / area=claim_boundary / operation=verify_no_score_or_leaderboard_claim / passed=True
+- decision_next_stage_valid_v1 / area=next_stage / operation=verify_blocked_closure_next / passed=True
+
+## Decision
+
+Real submission is not authorized. The operator approval gate is ready but closed, no declarations have been accepted, and no explicit operator approval phrase has been received.
+
+## Markers
+
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_DECISION_RECORD_V1_READY=true
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_DECISION_RECORD_V1_VALID=true
+ARC_AGI3_MILESTONE_9_DECISION_RECORD_READY=true
+ARC_AGI3_MILESTONE_9_DECISION_MODE=MILESTONE_9_REAL_SUBMISSION_DECISION_RECORD_V1_LOCAL_ONLY
+ARC_AGI3_MILESTONE_9_DECISION_VERDICT=REAL_SUBMISSION_DECISION_RECORDED_NOT_AUTHORIZED_SUBMISSION_BLOCKED
+ARC_AGI3_MILESTONE_9_BASELINE_OPERATOR_APPROVAL_GATE_COMMIT=649509b
+ARC_AGI3_MILESTONE_9_DECISION_CHECK_COUNT=16
+ARC_AGI3_MILESTONE_9_DECISION_CASE_COUNT=10
+ARC_AGI3_MILESTONE_9_DECISION_PASS_COUNT=10
+ARC_AGI3_MILESTONE_9_DECISION_FAILURE_COUNT=0
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_DECISION_RECORD_CREATED=true
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_DECISION=NOT_AUTHORIZED
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_DECISION_REASON=OPERATOR_APPROVAL_NOT_GRANTED
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_DECISION_VERDICT=SUBMISSION_BLOCKED_OPERATOR_APPROVAL_ABSENT
+ARC_AGI3_MILESTONE_9_REQUIRED_DECLARATION_COUNT=8
+ARC_AGI3_MILESTONE_9_PROVIDED_DECLARATION_COUNT=0
+ARC_AGI3_MILESTONE_9_ACCEPTED_DECLARATION_COUNT=0
+ARC_AGI3_MILESTONE_9_EXPLICIT_OPERATOR_APPROVAL_PHRASE_RECEIVED=false
+ARC_AGI3_MILESTONE_9_NEXT_STAGE=MILESTONE_9_TASK_7_REAL_SUBMISSION_BLOCKED_CLOSURE_V1
+ARC_AGI3_MILESTONE_9_OPERATOR_APPROVAL_REQUIRED=true
+ARC_AGI3_MILESTONE_9_OPERATOR_APPROVAL_GRANTED=false
+ARC_AGI3_MILESTONE_9_OPERATOR_APPROVAL_RECEIVED=false
+ARC_AGI3_MILESTONE_9_MANUAL_UPLOAD_ALLOWED=false
+ARC_AGI3_MILESTONE_9_KAGGLE_AUTHENTICATION_ALLOWED=false
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_CREATED=false
+ARC_AGI3_MILESTONE_9_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_9_READY_FOR_REAL_KAGGLE_SUBMISSION=false
+ARC_AGI3_MILESTONE_9_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_9_UPLOAD_PERFORMED=false
+ARC_AGI3_MILESTONE_9_KAGGLE_AUTHENTICATION_PERFORMED=false
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
