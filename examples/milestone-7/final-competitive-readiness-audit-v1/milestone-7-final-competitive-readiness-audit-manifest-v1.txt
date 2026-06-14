@@ -1,0 +1,56 @@
+ARC AGI3 MILESTONE 7 FINAL COMPETITIVE READINESS AUDIT MANIFEST v1
+audit_id=MILESTONE-7-FINAL-READINESS-AUDIT-64E918A0106F
+signature=64E918A0106F92FF
+status=MILESTONE_7_FINAL_COMPETITIVE_READINESS_AUDIT_READY
+baseline_commit=04b8f1a Add ARC AGI3 submission candidate rebuild
+audit_mode=FINAL_COMPETITIVE_READINESS_AUDIT_ONLY_NO_UPLOAD
+audit_verdict=FINAL_COMPETITIVE_READINESS_AUDIT_COMPLETE_REAL_SUBMISSION_NOT_READY_SOLVER_ITERATION_REQUIRED
+next_allowed_stage=MILESTONE_8_COMPETITIVE_SOLVER_ITERATION_V2
+source_count=5
+rebuild_component_count=5
+candidate_file_count=4
+audit_chain_count=7
+local_measurement_count=6
+regression_pass_count=6
+regression_failure_count=0
+readiness_dimension_count=7
+blocker_count=6
+pass_dimension_count=6
+blocked_dimension_count=1
+audit_gate_count=57
+passed_gate_count=57
+audit_issue_count=0
+audit_ready=True
+audit_locked=True
+real_submission_readiness=BLOCKED
+real_submission_decision=NOT_READY
+solver_iteration_required=True
+real_submission_created=False
+real_submission_allowed=False
+ready_for_real_kaggle_submission=False
+kaggle_submission_sent=False
+upload_performed=False
+kaggle_authentication_performed=False
+manual_submission_allowed=False
+manual_upload_performed=False
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+READINESS_DIMENSIONS
+chain_integrity_ready_v1 category=CHAIN_INTEGRITY status=PASS blocking=False
+candidate_integrity_ready_v1 category=LOCAL_CANDIDATE_INTEGRITY status=PASS blocking=False
+regression_integrity_ready_v1 category=REGRESSION_INTEGRITY status=PASS blocking=False
+boundary_integrity_ready_v1 category=BOUNDARY_INTEGRITY status=PASS blocking=False
+score_claim_integrity_ready_v1 category=SCORE_CLAIM_INTEGRITY status=PASS blocking=False
+submission_package_integrity_ready_v1 category=SUBMISSION_PACKAGE_INTEGRITY status=PASS blocking=False
+real_competitive_readiness_blocked_v1 category=REAL_COMPETITIVE_READINESS status=BLOCKED blocking=True
+
+REAL_SUBMISSION_BLOCKERS
+no_real_kaggle_submission_created_v1 active=True reason=The rebuilt candidate is local-only and no real submission artifact was created.
+no_kaggle_authentication_performed_v1 active=True reason=Kaggle authentication was intentionally not performed.
+no_upload_performed_v1 active=True reason=No upload was performed and no upload is allowed in this milestone gate.
+no_numeric_competitive_score_claim_v1 active=True reason=There is no numeric Kaggle score claim or public leaderboard improvement claim.
+solver_iteration_still_required_v1 active=True reason=The chain improved evidence and local guards but does not prove competitive performance.
+operator_final_submission_decision_absent_v1 active=True reason=No operator-authorized final submission decision exists.
