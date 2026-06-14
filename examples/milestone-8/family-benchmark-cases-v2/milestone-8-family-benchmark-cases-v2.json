@@ -1,0 +1,798 @@
+{
+  "baseline_commit": "4a93654 Add ARC AGI3 competitive solver kernel",
+  "benchmark_case_count": 8,
+  "benchmark_cases": [
+    {
+      "case_id": "family_benchmark_color_palette_transfer_v2",
+      "expected_status": "PASS",
+      "family": "color_mapping",
+      "operation": "infer_color_mapping",
+      "priority": "P0"
+    },
+    {
+      "case_id": "family_benchmark_color_background_guard_v2",
+      "expected_status": "PASS",
+      "family": "color_mapping",
+      "operation": "apply_color_mapping",
+      "priority": "P0"
+    },
+    {
+      "case_id": "family_benchmark_object_component_detection_v2",
+      "expected_status": "PASS",
+      "family": "object_model",
+      "operation": "connected_components",
+      "priority": "P0"
+    },
+    {
+      "case_id": "family_benchmark_object_translate_right_v2",
+      "expected_status": "PASS",
+      "family": "object_model",
+      "operation": "translate_component_right",
+      "priority": "P0"
+    },
+    {
+      "case_id": "family_benchmark_object_translate_down_v2",
+      "expected_status": "PASS",
+      "family": "object_model",
+      "operation": "translate_component_down",
+      "priority": "P0"
+    },
+    {
+      "case_id": "family_benchmark_shape_reflect_horizontal_v2",
+      "expected_status": "PASS",
+      "family": "shape_symmetry",
+      "operation": "reflect_grid_horizontal",
+      "priority": "P0"
+    },
+    {
+      "case_id": "family_benchmark_shape_reflect_vertical_v2",
+      "expected_status": "PASS",
+      "family": "shape_symmetry",
+      "operation": "reflect_grid_vertical",
+      "priority": "P0"
+    },
+    {
+      "case_id": "family_benchmark_cross_family_candidate_ranking_v2",
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "generate_kernel_candidates",
+      "priority": "P0"
+    }
+  ],
+  "benchmark_failure_count": 0,
+  "benchmark_families": [
+    "color_mapping",
+    "object_model",
+    "shape_symmetry",
+    "cross_family_composition"
+  ],
+  "benchmark_gate_count": 50,
+  "benchmark_gates": [
+    {
+      "name": "kernel_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_next_stage_matches_task_3",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_gate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kernel_issue_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "family_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "benchmark_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "evidence_field_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_guard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_priority_p0",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_have_expected_status_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "color_palette_transfer_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "color_background_guard_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "object_component_detection_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "object_translate_right_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "object_translate_down_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "shape_reflect_horizontal_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "shape_reflect_vertical_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "cross_family_candidate_ranking_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_family_benchmarks_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "family_coverage_color_mapping",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "family_coverage_object_model",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "family_coverage_shape_symmetry",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "family_coverage_cross_family_composition",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_performed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_leaderboard_claim_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "benchmark_id": "MILESTONE-8-FAMILY-BENCHMARK-6A27C0895229",
+  "benchmark_index": {
+    "baseline_commit": "4a93654 Add ARC AGI3 competitive solver kernel",
+    "benchmark_case_count": 8,
+    "benchmark_failure_count": 0,
+    "benchmark_locked": true,
+    "benchmark_mode": "FAMILY_BENCHMARK_CASES_V2_LOCAL_ONLY",
+    "benchmark_pass_count": 8,
+    "benchmark_ready": true,
+    "benchmark_scope": "MEASURE_KERNEL_V2_ON_LOCAL_FAMILY_CASES",
+    "benchmark_verdict": "FAMILY_BENCHMARK_CASES_V2_READY_FOR_CANDIDATE_GENERATOR_RUNTIME_UPGRADE",
+    "boundary_control_count": 9,
+    "depends_on_kernel": "MILESTONE-8-SOLVER-KERNEL-7168314DD60D",
+    "evidence_field_count": 8,
+    "external_api_dependency": false,
+    "family_count": 4,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #8",
+    "next_allowed_stage": "MILESTONE_8_TASK_4_CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2",
+    "private_core_exposure": false,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "regression_guard_count": 8,
+    "task": "Task 3",
+    "upload_performed": false
+  },
+  "benchmark_issue_count": 0,
+  "benchmark_issues": [
+    {
+      "active": false,
+      "name": "kernel_artifact_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_next_stage_mismatch",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_gate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kernel_issue_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_not_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "benchmark_failure_count_nonzero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "evidence_field_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_guard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "case_priority_not_p0",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "case_expected_status_not_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "color_palette_transfer_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "color_background_guard_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "object_component_detection_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "object_translate_right_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "object_translate_down_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "shape_reflect_horizontal_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "shape_reflect_vertical_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "cross_family_candidate_ranking_failed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_benchmark_failure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_coverage_color_mapping_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_coverage_object_model_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_coverage_shape_symmetry_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "family_coverage_cross_family_composition_missing",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ready_for_real_kaggle_submission_true",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_already_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_performed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "api_keys_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_leaderboard_claim_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only_false",
+      "severity": "BLOCKING"
+    }
+  ],
+  "benchmark_locked": true,
+  "benchmark_mode": "FAMILY_BENCHMARK_CASES_V2_LOCAL_ONLY",
+  "benchmark_pass_count": 8,
+  "benchmark_ready": true,
+  "benchmark_record": {
+    "baseline_kernel_id": "MILESTONE-8-SOLVER-KERNEL-7168314DD60D",
+    "benchmark_case_count": 8,
+    "benchmark_failure_count": 0,
+    "benchmark_locked": true,
+    "benchmark_mode": "FAMILY_BENCHMARK_CASES_V2_LOCAL_ONLY",
+    "benchmark_pass_count": 8,
+    "benchmark_ready": true,
+    "benchmark_scope": "MEASURE_KERNEL_V2_ON_LOCAL_FAMILY_CASES",
+    "benchmark_verdict": "FAMILY_BENCHMARK_CASES_V2_READY_FOR_CANDIDATE_GENERATOR_RUNTIME_UPGRADE",
+    "boundary_control_count": 9,
+    "contains_api_keys": false,
+    "evidence_field_count": 8,
+    "external_api_dependency": false,
+    "family_count": 4,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "kernel_next_stage": "MILESTONE_8_TASK_3_FAMILY_BENCHMARK_CASES_V2",
+    "kernel_ready": true,
+    "legal_certification": false,
+    "next_allowed_stage": "MILESTONE_8_TASK_4_CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2",
+    "private_core_exposure": false,
+    "public_leaderboard_claim_absent": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "real_submission_created": false,
+    "regression_guard_count": 8,
+    "score_claim_absent": true,
+    "upload_performed": false
+  },
+  "benchmark_results": [
+    {
+      "actual_status": "PASS",
+      "case_id": "family_benchmark_color_palette_transfer_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "color_mapping",
+      "operation": "infer_color_mapping",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "family_benchmark_color_background_guard_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "color_mapping",
+      "operation": "apply_color_mapping",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "family_benchmark_object_component_detection_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "object_model",
+      "operation": "connected_components",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "family_benchmark_object_translate_right_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "object_model",
+      "operation": "translate_component_right",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "family_benchmark_object_translate_down_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "object_model",
+      "operation": "translate_component_down",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "family_benchmark_shape_reflect_horizontal_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "shape_symmetry",
+      "operation": "reflect_grid_horizontal",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "family_benchmark_shape_reflect_vertical_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "shape_symmetry",
+      "operation": "reflect_grid_vertical",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "case_id": "family_benchmark_cross_family_candidate_ranking_v2",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "family": "cross_family_composition",
+      "operation": "generate_kernel_candidates",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "benchmark_scope": "MEASURE_KERNEL_V2_ON_LOCAL_FAMILY_CASES",
+  "benchmark_verdict": "FAMILY_BENCHMARK_CASES_V2_READY_FOR_CANDIDATE_GENERATOR_RUNTIME_UPGRADE",
+  "boundary_control_count": 9,
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "evidence_field_count": 8,
+  "evidence_fields": [
+    "case_id",
+    "family",
+    "operation",
+    "priority",
+    "passed",
+    "evidence_score",
+    "expected_status",
+    "actual_status"
+  ],
+  "family_count": 4,
+  "family_coverage": [
+    "color_mapping",
+    "cross_family_composition",
+    "object_model",
+    "shape_symmetry"
+  ],
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "kernel_source": {
+    "kernel_id": "MILESTONE-8-SOLVER-KERNEL-7168314DD60D",
+    "path": "examples/milestone-8/competitive-solver-kernel-v2/milestone-8-competitive-solver-kernel-v2.json",
+    "present": true,
+    "sha256": "dced130547664be8fddb6b170b432b895873b03c58a2140140c5224a5076bee8",
+    "sha256_16": "DCED130547664BE8",
+    "status": "MILESTONE_8_COMPETITIVE_SOLVER_KERNEL_V2_READY"
+  },
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_8_family_benchmark_cases_v2"
+  },
+  "milestone": "Milestone #8",
+  "next_allowed_stage": "MILESTONE_8_TASK_4_CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2",
+  "passed_gate_count": 50,
+  "public_leaderboard_claim_absent": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "real_submission_created": false,
+  "regression_guard_count": 8,
+  "regression_guards": [
+    "guard_color_palette_transfer_exact",
+    "guard_background_preservation_exact",
+    "guard_component_detection_exact",
+    "guard_translate_right_in_bounds",
+    "guard_translate_down_in_bounds",
+    "guard_reflect_horizontal_exact",
+    "guard_reflect_vertical_exact",
+    "guard_ranker_nonempty_ordered"
+  ],
+  "score_claim_absent": true,
+  "signature": "6A27C0895229AD6E",
+  "status": "MILESTONE_8_FAMILY_BENCHMARK_CASES_V2_READY",
+  "task": "Task 3",
+  "title": "Family Benchmark Cases v2",
+  "upload_performed": false,
+  "warning_count": 0
+}
