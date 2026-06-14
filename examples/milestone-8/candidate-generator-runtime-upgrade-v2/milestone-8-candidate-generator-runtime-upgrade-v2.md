@@ -1,0 +1,61 @@
+# ARC AGI3 Milestone #8 - Candidate Generator Runtime Upgrade v2
+
+- status: MILESTONE_8_CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2_READY
+- runtime_id: MILESTONE-8-CANDIDATE-RUNTIME-5BE32CCFE785
+- signature: 5BE32CCFE785B70E
+- baseline_commit: 1df6919 Add ARC AGI3 family benchmark cases
+- runtime_mode: CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2_LOCAL_ONLY
+- runtime_scope: CONNECT_KERNEL_V2_TO_RUNTIME_CANDIDATE_GENERATION
+- runtime_verdict: CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2_READY_FOR_RANKER_RUNTIME_UPGRADE
+- next_allowed_stage: MILESTONE_8_TASK_5_RANKER_RUNTIME_UPGRADE_V2
+- family_count: 4
+- runtime_profile_count: 4
+- generator_operation_count: 8
+- runtime_case_count: 8
+- runtime_pass_count: 8
+- runtime_failure_count: 0
+- sample_candidate_count: 4
+- runtime_gate_count: 58
+- passed_gate_count: 58
+- runtime_issue_count: 0
+- runtime_ready: True
+
+## Runtime results
+
+- runtime_upgrade_color_training_pair_candidate_v2 / family=color_mapping / operation=runtime_color_mapping_from_training_pair / passed=True
+- runtime_upgrade_color_background_guard_candidate_v2 / family=color_mapping / operation=runtime_color_mapping_non_background_shift / passed=True
+- runtime_upgrade_object_translate_right_candidate_v2 / family=object_model / operation=runtime_object_translate_largest_right / passed=True
+- runtime_upgrade_object_translate_down_candidate_v2 / family=object_model / operation=runtime_object_translate_largest_down / passed=True
+- runtime_upgrade_shape_reflect_horizontal_candidate_v2 / family=shape_symmetry / operation=runtime_shape_reflect_horizontal / passed=True
+- runtime_upgrade_shape_reflect_vertical_candidate_v2 / family=shape_symmetry / operation=runtime_shape_reflect_vertical / passed=True
+- runtime_upgrade_cross_family_merge_deduplicate_v2 / family=cross_family_composition / operation=runtime_cross_family_merge_deduplicate / passed=True
+- runtime_upgrade_cross_family_rank_candidates_v2 / family=cross_family_composition / operation=runtime_cross_family_rank_candidates / passed=True
+
+## Decision
+
+Candidate Generator Runtime Upgrade v2 is ready for ranker runtime upgrade.
+
+## Markers
+
+ARC_AGI3_MILESTONE_8_CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2_READY=true
+ARC_AGI3_MILESTONE_8_CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2_VALID=true
+ARC_AGI3_MILESTONE_8_RUNTIME_MODE=CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2_LOCAL_ONLY
+ARC_AGI3_MILESTONE_8_RUNTIME_VERDICT=CANDIDATE_GENERATOR_RUNTIME_UPGRADE_V2_READY_FOR_RANKER_RUNTIME_UPGRADE
+ARC_AGI3_MILESTONE_8_BASELINE_BENCHMARK_COMMIT=1df6919
+ARC_AGI3_MILESTONE_8_FAMILY_COUNT=4
+ARC_AGI3_MILESTONE_8_RUNTIME_PROFILE_COUNT=4
+ARC_AGI3_MILESTONE_8_GENERATOR_OPERATION_COUNT=8
+ARC_AGI3_MILESTONE_8_RUNTIME_CASE_COUNT=8
+ARC_AGI3_MILESTONE_8_RUNTIME_PASS_COUNT=8
+ARC_AGI3_MILESTONE_8_RUNTIME_FAILURE_COUNT=0
+ARC_AGI3_MILESTONE_8_SAMPLE_CANDIDATE_COUNT=4
+ARC_AGI3_MILESTONE_8_NEXT_STAGE=MILESTONE_8_TASK_5_RANKER_RUNTIME_UPGRADE_V2
+ARC_AGI3_MILESTONE_8_REAL_SUBMISSION_CREATED=false
+ARC_AGI3_MILESTONE_8_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_8_READY_FOR_REAL_KAGGLE_SUBMISSION=false
+ARC_AGI3_MILESTONE_8_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_8_UPLOAD_PERFORMED=false
+ARC_AGI3_MILESTONE_8_KAGGLE_AUTHENTICATION_PERFORMED=false
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false
