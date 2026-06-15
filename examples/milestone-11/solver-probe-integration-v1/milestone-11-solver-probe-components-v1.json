@@ -1,0 +1,27 @@
+[
+  {
+    "probe_id": "world_model_probe_v1",
+    "purpose": "Measure local object-state and transition consistency.",
+    "target_layer": "world_model"
+  },
+  {
+    "probe_id": "goal_inference_probe_v1",
+    "purpose": "Measure local goal inference from diagnostic fixture state.",
+    "target_layer": "goal_inference"
+  },
+  {
+    "probe_id": "planner_probe_v1",
+    "purpose": "Measure local plan progress and loop recovery.",
+    "target_layer": "planner"
+  },
+  {
+    "probe_id": "transition_verifier_probe_v1",
+    "purpose": "Measure predicted versus observed transition agreement.",
+    "target_layer": "verifier"
+  },
+  {
+    "probe_id": "action_policy_probe_v1",
+    "purpose": "Measure local action validity and non-submission policy safety.",
+    "target_layer": "action_policy"
+  }
+]

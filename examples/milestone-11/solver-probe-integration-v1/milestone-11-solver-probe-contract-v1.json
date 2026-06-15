@@ -1,0 +1,50 @@
+{
+  "contract_id": "M11-TASK6-SOLVER-PROBE-CONTRACT-v1",
+  "diagnostic_only": true,
+  "external_solver_dependency": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "official_score_claim_allowed": false,
+  "private_score_claim_allowed": false,
+  "probe_components": [
+    {
+      "probe_id": "world_model_probe_v1",
+      "purpose": "Measure local object-state and transition consistency.",
+      "target_layer": "world_model"
+    },
+    {
+      "probe_id": "goal_inference_probe_v1",
+      "purpose": "Measure local goal inference from diagnostic fixture state.",
+      "target_layer": "goal_inference"
+    },
+    {
+      "probe_id": "planner_probe_v1",
+      "purpose": "Measure local plan progress and loop recovery.",
+      "target_layer": "planner"
+    },
+    {
+      "probe_id": "transition_verifier_probe_v1",
+      "purpose": "Measure predicted versus observed transition agreement.",
+      "target_layer": "verifier"
+    },
+    {
+      "probe_id": "action_policy_probe_v1",
+      "purpose": "Measure local action validity and non-submission policy safety.",
+      "target_layer": "action_policy"
+    }
+  ],
+  "public_score_claim_allowed": false,
+  "ranker_runtime_modified": false,
+  "required_result_fields": [
+    "probe_result_id",
+    "fixture_id",
+    "episode_id",
+    "probe_id",
+    "target_layer",
+    "diagnostic_probe_passed",
+    "diagnostic_only",
+    "kaggle_score_semantics",
+    "score_claim_allowed"
+  ],
+  "runtime_solver_modified": false,
+  "synthetic_fixture_score_claim_allowed": false
+}

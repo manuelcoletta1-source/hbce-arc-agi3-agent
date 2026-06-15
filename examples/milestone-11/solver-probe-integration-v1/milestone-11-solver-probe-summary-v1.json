@@ -1,0 +1,14 @@
+{
+  "diagnostic_only": true,
+  "episode_count": 6,
+  "fixture_count": 6,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "official_score_claim_allowed": false,
+  "private_score_claim_allowed": false,
+  "probe_component_count": 5,
+  "probe_failure_count": 0,
+  "probe_pass_count": 30,
+  "probe_result_count": 30,
+  "probe_summary_id": "M11-TASK6-SOLVER-PROBE-SUMMARY-v1",
+  "public_score_claim_allowed": false
+}

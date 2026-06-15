@@ -1,0 +1,586 @@
+[
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_object_persistence_fixture_001",
+    "evidence": {
+      "final_signature": "D1C87FB5BA49",
+      "goal_signature": "D1C87FB5BA49",
+      "initial_signature": "FF696CA08FAC"
+    },
+    "fixture_id": "m11_object_persistence_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "world_model_probe_v1",
+    "probe_result_id": "PROBE-1C11429D26DD",
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_object_persistence_fixture_001",
+    "evidence": {
+      "goal_reached": true
+    },
+    "fixture_id": "m11_object_persistence_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "goal_inference_probe_v1",
+    "probe_result_id": "PROBE-0FA8CCDE9988",
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_object_persistence_fixture_001",
+    "evidence": {
+      "actions": [
+        "RIGHT",
+        "DOWN"
+      ],
+      "goal_reached": true,
+      "step_count": 2
+    },
+    "fixture_id": "m11_object_persistence_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "planner_probe_v1",
+    "probe_result_id": "PROBE-99609B615457",
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_object_persistence_fixture_001",
+    "evidence": {
+      "verifier_match_count": 2
+    },
+    "fixture_id": "m11_object_persistence_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "transition_verifier_probe_v1",
+    "probe_result_id": "PROBE-7287E348F50E",
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_object_persistence_fixture_001",
+    "evidence": {
+      "actions": [
+        "RIGHT",
+        "DOWN"
+      ],
+      "allowed_actions": [
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "STAY",
+        "UP",
+        "VERIFY"
+      ]
+    },
+    "fixture_id": "m11_object_persistence_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "action_policy_probe_v1",
+    "probe_result_id": "PROBE-AF36354585BA",
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_color_rule_fixture_001",
+    "evidence": {
+      "final_signature": "DF2170E8D37C",
+      "goal_signature": "DF2170E8D37C",
+      "initial_signature": "CC981F749681"
+    },
+    "fixture_id": "m11_color_rule_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "world_model_probe_v1",
+    "probe_result_id": "PROBE-E1F818843625",
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_color_rule_fixture_001",
+    "evidence": {
+      "goal_reached": true
+    },
+    "fixture_id": "m11_color_rule_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "goal_inference_probe_v1",
+    "probe_result_id": "PROBE-C22BF554AFCB",
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_color_rule_fixture_001",
+    "evidence": {
+      "actions": [
+        "VERIFY"
+      ],
+      "goal_reached": true,
+      "step_count": 1
+    },
+    "fixture_id": "m11_color_rule_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "planner_probe_v1",
+    "probe_result_id": "PROBE-E50855ABDDFD",
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_color_rule_fixture_001",
+    "evidence": {
+      "verifier_match_count": 1
+    },
+    "fixture_id": "m11_color_rule_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "transition_verifier_probe_v1",
+    "probe_result_id": "PROBE-D2517052AF79",
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_color_rule_fixture_001",
+    "evidence": {
+      "actions": [
+        "VERIFY"
+      ],
+      "allowed_actions": [
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "STAY",
+        "UP",
+        "VERIFY"
+      ]
+    },
+    "fixture_id": "m11_color_rule_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "action_policy_probe_v1",
+    "probe_result_id": "PROBE-96FF69AA2DB5",
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_movement_transition_fixture_001",
+    "evidence": {
+      "final_signature": "4EED28E6CBA2",
+      "goal_signature": "4EED28E6CBA2",
+      "initial_signature": "B3BADAD02FEB"
+    },
+    "fixture_id": "m11_movement_transition_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "world_model_probe_v1",
+    "probe_result_id": "PROBE-94DE8C905A8C",
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_movement_transition_fixture_001",
+    "evidence": {
+      "goal_reached": true
+    },
+    "fixture_id": "m11_movement_transition_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "goal_inference_probe_v1",
+    "probe_result_id": "PROBE-A07A044D97BB",
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_movement_transition_fixture_001",
+    "evidence": {
+      "actions": [
+        "RIGHT"
+      ],
+      "goal_reached": true,
+      "step_count": 1
+    },
+    "fixture_id": "m11_movement_transition_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "planner_probe_v1",
+    "probe_result_id": "PROBE-16CD7E9BB08C",
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_movement_transition_fixture_001",
+    "evidence": {
+      "verifier_match_count": 1
+    },
+    "fixture_id": "m11_movement_transition_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "transition_verifier_probe_v1",
+    "probe_result_id": "PROBE-09E3BFFAEDCB",
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_movement_transition_fixture_001",
+    "evidence": {
+      "actions": [
+        "RIGHT"
+      ],
+      "allowed_actions": [
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "STAY",
+        "UP",
+        "VERIFY"
+      ]
+    },
+    "fixture_id": "m11_movement_transition_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "action_policy_probe_v1",
+    "probe_result_id": "PROBE-D2BF0457A3F1",
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_goal_inference_fixture_001",
+    "evidence": {
+      "final_signature": "E7A8A5D53A4B",
+      "goal_signature": "E7A8A5D53A4B",
+      "initial_signature": "B02C869A9F39"
+    },
+    "fixture_id": "m11_goal_inference_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "world_model_probe_v1",
+    "probe_result_id": "PROBE-47A6F850AE74",
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_goal_inference_fixture_001",
+    "evidence": {
+      "goal_reached": true
+    },
+    "fixture_id": "m11_goal_inference_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "goal_inference_probe_v1",
+    "probe_result_id": "PROBE-239555604A93",
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_goal_inference_fixture_001",
+    "evidence": {
+      "actions": [
+        "RIGHT",
+        "DOWN"
+      ],
+      "goal_reached": true,
+      "step_count": 2
+    },
+    "fixture_id": "m11_goal_inference_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "planner_probe_v1",
+    "probe_result_id": "PROBE-8D8A031B4F2F",
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_goal_inference_fixture_001",
+    "evidence": {
+      "verifier_match_count": 2
+    },
+    "fixture_id": "m11_goal_inference_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "transition_verifier_probe_v1",
+    "probe_result_id": "PROBE-150807EDF909",
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_goal_inference_fixture_001",
+    "evidence": {
+      "actions": [
+        "RIGHT",
+        "DOWN"
+      ],
+      "allowed_actions": [
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "STAY",
+        "UP",
+        "VERIFY"
+      ]
+    },
+    "fixture_id": "m11_goal_inference_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "action_policy_probe_v1",
+    "probe_result_id": "PROBE-664942427ECF",
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_planner_loop_fixture_001",
+    "evidence": {
+      "final_signature": "103FD72FFF2B",
+      "goal_signature": "103FD72FFF2B",
+      "initial_signature": "75F737E96A79"
+    },
+    "fixture_id": "m11_planner_loop_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "world_model_probe_v1",
+    "probe_result_id": "PROBE-BFAC551E5D17",
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_planner_loop_fixture_001",
+    "evidence": {
+      "goal_reached": true
+    },
+    "fixture_id": "m11_planner_loop_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "goal_inference_probe_v1",
+    "probe_result_id": "PROBE-C9860103D4D5",
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_planner_loop_fixture_001",
+    "evidence": {
+      "actions": [
+        "LEFT",
+        "RIGHT",
+        "RIGHT"
+      ],
+      "goal_reached": true,
+      "step_count": 3
+    },
+    "fixture_id": "m11_planner_loop_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "planner_probe_v1",
+    "probe_result_id": "PROBE-667A23E2BD75",
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_planner_loop_fixture_001",
+    "evidence": {
+      "verifier_match_count": 3
+    },
+    "fixture_id": "m11_planner_loop_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "transition_verifier_probe_v1",
+    "probe_result_id": "PROBE-86DB06566A82",
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_planner_loop_fixture_001",
+    "evidence": {
+      "actions": [
+        "LEFT",
+        "RIGHT",
+        "RIGHT"
+      ],
+      "allowed_actions": [
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "STAY",
+        "UP",
+        "VERIFY"
+      ]
+    },
+    "fixture_id": "m11_planner_loop_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "action_policy_probe_v1",
+    "probe_result_id": "PROBE-9AC2CF3CBE3F",
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+    "evidence": {
+      "final_signature": "4ED79D0931A3",
+      "goal_signature": "4ED79D0931A3",
+      "initial_signature": "1870A2977970"
+    },
+    "fixture_id": "m11_verifier_mismatch_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "world_model_probe_v1",
+    "probe_result_id": "PROBE-E6CE47570007",
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+    "evidence": {
+      "goal_reached": true
+    },
+    "fixture_id": "m11_verifier_mismatch_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "goal_inference_probe_v1",
+    "probe_result_id": "PROBE-7E4466A34F39",
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+    "evidence": {
+      "actions": [
+        "LEFT"
+      ],
+      "goal_reached": true,
+      "step_count": 1
+    },
+    "fixture_id": "m11_verifier_mismatch_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "planner_probe_v1",
+    "probe_result_id": "PROBE-C53CCD14136A",
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+    "evidence": {
+      "verifier_match_count": 1
+    },
+    "fixture_id": "m11_verifier_mismatch_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "transition_verifier_probe_v1",
+    "probe_result_id": "PROBE-32402C7E80B9",
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "diagnostic_only": true,
+    "diagnostic_probe_passed": true,
+    "diagnostic_probe_score": 100,
+    "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+    "evidence": {
+      "actions": [
+        "LEFT"
+      ],
+      "allowed_actions": [
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "STAY",
+        "UP",
+        "VERIFY"
+      ]
+    },
+    "fixture_id": "m11_verifier_mismatch_fixture_001",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "probe_id": "action_policy_probe_v1",
+    "probe_result_id": "PROBE-142CD1F063B5",
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  }
+]

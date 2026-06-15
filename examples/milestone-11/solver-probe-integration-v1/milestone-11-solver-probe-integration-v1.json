@@ -1,0 +1,1971 @@
+{
+  "baseline_commit": "ac663d8 Add ARC AGI3 local diagnostic fixture harness",
+  "diagnostic_only": true,
+  "external_solver_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "kaggle_authentication_allowed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "layer_report_count": 5,
+  "local_solver_diagnostic_measured": true,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_11_solver_probe_integration_v1"
+  },
+  "milestone": "Milestone #11",
+  "next_stage": "MILESTONE_11_TASK_7_LOCAL_SOLVER_PROBE_REPORT_V1",
+  "official_score_claim_allowed": false,
+  "passed_gate_count": 19,
+  "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+  "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+  "private_score_claim_allowed": false,
+  "private_score_claimed": false,
+  "probe_case_count": 11,
+  "probe_case_failure_count": 0,
+  "probe_case_pass_count": 11,
+  "probe_case_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m11_task6_source_task5_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_task_5_local_diagnostic_harness_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "probe_components",
+      "case_id": "m11_task6_probe_components_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_solver_probe_components",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "probe_results",
+      "case_id": "m11_task6_probe_results_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_probe_results",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "world_model",
+      "case_id": "m11_task6_world_model_probe_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_world_model_probe",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "goal_inference",
+      "case_id": "m11_task6_goal_inference_probe_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_goal_inference_probe",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "planner",
+      "case_id": "m11_task6_planner_probe_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_planner_probe",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "verifier",
+      "case_id": "m11_task6_transition_verifier_probe_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_transition_verifier_probe",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "action_policy",
+      "case_id": "m11_task6_action_policy_probe_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_action_policy_probe",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "m11_task6_score_and_submission_boundary_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_score_no_submission",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m11_task6_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_stage",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "metadata",
+      "case_id": "m11_task6_metadata_safe_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_public_safe_metadata",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "probe_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m11_task6_source_task5_ready_v1",
+      "operation": "verify_task_5_local_diagnostic_harness_source"
+    },
+    {
+      "area": "probe_components",
+      "case_id": "m11_task6_probe_components_ready_v1",
+      "operation": "verify_solver_probe_components"
+    },
+    {
+      "area": "probe_results",
+      "case_id": "m11_task6_probe_results_ready_v1",
+      "operation": "verify_probe_results"
+    },
+    {
+      "area": "world_model",
+      "case_id": "m11_task6_world_model_probe_ready_v1",
+      "operation": "verify_world_model_probe"
+    },
+    {
+      "area": "goal_inference",
+      "case_id": "m11_task6_goal_inference_probe_ready_v1",
+      "operation": "verify_goal_inference_probe"
+    },
+    {
+      "area": "planner",
+      "case_id": "m11_task6_planner_probe_ready_v1",
+      "operation": "verify_planner_probe"
+    },
+    {
+      "area": "verifier",
+      "case_id": "m11_task6_transition_verifier_probe_ready_v1",
+      "operation": "verify_transition_verifier_probe"
+    },
+    {
+      "area": "action_policy",
+      "case_id": "m11_task6_action_policy_probe_ready_v1",
+      "operation": "verify_action_policy_probe"
+    },
+    {
+      "area": "boundary",
+      "case_id": "m11_task6_score_and_submission_boundary_v1",
+      "operation": "verify_no_score_no_submission"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m11_task6_next_stage_valid_v1",
+      "operation": "verify_next_stage"
+    },
+    {
+      "area": "metadata",
+      "case_id": "m11_task6_metadata_safe_v1",
+      "operation": "verify_public_safe_metadata"
+    }
+  ],
+  "probe_check_count": 49,
+  "probe_check_list": [
+    "task_5_artifact_exists",
+    "task_5_artifact_ready",
+    "task_5_validated",
+    "fixture_schema_created",
+    "fixture_count_valid",
+    "episode_count_valid",
+    "trace_record_count_valid",
+    "diagnostic_guard_active",
+    "diagnostic_only_source",
+    "probe_components_created",
+    "probe_component_count_valid",
+    "solver_probe_integration_created",
+    "probe_results_created",
+    "probe_result_count_valid",
+    "all_probe_results_diagnostic_only",
+    "all_probe_results_not_kaggle_score",
+    "all_probe_results_pass",
+    "world_model_probe_present",
+    "goal_inference_probe_present",
+    "planner_probe_present",
+    "transition_verifier_probe_present",
+    "action_policy_probe_present",
+    "local_solver_diagnostic_measured",
+    "official_score_claim_blocked",
+    "synthetic_fixture_score_claim_blocked",
+    "public_score_claim_blocked",
+    "private_score_claim_blocked",
+    "real_public_score_not_claimed",
+    "private_score_not_claimed",
+    "real_benchmark_score_absent",
+    "real_submission_candidate_absent",
+    "submission_json_absent",
+    "upload_package_absent",
+    "real_submission_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_submission_not_sent",
+    "runtime_solver_modified_false",
+    "external_solver_dependency_false",
+    "fail_closed_required",
+    "fail_closed_active",
+    "next_stage_valid",
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "probe_checks": {
+    "action_policy_probe_present": true,
+    "all_probe_results_diagnostic_only": true,
+    "all_probe_results_not_kaggle_score": true,
+    "all_probe_results_pass": true,
+    "contains_api_keys_false": true,
+    "deterministic": true,
+    "diagnostic_guard_active": true,
+    "diagnostic_only_source": true,
+    "dry_run_only": true,
+    "episode_count_valid": true,
+    "external_api_dependency_false": true,
+    "external_solver_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "fixture_count_valid": true,
+    "fixture_schema_created": true,
+    "goal_inference_probe_present": true,
+    "kaggle_authentication_blocked": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "local_solver_diagnostic_measured": true,
+    "next_stage_valid": true,
+    "official_score_claim_blocked": true,
+    "planner_probe_present": true,
+    "private_core_exposure_false": true,
+    "private_score_claim_blocked": true,
+    "private_score_not_claimed": true,
+    "probe_case_count_valid": true,
+    "probe_check_count_valid": true,
+    "probe_component_count_valid": true,
+    "probe_components_created": true,
+    "probe_result_count_valid": true,
+    "probe_results_created": true,
+    "public_safe": true,
+    "public_score_claim_blocked": true,
+    "real_benchmark_score_absent": true,
+    "real_public_score_not_claimed": true,
+    "real_submission_blocked": true,
+    "real_submission_candidate_absent": true,
+    "runtime_solver_modified_false": true,
+    "solver_probe_integration_created": true,
+    "submission_json_absent": true,
+    "synthetic_fixture_score_claim_blocked": true,
+    "task_5_artifact_exists": true,
+    "task_5_artifact_ready": true,
+    "task_5_validated": true,
+    "trace_record_count_valid": true,
+    "transition_verifier_probe_present": true,
+    "upload_package_absent": true,
+    "world_model_probe_present": true
+  },
+  "probe_component_count": 5,
+  "probe_components": [
+    {
+      "probe_id": "world_model_probe_v1",
+      "purpose": "Measure local object-state and transition consistency.",
+      "target_layer": "world_model"
+    },
+    {
+      "probe_id": "goal_inference_probe_v1",
+      "purpose": "Measure local goal inference from diagnostic fixture state.",
+      "target_layer": "goal_inference"
+    },
+    {
+      "probe_id": "planner_probe_v1",
+      "purpose": "Measure local plan progress and loop recovery.",
+      "target_layer": "planner"
+    },
+    {
+      "probe_id": "transition_verifier_probe_v1",
+      "purpose": "Measure predicted versus observed transition agreement.",
+      "target_layer": "verifier"
+    },
+    {
+      "probe_id": "action_policy_probe_v1",
+      "purpose": "Measure local action validity and non-submission policy safety.",
+      "target_layer": "action_policy"
+    }
+  ],
+  "probe_failure_count": 0,
+  "probe_gate_count": 19,
+  "probe_gates": [
+    {
+      "name": "task_5_artifact_exists",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_5_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_5_validated",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "probe_components_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "probe_results_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_probe_results_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_probe_results_diagnostic_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_probe_results_not_kaggle_score",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_solver_diagnostic_measured",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_boundary_preserved",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_boundary_preserved",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_solver_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "metadata_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "probe_index": {
+    "baseline_commit": "ac663d8 Add ARC AGI3 local diagnostic fixture harness",
+    "depends_on_task_5": "MILESTONE-11-LOCAL-DIAGNOSTIC-FIXTURE-HARNESS-1942BD56C0C2",
+    "diagnostic_only": true,
+    "external_api_dependency": false,
+    "external_solver_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "kaggle_submission_sent": false,
+    "layer_report_count": 5,
+    "legal_certification": false,
+    "milestone": "Milestone #11",
+    "next_stage": "MILESTONE_11_TASK_7_LOCAL_SOLVER_PROBE_REPORT_V1",
+    "official_score_claim_allowed": false,
+    "private_core_exposure": false,
+    "private_score_claimed": false,
+    "probe_component_count": 5,
+    "probe_failure_count": 0,
+    "probe_pass_count": 30,
+    "probe_result_count": 30,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "runtime_solver_modified": false,
+    "solver_probe_contract_created": true,
+    "solver_probe_integration_created": true,
+    "status": "MILESTONE_11_SOLVER_PROBE_INTEGRATION_V1_READY",
+    "task": "Task 6",
+    "task_mode": "MILESTONE_11_SOLVER_PROBE_INTEGRATION_V1_LOCAL_ONLY",
+    "task_scope": "LOCAL_DIAGNOSTIC_SOLVER_PROBE_INTEGRATION_NO_SCORE_NO_SUBMISSION",
+    "task_verdict": "SOLVER_PROBE_INTEGRATION_READY_FOR_LOCAL_PROBE_REPORT"
+  },
+  "probe_issue_count": 0,
+  "probe_issues": [
+    {
+      "active": false,
+      "name": "task_5_artifact_exists",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_5_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_5_invalidated",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "probe_components_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "probe_results_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_probe_results_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_probe_results_diagnostic_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_probe_results_not_kaggle_score",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_solver_diagnostic_measured",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_boundary_preserved",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_boundary_preserved",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_solver_modified_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_solver_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "metadata_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "failure_count_zero",
+      "severity": "BLOCKING"
+    }
+  ],
+  "probe_layer_report": [
+    {
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "pass_count": 6,
+      "probe_id": "world_model_probe_v1",
+      "result_count": 6,
+      "score_claim_allowed": false,
+      "target_layer": "world_model"
+    },
+    {
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "pass_count": 6,
+      "probe_id": "goal_inference_probe_v1",
+      "result_count": 6,
+      "score_claim_allowed": false,
+      "target_layer": "goal_inference"
+    },
+    {
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "pass_count": 6,
+      "probe_id": "planner_probe_v1",
+      "result_count": 6,
+      "score_claim_allowed": false,
+      "target_layer": "planner"
+    },
+    {
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "pass_count": 6,
+      "probe_id": "transition_verifier_probe_v1",
+      "result_count": 6,
+      "score_claim_allowed": false,
+      "target_layer": "verifier"
+    },
+    {
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "pass_count": 6,
+      "probe_id": "action_policy_probe_v1",
+      "result_count": 6,
+      "score_claim_allowed": false,
+      "target_layer": "action_policy"
+    }
+  ],
+  "probe_pass_count": 30,
+  "probe_result_count": 30,
+  "probe_scorecard": [
+    {
+      "criterion_id": "source_task5_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "probe_components_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "probe_results_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "world_model_probe_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "goal_inference_probe_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "planner_probe_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "transition_verifier_probe_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "action_policy_probe_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "score_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "submission_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "next_stage_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    }
+  ],
+  "probe_summary": {
+    "diagnostic_only": true,
+    "episode_count": 6,
+    "fixture_count": 6,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "private_score_claim_allowed": false,
+    "probe_component_count": 5,
+    "probe_failure_count": 0,
+    "probe_pass_count": 30,
+    "probe_result_count": 30,
+    "probe_summary_id": "M11-TASK6-SOLVER-PROBE-SUMMARY-v1",
+    "public_score_claim_allowed": false
+  },
+  "public_score_claim_allowed": false,
+  "ranker_runtime_modified": false,
+  "real_benchmark_score": null,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "runtime_solver_modified": false,
+  "signature": "688144E13474AF57",
+  "solver_failure_detected": false,
+  "solver_not_measured_from_task_5": true,
+  "solver_probe_contract": {
+    "contract_id": "M11-TASK6-SOLVER-PROBE-CONTRACT-v1",
+    "diagnostic_only": true,
+    "external_solver_dependency": false,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "private_score_claim_allowed": false,
+    "probe_components": [
+      {
+        "probe_id": "world_model_probe_v1",
+        "purpose": "Measure local object-state and transition consistency.",
+        "target_layer": "world_model"
+      },
+      {
+        "probe_id": "goal_inference_probe_v1",
+        "purpose": "Measure local goal inference from diagnostic fixture state.",
+        "target_layer": "goal_inference"
+      },
+      {
+        "probe_id": "planner_probe_v1",
+        "purpose": "Measure local plan progress and loop recovery.",
+        "target_layer": "planner"
+      },
+      {
+        "probe_id": "transition_verifier_probe_v1",
+        "purpose": "Measure predicted versus observed transition agreement.",
+        "target_layer": "verifier"
+      },
+      {
+        "probe_id": "action_policy_probe_v1",
+        "purpose": "Measure local action validity and non-submission policy safety.",
+        "target_layer": "action_policy"
+      }
+    ],
+    "public_score_claim_allowed": false,
+    "ranker_runtime_modified": false,
+    "required_result_fields": [
+      "probe_result_id",
+      "fixture_id",
+      "episode_id",
+      "probe_id",
+      "target_layer",
+      "diagnostic_probe_passed",
+      "diagnostic_only",
+      "kaggle_score_semantics",
+      "score_claim_allowed"
+    ],
+    "runtime_solver_modified": false,
+    "synthetic_fixture_score_claim_allowed": false
+  },
+  "solver_probe_contract_created": true,
+  "solver_probe_integration_created": true,
+  "solver_probe_measured": true,
+  "solver_probe_results": [
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_object_persistence_fixture_001",
+      "evidence": {
+        "final_signature": "D1C87FB5BA49",
+        "goal_signature": "D1C87FB5BA49",
+        "initial_signature": "FF696CA08FAC"
+      },
+      "fixture_id": "m11_object_persistence_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "world_model_probe_v1",
+      "probe_result_id": "PROBE-1C11429D26DD",
+      "score_claim_allowed": false,
+      "target_layer": "world_model"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_object_persistence_fixture_001",
+      "evidence": {
+        "goal_reached": true
+      },
+      "fixture_id": "m11_object_persistence_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "goal_inference_probe_v1",
+      "probe_result_id": "PROBE-0FA8CCDE9988",
+      "score_claim_allowed": false,
+      "target_layer": "goal_inference"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_object_persistence_fixture_001",
+      "evidence": {
+        "actions": [
+          "RIGHT",
+          "DOWN"
+        ],
+        "goal_reached": true,
+        "step_count": 2
+      },
+      "fixture_id": "m11_object_persistence_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "planner_probe_v1",
+      "probe_result_id": "PROBE-99609B615457",
+      "score_claim_allowed": false,
+      "target_layer": "planner"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_object_persistence_fixture_001",
+      "evidence": {
+        "verifier_match_count": 2
+      },
+      "fixture_id": "m11_object_persistence_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "transition_verifier_probe_v1",
+      "probe_result_id": "PROBE-7287E348F50E",
+      "score_claim_allowed": false,
+      "target_layer": "verifier"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_object_persistence_fixture_001",
+      "evidence": {
+        "actions": [
+          "RIGHT",
+          "DOWN"
+        ],
+        "allowed_actions": [
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "STAY",
+          "UP",
+          "VERIFY"
+        ]
+      },
+      "fixture_id": "m11_object_persistence_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "action_policy_probe_v1",
+      "probe_result_id": "PROBE-AF36354585BA",
+      "score_claim_allowed": false,
+      "target_layer": "action_policy"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_color_rule_fixture_001",
+      "evidence": {
+        "final_signature": "DF2170E8D37C",
+        "goal_signature": "DF2170E8D37C",
+        "initial_signature": "CC981F749681"
+      },
+      "fixture_id": "m11_color_rule_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "world_model_probe_v1",
+      "probe_result_id": "PROBE-E1F818843625",
+      "score_claim_allowed": false,
+      "target_layer": "world_model"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_color_rule_fixture_001",
+      "evidence": {
+        "goal_reached": true
+      },
+      "fixture_id": "m11_color_rule_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "goal_inference_probe_v1",
+      "probe_result_id": "PROBE-C22BF554AFCB",
+      "score_claim_allowed": false,
+      "target_layer": "goal_inference"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_color_rule_fixture_001",
+      "evidence": {
+        "actions": [
+          "VERIFY"
+        ],
+        "goal_reached": true,
+        "step_count": 1
+      },
+      "fixture_id": "m11_color_rule_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "planner_probe_v1",
+      "probe_result_id": "PROBE-E50855ABDDFD",
+      "score_claim_allowed": false,
+      "target_layer": "planner"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_color_rule_fixture_001",
+      "evidence": {
+        "verifier_match_count": 1
+      },
+      "fixture_id": "m11_color_rule_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "transition_verifier_probe_v1",
+      "probe_result_id": "PROBE-D2517052AF79",
+      "score_claim_allowed": false,
+      "target_layer": "verifier"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_color_rule_fixture_001",
+      "evidence": {
+        "actions": [
+          "VERIFY"
+        ],
+        "allowed_actions": [
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "STAY",
+          "UP",
+          "VERIFY"
+        ]
+      },
+      "fixture_id": "m11_color_rule_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "action_policy_probe_v1",
+      "probe_result_id": "PROBE-96FF69AA2DB5",
+      "score_claim_allowed": false,
+      "target_layer": "action_policy"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_movement_transition_fixture_001",
+      "evidence": {
+        "final_signature": "4EED28E6CBA2",
+        "goal_signature": "4EED28E6CBA2",
+        "initial_signature": "B3BADAD02FEB"
+      },
+      "fixture_id": "m11_movement_transition_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "world_model_probe_v1",
+      "probe_result_id": "PROBE-94DE8C905A8C",
+      "score_claim_allowed": false,
+      "target_layer": "world_model"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_movement_transition_fixture_001",
+      "evidence": {
+        "goal_reached": true
+      },
+      "fixture_id": "m11_movement_transition_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "goal_inference_probe_v1",
+      "probe_result_id": "PROBE-A07A044D97BB",
+      "score_claim_allowed": false,
+      "target_layer": "goal_inference"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_movement_transition_fixture_001",
+      "evidence": {
+        "actions": [
+          "RIGHT"
+        ],
+        "goal_reached": true,
+        "step_count": 1
+      },
+      "fixture_id": "m11_movement_transition_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "planner_probe_v1",
+      "probe_result_id": "PROBE-16CD7E9BB08C",
+      "score_claim_allowed": false,
+      "target_layer": "planner"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_movement_transition_fixture_001",
+      "evidence": {
+        "verifier_match_count": 1
+      },
+      "fixture_id": "m11_movement_transition_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "transition_verifier_probe_v1",
+      "probe_result_id": "PROBE-09E3BFFAEDCB",
+      "score_claim_allowed": false,
+      "target_layer": "verifier"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_movement_transition_fixture_001",
+      "evidence": {
+        "actions": [
+          "RIGHT"
+        ],
+        "allowed_actions": [
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "STAY",
+          "UP",
+          "VERIFY"
+        ]
+      },
+      "fixture_id": "m11_movement_transition_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "action_policy_probe_v1",
+      "probe_result_id": "PROBE-D2BF0457A3F1",
+      "score_claim_allowed": false,
+      "target_layer": "action_policy"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_goal_inference_fixture_001",
+      "evidence": {
+        "final_signature": "E7A8A5D53A4B",
+        "goal_signature": "E7A8A5D53A4B",
+        "initial_signature": "B02C869A9F39"
+      },
+      "fixture_id": "m11_goal_inference_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "world_model_probe_v1",
+      "probe_result_id": "PROBE-47A6F850AE74",
+      "score_claim_allowed": false,
+      "target_layer": "world_model"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_goal_inference_fixture_001",
+      "evidence": {
+        "goal_reached": true
+      },
+      "fixture_id": "m11_goal_inference_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "goal_inference_probe_v1",
+      "probe_result_id": "PROBE-239555604A93",
+      "score_claim_allowed": false,
+      "target_layer": "goal_inference"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_goal_inference_fixture_001",
+      "evidence": {
+        "actions": [
+          "RIGHT",
+          "DOWN"
+        ],
+        "goal_reached": true,
+        "step_count": 2
+      },
+      "fixture_id": "m11_goal_inference_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "planner_probe_v1",
+      "probe_result_id": "PROBE-8D8A031B4F2F",
+      "score_claim_allowed": false,
+      "target_layer": "planner"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_goal_inference_fixture_001",
+      "evidence": {
+        "verifier_match_count": 2
+      },
+      "fixture_id": "m11_goal_inference_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "transition_verifier_probe_v1",
+      "probe_result_id": "PROBE-150807EDF909",
+      "score_claim_allowed": false,
+      "target_layer": "verifier"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_goal_inference_fixture_001",
+      "evidence": {
+        "actions": [
+          "RIGHT",
+          "DOWN"
+        ],
+        "allowed_actions": [
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "STAY",
+          "UP",
+          "VERIFY"
+        ]
+      },
+      "fixture_id": "m11_goal_inference_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "action_policy_probe_v1",
+      "probe_result_id": "PROBE-664942427ECF",
+      "score_claim_allowed": false,
+      "target_layer": "action_policy"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_planner_loop_fixture_001",
+      "evidence": {
+        "final_signature": "103FD72FFF2B",
+        "goal_signature": "103FD72FFF2B",
+        "initial_signature": "75F737E96A79"
+      },
+      "fixture_id": "m11_planner_loop_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "world_model_probe_v1",
+      "probe_result_id": "PROBE-BFAC551E5D17",
+      "score_claim_allowed": false,
+      "target_layer": "world_model"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_planner_loop_fixture_001",
+      "evidence": {
+        "goal_reached": true
+      },
+      "fixture_id": "m11_planner_loop_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "goal_inference_probe_v1",
+      "probe_result_id": "PROBE-C9860103D4D5",
+      "score_claim_allowed": false,
+      "target_layer": "goal_inference"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_planner_loop_fixture_001",
+      "evidence": {
+        "actions": [
+          "LEFT",
+          "RIGHT",
+          "RIGHT"
+        ],
+        "goal_reached": true,
+        "step_count": 3
+      },
+      "fixture_id": "m11_planner_loop_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "planner_probe_v1",
+      "probe_result_id": "PROBE-667A23E2BD75",
+      "score_claim_allowed": false,
+      "target_layer": "planner"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_planner_loop_fixture_001",
+      "evidence": {
+        "verifier_match_count": 3
+      },
+      "fixture_id": "m11_planner_loop_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "transition_verifier_probe_v1",
+      "probe_result_id": "PROBE-86DB06566A82",
+      "score_claim_allowed": false,
+      "target_layer": "verifier"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_planner_loop_fixture_001",
+      "evidence": {
+        "actions": [
+          "LEFT",
+          "RIGHT",
+          "RIGHT"
+        ],
+        "allowed_actions": [
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "STAY",
+          "UP",
+          "VERIFY"
+        ]
+      },
+      "fixture_id": "m11_planner_loop_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "action_policy_probe_v1",
+      "probe_result_id": "PROBE-9AC2CF3CBE3F",
+      "score_claim_allowed": false,
+      "target_layer": "action_policy"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+      "evidence": {
+        "final_signature": "4ED79D0931A3",
+        "goal_signature": "4ED79D0931A3",
+        "initial_signature": "1870A2977970"
+      },
+      "fixture_id": "m11_verifier_mismatch_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "world_model_probe_v1",
+      "probe_result_id": "PROBE-E6CE47570007",
+      "score_claim_allowed": false,
+      "target_layer": "world_model"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+      "evidence": {
+        "goal_reached": true
+      },
+      "fixture_id": "m11_verifier_mismatch_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "goal_inference_probe_v1",
+      "probe_result_id": "PROBE-7E4466A34F39",
+      "score_claim_allowed": false,
+      "target_layer": "goal_inference"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+      "evidence": {
+        "actions": [
+          "LEFT"
+        ],
+        "goal_reached": true,
+        "step_count": 1
+      },
+      "fixture_id": "m11_verifier_mismatch_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "planner_probe_v1",
+      "probe_result_id": "PROBE-C53CCD14136A",
+      "score_claim_allowed": false,
+      "target_layer": "planner"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+      "evidence": {
+        "verifier_match_count": 1
+      },
+      "fixture_id": "m11_verifier_mismatch_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "transition_verifier_probe_v1",
+      "probe_result_id": "PROBE-32402C7E80B9",
+      "score_claim_allowed": false,
+      "target_layer": "verifier"
+    },
+    {
+      "diagnostic_only": true,
+      "diagnostic_probe_passed": true,
+      "diagnostic_probe_score": 100,
+      "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+      "evidence": {
+        "actions": [
+          "LEFT"
+        ],
+        "allowed_actions": [
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "STAY",
+          "UP",
+          "VERIFY"
+        ]
+      },
+      "fixture_id": "m11_verifier_mismatch_fixture_001",
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "probe_id": "action_policy_probe_v1",
+      "probe_result_id": "PROBE-142CD1F063B5",
+      "score_claim_allowed": false,
+      "target_layer": "action_policy"
+    }
+  ],
+  "source_summary": {
+    "baseline_commit": "1422ef1 Add ARC AGI3 local fixture harness plan",
+    "diagnostic_only": true,
+    "diagnostic_result_guard": {
+      "diagnostic_only": true,
+      "fail_closed_on_missing_label": true,
+      "guard_id": "M11-TASK5-DIAGNOSTIC-RESULT-GUARD-v1",
+      "kaggle_authentication_allowed": false,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "kaggle_submission_allowed": false,
+      "official_score_claim_allowed": false,
+      "private_score_claim_allowed": false,
+      "public_score_claim_allowed": false,
+      "required_label": "LOCAL_DIAGNOSTIC_ONLY_NOT_KAGGLE_SCORE",
+      "submission_candidate_creation_allowed": false,
+      "submission_json_creation_allowed": false,
+      "synthetic_fixture_score_claim_allowed": false,
+      "upload_package_creation_allowed": false
+    },
+    "diagnostic_result_guard_active": true,
+    "episode_count": 6,
+    "episode_results": [
+      {
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_object_persistence_fixture_001",
+        "final_signature": "D1C87FB5BA49",
+        "fixture_class_id": "object_persistence_fixture_v1",
+        "fixture_id": "m11_object_persistence_fixture_001",
+        "goal_reached": true,
+        "goal_signature": "D1C87FB5BA49",
+        "initial_signature": "FF696CA08FAC",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 2,
+        "target_layer": "world_model",
+        "trace": [
+          {
+            "action": "RIGHT",
+            "before_signature": "FF696CA08FAC",
+            "diagnostic_only": true,
+            "observed_signature": "130C80095E96",
+            "predicted_signature": "130C80095E96",
+            "score_claim_allowed": false,
+            "step": 1,
+            "verifier_match": true
+          },
+          {
+            "action": "DOWN",
+            "before_signature": "130C80095E96",
+            "diagnostic_only": true,
+            "observed_signature": "D1C87FB5BA49",
+            "predicted_signature": "D1C87FB5BA49",
+            "score_claim_allowed": false,
+            "step": 2,
+            "verifier_match": true
+          }
+        ]
+      },
+      {
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_color_rule_fixture_001",
+        "final_signature": "DF2170E8D37C",
+        "fixture_class_id": "color_rule_fixture_v1",
+        "fixture_id": "m11_color_rule_fixture_001",
+        "goal_reached": true,
+        "goal_signature": "DF2170E8D37C",
+        "initial_signature": "CC981F749681",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 1,
+        "target_layer": "rule_inference",
+        "trace": [
+          {
+            "action": "VERIFY",
+            "before_signature": "CC981F749681",
+            "diagnostic_only": true,
+            "observed_signature": "DF2170E8D37C",
+            "predicted_signature": "DF2170E8D37C",
+            "score_claim_allowed": false,
+            "step": 1,
+            "verifier_match": true
+          }
+        ]
+      },
+      {
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_movement_transition_fixture_001",
+        "final_signature": "4EED28E6CBA2",
+        "fixture_class_id": "movement_transition_fixture_v1",
+        "fixture_id": "m11_movement_transition_fixture_001",
+        "goal_reached": true,
+        "goal_signature": "4EED28E6CBA2",
+        "initial_signature": "B3BADAD02FEB",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 1,
+        "target_layer": "transition_model",
+        "trace": [
+          {
+            "action": "RIGHT",
+            "before_signature": "B3BADAD02FEB",
+            "diagnostic_only": true,
+            "observed_signature": "4EED28E6CBA2",
+            "predicted_signature": "4EED28E6CBA2",
+            "score_claim_allowed": false,
+            "step": 1,
+            "verifier_match": true
+          }
+        ]
+      },
+      {
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_goal_inference_fixture_001",
+        "final_signature": "E7A8A5D53A4B",
+        "fixture_class_id": "goal_inference_fixture_v1",
+        "fixture_id": "m11_goal_inference_fixture_001",
+        "goal_reached": true,
+        "goal_signature": "E7A8A5D53A4B",
+        "initial_signature": "B02C869A9F39",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 2,
+        "target_layer": "goal_inference",
+        "trace": [
+          {
+            "action": "RIGHT",
+            "before_signature": "B02C869A9F39",
+            "diagnostic_only": true,
+            "observed_signature": "4CC84B0A6C63",
+            "predicted_signature": "4CC84B0A6C63",
+            "score_claim_allowed": false,
+            "step": 1,
+            "verifier_match": true
+          },
+          {
+            "action": "DOWN",
+            "before_signature": "4CC84B0A6C63",
+            "diagnostic_only": true,
+            "observed_signature": "E7A8A5D53A4B",
+            "predicted_signature": "E7A8A5D53A4B",
+            "score_claim_allowed": false,
+            "step": 2,
+            "verifier_match": true
+          }
+        ]
+      },
+      {
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_planner_loop_fixture_001",
+        "final_signature": "103FD72FFF2B",
+        "fixture_class_id": "planner_loop_fixture_v1",
+        "fixture_id": "m11_planner_loop_fixture_001",
+        "goal_reached": true,
+        "goal_signature": "103FD72FFF2B",
+        "initial_signature": "75F737E96A79",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 3,
+        "target_layer": "planner",
+        "trace": [
+          {
+            "action": "LEFT",
+            "before_signature": "75F737E96A79",
+            "diagnostic_only": true,
+            "observed_signature": "75F737E96A79",
+            "predicted_signature": "75F737E96A79",
+            "score_claim_allowed": false,
+            "step": 1,
+            "verifier_match": true
+          },
+          {
+            "action": "RIGHT",
+            "before_signature": "75F737E96A79",
+            "diagnostic_only": true,
+            "observed_signature": "F92B3B23431B",
+            "predicted_signature": "F92B3B23431B",
+            "score_claim_allowed": false,
+            "step": 2,
+            "verifier_match": true
+          },
+          {
+            "action": "RIGHT",
+            "before_signature": "F92B3B23431B",
+            "diagnostic_only": true,
+            "observed_signature": "103FD72FFF2B",
+            "predicted_signature": "103FD72FFF2B",
+            "score_claim_allowed": false,
+            "step": 3,
+            "verifier_match": true
+          }
+        ]
+      },
+      {
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+        "final_signature": "4ED79D0931A3",
+        "fixture_class_id": "verifier_mismatch_fixture_v1",
+        "fixture_id": "m11_verifier_mismatch_fixture_001",
+        "goal_reached": true,
+        "goal_signature": "4ED79D0931A3",
+        "initial_signature": "1870A2977970",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 1,
+        "target_layer": "verifier",
+        "trace": [
+          {
+            "action": "LEFT",
+            "before_signature": "1870A2977970",
+            "diagnostic_only": true,
+            "observed_signature": "4ED79D0931A3",
+            "predicted_signature": "4ED79D0931A3",
+            "score_claim_allowed": false,
+            "step": 1,
+            "verifier_match": true
+          }
+        ]
+      }
+    ],
+    "episode_runner_created": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "fixture_count": 6,
+    "fixture_schema_created": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "local_diagnostic_fixtures": [
+      {
+        "actions": [
+          "RIGHT",
+          "DOWN"
+        ],
+        "diagnostic_only": true,
+        "expected_trace": [
+          {
+            "from": [
+              0,
+              0
+            ],
+            "object_value": 1,
+            "step": 1,
+            "to": [
+              0,
+              1
+            ]
+          },
+          {
+            "from": [
+              0,
+              1
+            ],
+            "object_value": 1,
+            "step": 2,
+            "to": [
+              1,
+              1
+            ]
+          }
+        ],
+        "fixture_class_id": "object_persistence_fixture_v1",
+        "fixture_id": "m11_object_persistence_fixture_001",
+        "goal_grid": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "initial_grid": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "score_claim_allowed": false,
+        "target_layer": "world_model"
+      },
+      {
+        "actions": [
+          "VERIFY"
+        ],
+        "diagnostic_only": true,
+        "expected_trace": [
+          {
+            "from_value": 2,
+            "rule": "color_remap",
+            "step": 1,
+            "to_value": 3
+          }
+        ],
+        "fixture_class_id": "color_rule_fixture_v1",
+        "fixture_id": "m11_color_rule_fixture_001",
+        "goal_grid": [
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "initial_grid": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "score_claim_allowed": false,
+        "target_layer": "rule_inference"
+      },
+      {
+        "actions": [
+          "RIGHT"
+        ],
+        "diagnostic_only": true,
+        "expected_trace": [
+          {
+            "from": [
+              0,
+              1
+            ],
+            "object_value": 4,
+            "step": 1,
+            "to": [
+              0,
+              2
+            ]
+          }
+        ],
+        "fixture_class_id": "movement_transition_fixture_v1",
+        "fixture_id": "m11_movement_transition_fixture_001",
+        "goal_grid": [
+          [
+            0,
+            0,
+            4
+          ]
+        ],
+        "initial_grid": [
+          [
+            0,
+            4,
+            0
+          ]
+        ],
+        "score_claim_allowed": false,
+        "target_layer": "transition_model"
+      },
+      {
+        "actions": [
+          "RIGHT",
+          "DOWN"
+        ],
+        "diagnostic_only": true,
+        "expected_trace": [
+          {
+            "inferred_goal": "move_object_to_terminal_marker",
+            "step": 1,
+            "terminal_value": 9
+          },
+          {
+            "step": 2,
+            "terminal_reached": true
+          }
+        ],
+        "fixture_class_id": "goal_inference_fixture_v1",
+        "fixture_id": "m11_goal_inference_fixture_001",
+        "goal_grid": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        "initial_grid": [
+          [
+            5,
+            0
+          ],
+          [
+            0,
+            9
+          ]
+        ],
+        "score_claim_allowed": false,
+        "target_layer": "goal_inference"
+      },
+      {
+        "actions": [
+          "LEFT",
+          "RIGHT",
+          "RIGHT"
+        ],
+        "diagnostic_only": true,
+        "expected_trace": [
+          {
+            "action": "LEFT",
+            "loop_risk": true,
+            "step": 1
+          },
+          {
+            "action": "RIGHT",
+            "loop_recovered": true,
+            "step": 2
+          },
+          {
+            "action": "RIGHT",
+            "progress": true,
+            "step": 3
+          }
+        ],
+        "fixture_class_id": "planner_loop_fixture_v1",
+        "fixture_id": "m11_planner_loop_fixture_001",
+        "goal_grid": [
+          [
+            0,
+            0,
+            6
+          ]
+        ],
+        "initial_grid": [
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        "score_claim_allowed": false,
+        "target_layer": "planner"
+      },
+      {
+        "actions": [
+          "LEFT"
+        ],
+        "diagnostic_only": true,
+        "expected_trace": [
+          {
+            "predicted_transition": "object_moves_left",
+            "step": 1,
+            "verifier_expected_match": true
+          }
+        ],
+        "fixture_class_id": "verifier_mismatch_fixture_v1",
+        "fixture_id": "m11_verifier_mismatch_fixture_001",
+        "goal_grid": [
+          [
+            7,
+            0
+          ]
+        ],
+        "initial_grid": [
+          [
+            0,
+            7
+          ]
+        ],
+        "score_claim_allowed": false,
+        "target_layer": "verifier"
+      }
+    ],
+    "manual_upload_allowed": false,
+    "next_stage": "MILESTONE_11_TASK_6_SOLVER_PROBE_INTEGRATION_V1",
+    "official_score_claim_allowed": false,
+    "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+    "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+    "private_score_claim_allowed": false,
+    "private_score_claimed": false,
+    "public_score_claim_allowed": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "solver_failure_detected": false,
+    "solver_not_measured": true,
+    "submission_json_created": false,
+    "synthetic_fixture_score_claim_allowed": false,
+    "task_5_id": "MILESTONE-11-LOCAL-DIAGNOSTIC-FIXTURE-HARNESS-1942BD56C0C2",
+    "task_5_path": "examples/milestone-11/local-diagnostic-fixture-harness-v1/milestone-11-local-diagnostic-fixture-harness-v1.json",
+    "task_5_present": true,
+    "task_5_ready": true,
+    "task_5_sha256": "fdfcea97fab451ecb74ee0c6134af9c9c188c9df3d8c6bdbf13627d249a417c7",
+    "task_5_sha256_16": "FDFCEA97FAB451EC",
+    "task_5_signature": "1942BD56C0C2D869",
+    "task_5_status": "MILESTONE_11_LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_V1_READY",
+    "task_verdict": "LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_READY_FOR_SOLVER_PROBE_INTEGRATION",
+    "trace_record_count": 6,
+    "trace_records": [
+      {
+        "all_verifier_matches": true,
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_object_persistence_fixture_001",
+        "fixture_id": "m11_object_persistence_fixture_001",
+        "goal_reached": true,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 2,
+        "target_layer": "world_model",
+        "trace_hash_16": "7CACE25D4F85CE69",
+        "trace_id": "TRACE-EP-m11_object_persistence_fixture_001"
+      },
+      {
+        "all_verifier_matches": true,
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_color_rule_fixture_001",
+        "fixture_id": "m11_color_rule_fixture_001",
+        "goal_reached": true,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 1,
+        "target_layer": "rule_inference",
+        "trace_hash_16": "725474B9264F6F7F",
+        "trace_id": "TRACE-EP-m11_color_rule_fixture_001"
+      },
+      {
+        "all_verifier_matches": true,
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_movement_transition_fixture_001",
+        "fixture_id": "m11_movement_transition_fixture_001",
+        "goal_reached": true,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 1,
+        "target_layer": "transition_model",
+        "trace_hash_16": "8B1E8EBF395A6615",
+        "trace_id": "TRACE-EP-m11_movement_transition_fixture_001"
+      },
+      {
+        "all_verifier_matches": true,
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_goal_inference_fixture_001",
+        "fixture_id": "m11_goal_inference_fixture_001",
+        "goal_reached": true,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 2,
+        "target_layer": "goal_inference",
+        "trace_hash_16": "5D13849542715912",
+        "trace_id": "TRACE-EP-m11_goal_inference_fixture_001"
+      },
+      {
+        "all_verifier_matches": true,
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_planner_loop_fixture_001",
+        "fixture_id": "m11_planner_loop_fixture_001",
+        "goal_reached": true,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 3,
+        "target_layer": "planner",
+        "trace_hash_16": "4B4D39BBF7D8C97F",
+        "trace_id": "TRACE-EP-m11_planner_loop_fixture_001"
+      },
+      {
+        "all_verifier_matches": true,
+        "diagnostic_only": true,
+        "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+        "fixture_id": "m11_verifier_mismatch_fixture_001",
+        "goal_reached": true,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "score_claim_allowed": false,
+        "step_count": 1,
+        "target_layer": "verifier",
+        "trace_hash_16": "50283FDF8D4A4E73",
+        "trace_id": "TRACE-EP-m11_verifier_mismatch_fixture_001"
+      }
+    ],
+    "upload_package_created": false,
+    "valid_fixture_count": 6
+  },
+  "status": "MILESTONE_11_SOLVER_PROBE_INTEGRATION_V1_READY",
+  "submission_json_created": false,
+  "synthetic_fixture_score_claim_allowed": false,
+  "task": "Task 6",
+  "task_5_source": {
+    "path": "examples/milestone-11/local-diagnostic-fixture-harness-v1/milestone-11-local-diagnostic-fixture-harness-v1.json",
+    "present": true,
+    "sha256": "fdfcea97fab451ecb74ee0c6134af9c9c188c9df3d8c6bdbf13627d249a417c7",
+    "sha256_16": "FDFCEA97FAB451EC",
+    "status": "MILESTONE_11_LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_V1_READY",
+    "task_5_id": "MILESTONE-11-LOCAL-DIAGNOSTIC-FIXTURE-HARNESS-1942BD56C0C2"
+  },
+  "task_6_id": "MILESTONE-11-SOLVER-PROBE-INTEGRATION-688144E13474",
+  "task_6_ready": true,
+  "task_mode": "MILESTONE_11_SOLVER_PROBE_INTEGRATION_V1_LOCAL_ONLY",
+  "task_scope": "LOCAL_DIAGNOSTIC_SOLVER_PROBE_INTEGRATION_NO_SCORE_NO_SUBMISSION",
+  "task_verdict": "SOLVER_PROBE_INTEGRATION_READY_FOR_LOCAL_PROBE_REPORT",
+  "title": "Solver Probe Integration v1",
+  "upload_package_created": false,
+  "warning_count": 0
+}
