@@ -1,0 +1,686 @@
+{
+  "baseline_attempt_recorded": true,
+  "baseline_commit": "d7d1148 Open ARC AGI3 milestone 11 public benchmark solver improvement",
+  "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+  "baseline_execution_performed": false,
+  "baseline_policy_created": true,
+  "baseline_result_recorded": true,
+  "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+  "candidate_path_count": 5,
+  "compatible_fixture_count": 0,
+  "compatible_fixture_detection_completed": true,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "has_local_public_fixtures": false,
+  "inventory_case_count": 10,
+  "inventory_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m11_task2_source_opening_ready_v1",
+      "operation": "verify_milestone_11_opening_source"
+    },
+    {
+      "area": "identity",
+      "case_id": "m11_task2_candidate_identity_loaded_v1",
+      "operation": "verify_candidate_identity"
+    },
+    {
+      "area": "inventory",
+      "case_id": "m11_task2_public_game_paths_scanned_v1",
+      "operation": "scan_public_game_candidate_paths"
+    },
+    {
+      "area": "fixture_detection",
+      "case_id": "m11_task2_compatible_fixture_detection_v1",
+      "operation": "detect_compatible_public_fixtures"
+    },
+    {
+      "area": "baseline_policy",
+      "case_id": "m11_task2_baseline_policy_ready_v1",
+      "operation": "verify_baseline_policy"
+    },
+    {
+      "area": "baseline",
+      "case_id": "m11_task2_safe_baseline_record_ready_v1",
+      "operation": "verify_safe_baseline_record"
+    },
+    {
+      "area": "score_boundary",
+      "case_id": "m11_task2_no_score_claim_without_valid_run_v1",
+      "operation": "verify_no_score_claim_without_valid_run"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m11_task2_real_submission_blocked_v1",
+      "operation": "verify_real_submission_blocked"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m11_task2_next_stage_valid_v1",
+      "operation": "verify_next_stage"
+    },
+    {
+      "area": "metadata",
+      "case_id": "m11_task2_metadata_safe_v1",
+      "operation": "verify_public_safe_metadata"
+    }
+  ],
+  "inventory_check_count": 28,
+  "inventory_check_list": [
+    "m11_opening_artifact_exists",
+    "m11_opening_artifact_ready",
+    "m11_opening_validated",
+    "candidate_identity_loaded",
+    "candidate_paths_declared",
+    "inventory_created",
+    "inventory_scan_completed",
+    "compatible_fixture_detection_completed",
+    "baseline_policy_created",
+    "baseline_attempt_recorded",
+    "baseline_result_recorded",
+    "no_real_public_score_claimed",
+    "no_private_score_claimed",
+    "no_submission_json_created",
+    "no_upload_package_created",
+    "real_submission_blocked",
+    "kaggle_submission_not_sent",
+    "fail_closed_required",
+    "fail_closed_active",
+    "next_stage_valid",
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "inventory_checks": {
+    "baseline_attempt_recorded": true,
+    "baseline_policy_created": true,
+    "baseline_result_recorded": true,
+    "candidate_identity_loaded": true,
+    "candidate_paths_declared": true,
+    "compatible_fixture_detection_completed": true,
+    "contains_api_keys_false": true,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "inventory_case_count_valid": true,
+    "inventory_check_count_valid": true,
+    "inventory_created": true,
+    "inventory_scan_completed": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "m11_opening_artifact_exists": true,
+    "m11_opening_artifact_ready": true,
+    "m11_opening_validated": true,
+    "next_stage_valid": true,
+    "no_private_score_claimed": true,
+    "no_real_public_score_claimed": true,
+    "no_submission_json_created": true,
+    "no_upload_package_created": true,
+    "private_core_exposure_false": true,
+    "public_safe": true,
+    "real_submission_blocked": true
+  },
+  "inventory_created": true,
+  "inventory_failure_count": 0,
+  "inventory_gate_count": 20,
+  "inventory_gates": [
+    {
+      "name": "m11_opening_artifact_exists",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "m11_opening_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "m11_opening_validated",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_identity_loaded",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_paths_declared",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "inventory_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "inventory_scan_completed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "compatible_fixture_detection_completed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_policy_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_attempt_recorded",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_result_recorded",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "no_real_public_score_claimed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "no_private_score_claimed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "metadata_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "inventory_index": {
+    "baseline_commit": "d7d1148 Open ARC AGI3 milestone 11 public benchmark solver improvement",
+    "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+    "baseline_execution_performed": false,
+    "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "candidate_path_count": 5,
+    "compatible_fixture_count": 0,
+    "depends_on_milestone_11_opening": "MILESTONE-11-PUBLIC-GAME-BENCHMARK-SOLVER-IMPROVEMENT-6886C20CE9A8",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "inventory_created": true,
+    "inventory_scan_completed": true,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #11",
+    "next_stage": "MILESTONE_11_TASK_3_PUBLIC_GAME_FAILURE_TAXONOMY_V1",
+    "private_core_exposure": false,
+    "private_score_claimed": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "status": "MILESTONE_11_PUBLIC_GAME_INVENTORY_BASELINE_RUN_V1_READY",
+    "task": "Task 2",
+    "task_mode": "MILESTONE_11_PUBLIC_GAME_INVENTORY_BASELINE_RUN_V1_LOCAL_ONLY",
+    "task_scope": "LOCAL_PUBLIC_GAME_INVENTORY_AND_SAFE_BASELINE_NO_SCORE_CLAIM",
+    "task_verdict": "PUBLIC_GAME_INVENTORY_BASELINE_RUN_READY_FOR_FAILURE_TAXONOMY",
+    "total_file_count": 0
+  },
+  "inventory_issue_count": 0,
+  "inventory_issues": [
+    {
+      "active": false,
+      "name": "m11_opening_artifact_exists",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "m11_opening_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "m11_opening_invalidated",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_identity_loaded",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_paths_declared",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "inventory_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "inventory_scan_completed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "compatible_fixture_detection_completed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_policy_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_attempt_recorded",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_result_recorded",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "no_real_public_score_claimed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "no_private_score_claimed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "metadata_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "failure_count_zero",
+      "severity": "BLOCKING"
+    }
+  ],
+  "inventory_pass_count": 10,
+  "inventory_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m11_task2_source_opening_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_milestone_11_opening_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "identity",
+      "case_id": "m11_task2_candidate_identity_loaded_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_candidate_identity",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "inventory",
+      "case_id": "m11_task2_public_game_paths_scanned_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "scan_public_game_candidate_paths",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "fixture_detection",
+      "case_id": "m11_task2_compatible_fixture_detection_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "detect_compatible_public_fixtures",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "baseline_policy",
+      "case_id": "m11_task2_baseline_policy_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_baseline_policy",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "baseline",
+      "case_id": "m11_task2_safe_baseline_record_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_safe_baseline_record",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "score_boundary",
+      "case_id": "m11_task2_no_score_claim_without_valid_run_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_score_claim_without_valid_run",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m11_task2_real_submission_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m11_task2_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_stage",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "metadata",
+      "case_id": "m11_task2_metadata_safe_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_public_safe_metadata",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "inventory_scan_completed": true,
+  "inventory_scorecard": [
+    {
+      "criterion_id": "source_opening_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "candidate_identity_loaded",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "inventory_scan_completed",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "compatible_fixture_detection_completed",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "baseline_policy_created",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "safe_baseline_record_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "score_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "submission_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "fail_closed_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    }
+  ],
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "m11_opening_source": {
+    "milestone_11_id": "MILESTONE-11-PUBLIC-GAME-BENCHMARK-SOLVER-IMPROVEMENT-6886C20CE9A8",
+    "path": "examples/milestone-11/public-game-benchmark-solver-improvement-v1/milestone-11-public-game-benchmark-solver-improvement-v1.json",
+    "present": true,
+    "sha256": "9bb3ed037312c0dbe812bfd9115476e982c01fc45ff48f510ce04f98f0760fd7",
+    "sha256_16": "9BB3ED037312C0DB",
+    "status": "MILESTONE_11_PUBLIC_GAME_BENCHMARK_SOLVER_IMPROVEMENT_V1_READY"
+  },
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_11_public_game_inventory_baseline_run_v1"
+  },
+  "milestone": "Milestone #11",
+  "next_stage": "MILESTONE_11_TASK_3_PUBLIC_GAME_FAILURE_TAXONOMY_V1",
+  "passed_gate_count": 20,
+  "private_score_claimed": false,
+  "public_game_inventory": {
+    "candidate_path_count": 5,
+    "candidate_paths": [
+      "data/arc_agi_3/public",
+      "data/public",
+      "examples/public-games",
+      "examples/arc-agi-3-public-games",
+      "benchmark/public-games"
+    ],
+    "compatible_fixture_count": 0,
+    "compatible_fixture_detection_completed": true,
+    "compatible_fixtures": [],
+    "has_local_public_fixtures": false,
+    "inventory_created": true,
+    "inventory_id": "M11-TASK2-PUBLIC-GAME-INVENTORY-v1",
+    "inventory_scan_completed": true,
+    "path_records": [
+      {
+        "compatible_file_count": 0,
+        "exists": false,
+        "file_count": 0,
+        "hint_match_count": 0,
+        "is_dir": false,
+        "path": "data/arc_agi_3/public"
+      },
+      {
+        "compatible_file_count": 0,
+        "exists": false,
+        "file_count": 0,
+        "hint_match_count": 0,
+        "is_dir": false,
+        "path": "data/public"
+      },
+      {
+        "compatible_file_count": 0,
+        "exists": false,
+        "file_count": 0,
+        "hint_match_count": 0,
+        "is_dir": false,
+        "path": "examples/public-games"
+      },
+      {
+        "compatible_file_count": 0,
+        "exists": false,
+        "file_count": 0,
+        "hint_match_count": 0,
+        "is_dir": false,
+        "path": "examples/arc-agi-3-public-games"
+      },
+      {
+        "compatible_file_count": 0,
+        "exists": false,
+        "file_count": 0,
+        "hint_match_count": 0,
+        "is_dir": false,
+        "path": "benchmark/public-games"
+      }
+    ],
+    "total_file_count": 0
+  },
+  "real_benchmark_score": null,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "safe_baseline_record": {
+    "baseline_attempt_recorded": true,
+    "baseline_case_count": 0,
+    "baseline_cases": [],
+    "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+    "baseline_execution_performed": false,
+    "baseline_id": "M11-TASK2-SAFE-BASELINE-RUN-v1",
+    "baseline_policy_created": true,
+    "baseline_result_recorded": true,
+    "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+    "compatible_fixture_count": 0,
+    "private_score_claimed": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "score_boundary": "NO_SCORE_CLAIM_WITHOUT_OFFICIAL_VALIDATION"
+  },
+  "signature": "99862C9A896F3740",
+  "source_summary": {
+    "baseline_commit": "003c0fe Close ARC AGI3 submission preparation",
+    "benchmark_axis_count": 7,
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "m10_closure_id": "MILESTONE-10-SUBMISSION-PREPARATION-CLOSURE-8DC4FCEABB3D",
+    "m11_opening_id": "MILESTONE-11-PUBLIC-GAME-BENCHMARK-SOLVER-IMPROVEMENT-6886C20CE9A8",
+    "m11_opening_path": "examples/milestone-11/public-game-benchmark-solver-improvement-v1/milestone-11-public-game-benchmark-solver-improvement-v1.json",
+    "m11_opening_present": true,
+    "m11_opening_ready": true,
+    "m11_opening_sha256": "9bb3ed037312c0dbe812bfd9115476e982c01fc45ff48f510ce04f98f0760fd7",
+    "m11_opening_sha256_16": "9BB3ED037312C0DB",
+    "m11_opening_signature": "6886C20CE9A8C36E",
+    "m11_opening_status": "MILESTONE_11_PUBLIC_GAME_BENCHMARK_SOLVER_IMPROVEMENT_V1_READY",
+    "manual_upload_allowed": false,
+    "milestone_mode": "MILESTONE_11_PUBLIC_GAME_BENCHMARK_SOLVER_IMPROVEMENT_V1_LOCAL_ONLY",
+    "milestone_verdict": "MILESTONE_11_READY_FOR_PUBLIC_GAME_BENCHMARK_AND_SOLVER_PATCH_CYCLE",
+    "next_stage": "MILESTONE_11_TASK_2_PUBLIC_GAME_INVENTORY_AND_BASELINE_RUN_V1",
+    "private_score_claimed": false,
+    "public_game_benchmark_execution_performed": false,
+    "public_game_inventory_created": true,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "solver_improvement_target_count": 7,
+    "submission_json_created": false,
+    "upload_package_created": false
+  },
+  "status": "MILESTONE_11_PUBLIC_GAME_INVENTORY_BASELINE_RUN_V1_READY",
+  "submission_json_created": false,
+  "task": "Task 2",
+  "task_2_id": "MILESTONE-11-PUBLIC-GAME-INVENTORY-BASELINE-RUN-99862C9A896F",
+  "task_2_ready": true,
+  "task_mode": "MILESTONE_11_PUBLIC_GAME_INVENTORY_BASELINE_RUN_V1_LOCAL_ONLY",
+  "task_scope": "LOCAL_PUBLIC_GAME_INVENTORY_AND_SAFE_BASELINE_NO_SCORE_CLAIM",
+  "task_verdict": "PUBLIC_GAME_INVENTORY_BASELINE_RUN_READY_FOR_FAILURE_TAXONOMY",
+  "title": "Public Game Inventory and Baseline Run v1",
+  "total_file_count": 0,
+  "upload_package_created": false,
+  "warning_count": 0
+}

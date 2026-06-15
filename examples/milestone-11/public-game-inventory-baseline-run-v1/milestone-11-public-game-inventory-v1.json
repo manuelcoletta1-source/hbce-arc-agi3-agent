@@ -1,0 +1,60 @@
+{
+  "candidate_path_count": 5,
+  "candidate_paths": [
+    "data/arc_agi_3/public",
+    "data/public",
+    "examples/public-games",
+    "examples/arc-agi-3-public-games",
+    "benchmark/public-games"
+  ],
+  "compatible_fixture_count": 0,
+  "compatible_fixture_detection_completed": true,
+  "compatible_fixtures": [],
+  "has_local_public_fixtures": false,
+  "inventory_created": true,
+  "inventory_id": "M11-TASK2-PUBLIC-GAME-INVENTORY-v1",
+  "inventory_scan_completed": true,
+  "path_records": [
+    {
+      "compatible_file_count": 0,
+      "exists": false,
+      "file_count": 0,
+      "hint_match_count": 0,
+      "is_dir": false,
+      "path": "data/arc_agi_3/public"
+    },
+    {
+      "compatible_file_count": 0,
+      "exists": false,
+      "file_count": 0,
+      "hint_match_count": 0,
+      "is_dir": false,
+      "path": "data/public"
+    },
+    {
+      "compatible_file_count": 0,
+      "exists": false,
+      "file_count": 0,
+      "hint_match_count": 0,
+      "is_dir": false,
+      "path": "examples/public-games"
+    },
+    {
+      "compatible_file_count": 0,
+      "exists": false,
+      "file_count": 0,
+      "hint_match_count": 0,
+      "is_dir": false,
+      "path": "examples/arc-agi-3-public-games"
+    },
+    {
+      "compatible_file_count": 0,
+      "exists": false,
+      "file_count": 0,
+      "hint_match_count": 0,
+      "is_dir": false,
+      "path": "benchmark/public-games"
+    }
+  ],
+  "total_file_count": 0
+}

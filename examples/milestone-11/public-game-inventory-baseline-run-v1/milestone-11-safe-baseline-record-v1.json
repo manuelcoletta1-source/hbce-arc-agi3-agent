@@ -1,0 +1,16 @@
+{
+  "baseline_attempt_recorded": true,
+  "baseline_case_count": 0,
+  "baseline_cases": [],
+  "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+  "baseline_execution_performed": false,
+  "baseline_id": "M11-TASK2-SAFE-BASELINE-RUN-v1",
+  "baseline_policy_created": true,
+  "baseline_result_recorded": true,
+  "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+  "compatible_fixture_count": 0,
+  "private_score_claimed": false,
+  "real_benchmark_score": null,
+  "real_public_score_claimed": false,
+  "score_boundary": "NO_SCORE_CLAIM_WITHOUT_OFFICIAL_VALIDATION"
+}
