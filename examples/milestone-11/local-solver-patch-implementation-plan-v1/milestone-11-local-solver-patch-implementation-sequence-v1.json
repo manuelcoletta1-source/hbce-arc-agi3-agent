@@ -1,0 +1,51 @@
+[
+  {
+    "allowed_now": true,
+    "modifies_runtime_solver": false,
+    "sequence": 1,
+    "step_id": "step_01_preflight_v1",
+    "title": "Run preflight and baseline tests"
+  },
+  {
+    "allowed_now": false,
+    "modifies_runtime_solver": false,
+    "sequence": 2,
+    "step_id": "step_02_create_patch_helpers_file_plan_v1",
+    "title": "Plan solver_patch_helpers.py helper implementation"
+  },
+  {
+    "allowed_now": false,
+    "modifies_runtime_solver": false,
+    "sequence": 3,
+    "step_id": "step_03_add_helper_tests_plan_v1",
+    "title": "Plan tests/test_solver_patch_helpers.py coverage"
+  },
+  {
+    "allowed_now": false,
+    "modifies_runtime_solver": false,
+    "sequence": 4,
+    "step_id": "step_04_wire_helpers_into_local_diagnostic_layer_v1",
+    "title": "Plan local diagnostic wiring only"
+  },
+  {
+    "allowed_now": false,
+    "modifies_runtime_solver": false,
+    "sequence": 5,
+    "step_id": "step_05_run_required_tests_v1",
+    "title": "Run required test plan"
+  },
+  {
+    "allowed_now": false,
+    "modifies_runtime_solver": false,
+    "sequence": 6,
+    "step_id": "step_06_verify_boundaries_v1",
+    "title": "Verify no score, no submission, no external API"
+  },
+  {
+    "allowed_now": false,
+    "modifies_runtime_solver": false,
+    "sequence": 7,
+    "step_id": "step_07_authorize_next_stage_v1",
+    "title": "Authorize Task 10 patch helper implementation only"
+  }
+]

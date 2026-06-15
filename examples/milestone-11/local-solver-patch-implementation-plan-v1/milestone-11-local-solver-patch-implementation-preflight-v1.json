@@ -1,0 +1,20 @@
+[
+  {
+    "command": "git status -sb",
+    "failure_action": "STOP_IMPLEMENTATION",
+    "preflight_id": "preflight_clean_git_status_v1",
+    "required": true
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python scripts/run_milestone_11_local_solver_patch_backlog.py",
+    "failure_action": "STOP_IMPLEMENTATION",
+    "preflight_id": "preflight_task8_artifact_ready_v1",
+    "required": true
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest",
+    "failure_action": "STOP_IMPLEMENTATION",
+    "preflight_id": "preflight_full_suite_green_v1",
+    "required": true
+  }
+]

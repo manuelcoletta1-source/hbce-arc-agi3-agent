@@ -1,0 +1,62 @@
+[
+  {
+    "criterion_id": "source_task8_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "implementation_sequence_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "preflight_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "patch_order_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "required_tests_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "authorization_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "stop_conditions_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "runtime_patch_blocked",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "score_submission_boundary_preserved",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "next_stage_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  }
+]

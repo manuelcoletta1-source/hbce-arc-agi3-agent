@@ -1,0 +1,50 @@
+[
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_solver_patch_helpers.py",
+    "external_api_dependency": false,
+    "gate_id": "test_gate_01",
+    "must_pass_before_next_stage": true,
+    "required": true,
+    "score_claim_allowed": false
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_backlog.py",
+    "external_api_dependency": false,
+    "gate_id": "test_gate_02",
+    "must_pass_before_next_stage": true,
+    "required": true,
+    "score_claim_allowed": false
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_probe_report.py",
+    "external_api_dependency": false,
+    "gate_id": "test_gate_03",
+    "must_pass_before_next_stage": true,
+    "required": true,
+    "score_claim_allowed": false
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_solver_probe_integration.py",
+    "external_api_dependency": false,
+    "gate_id": "test_gate_04",
+    "must_pass_before_next_stage": true,
+    "required": true,
+    "score_claim_allowed": false
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_diagnostic_fixture_harness.py",
+    "external_api_dependency": false,
+    "gate_id": "test_gate_05",
+    "must_pass_before_next_stage": true,
+    "required": true,
+    "score_claim_allowed": false
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest",
+    "external_api_dependency": false,
+    "gate_id": "test_gate_06",
+    "must_pass_before_next_stage": true,
+    "required": true,
+    "score_claim_allowed": false
+  }
+]

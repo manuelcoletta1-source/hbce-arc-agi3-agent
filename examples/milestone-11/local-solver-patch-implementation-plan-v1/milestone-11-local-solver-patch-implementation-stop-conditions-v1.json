@@ -1,0 +1,50 @@
+[
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "dirty_unexpected_git_status"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "missing_task8_source_artifact"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "failing_targeted_tests"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "failing_full_suite"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_solver_modified_without_plan"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "ranker_modified_without_plan"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "score_claim_detected"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "submission_artifact_detected"
+  }
+]

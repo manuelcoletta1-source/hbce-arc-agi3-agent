@@ -1,0 +1,62 @@
+[
+  {
+    "file_target": "src/hbce_arc_agi3/solver_patch_helpers.py",
+    "function_target": "build_world_model_state_tracking_hints",
+    "implementation_allowed_now": false,
+    "implementation_phase": "PLANNED_NOT_APPLIED",
+    "order": 1,
+    "patch_id": "patch_world_model_state_tracking_v1",
+    "risk_level": "MEDIUM",
+    "score_claim_allowed": false,
+    "target_layer": "world_model",
+    "test_target": "tests/test_solver_patch_helpers.py::test_world_model_state_tracking_hints"
+  },
+  {
+    "file_target": "src/hbce_arc_agi3/solver_patch_helpers.py",
+    "function_target": "build_goal_inference_terminal_state_hints",
+    "implementation_allowed_now": false,
+    "implementation_phase": "PLANNED_NOT_APPLIED",
+    "order": 2,
+    "patch_id": "patch_goal_inference_from_terminal_state_v1",
+    "risk_level": "MEDIUM",
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference",
+    "test_target": "tests/test_solver_patch_helpers.py::test_goal_inference_terminal_state_hints"
+  },
+  {
+    "file_target": "src/hbce_arc_agi3/solver_patch_helpers.py",
+    "function_target": "build_planner_loop_recovery_hints",
+    "implementation_allowed_now": false,
+    "implementation_phase": "PLANNED_NOT_APPLIED",
+    "order": 3,
+    "patch_id": "patch_planner_loop_recovery_v1",
+    "risk_level": "HIGH",
+    "score_claim_allowed": false,
+    "target_layer": "planner",
+    "test_target": "tests/test_solver_patch_helpers.py::test_planner_loop_recovery_hints"
+  },
+  {
+    "file_target": "src/hbce_arc_agi3/solver_patch_helpers.py",
+    "function_target": "build_transition_verifier_feedback_hints",
+    "implementation_allowed_now": false,
+    "implementation_phase": "PLANNED_NOT_APPLIED",
+    "order": 4,
+    "patch_id": "patch_transition_verifier_feedback_v1",
+    "risk_level": "MEDIUM",
+    "score_claim_allowed": false,
+    "target_layer": "verifier",
+    "test_target": "tests/test_solver_patch_helpers.py::test_transition_verifier_feedback_hints"
+  },
+  {
+    "file_target": "src/hbce_arc_agi3/solver_patch_helpers.py",
+    "function_target": "build_action_policy_validity_guard_hints",
+    "implementation_allowed_now": false,
+    "implementation_phase": "PLANNED_NOT_APPLIED",
+    "order": 5,
+    "patch_id": "patch_action_policy_validity_guard_v1",
+    "risk_level": "HIGH",
+    "score_claim_allowed": false,
+    "target_layer": "action_policy",
+    "test_target": "tests/test_solver_patch_helpers.py::test_action_policy_validity_guard_hints"
+  }
+]

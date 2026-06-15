@@ -1,0 +1,50 @@
+[
+  {
+    "authorization_scope": "NEXT_STAGE_ONLY",
+    "criterion_id": "task8_source_ready",
+    "passed": true,
+    "required": true
+  },
+  {
+    "authorization_scope": "NEXT_STAGE_ONLY",
+    "criterion_id": "clean_git_status_before_patch",
+    "passed": true,
+    "required": true
+  },
+  {
+    "authorization_scope": "NEXT_STAGE_ONLY",
+    "criterion_id": "full_suite_green_before_patch",
+    "passed": true,
+    "required": true
+  },
+  {
+    "authorization_scope": "NEXT_STAGE_ONLY",
+    "criterion_id": "patch_order_declared",
+    "passed": true,
+    "required": true
+  },
+  {
+    "authorization_scope": "NEXT_STAGE_ONLY",
+    "criterion_id": "required_tests_declared",
+    "passed": true,
+    "required": true
+  },
+  {
+    "authorization_scope": "NEXT_STAGE_ONLY",
+    "criterion_id": "risk_register_declared",
+    "passed": true,
+    "required": true
+  },
+  {
+    "authorization_scope": "NEXT_STAGE_ONLY",
+    "criterion_id": "runtime_solver_modification_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "authorization_scope": "NEXT_STAGE_ONLY",
+    "criterion_id": "score_submission_boundary_preserved",
+    "passed": true,
+    "required": true
+  }
+]

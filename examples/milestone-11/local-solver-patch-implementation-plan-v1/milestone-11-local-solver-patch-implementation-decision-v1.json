@@ -1,0 +1,13 @@
+{
+  "decision_boundary": "PLAN_ONLY_NO_RUNTIME_PATCH_NO_SCORE_NO_SUBMISSION",
+  "decision_id": "M11-TASK9-LOCAL-SOLVER-PATCH-IMPLEMENTATION-PLAN-DECISION-v1",
+  "implementation_allowed_now": false,
+  "implementation_plan_ready": true,
+  "next_stage": "MILESTONE_11_TASK_10_LOCAL_SOLVER_PATCH_HELPERS_V1",
+  "next_stage_authorized_scope": "PATCH_HELPERS_ONLY",
+  "ranker_runtime_modification_allowed": false,
+  "real_submission_allowed": false,
+  "runtime_solver_modification_allowed": false,
+  "score_claim_allowed": false,
+  "verdict": "LOCAL_SOLVER_PATCH_IMPLEMENTATION_PLAN_READY_FOR_PATCH_HELPERS"
+}
