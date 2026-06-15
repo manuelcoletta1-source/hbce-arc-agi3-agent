@@ -1,0 +1,16 @@
+{
+  "artifact_count": 10,
+  "artifacts": {
+    "acceptance": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-acceptance-v1.json",
+    "criteria": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-criteria-v1.json",
+    "decision": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-decision-v1.json",
+    "findings": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-findings-v1.json",
+    "index": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-index-v1.json",
+    "manifest": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-manifest-v1.txt",
+    "scorecard": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-scorecard-v1.json",
+    "stop_conditions": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-stop-conditions-v1.json",
+    "v1_json": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-v1.json",
+    "v1_md": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-v1.md"
+  },
+  "revision": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1"
+}

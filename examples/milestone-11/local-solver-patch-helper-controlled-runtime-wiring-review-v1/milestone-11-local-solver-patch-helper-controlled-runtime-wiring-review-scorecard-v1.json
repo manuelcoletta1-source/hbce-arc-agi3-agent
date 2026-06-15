@@ -1,0 +1,23 @@
+{
+  "competitive_score_claim_allowed": false,
+  "controlled_runtime_wiring_authorization_gate_recommended": true,
+  "controlled_runtime_wiring_authorized": false,
+  "diagnostic_only": true,
+  "external_solver_dependency": false,
+  "fail_closed_active": true,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "next_stage": "MILESTONE_11_TASK_23_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_AUTHORIZATION_GATE_V1",
+  "official_score_claim_allowed": false,
+  "ranker_runtime_modified": false,
+  "real_submission_allowed": false,
+  "review_criterion_count": 12,
+  "review_finding_count": 16,
+  "runtime_solver_modified": false,
+  "runtime_wiring_dry_run_accepted": true,
+  "runtime_wiring_review_passed": true,
+  "runtime_wiring_review_ready": true,
+  "task_22_ready": true,
+  "task_mode": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1_LOCAL_ONLY",
+  "task_verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_READY_FOR_AUTHORIZATION_GATE"
+}

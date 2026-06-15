@@ -1,0 +1,82 @@
+[
+  {
+    "acceptance_id": "accept_review_item_01",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "acceptance_id": "accept_review_item_02",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "acceptance_id": "accept_review_item_03",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "acceptance_id": "accept_review_item_04",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "acceptance_id": "accept_review_item_05",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "acceptance_id": "accept_review_item_06",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "acceptance_id": "accept_review_item_07",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "acceptance_id": "accept_review_item_08",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "acceptance_id": "accept_review_item_09",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "acceptance_id": "accept_review_item_10",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  }
+]

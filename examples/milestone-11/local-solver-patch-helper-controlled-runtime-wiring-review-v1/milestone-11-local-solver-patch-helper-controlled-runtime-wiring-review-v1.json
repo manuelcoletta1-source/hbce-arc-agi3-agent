@@ -1,0 +1,611 @@
+{
+  "acceptance": [
+    {
+      "acceptance_id": "accept_review_item_01",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    },
+    {
+      "acceptance_id": "accept_review_item_02",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    },
+    {
+      "acceptance_id": "accept_review_item_03",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    },
+    {
+      "acceptance_id": "accept_review_item_04",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    },
+    {
+      "acceptance_id": "accept_review_item_05",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    },
+    {
+      "acceptance_id": "accept_review_item_06",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    },
+    {
+      "acceptance_id": "accept_review_item_07",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    },
+    {
+      "acceptance_id": "accept_review_item_08",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    },
+    {
+      "acceptance_id": "accept_review_item_09",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    },
+    {
+      "acceptance_id": "accept_review_item_10",
+      "accepted": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false
+    }
+  ],
+  "acceptance_item_count": 10,
+  "baseline_commit": "d0f2239 Add ARC AGI3 local solver patch helper controlled runtime wiring dry run",
+  "case_results": [
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_01",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    },
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_02",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    },
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_03",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    },
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_04",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    },
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_05",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    },
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_06",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    },
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_07",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    },
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_08",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    },
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_09",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    },
+    {
+      "area": "runtime_wiring_review",
+      "case_id": "m11_task22_case_10",
+      "evidence_score": 100,
+      "operation": "verify_boundary",
+      "passed": true
+    }
+  ],
+  "competitive_score_claim_allowed": false,
+  "controlled_runtime_wiring_authorization_gate_recommended": true,
+  "controlled_runtime_wiring_authorized": false,
+  "criteria": [
+    {
+      "criterion_id": "criterion_task21_source_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_dry_run_pass_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_review_authorization_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_simulation_counts_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_contract_validation_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_boundary_assertion_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_runtime_solver_untouched_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_ranker_runtime_untouched_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_external_dependency_absent_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_score_claim_absent_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_submission_absent_required",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    },
+    {
+      "criterion_id": "criterion_next_stage_authorization_gate_only",
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "diagnostic_only": true,
+  "external_solver_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "findings": [
+    {
+      "finding_id": "finding_task21_artifact_ready",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_runtime_wiring_dry_run_passed",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_runtime_wiring_review_authorized",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_target_simulations_valid",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_import_simulations_valid",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_contract_validations_valid",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_step_simulations_valid",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_regression_simulations_valid",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_rollback_readiness_valid",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_review_gates_confirmed",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_boundary_assertions_valid",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_runtime_solver_untouched",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_ranker_runtime_untouched",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_no_score_claim",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_no_submission_artifact",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    },
+    {
+      "finding_id": "finding_fail_closed_active",
+      "passed": true,
+      "recommendation": "ALLOW_AUTHORIZATION_GATE_REVIEW",
+      "severity": "PASS"
+    }
+  ],
+  "gate_results": [
+    {
+      "gate_id": "m11_task22_gate_01",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_02",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_03",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_04",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_05",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_06",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_07",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_08",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_09",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_10",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_11",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_12",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_13",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_14",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_15",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_16",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_17",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_18",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_19",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_20",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_21",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_22",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_23",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_24",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_25",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_26",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_27",
+      "passed": true,
+      "required": true
+    },
+    {
+      "gate_id": "m11_task22_gate_28",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "kaggle_authentication_allowed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "next_stage": "MILESTONE_11_TASK_23_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_AUTHORIZATION_GATE_V1",
+  "official_score_claim_allowed": false,
+  "private_score_claimed": false,
+  "public_safety": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_11_local_solver_patch_helper_controlled_runtime_wiring_review_v1"
+  },
+  "ranker_runtime_modified": false,
+  "ranker_runtime_patch_allowed": false,
+  "ranker_runtime_patch_applied": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "review_criterion_count": 12,
+  "review_finding_count": 16,
+  "revision": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1",
+  "runtime_solver_modified": false,
+  "runtime_solver_patch_allowed": false,
+  "runtime_solver_patch_applied": false,
+  "runtime_wiring_dry_run_accepted": true,
+  "runtime_wiring_performed": false,
+  "runtime_wiring_review_passed": true,
+  "runtime_wiring_review_ready": true,
+  "signature": "A3412D4EAA7825DD",
+  "source_task21_artifact": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-dry-run-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-dry-run-v1.json",
+  "source_task21_available": true,
+  "status": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1_READY",
+  "stop_condition_count": 14,
+  "stop_conditions": [
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_01"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_02"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_03"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_04"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_05"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_06"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_07"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_08"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_09"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_10"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_11"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_12"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_13"
+    },
+    {
+      "active": false,
+      "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_wiring_review_stop_14"
+    }
+  ],
+  "submission_json_created": false,
+  "task_22_ready": true,
+  "task_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-REVIEW-A3412D4EAA78",
+  "task_mode": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1_LOCAL_ONLY",
+  "task_verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_READY_FOR_AUTHORIZATION_GATE",
+  "upload_package_created": false
+}

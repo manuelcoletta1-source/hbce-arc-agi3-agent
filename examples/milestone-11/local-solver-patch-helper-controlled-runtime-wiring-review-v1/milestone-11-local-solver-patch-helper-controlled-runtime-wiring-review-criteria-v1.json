@@ -1,0 +1,74 @@
+[
+  {
+    "criterion_id": "criterion_task21_source_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_dry_run_pass_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_review_authorization_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_simulation_counts_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_contract_validation_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_boundary_assertion_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_runtime_solver_untouched_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_ranker_runtime_untouched_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_external_dependency_absent_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_score_claim_absent_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_submission_absent_required",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_next_stage_authorization_gate_only",
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "passed": true,
+    "required": true
+  }
+]

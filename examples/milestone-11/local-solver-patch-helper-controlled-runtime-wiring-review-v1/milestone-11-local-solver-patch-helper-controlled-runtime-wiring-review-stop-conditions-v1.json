@@ -1,0 +1,86 @@
+[
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_01"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_02"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_03"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_04"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_05"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_06"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_07"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_08"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_09"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_10"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_11"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_12"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_13"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_RUNTIME_WIRING_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_wiring_review_stop_14"
+  }
+]
