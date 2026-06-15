@@ -1,0 +1,62 @@
+[
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "task11_artifact_missing"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "task11_probe_not_passed"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "missing_layer_target"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "missing_adapter_contract"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_solver_mutation_detected"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "ranker_runtime_mutation_detected"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "external_solver_dependency_detected"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "score_claim_detected"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "submission_artifact_detected"
+  },
+  {
+    "action": "STOP_AND_REVIEW",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "fail_closed_boundary_missing"
+  }
+]

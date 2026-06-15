@@ -1,0 +1,74 @@
+[
+  {
+    "allowed_now": true,
+    "modifies_ranker_runtime": false,
+    "modifies_runtime_solver": false,
+    "score_claim_allowed": false,
+    "sequence": 1,
+    "step_id": "step_01_preflight_task11_green_v1",
+    "title": "Verify Task 11 source is green"
+  },
+  {
+    "allowed_now": false,
+    "modifies_ranker_runtime": false,
+    "modifies_runtime_solver": false,
+    "score_claim_allowed": false,
+    "sequence": 2,
+    "step_id": "step_02_create_local_wiring_module_plan_v1",
+    "title": "Plan local helper wiring module"
+  },
+  {
+    "allowed_now": false,
+    "modifies_ranker_runtime": false,
+    "modifies_runtime_solver": false,
+    "score_claim_allowed": false,
+    "sequence": 3,
+    "step_id": "step_03_create_adapter_layer_plan_v1",
+    "title": "Plan adapter functions for five helper layers"
+  },
+  {
+    "allowed_now": false,
+    "modifies_ranker_runtime": false,
+    "modifies_runtime_solver": false,
+    "score_claim_allowed": false,
+    "sequence": 4,
+    "step_id": "step_04_create_wiring_tests_plan_v1",
+    "title": "Plan local wiring tests"
+  },
+  {
+    "allowed_now": false,
+    "modifies_ranker_runtime": false,
+    "modifies_runtime_solver": false,
+    "score_claim_allowed": false,
+    "sequence": 5,
+    "step_id": "step_05_run_helper_and_probe_tests_v1",
+    "title": "Run helper and probe tests before wiring dry-run"
+  },
+  {
+    "allowed_now": false,
+    "modifies_ranker_runtime": false,
+    "modifies_runtime_solver": false,
+    "score_claim_allowed": false,
+    "sequence": 6,
+    "step_id": "step_06_run_full_suite_v1",
+    "title": "Run full suite before dry-run"
+  },
+  {
+    "allowed_now": false,
+    "modifies_ranker_runtime": false,
+    "modifies_runtime_solver": false,
+    "score_claim_allowed": false,
+    "sequence": 7,
+    "step_id": "step_07_verify_boundaries_v1",
+    "title": "Verify no score, no submission, no runtime mutation"
+  },
+  {
+    "allowed_now": false,
+    "modifies_ranker_runtime": false,
+    "modifies_runtime_solver": false,
+    "score_claim_allowed": false,
+    "sequence": 8,
+    "step_id": "step_08_authorize_next_dry_run_v1",
+    "title": "Authorize Task 13 dry-run only"
+  }
+]

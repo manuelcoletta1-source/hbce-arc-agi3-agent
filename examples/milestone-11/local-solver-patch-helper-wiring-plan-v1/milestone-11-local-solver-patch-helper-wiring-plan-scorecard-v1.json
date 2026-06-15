@@ -1,0 +1,62 @@
+[
+  {
+    "criterion_id": "source_task11_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "probe_run_passed",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "wiring_targets_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "adapter_plan_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "wiring_steps_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "wiring_gates_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "stop_conditions_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "required_tests_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "runtime_solver_untouched",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "next_stage_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_solver_patch_helpers.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "required_test_01"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helpers.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "required_test_02"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helper_probe_run.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "required_test_03"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helper_wiring_plan.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "required_test_04"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python scripts/run_milestone_11_local_solver_patch_helper_wiring_plan.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "required_test_05"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "required_test_06"
+  },
+  {
+    "command": "git status -sb",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "required_test_07"
+  }
+]

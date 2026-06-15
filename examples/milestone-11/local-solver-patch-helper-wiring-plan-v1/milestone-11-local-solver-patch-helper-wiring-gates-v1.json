@@ -1,0 +1,74 @@
+[
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_task11_source_ready",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_task11_probe_passed",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_five_layers_covered",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_all_adapters_declared",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_no_runtime_solver_patch",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_no_ranker_patch",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_no_external_solver_dependency",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_no_score_claim",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_no_submission_artifact",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_fail_closed_active",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_required_tests_declared",
+    "passed": true,
+    "required": true
+  },
+  {
+    "failure_action": "STOP_WIRING_PLAN",
+    "gate_id": "gate_next_stage_dry_run_only",
+    "passed": true,
+    "required": true
+  }
+]

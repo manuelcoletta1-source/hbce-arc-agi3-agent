@@ -1,0 +1,57 @@
+[
+  {
+    "adapter_name": "world_model_state_tracking_adapter",
+    "fail_closed_on_invalid_hint": true,
+    "fail_closed_on_missing_input": true,
+    "helper_function": "build_world_model_state_tracking_hints",
+    "input_contract": "diagnostic_record_sequence",
+    "output_contract": "diagnostic_hint_sequence",
+    "runtime_side_effect_allowed": false,
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "adapter_name": "goal_inference_terminal_state_adapter",
+    "fail_closed_on_invalid_hint": true,
+    "fail_closed_on_missing_input": true,
+    "helper_function": "build_goal_inference_terminal_state_hints",
+    "input_contract": "diagnostic_record_sequence",
+    "output_contract": "diagnostic_hint_sequence",
+    "runtime_side_effect_allowed": false,
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "adapter_name": "planner_loop_recovery_adapter",
+    "fail_closed_on_invalid_hint": true,
+    "fail_closed_on_missing_input": true,
+    "helper_function": "build_planner_loop_recovery_hints",
+    "input_contract": "diagnostic_record_sequence",
+    "output_contract": "diagnostic_hint_sequence",
+    "runtime_side_effect_allowed": false,
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "adapter_name": "transition_verifier_feedback_adapter",
+    "fail_closed_on_invalid_hint": true,
+    "fail_closed_on_missing_input": true,
+    "helper_function": "build_transition_verifier_feedback_hints",
+    "input_contract": "diagnostic_record_sequence",
+    "output_contract": "diagnostic_hint_sequence",
+    "runtime_side_effect_allowed": false,
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "adapter_name": "action_policy_validity_guard_adapter",
+    "fail_closed_on_invalid_hint": true,
+    "fail_closed_on_missing_input": true,
+    "helper_function": "build_action_policy_validity_guard_hints",
+    "input_contract": "diagnostic_record_sequence",
+    "output_contract": "diagnostic_hint_sequence",
+    "runtime_side_effect_allowed": false,
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  }
+]
