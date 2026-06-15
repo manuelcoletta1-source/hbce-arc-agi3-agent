@@ -1,0 +1,52 @@
+[
+  {
+    "diagnostic_only": true,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer_probe_passed": true,
+    "probe_failure_count": 0,
+    "probe_pass_count": 6,
+    "probe_result_count": 6,
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "diagnostic_only": true,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer_probe_passed": true,
+    "probe_failure_count": 0,
+    "probe_pass_count": 6,
+    "probe_result_count": 6,
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "diagnostic_only": true,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer_probe_passed": true,
+    "probe_failure_count": 0,
+    "probe_pass_count": 6,
+    "probe_result_count": 6,
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "diagnostic_only": true,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer_probe_passed": true,
+    "probe_failure_count": 0,
+    "probe_pass_count": 6,
+    "probe_result_count": 6,
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "diagnostic_only": true,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer_probe_passed": true,
+    "probe_failure_count": 0,
+    "probe_pass_count": 6,
+    "probe_result_count": 6,
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "decision_boundary": "PROBE_RUN_ONLY_NO_RUNTIME_WIRING_NO_SCORE_NO_SUBMISSION",
+  "decision_id": "M11-TASK11-LOCAL-SOLVER-PATCH-HELPER-PROBE-RUN-DECISION-v1",
+  "helper_probe_run_passed": true,
+  "helper_probe_run_ready": true,
+  "helper_runtime_wiring_performed": false,
+  "next_stage": "MILESTONE_11_TASK_12_LOCAL_SOLVER_PATCH_HELPER_WIRING_PLAN_V1",
+  "ranker_runtime_modification_allowed": false,
+  "real_submission_allowed": false,
+  "runtime_solver_modification_allowed": false,
+  "score_claim_allowed": false,
+  "verdict": "LOCAL_SOLVER_PATCH_HELPER_PROBE_RUN_READY_FOR_HELPER_WIRING_PLAN"
+}
