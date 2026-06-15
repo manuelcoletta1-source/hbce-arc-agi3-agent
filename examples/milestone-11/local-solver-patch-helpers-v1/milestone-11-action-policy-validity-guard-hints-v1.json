@@ -1,0 +1,180 @@
+[
+  {
+    "action_policy_valid": true,
+    "action_sequence": [
+      "RIGHT",
+      "DOWN"
+    ],
+    "allowed_actions": [
+      "DOWN",
+      "LEFT",
+      "RIGHT",
+      "STAY",
+      "UP",
+      "VERIFY"
+    ],
+    "confidence": 1.0,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_object_persistence_fixture_001",
+    "external_solver_dependency": false,
+    "fixture_id": "m11_object_persistence_fixture_001",
+    "hint_id": "ACTION-HINT-60D8623AC8E0",
+    "hint_type": "action_validity_guard",
+    "invalid_actions": [],
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "submission_artifact_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "action_policy_valid": true,
+    "action_sequence": [
+      "VERIFY"
+    ],
+    "allowed_actions": [
+      "DOWN",
+      "LEFT",
+      "RIGHT",
+      "STAY",
+      "UP",
+      "VERIFY"
+    ],
+    "confidence": 1.0,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_color_rule_fixture_001",
+    "external_solver_dependency": false,
+    "fixture_id": "m11_color_rule_fixture_001",
+    "hint_id": "ACTION-HINT-46F5B37E55BE",
+    "hint_type": "action_validity_guard",
+    "invalid_actions": [],
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "submission_artifact_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "action_policy_valid": true,
+    "action_sequence": [
+      "RIGHT"
+    ],
+    "allowed_actions": [
+      "DOWN",
+      "LEFT",
+      "RIGHT",
+      "STAY",
+      "UP",
+      "VERIFY"
+    ],
+    "confidence": 1.0,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_movement_transition_fixture_001",
+    "external_solver_dependency": false,
+    "fixture_id": "m11_movement_transition_fixture_001",
+    "hint_id": "ACTION-HINT-C8D9EA47102E",
+    "hint_type": "action_validity_guard",
+    "invalid_actions": [],
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "submission_artifact_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "action_policy_valid": true,
+    "action_sequence": [
+      "RIGHT",
+      "DOWN"
+    ],
+    "allowed_actions": [
+      "DOWN",
+      "LEFT",
+      "RIGHT",
+      "STAY",
+      "UP",
+      "VERIFY"
+    ],
+    "confidence": 1.0,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_goal_inference_fixture_001",
+    "external_solver_dependency": false,
+    "fixture_id": "m11_goal_inference_fixture_001",
+    "hint_id": "ACTION-HINT-B058D88E614F",
+    "hint_type": "action_validity_guard",
+    "invalid_actions": [],
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "submission_artifact_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "action_policy_valid": true,
+    "action_sequence": [
+      "LEFT",
+      "RIGHT",
+      "RIGHT"
+    ],
+    "allowed_actions": [
+      "DOWN",
+      "LEFT",
+      "RIGHT",
+      "STAY",
+      "UP",
+      "VERIFY"
+    ],
+    "confidence": 1.0,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_planner_loop_fixture_001",
+    "external_solver_dependency": false,
+    "fixture_id": "m11_planner_loop_fixture_001",
+    "hint_id": "ACTION-HINT-73BCF7AD0079",
+    "hint_type": "action_validity_guard",
+    "invalid_actions": [],
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "submission_artifact_allowed": false,
+    "target_layer": "action_policy"
+  },
+  {
+    "action_policy_valid": true,
+    "action_sequence": [
+      "LEFT"
+    ],
+    "allowed_actions": [
+      "DOWN",
+      "LEFT",
+      "RIGHT",
+      "STAY",
+      "UP",
+      "VERIFY"
+    ],
+    "confidence": 1.0,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+    "external_solver_dependency": false,
+    "fixture_id": "m11_verifier_mismatch_fixture_001",
+    "hint_id": "ACTION-HINT-36F05EA8B35B",
+    "hint_type": "action_validity_guard",
+    "invalid_actions": [],
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "submission_artifact_allowed": false,
+    "target_layer": "action_policy"
+  }
+]

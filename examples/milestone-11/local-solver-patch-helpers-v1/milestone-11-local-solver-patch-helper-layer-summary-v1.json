@@ -1,0 +1,37 @@
+[
+  {
+    "diagnostic_only": true,
+    "hint_count": 6,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "diagnostic_only": true,
+    "hint_count": 6,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "diagnostic_only": true,
+    "hint_count": 6,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "diagnostic_only": true,
+    "hint_count": 6,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "diagnostic_only": true,
+    "hint_count": 6,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  }
+]

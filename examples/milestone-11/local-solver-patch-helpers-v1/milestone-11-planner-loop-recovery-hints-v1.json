@@ -1,0 +1,138 @@
+[
+  {
+    "action_sequence": [
+      "RIGHT",
+      "DOWN"
+    ],
+    "confidence": 0.75,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_object_persistence_fixture_001",
+    "external_solver_dependency": false,
+    "fallback_required": false,
+    "fixture_id": "m11_object_persistence_fixture_001",
+    "hint_id": "PLANNER-HINT-C98E566C3316",
+    "hint_type": "loop_recovery",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "loop_risk_detected": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "step_count": 2,
+    "submission_artifact_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "action_sequence": [
+      "VERIFY"
+    ],
+    "confidence": 0.75,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_color_rule_fixture_001",
+    "external_solver_dependency": false,
+    "fallback_required": false,
+    "fixture_id": "m11_color_rule_fixture_001",
+    "hint_id": "PLANNER-HINT-6A52FA9EEA7B",
+    "hint_type": "loop_recovery",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "loop_risk_detected": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "step_count": 1,
+    "submission_artifact_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "action_sequence": [
+      "RIGHT"
+    ],
+    "confidence": 0.75,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_movement_transition_fixture_001",
+    "external_solver_dependency": false,
+    "fallback_required": false,
+    "fixture_id": "m11_movement_transition_fixture_001",
+    "hint_id": "PLANNER-HINT-499E8EBDF6DB",
+    "hint_type": "loop_recovery",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "loop_risk_detected": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "step_count": 1,
+    "submission_artifact_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "action_sequence": [
+      "RIGHT",
+      "DOWN"
+    ],
+    "confidence": 0.75,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_goal_inference_fixture_001",
+    "external_solver_dependency": false,
+    "fallback_required": false,
+    "fixture_id": "m11_goal_inference_fixture_001",
+    "hint_id": "PLANNER-HINT-4204AC0DD0E2",
+    "hint_type": "loop_recovery",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "loop_risk_detected": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "step_count": 2,
+    "submission_artifact_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "action_sequence": [
+      "LEFT",
+      "RIGHT",
+      "RIGHT"
+    ],
+    "confidence": 0.75,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_planner_loop_fixture_001",
+    "external_solver_dependency": false,
+    "fallback_required": false,
+    "fixture_id": "m11_planner_loop_fixture_001",
+    "hint_id": "PLANNER-HINT-3824E2F65691",
+    "hint_type": "loop_recovery",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "loop_risk_detected": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "step_count": 3,
+    "submission_artifact_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "action_sequence": [
+      "LEFT"
+    ],
+    "confidence": 0.75,
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+    "external_solver_dependency": false,
+    "fallback_required": false,
+    "fixture_id": "m11_verifier_mismatch_fixture_001",
+    "hint_id": "PLANNER-HINT-D2C8AAC292B1",
+    "hint_type": "loop_recovery",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "legal_certification": false,
+    "loop_risk_detected": false,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "step_count": 1,
+    "submission_artifact_allowed": false,
+    "target_layer": "planner"
+  }
+]

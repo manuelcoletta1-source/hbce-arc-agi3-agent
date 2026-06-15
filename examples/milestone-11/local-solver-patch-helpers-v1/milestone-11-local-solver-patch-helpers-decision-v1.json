@@ -1,0 +1,12 @@
+{
+  "decision_boundary": "HELPERS_ONLY_NO_RUNTIME_PATCH_NO_SCORE_NO_SUBMISSION",
+  "decision_id": "M11-TASK10-LOCAL-SOLVER-PATCH-HELPERS-DECISION-v1",
+  "helper_implementation_ready": true,
+  "helper_scope": "PATCH_HELPERS_ONLY",
+  "next_stage": "MILESTONE_11_TASK_11_LOCAL_SOLVER_PATCH_HELPER_PROBE_RUN_V1",
+  "ranker_runtime_modification_allowed": false,
+  "real_submission_allowed": false,
+  "runtime_solver_modification_allowed": false,
+  "score_claim_allowed": false,
+  "verdict": "LOCAL_SOLVER_PATCH_HELPERS_READY_FOR_LOCAL_HELPER_PROBE_RUN"
+}
