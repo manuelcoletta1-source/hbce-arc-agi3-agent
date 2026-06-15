@@ -1,0 +1,50 @@
+[
+  {
+    "denial_id": "deny_runtime_solver_mutation",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW",
+    "title": "Runtime solver mutation is not authorized in Task 15"
+  },
+  {
+    "denial_id": "deny_ranker_runtime_mutation",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW",
+    "title": "Ranker runtime mutation is not authorized in Task 15"
+  },
+  {
+    "denial_id": "deny_external_solver_dependency",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW",
+    "title": "External solver dependency is not authorized"
+  },
+  {
+    "denial_id": "deny_score_claim",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW",
+    "title": "Kaggle score claim is not authorized"
+  },
+  {
+    "denial_id": "deny_submission_json",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW",
+    "title": "submission.json creation is not authorized"
+  },
+  {
+    "denial_id": "deny_upload_package",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW",
+    "title": "Upload package creation is not authorized"
+  },
+  {
+    "denial_id": "deny_kaggle_authentication",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW",
+    "title": "Kaggle authentication is not authorized"
+  },
+  {
+    "denial_id": "deny_legal_certification",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW",
+    "title": "Legal certification claim is not authorized"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "criterion_id": "source_task14_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "review_passed",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "dry_run_accepted",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "controlled_gate_recommended",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "gate_rules_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "authorization_items_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "denial_items_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "stop_conditions_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "runtime_boundary_preserved",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "score_boundary_preserved",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "submission_boundary_preserved",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "fail_closed_active",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "implementation_plan_authorized",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "runtime_wiring_still_unauthorized",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "next_stage_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  }
+]

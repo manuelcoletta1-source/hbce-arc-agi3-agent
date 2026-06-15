@@ -1,0 +1,1229 @@
+{
+  "adapter_count": 5,
+  "authorization_item_count": 10,
+  "authorization_items": [
+    {
+      "authorization_id": "authorize_task16_implementation_plan",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Create controlled wiring implementation plan"
+    },
+    {
+      "authorization_id": "authorize_static_contract_review",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Review adapter and helper contracts"
+    },
+    {
+      "authorization_id": "authorize_target_module_proposal",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Propose target module and import path"
+    },
+    {
+      "authorization_id": "authorize_test_plan_extension",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Extend local-only tests"
+    },
+    {
+      "authorization_id": "authorize_boundary_manifest_update",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Update boundary manifest"
+    },
+    {
+      "authorization_id": "authorize_fail_closed_control_list",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Create fail-closed control list"
+    },
+    {
+      "authorization_id": "authorize_no_score_no_submission_audit",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Audit no-score and no-submission boundaries"
+    },
+    {
+      "authorization_id": "authorize_regression_guard_design",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Design regression guards"
+    },
+    {
+      "authorization_id": "authorize_manual_operator_review",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Require human operator review"
+    },
+    {
+      "authorization_id": "authorize_next_gate_only",
+      "authorized": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "scope": "PLAN_OR_REVIEW_ONLY",
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "title": "Proceed to next controlled stage only"
+    }
+  ],
+  "baseline_commit": "38755e8 Add ARC AGI3 local solver patch helper wiring review",
+  "competitive_score_claim_allowed": false,
+  "controlled_gate_gate_count": 32,
+  "controlled_gate_gates": [
+    {
+      "name": "task_14_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_14_validated",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_accepted",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "controlled_gate_recommended",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_wiring_performed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_finding_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_criterion_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_gate_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_issue_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "adapter_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "layer_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_output_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "gate_rule_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "authorization_item_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "denial_item_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "stop_condition_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "controlled_gate_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "implementation_plan_authorized",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_solver_untouched",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_runtime_untouched",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_solver_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_boundary_preserved",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_boundary_preserved",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "case_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "controlled_gate_index": {
+    "adapter_count": 5,
+    "authorization_item_count": 10,
+    "baseline_commit": "38755e8 Add ARC AGI3 local solver patch helper wiring review",
+    "competitive_score_claim_allowed": false,
+    "controlled_gate_passed": true,
+    "controlled_gate_ready": true,
+    "controlled_gate_status": "CONTROLLED_GATE_PASS",
+    "controlled_runtime_wiring_authorized": false,
+    "denial_item_count": 8,
+    "depends_on_task_14": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-WIRING-REVIEW-44CC8B701FE6",
+    "diagnostic_only": true,
+    "dry_run_failure_count": 0,
+    "dry_run_output_count": 30,
+    "dry_run_pass_count": 30,
+    "external_api_dependency": false,
+    "external_solver_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "gate_rule_count": 16,
+    "implementation_plan_authorized": true,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "kaggle_submission_sent": false,
+    "layer_count": 5,
+    "legal_certification": false,
+    "milestone": "Milestone #11",
+    "next_stage": "MILESTONE_11_TASK_16_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_PLAN_V1",
+    "official_score_claim_allowed": false,
+    "private_core_exposure": false,
+    "private_score_claimed": false,
+    "ranker_runtime_modified": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "runtime_solver_modified": false,
+    "runtime_wiring_performed": false,
+    "status": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_GATE_V1_READY",
+    "stop_condition_count": 12,
+    "task": "Task 15",
+    "task_mode": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_GATE_V1_LOCAL_ONLY",
+    "task_scope": "CONTROLLED_GATE_ONLY_NO_RUNTIME_SOLVER_MUTATION_NO_SCORE_NO_SUBMISSION",
+    "task_verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_GATE_READY_FOR_IMPLEMENTATION_PLAN"
+  },
+  "controlled_gate_issue_count": 0,
+  "controlled_gate_issues": [
+    {
+      "active": false,
+      "name": "task_14_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_14_invalidated",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_accepted",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "controlled_gate_recommended",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_wiring_performed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_finding_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_criterion_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_gate_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_issue_count_zero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "adapter_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "layer_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_output_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_failure_count_zero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "gate_rule_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "authorization_item_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "denial_item_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "stop_condition_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "controlled_gate_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "implementation_plan_authorized",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_wiring_authorized_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_solver_untouched",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_runtime_untouched",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_solver_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_boundary_preserved",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_boundary_preserved",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "case_failure_count_zero",
+      "severity": "BLOCKING"
+    }
+  ],
+  "controlled_gate_passed": true,
+  "controlled_gate_ready": true,
+  "controlled_gate_scorecard": [
+    {
+      "criterion_id": "source_task14_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "review_passed",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "dry_run_accepted",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "controlled_gate_recommended",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "gate_rules_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "authorization_items_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "denial_items_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "stop_conditions_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "runtime_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "score_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "submission_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "fail_closed_active",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "implementation_plan_authorized",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "runtime_wiring_still_unauthorized",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "next_stage_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    }
+  ],
+  "controlled_gate_status": "CONTROLLED_GATE_PASS",
+  "controlled_runtime_wiring_authorized": false,
+  "denial_item_count": 8,
+  "denial_items": [
+    {
+      "denial_id": "deny_runtime_solver_mutation",
+      "denied": true,
+      "failure_action": "STOP_AND_REVIEW",
+      "title": "Runtime solver mutation is not authorized in Task 15"
+    },
+    {
+      "denial_id": "deny_ranker_runtime_mutation",
+      "denied": true,
+      "failure_action": "STOP_AND_REVIEW",
+      "title": "Ranker runtime mutation is not authorized in Task 15"
+    },
+    {
+      "denial_id": "deny_external_solver_dependency",
+      "denied": true,
+      "failure_action": "STOP_AND_REVIEW",
+      "title": "External solver dependency is not authorized"
+    },
+    {
+      "denial_id": "deny_score_claim",
+      "denied": true,
+      "failure_action": "STOP_AND_REVIEW",
+      "title": "Kaggle score claim is not authorized"
+    },
+    {
+      "denial_id": "deny_submission_json",
+      "denied": true,
+      "failure_action": "STOP_AND_REVIEW",
+      "title": "submission.json creation is not authorized"
+    },
+    {
+      "denial_id": "deny_upload_package",
+      "denied": true,
+      "failure_action": "STOP_AND_REVIEW",
+      "title": "Upload package creation is not authorized"
+    },
+    {
+      "denial_id": "deny_kaggle_authentication",
+      "denied": true,
+      "failure_action": "STOP_AND_REVIEW",
+      "title": "Kaggle authentication is not authorized"
+    },
+    {
+      "denial_id": "deny_legal_certification",
+      "denied": true,
+      "failure_action": "STOP_AND_REVIEW",
+      "title": "Legal certification claim is not authorized"
+    }
+  ],
+  "diagnostic_only": true,
+  "diagnostic_record_count": 6,
+  "dry_run_failure_count": 0,
+  "dry_run_output_count": 30,
+  "dry_run_pass_count": 30,
+  "external_solver_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_case_count": 10,
+  "gate_case_failure_count": 0,
+  "gate_case_pass_count": 10,
+  "gate_case_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source",
+      "case_id": "m11_task15_source_task14_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_task_14_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "review",
+      "case_id": "m11_task15_review_passed_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_review_passed",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "dry_run",
+      "case_id": "m11_task15_dry_run_accepted_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_dry_run_accepted",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "gate",
+      "case_id": "m11_task15_gate_recommendation_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_gate_recommendation",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "counts",
+      "case_id": "m11_task15_artifact_counts_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_counts",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "runtime_boundary",
+      "case_id": "m11_task15_runtime_boundary_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_runtime_boundary",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "score_boundary",
+      "case_id": "m11_task15_score_boundary_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_score_boundary",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m11_task15_submission_boundary_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_submission_boundary",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "fail_closed",
+      "case_id": "m11_task15_fail_closed_boundary_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_fail_closed",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m11_task15_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_stage",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "gate_cases": [
+    {
+      "area": "source",
+      "case_id": "m11_task15_source_task14_ready_v1",
+      "operation": "verify_task_14_source"
+    },
+    {
+      "area": "review",
+      "case_id": "m11_task15_review_passed_v1",
+      "operation": "verify_review_passed"
+    },
+    {
+      "area": "dry_run",
+      "case_id": "m11_task15_dry_run_accepted_v1",
+      "operation": "verify_dry_run_accepted"
+    },
+    {
+      "area": "gate",
+      "case_id": "m11_task15_gate_recommendation_v1",
+      "operation": "verify_gate_recommendation"
+    },
+    {
+      "area": "counts",
+      "case_id": "m11_task15_artifact_counts_v1",
+      "operation": "verify_counts"
+    },
+    {
+      "area": "runtime_boundary",
+      "case_id": "m11_task15_runtime_boundary_v1",
+      "operation": "verify_runtime_boundary"
+    },
+    {
+      "area": "score_boundary",
+      "case_id": "m11_task15_score_boundary_v1",
+      "operation": "verify_score_boundary"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m11_task15_submission_boundary_v1",
+      "operation": "verify_submission_boundary"
+    },
+    {
+      "area": "fail_closed",
+      "case_id": "m11_task15_fail_closed_boundary_v1",
+      "operation": "verify_fail_closed"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m11_task15_next_stage_valid_v1",
+      "operation": "verify_next_stage"
+    }
+  ],
+  "gate_check_count": 61,
+  "gate_check_list": [
+    "task_14_artifact_exists",
+    "task_14_artifact_ready",
+    "task_14_validated",
+    "review_ready",
+    "review_passed",
+    "dry_run_accepted",
+    "controlled_gate_recommended",
+    "runtime_wiring_performed_false",
+    "review_finding_count_valid",
+    "review_criterion_count_valid",
+    "review_case_count_valid",
+    "review_gate_count_valid",
+    "review_issue_count_zero",
+    "adapter_count_valid",
+    "layer_count_valid",
+    "diagnostic_record_count_valid",
+    "dry_run_output_count_valid",
+    "dry_run_pass_count_valid",
+    "dry_run_failure_count_zero",
+    "gate_rules_created",
+    "gate_rule_count_valid",
+    "authorization_items_created",
+    "authorization_item_count_valid",
+    "denial_items_created",
+    "denial_item_count_valid",
+    "stop_conditions_created",
+    "stop_condition_count_valid",
+    "controlled_gate_ready",
+    "controlled_gate_passed",
+    "implementation_plan_authorized",
+    "runtime_wiring_authorized_false",
+    "runtime_solver_modified_false",
+    "ranker_runtime_modified_false",
+    "external_solver_dependency_false",
+    "diagnostic_only",
+    "not_kaggle_score",
+    "official_score_claim_blocked",
+    "competitive_score_claim_blocked",
+    "public_score_claim_blocked",
+    "private_score_claim_blocked",
+    "real_public_score_not_claimed",
+    "private_score_not_claimed",
+    "real_benchmark_score_absent",
+    "real_submission_candidate_absent",
+    "submission_json_absent",
+    "upload_package_absent",
+    "real_submission_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_submission_not_sent",
+    "fail_closed_required",
+    "fail_closed_active",
+    "next_stage_valid",
+    "case_count_valid",
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "gate_checks": {
+    "adapter_count_valid": true,
+    "authorization_item_count_valid": true,
+    "authorization_items_created": true,
+    "case_count_valid": true,
+    "competitive_score_claim_blocked": true,
+    "contains_api_keys_false": true,
+    "controlled_gate_passed": true,
+    "controlled_gate_ready": true,
+    "controlled_gate_recommended": true,
+    "denial_item_count_valid": true,
+    "denial_items_created": true,
+    "deterministic": true,
+    "diagnostic_only": true,
+    "diagnostic_record_count_valid": true,
+    "dry_run_accepted": true,
+    "dry_run_failure_count_zero": true,
+    "dry_run_only": true,
+    "dry_run_output_count_valid": true,
+    "dry_run_pass_count_valid": true,
+    "external_api_dependency_false": true,
+    "external_solver_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "gate_rule_count_valid": true,
+    "gate_rules_created": true,
+    "implementation_plan_authorized": true,
+    "kaggle_authentication_blocked": true,
+    "kaggle_submission_not_sent": true,
+    "layer_count_valid": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "next_stage_valid": true,
+    "not_kaggle_score": true,
+    "official_score_claim_blocked": true,
+    "private_core_exposure_false": true,
+    "private_score_claim_blocked": true,
+    "private_score_not_claimed": true,
+    "public_safe": true,
+    "public_score_claim_blocked": true,
+    "ranker_runtime_modified_false": true,
+    "real_benchmark_score_absent": true,
+    "real_public_score_not_claimed": true,
+    "real_submission_blocked": true,
+    "real_submission_candidate_absent": true,
+    "review_case_count_valid": true,
+    "review_criterion_count_valid": true,
+    "review_finding_count_valid": true,
+    "review_gate_count_valid": true,
+    "review_issue_count_zero": true,
+    "review_passed": true,
+    "review_ready": true,
+    "runtime_solver_modified_false": true,
+    "runtime_wiring_authorized_false": true,
+    "runtime_wiring_performed_false": true,
+    "stop_condition_count_valid": true,
+    "stop_conditions_created": true,
+    "submission_json_absent": true,
+    "task_14_artifact_exists": true,
+    "task_14_artifact_ready": true,
+    "task_14_validated": true,
+    "upload_package_absent": true
+  },
+  "gate_decision": {
+    "controlled_gate_passed": true,
+    "controlled_gate_ready": true,
+    "controlled_gate_status": "CONTROLLED_GATE_PASS",
+    "controlled_runtime_wiring_authorized": false,
+    "decision_boundary": "CONTROLLED_GATE_ONLY_IMPLEMENTATION_PLAN_NEXT_NO_RUNTIME_WIRING_NO_SCORE_NO_SUBMISSION",
+    "decision_id": "M11-TASK15-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-WIRING-GATE-DECISION-v1",
+    "implementation_plan_authorized": true,
+    "next_stage": "MILESTONE_11_TASK_16_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_PLAN_V1",
+    "ranker_runtime_modification_allowed": false,
+    "real_submission_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "runtime_wiring_performed": false,
+    "score_claim_allowed": false,
+    "verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_GATE_READY_FOR_IMPLEMENTATION_PLAN"
+  },
+  "gate_rule_count": 16,
+  "gate_rules": [
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_source_task14_must_be_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_review_must_be_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_dry_run_must_be_accepted",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_controlled_gate_must_be_recommended",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_all_review_cases_must_pass",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_all_review_gates_must_pass",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_review_issue_count_must_be_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_adapter_and_layer_counts_must_match",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_dry_run_outputs_must_be_green",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_runtime_solver_must_remain_unmodified",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_ranker_must_remain_unmodified",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_external_solver_dependency_must_be_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_score_claims_must_remain_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_submission_must_remain_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_fail_closed_must_remain_active",
+      "passed": true,
+      "required": true
+    },
+    {
+      "allows_runtime_mutation": false,
+      "failure_action": "STOP_CONTROLLED_GATE",
+      "gate_rule_id": "gate_next_stage_must_be_implementation_plan_only",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "implementation_plan_authorized": true,
+  "kaggle_authentication_allowed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "layer_count": 5,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_11_local_solver_patch_helper_controlled_wiring_gate_v1"
+  },
+  "milestone": "Milestone #11",
+  "next_stage": "MILESTONE_11_TASK_16_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_PLAN_V1",
+  "official_score_claim_allowed": false,
+  "passed_gate_count": 32,
+  "private_score_claim_allowed": false,
+  "private_score_claimed": false,
+  "public_score_claim_allowed": false,
+  "ranker_runtime_modified": false,
+  "real_benchmark_score": null,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "review_criterion_count": 12,
+  "review_finding_count": 12,
+  "runtime_solver_modified": false,
+  "runtime_wiring_performed": false,
+  "signature": "24898D7AF6D67CB2",
+  "source_summary": {
+    "adapter_count": 5,
+    "baseline_commit": "c8d4a8b Add ARC AGI3 local solver patch helper wiring dry run",
+    "competitive_score_claim_allowed": false,
+    "controlled_gate_recommended": true,
+    "diagnostic_only": true,
+    "diagnostic_record_count": 6,
+    "dry_run_accepted": true,
+    "dry_run_failure_count": 0,
+    "dry_run_output_count": 30,
+    "dry_run_pass_count": 30,
+    "external_solver_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "kaggle_submission_sent": false,
+    "layer_count": 5,
+    "manual_upload_allowed": false,
+    "official_score_claim_allowed": false,
+    "passed_gate_count": 24,
+    "private_score_claim_allowed": false,
+    "private_score_claimed": false,
+    "public_score_claim_allowed": false,
+    "ranker_runtime_modified": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "review_case_count": 10,
+    "review_case_failure_count": 0,
+    "review_case_pass_count": 10,
+    "review_criterion_count": 12,
+    "review_finding_count": 12,
+    "review_gate_count": 24,
+    "review_issue_count": 0,
+    "review_passed": true,
+    "review_ready": true,
+    "runtime_solver_modified": false,
+    "runtime_wiring_performed": false,
+    "submission_json_created": false,
+    "task_14_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-WIRING-REVIEW-44CC8B701FE6",
+    "task_14_path": "examples/milestone-11/local-solver-patch-helper-wiring-review-v1/milestone-11-local-solver-patch-helper-wiring-review-v1.json",
+    "task_14_present": true,
+    "task_14_ready": true,
+    "task_14_sha256": "5526a8b556645190cb89a7c6de3212e6234a2e54bf534fb1c01b18da63ee2b7f",
+    "task_14_sha256_16": "5526A8B556645190",
+    "task_14_signature": "44CC8B701FE6AD0F",
+    "task_14_status": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_WIRING_REVIEW_V1_READY",
+    "upload_package_created": false
+  },
+  "status": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_GATE_V1_READY",
+  "stop_condition_count": 12,
+  "stop_conditions": [
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "task14_artifact_missing"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "task14_review_not_passed"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "dry_run_not_accepted"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "controlled_gate_not_recommended"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "review_issue_count_nonzero"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "dry_run_failure_detected"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "runtime_solver_mutation_detected"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "ranker_runtime_mutation_detected"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "external_solver_dependency_detected"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "score_claim_detected"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "submission_artifact_detected"
+    },
+    {
+      "action": "STOP_CONTROLLED_GATE",
+      "active": false,
+      "severity": "BLOCKING",
+      "stop_condition_id": "fail_closed_inactive"
+    }
+  ],
+  "submission_json_created": false,
+  "task": "Task 15",
+  "task_14_source": {
+    "path": "examples/milestone-11/local-solver-patch-helper-wiring-review-v1/milestone-11-local-solver-patch-helper-wiring-review-v1.json",
+    "present": true,
+    "sha256": "5526a8b556645190cb89a7c6de3212e6234a2e54bf534fb1c01b18da63ee2b7f",
+    "sha256_16": "5526A8B556645190",
+    "status": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_WIRING_REVIEW_V1_READY",
+    "task_14_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-WIRING-REVIEW-44CC8B701FE6"
+  },
+  "task_15_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-WIRING-GATE-24898D7AF6D6",
+  "task_15_ready": true,
+  "task_mode": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_GATE_V1_LOCAL_ONLY",
+  "task_scope": "CONTROLLED_GATE_ONLY_NO_RUNTIME_SOLVER_MUTATION_NO_SCORE_NO_SUBMISSION",
+  "task_verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_GATE_READY_FOR_IMPLEMENTATION_PLAN",
+  "title": "Local Solver Patch Helper Controlled Wiring Gate v1",
+  "upload_package_created": false,
+  "warning_count": 0
+}

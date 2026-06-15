@@ -1,0 +1,102 @@
+[
+  {
+    "authorization_id": "authorize_task16_implementation_plan",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Create controlled wiring implementation plan"
+  },
+  {
+    "authorization_id": "authorize_static_contract_review",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Review adapter and helper contracts"
+  },
+  {
+    "authorization_id": "authorize_target_module_proposal",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Propose target module and import path"
+  },
+  {
+    "authorization_id": "authorize_test_plan_extension",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Extend local-only tests"
+  },
+  {
+    "authorization_id": "authorize_boundary_manifest_update",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Update boundary manifest"
+  },
+  {
+    "authorization_id": "authorize_fail_closed_control_list",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Create fail-closed control list"
+  },
+  {
+    "authorization_id": "authorize_no_score_no_submission_audit",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Audit no-score and no-submission boundaries"
+  },
+  {
+    "authorization_id": "authorize_regression_guard_design",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Design regression guards"
+  },
+  {
+    "authorization_id": "authorize_manual_operator_review",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Require human operator review"
+  },
+  {
+    "authorization_id": "authorize_next_gate_only",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_OR_REVIEW_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Proceed to next controlled stage only"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "controlled_gate_passed": true,
+  "controlled_gate_ready": true,
+  "controlled_gate_status": "CONTROLLED_GATE_PASS",
+  "controlled_runtime_wiring_authorized": false,
+  "decision_boundary": "CONTROLLED_GATE_ONLY_IMPLEMENTATION_PLAN_NEXT_NO_RUNTIME_WIRING_NO_SCORE_NO_SUBMISSION",
+  "decision_id": "M11-TASK15-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-WIRING-GATE-DECISION-v1",
+  "implementation_plan_authorized": true,
+  "next_stage": "MILESTONE_11_TASK_16_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_PLAN_V1",
+  "ranker_runtime_modification_allowed": false,
+  "real_submission_allowed": false,
+  "runtime_solver_modification_allowed": false,
+  "runtime_wiring_performed": false,
+  "score_claim_allowed": false,
+  "verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_GATE_READY_FOR_IMPLEMENTATION_PLAN"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "task14_artifact_missing"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "task14_review_not_passed"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "dry_run_not_accepted"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "controlled_gate_not_recommended"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "review_issue_count_nonzero"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "dry_run_failure_detected"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_solver_mutation_detected"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "ranker_runtime_mutation_detected"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "external_solver_dependency_detected"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "score_claim_detected"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "submission_artifact_detected"
+  },
+  {
+    "action": "STOP_CONTROLLED_GATE",
+    "active": false,
+    "severity": "BLOCKING",
+    "stop_condition_id": "fail_closed_inactive"
+  }
+]
