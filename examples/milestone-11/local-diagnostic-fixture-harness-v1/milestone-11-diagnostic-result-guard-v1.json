@@ -1,0 +1,16 @@
+{
+  "diagnostic_only": true,
+  "fail_closed_on_missing_label": true,
+  "guard_id": "M11-TASK5-DIAGNOSTIC-RESULT-GUARD-v1",
+  "kaggle_authentication_allowed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_allowed": false,
+  "official_score_claim_allowed": false,
+  "private_score_claim_allowed": false,
+  "public_score_claim_allowed": false,
+  "required_label": "LOCAL_DIAGNOSTIC_ONLY_NOT_KAGGLE_SCORE",
+  "submission_candidate_creation_allowed": false,
+  "submission_json_creation_allowed": false,
+  "synthetic_fixture_score_claim_allowed": false,
+  "upload_package_creation_allowed": false
+}

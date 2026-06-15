@@ -1,0 +1,249 @@
+[
+  {
+    "actions": [
+      "RIGHT",
+      "DOWN"
+    ],
+    "diagnostic_only": true,
+    "expected_trace": [
+      {
+        "from": [
+          0,
+          0
+        ],
+        "object_value": 1,
+        "step": 1,
+        "to": [
+          0,
+          1
+        ]
+      },
+      {
+        "from": [
+          0,
+          1
+        ],
+        "object_value": 1,
+        "step": 2,
+        "to": [
+          1,
+          1
+        ]
+      }
+    ],
+    "fixture_class_id": "object_persistence_fixture_v1",
+    "fixture_id": "m11_object_persistence_fixture_001",
+    "goal_grid": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "initial_grid": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "actions": [
+      "VERIFY"
+    ],
+    "diagnostic_only": true,
+    "expected_trace": [
+      {
+        "from_value": 2,
+        "rule": "color_remap",
+        "step": 1,
+        "to_value": 3
+      }
+    ],
+    "fixture_class_id": "color_rule_fixture_v1",
+    "fixture_id": "m11_color_rule_fixture_001",
+    "goal_grid": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "initial_grid": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "score_claim_allowed": false,
+    "target_layer": "rule_inference"
+  },
+  {
+    "actions": [
+      "RIGHT"
+    ],
+    "diagnostic_only": true,
+    "expected_trace": [
+      {
+        "from": [
+          0,
+          1
+        ],
+        "object_value": 4,
+        "step": 1,
+        "to": [
+          0,
+          2
+        ]
+      }
+    ],
+    "fixture_class_id": "movement_transition_fixture_v1",
+    "fixture_id": "m11_movement_transition_fixture_001",
+    "goal_grid": [
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "initial_grid": [
+      [
+        0,
+        4,
+        0
+      ]
+    ],
+    "score_claim_allowed": false,
+    "target_layer": "transition_model"
+  },
+  {
+    "actions": [
+      "RIGHT",
+      "DOWN"
+    ],
+    "diagnostic_only": true,
+    "expected_trace": [
+      {
+        "inferred_goal": "move_object_to_terminal_marker",
+        "step": 1,
+        "terminal_value": 9
+      },
+      {
+        "step": 2,
+        "terminal_reached": true
+      }
+    ],
+    "fixture_class_id": "goal_inference_fixture_v1",
+    "fixture_id": "m11_goal_inference_fixture_001",
+    "goal_grid": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "initial_grid": [
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        9
+      ]
+    ],
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "actions": [
+      "LEFT",
+      "RIGHT",
+      "RIGHT"
+    ],
+    "diagnostic_only": true,
+    "expected_trace": [
+      {
+        "action": "LEFT",
+        "loop_risk": true,
+        "step": 1
+      },
+      {
+        "action": "RIGHT",
+        "loop_recovered": true,
+        "step": 2
+      },
+      {
+        "action": "RIGHT",
+        "progress": true,
+        "step": 3
+      }
+    ],
+    "fixture_class_id": "planner_loop_fixture_v1",
+    "fixture_id": "m11_planner_loop_fixture_001",
+    "goal_grid": [
+      [
+        0,
+        0,
+        6
+      ]
+    ],
+    "initial_grid": [
+      [
+        6,
+        0,
+        0
+      ]
+    ],
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "actions": [
+      "LEFT"
+    ],
+    "diagnostic_only": true,
+    "expected_trace": [
+      {
+        "predicted_transition": "object_moves_left",
+        "step": 1,
+        "verifier_expected_match": true
+      }
+    ],
+    "fixture_class_id": "verifier_mismatch_fixture_v1",
+    "fixture_id": "m11_verifier_mismatch_fixture_001",
+    "goal_grid": [
+      [
+        7,
+        0
+      ]
+    ],
+    "initial_grid": [
+      [
+        0,
+        7
+      ]
+    ],
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  }
+]

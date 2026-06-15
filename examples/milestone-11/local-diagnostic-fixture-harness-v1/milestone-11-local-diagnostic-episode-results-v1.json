@@ -1,0 +1,204 @@
+[
+  {
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_object_persistence_fixture_001",
+    "final_signature": "D1C87FB5BA49",
+    "fixture_class_id": "object_persistence_fixture_v1",
+    "fixture_id": "m11_object_persistence_fixture_001",
+    "goal_reached": true,
+    "goal_signature": "D1C87FB5BA49",
+    "initial_signature": "FF696CA08FAC",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "score_claim_allowed": false,
+    "step_count": 2,
+    "target_layer": "world_model",
+    "trace": [
+      {
+        "action": "RIGHT",
+        "before_signature": "FF696CA08FAC",
+        "diagnostic_only": true,
+        "observed_signature": "130C80095E96",
+        "predicted_signature": "130C80095E96",
+        "score_claim_allowed": false,
+        "step": 1,
+        "verifier_match": true
+      },
+      {
+        "action": "DOWN",
+        "before_signature": "130C80095E96",
+        "diagnostic_only": true,
+        "observed_signature": "D1C87FB5BA49",
+        "predicted_signature": "D1C87FB5BA49",
+        "score_claim_allowed": false,
+        "step": 2,
+        "verifier_match": true
+      }
+    ]
+  },
+  {
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_color_rule_fixture_001",
+    "final_signature": "DF2170E8D37C",
+    "fixture_class_id": "color_rule_fixture_v1",
+    "fixture_id": "m11_color_rule_fixture_001",
+    "goal_reached": true,
+    "goal_signature": "DF2170E8D37C",
+    "initial_signature": "CC981F749681",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "score_claim_allowed": false,
+    "step_count": 1,
+    "target_layer": "rule_inference",
+    "trace": [
+      {
+        "action": "VERIFY",
+        "before_signature": "CC981F749681",
+        "diagnostic_only": true,
+        "observed_signature": "DF2170E8D37C",
+        "predicted_signature": "DF2170E8D37C",
+        "score_claim_allowed": false,
+        "step": 1,
+        "verifier_match": true
+      }
+    ]
+  },
+  {
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_movement_transition_fixture_001",
+    "final_signature": "4EED28E6CBA2",
+    "fixture_class_id": "movement_transition_fixture_v1",
+    "fixture_id": "m11_movement_transition_fixture_001",
+    "goal_reached": true,
+    "goal_signature": "4EED28E6CBA2",
+    "initial_signature": "B3BADAD02FEB",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "score_claim_allowed": false,
+    "step_count": 1,
+    "target_layer": "transition_model",
+    "trace": [
+      {
+        "action": "RIGHT",
+        "before_signature": "B3BADAD02FEB",
+        "diagnostic_only": true,
+        "observed_signature": "4EED28E6CBA2",
+        "predicted_signature": "4EED28E6CBA2",
+        "score_claim_allowed": false,
+        "step": 1,
+        "verifier_match": true
+      }
+    ]
+  },
+  {
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_goal_inference_fixture_001",
+    "final_signature": "E7A8A5D53A4B",
+    "fixture_class_id": "goal_inference_fixture_v1",
+    "fixture_id": "m11_goal_inference_fixture_001",
+    "goal_reached": true,
+    "goal_signature": "E7A8A5D53A4B",
+    "initial_signature": "B02C869A9F39",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "score_claim_allowed": false,
+    "step_count": 2,
+    "target_layer": "goal_inference",
+    "trace": [
+      {
+        "action": "RIGHT",
+        "before_signature": "B02C869A9F39",
+        "diagnostic_only": true,
+        "observed_signature": "4CC84B0A6C63",
+        "predicted_signature": "4CC84B0A6C63",
+        "score_claim_allowed": false,
+        "step": 1,
+        "verifier_match": true
+      },
+      {
+        "action": "DOWN",
+        "before_signature": "4CC84B0A6C63",
+        "diagnostic_only": true,
+        "observed_signature": "E7A8A5D53A4B",
+        "predicted_signature": "E7A8A5D53A4B",
+        "score_claim_allowed": false,
+        "step": 2,
+        "verifier_match": true
+      }
+    ]
+  },
+  {
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_planner_loop_fixture_001",
+    "final_signature": "103FD72FFF2B",
+    "fixture_class_id": "planner_loop_fixture_v1",
+    "fixture_id": "m11_planner_loop_fixture_001",
+    "goal_reached": true,
+    "goal_signature": "103FD72FFF2B",
+    "initial_signature": "75F737E96A79",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "score_claim_allowed": false,
+    "step_count": 3,
+    "target_layer": "planner",
+    "trace": [
+      {
+        "action": "LEFT",
+        "before_signature": "75F737E96A79",
+        "diagnostic_only": true,
+        "observed_signature": "75F737E96A79",
+        "predicted_signature": "75F737E96A79",
+        "score_claim_allowed": false,
+        "step": 1,
+        "verifier_match": true
+      },
+      {
+        "action": "RIGHT",
+        "before_signature": "75F737E96A79",
+        "diagnostic_only": true,
+        "observed_signature": "F92B3B23431B",
+        "predicted_signature": "F92B3B23431B",
+        "score_claim_allowed": false,
+        "step": 2,
+        "verifier_match": true
+      },
+      {
+        "action": "RIGHT",
+        "before_signature": "F92B3B23431B",
+        "diagnostic_only": true,
+        "observed_signature": "103FD72FFF2B",
+        "predicted_signature": "103FD72FFF2B",
+        "score_claim_allowed": false,
+        "step": 3,
+        "verifier_match": true
+      }
+    ]
+  },
+  {
+    "diagnostic_only": true,
+    "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+    "final_signature": "4ED79D0931A3",
+    "fixture_class_id": "verifier_mismatch_fixture_v1",
+    "fixture_id": "m11_verifier_mismatch_fixture_001",
+    "goal_reached": true,
+    "goal_signature": "4ED79D0931A3",
+    "initial_signature": "1870A2977970",
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "official_score_claim_allowed": false,
+    "score_claim_allowed": false,
+    "step_count": 1,
+    "target_layer": "verifier",
+    "trace": [
+      {
+        "action": "LEFT",
+        "before_signature": "1870A2977970",
+        "diagnostic_only": true,
+        "observed_signature": "4ED79D0931A3",
+        "predicted_signature": "4ED79D0931A3",
+        "score_claim_allowed": false,
+        "step": 1,
+        "verifier_match": true
+      }
+    ]
+  }
+]

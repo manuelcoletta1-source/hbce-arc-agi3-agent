@@ -1,0 +1,27 @@
+{
+  "action_space": [
+    "DOWN",
+    "LEFT",
+    "RIGHT",
+    "STAY",
+    "UP",
+    "VERIFY"
+  ],
+  "diagnostic_only_required": true,
+  "external_api_dependency": false,
+  "grid_type": "list[list[int]]",
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "required_fields": [
+    "fixture_id",
+    "fixture_class_id",
+    "target_layer",
+    "initial_grid",
+    "goal_grid",
+    "actions",
+    "expected_trace",
+    "diagnostic_only",
+    "score_claim_allowed"
+  ],
+  "schema_id": "M11-TASK5-LOCAL-DIAGNOSTIC-FIXTURE-SCHEMA-v1",
+  "score_claim_allowed_required_value": false
+}
