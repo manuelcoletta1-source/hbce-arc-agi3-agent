@@ -1,0 +1,66 @@
+[
+  {
+    "area": "source",
+    "criterion_id": "closure_review_artifact_ready_v1",
+    "description": "Task 9 rebuilt candidate review artifact is ready and valid.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "identity",
+    "criterion_id": "closure_candidate_identity_locked_v1",
+    "description": "Selected candidate, package, and rebuilt candidate identifiers are locked.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "review",
+    "criterion_id": "closure_scorecard_passed_v1",
+    "description": "Review scorecard passed all criteria.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "package",
+    "criterion_id": "closure_local_package_closed_v1",
+    "description": "Local candidate package preparation is closed.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "integrity",
+    "criterion_id": "closure_chain_integrity_verified_v1",
+    "description": "Local chain sources and trace are present.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "boundary",
+    "criterion_id": "closure_submission_boundary_preserved_v1",
+    "description": "No submission.json, upload package, or real submission exists.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "fail_closed",
+    "criterion_id": "closure_fail_closed_preserved_v1",
+    "description": "Fail-closed and authorization boundary remain active.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "operator",
+    "criterion_id": "closure_operator_decision_required_v1",
+    "description": "Any real submission remains blocked pending explicit operator decision.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  }
+]

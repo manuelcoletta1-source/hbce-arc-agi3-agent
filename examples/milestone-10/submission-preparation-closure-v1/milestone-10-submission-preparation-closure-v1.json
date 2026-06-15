@@ -1,0 +1,1097 @@
+{
+  "baseline_commit": "d052b8a Add ARC AGI3 rebuilt candidate review",
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+  "closure_case_count": 10,
+  "closure_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m10_submission_preparation_closure_review_source_ready_v1",
+      "operation": "verify_rebuilt_candidate_review_source"
+    },
+    {
+      "area": "identity",
+      "case_id": "m10_submission_preparation_closure_identity_locked_v1",
+      "operation": "verify_candidate_identity_lock"
+    },
+    {
+      "area": "review",
+      "case_id": "m10_submission_preparation_closure_scorecard_passed_v1",
+      "operation": "verify_review_scorecard_passed"
+    },
+    {
+      "area": "package",
+      "case_id": "m10_submission_preparation_closure_package_frozen_v1",
+      "operation": "verify_local_package_frozen"
+    },
+    {
+      "area": "integrity",
+      "case_id": "m10_submission_preparation_closure_integrity_verified_v1",
+      "operation": "verify_chain_integrity"
+    },
+    {
+      "area": "boundary",
+      "case_id": "m10_submission_preparation_closure_boundary_preserved_v1",
+      "operation": "verify_submission_boundary"
+    },
+    {
+      "area": "fail_closed",
+      "case_id": "m10_submission_preparation_closure_fail_closed_preserved_v1",
+      "operation": "verify_fail_closed_preserved"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m10_submission_preparation_closure_real_submission_blocked_v1",
+      "operation": "verify_real_submission_blocked"
+    },
+    {
+      "area": "closure",
+      "case_id": "m10_submission_preparation_closure_milestone_closed_v1",
+      "operation": "verify_milestone_10_closed"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m10_submission_preparation_closure_next_stage_valid_v1",
+      "operation": "verify_operator_decision_required"
+    }
+  ],
+  "closure_check_count": 41,
+  "closure_check_list": [
+    "review_artifact_exists",
+    "review_artifact_ready",
+    "review_signature_present",
+    "review_next_stage_matches_task_10",
+    "rebuilt_candidate_review_ready",
+    "rebuilt_candidate_review_passed",
+    "review_scorecard_created",
+    "review_scorecard_passed",
+    "selected_candidate_id_valid",
+    "candidate_package_id_valid",
+    "rebuilt_candidate_id_valid",
+    "review_id_valid",
+    "review_criterion_count_valid",
+    "submission_preparation_closure_required",
+    "closure_record_created",
+    "closure_ready",
+    "closure_passed",
+    "closure_locked",
+    "closure_report_created",
+    "closure_manifest_created",
+    "closure_index_created",
+    "closure_chain_locked",
+    "milestone_closed",
+    "local_package_prepared",
+    "local_package_frozen",
+    "integrity_verified",
+    "final_audit_passed",
+    "real_submission_candidate_not_created",
+    "submission_json_not_created",
+    "upload_package_not_created",
+    "manual_upload_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_submission_absent",
+    "real_submission_not_authorized",
+    "real_submission_blocked",
+    "fail_closed_required",
+    "fail_closed_active",
+    "next_stage_valid",
+    "external_api_dependency_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "closure_checks": {
+    "boundary_control_count_valid": true,
+    "candidate_package_id_valid": true,
+    "closure_case_count_valid": true,
+    "closure_chain_locked": true,
+    "closure_check_count_valid": true,
+    "closure_decision_passed": true,
+    "closure_index_created": true,
+    "closure_manifest_created": true,
+    "closure_record_created": true,
+    "closure_record_locked": true,
+    "closure_record_passed": true,
+    "closure_record_ready": true,
+    "closure_report_created": true,
+    "closure_scorecard_count_valid": true,
+    "closure_scorecard_created": true,
+    "closure_scorecard_passed": true,
+    "external_api_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_control_count_valid": true,
+    "fail_closed_required": true,
+    "final_audit_passed": true,
+    "integrity_verified": true,
+    "kaggle_authentication_blocked": true,
+    "kaggle_submission_absent": true,
+    "legal_certification_false": true,
+    "local_package_frozen": true,
+    "local_package_prepared": true,
+    "manual_upload_blocked": true,
+    "milestone_10_closed": true,
+    "next_stage_valid": true,
+    "private_core_exposure_false": true,
+    "real_submission_blocked": true,
+    "real_submission_candidate_not_created": true,
+    "real_submission_not_authorized": true,
+    "rebuilt_candidate_id_valid": true,
+    "rebuilt_candidate_review_passed": true,
+    "rebuilt_candidate_review_ready": true,
+    "review_artifact_exists": true,
+    "review_artifact_ready": true,
+    "review_criterion_count_valid": true,
+    "review_id_valid": true,
+    "review_next_stage_matches_task_10": true,
+    "review_scorecard_created": true,
+    "review_scorecard_passed": true,
+    "review_signature_present": true,
+    "selected_candidate_id_valid": true,
+    "submission_json_not_created": true,
+    "submission_preparation_closure_required": true,
+    "upload_package_not_created": true
+  },
+  "closure_criterion_count": 8,
+  "closure_decision": {
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "closure_passed": true,
+    "closure_ready": true,
+    "decision": "PASS_LOCAL_SUBMISSION_PREPARATION_CLOSURE",
+    "decision_id": "M10-SUBMISSION-PREPARATION-CLOSURE-PASS-v1",
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_allowed": false,
+    "manual_upload_allowed": false,
+    "milestone_10_closed": true,
+    "next_allowed_stage": "MILESTONE_10_CLOSED_REAL_SUBMISSION_BLOCKED_OPERATOR_DECISION_REQUIRED",
+    "operator_decision_required_for_any_real_submission": true,
+    "real_submission_allowed": false,
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "rebuilt_candidate_review_id": "MILESTONE-10-REBUILT-CANDIDATE-REVIEW-D9701E0276DB",
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "submission_json_creation_allowed_now": false,
+    "upload_package_creation_allowed_now": false
+  },
+  "closure_failure_count": 0,
+  "closure_gate_count": 56,
+  "closure_gates": [
+    {
+      "name": "review_artifact_exists",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_signature_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_next_stage_matches_task_10",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_review_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_review_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_scorecard_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_scorecard_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "selected_candidate_id_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_package_id_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_id_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_id_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_criterion_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_preparation_closure_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_scorecard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_scorecard_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_scorecard_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_decision_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_record_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_record_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_record_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_record_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_report_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_manifest_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_index_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_chain_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "milestone_10_closed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_package_prepared",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_package_frozen",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "integrity_verified",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "final_audit_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_candidate_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_json_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_package_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_absent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_not_authorized",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_check_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_closure_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "closure_index": {
+    "baseline_commit": "d052b8a Add ARC AGI3 rebuilt candidate review",
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "closure_mode": "MILESTONE_10_SUBMISSION_PREPARATION_CLOSURE_V1_LOCAL_ONLY",
+    "closure_scope": "LOCAL_SUBMISSION_PREPARATION_CLOSURE_NO_SUBMISSION_JSON_NO_UPLOAD",
+    "closure_scorecard_created": true,
+    "closure_scorecard_passed": true,
+    "closure_verdict": "SUBMISSION_PREPARATION_CLOSURE_PASS_MILESTONE_10_CLOSED_REAL_SUBMISSION_BLOCKED",
+    "depends_on_rebuilt_candidate_review": "MILESTONE-10-REBUILT-CANDIDATE-REVIEW-D9701E0276DB",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "final_audit_passed": true,
+    "integrity_verified": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_package_frozen": true,
+    "local_package_prepared": true,
+    "manual_upload_allowed": false,
+    "milestone": "Milestone #10",
+    "milestone_10_closed": true,
+    "next_allowed_stage": "MILESTONE_10_CLOSED_REAL_SUBMISSION_BLOCKED_OPERATOR_DECISION_REQUIRED",
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "submission_json_created": false,
+    "submission_preparation_closure_created": true,
+    "submission_preparation_closure_passed": true,
+    "submission_preparation_closure_ready": true,
+    "task": "Task 10",
+    "upload_package_created": false
+  },
+  "closure_issue_count": 0,
+  "closure_issues": [
+    {
+      "active": false,
+      "name": "review_artifact_exists",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_signature_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_next_stage_matches_task_10",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_review_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_review_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_scorecard_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_scorecard_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "selected_candidate_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_package_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_criterion_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_preparation_closure_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_scorecard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_scorecard_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_scorecard_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_decision_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_record_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_record_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_record_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_record_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_report_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_manifest_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_index_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_chain_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "milestone_10_closed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_package_prepared",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_package_frozen",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "integrity_verified",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "final_audit_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_candidate_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_json_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_package_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_absent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_not_authorized",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_check_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_closure_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_failure_count_zero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "closure_mode": "MILESTONE_10_SUBMISSION_PREPARATION_CLOSURE_V1_LOCAL_ONLY",
+  "closure_pass_count": 10,
+  "closure_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m10_submission_preparation_closure_review_source_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_rebuilt_candidate_review_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "identity",
+      "case_id": "m10_submission_preparation_closure_identity_locked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_candidate_identity_lock",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "review",
+      "case_id": "m10_submission_preparation_closure_scorecard_passed_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_review_scorecard_passed",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "package",
+      "case_id": "m10_submission_preparation_closure_package_frozen_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_local_package_frozen",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "integrity",
+      "case_id": "m10_submission_preparation_closure_integrity_verified_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_chain_integrity",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "m10_submission_preparation_closure_boundary_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_submission_boundary",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "fail_closed",
+      "case_id": "m10_submission_preparation_closure_fail_closed_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_fail_closed_preserved",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m10_submission_preparation_closure_real_submission_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "closure",
+      "case_id": "m10_submission_preparation_closure_milestone_closed_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_milestone_10_closed",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m10_submission_preparation_closure_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_operator_decision_required",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "closure_scope": "LOCAL_SUBMISSION_PREPARATION_CLOSURE_NO_SUBMISSION_JSON_NO_UPLOAD",
+  "closure_scorecard": [
+    {
+      "area": "source",
+      "criterion_id": "closure_review_artifact_ready_v1",
+      "description": "Task 9 rebuilt candidate review artifact is ready and valid.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "identity",
+      "criterion_id": "closure_candidate_identity_locked_v1",
+      "description": "Selected candidate, package, and rebuilt candidate identifiers are locked.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "review",
+      "criterion_id": "closure_scorecard_passed_v1",
+      "description": "Review scorecard passed all criteria.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "package",
+      "criterion_id": "closure_local_package_closed_v1",
+      "description": "Local candidate package preparation is closed.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "integrity",
+      "criterion_id": "closure_chain_integrity_verified_v1",
+      "description": "Local chain sources and trace are present.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "boundary",
+      "criterion_id": "closure_submission_boundary_preserved_v1",
+      "description": "No submission.json, upload package, or real submission exists.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "fail_closed",
+      "criterion_id": "closure_fail_closed_preserved_v1",
+      "description": "Fail-closed and authorization boundary remain active.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "operator",
+      "criterion_id": "closure_operator_decision_required_v1",
+      "description": "Any real submission remains blocked pending explicit operator decision.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    }
+  ],
+  "closure_scorecard_created": true,
+  "closure_scorecard_passed": true,
+  "closure_state": {
+    "closure_chain_locked": true,
+    "closure_index_created": true,
+    "closure_manifest_created": true,
+    "closure_mode": "MILESTONE_10_SUBMISSION_PREPARATION_CLOSURE_V1_LOCAL_ONLY",
+    "closure_report_created": true,
+    "closure_scope": "LOCAL_SUBMISSION_PREPARATION_CLOSURE_NO_SUBMISSION_JSON_NO_UPLOAD",
+    "closure_scorecard_created": true,
+    "closure_scorecard_passed": true,
+    "closure_verdict": "SUBMISSION_PREPARATION_CLOSURE_PASS_MILESTONE_10_CLOSED_REAL_SUBMISSION_BLOCKED",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "final_audit_passed": true,
+    "integrity_verified": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_package_frozen": true,
+    "local_package_prepared": true,
+    "manual_upload_allowed": false,
+    "milestone_10_closed": true,
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "submission_json_created": false,
+    "submission_preparation_closure_created": true,
+    "submission_preparation_closure_locked": true,
+    "submission_preparation_closure_passed": true,
+    "submission_preparation_closure_ready": true,
+    "submission_preparation_closure_required": true,
+    "upload_package_created": false
+  },
+  "closure_verdict": "SUBMISSION_PREPARATION_CLOSURE_PASS_MILESTONE_10_CLOSED_REAL_SUBMISSION_BLOCKED",
+  "fail_closed_active": true,
+  "fail_closed_controls": [
+    "real_submission_decision_not_authorized",
+    "real_submission_allowed_false",
+    "manual_upload_allowed_false",
+    "kaggle_authentication_allowed_false",
+    "kaggle_submission_sent_false",
+    "real_submission_candidate_created_false",
+    "submission_json_created_false",
+    "upload_package_created_false",
+    "fail_closed_active"
+  ],
+  "fail_closed_required": true,
+  "final_audit_passed": true,
+  "integrity_verified": true,
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "local_package_frozen": true,
+  "local_package_prepared": true,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_10_submission_preparation_closure_v1"
+  },
+  "milestone": "Milestone #10",
+  "milestone_10_closed": true,
+  "next_allowed_stage": "MILESTONE_10_CLOSED_REAL_SUBMISSION_BLOCKED_OPERATOR_DECISION_REQUIRED",
+  "passed_gate_count": 56,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+  "rebuilt_candidate_review_id": "MILESTONE-10-REBUILT-CANDIDATE-REVIEW-D9701E0276DB",
+  "rebuilt_candidate_review_source": {
+    "path": "examples/milestone-10/rebuilt-candidate-review-v1/milestone-10-rebuilt-candidate-review-v1.json",
+    "present": true,
+    "rebuilt_candidate_review_id": "MILESTONE-10-REBUILT-CANDIDATE-REVIEW-D9701E0276DB",
+    "sha256": "ab573943c223f777b6780bbff967a127cdb5811cd7cd768efb075e0e39dce730",
+    "sha256_16": "AB573943C223F777",
+    "status": "MILESTONE_10_REBUILT_CANDIDATE_REVIEW_V1_READY"
+  },
+  "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+  "signature": "8DC4FCEABB3DF987",
+  "source_summary": {
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_10_TASK_10_SUBMISSION_PREPARATION_CLOSURE_V1",
+    "operator_approval_required_for_real_submission": true,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "rebuilt_candidate_review_created": true,
+    "rebuilt_candidate_review_id": "MILESTONE-10-REBUILT-CANDIDATE-REVIEW-D9701E0276DB",
+    "rebuilt_candidate_review_locked": true,
+    "rebuilt_candidate_review_passed": true,
+    "rebuilt_candidate_review_ready": true,
+    "review_baseline_commit": "362a9f7 Add ARC AGI3 submission candidate rebuild",
+    "review_case_count": 10,
+    "review_check_count": 36,
+    "review_criterion_count": 7,
+    "review_decision": "PASS_LOCAL_REBUILT_CANDIDATE_REVIEW",
+    "review_failure_count": 0,
+    "review_pass_count": 10,
+    "review_path": "examples/milestone-10/rebuilt-candidate-review-v1/milestone-10-rebuilt-candidate-review-v1.json",
+    "review_present": true,
+    "review_scorecard_created": true,
+    "review_scorecard_passed": true,
+    "review_sha256": "ab573943c223f777b6780bbff967a127cdb5811cd7cd768efb075e0e39dce730",
+    "review_sha256_16": "AB573943C223F777",
+    "review_signature": "D9701E0276DB7658",
+    "review_status": "MILESTONE_10_REBUILT_CANDIDATE_REVIEW_V1_READY",
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "source_candidate_refresh_id": "MILESTONE-10-CANDIDATE-REFRESH-A684C4B45643",
+    "source_rebuild_gate_id": "MILESTONE-10-REBUILD-GATE-1CA22527EBF1",
+    "source_submission_candidate_rebuild_id": "MILESTONE-10-SUBMISSION-CANDIDATE-REBUILD-540B74ED16F8",
+    "submission_json_created": false,
+    "submission_preparation_closure_required_next": true,
+    "upload_package_created": false
+  },
+  "status": "MILESTONE_10_SUBMISSION_PREPARATION_CLOSURE_V1_READY",
+  "submission_json_created": false,
+  "submission_preparation_closure_created": true,
+  "submission_preparation_closure_id": "MILESTONE-10-SUBMISSION-PREPARATION-CLOSURE-8DC4FCEABB3D",
+  "submission_preparation_closure_locked": true,
+  "submission_preparation_closure_passed": true,
+  "submission_preparation_closure_ready": true,
+  "task": "Task 10",
+  "title": "Submission Preparation Closure v1",
+  "upload_package_created": false,
+  "warning_count": 0
+}
