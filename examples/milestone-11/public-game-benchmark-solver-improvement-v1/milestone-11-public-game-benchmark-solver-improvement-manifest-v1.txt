@@ -1,0 +1,59 @@
+ARC AGI3 MILESTONE 11 PUBLIC GAME BENCHMARK SOLVER IMPROVEMENT MANIFEST v1
+milestone_11_id=MILESTONE-11-PUBLIC-GAME-BENCHMARK-SOLVER-IMPROVEMENT-6886C20CE9A8
+signature=6886C20CE9A8C36E
+status=MILESTONE_11_PUBLIC_GAME_BENCHMARK_SOLVER_IMPROVEMENT_V1_READY
+baseline_commit=003c0fe Close ARC AGI3 submission preparation
+milestone_mode=MILESTONE_11_PUBLIC_GAME_BENCHMARK_SOLVER_IMPROVEMENT_V1_LOCAL_ONLY
+milestone_verdict=MILESTONE_11_READY_FOR_PUBLIC_GAME_BENCHMARK_AND_SOLVER_PATCH_CYCLE
+next_stage=MILESTONE_11_TASK_2_PUBLIC_GAME_INVENTORY_AND_BASELINE_RUN_V1
+milestone_11_ready=True
+benchmark_axis_count=7
+solver_improvement_target_count=7
+public_game_inventory_created=True
+public_game_benchmark_execution_performed=False
+real_public_score_claimed=False
+private_score_claimed=False
+real_submission_candidate_created=False
+submission_json_created=False
+upload_package_created=False
+real_submission_decision=NOT_AUTHORIZED
+real_submission_allowed=False
+manual_upload_allowed=False
+kaggle_authentication_allowed=False
+kaggle_submission_sent=False
+fail_closed_required=True
+fail_closed_active=True
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+BENCHMARK_AXES
+public_game_inventory_v1 area=inventory description=Detect available public game fixtures without assuming external access.
+baseline_solver_replay_v1 area=baseline description=Prepare baseline replay against public fixtures when they are locally available.
+observation_trace_audit_v1 area=trace description=Track observations, state changes, actions, and local solver decisions.
+world_model_gap_detection_v1 area=world_model description=Identify missing transition, object, rule, and goal models.
+planner_gap_detection_v1 area=planner description=Identify planning failures, dead-end loops, and action-selection gaps.
+verifier_gap_detection_v1 area=verifier description=Identify missing internal verification gates before action selection.
+solver_patch_backlog_v1 area=patching description=Create ordered solver improvement targets from benchmark evidence.
+
+SOLVER_IMPROVEMENT_BACKLOG
+m11_world_model_runtime_state_v1 component=world_model priority=P0 status=PLANNED
+m11_goal_inference_layer_v1 component=goal_inference priority=P0 status=PLANNED
+m11_action_policy_probe_v1 component=policy priority=P0 status=PLANNED
+m11_transition_verifier_v1 component=verifier priority=P0 status=PLANNED
+m11_loop_breaker_v1 component=planner priority=P1 status=PLANNED
+m11_failure_taxonomy_v1 component=audit priority=P1 status=PLANNED
+m11_candidate_refresh_after_benchmark_v1 component=candidate_refresh priority=P1 status=PLANNED
+
+MILESTONE_11_VALIDATION_RESULTS
+m11_public_game_benchmark_source_closure_ready_v1 area=source_binding operation=verify_milestone_10_closure_source passed=True evidence_score=100
+m11_public_game_benchmark_candidate_identity_loaded_v1 area=identity operation=verify_candidate_identity passed=True evidence_score=100
+m11_public_game_benchmark_axes_ready_v1 area=benchmark operation=verify_benchmark_axes passed=True evidence_score=100
+m11_solver_improvement_targets_ready_v1 area=solver_improvement operation=verify_solver_targets passed=True evidence_score=100
+m11_public_game_inventory_policy_ready_v1 area=inventory operation=verify_inventory_policy passed=True evidence_score=100
+m11_no_score_claimed_without_public_run_v1 area=score_boundary operation=verify_no_real_score_claimed passed=True evidence_score=100
+m11_real_submission_blocked_v1 area=submission_boundary operation=verify_real_submission_still_blocked passed=True evidence_score=100
+m11_fail_closed_preserved_v1 area=fail_closed operation=verify_fail_closed_preserved passed=True evidence_score=100
+m11_next_stage_valid_v1 area=next_stage operation=verify_next_stage passed=True evidence_score=100
+m11_metadata_safe_v1 area=metadata operation=verify_public_safe_metadata passed=True evidence_score=100

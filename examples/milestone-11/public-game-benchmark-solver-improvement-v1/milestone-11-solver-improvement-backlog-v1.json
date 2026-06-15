@@ -1,0 +1,86 @@
+[
+  {
+    "component": "world_model",
+    "goal": "Represent objects, positions, transitions, and inferred rules per episode.",
+    "implementation_required": true,
+    "priority": "P0",
+    "public_safe": true,
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "status": "PLANNED",
+    "target_id": "m11_world_model_runtime_state_v1"
+  },
+  {
+    "component": "goal_inference",
+    "goal": "Infer candidate goals from rewards, state changes, and terminal conditions.",
+    "implementation_required": true,
+    "priority": "P0",
+    "public_safe": true,
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "status": "PLANNED",
+    "target_id": "m11_goal_inference_layer_v1"
+  },
+  {
+    "component": "policy",
+    "goal": "Probe safe candidate actions before committing irreversible moves.",
+    "implementation_required": true,
+    "priority": "P0",
+    "public_safe": true,
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "status": "PLANNED",
+    "target_id": "m11_action_policy_probe_v1"
+  },
+  {
+    "component": "verifier",
+    "goal": "Verify predicted transition against observed transition after each action.",
+    "implementation_required": true,
+    "priority": "P0",
+    "public_safe": true,
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "status": "PLANNED",
+    "target_id": "m11_transition_verifier_v1"
+  },
+  {
+    "component": "planner",
+    "goal": "Detect repeated non-progress loops and force exploration fallback.",
+    "implementation_required": true,
+    "priority": "P1",
+    "public_safe": true,
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "status": "PLANNED",
+    "target_id": "m11_loop_breaker_v1"
+  },
+  {
+    "component": "audit",
+    "goal": "Classify failures into perception, rule, goal, planning, verifier, or execution buckets.",
+    "implementation_required": true,
+    "priority": "P1",
+    "public_safe": true,
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "status": "PLANNED",
+    "target_id": "m11_failure_taxonomy_v1"
+  },
+  {
+    "component": "candidate_refresh",
+    "goal": "Create a new candidate only after benchmark evidence is available.",
+    "implementation_required": true,
+    "priority": "P1",
+    "public_safe": true,
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "status": "PLANNED",
+    "target_id": "m11_candidate_refresh_after_benchmark_v1"
+  }
+]
