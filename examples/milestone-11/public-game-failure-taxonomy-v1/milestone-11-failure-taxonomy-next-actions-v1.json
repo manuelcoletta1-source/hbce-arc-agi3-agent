@@ -1,0 +1,46 @@
+[
+  {
+    "action": "Create a local fixture harness plan for deterministic solver measurement.",
+    "action_id": "m11_task4_local_fixture_harness_plan_v1",
+    "implementation_required": true,
+    "priority": "P0",
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "score_claim_allowed": false,
+    "status": "PLANNED"
+  },
+  {
+    "action": "Define safe import policy for public fixtures without claiming official scores.",
+    "action_id": "m11_public_fixture_import_policy_v1",
+    "implementation_required": true,
+    "priority": "P0",
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "score_claim_allowed": false,
+    "status": "PLANNED"
+  },
+  {
+    "action": "Allow synthetic/local fixtures only as solver diagnostics, never as Kaggle score evidence.",
+    "action_id": "m11_synthetic_fixture_boundary_v1",
+    "implementation_required": true,
+    "priority": "P1",
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "score_claim_allowed": false,
+    "status": "PLANNED"
+  },
+  {
+    "action": "Map taxonomy classes to world-model, planner, verifier, and policy patch targets.",
+    "action_id": "m11_failure_taxonomy_to_patch_plan_v1",
+    "implementation_required": true,
+    "priority": "P1",
+    "requires_external_api": false,
+    "requires_real_submission": false,
+    "requires_secret": false,
+    "score_claim_allowed": false,
+    "status": "PLANNED"
+  }
+]

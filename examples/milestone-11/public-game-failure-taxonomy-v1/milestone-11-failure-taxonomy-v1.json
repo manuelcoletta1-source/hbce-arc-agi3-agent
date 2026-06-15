@@ -1,0 +1,135 @@
+[
+  {
+    "active": true,
+    "category": "DATASET_CONSTRAINT",
+    "description": "No local public game dataset files are present in scanned candidate paths.",
+    "evidence": {
+      "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+      "baseline_execution_performed": false,
+      "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+      "compatible_fixture_count": 0,
+      "kaggle_submission_sent": false,
+      "private_score_claimed": false,
+      "real_benchmark_score": null,
+      "real_public_score_claimed": false,
+      "real_submission_allowed": false,
+      "total_file_count": 0
+    },
+    "severity": "CONSTRAINT",
+    "taxonomy_id": "dataset_missing_v1"
+  },
+  {
+    "active": true,
+    "category": "FIXTURE_CONSTRAINT",
+    "description": "No compatible public fixtures are available for a local baseline run.",
+    "evidence": {
+      "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+      "baseline_execution_performed": false,
+      "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+      "compatible_fixture_count": 0,
+      "kaggle_submission_sent": false,
+      "private_score_claimed": false,
+      "real_benchmark_score": null,
+      "real_public_score_claimed": false,
+      "real_submission_allowed": false,
+      "total_file_count": 0
+    },
+    "severity": "CONSTRAINT",
+    "taxonomy_id": "fixture_missing_v1"
+  },
+  {
+    "active": true,
+    "category": "BASELINE_CONSTRAINT",
+    "description": "Baseline was not executed because there are no local compatible public fixtures.",
+    "evidence": {
+      "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+      "baseline_execution_performed": false,
+      "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+      "compatible_fixture_count": 0,
+      "kaggle_submission_sent": false,
+      "private_score_claimed": false,
+      "real_benchmark_score": null,
+      "real_public_score_claimed": false,
+      "real_submission_allowed": false,
+      "total_file_count": 0
+    },
+    "severity": "CONSTRAINT",
+    "taxonomy_id": "baseline_not_executed_v1"
+  },
+  {
+    "active": true,
+    "category": "SCORE_BOUNDARY",
+    "description": "No real public or private score is claimed without a valid local or official run.",
+    "evidence": {
+      "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+      "baseline_execution_performed": false,
+      "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+      "compatible_fixture_count": 0,
+      "kaggle_submission_sent": false,
+      "private_score_claimed": false,
+      "real_benchmark_score": null,
+      "real_public_score_claimed": false,
+      "real_submission_allowed": false,
+      "total_file_count": 0
+    },
+    "severity": "PASS",
+    "taxonomy_id": "score_not_claimed_v1"
+  },
+  {
+    "active": true,
+    "category": "MEASUREMENT_CONSTRAINT",
+    "description": "The solver has not been measured on public games because no local fixtures exist.",
+    "evidence": {
+      "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+      "baseline_execution_performed": false,
+      "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+      "compatible_fixture_count": 0,
+      "kaggle_submission_sent": false,
+      "private_score_claimed": false,
+      "real_benchmark_score": null,
+      "real_public_score_claimed": false,
+      "real_submission_allowed": false,
+      "total_file_count": 0
+    },
+    "severity": "CONSTRAINT",
+    "taxonomy_id": "solver_not_measured_v1"
+  },
+  {
+    "active": true,
+    "category": "SUBMISSION_BOUNDARY",
+    "description": "Real submission remains blocked and no submission package exists.",
+    "evidence": {
+      "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+      "baseline_execution_performed": false,
+      "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+      "compatible_fixture_count": 0,
+      "kaggle_submission_sent": false,
+      "private_score_claimed": false,
+      "real_benchmark_score": null,
+      "real_public_score_claimed": false,
+      "real_submission_allowed": false,
+      "total_file_count": 0
+    },
+    "severity": "PASS",
+    "taxonomy_id": "submission_still_blocked_v1"
+  },
+  {
+    "active": true,
+    "category": "NEXT_ACTION",
+    "description": "Next action is to create a local fixture harness plan or import compatible public fixtures.",
+    "evidence": {
+      "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+      "baseline_execution_performed": false,
+      "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+      "compatible_fixture_count": 0,
+      "kaggle_submission_sent": false,
+      "private_score_claimed": false,
+      "real_benchmark_score": null,
+      "real_public_score_claimed": false,
+      "real_submission_allowed": false,
+      "total_file_count": 0
+    },
+    "severity": "ACTION_REQUIRED",
+    "taxonomy_id": "next_action_required_v1"
+  }
+]

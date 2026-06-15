@@ -1,0 +1,837 @@
+{
+  "active_taxonomy_class_count": 7,
+  "baseline_commit": "d3b39b0 Add ARC AGI3 public game inventory baseline run",
+  "baseline_not_executed": true,
+  "dataset_missing": true,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "failure_is_constraint_not_solver_failure": true,
+  "failure_taxonomy": [
+    {
+      "active": true,
+      "category": "DATASET_CONSTRAINT",
+      "description": "No local public game dataset files are present in scanned candidate paths.",
+      "evidence": {
+        "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+        "baseline_execution_performed": false,
+        "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+        "compatible_fixture_count": 0,
+        "kaggle_submission_sent": false,
+        "private_score_claimed": false,
+        "real_benchmark_score": null,
+        "real_public_score_claimed": false,
+        "real_submission_allowed": false,
+        "total_file_count": 0
+      },
+      "severity": "CONSTRAINT",
+      "taxonomy_id": "dataset_missing_v1"
+    },
+    {
+      "active": true,
+      "category": "FIXTURE_CONSTRAINT",
+      "description": "No compatible public fixtures are available for a local baseline run.",
+      "evidence": {
+        "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+        "baseline_execution_performed": false,
+        "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+        "compatible_fixture_count": 0,
+        "kaggle_submission_sent": false,
+        "private_score_claimed": false,
+        "real_benchmark_score": null,
+        "real_public_score_claimed": false,
+        "real_submission_allowed": false,
+        "total_file_count": 0
+      },
+      "severity": "CONSTRAINT",
+      "taxonomy_id": "fixture_missing_v1"
+    },
+    {
+      "active": true,
+      "category": "BASELINE_CONSTRAINT",
+      "description": "Baseline was not executed because there are no local compatible public fixtures.",
+      "evidence": {
+        "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+        "baseline_execution_performed": false,
+        "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+        "compatible_fixture_count": 0,
+        "kaggle_submission_sent": false,
+        "private_score_claimed": false,
+        "real_benchmark_score": null,
+        "real_public_score_claimed": false,
+        "real_submission_allowed": false,
+        "total_file_count": 0
+      },
+      "severity": "CONSTRAINT",
+      "taxonomy_id": "baseline_not_executed_v1"
+    },
+    {
+      "active": true,
+      "category": "SCORE_BOUNDARY",
+      "description": "No real public or private score is claimed without a valid local or official run.",
+      "evidence": {
+        "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+        "baseline_execution_performed": false,
+        "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+        "compatible_fixture_count": 0,
+        "kaggle_submission_sent": false,
+        "private_score_claimed": false,
+        "real_benchmark_score": null,
+        "real_public_score_claimed": false,
+        "real_submission_allowed": false,
+        "total_file_count": 0
+      },
+      "severity": "PASS",
+      "taxonomy_id": "score_not_claimed_v1"
+    },
+    {
+      "active": true,
+      "category": "MEASUREMENT_CONSTRAINT",
+      "description": "The solver has not been measured on public games because no local fixtures exist.",
+      "evidence": {
+        "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+        "baseline_execution_performed": false,
+        "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+        "compatible_fixture_count": 0,
+        "kaggle_submission_sent": false,
+        "private_score_claimed": false,
+        "real_benchmark_score": null,
+        "real_public_score_claimed": false,
+        "real_submission_allowed": false,
+        "total_file_count": 0
+      },
+      "severity": "CONSTRAINT",
+      "taxonomy_id": "solver_not_measured_v1"
+    },
+    {
+      "active": true,
+      "category": "SUBMISSION_BOUNDARY",
+      "description": "Real submission remains blocked and no submission package exists.",
+      "evidence": {
+        "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+        "baseline_execution_performed": false,
+        "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+        "compatible_fixture_count": 0,
+        "kaggle_submission_sent": false,
+        "private_score_claimed": false,
+        "real_benchmark_score": null,
+        "real_public_score_claimed": false,
+        "real_submission_allowed": false,
+        "total_file_count": 0
+      },
+      "severity": "PASS",
+      "taxonomy_id": "submission_still_blocked_v1"
+    },
+    {
+      "active": true,
+      "category": "NEXT_ACTION",
+      "description": "Next action is to create a local fixture harness plan or import compatible public fixtures.",
+      "evidence": {
+        "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+        "baseline_execution_performed": false,
+        "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+        "compatible_fixture_count": 0,
+        "kaggle_submission_sent": false,
+        "private_score_claimed": false,
+        "real_benchmark_score": null,
+        "real_public_score_claimed": false,
+        "real_submission_allowed": false,
+        "total_file_count": 0
+      },
+      "severity": "ACTION_REQUIRED",
+      "taxonomy_id": "next_action_required_v1"
+    }
+  ],
+  "fixture_missing": true,
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_11_public_game_failure_taxonomy_v1"
+  },
+  "milestone": "Milestone #11",
+  "next_action_count": 4,
+  "next_action_plan": [
+    {
+      "action": "Create a local fixture harness plan for deterministic solver measurement.",
+      "action_id": "m11_task4_local_fixture_harness_plan_v1",
+      "implementation_required": true,
+      "priority": "P0",
+      "requires_external_api": false,
+      "requires_real_submission": false,
+      "requires_secret": false,
+      "score_claim_allowed": false,
+      "status": "PLANNED"
+    },
+    {
+      "action": "Define safe import policy for public fixtures without claiming official scores.",
+      "action_id": "m11_public_fixture_import_policy_v1",
+      "implementation_required": true,
+      "priority": "P0",
+      "requires_external_api": false,
+      "requires_real_submission": false,
+      "requires_secret": false,
+      "score_claim_allowed": false,
+      "status": "PLANNED"
+    },
+    {
+      "action": "Allow synthetic/local fixtures only as solver diagnostics, never as Kaggle score evidence.",
+      "action_id": "m11_synthetic_fixture_boundary_v1",
+      "implementation_required": true,
+      "priority": "P1",
+      "requires_external_api": false,
+      "requires_real_submission": false,
+      "requires_secret": false,
+      "score_claim_allowed": false,
+      "status": "PLANNED"
+    },
+    {
+      "action": "Map taxonomy classes to world-model, planner, verifier, and policy patch targets.",
+      "action_id": "m11_failure_taxonomy_to_patch_plan_v1",
+      "implementation_required": true,
+      "priority": "P1",
+      "requires_external_api": false,
+      "requires_real_submission": false,
+      "requires_secret": false,
+      "score_claim_allowed": false,
+      "status": "PLANNED"
+    }
+  ],
+  "next_stage": "MILESTONE_11_TASK_4_LOCAL_FIXTURE_HARNESS_PLAN_V1",
+  "passed_gate_count": 21,
+  "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+  "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+  "private_score_claimed": false,
+  "real_benchmark_score": null,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "score_not_claimed": true,
+  "signature": "A365950709F13146",
+  "solver_failure_detected": false,
+  "solver_not_measured": true,
+  "source_summary": {
+    "baseline_attempt_recorded": true,
+    "baseline_commit": "d7d1148 Open ARC AGI3 milestone 11 public benchmark solver improvement",
+    "baseline_execution_mode": "NO_LOCAL_PUBLIC_FIXTURES",
+    "baseline_execution_performed": false,
+    "baseline_policy_created": true,
+    "baseline_result_recorded": true,
+    "baseline_status": "BASELINE_NOT_EXECUTED_NO_LOCAL_PUBLIC_FIXTURES",
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "candidate_path_count": 5,
+    "compatible_fixture_count": 0,
+    "compatible_fixture_detection_completed": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "has_local_public_fixtures": false,
+    "inventory_created": true,
+    "inventory_scan_completed": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "manual_upload_allowed": false,
+    "next_stage": "MILESTONE_11_TASK_3_PUBLIC_GAME_FAILURE_TAXONOMY_V1",
+    "private_score_claimed": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "submission_json_created": false,
+    "task_2_id": "MILESTONE-11-PUBLIC-GAME-INVENTORY-BASELINE-RUN-99862C9A896F",
+    "task_2_path": "examples/milestone-11/public-game-inventory-baseline-run-v1/milestone-11-public-game-inventory-baseline-run-v1.json",
+    "task_2_present": true,
+    "task_2_ready": true,
+    "task_2_sha256": "df0a0a54d3849ddcc4744836a1b5371be6eb90756eba30c520517e4227e79f71",
+    "task_2_sha256_16": "DF0A0A54D3849DDC",
+    "task_2_signature": "99862C9A896F3740",
+    "task_2_status": "MILESTONE_11_PUBLIC_GAME_INVENTORY_BASELINE_RUN_V1_READY",
+    "task_verdict": "PUBLIC_GAME_INVENTORY_BASELINE_RUN_READY_FOR_FAILURE_TAXONOMY",
+    "total_file_count": 0,
+    "upload_package_created": false
+  },
+  "status": "MILESTONE_11_PUBLIC_GAME_FAILURE_TAXONOMY_V1_READY",
+  "submission_boundary_preserved": true,
+  "submission_json_created": false,
+  "task": "Task 3",
+  "task_2_source": {
+    "path": "examples/milestone-11/public-game-inventory-baseline-run-v1/milestone-11-public-game-inventory-baseline-run-v1.json",
+    "present": true,
+    "sha256": "df0a0a54d3849ddcc4744836a1b5371be6eb90756eba30c520517e4227e79f71",
+    "sha256_16": "DF0A0A54D3849DDC",
+    "status": "MILESTONE_11_PUBLIC_GAME_INVENTORY_BASELINE_RUN_V1_READY",
+    "task_2_id": "MILESTONE-11-PUBLIC-GAME-INVENTORY-BASELINE-RUN-99862C9A896F"
+  },
+  "task_3_id": "MILESTONE-11-PUBLIC-GAME-FAILURE-TAXONOMY-A365950709F1",
+  "task_3_ready": true,
+  "task_mode": "MILESTONE_11_PUBLIC_GAME_FAILURE_TAXONOMY_V1_LOCAL_ONLY",
+  "task_scope": "PUBLIC_GAME_FAILURE_TAXONOMY_FOR_NO_LOCAL_FIXTURE_AND_BASELINE_CONSTRAINTS",
+  "task_verdict": "PUBLIC_GAME_FAILURE_TAXONOMY_READY_FOR_LOCAL_FIXTURE_HARNESS_PLAN",
+  "taxonomy_case_count": 10,
+  "taxonomy_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m11_task3_source_task2_ready_v1",
+      "operation": "verify_task_2_inventory_baseline_source"
+    },
+    {
+      "area": "dataset_constraint",
+      "case_id": "m11_task3_no_local_public_fixtures_classified_v1",
+      "operation": "classify_no_local_public_fixtures"
+    },
+    {
+      "area": "baseline_constraint",
+      "case_id": "m11_task3_baseline_not_executed_classified_v1",
+      "operation": "classify_baseline_not_executed"
+    },
+    {
+      "area": "score_boundary",
+      "case_id": "m11_task3_score_boundary_classified_v1",
+      "operation": "classify_score_not_claimed"
+    },
+    {
+      "area": "measurement_constraint",
+      "case_id": "m11_task3_solver_not_measured_classified_v1",
+      "operation": "classify_solver_not_measured"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m11_task3_submission_boundary_classified_v1",
+      "operation": "classify_submission_still_blocked"
+    },
+    {
+      "area": "next_action",
+      "case_id": "m11_task3_next_actions_ready_v1",
+      "operation": "verify_next_actions"
+    },
+    {
+      "area": "interpretation",
+      "case_id": "m11_task3_taxonomy_not_solver_failure_v1",
+      "operation": "verify_constraint_not_solver_failure"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m11_task3_next_stage_valid_v1",
+      "operation": "verify_next_stage"
+    },
+    {
+      "area": "metadata",
+      "case_id": "m11_task3_metadata_safe_v1",
+      "operation": "verify_public_safe_metadata"
+    }
+  ],
+  "taxonomy_check_count": 36,
+  "taxonomy_check_list": [
+    "task_2_artifact_exists",
+    "task_2_artifact_ready",
+    "task_2_validated",
+    "candidate_identity_loaded",
+    "inventory_created",
+    "inventory_scan_completed",
+    "no_local_public_fixtures_detected",
+    "baseline_not_executed_due_to_no_fixtures",
+    "no_real_public_score_claimed",
+    "no_private_score_claimed",
+    "solver_not_measured_condition_detected",
+    "taxonomy_classes_created",
+    "taxonomy_dataset_missing_created",
+    "taxonomy_fixture_missing_created",
+    "taxonomy_baseline_not_executed_created",
+    "taxonomy_score_not_claimed_created",
+    "taxonomy_solver_not_measured_created",
+    "taxonomy_submission_blocked_created",
+    "taxonomy_next_action_required_created",
+    "next_actions_created",
+    "failure_is_constraint_not_solver_failure",
+    "real_submission_blocked",
+    "submission_json_absent",
+    "upload_package_absent",
+    "kaggle_submission_not_sent",
+    "fail_closed_required",
+    "fail_closed_active",
+    "next_stage_valid",
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "taxonomy_checks": {
+    "baseline_not_executed_due_to_no_fixtures": true,
+    "candidate_identity_loaded": true,
+    "contains_api_keys_false": true,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "failure_is_constraint_not_solver_failure": true,
+    "inventory_created": true,
+    "inventory_scan_completed": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "next_actions_created": true,
+    "next_stage_valid": true,
+    "no_local_public_fixtures_detected": true,
+    "no_private_score_claimed": true,
+    "no_real_public_score_claimed": true,
+    "private_core_exposure_false": true,
+    "public_safe": true,
+    "real_submission_blocked": true,
+    "solver_not_measured_condition_detected": true,
+    "submission_json_absent": true,
+    "task_2_artifact_exists": true,
+    "task_2_artifact_ready": true,
+    "task_2_validated": true,
+    "taxonomy_baseline_not_executed_created": true,
+    "taxonomy_case_count_valid": true,
+    "taxonomy_check_count_valid": true,
+    "taxonomy_classes_created": true,
+    "taxonomy_dataset_missing_created": true,
+    "taxonomy_fixture_missing_created": true,
+    "taxonomy_next_action_required_created": true,
+    "taxonomy_score_not_claimed_created": true,
+    "taxonomy_solver_not_measured_created": true,
+    "taxonomy_submission_blocked_created": true,
+    "upload_package_absent": true
+  },
+  "taxonomy_class_count": 7,
+  "taxonomy_created": true,
+  "taxonomy_failure_count": 0,
+  "taxonomy_gate_count": 21,
+  "taxonomy_gates": [
+    {
+      "name": "task_2_artifact_exists",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_2_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_2_validated",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_identity_loaded",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "inventory_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "inventory_scan_completed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "no_local_public_fixtures_detected",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "baseline_not_executed_due_to_no_fixtures",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "no_real_public_score_claimed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "no_private_score_claimed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "solver_not_measured_condition_detected",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "taxonomy_classes_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_actions_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "failure_is_constraint_not_solver_failure",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "metadata_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "taxonomy_index": {
+    "baseline_commit": "d3b39b0 Add ARC AGI3 public game inventory baseline run",
+    "depends_on_task_2": "MILESTONE-11-PUBLIC-GAME-INVENTORY-BASELINE-RUN-99862C9A896F",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #11",
+    "next_action_count": 4,
+    "next_stage": "MILESTONE_11_TASK_4_LOCAL_FIXTURE_HARNESS_PLAN_V1",
+    "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+    "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+    "private_core_exposure": false,
+    "private_score_claimed": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "solver_failure_detected": false,
+    "solver_not_measured": true,
+    "status": "MILESTONE_11_PUBLIC_GAME_FAILURE_TAXONOMY_V1_READY",
+    "task": "Task 3",
+    "task_mode": "MILESTONE_11_PUBLIC_GAME_FAILURE_TAXONOMY_V1_LOCAL_ONLY",
+    "task_scope": "PUBLIC_GAME_FAILURE_TAXONOMY_FOR_NO_LOCAL_FIXTURE_AND_BASELINE_CONSTRAINTS",
+    "task_verdict": "PUBLIC_GAME_FAILURE_TAXONOMY_READY_FOR_LOCAL_FIXTURE_HARNESS_PLAN",
+    "taxonomy_class_count": 7
+  },
+  "taxonomy_interpretation": {
+    "baseline_constraint_detected": true,
+    "dataset_constraint_detected": true,
+    "fixture_constraint_detected": true,
+    "interpretation_id": "M11-TASK3-FAILURE-TAXONOMY-INTERPRETATION-v1",
+    "next_action_required": true,
+    "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+    "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+    "reason": "No compatible local public fixtures were found; therefore baseline execution and solver measurement cannot be claimed.",
+    "safe_next_stage": "MILESTONE_11_TASK_4_LOCAL_FIXTURE_HARNESS_PLAN_V1",
+    "score_boundary_preserved": true,
+    "solver_failure_detected": false,
+    "solver_not_measured": true,
+    "submission_boundary_preserved": true
+  },
+  "taxonomy_issue_count": 0,
+  "taxonomy_issues": [
+    {
+      "active": false,
+      "name": "task_2_artifact_exists",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_2_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_2_invalidated",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_identity_loaded",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "inventory_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "inventory_scan_completed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "no_local_public_fixtures_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "baseline_not_executed_due_to_no_fixtures",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "no_real_public_score_claimed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "no_private_score_claimed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "solver_not_measured_condition_detected",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "taxonomy_classes_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_actions_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "failure_is_constraint_not_solver_failure",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "metadata_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "failure_count_zero",
+      "severity": "BLOCKING"
+    }
+  ],
+  "taxonomy_pass_count": 10,
+  "taxonomy_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m11_task3_source_task2_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_task_2_inventory_baseline_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "dataset_constraint",
+      "case_id": "m11_task3_no_local_public_fixtures_classified_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "classify_no_local_public_fixtures",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "baseline_constraint",
+      "case_id": "m11_task3_baseline_not_executed_classified_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "classify_baseline_not_executed",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "score_boundary",
+      "case_id": "m11_task3_score_boundary_classified_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "classify_score_not_claimed",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "measurement_constraint",
+      "case_id": "m11_task3_solver_not_measured_classified_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "classify_solver_not_measured",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m11_task3_submission_boundary_classified_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "classify_submission_still_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_action",
+      "case_id": "m11_task3_next_actions_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_actions",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "interpretation",
+      "case_id": "m11_task3_taxonomy_not_solver_failure_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_constraint_not_solver_failure",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m11_task3_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_stage",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "metadata",
+      "case_id": "m11_task3_metadata_safe_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_public_safe_metadata",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "taxonomy_scorecard": [
+    {
+      "criterion_id": "source_task2_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "dataset_missing_classified",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "fixture_missing_classified",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "baseline_not_executed_classified",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "score_not_claimed_classified",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "solver_not_measured_classified",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "submission_boundary_classified",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "next_actions_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "constraint_not_solver_failure",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    }
+  ],
+  "taxonomy_validated": true,
+  "title": "Public Game Failure Taxonomy v1",
+  "upload_package_created": false,
+  "warning_count": 0
+}
