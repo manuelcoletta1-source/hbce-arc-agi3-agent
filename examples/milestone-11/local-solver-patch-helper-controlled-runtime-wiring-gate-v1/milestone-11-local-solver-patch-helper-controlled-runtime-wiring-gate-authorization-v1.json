@@ -1,0 +1,102 @@
+[
+  {
+    "authorization_id": "authorize_task20_runtime_wiring_plan",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Create controlled runtime wiring plan"
+  },
+  {
+    "authorization_id": "authorize_static_import_surface_review",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Review proposed import surface"
+  },
+  {
+    "authorization_id": "authorize_adapter_target_mapping",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Map helper adapters to runtime target points"
+  },
+  {
+    "authorization_id": "authorize_contract_preflight_matrix",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Create contract preflight matrix"
+  },
+  {
+    "authorization_id": "authorize_fail_closed_runtime_controls",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Create runtime fail-closed controls"
+  },
+  {
+    "authorization_id": "authorize_test_plan_for_runtime_wiring",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Create runtime wiring regression plan"
+  },
+  {
+    "authorization_id": "authorize_rollback_plan_for_runtime_wiring",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Create rollback plan for runtime wiring"
+  },
+  {
+    "authorization_id": "authorize_operator_review_for_runtime_wiring",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Require operator review before mutation"
+  },
+  {
+    "authorization_id": "authorize_no_score_no_submission_audit",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Audit no-score and no-submission boundaries"
+  },
+  {
+    "authorization_id": "authorize_next_plan_only",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "PLAN_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Proceed to next runtime wiring plan only"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_task18_artifact_ready",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_task18_review_passed",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_runtime_gate_recommended",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_no_prior_runtime_authorization",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_no_prior_runtime_patch_allowed",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_no_ranker_patch_allowed",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_no_runtime_wiring_performed",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_review_findings_valid",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_review_criteria_valid",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_acceptance_valid",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_stop_conditions_valid",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_review_cases_green",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_review_issues_zero",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_runtime_solver_untouched",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_ranker_untouched",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_external_dependency_absent",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_score_submission_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_CONTROLLED_RUNTIME_WIRING_GATE",
+    "gate_rule_id": "runtime_gate_next_stage_plan_only",
+    "passed": true,
+    "required": true
+  }
+]
