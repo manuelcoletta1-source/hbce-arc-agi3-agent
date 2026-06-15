@@ -1,0 +1,74 @@
+[
+  {
+    "criterion_id": "source_task13_ready",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "dry_run_passed",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "adapter_and_layer_counts_valid",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "dry_run_output_count_valid",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "dry_run_failure_count_zero",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "runtime_solver_not_modified",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "ranker_runtime_not_modified",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "external_solver_dependency_false",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "score_claim_blocked",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "submission_artifacts_blocked",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "fail_closed_active",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "next_stage_controlled_gate_only",
+    "failure_action": "STOP_REVIEW_AND_REPAIR",
+    "passed": true,
+    "required": true
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "finding_id": "finding_task13_source_green",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_dry_run_passed",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_adapter_count_valid",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_layer_count_valid",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_output_count_valid",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_zero_failures",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_runtime_solver_untouched",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_ranker_untouched",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_external_solver_absent",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_score_boundary_preserved",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_submission_boundary_preserved",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_fail_closed_active",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_GATE_REVIEW",
+    "severity": "PASS"
+  }
+]
