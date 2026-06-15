@@ -1,0 +1,72 @@
+[
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "remove_runtime_helper_imports"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "remove_adapter_target_mapping"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "disable_runtime_wiring_flag"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "restore_runtime_solver_baseline"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "restore_ranker_baseline"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "delete_generated_runtime_wiring_artifacts"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "rerun_task19_gate"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "rerun_task20_plan"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "rerun_full_suite"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_readiness_id": "stop_before_submission_surface"
+  }
+]

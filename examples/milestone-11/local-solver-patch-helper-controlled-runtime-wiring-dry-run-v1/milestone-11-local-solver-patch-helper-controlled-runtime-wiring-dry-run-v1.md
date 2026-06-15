@@ -1,0 +1,109 @@
+# ARC AGI3 Milestone #11 Task 21 - Local Solver Patch Helper Controlled Runtime Wiring Dry Run v1
+
+- status: MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1_READY
+- task_21_id: MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-DRY-RUN-A2AFC39EFAB7
+- signature: A2AFC39EFAB7F603
+- baseline_commit: 00c47bf Add ARC AGI3 local solver patch helper controlled runtime wiring plan
+- task_mode: MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1_LOCAL_ONLY
+- task_scope: CONTROLLED_RUNTIME_WIRING_DRY_RUN_ONLY_NO_RUNTIME_SOLVER_MUTATION_NO_SCORE_NO_SUBMISSION
+- task_verdict: LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_READY_FOR_REVIEW
+- next_stage: MILESTONE_11_TASK_22_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1
+- task_21_ready: True
+- runtime_wiring_dry_run_ready: True
+- runtime_wiring_dry_run_passed: True
+- runtime_wiring_review_authorized: True
+- controlled_runtime_wiring_authorized: False
+- runtime_solver_patch_allowed: False
+- ranker_runtime_patch_allowed: False
+- runtime_solver_patch_applied: False
+- ranker_runtime_patch_applied: False
+- runtime_wiring_performed: False
+- target_simulation_count: 5
+- import_simulation_count: 5
+- contract_validation_count: 12
+- step_simulation_count: 14
+- regression_simulation_count: 12
+- rollback_readiness_count: 10
+- review_gate_confirmation_count: 12
+- boundary_assertion_count: 16
+- runtime_solver_modified: False
+- ranker_runtime_modified: False
+- external_solver_dependency: False
+- diagnostic_only: True
+- kaggle_score_semantics: NOT_A_KAGGLE_SCORE
+- real_submission_allowed: False
+- kaggle_submission_sent: False
+- fail_closed_active: True
+
+## Target dry-run simulations
+
+- target_dry_run_01_world_model / layer=world_model / adapter=world_model_state_tracking_adapter / status=SIMULATION_PASS / runtime_solver_modified=False
+- target_dry_run_02_goal_inference / layer=goal_inference / adapter=goal_inference_terminal_state_adapter / status=SIMULATION_PASS / runtime_solver_modified=False
+- target_dry_run_03_planner / layer=planner / adapter=planner_loop_recovery_adapter / status=SIMULATION_PASS / runtime_solver_modified=False
+- target_dry_run_04_verifier / layer=verifier / adapter=transition_verifier_feedback_adapter / status=SIMULATION_PASS / runtime_solver_modified=False
+- target_dry_run_05_action_policy / layer=action_policy / adapter=action_policy_validity_guard_adapter / status=SIMULATION_PASS / runtime_solver_modified=False
+
+## Runtime wiring dry-run case results
+
+- m11_task21_source_task20_ready_v1 / area=source / operation=verify_task_20_source / passed=True
+- m11_task21_plan_passed_v1 / area=plan / operation=verify_plan_passed / passed=True
+- m11_task21_target_simulations_v1 / area=targets / operation=verify_target_simulations / passed=True
+- m11_task21_import_simulations_v1 / area=import_surface / operation=verify_import_simulations / passed=True
+- m11_task21_contract_validations_v1 / area=contracts / operation=verify_contract_validations / passed=True
+- m11_task21_step_simulations_v1 / area=steps / operation=verify_step_simulations / passed=True
+- m11_task21_regression_simulations_v1 / area=regression / operation=verify_regression_simulations / passed=True
+- m11_task21_rollback_readiness_v1 / area=rollback / operation=verify_rollback_readiness / passed=True
+- m11_task21_boundary_v1 / area=boundary / operation=verify_no_runtime_mutation / passed=True
+- m11_task21_next_stage_valid_v1 / area=next_stage / operation=verify_next_stage / passed=True
+
+## Decision
+
+Task 21 executes the controlled runtime wiring dry-run and authorizes the next review only. Runtime solver and ranker remain untouched.
+
+## Markers
+
+ARC_AGI3_MILESTONE_11_TASK_21_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1_READY=true
+ARC_AGI3_MILESTONE_11_TASK_21_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1_VALID=true
+ARC_AGI3_MILESTONE_11_TASK_21_READY=true
+ARC_AGI3_MILESTONE_11_TASK_21_MODE=MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1_LOCAL_ONLY
+ARC_AGI3_MILESTONE_11_TASK_21_VERDICT=LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_READY_FOR_REVIEW
+ARC_AGI3_MILESTONE_11_TASK_21_BASELINE_COMMIT=00c47bf
+ARC_AGI3_MILESTONE_11_TASK_21_NEXT_STAGE=MILESTONE_11_TASK_22_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1
+ARC_AGI3_MILESTONE_11_RUNTIME_WIRING_DRY_RUN_READY=true
+ARC_AGI3_MILESTONE_11_RUNTIME_WIRING_DRY_RUN_PASSED=true
+ARC_AGI3_MILESTONE_11_RUNTIME_WIRING_REVIEW_AUTHORIZED=true
+ARC_AGI3_MILESTONE_11_CONTROLLED_RUNTIME_WIRING_AUTHORIZED=false
+ARC_AGI3_MILESTONE_11_RUNTIME_SOLVER_PATCH_ALLOWED=false
+ARC_AGI3_MILESTONE_11_RANKER_RUNTIME_PATCH_ALLOWED=false
+ARC_AGI3_MILESTONE_11_RUNTIME_SOLVER_PATCH_APPLIED=false
+ARC_AGI3_MILESTONE_11_RANKER_RUNTIME_PATCH_APPLIED=false
+ARC_AGI3_MILESTONE_11_RUNTIME_WIRING_PERFORMED=false
+ARC_AGI3_MILESTONE_11_TARGET_SIMULATION_COUNT=5
+ARC_AGI3_MILESTONE_11_IMPORT_SIMULATION_COUNT=5
+ARC_AGI3_MILESTONE_11_CONTRACT_VALIDATION_COUNT=12
+ARC_AGI3_MILESTONE_11_STEP_SIMULATION_COUNT=14
+ARC_AGI3_MILESTONE_11_REGRESSION_SIMULATION_COUNT=12
+ARC_AGI3_MILESTONE_11_ROLLBACK_READINESS_COUNT=10
+ARC_AGI3_MILESTONE_11_REVIEW_GATE_CONFIRMATION_COUNT=12
+ARC_AGI3_MILESTONE_11_BOUNDARY_ASSERTION_COUNT=16
+ARC_AGI3_MILESTONE_11_RUNTIME_SOLVER_MODIFIED=false
+ARC_AGI3_MILESTONE_11_RANKER_RUNTIME_MODIFIED=false
+ARC_AGI3_MILESTONE_11_EXTERNAL_SOLVER_DEPENDENCY=false
+ARC_AGI3_MILESTONE_11_DIAGNOSTIC_ONLY=true
+ARC_AGI3_MILESTONE_11_KAGGLE_SCORE_SEMANTICS=NOT_A_KAGGLE_SCORE
+ARC_AGI3_MILESTONE_11_OFFICIAL_SCORE_CLAIM_ALLOWED=false
+ARC_AGI3_MILESTONE_11_COMPETITIVE_SCORE_CLAIM_ALLOWED=false
+ARC_AGI3_MILESTONE_11_REAL_PUBLIC_SCORE_CLAIMED=false
+ARC_AGI3_MILESTONE_11_PRIVATE_SCORE_CLAIMED=false
+ARC_AGI3_MILESTONE_11_REAL_SUBMISSION_CANDIDATE_CREATED=false
+ARC_AGI3_MILESTONE_11_SUBMISSION_JSON_CREATED=false
+ARC_AGI3_MILESTONE_11_UPLOAD_PACKAGE_CREATED=false
+ARC_AGI3_MILESTONE_11_REAL_SUBMISSION_DECISION=NOT_AUTHORIZED
+ARC_AGI3_MILESTONE_11_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_11_KAGGLE_AUTHENTICATION_ALLOWED=false
+ARC_AGI3_MILESTONE_11_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_11_FAIL_CLOSED_REQUIRED=true
+ARC_AGI3_MILESTONE_11_FAIL_CLOSED_ACTIVE=true
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false

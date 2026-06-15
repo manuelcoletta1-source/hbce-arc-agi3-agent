@@ -1,0 +1,134 @@
+[
+  {
+    "contract_id": "contract_task19_gate_required",
+    "contract_validation_id": "dry_run_contract_task19_gate_required",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_no_direct_runtime_mutation",
+    "contract_validation_id": "dry_run_contract_no_direct_runtime_mutation",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_no_ranker_mutation",
+    "contract_validation_id": "dry_run_contract_no_ranker_mutation",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_no_external_solver_dependency",
+    "contract_validation_id": "dry_run_contract_no_external_solver_dependency",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_no_external_api_dependency",
+    "contract_validation_id": "dry_run_contract_no_external_api_dependency",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_adapter_input_schema",
+    "contract_validation_id": "dry_run_contract_adapter_input_schema",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_adapter_output_schema",
+    "contract_validation_id": "dry_run_contract_adapter_output_schema",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_fail_closed_missing_record",
+    "contract_validation_id": "dry_run_contract_fail_closed_missing_record",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_fail_closed_invalid_hint",
+    "contract_validation_id": "dry_run_contract_fail_closed_invalid_hint",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_no_score_claim",
+    "contract_validation_id": "dry_run_contract_no_score_claim",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_no_submission_artifact",
+    "contract_validation_id": "dry_run_contract_no_submission_artifact",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  },
+  {
+    "contract_id": "contract_operator_review_required",
+    "contract_validation_id": "dry_run_contract_operator_review_required",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "validation_status": "CONTRACT_DRY_RUN_PASS"
+  }
+]

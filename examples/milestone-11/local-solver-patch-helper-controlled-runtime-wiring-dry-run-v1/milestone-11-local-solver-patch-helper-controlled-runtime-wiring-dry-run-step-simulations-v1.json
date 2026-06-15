@@ -1,0 +1,156 @@
+[
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "verify_task19_gate_artifact",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_01_verify_task19_gate_artifact",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "map_runtime_entrypoint_without_modification",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_02_map_runtime_entrypoint_without_modification",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "map_helper_import_surface_without_importing",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_03_map_helper_import_surface_without_importing",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "map_adapter_target_layers",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_04_map_adapter_target_layers",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "define_adapter_call_contracts",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_05_define_adapter_call_contracts",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "define_fail_closed_input_guards",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_06_define_fail_closed_input_guards",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "define_fail_closed_output_guards",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_07_define_fail_closed_output_guards",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "define_no_score_no_submission_guards",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_08_define_no_score_no_submission_guards",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "define_local_regression_execution_plan",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_09_define_local_regression_execution_plan",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "define_rollback_before_runtime_mutation",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_10_define_rollback_before_runtime_mutation",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "define_operator_review_checkpoint",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_11_define_operator_review_checkpoint",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "define_dry_run_expected_outputs",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_12_define_dry_run_expected_outputs",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "define_dry_run_stop_conditions",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_13_define_dry_run_stop_conditions",
+    "submission_allowed": false
+  },
+  {
+    "executed_for_real": false,
+    "planned": true,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "simulation_status": "STEP_DRY_RUN_PASS",
+    "step_name": "authorize_task21_dry_run_only",
+    "step_simulation_id": "dry_run_runtime_wiring_plan_step_14_authorize_task21_dry_run_only",
+    "submission_allowed": false
+  }
+]

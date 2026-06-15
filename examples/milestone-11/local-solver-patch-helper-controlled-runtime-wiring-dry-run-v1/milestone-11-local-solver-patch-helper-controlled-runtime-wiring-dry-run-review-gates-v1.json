@@ -1,0 +1,86 @@
+[
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_runtime_entrypoint",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_import_surface",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_adapter_target_mapping",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_contract_preflight_matrix",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_fail_closed_controls",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_no_score_boundary",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_no_submission_boundary",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_regression_plan",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_rollback_plan",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_private_core_boundary",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_legal_certification_boundary",
+    "required": true
+  },
+  {
+    "confirmed": true,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "manual_runtime_mutation_allowed": false,
+    "operator_review_gate_id": "review_task21_dry_run_authorization",
+    "required": true
+  }
+]

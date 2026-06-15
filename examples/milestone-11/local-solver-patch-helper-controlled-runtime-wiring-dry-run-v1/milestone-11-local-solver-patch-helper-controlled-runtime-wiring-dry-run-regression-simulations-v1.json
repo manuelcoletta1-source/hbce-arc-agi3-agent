@@ -1,0 +1,134 @@
+[
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_01",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helpers.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_02",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_probe_run.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_03",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_wiring_plan.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_04",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_wiring_dry_run.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_05",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_wiring_review.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_06",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_gate.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_07",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_plan.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_08",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_dry_run.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_09",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_review.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_10",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_runtime_wiring_gate.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_11",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_runtime_wiring_plan.py"
+  },
+  {
+    "executed_for_real": false,
+    "external_api_dependency": false,
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "local_only": true,
+    "passed": true,
+    "regression_simulation_id": "runtime_wiring_regression_12",
+    "score_claim_allowed": false,
+    "simulation_status": "REGRESSION_DRY_RUN_PASS",
+    "target": "FULL_SUITE"
+  }
+]

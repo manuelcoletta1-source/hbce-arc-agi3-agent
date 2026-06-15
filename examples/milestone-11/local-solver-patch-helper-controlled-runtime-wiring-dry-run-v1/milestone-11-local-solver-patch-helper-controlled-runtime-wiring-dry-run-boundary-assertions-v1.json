@@ -1,0 +1,98 @@
+[
+  {
+    "boundary_id": "boundary_no_runtime_solver_patch",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_ranker_runtime_patch",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_runtime_wiring_performed",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_runtime_import_applied",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_runtime_solver_modified",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_ranker_runtime_modified",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_external_solver_dependency",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_external_api_dependency",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_score_claim",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_real_public_score",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_private_score",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_submission_json",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_upload_package",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_kaggle_authentication",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_private_core_exposure",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "boundary_id": "boundary_no_legal_certification",
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "passed": true,
+    "severity": "PASS"
+  }
+]

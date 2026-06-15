@@ -1,0 +1,2588 @@
+{
+  "baseline_commit": "00c47bf Add ARC AGI3 local solver patch helper controlled runtime wiring plan",
+  "boundary_assertion_count": 16,
+  "competitive_score_claim_allowed": false,
+  "contract_dry_run_validations": [
+    {
+      "contract_id": "contract_task19_gate_required",
+      "contract_validation_id": "dry_run_contract_task19_gate_required",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_no_direct_runtime_mutation",
+      "contract_validation_id": "dry_run_contract_no_direct_runtime_mutation",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_no_ranker_mutation",
+      "contract_validation_id": "dry_run_contract_no_ranker_mutation",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_no_external_solver_dependency",
+      "contract_validation_id": "dry_run_contract_no_external_solver_dependency",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_no_external_api_dependency",
+      "contract_validation_id": "dry_run_contract_no_external_api_dependency",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_adapter_input_schema",
+      "contract_validation_id": "dry_run_contract_adapter_input_schema",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_adapter_output_schema",
+      "contract_validation_id": "dry_run_contract_adapter_output_schema",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_fail_closed_missing_record",
+      "contract_validation_id": "dry_run_contract_fail_closed_missing_record",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_fail_closed_invalid_hint",
+      "contract_validation_id": "dry_run_contract_fail_closed_invalid_hint",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_no_score_claim",
+      "contract_validation_id": "dry_run_contract_no_score_claim",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_no_submission_artifact",
+      "contract_validation_id": "dry_run_contract_no_submission_artifact",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    },
+    {
+      "contract_id": "contract_operator_review_required",
+      "contract_validation_id": "dry_run_contract_operator_review_required",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "ranker_runtime_mutation_allowed": false,
+      "runtime_solver_mutation_allowed": false,
+      "score_claim_allowed": false,
+      "submission_allowed": false,
+      "validation_status": "CONTRACT_DRY_RUN_PASS"
+    }
+  ],
+  "contract_validation_count": 12,
+  "controlled_runtime_wiring_authorized": false,
+  "diagnostic_only": true,
+  "external_solver_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "import_simulation_count": 5,
+  "import_surface_count": 5,
+  "import_surface_dry_run_simulations": [
+    {
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "import_applied": false,
+      "import_checked": true,
+      "import_simulation_id": "import_surface_dry_run_01_world_model",
+      "proposed_import": "build_world_model_state_tracking_hints",
+      "ranker_runtime_modified": false,
+      "requires_review": true,
+      "runtime_solver_modified": false,
+      "simulation_status": "IMPORT_SIMULATION_PASS",
+      "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+      "target_layer": "world_model"
+    },
+    {
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "import_applied": false,
+      "import_checked": true,
+      "import_simulation_id": "import_surface_dry_run_02_goal_inference",
+      "proposed_import": "build_goal_inference_terminal_state_hints",
+      "ranker_runtime_modified": false,
+      "requires_review": true,
+      "runtime_solver_modified": false,
+      "simulation_status": "IMPORT_SIMULATION_PASS",
+      "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+      "target_layer": "goal_inference"
+    },
+    {
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "import_applied": false,
+      "import_checked": true,
+      "import_simulation_id": "import_surface_dry_run_03_planner",
+      "proposed_import": "build_planner_loop_recovery_hints",
+      "ranker_runtime_modified": false,
+      "requires_review": true,
+      "runtime_solver_modified": false,
+      "simulation_status": "IMPORT_SIMULATION_PASS",
+      "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+      "target_layer": "planner"
+    },
+    {
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "import_applied": false,
+      "import_checked": true,
+      "import_simulation_id": "import_surface_dry_run_04_verifier",
+      "proposed_import": "build_transition_verifier_feedback_hints",
+      "ranker_runtime_modified": false,
+      "requires_review": true,
+      "runtime_solver_modified": false,
+      "simulation_status": "IMPORT_SIMULATION_PASS",
+      "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+      "target_layer": "verifier"
+    },
+    {
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "import_applied": false,
+      "import_checked": true,
+      "import_simulation_id": "import_surface_dry_run_05_action_policy",
+      "proposed_import": "build_action_policy_validity_guard_hints",
+      "ranker_runtime_modified": false,
+      "requires_review": true,
+      "runtime_solver_modified": false,
+      "simulation_status": "IMPORT_SIMULATION_PASS",
+      "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+      "target_layer": "action_policy"
+    }
+  ],
+  "kaggle_authentication_allowed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_11_local_solver_patch_helper_controlled_runtime_wiring_dry_run_v1"
+  },
+  "milestone": "Milestone #11",
+  "next_stage": "MILESTONE_11_TASK_22_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1",
+  "official_score_claim_allowed": false,
+  "operator_review_gate_confirmations": [
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_runtime_entrypoint",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_import_surface",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_adapter_target_mapping",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_contract_preflight_matrix",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_fail_closed_controls",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_no_score_boundary",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_no_submission_boundary",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_regression_plan",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_rollback_plan",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_private_core_boundary",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_legal_certification_boundary",
+      "required": true
+    },
+    {
+      "confirmed": true,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "manual_runtime_mutation_allowed": false,
+      "operator_review_gate_id": "review_task21_dry_run_authorization",
+      "required": true
+    }
+  ],
+  "operator_review_gate_count": 12,
+  "passed_gate_count": 40,
+  "preflight_contract_count": 12,
+  "private_score_claim_allowed": false,
+  "private_score_claimed": false,
+  "public_score_claim_allowed": false,
+  "ranker_runtime_modified": false,
+  "ranker_runtime_patch_allowed": false,
+  "ranker_runtime_patch_applied": false,
+  "real_benchmark_score": null,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "regression_dry_run_simulations": [
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_01",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helpers.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_02",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_probe_run.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_03",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_wiring_plan.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_04",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_wiring_dry_run.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_05",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_wiring_review.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_06",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_gate.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_07",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_plan.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_08",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_dry_run.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_09",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_review.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_10",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_runtime_wiring_gate.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_11",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_runtime_wiring_plan.py"
+    },
+    {
+      "executed_for_real": false,
+      "external_api_dependency": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "local_only": true,
+      "passed": true,
+      "regression_simulation_id": "runtime_wiring_regression_12",
+      "score_claim_allowed": false,
+      "simulation_status": "REGRESSION_DRY_RUN_PASS",
+      "target": "FULL_SUITE"
+    }
+  ],
+  "regression_simulation_count": 12,
+  "review_gate_confirmation_count": 12,
+  "rollback_dry_run_readiness": [
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "remove_runtime_helper_imports"
+    },
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "remove_adapter_target_mapping"
+    },
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "disable_runtime_wiring_flag"
+    },
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "restore_runtime_solver_baseline"
+    },
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "restore_ranker_baseline"
+    },
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "delete_generated_runtime_wiring_artifacts"
+    },
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "rerun_task19_gate"
+    },
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "rerun_task20_plan"
+    },
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "rerun_full_suite"
+    },
+    {
+      "executed_for_real": false,
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "ready": true,
+      "required": true,
+      "rollback_readiness_id": "stop_before_submission_surface"
+    }
+  ],
+  "rollback_readiness_count": 10,
+  "runtime_dry_run_boundary_assertions": [
+    {
+      "boundary_id": "boundary_no_runtime_solver_patch",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_ranker_runtime_patch",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_runtime_wiring_performed",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_runtime_import_applied",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_runtime_solver_modified",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_ranker_runtime_modified",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_external_solver_dependency",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_external_api_dependency",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_score_claim",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_real_public_score",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_private_score",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_submission_json",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_upload_package",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_kaggle_authentication",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_private_core_exposure",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "boundary_id": "boundary_no_legal_certification",
+      "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "runtime_regression_test_count": 12,
+  "runtime_rollback_item_count": 10,
+  "runtime_solver_modified": false,
+  "runtime_solver_patch_allowed": false,
+  "runtime_solver_patch_applied": false,
+  "runtime_wiring_dry_run_case_count": 10,
+  "runtime_wiring_dry_run_case_failure_count": 0,
+  "runtime_wiring_dry_run_case_pass_count": 10,
+  "runtime_wiring_dry_run_case_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source",
+      "case_id": "m11_task21_source_task20_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_task_20_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "plan",
+      "case_id": "m11_task21_plan_passed_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_plan_passed",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "targets",
+      "case_id": "m11_task21_target_simulations_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_target_simulations",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "import_surface",
+      "case_id": "m11_task21_import_simulations_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_import_simulations",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "contracts",
+      "case_id": "m11_task21_contract_validations_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_contract_validations",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "steps",
+      "case_id": "m11_task21_step_simulations_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_step_simulations",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "regression",
+      "case_id": "m11_task21_regression_simulations_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_regression_simulations",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "rollback",
+      "case_id": "m11_task21_rollback_readiness_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_rollback_readiness",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "m11_task21_boundary_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_runtime_mutation",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m11_task21_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_stage",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "runtime_wiring_dry_run_cases": [
+    {
+      "area": "source",
+      "case_id": "m11_task21_source_task20_ready_v1",
+      "operation": "verify_task_20_source"
+    },
+    {
+      "area": "plan",
+      "case_id": "m11_task21_plan_passed_v1",
+      "operation": "verify_plan_passed"
+    },
+    {
+      "area": "targets",
+      "case_id": "m11_task21_target_simulations_v1",
+      "operation": "verify_target_simulations"
+    },
+    {
+      "area": "import_surface",
+      "case_id": "m11_task21_import_simulations_v1",
+      "operation": "verify_import_simulations"
+    },
+    {
+      "area": "contracts",
+      "case_id": "m11_task21_contract_validations_v1",
+      "operation": "verify_contract_validations"
+    },
+    {
+      "area": "steps",
+      "case_id": "m11_task21_step_simulations_v1",
+      "operation": "verify_step_simulations"
+    },
+    {
+      "area": "regression",
+      "case_id": "m11_task21_regression_simulations_v1",
+      "operation": "verify_regression_simulations"
+    },
+    {
+      "area": "rollback",
+      "case_id": "m11_task21_rollback_readiness_v1",
+      "operation": "verify_rollback_readiness"
+    },
+    {
+      "area": "boundary",
+      "case_id": "m11_task21_boundary_v1",
+      "operation": "verify_no_runtime_mutation"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m11_task21_next_stage_valid_v1",
+      "operation": "verify_next_stage"
+    }
+  ],
+  "runtime_wiring_dry_run_check_count": 90,
+  "runtime_wiring_dry_run_check_list": [
+    "task_20_artifact_exists",
+    "task_20_artifact_ready",
+    "task_20_validated",
+    "runtime_wiring_plan_ready",
+    "runtime_wiring_plan_passed",
+    "runtime_wiring_dry_run_authorized_from_plan",
+    "controlled_runtime_wiring_authorized_false_from_plan",
+    "runtime_solver_patch_allowed_false_from_plan",
+    "ranker_runtime_patch_allowed_false_from_plan",
+    "runtime_solver_patch_applied_false_from_plan",
+    "ranker_runtime_patch_applied_false_from_plan",
+    "runtime_wiring_performed_false_from_plan",
+    "runtime_wiring_target_count_valid_from_plan",
+    "import_surface_count_valid_from_plan",
+    "preflight_contract_count_valid_from_plan",
+    "runtime_wiring_step_count_valid_from_plan",
+    "runtime_regression_test_count_valid_from_plan",
+    "runtime_rollback_item_count_valid_from_plan",
+    "operator_review_gate_count_valid_from_plan",
+    "plan_check_count_valid",
+    "plan_case_count_valid",
+    "plan_case_failure_count_zero",
+    "plan_gate_count_valid",
+    "plan_issue_count_zero",
+    "target_simulations_created",
+    "target_simulation_count_valid",
+    "all_target_simulations_pass",
+    "all_target_simulations_no_runtime_mutation",
+    "import_simulations_created",
+    "import_simulation_count_valid",
+    "all_import_simulations_pass",
+    "all_import_simulations_not_applied",
+    "contract_validations_created",
+    "contract_validation_count_valid",
+    "all_contract_validations_pass",
+    "step_simulations_created",
+    "step_simulation_count_valid",
+    "all_step_simulations_pass",
+    "all_steps_executed_for_real_false",
+    "regression_simulations_created",
+    "regression_simulation_count_valid",
+    "all_regression_simulations_pass",
+    "rollback_readiness_created",
+    "rollback_readiness_count_valid",
+    "all_rollback_items_ready",
+    "review_gate_confirmations_created",
+    "review_gate_confirmation_count_valid",
+    "all_review_gates_confirmed",
+    "boundary_assertions_created",
+    "boundary_assertion_count_valid",
+    "all_boundary_assertions_pass",
+    "runtime_wiring_dry_run_ready",
+    "runtime_wiring_dry_run_passed",
+    "runtime_wiring_review_authorized",
+    "controlled_runtime_wiring_authorized_false",
+    "runtime_solver_patch_allowed_false",
+    "ranker_runtime_patch_allowed_false",
+    "runtime_solver_patch_applied_false",
+    "ranker_runtime_patch_applied_false",
+    "runtime_wiring_performed_false",
+    "runtime_solver_modified_false",
+    "ranker_runtime_modified_false",
+    "external_solver_dependency_false",
+    "diagnostic_only",
+    "not_kaggle_score",
+    "official_score_claim_blocked",
+    "competitive_score_claim_blocked",
+    "public_score_claim_blocked",
+    "private_score_claim_blocked",
+    "real_public_score_not_claimed",
+    "private_score_not_claimed",
+    "real_benchmark_score_absent",
+    "real_submission_candidate_absent",
+    "submission_json_absent",
+    "upload_package_absent",
+    "real_submission_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_submission_not_sent",
+    "fail_closed_required",
+    "fail_closed_active",
+    "next_stage_valid",
+    "case_count_valid",
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "runtime_wiring_dry_run_checks": {
+    "all_boundary_assertions_pass": true,
+    "all_contract_validations_pass": true,
+    "all_import_simulations_not_applied": true,
+    "all_import_simulations_pass": true,
+    "all_regression_simulations_pass": true,
+    "all_review_gates_confirmed": true,
+    "all_rollback_items_ready": true,
+    "all_step_simulations_pass": true,
+    "all_steps_executed_for_real_false": true,
+    "all_target_simulations_no_runtime_mutation": true,
+    "all_target_simulations_pass": true,
+    "boundary_assertion_count_valid": true,
+    "boundary_assertions_created": true,
+    "case_count_valid": true,
+    "competitive_score_claim_blocked": true,
+    "contains_api_keys_false": true,
+    "contract_validation_count_valid": true,
+    "contract_validations_created": true,
+    "controlled_runtime_wiring_authorized_false": true,
+    "controlled_runtime_wiring_authorized_false_from_plan": true,
+    "deterministic": true,
+    "diagnostic_only": true,
+    "dry_run_only": true,
+    "external_api_dependency_false": true,
+    "external_solver_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "import_simulation_count_valid": true,
+    "import_simulations_created": true,
+    "import_surface_count_valid_from_plan": true,
+    "kaggle_authentication_blocked": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "next_stage_valid": true,
+    "not_kaggle_score": true,
+    "official_score_claim_blocked": true,
+    "operator_review_gate_count_valid_from_plan": true,
+    "plan_case_count_valid": true,
+    "plan_case_failure_count_zero": true,
+    "plan_check_count_valid": true,
+    "plan_gate_count_valid": true,
+    "plan_issue_count_zero": true,
+    "preflight_contract_count_valid_from_plan": true,
+    "private_core_exposure_false": true,
+    "private_score_claim_blocked": true,
+    "private_score_not_claimed": true,
+    "public_safe": true,
+    "public_score_claim_blocked": true,
+    "ranker_runtime_modified_false": true,
+    "ranker_runtime_patch_allowed_false": true,
+    "ranker_runtime_patch_allowed_false_from_plan": true,
+    "ranker_runtime_patch_applied_false": true,
+    "ranker_runtime_patch_applied_false_from_plan": true,
+    "real_benchmark_score_absent": true,
+    "real_public_score_not_claimed": true,
+    "real_submission_blocked": true,
+    "real_submission_candidate_absent": true,
+    "regression_simulation_count_valid": true,
+    "regression_simulations_created": true,
+    "review_gate_confirmation_count_valid": true,
+    "review_gate_confirmations_created": true,
+    "rollback_readiness_count_valid": true,
+    "rollback_readiness_created": true,
+    "runtime_regression_test_count_valid_from_plan": true,
+    "runtime_rollback_item_count_valid_from_plan": true,
+    "runtime_solver_modified_false": true,
+    "runtime_solver_patch_allowed_false": true,
+    "runtime_solver_patch_allowed_false_from_plan": true,
+    "runtime_solver_patch_applied_false": true,
+    "runtime_solver_patch_applied_false_from_plan": true,
+    "runtime_wiring_dry_run_authorized_from_plan": true,
+    "runtime_wiring_dry_run_passed": true,
+    "runtime_wiring_dry_run_ready": true,
+    "runtime_wiring_performed_false": true,
+    "runtime_wiring_performed_false_from_plan": true,
+    "runtime_wiring_plan_passed": true,
+    "runtime_wiring_plan_ready": true,
+    "runtime_wiring_review_authorized": true,
+    "runtime_wiring_step_count_valid_from_plan": true,
+    "runtime_wiring_target_count_valid_from_plan": true,
+    "step_simulation_count_valid": true,
+    "step_simulations_created": true,
+    "submission_json_absent": true,
+    "target_simulation_count_valid": true,
+    "target_simulations_created": true,
+    "task_20_artifact_exists": true,
+    "task_20_artifact_ready": true,
+    "task_20_validated": true,
+    "upload_package_absent": true
+  },
+  "runtime_wiring_dry_run_decision": {
+    "controlled_runtime_wiring_authorized": false,
+    "decision_boundary": "CONTROLLED_RUNTIME_WIRING_DRY_RUN_ONLY_NEXT_REVIEW_NO_RUNTIME_WIRING_NO_SCORE_NO_SUBMISSION",
+    "decision_id": "M11-TASK21-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-DRY-RUN-DECISION-v1",
+    "next_stage": "MILESTONE_11_TASK_22_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1",
+    "ranker_runtime_patch_allowed": false,
+    "ranker_runtime_patch_applied": false,
+    "real_submission_allowed": false,
+    "runtime_solver_patch_allowed": false,
+    "runtime_solver_patch_applied": false,
+    "runtime_wiring_dry_run_passed": true,
+    "runtime_wiring_dry_run_ready": true,
+    "runtime_wiring_performed": false,
+    "runtime_wiring_review_authorized": true,
+    "score_claim_allowed": false,
+    "verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_READY_FOR_REVIEW"
+  },
+  "runtime_wiring_dry_run_gate_count": 40,
+  "runtime_wiring_dry_run_gates": [
+    {
+      "name": "task_20_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_20_validated",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_wiring_plan_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_wiring_dry_run_authorized_from_plan",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "target_simulation_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_target_simulations_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_target_simulations_no_runtime_mutation",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "import_simulation_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_import_simulations_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_import_simulations_not_applied",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "contract_validation_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_contract_validations_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "step_simulation_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_step_simulations_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_steps_executed_for_real_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "regression_simulation_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_regression_simulations_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rollback_readiness_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_rollback_items_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_gate_confirmation_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_review_gates_confirmed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_assertion_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_boundary_assertions_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_wiring_dry_run_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_wiring_review_authorized",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "controlled_runtime_wiring_authorized_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_solver_patch_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_runtime_patch_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_solver_patch_applied_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_runtime_patch_applied_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_wiring_performed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_solver_untouched",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "ranker_runtime_untouched",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_solver_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_boundary_preserved",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_boundary_preserved",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "case_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "runtime_wiring_dry_run_index": {
+    "baseline_commit": "00c47bf Add ARC AGI3 local solver patch helper controlled runtime wiring plan",
+    "boundary_assertion_count": 16,
+    "competitive_score_claim_allowed": false,
+    "contract_validation_count": 12,
+    "controlled_runtime_wiring_authorized": false,
+    "depends_on_task_20": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-PLAN-D0C9857A1FF1",
+    "diagnostic_only": true,
+    "external_api_dependency": false,
+    "external_solver_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "import_simulation_count": 5,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #11",
+    "next_stage": "MILESTONE_11_TASK_22_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_V1",
+    "official_score_claim_allowed": false,
+    "private_core_exposure": false,
+    "private_score_claimed": false,
+    "ranker_runtime_modified": false,
+    "ranker_runtime_patch_allowed": false,
+    "ranker_runtime_patch_applied": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "regression_simulation_count": 12,
+    "review_gate_confirmation_count": 12,
+    "rollback_readiness_count": 10,
+    "runtime_solver_modified": false,
+    "runtime_solver_patch_allowed": false,
+    "runtime_solver_patch_applied": false,
+    "runtime_wiring_dry_run_passed": true,
+    "runtime_wiring_dry_run_ready": true,
+    "runtime_wiring_performed": false,
+    "runtime_wiring_review_authorized": true,
+    "status": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1_READY",
+    "step_simulation_count": 14,
+    "target_simulation_count": 5,
+    "task": "Task 21",
+    "task_mode": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1_LOCAL_ONLY",
+    "task_scope": "CONTROLLED_RUNTIME_WIRING_DRY_RUN_ONLY_NO_RUNTIME_SOLVER_MUTATION_NO_SCORE_NO_SUBMISSION",
+    "task_verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_READY_FOR_REVIEW"
+  },
+  "runtime_wiring_dry_run_issue_count": 0,
+  "runtime_wiring_dry_run_issues": [
+    {
+      "active": false,
+      "name": "task_20_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_20_invalidated",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_wiring_plan_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_wiring_dry_run_authorized_from_plan",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "target_simulation_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_target_simulations_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_target_simulations_no_runtime_mutation",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "import_simulation_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_import_simulations_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_import_simulations_not_applied",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "contract_invalidation_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_contract_invalidations_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "step_simulation_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_step_simulations_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_steps_executed_for_real_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "regression_simulation_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_regression_simulations_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rollback_readiness_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_rollback_items_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_gate_confirmation_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_review_gates_confirmed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_assertion_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_boundary_assertions_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_wiring_dry_run_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_wiring_review_authorized",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "controlled_runtime_wiring_authorized_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_solver_patch_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_runtime_patch_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_solver_patch_applied_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_runtime_patch_applied_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_wiring_performed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_solver_untouched",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "ranker_runtime_untouched",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_solver_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_boundary_preserved",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_boundary_preserved",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "case_failure_count_zero",
+      "severity": "BLOCKING"
+    }
+  ],
+  "runtime_wiring_dry_run_passed": true,
+  "runtime_wiring_dry_run_ready": true,
+  "runtime_wiring_dry_run_scorecard": [
+    {
+      "criterion_id": "source_task20_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "runtime_wiring_plan_passed",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "dry_run_authorized_from_plan",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "target_simulations_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "import_simulations_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "contracts_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "steps_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "regressions_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "rollback_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "review_gates_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "boundary_assertions_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "dry_run_passed",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "review_authorized",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "runtime_wiring_not_authorized",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "runtime_solver_patch_blocked",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "ranker_runtime_patch_blocked",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "runtime_patch_not_applied",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "ranker_patch_not_applied",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "runtime_wiring_not_performed",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "score_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "submission_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "fail_closed_active",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "next_stage_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    }
+  ],
+  "runtime_wiring_performed": false,
+  "runtime_wiring_review_authorized": true,
+  "runtime_wiring_step_count": 14,
+  "runtime_wiring_target_count": 5,
+  "signature": "A2AFC39EFAB7F603",
+  "source_summary": {
+    "baseline_commit": "c896bef Add ARC AGI3 local solver patch helper controlled runtime wiring gate",
+    "competitive_score_claim_allowed": false,
+    "controlled_runtime_wiring_authorized": false,
+    "diagnostic_only": true,
+    "external_solver_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "import_surface_count": 5,
+    "import_surface_plan": [
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "import_allowed_now": false,
+        "import_surface_id": "runtime_import_surface_01_world_model",
+        "plan_only": true,
+        "proposed_import": "build_world_model_state_tracking_hints",
+        "requires_dry_run": true,
+        "requires_review": true,
+        "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+        "target_layer": "world_model"
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "import_allowed_now": false,
+        "import_surface_id": "runtime_import_surface_02_goal_inference",
+        "plan_only": true,
+        "proposed_import": "build_goal_inference_terminal_state_hints",
+        "requires_dry_run": true,
+        "requires_review": true,
+        "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+        "target_layer": "goal_inference"
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "import_allowed_now": false,
+        "import_surface_id": "runtime_import_surface_03_planner",
+        "plan_only": true,
+        "proposed_import": "build_planner_loop_recovery_hints",
+        "requires_dry_run": true,
+        "requires_review": true,
+        "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+        "target_layer": "planner"
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "import_allowed_now": false,
+        "import_surface_id": "runtime_import_surface_04_verifier",
+        "plan_only": true,
+        "proposed_import": "build_transition_verifier_feedback_hints",
+        "requires_dry_run": true,
+        "requires_review": true,
+        "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+        "target_layer": "verifier"
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "import_allowed_now": false,
+        "import_surface_id": "runtime_import_surface_05_action_policy",
+        "plan_only": true,
+        "proposed_import": "build_action_policy_validity_guard_hints",
+        "requires_dry_run": true,
+        "requires_review": true,
+        "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+        "target_layer": "action_policy"
+      }
+    ],
+    "kaggle_authentication_allowed": false,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "kaggle_submission_sent": false,
+    "manual_upload_allowed": false,
+    "official_score_claim_allowed": false,
+    "operator_review_gate_count": 12,
+    "operator_review_gates": [
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_runtime_entrypoint",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_import_surface",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_adapter_target_mapping",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_contract_preflight_matrix",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_fail_closed_controls",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_no_score_boundary",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_no_submission_boundary",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_regression_plan",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_rollback_plan",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_private_core_boundary",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_legal_certification_boundary",
+        "passed": true,
+        "required": true
+      },
+      {
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "manual_runtime_mutation_allowed": false,
+        "operator_review_gate_id": "review_task21_dry_run_authorization",
+        "passed": true,
+        "required": true
+      }
+    ],
+    "passed_gate_count": 34,
+    "preflight_contract_count": 12,
+    "preflight_contracts": [
+      {
+        "contract_id": "contract_task19_gate_required",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_no_direct_runtime_mutation",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_no_ranker_mutation",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_no_external_solver_dependency",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_no_external_api_dependency",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_adapter_input_schema",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_adapter_output_schema",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_fail_closed_missing_record",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_fail_closed_invalid_hint",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_no_score_claim",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_no_submission_artifact",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      },
+      {
+        "contract_id": "contract_operator_review_required",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "passed": true,
+        "ranker_runtime_mutation_allowed": false,
+        "required": true,
+        "runtime_solver_mutation_allowed": false,
+        "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+      }
+    ],
+    "private_score_claim_allowed": false,
+    "private_score_claimed": false,
+    "public_score_claim_allowed": false,
+    "ranker_runtime_modified": false,
+    "ranker_runtime_patch_allowed": false,
+    "ranker_runtime_patch_applied": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "runtime_regression_plan": [
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_01",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helpers.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_02",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_probe_run.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_03",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_wiring_plan.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_04",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_wiring_dry_run.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_05",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_wiring_review.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_06",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_gate.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_07",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_plan.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_08",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_dry_run.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_09",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_review.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_10",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_runtime_wiring_gate.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_11",
+        "score_claim_allowed": false,
+        "target": "tests/test_milestone_11_local_solver_patch_helper_controlled_runtime_wiring_plan.py"
+      },
+      {
+        "executed_now": false,
+        "external_api_dependency": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "local_only": true,
+        "planned": true,
+        "regression_test_id": "runtime_wiring_regression_12",
+        "score_claim_allowed": false,
+        "target": "FULL_SUITE"
+      }
+    ],
+    "runtime_regression_test_count": 12,
+    "runtime_rollback_item_count": 10,
+    "runtime_rollback_plan": [
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "remove_runtime_helper_imports"
+      },
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "remove_adapter_target_mapping"
+      },
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "disable_runtime_wiring_flag"
+      },
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "restore_runtime_solver_baseline"
+      },
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "restore_ranker_baseline"
+      },
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "delete_generated_runtime_wiring_artifacts"
+      },
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "rerun_task19_gate"
+      },
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "rerun_task20_plan"
+      },
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "rerun_full_suite"
+      },
+      {
+        "executed_now": false,
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "planned": true,
+        "ready": true,
+        "required": true,
+        "rollback_item_id": "stop_before_submission_surface"
+      }
+    ],
+    "runtime_solver_modified": false,
+    "runtime_solver_patch_allowed": false,
+    "runtime_solver_patch_applied": false,
+    "runtime_wiring_dry_run_authorized": true,
+    "runtime_wiring_performed": false,
+    "runtime_wiring_plan_case_count": 10,
+    "runtime_wiring_plan_case_failure_count": 0,
+    "runtime_wiring_plan_case_pass_count": 10,
+    "runtime_wiring_plan_check_count": 80,
+    "runtime_wiring_plan_gate_count": 34,
+    "runtime_wiring_plan_issue_count": 0,
+    "runtime_wiring_plan_passed": true,
+    "runtime_wiring_plan_ready": true,
+    "runtime_wiring_step_count": 14,
+    "runtime_wiring_steps": [
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_01_verify_task19_gate_artifact",
+        "step_name": "verify_task19_gate_artifact",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_02_map_runtime_entrypoint_without_modification",
+        "step_name": "map_runtime_entrypoint_without_modification",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_03_map_helper_import_surface_without_importing",
+        "step_name": "map_helper_import_surface_without_importing",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_04_map_adapter_target_layers",
+        "step_name": "map_adapter_target_layers",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_05_define_adapter_call_contracts",
+        "step_name": "define_adapter_call_contracts",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_06_define_fail_closed_input_guards",
+        "step_name": "define_fail_closed_input_guards",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_07_define_fail_closed_output_guards",
+        "step_name": "define_fail_closed_output_guards",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_08_define_no_score_no_submission_guards",
+        "step_name": "define_no_score_no_submission_guards",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_09_define_local_regression_execution_plan",
+        "step_name": "define_local_regression_execution_plan",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_10_define_rollback_before_runtime_mutation",
+        "step_name": "define_rollback_before_runtime_mutation",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_11_define_operator_review_checkpoint",
+        "step_name": "define_operator_review_checkpoint",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_12_define_dry_run_expected_outputs",
+        "step_name": "define_dry_run_expected_outputs",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_13_define_dry_run_stop_conditions",
+        "step_name": "define_dry_run_stop_conditions",
+        "submission_allowed": false
+      },
+      {
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_solver_mutation_allowed": false,
+        "score_claim_allowed": false,
+        "step_id": "runtime_wiring_plan_step_14_authorize_task21_dry_run_only",
+        "step_name": "authorize_task21_dry_run_only",
+        "submission_allowed": false
+      }
+    ],
+    "runtime_wiring_target_count": 5,
+    "runtime_wiring_targets": [
+      {
+        "adapter_name": "world_model_state_tracking_adapter",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "helper_function": "build_world_model_state_tracking_hints",
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+        "runtime_solver_mutation_allowed": false,
+        "target_id": "runtime_wiring_target_01_world_model",
+        "target_layer": "world_model"
+      },
+      {
+        "adapter_name": "goal_inference_terminal_state_adapter",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "helper_function": "build_goal_inference_terminal_state_hints",
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+        "runtime_solver_mutation_allowed": false,
+        "target_id": "runtime_wiring_target_02_goal_inference",
+        "target_layer": "goal_inference"
+      },
+      {
+        "adapter_name": "planner_loop_recovery_adapter",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "helper_function": "build_planner_loop_recovery_hints",
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+        "runtime_solver_mutation_allowed": false,
+        "target_id": "runtime_wiring_target_03_planner",
+        "target_layer": "planner"
+      },
+      {
+        "adapter_name": "transition_verifier_feedback_adapter",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "helper_function": "build_transition_verifier_feedback_hints",
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+        "runtime_solver_mutation_allowed": false,
+        "target_id": "runtime_wiring_target_04_verifier",
+        "target_layer": "verifier"
+      },
+      {
+        "adapter_name": "action_policy_validity_guard_adapter",
+        "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+        "helper_function": "build_action_policy_validity_guard_hints",
+        "plan_only": true,
+        "planned": true,
+        "ranker_runtime_mutation_allowed": false,
+        "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+        "runtime_solver_mutation_allowed": false,
+        "target_id": "runtime_wiring_target_05_action_policy",
+        "target_layer": "action_policy"
+      }
+    ],
+    "submission_json_created": false,
+    "task_20_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-PLAN-D0C9857A1FF1",
+    "task_20_path": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-plan-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-plan-v1.json",
+    "task_20_present": true,
+    "task_20_ready": true,
+    "task_20_sha256": "a0386aa4fb7e518f6da1d75246dc1afbede0efea3e6dbe6f752309adda413318",
+    "task_20_sha256_16": "A0386AA4FB7E518F",
+    "task_20_signature": "D0C9857A1FF17AF5",
+    "task_20_status": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_PLAN_V1_READY",
+    "upload_package_created": false
+  },
+  "status": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1_READY",
+  "step_dry_run_simulations": [
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "verify_task19_gate_artifact",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_01_verify_task19_gate_artifact",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "map_runtime_entrypoint_without_modification",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_02_map_runtime_entrypoint_without_modification",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "map_helper_import_surface_without_importing",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_03_map_helper_import_surface_without_importing",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "map_adapter_target_layers",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_04_map_adapter_target_layers",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "define_adapter_call_contracts",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_05_define_adapter_call_contracts",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "define_fail_closed_input_guards",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_06_define_fail_closed_input_guards",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "define_fail_closed_output_guards",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_07_define_fail_closed_output_guards",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "define_no_score_no_submission_guards",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_08_define_no_score_no_submission_guards",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "define_local_regression_execution_plan",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_09_define_local_regression_execution_plan",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "define_rollback_before_runtime_mutation",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_10_define_rollback_before_runtime_mutation",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "define_operator_review_checkpoint",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_11_define_operator_review_checkpoint",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "define_dry_run_expected_outputs",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_12_define_dry_run_expected_outputs",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "define_dry_run_stop_conditions",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_13_define_dry_run_stop_conditions",
+      "submission_allowed": false
+    },
+    {
+      "executed_for_real": false,
+      "planned": true,
+      "ranker_runtime_modified": false,
+      "runtime_solver_modified": false,
+      "score_claim_allowed": false,
+      "simulation_status": "STEP_DRY_RUN_PASS",
+      "step_name": "authorize_task21_dry_run_only",
+      "step_simulation_id": "dry_run_runtime_wiring_plan_step_14_authorize_task21_dry_run_only",
+      "submission_allowed": false
+    }
+  ],
+  "step_simulation_count": 14,
+  "submission_json_created": false,
+  "target_dry_run_simulations": [
+    {
+      "adapter_name": "world_model_state_tracking_adapter",
+      "external_solver_dependency": false,
+      "helper_function": "build_world_model_state_tracking_hints",
+      "operation_type": "CONTROLLED_RUNTIME_WIRING_DRY_RUN",
+      "ranker_runtime_modified": false,
+      "ranker_runtime_patch_applied": false,
+      "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+      "runtime_import_applied": false,
+      "runtime_solver_modified": false,
+      "runtime_solver_patch_applied": false,
+      "runtime_wiring_performed": false,
+      "score_claim_allowed": false,
+      "simulation_id": "target_dry_run_01_world_model",
+      "simulation_status": "SIMULATION_PASS",
+      "submission_allowed": false,
+      "target_layer": "world_model"
+    },
+    {
+      "adapter_name": "goal_inference_terminal_state_adapter",
+      "external_solver_dependency": false,
+      "helper_function": "build_goal_inference_terminal_state_hints",
+      "operation_type": "CONTROLLED_RUNTIME_WIRING_DRY_RUN",
+      "ranker_runtime_modified": false,
+      "ranker_runtime_patch_applied": false,
+      "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+      "runtime_import_applied": false,
+      "runtime_solver_modified": false,
+      "runtime_solver_patch_applied": false,
+      "runtime_wiring_performed": false,
+      "score_claim_allowed": false,
+      "simulation_id": "target_dry_run_02_goal_inference",
+      "simulation_status": "SIMULATION_PASS",
+      "submission_allowed": false,
+      "target_layer": "goal_inference"
+    },
+    {
+      "adapter_name": "planner_loop_recovery_adapter",
+      "external_solver_dependency": false,
+      "helper_function": "build_planner_loop_recovery_hints",
+      "operation_type": "CONTROLLED_RUNTIME_WIRING_DRY_RUN",
+      "ranker_runtime_modified": false,
+      "ranker_runtime_patch_applied": false,
+      "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+      "runtime_import_applied": false,
+      "runtime_solver_modified": false,
+      "runtime_solver_patch_applied": false,
+      "runtime_wiring_performed": false,
+      "score_claim_allowed": false,
+      "simulation_id": "target_dry_run_03_planner",
+      "simulation_status": "SIMULATION_PASS",
+      "submission_allowed": false,
+      "target_layer": "planner"
+    },
+    {
+      "adapter_name": "transition_verifier_feedback_adapter",
+      "external_solver_dependency": false,
+      "helper_function": "build_transition_verifier_feedback_hints",
+      "operation_type": "CONTROLLED_RUNTIME_WIRING_DRY_RUN",
+      "ranker_runtime_modified": false,
+      "ranker_runtime_patch_applied": false,
+      "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+      "runtime_import_applied": false,
+      "runtime_solver_modified": false,
+      "runtime_solver_patch_applied": false,
+      "runtime_wiring_performed": false,
+      "score_claim_allowed": false,
+      "simulation_id": "target_dry_run_04_verifier",
+      "simulation_status": "SIMULATION_PASS",
+      "submission_allowed": false,
+      "target_layer": "verifier"
+    },
+    {
+      "adapter_name": "action_policy_validity_guard_adapter",
+      "external_solver_dependency": false,
+      "helper_function": "build_action_policy_validity_guard_hints",
+      "operation_type": "CONTROLLED_RUNTIME_WIRING_DRY_RUN",
+      "ranker_runtime_modified": false,
+      "ranker_runtime_patch_applied": false,
+      "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+      "runtime_import_applied": false,
+      "runtime_solver_modified": false,
+      "runtime_solver_patch_applied": false,
+      "runtime_wiring_performed": false,
+      "score_claim_allowed": false,
+      "simulation_id": "target_dry_run_05_action_policy",
+      "simulation_status": "SIMULATION_PASS",
+      "submission_allowed": false,
+      "target_layer": "action_policy"
+    }
+  ],
+  "target_simulation_count": 5,
+  "task": "Task 21",
+  "task_20_source": {
+    "path": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-plan-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-plan-v1.json",
+    "present": true,
+    "sha256": "a0386aa4fb7e518f6da1d75246dc1afbede0efea3e6dbe6f752309adda413318",
+    "sha256_16": "A0386AA4FB7E518F",
+    "status": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_PLAN_V1_READY",
+    "task_20_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-PLAN-D0C9857A1FF1"
+  },
+  "task_21_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-DRY-RUN-A2AFC39EFAB7",
+  "task_21_ready": true,
+  "task_mode": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1_LOCAL_ONLY",
+  "task_scope": "CONTROLLED_RUNTIME_WIRING_DRY_RUN_ONLY_NO_RUNTIME_SOLVER_MUTATION_NO_SCORE_NO_SUBMISSION",
+  "task_verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_READY_FOR_REVIEW",
+  "title": "Local Solver Patch Helper Controlled Runtime Wiring Dry Run v1",
+  "upload_package_created": false,
+  "warning_count": 0
+}

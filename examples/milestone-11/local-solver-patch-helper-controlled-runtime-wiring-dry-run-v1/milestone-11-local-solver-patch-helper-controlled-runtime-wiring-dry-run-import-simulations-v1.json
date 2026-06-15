@@ -1,0 +1,67 @@
+[
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "import_applied": false,
+    "import_checked": true,
+    "import_simulation_id": "import_surface_dry_run_01_world_model",
+    "proposed_import": "build_world_model_state_tracking_hints",
+    "ranker_runtime_modified": false,
+    "requires_review": true,
+    "runtime_solver_modified": false,
+    "simulation_status": "IMPORT_SIMULATION_PASS",
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "world_model"
+  },
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "import_applied": false,
+    "import_checked": true,
+    "import_simulation_id": "import_surface_dry_run_02_goal_inference",
+    "proposed_import": "build_goal_inference_terminal_state_hints",
+    "ranker_runtime_modified": false,
+    "requires_review": true,
+    "runtime_solver_modified": false,
+    "simulation_status": "IMPORT_SIMULATION_PASS",
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "goal_inference"
+  },
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "import_applied": false,
+    "import_checked": true,
+    "import_simulation_id": "import_surface_dry_run_03_planner",
+    "proposed_import": "build_planner_loop_recovery_hints",
+    "ranker_runtime_modified": false,
+    "requires_review": true,
+    "runtime_solver_modified": false,
+    "simulation_status": "IMPORT_SIMULATION_PASS",
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "planner"
+  },
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "import_applied": false,
+    "import_checked": true,
+    "import_simulation_id": "import_surface_dry_run_04_verifier",
+    "proposed_import": "build_transition_verifier_feedback_hints",
+    "ranker_runtime_modified": false,
+    "requires_review": true,
+    "runtime_solver_modified": false,
+    "simulation_status": "IMPORT_SIMULATION_PASS",
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "verifier"
+  },
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_DRY_RUN",
+    "import_applied": false,
+    "import_checked": true,
+    "import_simulation_id": "import_surface_dry_run_05_action_policy",
+    "proposed_import": "build_action_policy_validity_guard_hints",
+    "ranker_runtime_modified": false,
+    "requires_review": true,
+    "runtime_solver_modified": false,
+    "simulation_status": "IMPORT_SIMULATION_PASS",
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "action_policy"
+  }
+]
