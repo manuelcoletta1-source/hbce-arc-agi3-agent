@@ -1,0 +1,58 @@
+[
+  {
+    "area": "source",
+    "criterion_id": "review_source_rebuild_ready_v1",
+    "description": "Task 8 rebuild artifact is ready and valid.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "identity",
+    "criterion_id": "review_selected_candidate_identity_v1",
+    "description": "Selected candidate identity is stable.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "package",
+    "criterion_id": "review_local_package_rebuilt_v1",
+    "description": "Local rebuilt package exists and is ready.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "payload",
+    "criterion_id": "review_rebuilt_payload_ready_v1",
+    "description": "Rebuilt candidate payload is available for review.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "traceability",
+    "criterion_id": "review_trace_and_handoff_ready_v1",
+    "description": "Trace and review handoff are present.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "boundary",
+    "criterion_id": "review_submission_boundary_preserved_v1",
+    "description": "No submission.json, upload package, or real submission exists.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "area": "fail_closed",
+    "criterion_id": "review_fail_closed_preserved_v1",
+    "description": "Fail-closed and authorization boundary remain active.",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  }
+]

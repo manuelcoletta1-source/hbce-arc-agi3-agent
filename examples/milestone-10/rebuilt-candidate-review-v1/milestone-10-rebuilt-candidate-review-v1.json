@@ -1,0 +1,1079 @@
+{
+  "baseline_commit": "362a9f7 Add ARC AGI3 submission candidate rebuild",
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+  "fail_closed_active": true,
+  "fail_closed_controls": [
+    "real_submission_decision_not_authorized",
+    "real_submission_allowed_false",
+    "manual_upload_allowed_false",
+    "kaggle_authentication_allowed_false",
+    "kaggle_submission_sent_false",
+    "real_submission_candidate_created_false",
+    "submission_json_created_false",
+    "upload_package_created_false",
+    "fail_closed_active"
+  ],
+  "fail_closed_required": true,
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_10_rebuilt_candidate_review_v1"
+  },
+  "milestone": "Milestone #10",
+  "next_allowed_stage": "MILESTONE_10_TASK_10_SUBMISSION_PREPARATION_CLOSURE_V1",
+  "passed_gate_count": 57,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+  "rebuilt_candidate_review_created": true,
+  "rebuilt_candidate_review_id": "MILESTONE-10-REBUILT-CANDIDATE-REVIEW-D9701E0276DB",
+  "rebuilt_candidate_review_locked": true,
+  "rebuilt_candidate_review_passed": true,
+  "rebuilt_candidate_review_ready": true,
+  "review_case_count": 10,
+  "review_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m10_rebuilt_candidate_review_source_ready_v1",
+      "operation": "verify_submission_candidate_rebuild_source"
+    },
+    {
+      "area": "candidate_identity",
+      "case_id": "m10_rebuilt_candidate_review_identity_valid_v1",
+      "operation": "verify_rebuilt_candidate_identity"
+    },
+    {
+      "area": "payload",
+      "case_id": "m10_rebuilt_candidate_review_payload_ready_v1",
+      "operation": "verify_rebuilt_candidate_payload"
+    },
+    {
+      "area": "review_scorecard",
+      "case_id": "m10_rebuilt_candidate_review_scorecard_ready_v1",
+      "operation": "verify_review_scorecard"
+    },
+    {
+      "area": "traceability",
+      "case_id": "m10_rebuilt_candidate_review_trace_ready_v1",
+      "operation": "verify_trace_and_handoff"
+    },
+    {
+      "area": "boundary",
+      "case_id": "m10_rebuilt_candidate_review_boundary_preserved_v1",
+      "operation": "verify_submission_boundary"
+    },
+    {
+      "area": "fail_closed",
+      "case_id": "m10_rebuilt_candidate_review_fail_closed_preserved_v1",
+      "operation": "verify_fail_closed_preserved"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m10_rebuilt_candidate_review_real_submission_blocked_v1",
+      "operation": "verify_real_submission_blocked"
+    },
+    {
+      "area": "closure",
+      "case_id": "m10_rebuilt_candidate_review_closure_required_v1",
+      "operation": "verify_submission_preparation_closure_next"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m10_rebuilt_candidate_review_next_stage_valid_v1",
+      "operation": "verify_next_stage"
+    }
+  ],
+  "review_check_count": 36,
+  "review_check_list": [
+    "rebuild_artifact_exists",
+    "rebuild_artifact_ready",
+    "rebuild_signature_present",
+    "rebuild_next_stage_matches_task_9",
+    "submission_candidate_rebuild_ready",
+    "local_candidate_package_rebuilt",
+    "rebuilt_candidate_payload_created",
+    "rebuilt_candidate_manifest_created",
+    "rebuilt_candidate_index_created",
+    "rebuilt_candidate_trace_created",
+    "review_handoff_created",
+    "selected_candidate_id_valid",
+    "candidate_package_id_valid",
+    "rebuilt_candidate_id_valid",
+    "rebuild_component_count_valid",
+    "rebuilt_candidate_review_required",
+    "review_scorecard_created",
+    "review_scorecard_passed",
+    "review_record_created",
+    "review_ready",
+    "review_passed",
+    "review_locked",
+    "next_stage_valid",
+    "closure_required_next",
+    "real_submission_candidate_not_created",
+    "submission_json_not_created",
+    "upload_package_not_created",
+    "real_submission_not_authorized",
+    "real_submission_blocked",
+    "manual_upload_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_submission_absent",
+    "fail_closed_required",
+    "fail_closed_active",
+    "no_private_core_exposure",
+    "no_legal_certification"
+  ],
+  "review_checks": {
+    "boundary_control_count_valid": true,
+    "candidate_package_id_valid": true,
+    "closure_required_next": true,
+    "external_api_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_control_count_valid": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_not_allowed": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_candidate_package_rebuilt": true,
+    "manual_upload_not_allowed": true,
+    "next_stage_valid": true,
+    "payload_ready_for_review": true,
+    "payload_signature_present": true,
+    "private_core_exposure_false": true,
+    "real_submission_allowed_false": true,
+    "real_submission_candidate_not_created": true,
+    "real_submission_decision_not_authorized": true,
+    "rebuild_artifact_present": true,
+    "rebuild_artifact_ready": true,
+    "rebuild_artifact_valid": true,
+    "rebuild_commit_valid": true,
+    "rebuild_component_count_valid": true,
+    "rebuild_next_stage_matches_task_9": true,
+    "rebuilt_candidate_id_valid": true,
+    "rebuilt_candidate_index_created": true,
+    "rebuilt_candidate_manifest_created": true,
+    "rebuilt_candidate_payload_created": true,
+    "rebuilt_candidate_review_required": true,
+    "rebuilt_candidate_trace_created": true,
+    "review_case_count_valid": true,
+    "review_check_count_valid": true,
+    "review_decision_passed": true,
+    "review_handoff_created": true,
+    "review_record_created": true,
+    "review_record_locked": true,
+    "review_record_passed": true,
+    "review_record_ready": true,
+    "review_scorecard_count_valid": true,
+    "review_scorecard_created": true,
+    "review_scorecard_passed": true,
+    "selected_candidate_id_valid": true,
+    "submission_candidate_rebuild_created": true,
+    "submission_candidate_rebuild_locked": true,
+    "submission_candidate_rebuild_ready": true,
+    "submission_json_not_created": true,
+    "trace_hash_present": true,
+    "trace_ready": true,
+    "upload_package_not_created": true
+  },
+  "review_criterion_count": 7,
+  "review_decision": {
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "decision": "PASS_LOCAL_REBUILT_CANDIDATE_REVIEW",
+    "decision_id": "M10-REBUILT-CANDIDATE-REVIEW-PASS-v1",
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_allowed": false,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_10_TASK_10_SUBMISSION_PREPARATION_CLOSURE_V1",
+    "operator_approval_required_for_real_submission": true,
+    "real_submission_allowed": false,
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "review_passed": true,
+    "review_ready": true,
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "submission_json_creation_allowed_now": false,
+    "submission_preparation_closure_required_next": true,
+    "upload_package_creation_allowed_now": false
+  },
+  "review_failure_count": 0,
+  "review_gate_count": 57,
+  "review_gates": [
+    {
+      "name": "rebuild_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_commit_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_next_stage_matches_task_9",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_rebuild_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_rebuild_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_rebuild_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_candidate_package_rebuilt",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_payload_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_manifest_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_index_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_trace_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_handoff_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "selected_candidate_id_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_package_id_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_id_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_component_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_review_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "payload_ready_for_review",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "payload_signature_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "trace_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "trace_hash_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_scorecard_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_scorecard_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_scorecard_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_record_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_record_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_record_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_record_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_decision_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "closure_required_next",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_candidate_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_json_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_package_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_check_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_decision_not_authorized",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_review_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "review_index": {
+    "baseline_commit": "362a9f7 Add ARC AGI3 submission candidate rebuild",
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "depends_on_submission_candidate_rebuild": "MILESTONE-10-SUBMISSION-CANDIDATE-REBUILD-540B74ED16F8",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_upload_allowed": false,
+    "milestone": "Milestone #10",
+    "next_allowed_stage": "MILESTONE_10_TASK_10_SUBMISSION_PREPARATION_CLOSURE_V1",
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "rebuilt_candidate_review_created": true,
+    "rebuilt_candidate_review_passed": true,
+    "rebuilt_candidate_review_ready": true,
+    "review_mode": "MILESTONE_10_REBUILT_CANDIDATE_REVIEW_V1_LOCAL_ONLY",
+    "review_scope": "LOCAL_REBUILT_CANDIDATE_REVIEW_NO_SUBMISSION_JSON_NO_UPLOAD",
+    "review_scorecard_created": true,
+    "review_scorecard_passed": true,
+    "review_verdict": "REBUILT_CANDIDATE_REVIEW_PASS_READY_FOR_SUBMISSION_PREPARATION_CLOSURE_REAL_SUBMISSION_BLOCKED",
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "submission_json_created": false,
+    "submission_preparation_closure_required_next": true,
+    "task": "Task 9",
+    "upload_package_created": false
+  },
+  "review_issue_count": 0,
+  "review_issues": [
+    {
+      "active": false,
+      "name": "rebuild_artifact_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_commit_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_next_stage_matches_task_9",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_rebuild_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_rebuild_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_rebuild_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_candidate_package_rebuilt",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_payload_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_manifest_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_index_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_trace_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_handoff_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "selected_candidate_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_package_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_component_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_review_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "payload_not_ready_for_review",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "payload_signature_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "trace_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "trace_hash_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_scorecard_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_scorecard_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_scorecard_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_record_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_record_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_record_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_record_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_decision_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "closure_required_next",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_candidate_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_json_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_package_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_check_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_decision_not_authorized",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_review_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_failure_count_zero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "review_mode": "MILESTONE_10_REBUILT_CANDIDATE_REVIEW_V1_LOCAL_ONLY",
+  "review_pass_count": 10,
+  "review_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m10_rebuilt_candidate_review_source_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_submission_candidate_rebuild_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "candidate_identity",
+      "case_id": "m10_rebuilt_candidate_review_identity_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_rebuilt_candidate_identity",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "payload",
+      "case_id": "m10_rebuilt_candidate_review_payload_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_rebuilt_candidate_payload",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "review_scorecard",
+      "case_id": "m10_rebuilt_candidate_review_scorecard_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_review_scorecard",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "traceability",
+      "case_id": "m10_rebuilt_candidate_review_trace_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_trace_and_handoff",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "m10_rebuilt_candidate_review_boundary_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_submission_boundary",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "fail_closed",
+      "case_id": "m10_rebuilt_candidate_review_fail_closed_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_fail_closed_preserved",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m10_rebuilt_candidate_review_real_submission_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "closure",
+      "case_id": "m10_rebuilt_candidate_review_closure_required_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_submission_preparation_closure_next",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m10_rebuilt_candidate_review_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_stage",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "review_scope": "LOCAL_REBUILT_CANDIDATE_REVIEW_NO_SUBMISSION_JSON_NO_UPLOAD",
+  "review_scorecard": [
+    {
+      "area": "source",
+      "criterion_id": "review_source_rebuild_ready_v1",
+      "description": "Task 8 rebuild artifact is ready and valid.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "identity",
+      "criterion_id": "review_selected_candidate_identity_v1",
+      "description": "Selected candidate identity is stable.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "package",
+      "criterion_id": "review_local_package_rebuilt_v1",
+      "description": "Local rebuilt package exists and is ready.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "payload",
+      "criterion_id": "review_rebuilt_payload_ready_v1",
+      "description": "Rebuilt candidate payload is available for review.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "traceability",
+      "criterion_id": "review_trace_and_handoff_ready_v1",
+      "description": "Trace and review handoff are present.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "boundary",
+      "criterion_id": "review_submission_boundary_preserved_v1",
+      "description": "No submission.json, upload package, or real submission exists.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "area": "fail_closed",
+      "criterion_id": "review_fail_closed_preserved_v1",
+      "description": "Fail-closed and authorization boundary remain active.",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    }
+  ],
+  "review_scorecard_created": true,
+  "review_scorecard_passed": true,
+  "review_state": {
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "manual_upload_allowed": false,
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuilt_candidate_review_created": true,
+    "rebuilt_candidate_review_locked": true,
+    "rebuilt_candidate_review_passed": true,
+    "rebuilt_candidate_review_ready": true,
+    "rebuilt_candidate_review_required": true,
+    "review_mode": "MILESTONE_10_REBUILT_CANDIDATE_REVIEW_V1_LOCAL_ONLY",
+    "review_scope": "LOCAL_REBUILT_CANDIDATE_REVIEW_NO_SUBMISSION_JSON_NO_UPLOAD",
+    "review_scorecard_created": true,
+    "review_scorecard_passed": true,
+    "review_verdict": "REBUILT_CANDIDATE_REVIEW_PASS_READY_FOR_SUBMISSION_PREPARATION_CLOSURE_REAL_SUBMISSION_BLOCKED",
+    "submission_json_created": false,
+    "submission_preparation_closure_required_next": true,
+    "upload_package_created": false
+  },
+  "review_verdict": "REBUILT_CANDIDATE_REVIEW_PASS_READY_FOR_SUBMISSION_PREPARATION_CLOSURE_REAL_SUBMISSION_BLOCKED",
+  "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+  "signature": "D9701E0276DB7658",
+  "source_summary": {
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "local_candidate_package_rebuilt": true,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_10_TASK_9_REBUILT_CANDIDATE_REVIEW_V1",
+    "payload_kind": "LOCAL_REBUILT_CANDIDATE_PACKAGE",
+    "payload_ready_for_review": true,
+    "payload_signature": "32F7FBEDFF8727EB",
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuild_baseline_commit": "e329a98 Add ARC AGI3 submission candidate rebuild gate",
+    "rebuild_component_count": 6,
+    "rebuild_sha256": "5f261002679bdc12cc41918d1fafb18a55abb6ce0fc960a76cf5071b35f218b6",
+    "rebuild_sha256_16": "5F261002679BDC12",
+    "rebuild_signature": "540B74ED16F88E13",
+    "rebuild_status": "MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_READY",
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "rebuilt_candidate_index_created": true,
+    "rebuilt_candidate_manifest_created": true,
+    "rebuilt_candidate_payload_created": true,
+    "rebuilt_candidate_review_required_next": true,
+    "rebuilt_candidate_trace_created": true,
+    "review_handoff_created": true,
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "source_candidate_refresh_id": "MILESTONE-10-CANDIDATE-REFRESH-A684C4B45643",
+    "source_previous_refresh_id": "MILESTONE-10-BENCHMARK-REFRESH-CEC4FAA5CFF3",
+    "source_rebuild_gate_id": "MILESTONE-10-REBUILD-GATE-1CA22527EBF1",
+    "submission_candidate_rebuild_created": true,
+    "submission_candidate_rebuild_id": "MILESTONE-10-SUBMISSION-CANDIDATE-REBUILD-540B74ED16F8",
+    "submission_candidate_rebuild_locked": true,
+    "submission_candidate_rebuild_path": "examples/milestone-10/submission-candidate-rebuild-v1/milestone-10-submission-candidate-rebuild-v1.json",
+    "submission_candidate_rebuild_present": true,
+    "submission_candidate_rebuild_ready": true,
+    "submission_json_created": false,
+    "trace_hash_16": "8C46A24627246BB4",
+    "trace_ready": true,
+    "upload_package_created": false
+  },
+  "status": "MILESTONE_10_REBUILT_CANDIDATE_REVIEW_V1_READY",
+  "submission_candidate_rebuild_source": {
+    "path": "examples/milestone-10/submission-candidate-rebuild-v1/milestone-10-submission-candidate-rebuild-v1.json",
+    "present": true,
+    "sha256": "5f261002679bdc12cc41918d1fafb18a55abb6ce0fc960a76cf5071b35f218b6",
+    "sha256_16": "5F261002679BDC12",
+    "status": "MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_READY",
+    "submission_candidate_rebuild_id": "MILESTONE-10-SUBMISSION-CANDIDATE-REBUILD-540B74ED16F8"
+  },
+  "submission_json_created": false,
+  "submission_preparation_closure_required_next": true,
+  "task": "Task 9",
+  "title": "Rebuilt Candidate Review v1",
+  "upload_package_created": false,
+  "warning_count": 0
+}
