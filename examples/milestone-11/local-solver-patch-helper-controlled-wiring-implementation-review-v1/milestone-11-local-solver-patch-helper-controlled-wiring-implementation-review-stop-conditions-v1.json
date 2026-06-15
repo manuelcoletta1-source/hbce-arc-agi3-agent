@@ -1,0 +1,74 @@
+[
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "task17_artifact_missing"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "task17_dry_run_not_passed"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "review_authorization_missing"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "simulated_operation_failure"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "contract_validation_failure"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "regression_simulation_failure"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "rollback_simulation_failure"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "boundary_assertion_failure"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "runtime_solver_patch_detected"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "ranker_runtime_patch_detected"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "score_claim_detected"
+  },
+  {
+    "active": false,
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "severity": "BLOCKING",
+    "stop_condition_id": "submission_artifact_detected"
+  }
+]

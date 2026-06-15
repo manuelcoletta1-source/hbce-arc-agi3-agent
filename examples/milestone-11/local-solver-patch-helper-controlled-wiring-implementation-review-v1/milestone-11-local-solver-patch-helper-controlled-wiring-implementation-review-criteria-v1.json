@@ -1,0 +1,74 @@
+[
+  {
+    "criterion_id": "criterion_task17_artifact_integrity",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_dry_run_completion",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_simulated_operation_consistency",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_contract_validation_consistency",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_regression_simulation_consistency",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_rollback_simulation_consistency",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_boundary_assertion_consistency",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_runtime_solver_untouched",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_ranker_runtime_untouched",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_score_claim_absent",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_submission_absent",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  },
+  {
+    "criterion_id": "criterion_next_stage_gate_only",
+    "failure_action": "STOP_IMPLEMENTATION_REVIEW",
+    "passed": true,
+    "required": true
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "acceptance_id": "accept_task17_dry_run",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept Task 17 dry-run as internally consistent"
+  },
+  {
+    "acceptance_id": "accept_simulated_operations",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept simulated operations"
+  },
+  {
+    "acceptance_id": "accept_contract_validations",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept contract validations"
+  },
+  {
+    "acceptance_id": "accept_regression_simulations",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept regression simulations"
+  },
+  {
+    "acceptance_id": "accept_rollback_simulations",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept rollback simulations"
+  },
+  {
+    "acceptance_id": "accept_boundary_assertions",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept boundary assertions"
+  },
+  {
+    "acceptance_id": "accept_no_runtime_patch",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept no runtime patch applied"
+  },
+  {
+    "acceptance_id": "accept_no_score_submission",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept no score/submission boundary"
+  },
+  {
+    "acceptance_id": "accept_fail_closed",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept fail-closed boundary"
+  },
+  {
+    "acceptance_id": "accept_next_gate_only",
+    "accepted": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "REVIEW_ACCEPTANCE_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "title": "Accept next controlled gate only"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "finding_id": "finding_task17_source_ready",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_dry_run_passed",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_review_authorized",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_simulated_operations_valid",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_contract_validations_valid",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_regression_simulations_valid",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_rollback_simulations_valid",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_boundary_assertions_valid",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_no_runtime_solver_patch",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_no_ranker_runtime_patch",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_no_runtime_wiring",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_no_score_claim",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_no_submission",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  },
+  {
+    "finding_id": "finding_fail_closed_active",
+    "passed": true,
+    "recommendation": "ALLOW_CONTROLLED_RUNTIME_WIRING_GATE_REVIEW",
+    "severity": "PASS"
+  }
+]
