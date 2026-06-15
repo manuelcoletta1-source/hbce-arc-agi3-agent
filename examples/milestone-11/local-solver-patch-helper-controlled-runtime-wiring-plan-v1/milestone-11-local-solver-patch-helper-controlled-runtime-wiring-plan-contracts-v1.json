@@ -1,0 +1,110 @@
+[
+  {
+    "contract_id": "contract_task19_gate_required",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_no_direct_runtime_mutation",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_no_ranker_mutation",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_no_external_solver_dependency",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_no_external_api_dependency",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_adapter_input_schema",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_adapter_output_schema",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_fail_closed_missing_record",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_fail_closed_invalid_hint",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_no_score_claim",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_no_submission_artifact",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  },
+  {
+    "contract_id": "contract_operator_review_required",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "passed": true,
+    "ranker_runtime_mutation_allowed": false,
+    "required": true,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "RUNTIME_WIRING_PLAN_PREFLIGHT"
+  }
+]

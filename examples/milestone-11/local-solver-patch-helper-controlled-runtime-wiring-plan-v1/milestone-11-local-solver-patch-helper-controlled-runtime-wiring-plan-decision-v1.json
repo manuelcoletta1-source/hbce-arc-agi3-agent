@@ -1,0 +1,17 @@
+{
+  "controlled_runtime_wiring_authorized": false,
+  "decision_boundary": "CONTROLLED_RUNTIME_WIRING_PLAN_ONLY_NEXT_DRY_RUN_NO_RUNTIME_WIRING_NO_SCORE_NO_SUBMISSION",
+  "decision_id": "M11-TASK20-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-PLAN-DECISION-v1",
+  "next_stage": "MILESTONE_11_TASK_21_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_V1",
+  "ranker_runtime_patch_allowed": false,
+  "ranker_runtime_patch_applied": false,
+  "real_submission_allowed": false,
+  "runtime_solver_patch_allowed": false,
+  "runtime_solver_patch_applied": false,
+  "runtime_wiring_dry_run_authorized": true,
+  "runtime_wiring_performed": false,
+  "runtime_wiring_plan_passed": true,
+  "runtime_wiring_plan_ready": true,
+  "score_claim_allowed": false,
+  "verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_PLAN_READY_FOR_DRY_RUN"
+}

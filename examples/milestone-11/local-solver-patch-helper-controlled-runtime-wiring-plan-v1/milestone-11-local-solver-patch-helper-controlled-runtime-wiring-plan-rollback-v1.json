@@ -1,0 +1,82 @@
+[
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "remove_runtime_helper_imports"
+  },
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "remove_adapter_target_mapping"
+  },
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "disable_runtime_wiring_flag"
+  },
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "restore_runtime_solver_baseline"
+  },
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "restore_ranker_baseline"
+  },
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "delete_generated_runtime_wiring_artifacts"
+  },
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "rerun_task19_gate"
+  },
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "rerun_task20_plan"
+  },
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "rerun_full_suite"
+  },
+  {
+    "executed_now": false,
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "planned": true,
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "stop_before_submission_surface"
+  }
+]

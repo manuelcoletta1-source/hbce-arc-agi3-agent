@@ -1,0 +1,57 @@
+[
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "import_allowed_now": false,
+    "import_surface_id": "runtime_import_surface_01_world_model",
+    "plan_only": true,
+    "proposed_import": "build_world_model_state_tracking_hints",
+    "requires_dry_run": true,
+    "requires_review": true,
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "world_model"
+  },
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "import_allowed_now": false,
+    "import_surface_id": "runtime_import_surface_02_goal_inference",
+    "plan_only": true,
+    "proposed_import": "build_goal_inference_terminal_state_hints",
+    "requires_dry_run": true,
+    "requires_review": true,
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "goal_inference"
+  },
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "import_allowed_now": false,
+    "import_surface_id": "runtime_import_surface_03_planner",
+    "plan_only": true,
+    "proposed_import": "build_planner_loop_recovery_hints",
+    "requires_dry_run": true,
+    "requires_review": true,
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "planner"
+  },
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "import_allowed_now": false,
+    "import_surface_id": "runtime_import_surface_04_verifier",
+    "plan_only": true,
+    "proposed_import": "build_transition_verifier_feedback_hints",
+    "requires_dry_run": true,
+    "requires_review": true,
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "verifier"
+  },
+  {
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "import_allowed_now": false,
+    "import_surface_id": "runtime_import_surface_05_action_policy",
+    "plan_only": true,
+    "proposed_import": "build_action_policy_validity_guard_hints",
+    "requires_dry_run": true,
+    "requires_review": true,
+    "source_module": "hbce_arc_agi3.local_solver_patch_helpers",
+    "target_layer": "action_policy"
+  }
+]

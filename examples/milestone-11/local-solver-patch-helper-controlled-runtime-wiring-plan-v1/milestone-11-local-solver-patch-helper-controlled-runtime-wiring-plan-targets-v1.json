@@ -1,0 +1,62 @@
+[
+  {
+    "adapter_name": "world_model_state_tracking_adapter",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "helper_function": "build_world_model_state_tracking_hints",
+    "plan_only": true,
+    "planned": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+    "runtime_solver_mutation_allowed": false,
+    "target_id": "runtime_wiring_target_01_world_model",
+    "target_layer": "world_model"
+  },
+  {
+    "adapter_name": "goal_inference_terminal_state_adapter",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "helper_function": "build_goal_inference_terminal_state_hints",
+    "plan_only": true,
+    "planned": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+    "runtime_solver_mutation_allowed": false,
+    "target_id": "runtime_wiring_target_02_goal_inference",
+    "target_layer": "goal_inference"
+  },
+  {
+    "adapter_name": "planner_loop_recovery_adapter",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "helper_function": "build_planner_loop_recovery_hints",
+    "plan_only": true,
+    "planned": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+    "runtime_solver_mutation_allowed": false,
+    "target_id": "runtime_wiring_target_03_planner",
+    "target_layer": "planner"
+  },
+  {
+    "adapter_name": "transition_verifier_feedback_adapter",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "helper_function": "build_transition_verifier_feedback_hints",
+    "plan_only": true,
+    "planned": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+    "runtime_solver_mutation_allowed": false,
+    "target_id": "runtime_wiring_target_04_verifier",
+    "target_layer": "verifier"
+  },
+  {
+    "adapter_name": "action_policy_validity_guard_adapter",
+    "failure_action": "STOP_RUNTIME_WIRING_PLAN",
+    "helper_function": "build_action_policy_validity_guard_hints",
+    "plan_only": true,
+    "planned": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_entrypoint": "src/hbce_arc_agi3/runtime_solver.py",
+    "runtime_solver_mutation_allowed": false,
+    "target_id": "runtime_wiring_target_05_action_policy",
+    "target_layer": "action_policy"
+  }
+]
