@@ -1,0 +1,27 @@
+[
+  {
+    "rule": "Local fixture harness results must never be reported as Kaggle public or private score.",
+    "rule_id": "no_kaggle_score_claim_from_local_fixture_v1",
+    "severity": "BLOCKING"
+  },
+  {
+    "rule": "The harness plan must not create submission.json.",
+    "rule_id": "no_submission_json_from_harness_v1",
+    "severity": "BLOCKING"
+  },
+  {
+    "rule": "The harness plan must not create an upload package.",
+    "rule_id": "no_upload_package_from_harness_v1",
+    "severity": "BLOCKING"
+  },
+  {
+    "rule": "Harness execution must remain local-only and must not call external APIs.",
+    "rule_id": "no_external_api_dependency_v1",
+    "severity": "BLOCKING"
+  },
+  {
+    "rule": "Every harness result must be labelled diagnostic-only.",
+    "rule_id": "diagnostic_result_label_required_v1",
+    "severity": "BLOCKING"
+  }
+]

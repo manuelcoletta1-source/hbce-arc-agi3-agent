@@ -1,0 +1,50 @@
+[
+  {
+    "component_id": "local_fixture_loader_v1",
+    "layer": "fixture_io",
+    "priority": "P0",
+    "purpose": "Load local diagnostic fixtures from deterministic JSON files."
+  },
+  {
+    "component_id": "episode_runner_v1",
+    "layer": "runtime",
+    "priority": "P0",
+    "purpose": "Execute deterministic local episodes without external services."
+  },
+  {
+    "component_id": "observation_trace_recorder_v1",
+    "layer": "trace",
+    "priority": "P0",
+    "purpose": "Record observations, actions, predicted transitions, and actual transitions."
+  },
+  {
+    "component_id": "world_model_probe_v1",
+    "layer": "world_model",
+    "priority": "P0",
+    "purpose": "Measure whether the solver models objects, state, transitions, and rules."
+  },
+  {
+    "component_id": "goal_inference_probe_v1",
+    "layer": "goal_inference",
+    "priority": "P0",
+    "purpose": "Measure whether the solver infers candidate goals from state changes."
+  },
+  {
+    "component_id": "planner_probe_v1",
+    "layer": "planner",
+    "priority": "P0",
+    "purpose": "Measure planning quality, loop avoidance, and action sequence selection."
+  },
+  {
+    "component_id": "transition_verifier_probe_v1",
+    "layer": "verifier",
+    "priority": "P0",
+    "purpose": "Compare predicted and observed transitions after every action."
+  },
+  {
+    "component_id": "score_boundary_guard_v1",
+    "layer": "boundary",
+    "priority": "P0",
+    "purpose": "Prevent diagnostic fixture results from being treated as Kaggle scores."
+  }
+]

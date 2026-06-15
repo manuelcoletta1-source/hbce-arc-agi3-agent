@@ -1,0 +1,34 @@
+[
+  {
+    "action_id": "m11_task5_create_local_diagnostic_fixture_schema_v1",
+    "description": "Create deterministic fixture schema and validator.",
+    "priority": "P0",
+    "requires_real_submission": false,
+    "score_claim_allowed": false,
+    "status": "PLANNED"
+  },
+  {
+    "action_id": "m11_task5_create_minimal_diagnostic_fixtures_v1",
+    "description": "Create small local diagnostic fixtures for world model, planner, and verifier.",
+    "priority": "P0",
+    "requires_real_submission": false,
+    "score_claim_allowed": false,
+    "status": "PLANNED"
+  },
+  {
+    "action_id": "m11_task5_create_episode_runner_contract_v1",
+    "description": "Create local episode runner contract with deterministic traces.",
+    "priority": "P0",
+    "requires_real_submission": false,
+    "score_claim_allowed": false,
+    "status": "PLANNED"
+  },
+  {
+    "action_id": "m11_task5_create_diagnostic_result_guard_v1",
+    "description": "Force all outputs to remain diagnostic-only and not official score evidence.",
+    "priority": "P0",
+    "requires_real_submission": false,
+    "score_claim_allowed": false,
+    "status": "PLANNED"
+  }
+]

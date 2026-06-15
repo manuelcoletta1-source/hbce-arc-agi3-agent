@@ -1,0 +1,959 @@
+{
+  "baseline_commit": "b609069 Add ARC AGI3 public game failure taxonomy",
+  "boundary_rule_count": 5,
+  "boundary_rules": [
+    {
+      "rule": "Local fixture harness results must never be reported as Kaggle public or private score.",
+      "rule_id": "no_kaggle_score_claim_from_local_fixture_v1",
+      "severity": "BLOCKING"
+    },
+    {
+      "rule": "The harness plan must not create submission.json.",
+      "rule_id": "no_submission_json_from_harness_v1",
+      "severity": "BLOCKING"
+    },
+    {
+      "rule": "The harness plan must not create an upload package.",
+      "rule_id": "no_upload_package_from_harness_v1",
+      "severity": "BLOCKING"
+    },
+    {
+      "rule": "Harness execution must remain local-only and must not call external APIs.",
+      "rule_id": "no_external_api_dependency_v1",
+      "severity": "BLOCKING"
+    },
+    {
+      "rule": "Every harness result must be labelled diagnostic-only.",
+      "rule_id": "diagnostic_result_label_required_v1",
+      "severity": "BLOCKING"
+    }
+  ],
+  "diagnostic_only": true,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "fixture_class_count": 6,
+  "fixture_classes": [
+    {
+      "fixture_class_id": "object_persistence_fixture_v1",
+      "purpose": "Test whether objects persist across observations and transformations.",
+      "target_layer": "world_model"
+    },
+    {
+      "fixture_class_id": "color_rule_fixture_v1",
+      "purpose": "Test simple color remap and rule tracking.",
+      "target_layer": "rule_inference"
+    },
+    {
+      "fixture_class_id": "movement_transition_fixture_v1",
+      "purpose": "Test deterministic movement, collision, and state transition predictions.",
+      "target_layer": "transition_model"
+    },
+    {
+      "fixture_class_id": "goal_inference_fixture_v1",
+      "purpose": "Test inferred objective from reward-like terminal conditions.",
+      "target_layer": "goal_inference"
+    },
+    {
+      "fixture_class_id": "planner_loop_fixture_v1",
+      "purpose": "Test loop detection, fallback exploration, and progress tracking.",
+      "target_layer": "planner"
+    },
+    {
+      "fixture_class_id": "verifier_mismatch_fixture_v1",
+      "purpose": "Test correction when predicted transition differs from actual transition.",
+      "target_layer": "verifier"
+    }
+  ],
+  "fixture_generation_deferred_to": "MILESTONE_11_TASK_5_LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_V1",
+  "fixture_generation_performed": false,
+  "harness_case_count": 10,
+  "harness_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m11_task4_source_task3_ready_v1",
+      "operation": "verify_task_3_failure_taxonomy_source"
+    },
+    {
+      "area": "constraint",
+      "case_id": "m11_task4_measurement_constraint_loaded_v1",
+      "operation": "verify_measurement_constraint_not_solver_failure"
+    },
+    {
+      "area": "harness_components",
+      "case_id": "m11_task4_harness_components_ready_v1",
+      "operation": "verify_harness_components"
+    },
+    {
+      "area": "fixture_plan",
+      "case_id": "m11_task4_fixture_classes_ready_v1",
+      "operation": "verify_fixture_classes"
+    },
+    {
+      "area": "measurement",
+      "case_id": "m11_task4_measurement_axes_ready_v1",
+      "operation": "verify_measurement_axes"
+    },
+    {
+      "area": "boundary",
+      "case_id": "m11_task4_boundary_rules_ready_v1",
+      "operation": "verify_boundary_rules"
+    },
+    {
+      "area": "score_boundary",
+      "case_id": "m11_task4_diagnostic_only_enforced_v1",
+      "operation": "verify_diagnostic_only_enforced"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m11_task4_real_submission_blocked_v1",
+      "operation": "verify_real_submission_blocked"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m11_task4_next_stage_valid_v1",
+      "operation": "verify_next_stage"
+    },
+    {
+      "area": "metadata",
+      "case_id": "m11_task4_metadata_safe_v1",
+      "operation": "verify_public_safe_metadata"
+    }
+  ],
+  "harness_check_count": 34,
+  "harness_check_list": [
+    "task_3_artifact_exists",
+    "task_3_artifact_ready",
+    "task_3_validated",
+    "primary_condition_no_local_public_fixtures",
+    "classification_measurement_constraint",
+    "solver_not_measured",
+    "solver_failure_false",
+    "harness_components_created",
+    "fixture_classes_created",
+    "measurement_axes_created",
+    "boundary_rules_created",
+    "harness_plan_created",
+    "fixture_generation_deferred",
+    "diagnostic_only_enforced",
+    "no_real_public_score_claimed",
+    "no_private_score_claimed",
+    "no_real_benchmark_score",
+    "real_submission_candidate_absent",
+    "submission_json_absent",
+    "upload_package_absent",
+    "real_submission_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_submission_not_sent",
+    "fail_closed_required",
+    "fail_closed_active",
+    "next_stage_valid",
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "harness_checks": {
+    "boundary_rules_created": true,
+    "classification_measurement_constraint": true,
+    "contains_api_keys_false": true,
+    "deterministic": true,
+    "diagnostic_only_enforced": true,
+    "dry_run_only": true,
+    "external_api_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "fixture_classes_created": true,
+    "fixture_generation_deferred": true,
+    "harness_case_count_valid": true,
+    "harness_check_count_valid": true,
+    "harness_components_created": true,
+    "harness_plan_created": true,
+    "kaggle_authentication_blocked": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_only": true,
+    "measurement_axes_created": true,
+    "next_action_count_valid": true,
+    "next_stage_valid": true,
+    "no_private_score_claimed": true,
+    "no_real_benchmark_score": true,
+    "no_real_public_score_claimed": true,
+    "primary_condition_no_local_public_fixtures": true,
+    "private_core_exposure_false": true,
+    "public_safe": true,
+    "real_submission_blocked": true,
+    "real_submission_candidate_absent": true,
+    "solver_failure_false": true,
+    "solver_not_measured": true,
+    "submission_json_absent": true,
+    "task_3_artifact_exists": true,
+    "task_3_artifact_ready": true,
+    "task_3_validated": true,
+    "upload_package_absent": true
+  },
+  "harness_component_count": 8,
+  "harness_components": [
+    {
+      "component_id": "local_fixture_loader_v1",
+      "layer": "fixture_io",
+      "priority": "P0",
+      "purpose": "Load local diagnostic fixtures from deterministic JSON files."
+    },
+    {
+      "component_id": "episode_runner_v1",
+      "layer": "runtime",
+      "priority": "P0",
+      "purpose": "Execute deterministic local episodes without external services."
+    },
+    {
+      "component_id": "observation_trace_recorder_v1",
+      "layer": "trace",
+      "priority": "P0",
+      "purpose": "Record observations, actions, predicted transitions, and actual transitions."
+    },
+    {
+      "component_id": "world_model_probe_v1",
+      "layer": "world_model",
+      "priority": "P0",
+      "purpose": "Measure whether the solver models objects, state, transitions, and rules."
+    },
+    {
+      "component_id": "goal_inference_probe_v1",
+      "layer": "goal_inference",
+      "priority": "P0",
+      "purpose": "Measure whether the solver infers candidate goals from state changes."
+    },
+    {
+      "component_id": "planner_probe_v1",
+      "layer": "planner",
+      "priority": "P0",
+      "purpose": "Measure planning quality, loop avoidance, and action sequence selection."
+    },
+    {
+      "component_id": "transition_verifier_probe_v1",
+      "layer": "verifier",
+      "priority": "P0",
+      "purpose": "Compare predicted and observed transitions after every action."
+    },
+    {
+      "component_id": "score_boundary_guard_v1",
+      "layer": "boundary",
+      "priority": "P0",
+      "purpose": "Prevent diagnostic fixture results from being treated as Kaggle scores."
+    }
+  ],
+  "harness_failure_count": 0,
+  "harness_gate_count": 20,
+  "harness_gates": [
+    {
+      "name": "task_3_artifact_exists",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_3_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_3_validated",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "measurement_constraint_loaded",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "harness_components_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fixture_classes_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "measurement_axes_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_rules_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "harness_plan_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fixture_generation_deferred",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "diagnostic_only_enforced",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "no_score_claimed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "no_real_benchmark_score",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_blocked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "metadata_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "harness_index": {
+    "baseline_commit": "b609069 Add ARC AGI3 public game failure taxonomy",
+    "boundary_rule_count": 5,
+    "depends_on_task_3": "MILESTONE-11-PUBLIC-GAME-FAILURE-TAXONOMY-A365950709F1",
+    "diagnostic_only": true,
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "fixture_class_count": 6,
+    "fixture_generation_deferred_to": "MILESTONE_11_TASK_5_LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_V1",
+    "fixture_generation_performed": false,
+    "harness_component_count": 8,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "measurement_axis_count": 5,
+    "milestone": "Milestone #11",
+    "next_stage": "MILESTONE_11_TASK_5_LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_V1",
+    "official_score_claim_allowed": false,
+    "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+    "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+    "private_core_exposure": false,
+    "private_score_claimed": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "status": "MILESTONE_11_LOCAL_FIXTURE_HARNESS_PLAN_V1_READY",
+    "task": "Task 4",
+    "task_mode": "MILESTONE_11_LOCAL_FIXTURE_HARNESS_PLAN_V1_LOCAL_ONLY",
+    "task_scope": "LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_PLAN_NO_SCORE_NO_SUBMISSION",
+    "task_verdict": "LOCAL_FIXTURE_HARNESS_PLAN_READY_FOR_DIAGNOSTIC_FIXTURE_GENERATION"
+  },
+  "harness_issue_count": 0,
+  "harness_issues": [
+    {
+      "active": false,
+      "name": "task_3_artifact_exists",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_3_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_3_invalidated",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "measurement_constraint_loaded",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "harness_components_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fixture_classes_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "measurement_axes_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_rules_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "harness_plan_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fixture_generation_deferred",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "diagnostic_only_enforced",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "no_score_claimed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "no_real_benchmark_score",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_blocked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "metadata_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "failure_count_zero",
+      "severity": "BLOCKING"
+    }
+  ],
+  "harness_pass_count": 10,
+  "harness_plan_created": true,
+  "harness_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m11_task4_source_task3_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_task_3_failure_taxonomy_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "constraint",
+      "case_id": "m11_task4_measurement_constraint_loaded_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_measurement_constraint_not_solver_failure",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "harness_components",
+      "case_id": "m11_task4_harness_components_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_harness_components",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "fixture_plan",
+      "case_id": "m11_task4_fixture_classes_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_fixture_classes",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "measurement",
+      "case_id": "m11_task4_measurement_axes_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_measurement_axes",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "boundary",
+      "case_id": "m11_task4_boundary_rules_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_boundary_rules",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "score_boundary",
+      "case_id": "m11_task4_diagnostic_only_enforced_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_diagnostic_only_enforced",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m11_task4_real_submission_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m11_task4_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_stage",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "metadata",
+      "case_id": "m11_task4_metadata_safe_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_public_safe_metadata",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "harness_scorecard": [
+    {
+      "criterion_id": "source_task3_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "measurement_constraint_loaded",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "harness_components_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "fixture_classes_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "measurement_axes_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "boundary_rules_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "diagnostic_only_enforced",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "real_submission_blocked",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "next_stage_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    }
+  ],
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "local_fixture_harness_plan": {
+    "boundary_rules": [
+      {
+        "rule": "Local fixture harness results must never be reported as Kaggle public or private score.",
+        "rule_id": "no_kaggle_score_claim_from_local_fixture_v1",
+        "severity": "BLOCKING"
+      },
+      {
+        "rule": "The harness plan must not create submission.json.",
+        "rule_id": "no_submission_json_from_harness_v1",
+        "severity": "BLOCKING"
+      },
+      {
+        "rule": "The harness plan must not create an upload package.",
+        "rule_id": "no_upload_package_from_harness_v1",
+        "severity": "BLOCKING"
+      },
+      {
+        "rule": "Harness execution must remain local-only and must not call external APIs.",
+        "rule_id": "no_external_api_dependency_v1",
+        "severity": "BLOCKING"
+      },
+      {
+        "rule": "Every harness result must be labelled diagnostic-only.",
+        "rule_id": "diagnostic_result_label_required_v1",
+        "severity": "BLOCKING"
+      }
+    ],
+    "diagnostic_only": true,
+    "fixture_classes": [
+      {
+        "fixture_class_id": "object_persistence_fixture_v1",
+        "purpose": "Test whether objects persist across observations and transformations.",
+        "target_layer": "world_model"
+      },
+      {
+        "fixture_class_id": "color_rule_fixture_v1",
+        "purpose": "Test simple color remap and rule tracking.",
+        "target_layer": "rule_inference"
+      },
+      {
+        "fixture_class_id": "movement_transition_fixture_v1",
+        "purpose": "Test deterministic movement, collision, and state transition predictions.",
+        "target_layer": "transition_model"
+      },
+      {
+        "fixture_class_id": "goal_inference_fixture_v1",
+        "purpose": "Test inferred objective from reward-like terminal conditions.",
+        "target_layer": "goal_inference"
+      },
+      {
+        "fixture_class_id": "planner_loop_fixture_v1",
+        "purpose": "Test loop detection, fallback exploration, and progress tracking.",
+        "target_layer": "planner"
+      },
+      {
+        "fixture_class_id": "verifier_mismatch_fixture_v1",
+        "purpose": "Test correction when predicted transition differs from actual transition.",
+        "target_layer": "verifier"
+      }
+    ],
+    "fixture_generation_deferred_to": "MILESTONE_11_TASK_5_LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_V1",
+    "fixture_generation_performed": false,
+    "harness_components": [
+      {
+        "component_id": "local_fixture_loader_v1",
+        "layer": "fixture_io",
+        "priority": "P0",
+        "purpose": "Load local diagnostic fixtures from deterministic JSON files."
+      },
+      {
+        "component_id": "episode_runner_v1",
+        "layer": "runtime",
+        "priority": "P0",
+        "purpose": "Execute deterministic local episodes without external services."
+      },
+      {
+        "component_id": "observation_trace_recorder_v1",
+        "layer": "trace",
+        "priority": "P0",
+        "purpose": "Record observations, actions, predicted transitions, and actual transitions."
+      },
+      {
+        "component_id": "world_model_probe_v1",
+        "layer": "world_model",
+        "priority": "P0",
+        "purpose": "Measure whether the solver models objects, state, transitions, and rules."
+      },
+      {
+        "component_id": "goal_inference_probe_v1",
+        "layer": "goal_inference",
+        "priority": "P0",
+        "purpose": "Measure whether the solver infers candidate goals from state changes."
+      },
+      {
+        "component_id": "planner_probe_v1",
+        "layer": "planner",
+        "priority": "P0",
+        "purpose": "Measure planning quality, loop avoidance, and action sequence selection."
+      },
+      {
+        "component_id": "transition_verifier_probe_v1",
+        "layer": "verifier",
+        "priority": "P0",
+        "purpose": "Compare predicted and observed transitions after every action."
+      },
+      {
+        "component_id": "score_boundary_guard_v1",
+        "layer": "boundary",
+        "priority": "P0",
+        "purpose": "Prevent diagnostic fixture results from being treated as Kaggle scores."
+      }
+    ],
+    "harness_plan_id": "M11-TASK4-LOCAL-FIXTURE-HARNESS-PLAN-v1",
+    "measurement_axes": [
+      {
+        "axis_id": "world_model_accuracy_v1",
+        "description": "Measures internal state and transition prediction quality.",
+        "scope": "diagnostic_only"
+      },
+      {
+        "axis_id": "goal_inference_quality_v1",
+        "description": "Measures whether the solver infers goals from local feedback.",
+        "scope": "diagnostic_only"
+      },
+      {
+        "axis_id": "planner_progress_v1",
+        "description": "Measures progress, loop avoidance, and plan stability.",
+        "scope": "diagnostic_only"
+      },
+      {
+        "axis_id": "transition_verification_v1",
+        "description": "Measures predicted versus observed transition agreement.",
+        "scope": "diagnostic_only"
+      },
+      {
+        "axis_id": "action_policy_safety_v1",
+        "description": "Measures whether action choice avoids repeated non-progress actions.",
+        "scope": "diagnostic_only"
+      }
+    ],
+    "official_score_claim_allowed": false,
+    "public_fixture_import_allowed": false,
+    "required_trace_fields": [
+      "fixture_id",
+      "episode_id",
+      "observation_index",
+      "action",
+      "predicted_transition",
+      "observed_transition",
+      "world_model_state",
+      "planner_state",
+      "verifier_result",
+      "diagnostic_only"
+    ],
+    "result_label": "LOCAL_DIAGNOSTIC_ONLY_NOT_KAGGLE_SCORE",
+    "source_primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+    "source_primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+    "synthetic_fixture_allowed": true,
+    "synthetic_fixture_score_claim_allowed": false
+  },
+  "manual_upload_allowed": false,
+  "measurement_axes": [
+    {
+      "axis_id": "world_model_accuracy_v1",
+      "description": "Measures internal state and transition prediction quality.",
+      "scope": "diagnostic_only"
+    },
+    {
+      "axis_id": "goal_inference_quality_v1",
+      "description": "Measures whether the solver infers goals from local feedback.",
+      "scope": "diagnostic_only"
+    },
+    {
+      "axis_id": "planner_progress_v1",
+      "description": "Measures progress, loop avoidance, and plan stability.",
+      "scope": "diagnostic_only"
+    },
+    {
+      "axis_id": "transition_verification_v1",
+      "description": "Measures predicted versus observed transition agreement.",
+      "scope": "diagnostic_only"
+    },
+    {
+      "axis_id": "action_policy_safety_v1",
+      "description": "Measures whether action choice avoids repeated non-progress actions.",
+      "scope": "diagnostic_only"
+    }
+  ],
+  "measurement_axis_count": 5,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_11_local_fixture_harness_plan_v1"
+  },
+  "milestone": "Milestone #11",
+  "next_action_count": 4,
+  "next_action_plan": [
+    {
+      "action_id": "m11_task5_create_local_diagnostic_fixture_schema_v1",
+      "description": "Create deterministic fixture schema and validator.",
+      "priority": "P0",
+      "requires_real_submission": false,
+      "score_claim_allowed": false,
+      "status": "PLANNED"
+    },
+    {
+      "action_id": "m11_task5_create_minimal_diagnostic_fixtures_v1",
+      "description": "Create small local diagnostic fixtures for world model, planner, and verifier.",
+      "priority": "P0",
+      "requires_real_submission": false,
+      "score_claim_allowed": false,
+      "status": "PLANNED"
+    },
+    {
+      "action_id": "m11_task5_create_episode_runner_contract_v1",
+      "description": "Create local episode runner contract with deterministic traces.",
+      "priority": "P0",
+      "requires_real_submission": false,
+      "score_claim_allowed": false,
+      "status": "PLANNED"
+    },
+    {
+      "action_id": "m11_task5_create_diagnostic_result_guard_v1",
+      "description": "Force all outputs to remain diagnostic-only and not official score evidence.",
+      "priority": "P0",
+      "requires_real_submission": false,
+      "score_claim_allowed": false,
+      "status": "PLANNED"
+    }
+  ],
+  "next_stage": "MILESTONE_11_TASK_5_LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_V1",
+  "official_score_claim_allowed": false,
+  "passed_gate_count": 20,
+  "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+  "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+  "private_score_claimed": false,
+  "real_benchmark_score": null,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "signature": "7A69A3427DCAA7E7",
+  "solver_failure_detected": false,
+  "solver_not_measured": true,
+  "source_summary": {
+    "baseline_commit": "d3b39b0 Add ARC AGI3 public game inventory baseline run",
+    "baseline_not_executed": true,
+    "dataset_missing": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "fixture_missing": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "manual_upload_allowed": false,
+    "next_action_count": 4,
+    "next_stage": "MILESTONE_11_TASK_4_LOCAL_FIXTURE_HARNESS_PLAN_V1",
+    "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+    "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+    "private_score_claimed": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "score_not_claimed": true,
+    "solver_failure_detected": false,
+    "solver_not_measured": true,
+    "submission_json_created": false,
+    "task_3_id": "MILESTONE-11-PUBLIC-GAME-FAILURE-TAXONOMY-A365950709F1",
+    "task_3_path": "examples/milestone-11/public-game-failure-taxonomy-v1/milestone-11-public-game-failure-taxonomy-v1.json",
+    "task_3_present": true,
+    "task_3_ready": true,
+    "task_3_sha256": "e81694618ce88caee946bf324ac867c13bac4c6c7d57a8b66e1dc3bf139fc999",
+    "task_3_sha256_16": "E81694618CE88CAE",
+    "task_3_signature": "A365950709F13146",
+    "task_3_status": "MILESTONE_11_PUBLIC_GAME_FAILURE_TAXONOMY_V1_READY",
+    "task_verdict": "PUBLIC_GAME_FAILURE_TAXONOMY_READY_FOR_LOCAL_FIXTURE_HARNESS_PLAN",
+    "taxonomy_class_count": 7,
+    "taxonomy_created": true,
+    "taxonomy_validated": true,
+    "upload_package_created": false
+  },
+  "status": "MILESTONE_11_LOCAL_FIXTURE_HARNESS_PLAN_V1_READY",
+  "submission_json_created": false,
+  "synthetic_fixture_score_claim_allowed": false,
+  "task": "Task 4",
+  "task_3_source": {
+    "path": "examples/milestone-11/public-game-failure-taxonomy-v1/milestone-11-public-game-failure-taxonomy-v1.json",
+    "present": true,
+    "sha256": "e81694618ce88caee946bf324ac867c13bac4c6c7d57a8b66e1dc3bf139fc999",
+    "sha256_16": "E81694618CE88CAE",
+    "status": "MILESTONE_11_PUBLIC_GAME_FAILURE_TAXONOMY_V1_READY",
+    "task_3_id": "MILESTONE-11-PUBLIC-GAME-FAILURE-TAXONOMY-A365950709F1"
+  },
+  "task_4_id": "MILESTONE-11-LOCAL-FIXTURE-HARNESS-PLAN-7A69A3427DCA",
+  "task_4_ready": true,
+  "task_mode": "MILESTONE_11_LOCAL_FIXTURE_HARNESS_PLAN_V1_LOCAL_ONLY",
+  "task_scope": "LOCAL_DIAGNOSTIC_FIXTURE_HARNESS_PLAN_NO_SCORE_NO_SUBMISSION",
+  "task_verdict": "LOCAL_FIXTURE_HARNESS_PLAN_READY_FOR_DIAGNOSTIC_FIXTURE_GENERATION",
+  "title": "Local Fixture Harness Plan v1",
+  "upload_package_created": false,
+  "warning_count": 0
+}

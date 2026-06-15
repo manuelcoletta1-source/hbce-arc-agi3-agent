@@ -1,0 +1,32 @@
+[
+  {
+    "fixture_class_id": "object_persistence_fixture_v1",
+    "purpose": "Test whether objects persist across observations and transformations.",
+    "target_layer": "world_model"
+  },
+  {
+    "fixture_class_id": "color_rule_fixture_v1",
+    "purpose": "Test simple color remap and rule tracking.",
+    "target_layer": "rule_inference"
+  },
+  {
+    "fixture_class_id": "movement_transition_fixture_v1",
+    "purpose": "Test deterministic movement, collision, and state transition predictions.",
+    "target_layer": "transition_model"
+  },
+  {
+    "fixture_class_id": "goal_inference_fixture_v1",
+    "purpose": "Test inferred objective from reward-like terminal conditions.",
+    "target_layer": "goal_inference"
+  },
+  {
+    "fixture_class_id": "planner_loop_fixture_v1",
+    "purpose": "Test loop detection, fallback exploration, and progress tracking.",
+    "target_layer": "planner"
+  },
+  {
+    "fixture_class_id": "verifier_mismatch_fixture_v1",
+    "purpose": "Test correction when predicted transition differs from actual transition.",
+    "target_layer": "verifier"
+  }
+]
