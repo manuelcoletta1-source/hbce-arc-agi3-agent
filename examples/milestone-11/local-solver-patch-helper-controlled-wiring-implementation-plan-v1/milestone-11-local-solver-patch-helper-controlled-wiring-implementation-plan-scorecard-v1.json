@@ -1,0 +1,98 @@
+[
+  {
+    "criterion_id": "source_task15_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "controlled_gate_passed",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "implementation_plan_authorized",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "target_modules_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "implementation_steps_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "contracts_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "regression_tests_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "rollback_items_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "review_gates_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "runtime_boundary_preserved",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "ranker_boundary_preserved",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "external_dependency_absent",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "score_boundary_preserved",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "submission_boundary_preserved",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "fail_closed_active",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "next_stage_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  }
+]

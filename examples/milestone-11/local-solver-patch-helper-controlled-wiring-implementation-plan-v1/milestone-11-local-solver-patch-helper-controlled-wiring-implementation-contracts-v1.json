@@ -1,0 +1,92 @@
+[
+  {
+    "contract_id": "contract_adapter_input_records",
+    "description": "Adapters accept diagnostic record sequences only",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  },
+  {
+    "contract_id": "contract_adapter_output_hints",
+    "description": "Adapters return diagnostic hints only",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  },
+  {
+    "contract_id": "contract_no_runtime_mutation",
+    "description": "Adapters cannot mutate runtime solver state",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  },
+  {
+    "contract_id": "contract_no_ranker_mutation",
+    "description": "Adapters cannot mutate ranker behavior",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  },
+  {
+    "contract_id": "contract_fail_closed_missing_input",
+    "description": "Missing input fails closed",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  },
+  {
+    "contract_id": "contract_fail_closed_invalid_output",
+    "description": "Invalid output fails closed",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  },
+  {
+    "contract_id": "contract_no_external_dependency",
+    "description": "No external solver or API dependency",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  },
+  {
+    "contract_id": "contract_no_score_claim",
+    "description": "No Kaggle score claim is produced",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  },
+  {
+    "contract_id": "contract_no_submission_artifact",
+    "description": "No submission artifact is produced",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  },
+  {
+    "contract_id": "contract_manual_review_required",
+    "description": "Human operator review required before runtime wiring",
+    "passed": true,
+    "ranker_runtime_modification_allowed": false,
+    "required": true,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false
+  }
+]

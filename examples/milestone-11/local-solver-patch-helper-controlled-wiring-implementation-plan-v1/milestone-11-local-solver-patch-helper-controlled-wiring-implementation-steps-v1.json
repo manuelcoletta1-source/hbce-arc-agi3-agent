@@ -1,0 +1,134 @@
+[
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 1,
+    "step_id": "step_01_verify_task15_gate",
+    "submission_allowed": false,
+    "title": "Verify controlled gate source is green"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 2,
+    "step_id": "step_02_freeze_current_runtime_boundary",
+    "submission_allowed": false,
+    "title": "Freeze no-runtime-mutation boundary"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 3,
+    "step_id": "step_03_review_adapter_contracts",
+    "submission_allowed": false,
+    "title": "Review adapter input and output contracts"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 4,
+    "step_id": "step_04_define_import_surface",
+    "submission_allowed": false,
+    "title": "Define import surface for helper adapters"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 5,
+    "step_id": "step_05_define_fail_closed_checks",
+    "submission_allowed": false,
+    "title": "Define fail-closed checks for each adapter"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 6,
+    "step_id": "step_06_define_runtime_integration_points",
+    "submission_allowed": false,
+    "title": "Define proposed integration points without mutation"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 7,
+    "step_id": "step_07_define_diagnostic_bundle_shape",
+    "submission_allowed": false,
+    "title": "Define diagnostic bundle shape"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 8,
+    "step_id": "step_08_define_regression_tests",
+    "submission_allowed": false,
+    "title": "Define regression test expansion"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 9,
+    "step_id": "step_09_define_rollback_controls",
+    "submission_allowed": false,
+    "title": "Define rollback controls"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 10,
+    "step_id": "step_10_define_operator_review",
+    "submission_allowed": false,
+    "title": "Define manual operator review"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 11,
+    "step_id": "step_11_define_next_dry_run",
+    "submission_allowed": false,
+    "title": "Define Task 17 controlled implementation dry-run"
+  },
+  {
+    "allowed_now": true,
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ranker_runtime_modification_allowed": false,
+    "runtime_solver_modification_allowed": false,
+    "score_claim_allowed": false,
+    "sequence": 12,
+    "step_id": "step_12_reconfirm_no_score_submission",
+    "submission_allowed": false,
+    "title": "Reconfirm no score and no submission boundaries"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_solver_patch_helpers.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_01_task10_helpers"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helpers.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_02_task10_milestone"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helper_probe_run.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_03_task11_probe"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helper_wiring_plan.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_04_task12_plan"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_local_solver_patch_helper_wiring.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_05_task13_wiring"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helper_wiring_dry_run.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_06_task13_dry_run"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helper_wiring_review.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_07_task14_review"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_gate.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_08_task15_gate"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests/test_milestone_11_local_solver_patch_helper_controlled_wiring_implementation_plan.py",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_09_task16_plan"
+  },
+  {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest",
+    "external_api_dependency": false,
+    "local_only": true,
+    "required": true,
+    "score_claim_allowed": false,
+    "test_id": "regression_test_10_full_suite"
+  }
+]

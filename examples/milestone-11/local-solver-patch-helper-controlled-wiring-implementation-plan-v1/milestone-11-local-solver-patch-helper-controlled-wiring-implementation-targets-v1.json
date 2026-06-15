@@ -1,0 +1,62 @@
+[
+  {
+    "adapter_name": "world_model_state_tracking_adapter",
+    "helper_function": "build_world_model_state_tracking_hints",
+    "implementation_phase": "IMPLEMENTATION_PLAN_ONLY",
+    "integration_surface": "CONTROLLED_ADAPTER_LAYER",
+    "ranker_runtime_patch_allowed": false,
+    "runtime_solver_patch_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "target_layer": "world_model",
+    "target_module": "src/hbce_arc_agi3/local_solver_patch_helper_wiring.py"
+  },
+  {
+    "adapter_name": "goal_inference_terminal_state_adapter",
+    "helper_function": "build_goal_inference_terminal_state_hints",
+    "implementation_phase": "IMPLEMENTATION_PLAN_ONLY",
+    "integration_surface": "CONTROLLED_ADAPTER_LAYER",
+    "ranker_runtime_patch_allowed": false,
+    "runtime_solver_patch_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "target_layer": "goal_inference",
+    "target_module": "src/hbce_arc_agi3/local_solver_patch_helper_wiring.py"
+  },
+  {
+    "adapter_name": "planner_loop_recovery_adapter",
+    "helper_function": "build_planner_loop_recovery_hints",
+    "implementation_phase": "IMPLEMENTATION_PLAN_ONLY",
+    "integration_surface": "CONTROLLED_ADAPTER_LAYER",
+    "ranker_runtime_patch_allowed": false,
+    "runtime_solver_patch_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "target_layer": "planner",
+    "target_module": "src/hbce_arc_agi3/local_solver_patch_helper_wiring.py"
+  },
+  {
+    "adapter_name": "transition_verifier_feedback_adapter",
+    "helper_function": "build_transition_verifier_feedback_hints",
+    "implementation_phase": "IMPLEMENTATION_PLAN_ONLY",
+    "integration_surface": "CONTROLLED_ADAPTER_LAYER",
+    "ranker_runtime_patch_allowed": false,
+    "runtime_solver_patch_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "target_layer": "verifier",
+    "target_module": "src/hbce_arc_agi3/local_solver_patch_helper_wiring.py"
+  },
+  {
+    "adapter_name": "action_policy_validity_guard_adapter",
+    "helper_function": "build_action_policy_validity_guard_hints",
+    "implementation_phase": "IMPLEMENTATION_PLAN_ONLY",
+    "integration_surface": "CONTROLLED_ADAPTER_LAYER",
+    "ranker_runtime_patch_allowed": false,
+    "runtime_solver_patch_allowed": false,
+    "score_claim_allowed": false,
+    "submission_allowed": false,
+    "target_layer": "action_policy",
+    "target_module": "src/hbce_arc_agi3/local_solver_patch_helper_wiring.py"
+  }
+]

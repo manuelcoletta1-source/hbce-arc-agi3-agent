@@ -1,0 +1,50 @@
+[
+  {
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "remove_adapter_imports"
+  },
+  {
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "disable_controlled_wiring_path"
+  },
+  {
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "restore_runtime_solver_baseline"
+  },
+  {
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "restore_ranker_baseline"
+  },
+  {
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "delete_generated_diagnostic_bundle"
+  },
+  {
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "remove_runtime_integration_flag"
+  },
+  {
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "rerun_full_suite"
+  },
+  {
+    "failure_action": "STOP_IMPLEMENTATION_PLAN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "stop_before_submission_surface"
+  }
+]
