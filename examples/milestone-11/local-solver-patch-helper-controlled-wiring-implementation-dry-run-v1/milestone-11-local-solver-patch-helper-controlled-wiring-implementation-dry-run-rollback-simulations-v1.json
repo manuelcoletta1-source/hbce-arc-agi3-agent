@@ -1,0 +1,66 @@
+[
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_IMPLEMENTATION_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "remove_adapter_imports",
+    "simulation_status": "ROLLBACK_READY"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_IMPLEMENTATION_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "disable_controlled_wiring_path",
+    "simulation_status": "ROLLBACK_READY"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_IMPLEMENTATION_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "restore_runtime_solver_baseline",
+    "simulation_status": "ROLLBACK_READY"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_IMPLEMENTATION_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "restore_ranker_baseline",
+    "simulation_status": "ROLLBACK_READY"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_IMPLEMENTATION_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "delete_generated_diagnostic_bundle",
+    "simulation_status": "ROLLBACK_READY"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_IMPLEMENTATION_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "remove_runtime_integration_flag",
+    "simulation_status": "ROLLBACK_READY"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_IMPLEMENTATION_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "rerun_full_suite",
+    "simulation_status": "ROLLBACK_READY"
+  },
+  {
+    "executed_for_real": false,
+    "failure_action": "STOP_IMPLEMENTATION_DRY_RUN",
+    "ready": true,
+    "required": true,
+    "rollback_item_id": "stop_before_submission_surface",
+    "simulation_status": "ROLLBACK_READY"
+  }
+]

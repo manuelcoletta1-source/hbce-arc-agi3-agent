@@ -1,0 +1,91 @@
+# ARC AGI3 Milestone #11 Task 17 - Local Solver Patch Helper Controlled Wiring Implementation Dry Run v1
+
+Milestone #11 Task 17 executes the controlled implementation dry-run authorized by Task 16.
+
+The dry-run simulates implementation operations and authorizes the next review stage only. It does not apply runtime solver patches, ranker patches, score claims, or submission artifacts.
+
+## Baseline
+
+- baseline commit: 122c9a8 Add ARC AGI3 local solver patch helper controlled wiring implementation plan
+- task mode: MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_DRY_RUN_V1_LOCAL_ONLY
+- task scope: IMPLEMENTATION_DRY_RUN_ONLY_NO_RUNTIME_SOLVER_MUTATION_NO_SCORE_NO_SUBMISSION
+- task verdict: LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_DRY_RUN_READY_FOR_REVIEW
+- next stage: MILESTONE_11_TASK_18_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_REVIEW_V1
+- implementation dry-run ready: true
+- implementation dry-run passed: true
+- implementation review authorized: true
+- runtime solver patch applied: false
+- ranker runtime patch applied: false
+- runtime wiring performed: false
+- simulated operation count: 5
+- contract validation count: 10
+- regression simulation count: 10
+- rollback simulation count: 8
+- boundary assertion count: 14
+- runtime solver modified: false
+- ranker runtime modified: false
+- external solver dependency: false
+- diagnostic only: true
+- Kaggle score semantics: NOT_A_KAGGLE_SCORE
+- official score claim allowed: false
+- competitive score claim allowed: false
+- real submission decision: NOT_AUTHORIZED
+- real submission allowed: false
+- Kaggle authentication allowed: false
+- Kaggle submission sent: false
+- fail closed required: true
+- fail closed active: true
+
+## Boundary
+
+public_safe=true  
+deterministic=true  
+local_only=true  
+dry_run_only=true  
+external_api_dependency=false  
+contains_api_keys=false  
+kaggle_submission_sent=false  
+private_core_exposure=false  
+legal_certification=false  
+
+## Markers
+
+ARC_AGI3_MILESTONE_11_TASK_17_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_DRY_RUN_V1_READY=true  
+ARC_AGI3_MILESTONE_11_TASK_17_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_DRY_RUN_V1_VALID=true  
+ARC_AGI3_MILESTONE_11_TASK_17_READY=true  
+ARC_AGI3_MILESTONE_11_TASK_17_MODE=MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_DRY_RUN_V1_LOCAL_ONLY  
+ARC_AGI3_MILESTONE_11_TASK_17_VERDICT=LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_DRY_RUN_READY_FOR_REVIEW  
+ARC_AGI3_MILESTONE_11_TASK_17_BASELINE_COMMIT=122c9a8  
+ARC_AGI3_MILESTONE_11_TASK_17_NEXT_STAGE=MILESTONE_11_TASK_18_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_REVIEW_V1  
+ARC_AGI3_MILESTONE_11_IMPLEMENTATION_DRY_RUN_READY=true  
+ARC_AGI3_MILESTONE_11_IMPLEMENTATION_DRY_RUN_PASSED=true  
+ARC_AGI3_MILESTONE_11_IMPLEMENTATION_REVIEW_AUTHORIZED=true  
+ARC_AGI3_MILESTONE_11_RUNTIME_SOLVER_PATCH_APPLIED=false  
+ARC_AGI3_MILESTONE_11_RANKER_RUNTIME_PATCH_APPLIED=false  
+ARC_AGI3_MILESTONE_11_RUNTIME_WIRING_PERFORMED=false  
+ARC_AGI3_MILESTONE_11_SIMULATED_OPERATION_COUNT=5  
+ARC_AGI3_MILESTONE_11_CONTRACT_VALIDATION_COUNT=10  
+ARC_AGI3_MILESTONE_11_REGRESSION_SIMULATION_COUNT=10  
+ARC_AGI3_MILESTONE_11_ROLLBACK_SIMULATION_COUNT=8  
+ARC_AGI3_MILESTONE_11_BOUNDARY_ASSERTION_COUNT=14  
+ARC_AGI3_MILESTONE_11_RUNTIME_SOLVER_MODIFIED=false  
+ARC_AGI3_MILESTONE_11_RANKER_RUNTIME_MODIFIED=false  
+ARC_AGI3_MILESTONE_11_EXTERNAL_SOLVER_DEPENDENCY=false  
+ARC_AGI3_MILESTONE_11_DIAGNOSTIC_ONLY=true  
+ARC_AGI3_MILESTONE_11_KAGGLE_SCORE_SEMANTICS=NOT_A_KAGGLE_SCORE  
+ARC_AGI3_MILESTONE_11_OFFICIAL_SCORE_CLAIM_ALLOWED=false  
+ARC_AGI3_MILESTONE_11_COMPETITIVE_SCORE_CLAIM_ALLOWED=false  
+ARC_AGI3_MILESTONE_11_REAL_PUBLIC_SCORE_CLAIMED=false  
+ARC_AGI3_MILESTONE_11_PRIVATE_SCORE_CLAIMED=false  
+ARC_AGI3_MILESTONE_11_REAL_SUBMISSION_CANDIDATE_CREATED=false  
+ARC_AGI3_MILESTONE_11_SUBMISSION_JSON_CREATED=false  
+ARC_AGI3_MILESTONE_11_UPLOAD_PACKAGE_CREATED=false  
+ARC_AGI3_MILESTONE_11_REAL_SUBMISSION_DECISION=NOT_AUTHORIZED  
+ARC_AGI3_MILESTONE_11_REAL_SUBMISSION_ALLOWED=false  
+ARC_AGI3_MILESTONE_11_KAGGLE_AUTHENTICATION_ALLOWED=false  
+ARC_AGI3_MILESTONE_11_KAGGLE_SUBMISSION_SENT=false  
+ARC_AGI3_MILESTONE_11_FAIL_CLOSED_REQUIRED=true  
+ARC_AGI3_MILESTONE_11_FAIL_CLOSED_ACTIVE=true  
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false  
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false  
+ARC_AGI3_LEGAL_CERTIFICATION=false  

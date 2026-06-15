@@ -1,0 +1,14 @@
+{
+  "decision_boundary": "IMPLEMENTATION_DRY_RUN_ONLY_NEXT_REVIEW_NO_RUNTIME_WIRING_NO_SCORE_NO_SUBMISSION",
+  "decision_id": "M11-TASK17-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-WIRING-IMPLEMENTATION-DRY-RUN-DECISION-v1",
+  "implementation_dry_run_passed": true,
+  "implementation_dry_run_ready": true,
+  "implementation_review_authorized": true,
+  "next_stage": "MILESTONE_11_TASK_18_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_REVIEW_V1",
+  "ranker_runtime_patch_applied": false,
+  "real_submission_allowed": false,
+  "runtime_solver_patch_applied": false,
+  "runtime_wiring_performed": false,
+  "score_claim_allowed": false,
+  "verdict": "LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_WIRING_IMPLEMENTATION_DRY_RUN_READY_FOR_REVIEW"
+}
