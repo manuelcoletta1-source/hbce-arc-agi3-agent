@@ -1,0 +1,47 @@
+[
+  {
+    "active": true,
+    "blocking_without_tests": true,
+    "mitigation": "Implementation must remain behind local tests and fail-closed gates.",
+    "patch_id": "patch_world_model_state_tracking_v1",
+    "risk_id": "risk_patch_world_model_state_tracking_v1",
+    "risk_level": "MEDIUM",
+    "target_layer": "world_model"
+  },
+  {
+    "active": true,
+    "blocking_without_tests": true,
+    "mitigation": "Implementation must remain behind local tests and fail-closed gates.",
+    "patch_id": "patch_goal_inference_from_terminal_state_v1",
+    "risk_id": "risk_patch_goal_inference_from_terminal_state_v1",
+    "risk_level": "MEDIUM",
+    "target_layer": "goal_inference"
+  },
+  {
+    "active": true,
+    "blocking_without_tests": true,
+    "mitigation": "Implementation must remain behind local tests and fail-closed gates.",
+    "patch_id": "patch_planner_loop_recovery_v1",
+    "risk_id": "risk_patch_planner_loop_recovery_v1",
+    "risk_level": "HIGH",
+    "target_layer": "planner"
+  },
+  {
+    "active": true,
+    "blocking_without_tests": true,
+    "mitigation": "Implementation must remain behind local tests and fail-closed gates.",
+    "patch_id": "patch_transition_verifier_feedback_v1",
+    "risk_id": "risk_patch_transition_verifier_feedback_v1",
+    "risk_level": "MEDIUM",
+    "target_layer": "verifier"
+  },
+  {
+    "active": true,
+    "blocking_without_tests": true,
+    "mitigation": "Implementation must remain behind local tests and fail-closed gates.",
+    "patch_id": "patch_action_policy_validity_guard_v1",
+    "risk_id": "risk_patch_action_policy_validity_guard_v1",
+    "risk_level": "HIGH",
+    "target_layer": "action_policy"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "criterion_id": "source_task7_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "patch_candidates_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "file_targets_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "function_targets_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "required_tests_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "risk_register_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "execution_gates_ready",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "runtime_patch_blocked",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "score_submission_boundary_preserved",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  },
+  {
+    "criterion_id": "next_stage_valid",
+    "passed": true,
+    "score": 100,
+    "severity": "PASS"
+  }
+]

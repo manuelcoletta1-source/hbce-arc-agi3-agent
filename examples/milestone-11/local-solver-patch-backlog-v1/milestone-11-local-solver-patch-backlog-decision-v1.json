@@ -1,0 +1,12 @@
+{
+  "decision_boundary": "BACKLOG_ONLY_NO_RUNTIME_PATCH_NO_SCORE_NO_SUBMISSION",
+  "decision_id": "M11-TASK8-LOCAL-SOLVER-PATCH-BACKLOG-DECISION-v1",
+  "next_stage": "MILESTONE_11_TASK_9_LOCAL_SOLVER_PATCH_IMPLEMENTATION_PLAN_V1",
+  "patch_backlog_ready": true,
+  "patch_implementation_allowed_now": false,
+  "ranker_runtime_modification_allowed": false,
+  "real_submission_allowed": false,
+  "runtime_solver_modification_allowed": false,
+  "score_claim_allowed": false,
+  "verdict": "LOCAL_SOLVER_PATCH_BACKLOG_READY_FOR_PATCH_IMPLEMENTATION_PLAN"
+}

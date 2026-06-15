@@ -1,0 +1,82 @@
+[
+  {
+    "diagnostic_only": true,
+    "execution_allowed": false,
+    "gate_id": "m11_task8_source_task7_ready_gate_v1",
+    "name": "source_task7_ready",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "diagnostic_only": true,
+    "execution_allowed": false,
+    "gate_id": "m11_task8_patch_count_valid_gate_v1",
+    "name": "patch_count_valid",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "diagnostic_only": true,
+    "execution_allowed": false,
+    "gate_id": "m11_task8_all_patch_targets_declared_gate_v1",
+    "name": "all_patch_targets_declared",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "diagnostic_only": true,
+    "execution_allowed": false,
+    "gate_id": "m11_task8_all_patch_functions_declared_gate_v1",
+    "name": "all_patch_functions_declared",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "diagnostic_only": true,
+    "execution_allowed": false,
+    "gate_id": "m11_task8_all_patch_tests_declared_gate_v1",
+    "name": "all_patch_tests_declared",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "diagnostic_only": true,
+    "execution_allowed": false,
+    "gate_id": "m11_task8_runtime_solver_modification_blocked_gate_v1",
+    "name": "runtime_solver_modification_blocked",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "diagnostic_only": true,
+    "execution_allowed": false,
+    "gate_id": "m11_task8_score_claim_blocked_gate_v1",
+    "name": "score_claim_blocked",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "diagnostic_only": true,
+    "execution_allowed": false,
+    "gate_id": "m11_task8_submission_blocked_gate_v1",
+    "name": "submission_blocked",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "diagnostic_only": true,
+    "execution_allowed": false,
+    "gate_id": "m11_task8_fail_closed_active_gate_v1",
+    "name": "fail_closed_active",
+    "passed": true,
+    "severity": "PASS"
+  },
+  {
+    "diagnostic_only": true,
+    "execution_allowed": true,
+    "gate_id": "m11_task8_next_stage_valid_gate_v1",
+    "name": "next_stage_valid",
+    "passed": true,
+    "severity": "PASS"
+  }
+]
