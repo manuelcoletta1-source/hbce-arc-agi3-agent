@@ -1,0 +1,72 @@
+[
+  {
+    "adapter_name": "world_model_state_tracking_adapter",
+    "diagnostic_only": true,
+    "dry_run_passed": true,
+    "external_solver_dependency": false,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "output_count": 6,
+    "pass_count": 6,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "target_layer": "world_model"
+  },
+  {
+    "adapter_name": "goal_inference_terminal_state_adapter",
+    "diagnostic_only": true,
+    "dry_run_passed": true,
+    "external_solver_dependency": false,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "output_count": 6,
+    "pass_count": 6,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "target_layer": "goal_inference"
+  },
+  {
+    "adapter_name": "planner_loop_recovery_adapter",
+    "diagnostic_only": true,
+    "dry_run_passed": true,
+    "external_solver_dependency": false,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "output_count": 6,
+    "pass_count": 6,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "target_layer": "planner"
+  },
+  {
+    "adapter_name": "transition_verifier_feedback_adapter",
+    "diagnostic_only": true,
+    "dry_run_passed": true,
+    "external_solver_dependency": false,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "output_count": 6,
+    "pass_count": 6,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "target_layer": "verifier"
+  },
+  {
+    "adapter_name": "action_policy_validity_guard_adapter",
+    "diagnostic_only": true,
+    "dry_run_passed": true,
+    "external_solver_dependency": false,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "output_count": 6,
+    "pass_count": 6,
+    "ranker_runtime_modified": false,
+    "runtime_solver_modified": false,
+    "score_claim_allowed": false,
+    "target_layer": "action_policy"
+  }
+]
