@@ -1,0 +1,85 @@
+# ARC AGI3 Milestone #10 - Submission Candidate Rebuild v1
+
+- status: MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_READY
+- submission_candidate_rebuild_id: MILESTONE-10-SUBMISSION-CANDIDATE-REBUILD-540B74ED16F8
+- signature: 540B74ED16F88E13
+- baseline_commit: e329a98 Add ARC AGI3 submission candidate rebuild gate
+- rebuild_mode: MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_LOCAL_ONLY
+- rebuild_scope: LOCAL_SUBMISSION_CANDIDATE_REBUILD_NO_SUBMISSION_JSON_NO_UPLOAD
+- rebuild_verdict: SUBMISSION_CANDIDATE_REBUILD_READY_FOR_REBUILT_CANDIDATE_REVIEW_REAL_SUBMISSION_BLOCKED
+- next_allowed_stage: MILESTONE_10_TASK_9_REBUILT_CANDIDATE_REVIEW_V1
+- submission_candidate_rebuild_ready: True
+- selected_candidate_id: M10-CANDIDATE-BALANCED-PATCH-STACK-v1
+- candidate_package_id: MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D
+- rebuilt_candidate_id: MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87
+- local_candidate_package_rebuilt: True
+- rebuilt_candidate_payload_created: True
+- real_submission_candidate_created: False
+- submission_json_created: False
+- upload_package_created: False
+- rebuilt_candidate_review_required_next: True
+- real_submission_decision: NOT_AUTHORIZED
+- real_submission_allowed: False
+- fail_closed_active: True
+
+## Rebuild components
+
+- m10_rebuild_candidate_manifest_v1 / kind=manifest / ready=True / creates_submission_json=False
+- m10_rebuild_candidate_index_v1 / kind=index / ready=True / creates_submission_json=False
+- m10_rebuild_candidate_payload_v1 / kind=candidate_payload / ready=True / creates_submission_json=False
+- m10_rebuild_candidate_trace_v1 / kind=trace / ready=True / creates_submission_json=False
+- m10_rebuild_candidate_boundary_v1 / kind=boundary / ready=True / creates_submission_json=False
+- m10_rebuild_candidate_review_handoff_v1 / kind=review_handoff / ready=True / creates_submission_json=False
+
+## Validation results
+
+- m10_candidate_rebuild_gate_source_ready_v1 / area=source_binding / operation=verify_rebuild_gate_source / passed=True
+- m10_candidate_rebuild_selected_candidate_valid_v1 / area=selected_candidate / operation=verify_selected_candidate / passed=True
+- m10_candidate_rebuild_package_rebuilt_v1 / area=rebuild_package / operation=verify_local_candidate_package_rebuilt / passed=True
+- m10_candidate_rebuild_components_ready_v1 / area=rebuild_components / operation=verify_rebuild_components / passed=True
+- m10_candidate_rebuild_trace_ready_v1 / area=traceability / operation=verify_rebuild_trace / passed=True
+- m10_candidate_rebuild_review_handoff_ready_v1 / area=review_handoff / operation=verify_review_handoff / passed=True
+- m10_candidate_rebuild_no_submission_json_v1 / area=submission_boundary / operation=verify_no_submission_json / passed=True
+- m10_candidate_rebuild_real_submission_blocked_v1 / area=submission_boundary / operation=verify_real_submission_blocked / passed=True
+- m10_candidate_rebuild_fail_closed_preserved_v1 / area=fail_closed / operation=verify_fail_closed_preserved / passed=True
+- m10_candidate_rebuild_next_stage_valid_v1 / area=next_stage / operation=verify_rebuilt_candidate_review_next / passed=True
+
+## Decision
+
+The local submission candidate package has been rebuilt for review. No real submission candidate, submission.json, upload package, Kaggle authentication, or Kaggle submission is created.
+
+## Markers
+
+ARC_AGI3_MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_READY=true
+ARC_AGI3_MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_VALID=true
+ARC_AGI3_MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_READY=true
+ARC_AGI3_MILESTONE_10_REBUILD_MODE=MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_LOCAL_ONLY
+ARC_AGI3_MILESTONE_10_REBUILD_VERDICT=SUBMISSION_CANDIDATE_REBUILD_READY_FOR_REBUILT_CANDIDATE_REVIEW_REAL_SUBMISSION_BLOCKED
+ARC_AGI3_MILESTONE_10_BASELINE_COMMIT=e329a98
+ARC_AGI3_MILESTONE_10_NEXT_STAGE=MILESTONE_10_TASK_9_REBUILT_CANDIDATE_REVIEW_V1
+ARC_AGI3_MILESTONE_10_SELECTED_CANDIDATE_ID=M10-CANDIDATE-BALANCED-PATCH-STACK-v1
+ARC_AGI3_MILESTONE_10_LOCAL_CANDIDATE_PACKAGE_REBUILT=true
+ARC_AGI3_MILESTONE_10_REBUILT_CANDIDATE_PAYLOAD_CREATED=true
+ARC_AGI3_MILESTONE_10_REBUILT_CANDIDATE_MANIFEST_CREATED=true
+ARC_AGI3_MILESTONE_10_REBUILT_CANDIDATE_INDEX_CREATED=true
+ARC_AGI3_MILESTONE_10_REBUILT_CANDIDATE_TRACE_CREATED=true
+ARC_AGI3_MILESTONE_10_REVIEW_HANDOFF_CREATED=true
+ARC_AGI3_MILESTONE_10_REAL_SUBMISSION_CANDIDATE_CREATED=false
+ARC_AGI3_MILESTONE_10_SUBMISSION_JSON_CREATED=false
+ARC_AGI3_MILESTONE_10_UPLOAD_PACKAGE_CREATED=false
+ARC_AGI3_MILESTONE_10_REBUILD_COMPONENT_COUNT=6
+ARC_AGI3_MILESTONE_10_REBUILD_CHECK_COUNT=30
+ARC_AGI3_MILESTONE_10_REBUILD_CASE_COUNT=10
+ARC_AGI3_MILESTONE_10_REBUILD_PASS_COUNT=10
+ARC_AGI3_MILESTONE_10_REBUILD_FAILURE_COUNT=0
+ARC_AGI3_MILESTONE_10_REBUILT_CANDIDATE_REVIEW_REQUIRED_NEXT=true
+ARC_AGI3_MILESTONE_10_REAL_SUBMISSION_DECISION=NOT_AUTHORIZED
+ARC_AGI3_MILESTONE_10_REAL_SUBMISSION_ALLOWED=false
+ARC_AGI3_MILESTONE_10_MANUAL_UPLOAD_ALLOWED=false
+ARC_AGI3_MILESTONE_10_KAGGLE_AUTHENTICATION_ALLOWED=false
+ARC_AGI3_MILESTONE_10_KAGGLE_SUBMISSION_SENT=false
+ARC_AGI3_MILESTONE_10_FAIL_CLOSED_REQUIRED=true
+ARC_AGI3_MILESTONE_10_FAIL_CLOSED_ACTIVE=true
+ARC_AGI3_EXTERNAL_API_DEPENDENCY=false
+ARC_AGI3_PRIVATE_CORE_EXPOSURE=false
+ARC_AGI3_LEGAL_CERTIFICATION=false

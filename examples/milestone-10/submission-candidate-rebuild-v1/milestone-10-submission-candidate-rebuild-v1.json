@@ -1,0 +1,1141 @@
+{
+  "baseline_commit": "e329a98 Add ARC AGI3 submission candidate rebuild gate",
+  "boundary_controls": [
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "kaggle_submission_sent_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+  "fail_closed_active": true,
+  "fail_closed_controls": [
+    "real_submission_decision_not_authorized",
+    "real_submission_allowed_false",
+    "manual_upload_allowed_false",
+    "kaggle_authentication_allowed_false",
+    "kaggle_submission_sent_false",
+    "real_submission_candidate_created_false",
+    "submission_json_created_false",
+    "upload_package_created_false",
+    "fail_closed_active"
+  ],
+  "fail_closed_required": true,
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "local_candidate_package_rebuilt": true,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_10_submission_candidate_rebuild_v1"
+  },
+  "milestone": "Milestone #10",
+  "next_allowed_stage": "MILESTONE_10_TASK_9_REBUILT_CANDIDATE_REVIEW_V1",
+  "passed_gate_count": 61,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "rebuild_case_count": 10,
+  "rebuild_cases": [
+    {
+      "area": "source_binding",
+      "case_id": "m10_candidate_rebuild_gate_source_ready_v1",
+      "operation": "verify_rebuild_gate_source"
+    },
+    {
+      "area": "selected_candidate",
+      "case_id": "m10_candidate_rebuild_selected_candidate_valid_v1",
+      "operation": "verify_selected_candidate"
+    },
+    {
+      "area": "rebuild_package",
+      "case_id": "m10_candidate_rebuild_package_rebuilt_v1",
+      "operation": "verify_local_candidate_package_rebuilt"
+    },
+    {
+      "area": "rebuild_components",
+      "case_id": "m10_candidate_rebuild_components_ready_v1",
+      "operation": "verify_rebuild_components"
+    },
+    {
+      "area": "traceability",
+      "case_id": "m10_candidate_rebuild_trace_ready_v1",
+      "operation": "verify_rebuild_trace"
+    },
+    {
+      "area": "review_handoff",
+      "case_id": "m10_candidate_rebuild_review_handoff_ready_v1",
+      "operation": "verify_review_handoff"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m10_candidate_rebuild_no_submission_json_v1",
+      "operation": "verify_no_submission_json"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m10_candidate_rebuild_real_submission_blocked_v1",
+      "operation": "verify_real_submission_blocked"
+    },
+    {
+      "area": "fail_closed",
+      "case_id": "m10_candidate_rebuild_fail_closed_preserved_v1",
+      "operation": "verify_fail_closed_preserved"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m10_candidate_rebuild_next_stage_valid_v1",
+      "operation": "verify_rebuilt_candidate_review_next"
+    }
+  ],
+  "rebuild_check_count": 30,
+  "rebuild_check_list": [
+    "rebuild_gate_artifact_exists",
+    "rebuild_gate_artifact_ready",
+    "rebuild_gate_signature_present",
+    "rebuild_gate_next_stage_matches_task_8",
+    "rebuild_gate_passed",
+    "local_candidate_rebuild_allowed",
+    "selected_candidate_id_valid",
+    "candidate_package_id_valid",
+    "rebuild_component_count_valid",
+    "all_rebuild_components_required",
+    "all_rebuild_components_safe",
+    "local_candidate_package_rebuilt",
+    "rebuilt_candidate_payload_created",
+    "rebuilt_candidate_manifest_created",
+    "rebuilt_candidate_index_created",
+    "rebuilt_candidate_trace_created",
+    "review_handoff_created",
+    "real_submission_candidate_not_created",
+    "submission_json_not_created",
+    "upload_package_not_created",
+    "next_stage_valid",
+    "fail_closed_required",
+    "fail_closed_active",
+    "real_submission_not_authorized",
+    "real_submission_blocked",
+    "manual_upload_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_submission_absent",
+    "no_private_core_exposure",
+    "no_legal_certification"
+  ],
+  "rebuild_checks": {
+    "all_rebuild_components_deterministic": true,
+    "all_rebuild_components_local_only": true,
+    "all_rebuild_components_ready": true,
+    "all_rebuild_components_required": true,
+    "all_rebuild_components_safe": true,
+    "boundary_control_count_valid": true,
+    "candidate_package_id_valid": true,
+    "decision_allows_local_rebuild_only": true,
+    "external_api_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_control_count_valid": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_not_allowed": true,
+    "kaggle_submission_not_sent": true,
+    "legal_certification_false": true,
+    "local_candidate_package_rebuilt": true,
+    "local_candidate_rebuild_allowed": true,
+    "manual_upload_not_allowed": true,
+    "next_stage_valid": true,
+    "operator_approval_required_for_real_submission": true,
+    "private_core_exposure_false": true,
+    "real_submission_allowed_false": true,
+    "real_submission_candidate_not_created": true,
+    "real_submission_decision_not_authorized": true,
+    "rebuild_case_count_valid": true,
+    "rebuild_check_count_valid": true,
+    "rebuild_component_count_valid": true,
+    "rebuild_gate_artifact_present": true,
+    "rebuild_gate_artifact_ready": true,
+    "rebuild_gate_artifact_valid": true,
+    "rebuild_gate_commit_valid": true,
+    "rebuild_gate_locked": true,
+    "rebuild_gate_next_stage_matches_task_8": true,
+    "rebuild_gate_passed": true,
+    "rebuild_gate_ready": true,
+    "rebuild_mode_valid": true,
+    "rebuild_record_created": true,
+    "rebuild_record_locked": true,
+    "rebuild_record_ready": true,
+    "rebuild_scope_valid": true,
+    "rebuild_trace_hash_present": true,
+    "rebuild_verdict_valid": true,
+    "rebuilt_candidate_id_present": true,
+    "rebuilt_candidate_index_created": true,
+    "rebuilt_candidate_manifest_created": true,
+    "rebuilt_candidate_payload_created": true,
+    "rebuilt_candidate_review_required_next": true,
+    "rebuilt_candidate_signature_present": true,
+    "rebuilt_candidate_trace_created": true,
+    "review_handoff_created": true,
+    "selected_candidate_id_valid": true,
+    "submission_candidate_rebuild_required": true,
+    "submission_json_not_created": true,
+    "upload_package_not_created": true
+  },
+  "rebuild_component_count": 6,
+  "rebuild_components": [
+    {
+      "component_id": "m10_rebuild_candidate_manifest_v1",
+      "creates_real_submission": false,
+      "creates_submission_json": false,
+      "creates_upload_package": false,
+      "deterministic": true,
+      "kind": "manifest",
+      "local_only": true,
+      "ready": true,
+      "required": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false
+    },
+    {
+      "component_id": "m10_rebuild_candidate_index_v1",
+      "creates_real_submission": false,
+      "creates_submission_json": false,
+      "creates_upload_package": false,
+      "deterministic": true,
+      "kind": "index",
+      "local_only": true,
+      "ready": true,
+      "required": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false
+    },
+    {
+      "component_id": "m10_rebuild_candidate_payload_v1",
+      "creates_real_submission": false,
+      "creates_submission_json": false,
+      "creates_upload_package": false,
+      "deterministic": true,
+      "kind": "candidate_payload",
+      "local_only": true,
+      "ready": true,
+      "required": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false
+    },
+    {
+      "component_id": "m10_rebuild_candidate_trace_v1",
+      "creates_real_submission": false,
+      "creates_submission_json": false,
+      "creates_upload_package": false,
+      "deterministic": true,
+      "kind": "trace",
+      "local_only": true,
+      "ready": true,
+      "required": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false
+    },
+    {
+      "component_id": "m10_rebuild_candidate_boundary_v1",
+      "creates_real_submission": false,
+      "creates_submission_json": false,
+      "creates_upload_package": false,
+      "deterministic": true,
+      "kind": "boundary",
+      "local_only": true,
+      "ready": true,
+      "required": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false
+    },
+    {
+      "component_id": "m10_rebuild_candidate_review_handoff_v1",
+      "creates_real_submission": false,
+      "creates_submission_json": false,
+      "creates_upload_package": false,
+      "deterministic": true,
+      "kind": "review_handoff",
+      "local_only": true,
+      "ready": true,
+      "required": true,
+      "requires_external_api": false,
+      "requires_kaggle_upload": false
+    }
+  ],
+  "rebuild_failure_count": 0,
+  "rebuild_gate_count": 61,
+  "rebuild_gate_source": {
+    "path": "examples/milestone-10/submission-candidate-rebuild-gate-v1/milestone-10-submission-candidate-rebuild-gate-v1.json",
+    "present": true,
+    "rebuild_gate_id": "MILESTONE-10-REBUILD-GATE-1CA22527EBF1",
+    "sha256": "cf97a3da0d51d49ccd062c939369e0cdbc6f051fceca07d8ddacfde1409c2eef",
+    "sha256_16": "CF97A3DA0D51D49C",
+    "status": "MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_GATE_V1_READY"
+  },
+  "rebuild_gates": [
+    {
+      "name": "rebuild_gate_artifact_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_gate_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_gate_artifact_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_gate_commit_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_gate_next_stage_matches_task_8",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_gate_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_gate_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_gate_passed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_candidate_rebuild_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_candidate_rebuild_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "selected_candidate_id_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "candidate_package_id_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "decision_allows_local_rebuild_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "operator_approval_required_for_real_submission",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_component_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_rebuild_components_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_rebuild_components_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_rebuild_components_local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_rebuild_components_deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_rebuild_components_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_candidate_package_rebuilt",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_payload_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_manifest_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_index_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_trace_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "review_handoff_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_id_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_signature_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_trace_hash_present",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_check_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_case_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "boundary_control_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_record_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_record_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_record_locked",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_mode_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_scope_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_verdict_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuilt_candidate_review_required_next",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_candidate_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_json_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "upload_package_not_created",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_decision_not_authorized",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "manual_upload_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_authentication_not_allowed",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "kaggle_submission_not_sent",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_required",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "legal_certification_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_rebuild_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "rebuild_failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "public_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "deterministic",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "local_only",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "dry_run_only",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "rebuild_index": {
+    "baseline_commit": "e329a98 Add ARC AGI3 submission candidate rebuild gate",
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "depends_on_rebuild_gate": "MILESTONE-10-REBUILD-GATE-1CA22527EBF1",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_candidate_package_rebuilt": true,
+    "manual_upload_allowed": false,
+    "milestone": "Milestone #10",
+    "next_allowed_stage": "MILESTONE_10_TASK_9_REBUILT_CANDIDATE_REVIEW_V1",
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuild_component_count": 6,
+    "rebuild_mode": "MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_LOCAL_ONLY",
+    "rebuild_scope": "LOCAL_SUBMISSION_CANDIDATE_REBUILD_NO_SUBMISSION_JSON_NO_UPLOAD",
+    "rebuild_verdict": "SUBMISSION_CANDIDATE_REBUILD_READY_FOR_REBUILT_CANDIDATE_REVIEW_REAL_SUBMISSION_BLOCKED",
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "rebuilt_candidate_payload_created": true,
+    "rebuilt_candidate_review_required_next": true,
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "submission_candidate_rebuild_created": true,
+    "submission_candidate_rebuild_ready": true,
+    "submission_json_created": false,
+    "task": "Task 8",
+    "upload_package_created": false
+  },
+  "rebuild_issue_count": 0,
+  "rebuild_issues": [
+    {
+      "active": false,
+      "name": "rebuild_gate_artifact_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_gate_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_gate_artifact_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_gate_commit_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_gate_next_stage_matches_task_8",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_gate_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_gate_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_gate_passed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_candidate_rebuild_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_candidate_rebuild_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "selected_candidate_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "candidate_package_id_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "decision_allows_local_rebuild_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "operator_approval_required_for_real_submission",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_component_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_rebuild_components_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_rebuild_components_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_rebuild_components_local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_rebuild_components_deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_rebuild_components_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_candidate_package_rebuilt",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_payload_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_manifest_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_index_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_trace_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "review_handoff_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_id_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_signature_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_trace_hash_present",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_check_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_case_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "boundary_control_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_record_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_record_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_record_locked",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_mode_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_scope_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_verdict_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuilt_candidate_review_required_next",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_candidate_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_json_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "upload_package_not_created",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_decision_not_authorized",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "real_submission_allowed_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "manual_upload_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_authentication_not_allowed",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "kaggle_submission_not_sent",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_required",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_api_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "private_core_exposure_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "legal_certification_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_rebuild_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "rebuild_failure_count_zero",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "public_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "deterministic",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "local_only",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "dry_run_only",
+      "severity": "BLOCKING"
+    }
+  ],
+  "rebuild_mode": "MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_LOCAL_ONLY",
+  "rebuild_pass_count": 10,
+  "rebuild_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source_binding",
+      "case_id": "m10_candidate_rebuild_gate_source_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_rebuild_gate_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "selected_candidate",
+      "case_id": "m10_candidate_rebuild_selected_candidate_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_selected_candidate",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "rebuild_package",
+      "case_id": "m10_candidate_rebuild_package_rebuilt_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_local_candidate_package_rebuilt",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "rebuild_components",
+      "case_id": "m10_candidate_rebuild_components_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_rebuild_components",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "traceability",
+      "case_id": "m10_candidate_rebuild_trace_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_rebuild_trace",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "review_handoff",
+      "case_id": "m10_candidate_rebuild_review_handoff_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_review_handoff",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m10_candidate_rebuild_no_submission_json_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_submission_json",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m10_candidate_rebuild_real_submission_blocked_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_real_submission_blocked",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "fail_closed",
+      "case_id": "m10_candidate_rebuild_fail_closed_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_fail_closed_preserved",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m10_candidate_rebuild_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_rebuilt_candidate_review_next",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "rebuild_scope": "LOCAL_SUBMISSION_CANDIDATE_REBUILD_NO_SUBMISSION_JSON_NO_UPLOAD",
+  "rebuild_state": {
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_candidate_package_rebuilt": true,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_10_TASK_9_REBUILT_CANDIDATE_REVIEW_V1",
+    "private_core_exposure": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuild_mode": "MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_LOCAL_ONLY",
+    "rebuild_scope": "LOCAL_SUBMISSION_CANDIDATE_REBUILD_NO_SUBMISSION_JSON_NO_UPLOAD",
+    "rebuild_verdict": "SUBMISSION_CANDIDATE_REBUILD_READY_FOR_REBUILT_CANDIDATE_REVIEW_REAL_SUBMISSION_BLOCKED",
+    "rebuilt_candidate_index_created": true,
+    "rebuilt_candidate_manifest_created": true,
+    "rebuilt_candidate_payload_created": true,
+    "rebuilt_candidate_review_required_next": true,
+    "rebuilt_candidate_trace_created": true,
+    "review_handoff_created": true,
+    "submission_candidate_rebuild_created": true,
+    "submission_candidate_rebuild_locked": true,
+    "submission_candidate_rebuild_ready": true,
+    "submission_candidate_rebuild_required": true,
+    "submission_json_created": false,
+    "upload_package_created": false
+  },
+  "rebuild_trace": {
+    "boundary": "LOCAL_ONLY_NO_SUBMISSION",
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "source_rebuild_gate_id": "MILESTONE-10-REBUILD-GATE-1CA22527EBF1",
+    "trace_hash": "8c46a24627246bb4c7cfcf018b9a8ba6ad2edac8e10546de10a700125d47fda8",
+    "trace_hash_16": "8C46A24627246BB4",
+    "trace_ready": true
+  },
+  "rebuild_verdict": "SUBMISSION_CANDIDATE_REBUILD_READY_FOR_REBUILT_CANDIDATE_REVIEW_REAL_SUBMISSION_BLOCKED",
+  "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+  "rebuilt_candidate_index_created": true,
+  "rebuilt_candidate_manifest_created": true,
+  "rebuilt_candidate_payload": {
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "local_candidate_package_rebuilt": true,
+    "payload_kind": "LOCAL_REBUILT_CANDIDATE_PACKAGE",
+    "ready_for_review": true,
+    "real_submission_candidate_created": false,
+    "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+    "rebuilt_candidate_payload_created": true,
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "signature": "32F7FBEDFF8727EB",
+    "source_candidate_refresh_id": "MILESTONE-10-CANDIDATE-REFRESH-A684C4B45643",
+    "source_rebuild_gate_id": "MILESTONE-10-REBUILD-GATE-1CA22527EBF1",
+    "submission_json_created": false,
+    "upload_package_created": false
+  },
+  "rebuilt_candidate_payload_created": true,
+  "rebuilt_candidate_review_required_next": true,
+  "rebuilt_candidate_trace_created": true,
+  "review_handoff_created": true,
+  "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+  "signature": "540B74ED16F88E13",
+  "source_summary": {
+    "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+    "candidate_refresh_id": "MILESTONE-10-CANDIDATE-REFRESH-A684C4B45643",
+    "decision": "ALLOW_LOCAL_SUBMISSION_CANDIDATE_REBUILD_ONLY",
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "gate_baseline_commit": "ccb7a12 Add ARC AGI3 candidate refresh",
+    "gate_sha256": "cf97a3da0d51d49ccd062c939369e0cdbc6f051fceca07d8ddacfde1409c2eef",
+    "gate_sha256_16": "CF97A3DA0D51D49C",
+    "gate_signature": "1CA22527EBF104E7",
+    "gate_status": "MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_GATE_V1_READY",
+    "kaggle_authentication_allowed": false,
+    "kaggle_submission_sent": false,
+    "local_candidate_rebuild_allowed": true,
+    "manual_upload_allowed": false,
+    "next_allowed_stage": "MILESTONE_10_TASK_8_SUBMISSION_CANDIDATE_REBUILD_V1",
+    "operator_approval_required_for_real_submission": true,
+    "previous_candidate_id": "MILESTONE-8-SUBMISSION-REFRESH-14D9AAA149C0",
+    "previous_refresh_id": "MILESTONE-10-BENCHMARK-REFRESH-CEC4FAA5CFF3",
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "rebuild_gate_id": "MILESTONE-10-REBUILD-GATE-1CA22527EBF1",
+    "rebuild_gate_locked": true,
+    "rebuild_gate_passed": true,
+    "rebuild_gate_path": "examples/milestone-10/submission-candidate-rebuild-gate-v1/milestone-10-submission-candidate-rebuild-gate-v1.json",
+    "rebuild_gate_present": true,
+    "rebuild_gate_ready": true,
+    "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+    "submission_candidate_rebuild_required_next": true,
+    "submission_json_created": false,
+    "upload_package_created": false
+  },
+  "status": "MILESTONE_10_SUBMISSION_CANDIDATE_REBUILD_V1_READY",
+  "submission_candidate_rebuild_created": true,
+  "submission_candidate_rebuild_id": "MILESTONE-10-SUBMISSION-CANDIDATE-REBUILD-540B74ED16F8",
+  "submission_candidate_rebuild_locked": true,
+  "submission_candidate_rebuild_ready": true,
+  "submission_json_created": false,
+  "task": "Task 8",
+  "title": "Submission Candidate Rebuild v1",
+  "upload_package_created": false,
+  "warning_count": 0
+}

@@ -1,0 +1,15 @@
+{
+  "candidate_package_id": "MILESTONE-10-CANDIDATE-REFRESH-PACKAGE-CF04A9CB1B1D",
+  "local_candidate_package_rebuilt": true,
+  "payload_kind": "LOCAL_REBUILT_CANDIDATE_PACKAGE",
+  "ready_for_review": true,
+  "real_submission_candidate_created": false,
+  "rebuilt_candidate_id": "MILESTONE-10-REBUILT-CANDIDATE-32F7FBEDFF87",
+  "rebuilt_candidate_payload_created": true,
+  "selected_candidate_id": "M10-CANDIDATE-BALANCED-PATCH-STACK-v1",
+  "signature": "32F7FBEDFF8727EB",
+  "source_candidate_refresh_id": "MILESTONE-10-CANDIDATE-REFRESH-A684C4B45643",
+  "source_rebuild_gate_id": "MILESTONE-10-REBUILD-GATE-1CA22527EBF1",
+  "submission_json_created": false,
+  "upload_package_created": false
+}
