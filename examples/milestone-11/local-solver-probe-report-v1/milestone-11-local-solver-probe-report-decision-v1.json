@@ -1,0 +1,12 @@
+{
+  "competitive_score_claim_allowed": false,
+  "coverage_status": "LOCAL_DIAGNOSTIC_COVERAGE_PASS",
+  "decision_boundary": "REPORT_ONLY_NO_SCORE_NO_SUBMISSION",
+  "decision_id": "M11-TASK7-LOCAL-SOLVER-PROBE-REPORT-DECISION-v1",
+  "local_solver_diagnostic_measured": true,
+  "next_stage": "MILESTONE_11_TASK_8_LOCAL_SOLVER_PATCH_BACKLOG_V1",
+  "official_score_claim_allowed": false,
+  "probe_results_interpreted": true,
+  "real_submission_allowed": false,
+  "verdict": "LOCAL_SOLVER_PROBE_REPORT_READY_FOR_SOLVER_PATCH_BACKLOG"
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "coverage": "COVERED_PASS",
+    "diagnostic_only": true,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer": "world_model",
+    "pass_count": 6,
+    "probe_id": "world_model_probe_v1",
+    "result_count": 6
+  },
+  {
+    "coverage": "COVERED_PASS",
+    "diagnostic_only": true,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer": "goal_inference",
+    "pass_count": 6,
+    "probe_id": "goal_inference_probe_v1",
+    "result_count": 6
+  },
+  {
+    "coverage": "COVERED_PASS",
+    "diagnostic_only": true,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer": "planner",
+    "pass_count": 6,
+    "probe_id": "planner_probe_v1",
+    "result_count": 6
+  },
+  {
+    "coverage": "COVERED_PASS",
+    "diagnostic_only": true,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer": "verifier",
+    "pass_count": 6,
+    "probe_id": "transition_verifier_probe_v1",
+    "result_count": 6
+  },
+  {
+    "coverage": "COVERED_PASS",
+    "diagnostic_only": true,
+    "failure_count": 0,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "layer": "action_policy",
+    "pass_count": 6,
+    "probe_id": "action_policy_probe_v1",
+    "result_count": 6
+  }
+]

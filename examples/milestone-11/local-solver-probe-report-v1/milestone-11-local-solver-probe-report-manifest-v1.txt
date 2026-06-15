@@ -1,0 +1,66 @@
+ARC AGI3 MILESTONE 11 TASK 7 LOCAL SOLVER PROBE REPORT MANIFEST v1
+task_7_id=MILESTONE-11-LOCAL-SOLVER-PROBE-REPORT-275783499AFC
+signature=275783499AFC63C1
+status=MILESTONE_11_LOCAL_SOLVER_PROBE_REPORT_V1_READY
+baseline_commit=2d9ccce Add ARC AGI3 solver probe integration
+task_mode=MILESTONE_11_LOCAL_SOLVER_PROBE_REPORT_V1_LOCAL_ONLY
+task_verdict=LOCAL_SOLVER_PROBE_REPORT_READY_FOR_SOLVER_PATCH_BACKLOG
+next_stage=MILESTONE_11_TASK_8_LOCAL_SOLVER_PATCH_BACKLOG_V1
+task_7_ready=True
+report_created=True
+report_section_count=7
+coverage_layer_count=5
+limits_count=5
+patch_backlog_count=5
+probe_result_count=30
+probe_pass_count=30
+probe_failure_count=0
+diagnostic_only=True
+kaggle_score_semantics=NOT_A_KAGGLE_SCORE
+official_score_claim_allowed=False
+competitive_score_claim_allowed=False
+runtime_solver_modified=False
+external_solver_dependency=False
+real_public_score_claimed=False
+private_score_claimed=False
+real_benchmark_score=None
+real_submission_candidate_created=False
+submission_json_created=False
+upload_package_created=False
+real_submission_decision=NOT_AUTHORIZED
+real_submission_allowed=False
+manual_upload_allowed=False
+kaggle_authentication_allowed=False
+kaggle_submission_sent=False
+fail_closed_required=True
+fail_closed_active=True
+external_api_dependency=false
+contains_api_keys=false
+private_core_exposure=false
+legal_certification=false
+
+COVERAGE_MATRIX
+world_model probe=world_model_probe_v1 result_count=6 pass_count=6 failure_count=0 coverage=COVERED_PASS
+goal_inference probe=goal_inference_probe_v1 result_count=6 pass_count=6 failure_count=0 coverage=COVERED_PASS
+planner probe=planner_probe_v1 result_count=6 pass_count=6 failure_count=0 coverage=COVERED_PASS
+verifier probe=transition_verifier_probe_v1 result_count=6 pass_count=6 failure_count=0 coverage=COVERED_PASS
+action_policy probe=action_policy_probe_v1 result_count=6 pass_count=6 failure_count=0 coverage=COVERED_PASS
+
+SOLVER_PATCH_BACKLOG
+patch_world_model_state_tracking_v1 target=world_model priority=P0 status=PLANNED
+patch_goal_inference_from_terminal_state_v1 target=goal_inference priority=P0 status=PLANNED
+patch_planner_loop_recovery_v1 target=planner priority=P0 status=PLANNED
+patch_transition_verifier_feedback_v1 target=verifier priority=P0 status=PLANNED
+patch_action_policy_validity_guard_v1 target=action_policy priority=P0 status=PLANNED
+
+REPORT_CASE_RESULTS
+m11_task7_source_task6_ready_v1 area=source operation=verify_task_6_source passed=True evidence_score=100
+m11_task7_report_sections_ready_v1 area=report operation=verify_report_sections passed=True evidence_score=100
+m11_task7_coverage_matrix_ready_v1 area=coverage operation=verify_coverage_matrix passed=True evidence_score=100
+m11_task7_limits_ready_v1 area=limits operation=verify_limits passed=True evidence_score=100
+m11_task7_patch_backlog_ready_v1 area=patch_backlog operation=verify_patch_backlog passed=True evidence_score=100
+m11_task7_report_decision_ready_v1 area=decision operation=verify_report_decision passed=True evidence_score=100
+m11_task7_score_boundary_preserved_v1 area=score_boundary operation=verify_no_score_claim passed=True evidence_score=100
+m11_task7_submission_boundary_preserved_v1 area=submission_boundary operation=verify_no_submission passed=True evidence_score=100
+m11_task7_next_stage_valid_v1 area=next_stage operation=verify_next_stage passed=True evidence_score=100
+m11_task7_metadata_safe_v1 area=metadata operation=verify_metadata_safe passed=True evidence_score=100

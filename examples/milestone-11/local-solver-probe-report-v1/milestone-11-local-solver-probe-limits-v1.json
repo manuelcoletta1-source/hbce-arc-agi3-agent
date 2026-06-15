@@ -1,0 +1,27 @@
+[
+  {
+    "limit_id": "not_official_kaggle_score_v1",
+    "severity": "BLOCKING",
+    "statement": "The probe report is local diagnostic output and is not a Kaggle public/private score."
+  },
+  {
+    "limit_id": "local_fixture_scope_only_v1",
+    "severity": "HIGH",
+    "statement": "The report measures synthetic/local diagnostic fixtures only."
+  },
+  {
+    "limit_id": "no_runtime_solver_patch_yet_v1",
+    "severity": "HIGH",
+    "statement": "Task 6 did not modify runtime solver or ranker logic."
+  },
+  {
+    "limit_id": "no_real_submission_artifact_v1",
+    "severity": "BLOCKING",
+    "statement": "No submission.json, upload package, authentication, or Kaggle upload exists."
+  },
+  {
+    "limit_id": "competitive_claim_not_allowed_v1",
+    "severity": "BLOCKING",
+    "statement": "No public competitive claim is allowed from this diagnostic report."
+  }
+]

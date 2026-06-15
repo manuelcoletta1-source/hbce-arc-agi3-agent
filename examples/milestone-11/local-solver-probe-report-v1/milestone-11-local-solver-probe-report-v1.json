@@ -1,0 +1,1635 @@
+{
+  "baseline_commit": "2d9ccce Add ARC AGI3 solver probe integration",
+  "competitive_score_claim_allowed": false,
+  "coverage_layer_count": 5,
+  "coverage_matrix": [
+    {
+      "coverage": "COVERED_PASS",
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "layer": "world_model",
+      "pass_count": 6,
+      "probe_id": "world_model_probe_v1",
+      "result_count": 6
+    },
+    {
+      "coverage": "COVERED_PASS",
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "layer": "goal_inference",
+      "pass_count": 6,
+      "probe_id": "goal_inference_probe_v1",
+      "result_count": 6
+    },
+    {
+      "coverage": "COVERED_PASS",
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "layer": "planner",
+      "pass_count": 6,
+      "probe_id": "planner_probe_v1",
+      "result_count": 6
+    },
+    {
+      "coverage": "COVERED_PASS",
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "layer": "verifier",
+      "pass_count": 6,
+      "probe_id": "transition_verifier_probe_v1",
+      "result_count": 6
+    },
+    {
+      "coverage": "COVERED_PASS",
+      "diagnostic_only": true,
+      "failure_count": 0,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "layer": "action_policy",
+      "pass_count": 6,
+      "probe_id": "action_policy_probe_v1",
+      "result_count": 6
+    }
+  ],
+  "diagnostic_only": true,
+  "external_solver_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "kaggle_authentication_allowed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "limits_and_non_claims": [
+    {
+      "limit_id": "not_official_kaggle_score_v1",
+      "severity": "BLOCKING",
+      "statement": "The probe report is local diagnostic output and is not a Kaggle public/private score."
+    },
+    {
+      "limit_id": "local_fixture_scope_only_v1",
+      "severity": "HIGH",
+      "statement": "The report measures synthetic/local diagnostic fixtures only."
+    },
+    {
+      "limit_id": "no_runtime_solver_patch_yet_v1",
+      "severity": "HIGH",
+      "statement": "Task 6 did not modify runtime solver or ranker logic."
+    },
+    {
+      "limit_id": "no_real_submission_artifact_v1",
+      "severity": "BLOCKING",
+      "statement": "No submission.json, upload package, authentication, or Kaggle upload exists."
+    },
+    {
+      "limit_id": "competitive_claim_not_allowed_v1",
+      "severity": "BLOCKING",
+      "statement": "No public competitive claim is allowed from this diagnostic report."
+    }
+  ],
+  "limits_count": 5,
+  "manual_upload_allowed": false,
+  "metadata": {
+    "contains_api_keys": false,
+    "deterministic": true,
+    "dry_run_only": true,
+    "external_api_dependency": false,
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "local_only": true,
+    "private_core_exposure": false,
+    "public_safe": true,
+    "source": "milestone_11_local_solver_probe_report_v1"
+  },
+  "milestone": "Milestone #11",
+  "next_stage": "MILESTONE_11_TASK_8_LOCAL_SOLVER_PATCH_BACKLOG_V1",
+  "official_score_claim_allowed": false,
+  "passed_gate_count": 18,
+  "patch_backlog_count": 5,
+  "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+  "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+  "private_score_claim_allowed": false,
+  "private_score_claimed": false,
+  "probe_failure_count": 0,
+  "probe_pass_count": 30,
+  "probe_result_count": 30,
+  "public_score_claim_allowed": false,
+  "ranker_runtime_modified": false,
+  "real_benchmark_score": null,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "real_submission_decision": "NOT_AUTHORIZED",
+  "report_case_count": 10,
+  "report_case_failure_count": 0,
+  "report_case_pass_count": 10,
+  "report_case_results": [
+    {
+      "actual_status": "PASS",
+      "area": "source",
+      "case_id": "m11_task7_source_task6_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_task_6_source",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "report",
+      "case_id": "m11_task7_report_sections_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_report_sections",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "coverage",
+      "case_id": "m11_task7_coverage_matrix_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_coverage_matrix",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "limits",
+      "case_id": "m11_task7_limits_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_limits",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "patch_backlog",
+      "case_id": "m11_task7_patch_backlog_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_patch_backlog",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "decision",
+      "case_id": "m11_task7_report_decision_ready_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_report_decision",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "score_boundary",
+      "case_id": "m11_task7_score_boundary_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_score_claim",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "submission_boundary",
+      "case_id": "m11_task7_submission_boundary_preserved_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_no_submission",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "next_stage",
+      "case_id": "m11_task7_next_stage_valid_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_next_stage",
+      "passed": true,
+      "priority": "P0"
+    },
+    {
+      "actual_status": "PASS",
+      "area": "metadata",
+      "case_id": "m11_task7_metadata_safe_v1",
+      "evidence_score": 100,
+      "expected_status": "PASS",
+      "operation": "verify_metadata_safe",
+      "passed": true,
+      "priority": "P0"
+    }
+  ],
+  "report_cases": [
+    {
+      "area": "source",
+      "case_id": "m11_task7_source_task6_ready_v1",
+      "operation": "verify_task_6_source"
+    },
+    {
+      "area": "report",
+      "case_id": "m11_task7_report_sections_ready_v1",
+      "operation": "verify_report_sections"
+    },
+    {
+      "area": "coverage",
+      "case_id": "m11_task7_coverage_matrix_ready_v1",
+      "operation": "verify_coverage_matrix"
+    },
+    {
+      "area": "limits",
+      "case_id": "m11_task7_limits_ready_v1",
+      "operation": "verify_limits"
+    },
+    {
+      "area": "patch_backlog",
+      "case_id": "m11_task7_patch_backlog_ready_v1",
+      "operation": "verify_patch_backlog"
+    },
+    {
+      "area": "decision",
+      "case_id": "m11_task7_report_decision_ready_v1",
+      "operation": "verify_report_decision"
+    },
+    {
+      "area": "score_boundary",
+      "case_id": "m11_task7_score_boundary_preserved_v1",
+      "operation": "verify_no_score_claim"
+    },
+    {
+      "area": "submission_boundary",
+      "case_id": "m11_task7_submission_boundary_preserved_v1",
+      "operation": "verify_no_submission"
+    },
+    {
+      "area": "next_stage",
+      "case_id": "m11_task7_next_stage_valid_v1",
+      "operation": "verify_next_stage"
+    },
+    {
+      "area": "metadata",
+      "case_id": "m11_task7_metadata_safe_v1",
+      "operation": "verify_metadata_safe"
+    }
+  ],
+  "report_check_count": 46,
+  "report_check_list": [
+    "task_6_artifact_exists",
+    "task_6_artifact_ready",
+    "task_6_validated",
+    "probe_integration_ready",
+    "probe_contract_created",
+    "probe_result_count_valid",
+    "probe_pass_count_valid",
+    "probe_failure_count_zero",
+    "layer_report_count_valid",
+    "report_sections_created",
+    "report_section_count_valid",
+    "coverage_matrix_created",
+    "coverage_matrix_count_valid",
+    "all_layers_reported",
+    "diagnostic_interpretation_created",
+    "limits_created",
+    "patch_backlog_created",
+    "patch_backlog_count_valid",
+    "report_decision_created",
+    "diagnostic_only_preserved",
+    "not_kaggle_score_preserved",
+    "official_score_claim_blocked",
+    "public_score_claim_blocked",
+    "private_score_claim_blocked",
+    "real_public_score_not_claimed",
+    "private_score_not_claimed",
+    "real_benchmark_score_absent",
+    "runtime_solver_not_modified",
+    "external_solver_dependency_false",
+    "real_submission_candidate_absent",
+    "submission_json_absent",
+    "upload_package_absent",
+    "real_submission_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_submission_not_sent",
+    "fail_closed_required",
+    "fail_closed_active",
+    "next_stage_valid",
+    "public_safe",
+    "deterministic",
+    "local_only",
+    "dry_run_only",
+    "external_api_dependency_false",
+    "contains_api_keys_false",
+    "private_core_exposure_false",
+    "legal_certification_false"
+  ],
+  "report_checks": {
+    "all_layers_reported": true,
+    "contains_api_keys_false": true,
+    "coverage_matrix_count_valid": true,
+    "coverage_matrix_created": true,
+    "deterministic": true,
+    "diagnostic_interpretation_created": true,
+    "diagnostic_only_preserved": true,
+    "dry_run_only": true,
+    "external_api_dependency_false": true,
+    "external_solver_dependency_false": true,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_blocked": true,
+    "kaggle_submission_not_sent": true,
+    "layer_report_count_valid": true,
+    "legal_certification_false": true,
+    "limits_created": true,
+    "local_only": true,
+    "next_stage_valid": true,
+    "not_kaggle_score_preserved": true,
+    "official_score_claim_blocked": true,
+    "patch_backlog_count_valid": true,
+    "patch_backlog_created": true,
+    "private_core_exposure_false": true,
+    "private_score_claim_blocked": true,
+    "private_score_not_claimed": true,
+    "probe_contract_created": true,
+    "probe_failure_count_zero": true,
+    "probe_integration_ready": true,
+    "probe_pass_count_valid": true,
+    "probe_result_count_valid": true,
+    "public_safe": true,
+    "public_score_claim_blocked": true,
+    "real_benchmark_score_absent": true,
+    "real_public_score_not_claimed": true,
+    "real_submission_blocked": true,
+    "real_submission_candidate_absent": true,
+    "report_case_count_valid": true,
+    "report_check_count_valid": true,
+    "report_decision_created": true,
+    "report_section_count_valid": true,
+    "report_sections_created": true,
+    "runtime_solver_not_modified": true,
+    "submission_json_absent": true,
+    "task_6_artifact_exists": true,
+    "task_6_artifact_ready": true,
+    "task_6_validated": true,
+    "upload_package_absent": true
+  },
+  "report_created": true,
+  "report_decision": {
+    "competitive_score_claim_allowed": false,
+    "coverage_status": "LOCAL_DIAGNOSTIC_COVERAGE_PASS",
+    "decision_boundary": "REPORT_ONLY_NO_SCORE_NO_SUBMISSION",
+    "decision_id": "M11-TASK7-LOCAL-SOLVER-PROBE-REPORT-DECISION-v1",
+    "local_solver_diagnostic_measured": true,
+    "next_stage": "MILESTONE_11_TASK_8_LOCAL_SOLVER_PATCH_BACKLOG_V1",
+    "official_score_claim_allowed": false,
+    "probe_results_interpreted": true,
+    "real_submission_allowed": false,
+    "verdict": "LOCAL_SOLVER_PROBE_REPORT_READY_FOR_SOLVER_PATCH_BACKLOG"
+  },
+  "report_gate_count": 18,
+  "report_gates": [
+    {
+      "name": "task_6_artifact_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "task_6_validated",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "probe_results_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "coverage_matrix_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_layers_reported",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "limits_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "patch_backlog_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "report_decision_ready",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "score_boundary_preserved",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "submission_boundary_preserved",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "runtime_solver_not_modified",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "external_solver_dependency_false",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "fail_closed_active",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "next_stage_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "metadata_safe",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "all_cases_pass",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "pass_count_valid",
+      "passed": true,
+      "severity": "PASS"
+    },
+    {
+      "name": "failure_count_zero",
+      "passed": true,
+      "severity": "PASS"
+    }
+  ],
+  "report_index": {
+    "baseline_commit": "2d9ccce Add ARC AGI3 solver probe integration",
+    "coverage_layer_count": 5,
+    "depends_on_task_6": "MILESTONE-11-SOLVER-PROBE-INTEGRATION-688144E13474",
+    "diagnostic_only": true,
+    "external_api_dependency": false,
+    "external_solver_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "kaggle_submission_sent": false,
+    "legal_certification": false,
+    "milestone": "Milestone #11",
+    "next_stage": "MILESTONE_11_TASK_8_LOCAL_SOLVER_PATCH_BACKLOG_V1",
+    "official_score_claim_allowed": false,
+    "patch_backlog_count": 5,
+    "private_core_exposure": false,
+    "private_score_claimed": false,
+    "probe_failure_count": 0,
+    "probe_pass_count": 30,
+    "probe_result_count": 30,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "report_created": true,
+    "report_section_count": 7,
+    "runtime_solver_modified": false,
+    "status": "MILESTONE_11_LOCAL_SOLVER_PROBE_REPORT_V1_READY",
+    "task": "Task 7",
+    "task_mode": "MILESTONE_11_LOCAL_SOLVER_PROBE_REPORT_V1_LOCAL_ONLY",
+    "task_scope": "LOCAL_SOLVER_PROBE_REPORT_NO_SCORE_NO_SUBMISSION",
+    "task_verdict": "LOCAL_SOLVER_PROBE_REPORT_READY_FOR_SOLVER_PATCH_BACKLOG"
+  },
+  "report_issue_count": 0,
+  "report_issues": [
+    {
+      "active": false,
+      "name": "task_6_artifact_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "task_6_invalidated",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "probe_results_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "coverage_matrix_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_layers_reported",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "limits_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "patch_backlog_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "report_decision_not_ready",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "score_boundary_preserved",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "submission_boundary_preserved",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "runtime_solver_not_modified",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "external_solver_dependency_false",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "fail_closed_active",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "next_stage_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "metadata_safe",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "all_cases_pass",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "pass_count_invalid",
+      "severity": "BLOCKING"
+    },
+    {
+      "active": false,
+      "name": "failure_count_zero",
+      "severity": "BLOCKING"
+    }
+  ],
+  "report_scorecard": [
+    {
+      "criterion_id": "source_task6_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "probe_results_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "coverage_matrix_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "all_layers_reported",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "limits_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "patch_backlog_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "decision_ready",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "score_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "submission_boundary_preserved",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    },
+    {
+      "criterion_id": "next_stage_valid",
+      "passed": true,
+      "score": 100,
+      "severity": "PASS"
+    }
+  ],
+  "report_section_count": 7,
+  "report_sections": {
+    "boundary_control": {
+      "diagnostic_only": true,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "kaggle_submission_sent": false,
+      "official_score_claim_allowed": false,
+      "private_score_claim_allowed": false,
+      "public_score_claim_allowed": false,
+      "submission_json_created": false,
+      "upload_package_created": false
+    },
+    "coverage_matrix": [
+      {
+        "coverage": "COVERED_PASS",
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "layer": "world_model",
+        "pass_count": 6,
+        "probe_id": "world_model_probe_v1",
+        "result_count": 6
+      },
+      {
+        "coverage": "COVERED_PASS",
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "layer": "goal_inference",
+        "pass_count": 6,
+        "probe_id": "goal_inference_probe_v1",
+        "result_count": 6
+      },
+      {
+        "coverage": "COVERED_PASS",
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "layer": "planner",
+        "pass_count": 6,
+        "probe_id": "planner_probe_v1",
+        "result_count": 6
+      },
+      {
+        "coverage": "COVERED_PASS",
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "layer": "verifier",
+        "pass_count": 6,
+        "probe_id": "transition_verifier_probe_v1",
+        "result_count": 6
+      },
+      {
+        "coverage": "COVERED_PASS",
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "layer": "action_policy",
+        "pass_count": 6,
+        "probe_id": "action_policy_probe_v1",
+        "result_count": 6
+      }
+    ],
+    "diagnostic_interpretation": {
+      "interpretation_id": "M11-TASK7-DIAGNOSTIC-INTERPRETATION-v1",
+      "meaning": "Local diagnostic probe layer is working; this is not a real benchmark score.",
+      "solver_failure_detected": false,
+      "solver_probe_measured": true
+    },
+    "executive_summary": {
+      "diagnostic_only": true,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "probe_failure_count": 0,
+      "probe_pass_count": 30,
+      "probe_result_count": 30,
+      "summary_id": "M11-TASK7-EXECUTIVE-SUMMARY-v1",
+      "text": "Local solver probe integration produced 30 diagnostic probe results across 5 layers with 0 failures."
+    },
+    "limits_and_non_claims": [
+      {
+        "limit_id": "not_official_kaggle_score_v1",
+        "severity": "BLOCKING",
+        "statement": "The probe report is local diagnostic output and is not a Kaggle public/private score."
+      },
+      {
+        "limit_id": "local_fixture_scope_only_v1",
+        "severity": "HIGH",
+        "statement": "The report measures synthetic/local diagnostic fixtures only."
+      },
+      {
+        "limit_id": "no_runtime_solver_patch_yet_v1",
+        "severity": "HIGH",
+        "statement": "Task 6 did not modify runtime solver or ranker logic."
+      },
+      {
+        "limit_id": "no_real_submission_artifact_v1",
+        "severity": "BLOCKING",
+        "statement": "No submission.json, upload package, authentication, or Kaggle upload exists."
+      },
+      {
+        "limit_id": "competitive_claim_not_allowed_v1",
+        "severity": "BLOCKING",
+        "statement": "No public competitive claim is allowed from this diagnostic report."
+      }
+    ],
+    "measured_layers": [
+      "world_model",
+      "goal_inference",
+      "planner",
+      "verifier",
+      "action_policy"
+    ],
+    "report_decision": {
+      "competitive_score_claim_allowed": false,
+      "coverage_status": "LOCAL_DIAGNOSTIC_COVERAGE_PASS",
+      "decision_boundary": "REPORT_ONLY_NO_SCORE_NO_SUBMISSION",
+      "decision_id": "M11-TASK7-LOCAL-SOLVER-PROBE-REPORT-DECISION-v1",
+      "local_solver_diagnostic_measured": true,
+      "next_stage": "MILESTONE_11_TASK_8_LOCAL_SOLVER_PATCH_BACKLOG_V1",
+      "official_score_claim_allowed": false,
+      "probe_results_interpreted": true,
+      "real_submission_allowed": false,
+      "verdict": "LOCAL_SOLVER_PROBE_REPORT_READY_FOR_SOLVER_PATCH_BACKLOG"
+    },
+    "solver_patch_backlog": [
+      {
+        "patch_id": "patch_world_model_state_tracking_v1",
+        "priority": "P0",
+        "reason": "Convert diagnostic signatures into reusable object-state tracking hints.",
+        "score_claim_allowed": false,
+        "status": "PLANNED",
+        "target_layer": "world_model"
+      },
+      {
+        "patch_id": "patch_goal_inference_from_terminal_state_v1",
+        "priority": "P0",
+        "reason": "Use diagnostic terminal-state patterns to improve goal hypothesis ranking.",
+        "score_claim_allowed": false,
+        "status": "PLANNED",
+        "target_layer": "goal_inference"
+      },
+      {
+        "patch_id": "patch_planner_loop_recovery_v1",
+        "priority": "P0",
+        "reason": "Turn planner-loop diagnostics into fallback exploration constraints.",
+        "score_claim_allowed": false,
+        "status": "PLANNED",
+        "target_layer": "planner"
+      },
+      {
+        "patch_id": "patch_transition_verifier_feedback_v1",
+        "priority": "P0",
+        "reason": "Use verifier mismatch traces to refine transition checking.",
+        "score_claim_allowed": false,
+        "status": "PLANNED",
+        "target_layer": "verifier"
+      },
+      {
+        "patch_id": "patch_action_policy_validity_guard_v1",
+        "priority": "P0",
+        "reason": "Preserve action validity and non-submission safety during solver improvements.",
+        "score_claim_allowed": false,
+        "status": "PLANNED",
+        "target_layer": "action_policy"
+      }
+    ]
+  },
+  "runtime_solver_modified": false,
+  "signature": "275783499AFC63C1",
+  "solver_failure_detected": false,
+  "solver_patch_backlog": [
+    {
+      "patch_id": "patch_world_model_state_tracking_v1",
+      "priority": "P0",
+      "reason": "Convert diagnostic signatures into reusable object-state tracking hints.",
+      "score_claim_allowed": false,
+      "status": "PLANNED",
+      "target_layer": "world_model"
+    },
+    {
+      "patch_id": "patch_goal_inference_from_terminal_state_v1",
+      "priority": "P0",
+      "reason": "Use diagnostic terminal-state patterns to improve goal hypothesis ranking.",
+      "score_claim_allowed": false,
+      "status": "PLANNED",
+      "target_layer": "goal_inference"
+    },
+    {
+      "patch_id": "patch_planner_loop_recovery_v1",
+      "priority": "P0",
+      "reason": "Turn planner-loop diagnostics into fallback exploration constraints.",
+      "score_claim_allowed": false,
+      "status": "PLANNED",
+      "target_layer": "planner"
+    },
+    {
+      "patch_id": "patch_transition_verifier_feedback_v1",
+      "priority": "P0",
+      "reason": "Use verifier mismatch traces to refine transition checking.",
+      "score_claim_allowed": false,
+      "status": "PLANNED",
+      "target_layer": "verifier"
+    },
+    {
+      "patch_id": "patch_action_policy_validity_guard_v1",
+      "priority": "P0",
+      "reason": "Preserve action validity and non-submission safety during solver improvements.",
+      "score_claim_allowed": false,
+      "status": "PLANNED",
+      "target_layer": "action_policy"
+    }
+  ],
+  "solver_probe_measured": true,
+  "source_summary": {
+    "baseline_commit": "ac663d8 Add ARC AGI3 local diagnostic fixture harness",
+    "diagnostic_only": true,
+    "external_solver_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "kaggle_authentication_allowed": false,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "kaggle_submission_sent": false,
+    "layer_report_count": 5,
+    "local_solver_diagnostic_measured": true,
+    "manual_upload_allowed": false,
+    "next_stage": "MILESTONE_11_TASK_7_LOCAL_SOLVER_PROBE_REPORT_V1",
+    "official_score_claim_allowed": false,
+    "primary_classification": "MEASUREMENT_CONSTRAINT_NOT_SOLVER_FAILURE",
+    "primary_condition": "NO_LOCAL_PUBLIC_FIXTURES",
+    "private_score_claim_allowed": false,
+    "private_score_claimed": false,
+    "probe_component_count": 5,
+    "probe_components": [
+      {
+        "probe_id": "world_model_probe_v1",
+        "purpose": "Measure local object-state and transition consistency.",
+        "target_layer": "world_model"
+      },
+      {
+        "probe_id": "goal_inference_probe_v1",
+        "purpose": "Measure local goal inference from diagnostic fixture state.",
+        "target_layer": "goal_inference"
+      },
+      {
+        "probe_id": "planner_probe_v1",
+        "purpose": "Measure local plan progress and loop recovery.",
+        "target_layer": "planner"
+      },
+      {
+        "probe_id": "transition_verifier_probe_v1",
+        "purpose": "Measure predicted versus observed transition agreement.",
+        "target_layer": "verifier"
+      },
+      {
+        "probe_id": "action_policy_probe_v1",
+        "purpose": "Measure local action validity and non-submission policy safety.",
+        "target_layer": "action_policy"
+      }
+    ],
+    "probe_failure_count": 0,
+    "probe_layer_report": [
+      {
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "pass_count": 6,
+        "probe_id": "world_model_probe_v1",
+        "result_count": 6,
+        "score_claim_allowed": false,
+        "target_layer": "world_model"
+      },
+      {
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "pass_count": 6,
+        "probe_id": "goal_inference_probe_v1",
+        "result_count": 6,
+        "score_claim_allowed": false,
+        "target_layer": "goal_inference"
+      },
+      {
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "pass_count": 6,
+        "probe_id": "planner_probe_v1",
+        "result_count": 6,
+        "score_claim_allowed": false,
+        "target_layer": "planner"
+      },
+      {
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "pass_count": 6,
+        "probe_id": "transition_verifier_probe_v1",
+        "result_count": 6,
+        "score_claim_allowed": false,
+        "target_layer": "verifier"
+      },
+      {
+        "diagnostic_only": true,
+        "failure_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "pass_count": 6,
+        "probe_id": "action_policy_probe_v1",
+        "result_count": 6,
+        "score_claim_allowed": false,
+        "target_layer": "action_policy"
+      }
+    ],
+    "probe_pass_count": 30,
+    "probe_result_count": 30,
+    "probe_summary": {
+      "diagnostic_only": true,
+      "episode_count": 6,
+      "fixture_count": 6,
+      "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+      "official_score_claim_allowed": false,
+      "private_score_claim_allowed": false,
+      "probe_component_count": 5,
+      "probe_failure_count": 0,
+      "probe_pass_count": 30,
+      "probe_result_count": 30,
+      "probe_summary_id": "M11-TASK6-SOLVER-PROBE-SUMMARY-v1",
+      "public_score_claim_allowed": false
+    },
+    "public_score_claim_allowed": false,
+    "ranker_runtime_modified": false,
+    "real_benchmark_score": null,
+    "real_public_score_claimed": false,
+    "real_submission_allowed": false,
+    "real_submission_candidate_created": false,
+    "real_submission_decision": "NOT_AUTHORIZED",
+    "runtime_solver_modified": false,
+    "solver_failure_detected": false,
+    "solver_not_measured_from_task_5": true,
+    "solver_probe_contract_created": true,
+    "solver_probe_integration_created": true,
+    "solver_probe_measured": true,
+    "solver_probe_results": [
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_object_persistence_fixture_001",
+        "evidence": {
+          "final_signature": "D1C87FB5BA49",
+          "goal_signature": "D1C87FB5BA49",
+          "initial_signature": "FF696CA08FAC"
+        },
+        "fixture_id": "m11_object_persistence_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "world_model_probe_v1",
+        "probe_result_id": "PROBE-1C11429D26DD",
+        "score_claim_allowed": false,
+        "target_layer": "world_model"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_object_persistence_fixture_001",
+        "evidence": {
+          "goal_reached": true
+        },
+        "fixture_id": "m11_object_persistence_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "goal_inference_probe_v1",
+        "probe_result_id": "PROBE-0FA8CCDE9988",
+        "score_claim_allowed": false,
+        "target_layer": "goal_inference"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_object_persistence_fixture_001",
+        "evidence": {
+          "actions": [
+            "RIGHT",
+            "DOWN"
+          ],
+          "goal_reached": true,
+          "step_count": 2
+        },
+        "fixture_id": "m11_object_persistence_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "planner_probe_v1",
+        "probe_result_id": "PROBE-99609B615457",
+        "score_claim_allowed": false,
+        "target_layer": "planner"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_object_persistence_fixture_001",
+        "evidence": {
+          "verifier_match_count": 2
+        },
+        "fixture_id": "m11_object_persistence_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "transition_verifier_probe_v1",
+        "probe_result_id": "PROBE-7287E348F50E",
+        "score_claim_allowed": false,
+        "target_layer": "verifier"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_object_persistence_fixture_001",
+        "evidence": {
+          "actions": [
+            "RIGHT",
+            "DOWN"
+          ],
+          "allowed_actions": [
+            "DOWN",
+            "LEFT",
+            "RIGHT",
+            "STAY",
+            "UP",
+            "VERIFY"
+          ]
+        },
+        "fixture_id": "m11_object_persistence_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "action_policy_probe_v1",
+        "probe_result_id": "PROBE-AF36354585BA",
+        "score_claim_allowed": false,
+        "target_layer": "action_policy"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_color_rule_fixture_001",
+        "evidence": {
+          "final_signature": "DF2170E8D37C",
+          "goal_signature": "DF2170E8D37C",
+          "initial_signature": "CC981F749681"
+        },
+        "fixture_id": "m11_color_rule_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "world_model_probe_v1",
+        "probe_result_id": "PROBE-E1F818843625",
+        "score_claim_allowed": false,
+        "target_layer": "world_model"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_color_rule_fixture_001",
+        "evidence": {
+          "goal_reached": true
+        },
+        "fixture_id": "m11_color_rule_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "goal_inference_probe_v1",
+        "probe_result_id": "PROBE-C22BF554AFCB",
+        "score_claim_allowed": false,
+        "target_layer": "goal_inference"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_color_rule_fixture_001",
+        "evidence": {
+          "actions": [
+            "VERIFY"
+          ],
+          "goal_reached": true,
+          "step_count": 1
+        },
+        "fixture_id": "m11_color_rule_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "planner_probe_v1",
+        "probe_result_id": "PROBE-E50855ABDDFD",
+        "score_claim_allowed": false,
+        "target_layer": "planner"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_color_rule_fixture_001",
+        "evidence": {
+          "verifier_match_count": 1
+        },
+        "fixture_id": "m11_color_rule_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "transition_verifier_probe_v1",
+        "probe_result_id": "PROBE-D2517052AF79",
+        "score_claim_allowed": false,
+        "target_layer": "verifier"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_color_rule_fixture_001",
+        "evidence": {
+          "actions": [
+            "VERIFY"
+          ],
+          "allowed_actions": [
+            "DOWN",
+            "LEFT",
+            "RIGHT",
+            "STAY",
+            "UP",
+            "VERIFY"
+          ]
+        },
+        "fixture_id": "m11_color_rule_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "action_policy_probe_v1",
+        "probe_result_id": "PROBE-96FF69AA2DB5",
+        "score_claim_allowed": false,
+        "target_layer": "action_policy"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_movement_transition_fixture_001",
+        "evidence": {
+          "final_signature": "4EED28E6CBA2",
+          "goal_signature": "4EED28E6CBA2",
+          "initial_signature": "B3BADAD02FEB"
+        },
+        "fixture_id": "m11_movement_transition_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "world_model_probe_v1",
+        "probe_result_id": "PROBE-94DE8C905A8C",
+        "score_claim_allowed": false,
+        "target_layer": "world_model"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_movement_transition_fixture_001",
+        "evidence": {
+          "goal_reached": true
+        },
+        "fixture_id": "m11_movement_transition_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "goal_inference_probe_v1",
+        "probe_result_id": "PROBE-A07A044D97BB",
+        "score_claim_allowed": false,
+        "target_layer": "goal_inference"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_movement_transition_fixture_001",
+        "evidence": {
+          "actions": [
+            "RIGHT"
+          ],
+          "goal_reached": true,
+          "step_count": 1
+        },
+        "fixture_id": "m11_movement_transition_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "planner_probe_v1",
+        "probe_result_id": "PROBE-16CD7E9BB08C",
+        "score_claim_allowed": false,
+        "target_layer": "planner"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_movement_transition_fixture_001",
+        "evidence": {
+          "verifier_match_count": 1
+        },
+        "fixture_id": "m11_movement_transition_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "transition_verifier_probe_v1",
+        "probe_result_id": "PROBE-09E3BFFAEDCB",
+        "score_claim_allowed": false,
+        "target_layer": "verifier"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_movement_transition_fixture_001",
+        "evidence": {
+          "actions": [
+            "RIGHT"
+          ],
+          "allowed_actions": [
+            "DOWN",
+            "LEFT",
+            "RIGHT",
+            "STAY",
+            "UP",
+            "VERIFY"
+          ]
+        },
+        "fixture_id": "m11_movement_transition_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "action_policy_probe_v1",
+        "probe_result_id": "PROBE-D2BF0457A3F1",
+        "score_claim_allowed": false,
+        "target_layer": "action_policy"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_goal_inference_fixture_001",
+        "evidence": {
+          "final_signature": "E7A8A5D53A4B",
+          "goal_signature": "E7A8A5D53A4B",
+          "initial_signature": "B02C869A9F39"
+        },
+        "fixture_id": "m11_goal_inference_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "world_model_probe_v1",
+        "probe_result_id": "PROBE-47A6F850AE74",
+        "score_claim_allowed": false,
+        "target_layer": "world_model"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_goal_inference_fixture_001",
+        "evidence": {
+          "goal_reached": true
+        },
+        "fixture_id": "m11_goal_inference_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "goal_inference_probe_v1",
+        "probe_result_id": "PROBE-239555604A93",
+        "score_claim_allowed": false,
+        "target_layer": "goal_inference"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_goal_inference_fixture_001",
+        "evidence": {
+          "actions": [
+            "RIGHT",
+            "DOWN"
+          ],
+          "goal_reached": true,
+          "step_count": 2
+        },
+        "fixture_id": "m11_goal_inference_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "planner_probe_v1",
+        "probe_result_id": "PROBE-8D8A031B4F2F",
+        "score_claim_allowed": false,
+        "target_layer": "planner"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_goal_inference_fixture_001",
+        "evidence": {
+          "verifier_match_count": 2
+        },
+        "fixture_id": "m11_goal_inference_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "transition_verifier_probe_v1",
+        "probe_result_id": "PROBE-150807EDF909",
+        "score_claim_allowed": false,
+        "target_layer": "verifier"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_goal_inference_fixture_001",
+        "evidence": {
+          "actions": [
+            "RIGHT",
+            "DOWN"
+          ],
+          "allowed_actions": [
+            "DOWN",
+            "LEFT",
+            "RIGHT",
+            "STAY",
+            "UP",
+            "VERIFY"
+          ]
+        },
+        "fixture_id": "m11_goal_inference_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "action_policy_probe_v1",
+        "probe_result_id": "PROBE-664942427ECF",
+        "score_claim_allowed": false,
+        "target_layer": "action_policy"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_planner_loop_fixture_001",
+        "evidence": {
+          "final_signature": "103FD72FFF2B",
+          "goal_signature": "103FD72FFF2B",
+          "initial_signature": "75F737E96A79"
+        },
+        "fixture_id": "m11_planner_loop_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "world_model_probe_v1",
+        "probe_result_id": "PROBE-BFAC551E5D17",
+        "score_claim_allowed": false,
+        "target_layer": "world_model"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_planner_loop_fixture_001",
+        "evidence": {
+          "goal_reached": true
+        },
+        "fixture_id": "m11_planner_loop_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "goal_inference_probe_v1",
+        "probe_result_id": "PROBE-C9860103D4D5",
+        "score_claim_allowed": false,
+        "target_layer": "goal_inference"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_planner_loop_fixture_001",
+        "evidence": {
+          "actions": [
+            "LEFT",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "goal_reached": true,
+          "step_count": 3
+        },
+        "fixture_id": "m11_planner_loop_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "planner_probe_v1",
+        "probe_result_id": "PROBE-667A23E2BD75",
+        "score_claim_allowed": false,
+        "target_layer": "planner"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_planner_loop_fixture_001",
+        "evidence": {
+          "verifier_match_count": 3
+        },
+        "fixture_id": "m11_planner_loop_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "transition_verifier_probe_v1",
+        "probe_result_id": "PROBE-86DB06566A82",
+        "score_claim_allowed": false,
+        "target_layer": "verifier"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_planner_loop_fixture_001",
+        "evidence": {
+          "actions": [
+            "LEFT",
+            "RIGHT",
+            "RIGHT"
+          ],
+          "allowed_actions": [
+            "DOWN",
+            "LEFT",
+            "RIGHT",
+            "STAY",
+            "UP",
+            "VERIFY"
+          ]
+        },
+        "fixture_id": "m11_planner_loop_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "action_policy_probe_v1",
+        "probe_result_id": "PROBE-9AC2CF3CBE3F",
+        "score_claim_allowed": false,
+        "target_layer": "action_policy"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+        "evidence": {
+          "final_signature": "4ED79D0931A3",
+          "goal_signature": "4ED79D0931A3",
+          "initial_signature": "1870A2977970"
+        },
+        "fixture_id": "m11_verifier_mismatch_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "world_model_probe_v1",
+        "probe_result_id": "PROBE-E6CE47570007",
+        "score_claim_allowed": false,
+        "target_layer": "world_model"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+        "evidence": {
+          "goal_reached": true
+        },
+        "fixture_id": "m11_verifier_mismatch_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "goal_inference_probe_v1",
+        "probe_result_id": "PROBE-7E4466A34F39",
+        "score_claim_allowed": false,
+        "target_layer": "goal_inference"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+        "evidence": {
+          "actions": [
+            "LEFT"
+          ],
+          "goal_reached": true,
+          "step_count": 1
+        },
+        "fixture_id": "m11_verifier_mismatch_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "planner_probe_v1",
+        "probe_result_id": "PROBE-C53CCD14136A",
+        "score_claim_allowed": false,
+        "target_layer": "planner"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+        "evidence": {
+          "verifier_match_count": 1
+        },
+        "fixture_id": "m11_verifier_mismatch_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "transition_verifier_probe_v1",
+        "probe_result_id": "PROBE-32402C7E80B9",
+        "score_claim_allowed": false,
+        "target_layer": "verifier"
+      },
+      {
+        "diagnostic_only": true,
+        "diagnostic_probe_passed": true,
+        "diagnostic_probe_score": 100,
+        "episode_id": "EP-m11_verifier_mismatch_fixture_001",
+        "evidence": {
+          "actions": [
+            "LEFT"
+          ],
+          "allowed_actions": [
+            "DOWN",
+            "LEFT",
+            "RIGHT",
+            "STAY",
+            "UP",
+            "VERIFY"
+          ]
+        },
+        "fixture_id": "m11_verifier_mismatch_fixture_001",
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "official_score_claim_allowed": false,
+        "probe_id": "action_policy_probe_v1",
+        "probe_result_id": "PROBE-142CD1F063B5",
+        "score_claim_allowed": false,
+        "target_layer": "action_policy"
+      }
+    ],
+    "submission_json_created": false,
+    "synthetic_fixture_score_claim_allowed": false,
+    "task_6_id": "MILESTONE-11-SOLVER-PROBE-INTEGRATION-688144E13474",
+    "task_6_path": "examples/milestone-11/solver-probe-integration-v1/milestone-11-solver-probe-integration-v1.json",
+    "task_6_present": true,
+    "task_6_ready": true,
+    "task_6_sha256": "5b744f7ee346441d92439b87dcc7ba22a6553586ba519499736e6d6e21fb34b8",
+    "task_6_sha256_16": "5B744F7EE346441D",
+    "task_6_signature": "688144E13474AF57",
+    "task_6_status": "MILESTONE_11_SOLVER_PROBE_INTEGRATION_V1_READY",
+    "task_verdict": "SOLVER_PROBE_INTEGRATION_READY_FOR_LOCAL_PROBE_REPORT",
+    "upload_package_created": false
+  },
+  "status": "MILESTONE_11_LOCAL_SOLVER_PROBE_REPORT_V1_READY",
+  "submission_json_created": false,
+  "synthetic_fixture_score_claim_allowed": false,
+  "task": "Task 7",
+  "task_6_source": {
+    "path": "examples/milestone-11/solver-probe-integration-v1/milestone-11-solver-probe-integration-v1.json",
+    "present": true,
+    "sha256": "5b744f7ee346441d92439b87dcc7ba22a6553586ba519499736e6d6e21fb34b8",
+    "sha256_16": "5B744F7EE346441D",
+    "status": "MILESTONE_11_SOLVER_PROBE_INTEGRATION_V1_READY",
+    "task_6_id": "MILESTONE-11-SOLVER-PROBE-INTEGRATION-688144E13474"
+  },
+  "task_7_id": "MILESTONE-11-LOCAL-SOLVER-PROBE-REPORT-275783499AFC",
+  "task_7_ready": true,
+  "task_mode": "MILESTONE_11_LOCAL_SOLVER_PROBE_REPORT_V1_LOCAL_ONLY",
+  "task_scope": "LOCAL_SOLVER_PROBE_REPORT_NO_SCORE_NO_SUBMISSION",
+  "task_verdict": "LOCAL_SOLVER_PROBE_REPORT_READY_FOR_SOLVER_PATCH_BACKLOG",
+  "title": "Local Solver Probe Report v1",
+  "upload_package_created": false,
+  "warning_count": 0
+}

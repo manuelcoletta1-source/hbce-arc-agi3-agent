@@ -1,0 +1,42 @@
+[
+  {
+    "patch_id": "patch_world_model_state_tracking_v1",
+    "priority": "P0",
+    "reason": "Convert diagnostic signatures into reusable object-state tracking hints.",
+    "score_claim_allowed": false,
+    "status": "PLANNED",
+    "target_layer": "world_model"
+  },
+  {
+    "patch_id": "patch_goal_inference_from_terminal_state_v1",
+    "priority": "P0",
+    "reason": "Use diagnostic terminal-state patterns to improve goal hypothesis ranking.",
+    "score_claim_allowed": false,
+    "status": "PLANNED",
+    "target_layer": "goal_inference"
+  },
+  {
+    "patch_id": "patch_planner_loop_recovery_v1",
+    "priority": "P0",
+    "reason": "Turn planner-loop diagnostics into fallback exploration constraints.",
+    "score_claim_allowed": false,
+    "status": "PLANNED",
+    "target_layer": "planner"
+  },
+  {
+    "patch_id": "patch_transition_verifier_feedback_v1",
+    "priority": "P0",
+    "reason": "Use verifier mismatch traces to refine transition checking.",
+    "score_claim_allowed": false,
+    "status": "PLANNED",
+    "target_layer": "verifier"
+  },
+  {
+    "patch_id": "patch_action_policy_validity_guard_v1",
+    "priority": "P0",
+    "reason": "Preserve action validity and non-submission safety during solver improvements.",
+    "score_claim_allowed": false,
+    "status": "PLANNED",
+    "target_layer": "action_policy"
+  }
+]
