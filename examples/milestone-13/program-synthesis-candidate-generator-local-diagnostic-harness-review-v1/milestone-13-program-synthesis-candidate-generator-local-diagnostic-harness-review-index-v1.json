@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "ce93635 Update ARC AGI3 milestone 13 program synthesis candidate generator local diagnostic harness artifacts",
+  "baseline_commit": "8227930 Add ARC AGI3 milestone 13 program synthesis candidate generator local diagnostic harness review",
   "blocking_issue_count": 0,
   "candidate_count": 12,
   "candidate_family_count": 7,
@@ -20,9 +20,9 @@
   "runtime_solver_modified": false,
   "runtime_wiring_authorized": false,
   "runtime_wiring_plan_authorized": true,
-  "signature": "07FA1106C440F3AB",
+  "signature": "8B4C52A96137B2AE",
   "source_harness_ready": true,
   "source_harness_shape_ok": true,
-  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-HARNESS-REVIEW-07FA1106C440",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-HARNESS-REVIEW-8B4C52A96137",
   "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_REVIEW_READY"
 }
