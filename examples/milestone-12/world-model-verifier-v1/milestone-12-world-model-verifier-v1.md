@@ -1,9 +1,9 @@
 # Milestone #12 Task 5 - World Model Verifier v1
 
 - revision: `MILESTONE_12_WORLD_MODEL_VERIFIER_V1`
-- task_id: `MILESTONE-12-WORLD-MODEL-VERIFIER-47EDD37420B1`
-- signature: `47EDD37420B15AF3`
-- baseline_commit: `42b946b Update ARC AGI3 milestone 12 executable world model artifacts`
+- task_id: `MILESTONE-12-WORLD-MODEL-VERIFIER-CA9ADDD2C484`
+- signature: `CA9ADDD2C4844866`
+- baseline_commit: `f6dd9d9 Add ARC AGI3 milestone 12 world model verifier`
 - verdict: `MILESTONE_12_WORLD_MODEL_VERIFIER_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`
