@@ -1,9 +1,9 @@
 # Milestone #12 Task 12 - Submission Readiness Gate v1
 
 - revision: `MILESTONE_12_SUBMISSION_READINESS_GATE_V1`
-- task_id: `MILESTONE-12-SUBMISSION-READINESS-GATE-836E859CE6D9`
-- signature: `836E859CE6D91E62`
-- baseline_commit: `15a4bc9 Update ARC AGI3 milestone 12 public overfit guard artifacts`
+- task_id: `MILESTONE-12-SUBMISSION-READINESS-GATE-FD298A3A611B`
+- signature: `FD298A3A611B9282`
+- baseline_commit: `2bf9c30 Add ARC AGI3 milestone 12 submission readiness gate`
 - verdict: `MILESTONE_12_SUBMISSION_READINESS_GATE_READY`
 - readiness_verdict: `LOCAL_READINESS_PACKAGE_READY_REAL_SUBMISSION_BLOCKED`
 - next_stage: `MILESTONE_12_TASK_13_COMPETITIVE_SOLVER_CLOSURE_V1`

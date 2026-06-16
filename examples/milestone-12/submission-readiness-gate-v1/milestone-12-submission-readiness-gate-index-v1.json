@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "15a4bc9 Update ARC AGI3 milestone 12 public overfit guard artifacts",
+  "baseline_commit": "2bf9c30 Add ARC AGI3 milestone 12 submission readiness gate",
   "kaggle_submission_sent": false,
   "legal_certification": false,
   "next_stage": "MILESTONE_12_TASK_13_COMPETITIVE_SOLVER_CLOSURE_V1",
@@ -12,13 +12,13 @@
   "required_source_artifact_count": 4,
   "required_source_artifact_present_count": 4,
   "revision": "MILESTONE_12_SUBMISSION_READINESS_GATE_V1",
-  "signature": "836E859CE6D91E62",
+  "signature": "FD298A3A611B9282",
   "source_boundary_violation_count": 0,
   "source_guard_case_count": 6,
   "source_guard_pass_count": 6,
   "source_public_overfit_violation_count": 0,
   "submission_readiness_gate_passed": true,
   "submission_readiness_gate_ready": true,
-  "task_id": "MILESTONE-12-SUBMISSION-READINESS-GATE-836E859CE6D9",
+  "task_id": "MILESTONE-12-SUBMISSION-READINESS-GATE-FD298A3A611B",
   "task_verdict": "MILESTONE_12_SUBMISSION_READINESS_GATE_READY"
 }
