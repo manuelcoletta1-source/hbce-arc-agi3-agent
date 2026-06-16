@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "60588de Update ARC AGI3 milestone 12 candidate policy artifacts",
+  "baseline_commit": "752609a Add ARC AGI3 milestone 12 candidate ranker policy",
   "candidate_count": 18,
   "candidate_ranker_policy_passed": true,
   "candidate_ranker_policy_ready": true,
@@ -19,8 +19,8 @@
   "real_submission_allowed": false,
   "revision": "MILESTONE_12_CANDIDATE_RANKER_POLICY_V1",
   "selected_candidate_count": 6,
-  "signature": "C357BA2B5B8F6522",
-  "task_id": "MILESTONE-12-CANDIDATE-RANKER-POLICY-C357BA2B5B8F",
+  "signature": "4449CA9BC6DE4DE4",
+  "task_id": "MILESTONE-12-CANDIDATE-RANKER-POLICY-4449CA9BC6DE",
   "task_verdict": "MILESTONE_12_CANDIDATE_RANKER_POLICY_READY",
   "top_replay_candidate_count": 6
 }

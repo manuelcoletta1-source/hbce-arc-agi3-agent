@@ -1,9 +1,9 @@
 # Milestone #12 Task 9 - Candidate Ranker Policy v1
 
 - revision: `MILESTONE_12_CANDIDATE_RANKER_POLICY_V1`
-- task_id: `MILESTONE-12-CANDIDATE-RANKER-POLICY-C357BA2B5B8F`
-- signature: `C357BA2B5B8F6522`
-- baseline_commit: `60588de Update ARC AGI3 milestone 12 candidate policy artifacts`
+- task_id: `MILESTONE-12-CANDIDATE-RANKER-POLICY-4449CA9BC6DE`
+- signature: `4449CA9BC6DE4DE4`
+- baseline_commit: `752609a Add ARC AGI3 milestone 12 candidate ranker policy`
 - verdict: `MILESTONE_12_CANDIDATE_RANKER_POLICY_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`
