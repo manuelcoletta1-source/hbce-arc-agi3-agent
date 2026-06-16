@@ -1,0 +1,2073 @@
+{
+  "baseline_commit": "60588de Update ARC AGI3 milestone 12 candidate policy artifacts",
+  "candidate_artifact_parseable": true,
+  "candidate_artifact_present": true,
+  "candidate_count": 18,
+  "candidate_next_stage_ok": true,
+  "candidate_policy_passed": true,
+  "candidate_policy_ready": true,
+  "candidate_ranker_policy_only": true,
+  "candidate_ranker_policy_passed": true,
+  "candidate_ranker_policy_ready": true,
+  "candidate_ranker_policy_valid": true,
+  "case_count": 6,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 33,
+  "gates": [
+    {
+      "description": "Task 8 candidate artifact is present.",
+      "name": "candidate_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 8 candidate artifact is parseable.",
+      "name": "candidate_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate policy is ready.",
+      "name": "candidate_policy_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate policy passed.",
+      "name": "candidate_policy_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate policy points to Task 9.",
+      "name": "candidate_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate policy strategy is aligned.",
+      "name": "candidate_strategy_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate policy goal is aligned.",
+      "name": "candidate_goal_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate policy issue count is zero.",
+      "name": "candidate_issue_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six cases are available.",
+      "name": "case_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Eighteen candidates are available.",
+      "name": "candidate_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Eighteen candidates are ranked.",
+      "name": "ranked_candidate_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six candidates are selected.",
+      "name": "selected_candidate_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six replay candidates are selected as top.",
+      "name": "top_replay_candidate_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All candidates remain ranker-ready.",
+      "name": "ranker_ready_candidate_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Rank scores are valid.",
+      "name": "scores_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker issue count is zero.",
+      "name": "ranker_issue_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfitting is blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard is required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Manual upload remains blocked.",
+      "name": "manual_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle authentication is performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains candidate-ranker-policy-only.",
+      "name": "candidate_ranker_policy_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_only": true,
+  "manual_upload_allowed": false,
+  "measurement_target_count": 10,
+  "measurement_targets": [
+    "case_count",
+    "candidate_count",
+    "ranked_candidate_count",
+    "selected_candidate_count",
+    "top_replay_candidate_count",
+    "ranker_ready_candidate_count",
+    "mean_rank_score",
+    "minimum_rank_score",
+    "maximum_rank_score",
+    "ranker_issue_count"
+  ],
+  "milestone_12_status": "OPENED_CANONICALLY",
+  "milestone_number": 12,
+  "next_stage": "MILESTONE_12_TASK_10_RANKED_CANDIDATE_BENCHMARK_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "passed_gate_count": 33,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "ranked_candidate_count": 18,
+  "ranker_check_count": 18,
+  "ranker_checks": [
+    {
+      "description": "Task 8 candidate artifact is present.",
+      "name": "candidate_artifact_present",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Task 8 candidate artifact is parseable.",
+      "name": "candidate_artifact_parseable",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Candidate policy is ready.",
+      "name": "candidate_policy_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Candidate policy passed.",
+      "name": "candidate_policy_passed",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Candidate policy points to Task 9.",
+      "name": "candidate_next_stage_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Candidate policy strategy is aligned.",
+      "name": "candidate_strategy_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Candidate policy goal is aligned.",
+      "name": "candidate_goal_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Candidate policy issue count is zero.",
+      "name": "candidate_issue_zero",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker sees six cases.",
+      "name": "case_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker sees eighteen candidates.",
+      "name": "candidate_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker emits eighteen ranked candidates.",
+      "name": "ranked_candidate_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker selects six top candidates.",
+      "name": "selected_candidate_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker selects replay candidates as top candidates.",
+      "name": "top_replay_candidate_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "All candidates remain ranker-ready.",
+      "name": "ranker_ready_candidate_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Rank scores are valid.",
+      "name": "scores_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker issue count is zero.",
+      "name": "ranker_issue_zero",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "severity": "PASS",
+      "status": true
+    }
+  ],
+  "ranker_issue_count": 0,
+  "ranker_policy": {
+    "candidate_count": 18,
+    "candidate_ranker_policy_id": "MILESTONE_12_CANDIDATE_RANKER_POLICY_SYNTHETIC_V1",
+    "case_count": 6,
+    "maximum_rank_score": 1055,
+    "mean_rank_score": 953.111111,
+    "measurement_target_count": 10,
+    "measurement_targets": [
+      "case_count",
+      "candidate_count",
+      "ranked_candidate_count",
+      "selected_candidate_count",
+      "top_replay_candidate_count",
+      "ranker_ready_candidate_count",
+      "mean_rank_score",
+      "minimum_rank_score",
+      "maximum_rank_score",
+      "ranker_issue_count"
+    ],
+    "minimum_rank_score": 853,
+    "ranked_candidate_count": 18,
+    "ranked_candidates": [
+      {
+        "actions": [
+          "RIGHT",
+          "RIGHT",
+          "DOWN"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 3,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_001_direct_goal",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "navigation_goal",
+        "global_rank": 1,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 3,
+          "ranker_ready_bonus": 250,
+          "score": 1053,
+          "verified_bonus": 500
+        },
+        "rank_score": 1053,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_001_DIRECT_GOAL-VERIFIED_EPISODE_REPLAY-DA405F68",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_001_DIRECT_GOAL-VERIFIED_EPISODE_REPLAY-DA405F68",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "DA405F68B8A6D374",
+        "source_episode_id": "EPISODE-M12_CASE_001_DIRECT_GOAL-4AEF841A"
+      },
+      {
+        "actions": [
+          "RIGHT"
+        ],
+        "candidate_kind": "PREFIX_SAFE_REPLAY",
+        "candidate_length": 1,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_001_direct_goal",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "navigation_goal",
+        "global_rank": 2,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 200,
+          "kind_priority": 2,
+          "length_bonus": 1,
+          "ranker_ready_bonus": 250,
+          "score": 951,
+          "verified_bonus": 500
+        },
+        "rank_score": 951,
+        "rank_within_case": 2,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_001_DIRECT_GOAL-PREFIX_SAFE_REPLAY-F3B2544B",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_001_DIRECT_GOAL-PREFIX_SAFE_REPLAY-F3B2544B",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "F3B2544BE6805FE0",
+        "source_episode_id": "EPISODE-M12_CASE_001_DIRECT_GOAL-4AEF841A"
+      },
+      {
+        "actions": [
+          "RIGHT",
+          "RIGHT",
+          "DOWN"
+        ],
+        "candidate_kind": "FAMILY_HEURISTIC_REPLAY",
+        "candidate_length": 3,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_001_direct_goal",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "navigation_goal",
+        "global_rank": 3,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 100,
+          "kind_priority": 1,
+          "length_bonus": 3,
+          "ranker_ready_bonus": 250,
+          "score": 853,
+          "verified_bonus": 500
+        },
+        "rank_score": 853,
+        "rank_within_case": 3,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_001_DIRECT_GOAL-FAMILY_HEURISTIC_REPLAY-DC039E68",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_001_DIRECT_GOAL-FAMILY_HEURISTIC_REPLAY-DC039E68",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "DC039E682836B2D3",
+        "source_episode_id": "EPISODE-M12_CASE_001_DIRECT_GOAL-4AEF841A"
+      },
+      {
+        "actions": [
+          "RIGHT",
+          "PICK",
+          "LEFT",
+          "DOWN",
+          "OPEN"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 5,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_002_key_door",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "object_precondition",
+        "global_rank": 4,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 5,
+          "ranker_ready_bonus": 250,
+          "score": 1055,
+          "verified_bonus": 500
+        },
+        "rank_score": 1055,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_002_KEY_DOOR-VERIFIED_EPISODE_REPLAY-1477EF6B",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_002_KEY_DOOR-VERIFIED_EPISODE_REPLAY-1477EF6B",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "1477EF6BCDF3ADD4",
+        "source_episode_id": "EPISODE-M12_CASE_002_KEY_DOOR-54F0855A"
+      },
+      {
+        "actions": [
+          "RIGHT"
+        ],
+        "candidate_kind": "PREFIX_SAFE_REPLAY",
+        "candidate_length": 1,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_002_key_door",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "object_precondition",
+        "global_rank": 5,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 200,
+          "kind_priority": 2,
+          "length_bonus": 1,
+          "ranker_ready_bonus": 250,
+          "score": 951,
+          "verified_bonus": 500
+        },
+        "rank_score": 951,
+        "rank_within_case": 2,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_002_KEY_DOOR-PREFIX_SAFE_REPLAY-D8A8E3A5",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_002_KEY_DOOR-PREFIX_SAFE_REPLAY-D8A8E3A5",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "D8A8E3A59B9CDBDC",
+        "source_episode_id": "EPISODE-M12_CASE_002_KEY_DOOR-54F0855A"
+      },
+      {
+        "actions": [
+          "RIGHT",
+          "PICK",
+          "LEFT",
+          "DOWN",
+          "OPEN"
+        ],
+        "candidate_kind": "FAMILY_HEURISTIC_REPLAY",
+        "candidate_length": 5,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_002_key_door",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "object_precondition",
+        "global_rank": 6,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 100,
+          "kind_priority": 1,
+          "length_bonus": 5,
+          "ranker_ready_bonus": 250,
+          "score": 855,
+          "verified_bonus": 500
+        },
+        "rank_score": 855,
+        "rank_within_case": 3,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_002_KEY_DOOR-FAMILY_HEURISTIC_REPLAY-75EEB7A6",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_002_KEY_DOOR-FAMILY_HEURISTIC_REPLAY-75EEB7A6",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "75EEB7A691BFA447",
+        "source_episode_id": "EPISODE-M12_CASE_002_KEY_DOOR-54F0855A"
+      },
+      {
+        "actions": [
+          "RIGHT",
+          "PUSH",
+          "RIGHT",
+          "DOWN",
+          "EXIT"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 5,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_003_push_block",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "spatial_causal_action",
+        "global_rank": 7,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 5,
+          "ranker_ready_bonus": 250,
+          "score": 1055,
+          "verified_bonus": 500
+        },
+        "rank_score": 1055,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_003_PUSH_BLOCK-VERIFIED_EPISODE_REPLAY-AD89E2FF",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_003_PUSH_BLOCK-VERIFIED_EPISODE_REPLAY-AD89E2FF",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "AD89E2FFDBB01D16",
+        "source_episode_id": "EPISODE-M12_CASE_003_PUSH_BLOCK-E7CE812B"
+      },
+      {
+        "actions": [
+          "RIGHT"
+        ],
+        "candidate_kind": "PREFIX_SAFE_REPLAY",
+        "candidate_length": 1,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_003_push_block",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "spatial_causal_action",
+        "global_rank": 8,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 200,
+          "kind_priority": 2,
+          "length_bonus": 1,
+          "ranker_ready_bonus": 250,
+          "score": 951,
+          "verified_bonus": 500
+        },
+        "rank_score": 951,
+        "rank_within_case": 2,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_003_PUSH_BLOCK-PREFIX_SAFE_REPLAY-7D5A7528",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_003_PUSH_BLOCK-PREFIX_SAFE_REPLAY-7D5A7528",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "7D5A7528377DDAC7",
+        "source_episode_id": "EPISODE-M12_CASE_003_PUSH_BLOCK-E7CE812B"
+      },
+      {
+        "actions": [
+          "RIGHT",
+          "PUSH",
+          "RIGHT",
+          "DOWN",
+          "EXIT"
+        ],
+        "candidate_kind": "FAMILY_HEURISTIC_REPLAY",
+        "candidate_length": 5,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_003_push_block",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "spatial_causal_action",
+        "global_rank": 9,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 100,
+          "kind_priority": 1,
+          "length_bonus": 5,
+          "ranker_ready_bonus": 250,
+          "score": 855,
+          "verified_bonus": 500
+        },
+        "rank_score": 855,
+        "rank_within_case": 3,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_003_PUSH_BLOCK-FAMILY_HEURISTIC_REPLAY-BA08B36B",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_003_PUSH_BLOCK-FAMILY_HEURISTIC_REPLAY-BA08B36B",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "BA08B36B14C210EE",
+        "source_episode_id": "EPISODE-M12_CASE_003_PUSH_BLOCK-E7CE812B"
+      },
+      {
+        "actions": [
+          "BLUE",
+          "GREEN",
+          "RED"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 3,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_004_color_rule",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "latent_rule_inference",
+        "global_rank": 10,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 3,
+          "ranker_ready_bonus": 250,
+          "score": 1053,
+          "verified_bonus": 500
+        },
+        "rank_score": 1053,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_004_COLOR_RULE-VERIFIED_EPISODE_REPLAY-859236A9",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_004_COLOR_RULE-VERIFIED_EPISODE_REPLAY-859236A9",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "859236A9691FD6A6",
+        "source_episode_id": "EPISODE-M12_CASE_004_COLOR_RULE-6503DC93"
+      },
+      {
+        "actions": [
+          "BLUE"
+        ],
+        "candidate_kind": "PREFIX_SAFE_REPLAY",
+        "candidate_length": 1,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_004_color_rule",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "latent_rule_inference",
+        "global_rank": 11,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 200,
+          "kind_priority": 2,
+          "length_bonus": 1,
+          "ranker_ready_bonus": 250,
+          "score": 951,
+          "verified_bonus": 500
+        },
+        "rank_score": 951,
+        "rank_within_case": 2,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_004_COLOR_RULE-PREFIX_SAFE_REPLAY-F8F7BFC5",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_004_COLOR_RULE-PREFIX_SAFE_REPLAY-F8F7BFC5",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "F8F7BFC5A828B728",
+        "source_episode_id": "EPISODE-M12_CASE_004_COLOR_RULE-6503DC93"
+      },
+      {
+        "actions": [
+          "BLUE",
+          "GREEN",
+          "RED"
+        ],
+        "candidate_kind": "FAMILY_HEURISTIC_REPLAY",
+        "candidate_length": 3,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_004_color_rule",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "latent_rule_inference",
+        "global_rank": 12,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 100,
+          "kind_priority": 1,
+          "length_bonus": 3,
+          "ranker_ready_bonus": 250,
+          "score": 853,
+          "verified_bonus": 500
+        },
+        "rank_score": 853,
+        "rank_within_case": 3,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_004_COLOR_RULE-FAMILY_HEURISTIC_REPLAY-5BC8B225",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_004_COLOR_RULE-FAMILY_HEURISTIC_REPLAY-5BC8B225",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "5BC8B22503AEA6C7",
+        "source_episode_id": "EPISODE-M12_CASE_004_COLOR_RULE-6503DC93"
+      },
+      {
+        "actions": [
+          "LEFT",
+          "TOGGLE",
+          "RIGHT",
+          "RIGHT",
+          "CROSS"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 5,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_005_toggle_bridge",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "state_toggle_planning",
+        "global_rank": 13,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 5,
+          "ranker_ready_bonus": 250,
+          "score": 1055,
+          "verified_bonus": 500
+        },
+        "rank_score": 1055,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-VERIFIED_EPISODE_REPLAY-F1218626",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-VERIFIED_EPISODE_REPLAY-F1218626",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "F1218626AAB194B0",
+        "source_episode_id": "EPISODE-M12_CASE_005_TOGGLE_BRIDGE-AAABD75E"
+      },
+      {
+        "actions": [
+          "LEFT"
+        ],
+        "candidate_kind": "PREFIX_SAFE_REPLAY",
+        "candidate_length": 1,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_005_toggle_bridge",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "state_toggle_planning",
+        "global_rank": 14,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 200,
+          "kind_priority": 2,
+          "length_bonus": 1,
+          "ranker_ready_bonus": 250,
+          "score": 951,
+          "verified_bonus": 500
+        },
+        "rank_score": 951,
+        "rank_within_case": 2,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-PREFIX_SAFE_REPLAY-769B472A",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-PREFIX_SAFE_REPLAY-769B472A",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "769B472AC8534B61",
+        "source_episode_id": "EPISODE-M12_CASE_005_TOGGLE_BRIDGE-AAABD75E"
+      },
+      {
+        "actions": [
+          "LEFT",
+          "TOGGLE",
+          "RIGHT",
+          "RIGHT",
+          "CROSS"
+        ],
+        "candidate_kind": "FAMILY_HEURISTIC_REPLAY",
+        "candidate_length": 5,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_005_toggle_bridge",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "state_toggle_planning",
+        "global_rank": 15,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 100,
+          "kind_priority": 1,
+          "length_bonus": 5,
+          "ranker_ready_bonus": 250,
+          "score": 855,
+          "verified_bonus": 500
+        },
+        "rank_score": 855,
+        "rank_within_case": 3,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-FAMILY_HEURISTIC_REPLAY-7FE76C65",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-FAMILY_HEURISTIC_REPLAY-7FE76C65",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "7FE76C65EE01F8EA",
+        "source_episode_id": "EPISODE-M12_CASE_005_TOGGLE_BRIDGE-AAABD75E"
+      },
+      {
+        "actions": [
+          "C",
+          "A",
+          "D",
+          "B"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 4,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_006_memory_order",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "episode_memory_sequence",
+        "global_rank": 16,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 4,
+          "ranker_ready_bonus": 250,
+          "score": 1054,
+          "verified_bonus": 500
+        },
+        "rank_score": 1054,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_006_MEMORY_ORDER-VERIFIED_EPISODE_REPLAY-188004B4",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_006_MEMORY_ORDER-VERIFIED_EPISODE_REPLAY-188004B4",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "188004B46BF96E9C",
+        "source_episode_id": "EPISODE-M12_CASE_006_MEMORY_ORDER-3CA347BF"
+      },
+      {
+        "actions": [
+          "C"
+        ],
+        "candidate_kind": "PREFIX_SAFE_REPLAY",
+        "candidate_length": 1,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_006_memory_order",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "episode_memory_sequence",
+        "global_rank": 17,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 200,
+          "kind_priority": 2,
+          "length_bonus": 1,
+          "ranker_ready_bonus": 250,
+          "score": 951,
+          "verified_bonus": 500
+        },
+        "rank_score": 951,
+        "rank_within_case": 2,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_006_MEMORY_ORDER-PREFIX_SAFE_REPLAY-3F5C56E3",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_006_MEMORY_ORDER-PREFIX_SAFE_REPLAY-3F5C56E3",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "3F5C56E37AA428F9",
+        "source_episode_id": "EPISODE-M12_CASE_006_MEMORY_ORDER-3CA347BF"
+      },
+      {
+        "actions": [
+          "C",
+          "A",
+          "D",
+          "B"
+        ],
+        "candidate_kind": "FAMILY_HEURISTIC_REPLAY",
+        "candidate_length": 4,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_006_memory_order",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "episode_memory_sequence",
+        "global_rank": 18,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 100,
+          "kind_priority": 1,
+          "length_bonus": 4,
+          "ranker_ready_bonus": 250,
+          "score": 854,
+          "verified_bonus": 500
+        },
+        "rank_score": 854,
+        "rank_within_case": 3,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_006_MEMORY_ORDER-FAMILY_HEURISTIC_REPLAY-C0F1FAA2",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": false,
+        "source_candidate_id": "CANDIDATE-M12_CASE_006_MEMORY_ORDER-FAMILY_HEURISTIC_REPLAY-C0F1FAA2",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "C0F1FAA2071FB8A7",
+        "source_episode_id": "EPISODE-M12_CASE_006_MEMORY_ORDER-3CA347BF"
+      }
+    ],
+    "ranker_issue_count": 0,
+    "ranker_policy_family": "DETERMINISTIC_CANDIDATE_RANKER_POLICY",
+    "ranker_ready_candidate_count": 18,
+    "selected_candidate_count": 6,
+    "selected_candidates": [
+      {
+        "actions": [
+          "RIGHT",
+          "RIGHT",
+          "DOWN"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 3,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_001_direct_goal",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "navigation_goal",
+        "global_rank": 1,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 3,
+          "ranker_ready_bonus": 250,
+          "score": 1053,
+          "verified_bonus": 500
+        },
+        "rank_score": 1053,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_001_DIRECT_GOAL-VERIFIED_EPISODE_REPLAY-DA405F68",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_001_DIRECT_GOAL-VERIFIED_EPISODE_REPLAY-DA405F68",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "DA405F68B8A6D374",
+        "source_episode_id": "EPISODE-M12_CASE_001_DIRECT_GOAL-4AEF841A"
+      },
+      {
+        "actions": [
+          "RIGHT",
+          "PICK",
+          "LEFT",
+          "DOWN",
+          "OPEN"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 5,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_002_key_door",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "object_precondition",
+        "global_rank": 4,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 5,
+          "ranker_ready_bonus": 250,
+          "score": 1055,
+          "verified_bonus": 500
+        },
+        "rank_score": 1055,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_002_KEY_DOOR-VERIFIED_EPISODE_REPLAY-1477EF6B",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_002_KEY_DOOR-VERIFIED_EPISODE_REPLAY-1477EF6B",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "1477EF6BCDF3ADD4",
+        "source_episode_id": "EPISODE-M12_CASE_002_KEY_DOOR-54F0855A"
+      },
+      {
+        "actions": [
+          "RIGHT",
+          "PUSH",
+          "RIGHT",
+          "DOWN",
+          "EXIT"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 5,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_003_push_block",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "spatial_causal_action",
+        "global_rank": 7,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 5,
+          "ranker_ready_bonus": 250,
+          "score": 1055,
+          "verified_bonus": 500
+        },
+        "rank_score": 1055,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_003_PUSH_BLOCK-VERIFIED_EPISODE_REPLAY-AD89E2FF",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_003_PUSH_BLOCK-VERIFIED_EPISODE_REPLAY-AD89E2FF",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "AD89E2FFDBB01D16",
+        "source_episode_id": "EPISODE-M12_CASE_003_PUSH_BLOCK-E7CE812B"
+      },
+      {
+        "actions": [
+          "BLUE",
+          "GREEN",
+          "RED"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 3,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_004_color_rule",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "latent_rule_inference",
+        "global_rank": 10,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 3,
+          "ranker_ready_bonus": 250,
+          "score": 1053,
+          "verified_bonus": 500
+        },
+        "rank_score": 1053,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_004_COLOR_RULE-VERIFIED_EPISODE_REPLAY-859236A9",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_004_COLOR_RULE-VERIFIED_EPISODE_REPLAY-859236A9",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "859236A9691FD6A6",
+        "source_episode_id": "EPISODE-M12_CASE_004_COLOR_RULE-6503DC93"
+      },
+      {
+        "actions": [
+          "LEFT",
+          "TOGGLE",
+          "RIGHT",
+          "RIGHT",
+          "CROSS"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 5,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_005_toggle_bridge",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "state_toggle_planning",
+        "global_rank": 13,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 5,
+          "ranker_ready_bonus": 250,
+          "score": 1055,
+          "verified_bonus": 500
+        },
+        "rank_score": 1055,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-VERIFIED_EPISODE_REPLAY-F1218626",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-VERIFIED_EPISODE_REPLAY-F1218626",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "F1218626AAB194B0",
+        "source_episode_id": "EPISODE-M12_CASE_005_TOGGLE_BRIDGE-AAABD75E"
+      },
+      {
+        "actions": [
+          "C",
+          "A",
+          "D",
+          "B"
+        ],
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "candidate_length": 4,
+        "candidate_policy": "DETERMINISTIC_EPISODE_MEMORY_REUSE",
+        "candidate_verified": true,
+        "case_id": "m12_case_006_memory_order",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Candidate is verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate is ready for ranking.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Source candidate issue count is zero.",
+            "name": "source_issue_zero",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "family": "episode_memory_sequence",
+        "global_rank": 16,
+        "issue_count": 0,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_components": {
+          "issue_penalty": 0,
+          "kind_bonus": 300,
+          "kind_priority": 3,
+          "length_bonus": 4,
+          "ranker_ready_bonus": 250,
+          "score": 1054,
+          "verified_bonus": 500
+        },
+        "rank_score": 1054,
+        "rank_within_case": 1,
+        "ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_006_MEMORY_ORDER-VERIFIED_EPISODE_REPLAY-188004B4",
+        "ranker_ready": true,
+        "score_claim": null,
+        "selected_for_case": true,
+        "source_candidate_id": "CANDIDATE-M12_CASE_006_MEMORY_ORDER-VERIFIED_EPISODE_REPLAY-188004B4",
+        "source_candidate_issue_count": 0,
+        "source_candidate_signature": "188004B46BF96E9C",
+        "source_episode_id": "EPISODE-M12_CASE_006_MEMORY_ORDER-3CA347BF"
+      }
+    ],
+    "top_replay_candidate_count": 6
+  },
+  "ranker_ready_candidate_count": 18,
+  "ranker_summary": {
+    "candidate_count": 18,
+    "candidate_ranker_policy_id": "MILESTONE_12_CANDIDATE_RANKER_POLICY_SYNTHETIC_V1",
+    "candidate_ranker_policy_status": "READY",
+    "case_count": 6,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "milestone_12_status": "OPENED_CANONICALLY",
+    "next_stage": "MILESTONE_12_TASK_10_RANKED_CANDIDATE_BENCHMARK_V1",
+    "ranked_candidate_count": 18,
+    "selected_candidate_count": 6,
+    "top_replay_candidate_count": 6
+  },
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 33,
+  "revision": "MILESTONE_12_CANDIDATE_RANKER_POLICY_V1",
+  "selected_candidate_count": 6,
+  "signature": "C357BA2B5B8F6522",
+  "source_candidate_artifact": "examples/milestone-12/candidate-policy-v1/milestone-12-candidate-policy-v1.json",
+  "source_task": "MILESTONE_12_TASK_8_CANDIDATE_POLICY_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-12-CANDIDATE-RANKER-POLICY-C357BA2B5B8F",
+  "task_label": "Milestone #12 Task 9 - Candidate Ranker Policy v1",
+  "task_mode": "MILESTONE_12_CANDIDATE_RANKER_POLICY_V1_LOCAL_ONLY",
+  "task_number": 9,
+  "task_scope": "CANDIDATE_RANKER_POLICY_ONLY_NO_UPLOAD_NO_SUBMISSION_NO_EXTERNAL_API",
+  "task_verdict": "MILESTONE_12_CANDIDATE_RANKER_POLICY_READY",
+  "top_replay_candidate_count": 6,
+  "warning_count": 0
+}
