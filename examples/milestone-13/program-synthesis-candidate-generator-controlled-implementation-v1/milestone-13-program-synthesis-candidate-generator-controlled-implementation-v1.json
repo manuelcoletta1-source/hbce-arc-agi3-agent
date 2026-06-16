@@ -1,0 +1,1573 @@
+{
+  "baseline_commit": "23f9b38 Update ARC AGI3 milestone 13 program synthesis candidate generator plan artifacts",
+  "candidate_evidence_pack": {
+    "all_candidates_bounded": true,
+    "all_candidates_deterministic": true,
+    "all_candidates_local_only": true,
+    "all_candidates_public_safe": true,
+    "all_real_submission_blocked": true,
+    "all_runtime_wiring_blocked": true,
+    "candidate_count": 12,
+    "candidate_family_count": 7,
+    "families_present": [
+      "color_rule_candidates",
+      "composite_program_candidates",
+      "crop_pad_resize_candidates",
+      "object_transform_candidates",
+      "primitive_sequence_candidates",
+      "relation_graph_candidates",
+      "symmetry_completion_candidates"
+    ],
+    "max_program_depth": 2,
+    "unique_candidate_ids": true
+  },
+  "candidate_families": [
+    "primitive_sequence_candidates",
+    "object_transform_candidates",
+    "color_rule_candidates",
+    "symmetry_completion_candidates",
+    "crop_pad_resize_candidates",
+    "relation_graph_candidates",
+    "composite_program_candidates"
+  ],
+  "candidate_family_count": 7,
+  "candidate_generator_modified": false,
+  "candidate_generator_wiring_authorized": false,
+  "candidate_template_count": 12,
+  "candidate_templates": [
+    {
+      "family": "primitive_sequence_candidates",
+      "name": "single_primitive_transform",
+      "operations": [
+        "apply_primitive"
+      ],
+      "template_id": "TPL-001"
+    },
+    {
+      "family": "primitive_sequence_candidates",
+      "name": "two_step_primitive_sequence",
+      "operations": [
+        "apply_primitive",
+        "apply_primitive"
+      ],
+      "template_id": "TPL-002"
+    },
+    {
+      "family": "object_transform_candidates",
+      "name": "object_extract_then_transform",
+      "operations": [
+        "select_object",
+        "transform_object"
+      ],
+      "template_id": "TPL-003"
+    },
+    {
+      "family": "object_transform_candidates",
+      "name": "object_filter_then_recolor",
+      "operations": [
+        "filter_object",
+        "recolor_object"
+      ],
+      "template_id": "TPL-004"
+    },
+    {
+      "family": "relation_graph_candidates",
+      "name": "object_relation_guided_move",
+      "operations": [
+        "select_relation",
+        "move_object"
+      ],
+      "template_id": "TPL-005"
+    },
+    {
+      "family": "symmetry_completion_candidates",
+      "name": "symmetry_completion_program",
+      "operations": [
+        "detect_symmetry_axis",
+        "complete_symmetry"
+      ],
+      "template_id": "TPL-006"
+    },
+    {
+      "family": "color_rule_candidates",
+      "name": "palette_remap_program",
+      "operations": [
+        "infer_palette_map",
+        "apply_palette_map"
+      ],
+      "template_id": "TPL-007"
+    },
+    {
+      "family": "crop_pad_resize_candidates",
+      "name": "crop_pad_resize_program",
+      "operations": [
+        "crop_to_bbox",
+        "pad_or_resize"
+      ],
+      "template_id": "TPL-008"
+    },
+    {
+      "family": "primitive_sequence_candidates",
+      "name": "tile_or_repeat_program",
+      "operations": [
+        "detect_tile",
+        "repeat_tile"
+      ],
+      "template_id": "TPL-009"
+    },
+    {
+      "family": "composite_program_candidates",
+      "name": "mask_overlay_program",
+      "operations": [
+        "build_mask",
+        "overlay_mask"
+      ],
+      "template_id": "TPL-010"
+    },
+    {
+      "family": "composite_program_candidates",
+      "name": "object_compose_or_remove_program",
+      "operations": [
+        "select_object",
+        "compose_or_remove_object"
+      ],
+      "template_id": "TPL-011"
+    },
+    {
+      "family": "composite_program_candidates",
+      "name": "conditional_rule_program",
+      "operations": [
+        "infer_condition",
+        "apply_conditional_transform"
+      ],
+      "template_id": "TPL-012"
+    }
+  ],
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_candidate_generator_implementation": {
+    "candidate_evidence_pack": {
+      "all_candidates_bounded": true,
+      "all_candidates_deterministic": true,
+      "all_candidates_local_only": true,
+      "all_candidates_public_safe": true,
+      "all_real_submission_blocked": true,
+      "all_runtime_wiring_blocked": true,
+      "candidate_count": 12,
+      "candidate_family_count": 7,
+      "families_present": [
+        "color_rule_candidates",
+        "composite_program_candidates",
+        "crop_pad_resize_candidates",
+        "object_transform_candidates",
+        "primitive_sequence_candidates",
+        "relation_graph_candidates",
+        "symmetry_completion_candidates"
+      ],
+      "max_program_depth": 2,
+      "unique_candidate_ids": true
+    },
+    "candidate_families": [
+      "primitive_sequence_candidates",
+      "object_transform_candidates",
+      "color_rule_candidates",
+      "symmetry_completion_candidates",
+      "crop_pad_resize_candidates",
+      "relation_graph_candidates",
+      "composite_program_candidates"
+    ],
+    "candidate_family_count": 7,
+    "candidate_generator_wiring_authorized": false,
+    "candidate_template_count": 12,
+    "candidate_templates": [
+      {
+        "family": "primitive_sequence_candidates",
+        "name": "single_primitive_transform",
+        "operations": [
+          "apply_primitive"
+        ],
+        "template_id": "TPL-001"
+      },
+      {
+        "family": "primitive_sequence_candidates",
+        "name": "two_step_primitive_sequence",
+        "operations": [
+          "apply_primitive",
+          "apply_primitive"
+        ],
+        "template_id": "TPL-002"
+      },
+      {
+        "family": "object_transform_candidates",
+        "name": "object_extract_then_transform",
+        "operations": [
+          "select_object",
+          "transform_object"
+        ],
+        "template_id": "TPL-003"
+      },
+      {
+        "family": "object_transform_candidates",
+        "name": "object_filter_then_recolor",
+        "operations": [
+          "filter_object",
+          "recolor_object"
+        ],
+        "template_id": "TPL-004"
+      },
+      {
+        "family": "relation_graph_candidates",
+        "name": "object_relation_guided_move",
+        "operations": [
+          "select_relation",
+          "move_object"
+        ],
+        "template_id": "TPL-005"
+      },
+      {
+        "family": "symmetry_completion_candidates",
+        "name": "symmetry_completion_program",
+        "operations": [
+          "detect_symmetry_axis",
+          "complete_symmetry"
+        ],
+        "template_id": "TPL-006"
+      },
+      {
+        "family": "color_rule_candidates",
+        "name": "palette_remap_program",
+        "operations": [
+          "infer_palette_map",
+          "apply_palette_map"
+        ],
+        "template_id": "TPL-007"
+      },
+      {
+        "family": "crop_pad_resize_candidates",
+        "name": "crop_pad_resize_program",
+        "operations": [
+          "crop_to_bbox",
+          "pad_or_resize"
+        ],
+        "template_id": "TPL-008"
+      },
+      {
+        "family": "primitive_sequence_candidates",
+        "name": "tile_or_repeat_program",
+        "operations": [
+          "detect_tile",
+          "repeat_tile"
+        ],
+        "template_id": "TPL-009"
+      },
+      {
+        "family": "composite_program_candidates",
+        "name": "mask_overlay_program",
+        "operations": [
+          "build_mask",
+          "overlay_mask"
+        ],
+        "template_id": "TPL-010"
+      },
+      {
+        "family": "composite_program_candidates",
+        "name": "object_compose_or_remove_program",
+        "operations": [
+          "select_object",
+          "compose_or_remove_object"
+        ],
+        "template_id": "TPL-011"
+      },
+      {
+        "family": "composite_program_candidates",
+        "name": "conditional_rule_program",
+        "operations": [
+          "infer_condition",
+          "apply_conditional_transform"
+        ],
+        "template_id": "TPL-012"
+      }
+    ],
+    "controlled_implementation_complete": true,
+    "generated_candidate_count": 12,
+    "generated_candidates": [
+      {
+        "binding": {
+          "bbox_policy": "non_background_bbox",
+          "composition_policy": "overlay_non_background",
+          "direction": "up",
+          "family": "primitive_sequence_candidates",
+          "object_selector": "largest_object",
+          "primitive_name": "identity",
+          "source_color": 0,
+          "symmetry_axis": "horizontal",
+          "target_color": 1,
+          "template_name": "single_primitive_transform"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-01-995D9E3D",
+        "candidate_signature": "995D9E3D4E3F5D6F",
+        "deterministic": true,
+        "family": "primitive_sequence_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "apply_primitive"
+        ],
+        "program_depth": 1,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-001",
+        "template_name": "single_primitive_transform",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "object_bbox",
+          "composition_policy": "replace_target",
+          "direction": "down",
+          "family": "primitive_sequence_candidates",
+          "object_selector": "smallest_object",
+          "primitive_name": "rotate_90",
+          "source_color": 1,
+          "symmetry_axis": "vertical",
+          "target_color": 2,
+          "template_name": "two_step_primitive_sequence"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-02-FDA994A8",
+        "candidate_signature": "FDA994A8E924DA92",
+        "deterministic": true,
+        "family": "primitive_sequence_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "apply_primitive",
+          "apply_primitive"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-002",
+        "template_name": "two_step_primitive_sequence",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "full_canvas",
+          "composition_policy": "remove_source",
+          "direction": "left",
+          "family": "object_transform_candidates",
+          "object_selector": "border_touching_object",
+          "primitive_name": "flip_horizontal",
+          "source_color": 2,
+          "symmetry_axis": "horizontal",
+          "target_color": 3,
+          "template_name": "object_extract_then_transform"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-03-DFD8398F",
+        "candidate_signature": "DFD8398F835477CD",
+        "deterministic": true,
+        "family": "object_transform_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "select_object",
+          "transform_object"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-003",
+        "template_name": "object_extract_then_transform",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "non_background_bbox",
+          "composition_policy": "overlay_non_background",
+          "direction": "right",
+          "family": "object_transform_candidates",
+          "object_selector": "primary_color_object",
+          "primitive_name": "transpose",
+          "source_color": 3,
+          "symmetry_axis": "vertical",
+          "target_color": 4,
+          "template_name": "object_filter_then_recolor"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-04-06800321",
+        "candidate_signature": "068003217A7F60CB",
+        "deterministic": true,
+        "family": "object_transform_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "filter_object",
+          "recolor_object"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-004",
+        "template_name": "object_filter_then_recolor",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "object_bbox",
+          "composition_policy": "replace_target",
+          "direction": "up",
+          "family": "relation_graph_candidates",
+          "object_selector": "largest_object",
+          "primitive_name": "crop_to_non_background_bbox",
+          "source_color": 4,
+          "symmetry_axis": "horizontal",
+          "target_color": 5,
+          "template_name": "object_relation_guided_move"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-05-76B8EF83",
+        "candidate_signature": "76B8EF831FE0748D",
+        "deterministic": true,
+        "family": "relation_graph_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "select_relation",
+          "move_object"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-005",
+        "template_name": "object_relation_guided_move",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "full_canvas",
+          "composition_policy": "remove_source",
+          "direction": "down",
+          "family": "symmetry_completion_candidates",
+          "object_selector": "smallest_object",
+          "primitive_name": "complete_vertical_symmetry",
+          "source_color": 5,
+          "symmetry_axis": "vertical",
+          "target_color": 0,
+          "template_name": "symmetry_completion_program"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-06-B12E9C73",
+        "candidate_signature": "B12E9C730C23E1BE",
+        "deterministic": true,
+        "family": "symmetry_completion_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "detect_symmetry_axis",
+          "complete_symmetry"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-006",
+        "template_name": "symmetry_completion_program",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "non_background_bbox",
+          "composition_policy": "overlay_non_background",
+          "direction": "left",
+          "family": "color_rule_candidates",
+          "object_selector": "border_touching_object",
+          "primitive_name": "identity",
+          "source_color": 0,
+          "symmetry_axis": "horizontal",
+          "target_color": 1,
+          "template_name": "palette_remap_program"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-07-89AEF3B0",
+        "candidate_signature": "89AEF3B0B931C144",
+        "deterministic": true,
+        "family": "color_rule_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "infer_palette_map",
+          "apply_palette_map"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-007",
+        "template_name": "palette_remap_program",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "object_bbox",
+          "composition_policy": "replace_target",
+          "direction": "right",
+          "family": "crop_pad_resize_candidates",
+          "object_selector": "primary_color_object",
+          "primitive_name": "rotate_90",
+          "source_color": 1,
+          "symmetry_axis": "vertical",
+          "target_color": 2,
+          "template_name": "crop_pad_resize_program"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-08-1ECA082E",
+        "candidate_signature": "1ECA082E45C8AC6B",
+        "deterministic": true,
+        "family": "crop_pad_resize_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "crop_to_bbox",
+          "pad_or_resize"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-008",
+        "template_name": "crop_pad_resize_program",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "full_canvas",
+          "composition_policy": "remove_source",
+          "direction": "up",
+          "family": "primitive_sequence_candidates",
+          "object_selector": "largest_object",
+          "primitive_name": "flip_horizontal",
+          "source_color": 2,
+          "symmetry_axis": "horizontal",
+          "target_color": 3,
+          "template_name": "tile_or_repeat_program"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-09-54ED55F7",
+        "candidate_signature": "54ED55F7F96110D0",
+        "deterministic": true,
+        "family": "primitive_sequence_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "detect_tile",
+          "repeat_tile"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-009",
+        "template_name": "tile_or_repeat_program",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "non_background_bbox",
+          "composition_policy": "overlay_non_background",
+          "direction": "down",
+          "family": "composite_program_candidates",
+          "object_selector": "smallest_object",
+          "primitive_name": "transpose",
+          "source_color": 3,
+          "symmetry_axis": "vertical",
+          "target_color": 4,
+          "template_name": "mask_overlay_program"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-10-8E2BE928",
+        "candidate_signature": "8E2BE928730C633C",
+        "deterministic": true,
+        "family": "composite_program_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "build_mask",
+          "overlay_mask"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-010",
+        "template_name": "mask_overlay_program",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "object_bbox",
+          "composition_policy": "replace_target",
+          "direction": "left",
+          "family": "composite_program_candidates",
+          "object_selector": "border_touching_object",
+          "primitive_name": "crop_to_non_background_bbox",
+          "source_color": 4,
+          "symmetry_axis": "horizontal",
+          "target_color": 5,
+          "template_name": "object_compose_or_remove_program"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-11-F8E71717",
+        "candidate_signature": "F8E717178C15B5AC",
+        "deterministic": true,
+        "family": "composite_program_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "select_object",
+          "compose_or_remove_object"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-011",
+        "template_name": "object_compose_or_remove_program",
+        "train_pair_match_required": true
+      },
+      {
+        "binding": {
+          "bbox_policy": "full_canvas",
+          "composition_policy": "remove_source",
+          "direction": "right",
+          "family": "composite_program_candidates",
+          "object_selector": "primary_color_object",
+          "primitive_name": "complete_vertical_symmetry",
+          "source_color": 5,
+          "symmetry_axis": "vertical",
+          "target_color": 0,
+          "template_name": "conditional_rule_program"
+        },
+        "bounded": true,
+        "candidate_generator_runtime_wiring": false,
+        "candidate_id": "CAND-M13-T6-12-C39AA64F",
+        "candidate_signature": "C39AA64F7A5C5C83",
+        "deterministic": true,
+        "family": "composite_program_candidates",
+        "kaggle_submission_payload": false,
+        "local_only": true,
+        "max_depth_allowed": 3,
+        "operations": [
+          "infer_condition",
+          "apply_conditional_transform"
+        ],
+        "program_depth": 2,
+        "public_safe": true,
+        "ranker_runtime_wiring": false,
+        "real_submission_candidate": false,
+        "runtime_solver_patch": false,
+        "runtime_wiring_required": false,
+        "template_id": "TPL-012",
+        "template_name": "conditional_rule_program",
+        "train_pair_match_required": true
+      }
+    ],
+    "implementation_component_count": 6,
+    "implementation_components": [
+      "candidate_template_registry",
+      "bounded_parameter_binder",
+      "deterministic_candidate_enumerator",
+      "candidate_signature_builder",
+      "candidate_evidence_packager",
+      "fail_closed_boundary_validator"
+    ],
+    "implementation_family": "LOCAL_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_NO_RUNTIME_WIRING",
+    "implementation_id": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_PACKAGE_V1",
+    "max_program_depth": 2,
+    "parameter_binding_field_count": 8,
+    "parameter_binding_fields": [
+      "primitive_name",
+      "object_selector",
+      "source_color",
+      "target_color",
+      "direction",
+      "symmetry_axis",
+      "bbox_policy",
+      "composition_policy"
+    ],
+    "recommended_next_stage": "MILESTONE_13_TASK_7_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_V1",
+    "runtime_wiring_authorized": false,
+    "source_next_stage": "MILESTONE_13_TASK_6_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1",
+    "source_plan_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+    "source_revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+    "source_task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_READY"
+  },
+  "controlled_candidate_generator_implementation_passed": true,
+  "controlled_candidate_generator_implementation_ready": true,
+  "controlled_candidate_generator_implementation_valid": true,
+  "controlled_implementation_complete": true,
+  "controlled_implementation_review_required": true,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 42,
+  "gates": [
+    {
+      "description": "Task 5 plan artifact is present.",
+      "name": "source_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 5 plan artifact is parseable.",
+      "name": "source_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 5 plan is ready and passed.",
+      "name": "source_plan_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 5 plan has expected shape.",
+      "name": "source_plan_shape_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 5 points to Task 6.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source blocks runtime wiring.",
+      "name": "source_blocks_runtime_wiring",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source keeps real actions blocked.",
+      "name": "source_blocks_real_actions",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source safety boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Template count is expected.",
+      "name": "candidate_template_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate family count is expected.",
+      "name": "candidate_family_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Binding fields are expected.",
+      "name": "parameter_binding_field_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation components are expected.",
+      "name": "implementation_component_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate count is expected.",
+      "name": "generated_candidate_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate IDs are unique.",
+      "name": "generated_candidate_ids_unique",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate program depth is bounded.",
+      "name": "generated_candidate_depth_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Generated candidates preserve boundaries.",
+      "name": "generated_candidate_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation is complete.",
+      "name": "controlled_implementation_complete_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Review remains required.",
+      "name": "controlled_implementation_review_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator runtime wiring remains blocked.",
+      "name": "candidate_generator_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring remains blocked.",
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver is not modified.",
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime candidate generator is not modified.",
+      "name": "candidate_generator_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime is not modified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "generated_candidate_count": 12,
+  "generated_candidates": [
+    {
+      "binding": {
+        "bbox_policy": "non_background_bbox",
+        "composition_policy": "overlay_non_background",
+        "direction": "up",
+        "family": "primitive_sequence_candidates",
+        "object_selector": "largest_object",
+        "primitive_name": "identity",
+        "source_color": 0,
+        "symmetry_axis": "horizontal",
+        "target_color": 1,
+        "template_name": "single_primitive_transform"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-01-995D9E3D",
+      "candidate_signature": "995D9E3D4E3F5D6F",
+      "deterministic": true,
+      "family": "primitive_sequence_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "apply_primitive"
+      ],
+      "program_depth": 1,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-001",
+      "template_name": "single_primitive_transform",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "object_bbox",
+        "composition_policy": "replace_target",
+        "direction": "down",
+        "family": "primitive_sequence_candidates",
+        "object_selector": "smallest_object",
+        "primitive_name": "rotate_90",
+        "source_color": 1,
+        "symmetry_axis": "vertical",
+        "target_color": 2,
+        "template_name": "two_step_primitive_sequence"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-02-FDA994A8",
+      "candidate_signature": "FDA994A8E924DA92",
+      "deterministic": true,
+      "family": "primitive_sequence_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "apply_primitive",
+        "apply_primitive"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-002",
+      "template_name": "two_step_primitive_sequence",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "full_canvas",
+        "composition_policy": "remove_source",
+        "direction": "left",
+        "family": "object_transform_candidates",
+        "object_selector": "border_touching_object",
+        "primitive_name": "flip_horizontal",
+        "source_color": 2,
+        "symmetry_axis": "horizontal",
+        "target_color": 3,
+        "template_name": "object_extract_then_transform"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-03-DFD8398F",
+      "candidate_signature": "DFD8398F835477CD",
+      "deterministic": true,
+      "family": "object_transform_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "select_object",
+        "transform_object"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-003",
+      "template_name": "object_extract_then_transform",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "non_background_bbox",
+        "composition_policy": "overlay_non_background",
+        "direction": "right",
+        "family": "object_transform_candidates",
+        "object_selector": "primary_color_object",
+        "primitive_name": "transpose",
+        "source_color": 3,
+        "symmetry_axis": "vertical",
+        "target_color": 4,
+        "template_name": "object_filter_then_recolor"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-04-06800321",
+      "candidate_signature": "068003217A7F60CB",
+      "deterministic": true,
+      "family": "object_transform_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "filter_object",
+        "recolor_object"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-004",
+      "template_name": "object_filter_then_recolor",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "object_bbox",
+        "composition_policy": "replace_target",
+        "direction": "up",
+        "family": "relation_graph_candidates",
+        "object_selector": "largest_object",
+        "primitive_name": "crop_to_non_background_bbox",
+        "source_color": 4,
+        "symmetry_axis": "horizontal",
+        "target_color": 5,
+        "template_name": "object_relation_guided_move"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-05-76B8EF83",
+      "candidate_signature": "76B8EF831FE0748D",
+      "deterministic": true,
+      "family": "relation_graph_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "select_relation",
+        "move_object"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-005",
+      "template_name": "object_relation_guided_move",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "full_canvas",
+        "composition_policy": "remove_source",
+        "direction": "down",
+        "family": "symmetry_completion_candidates",
+        "object_selector": "smallest_object",
+        "primitive_name": "complete_vertical_symmetry",
+        "source_color": 5,
+        "symmetry_axis": "vertical",
+        "target_color": 0,
+        "template_name": "symmetry_completion_program"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-06-B12E9C73",
+      "candidate_signature": "B12E9C730C23E1BE",
+      "deterministic": true,
+      "family": "symmetry_completion_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "detect_symmetry_axis",
+        "complete_symmetry"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-006",
+      "template_name": "symmetry_completion_program",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "non_background_bbox",
+        "composition_policy": "overlay_non_background",
+        "direction": "left",
+        "family": "color_rule_candidates",
+        "object_selector": "border_touching_object",
+        "primitive_name": "identity",
+        "source_color": 0,
+        "symmetry_axis": "horizontal",
+        "target_color": 1,
+        "template_name": "palette_remap_program"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-07-89AEF3B0",
+      "candidate_signature": "89AEF3B0B931C144",
+      "deterministic": true,
+      "family": "color_rule_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "infer_palette_map",
+        "apply_palette_map"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-007",
+      "template_name": "palette_remap_program",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "object_bbox",
+        "composition_policy": "replace_target",
+        "direction": "right",
+        "family": "crop_pad_resize_candidates",
+        "object_selector": "primary_color_object",
+        "primitive_name": "rotate_90",
+        "source_color": 1,
+        "symmetry_axis": "vertical",
+        "target_color": 2,
+        "template_name": "crop_pad_resize_program"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-08-1ECA082E",
+      "candidate_signature": "1ECA082E45C8AC6B",
+      "deterministic": true,
+      "family": "crop_pad_resize_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "crop_to_bbox",
+        "pad_or_resize"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-008",
+      "template_name": "crop_pad_resize_program",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "full_canvas",
+        "composition_policy": "remove_source",
+        "direction": "up",
+        "family": "primitive_sequence_candidates",
+        "object_selector": "largest_object",
+        "primitive_name": "flip_horizontal",
+        "source_color": 2,
+        "symmetry_axis": "horizontal",
+        "target_color": 3,
+        "template_name": "tile_or_repeat_program"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-09-54ED55F7",
+      "candidate_signature": "54ED55F7F96110D0",
+      "deterministic": true,
+      "family": "primitive_sequence_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "detect_tile",
+        "repeat_tile"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-009",
+      "template_name": "tile_or_repeat_program",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "non_background_bbox",
+        "composition_policy": "overlay_non_background",
+        "direction": "down",
+        "family": "composite_program_candidates",
+        "object_selector": "smallest_object",
+        "primitive_name": "transpose",
+        "source_color": 3,
+        "symmetry_axis": "vertical",
+        "target_color": 4,
+        "template_name": "mask_overlay_program"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-10-8E2BE928",
+      "candidate_signature": "8E2BE928730C633C",
+      "deterministic": true,
+      "family": "composite_program_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "build_mask",
+        "overlay_mask"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-010",
+      "template_name": "mask_overlay_program",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "object_bbox",
+        "composition_policy": "replace_target",
+        "direction": "left",
+        "family": "composite_program_candidates",
+        "object_selector": "border_touching_object",
+        "primitive_name": "crop_to_non_background_bbox",
+        "source_color": 4,
+        "symmetry_axis": "horizontal",
+        "target_color": 5,
+        "template_name": "object_compose_or_remove_program"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-11-F8E71717",
+      "candidate_signature": "F8E717178C15B5AC",
+      "deterministic": true,
+      "family": "composite_program_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "select_object",
+        "compose_or_remove_object"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-011",
+      "template_name": "object_compose_or_remove_program",
+      "train_pair_match_required": true
+    },
+    {
+      "binding": {
+        "bbox_policy": "full_canvas",
+        "composition_policy": "remove_source",
+        "direction": "right",
+        "family": "composite_program_candidates",
+        "object_selector": "primary_color_object",
+        "primitive_name": "complete_vertical_symmetry",
+        "source_color": 5,
+        "symmetry_axis": "vertical",
+        "target_color": 0,
+        "template_name": "conditional_rule_program"
+      },
+      "bounded": true,
+      "candidate_generator_runtime_wiring": false,
+      "candidate_id": "CAND-M13-T6-12-C39AA64F",
+      "candidate_signature": "C39AA64F7A5C5C83",
+      "deterministic": true,
+      "family": "composite_program_candidates",
+      "kaggle_submission_payload": false,
+      "local_only": true,
+      "max_depth_allowed": 3,
+      "operations": [
+        "infer_condition",
+        "apply_conditional_transform"
+      ],
+      "program_depth": 2,
+      "public_safe": true,
+      "ranker_runtime_wiring": false,
+      "real_submission_candidate": false,
+      "runtime_solver_patch": false,
+      "runtime_wiring_required": false,
+      "template_id": "TPL-012",
+      "template_name": "conditional_rule_program",
+      "train_pair_match_required": true
+    }
+  ],
+  "implementation_blocking_issue_count": 0,
+  "implementation_component_count": 6,
+  "implementation_components": [
+    "candidate_template_registry",
+    "bounded_parameter_binder",
+    "deterministic_candidate_enumerator",
+    "candidate_signature_builder",
+    "candidate_evidence_packager",
+    "fail_closed_boundary_validator"
+  ],
+  "implementation_gate_count": 42,
+  "implementation_pass_count": 42,
+  "implementation_summary": {
+    "candidate_family_count": 7,
+    "candidate_generator_wiring_authorized": false,
+    "candidate_ids_unique": true,
+    "candidate_template_count": 12,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "generated_candidate_count": 12,
+    "implementation_status": "READY",
+    "implementation_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_READY_FOR_REVIEW",
+    "max_program_depth": 2,
+    "next_stage": "MILESTONE_13_TASK_7_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_V1",
+    "runtime_wiring_authorized": false
+  },
+  "implementation_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_READY_FOR_REVIEW",
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "max_program_depth": 2,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_7_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "parameter_binding_field_count": 8,
+  "parameter_binding_fields": [
+    "primitive_name",
+    "object_selector",
+    "source_color",
+    "target_color",
+    "direction",
+    "symmetry_axis",
+    "bbox_policy",
+    "composition_policy"
+  ],
+  "passed_gate_count": 42,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "program_synthesis_candidate_generator_controlled_implementation_allowed": true,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "quality_target_count": 7,
+  "quality_targets": [
+    "candidate_generation_is_deterministic",
+    "candidate_ids_are_stable",
+    "candidate_templates_are_bounded",
+    "program_depth_is_limited_to_three",
+    "candidate_evidence_is_packaged",
+    "runtime_wiring_is_blocked",
+    "next_task_is_implementation_review"
+  ],
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 42,
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1",
+  "risk_control_count": 10,
+  "risk_controls": [
+    "NO_REAL_KAGGLE_EVALUATION",
+    "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+    "NO_CANDIDATE_GENERATOR_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "NO_EXTERNAL_API_DEPENDENCY",
+    "NO_INTERNET_DURING_EVAL",
+    "NO_KAGGLE_AUTHENTICATION",
+    "NO_UPLOAD",
+    "NO_SUBMISSION"
+  ],
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "signature": "A831131C233E4D34",
+  "source_artifact_parseable": true,
+  "source_artifact_present": true,
+  "source_blocks_real_actions": true,
+  "source_blocks_runtime_wiring": true,
+  "source_next_stage_ok": true,
+  "source_plan_artifact": "examples/milestone-13/program-synthesis-candidate-generator-plan-v1/milestone-13-program-synthesis-candidate-generator-plan-v1.json",
+  "source_plan_ready": true,
+  "source_plan_shape_ok": true,
+  "source_task": "MILESTONE_13_TASK_5_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-IMPLEMENTATION-A831131C233E",
+  "task_label": "Milestone #13 Task 6 - Program Synthesis Candidate Generator Controlled Implementation v1",
+  "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1_LOCAL_ONLY",
+  "task_number": 6,
+  "task_scope": "CONTROLLED_LOCAL_CANDIDATE_GENERATOR_IMPLEMENTATION_NO_RUNTIME_WIRING_NO_REAL_EVAL_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_READY",
+  "warning_count": 0
+}
