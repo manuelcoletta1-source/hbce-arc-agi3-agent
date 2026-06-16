@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "93478ce Update ARC AGI3 milestone 12 candidate ranker policy artifacts",
+  "baseline_commit": "ca5fd4f Add ARC AGI3 milestone 12 ranked candidate benchmark",
   "benchmark": {
     "benchmark_case_count": 6,
     "benchmark_cases": [
@@ -824,11 +824,11 @@
   "required_gate_count": 33,
   "revision": "MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_V1",
   "selected_candidate_count": 6,
-  "signature": "7563DF4F2BC92A4A",
+  "signature": "5EE5E3524B3548FC",
   "source_ranker_artifact": "examples/milestone-12/candidate-ranker-policy-v1/milestone-12-candidate-ranker-policy-v1.json",
   "source_task": "MILESTONE_12_TASK_9_CANDIDATE_RANKER_POLICY_V1",
   "submission_json_created": false,
-  "task_id": "MILESTONE-12-RANKED-CANDIDATE-BENCHMARK-7563DF4F2BC9",
+  "task_id": "MILESTONE-12-RANKED-CANDIDATE-BENCHMARK-5EE5E3524B35",
   "task_label": "Milestone #12 Task 10 - Ranked Candidate Benchmark v1",
   "task_mode": "MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_V1_LOCAL_ONLY",
   "task_number": 10,

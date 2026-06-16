@@ -1,9 +1,9 @@
 # Milestone #12 Task 10 - Ranked Candidate Benchmark v1
 
 - revision: `MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_V1`
-- task_id: `MILESTONE-12-RANKED-CANDIDATE-BENCHMARK-7563DF4F2BC9`
-- signature: `7563DF4F2BC92A4A`
-- baseline_commit: `93478ce Update ARC AGI3 milestone 12 candidate ranker policy artifacts`
+- task_id: `MILESTONE-12-RANKED-CANDIDATE-BENCHMARK-5EE5E3524B35`
+- signature: `5EE5E3524B3548FC`
+- baseline_commit: `ca5fd4f Add ARC AGI3 milestone 12 ranked candidate benchmark`
 - verdict: `MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`
