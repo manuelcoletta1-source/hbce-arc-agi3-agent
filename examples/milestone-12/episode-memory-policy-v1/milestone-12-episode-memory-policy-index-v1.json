@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "e30aa7e Update ARC AGI3 milestone 12 verified planner policy artifacts",
+  "baseline_commit": "e5cf5bd Add ARC AGI3 milestone 12 episode memory policy",
   "case_count": 6,
   "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
   "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
@@ -18,8 +18,8 @@
   "real_submission_allowed": false,
   "reuse_candidate_count": 6,
   "revision": "MILESTONE_12_EPISODE_MEMORY_POLICY_V1",
-  "signature": "44B958C97AD02038",
-  "task_id": "MILESTONE-12-EPISODE-MEMORY-POLICY-44B958C97AD0",
+  "signature": "1D49E96987CF8C45",
+  "task_id": "MILESTONE-12-EPISODE-MEMORY-POLICY-1D49E96987CF",
   "task_verdict": "MILESTONE_12_EPISODE_MEMORY_POLICY_READY",
   "trace_step_count": 25,
   "verified_episode_count": 6

@@ -1,9 +1,9 @@
 # Milestone #12 Task 7 - Episode Memory Policy v1
 
 - revision: `MILESTONE_12_EPISODE_MEMORY_POLICY_V1`
-- task_id: `MILESTONE-12-EPISODE-MEMORY-POLICY-44B958C97AD0`
-- signature: `44B958C97AD02038`
-- baseline_commit: `e30aa7e Update ARC AGI3 milestone 12 verified planner policy artifacts`
+- task_id: `MILESTONE-12-EPISODE-MEMORY-POLICY-1D49E96987CF`
+- signature: `1D49E96987CF8C45`
+- baseline_commit: `e5cf5bd Add ARC AGI3 milestone 12 episode memory policy`
 - verdict: `MILESTONE_12_EPISODE_MEMORY_POLICY_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`
