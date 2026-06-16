@@ -31,6 +31,6 @@
   "contains_api_keys": false,
   "private_core_exposure": false,
   "legal_certification": false,
-  "baseline_commit": "a8dd437 Add ARC AGI3 local solver patch helper controlled runtime wiring authorization gate",
+  "baseline_commit": "cfccbda Add ARC AGI3 controlled runtime wiring operator approval",
   "signature": "82423171EB444C05"
 }
