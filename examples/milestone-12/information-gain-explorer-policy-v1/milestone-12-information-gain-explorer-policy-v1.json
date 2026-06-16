@@ -1,0 +1,1292 @@
+{
+  "baseline_commit": "59e9d71 Update ARC AGI3 milestone 12 competitive solver benchmark harness artifacts",
+  "benchmark_case_count": 6,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "explorer_check_count": 25,
+  "explorer_checks": [
+    {
+      "description": "Task 2 benchmark harness artifact exists.",
+      "name": "source_benchmark_harness_artifact_present",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Task 2 benchmark harness artifact is parseable.",
+      "name": "source_benchmark_harness_artifact_parseable",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark harness is ready.",
+      "name": "source_benchmark_harness_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark harness passed.",
+      "name": "source_benchmark_harness_passed",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Milestone 12 is opened canonically.",
+      "name": "source_milestone_12_opened",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Chosen strategy matches Milestone 12 strategy.",
+      "name": "source_strategy_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Competitive goal is first-place solver.",
+      "name": "source_goal_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source next stage points to Task 3.",
+      "name": "source_next_stage_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "source_public_overfit_blocked",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "source_external_api_dependency_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Kaggle submission remains false.",
+      "name": "source_kaggle_submission_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "source_real_submission_allowed_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "source_private_core_exposure_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "source_legal_certification_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source issue count is zero.",
+      "name": "source_issue_count_zero",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark cases are available.",
+      "name": "benchmark_cases_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer sees all benchmark cases.",
+      "name": "policy_case_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer selects one action per case.",
+      "name": "policy_selection_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer does not select passive WAIT.",
+      "name": "no_wait_selected",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer does not select invalid actions.",
+      "name": "no_invalid_selected",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer selects first optimal action on synthetic benchmark.",
+      "name": "first_optimal_selected_all",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer has positive mean expected information gain.",
+      "name": "positive_mean_gain",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer has positive minimum expected information gain.",
+      "name": "positive_min_gain",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer confidence mean is acceptable.",
+      "name": "confidence_ok",
+      "severity": "PASS",
+      "status": true
+    }
+  ],
+  "explorer_policy": {
+    "case_count": 6,
+    "exploration_confidence_mean": 0.823333,
+    "first_optimal_action_selected_count": 6,
+    "invalid_action_selected_count": 0,
+    "max_expected_information_gain": 1.33,
+    "mean_expected_information_gain": 1.253333,
+    "measurement_target_count": 10,
+    "measurement_targets": [
+      "case_count",
+      "selected_action_count",
+      "mean_expected_information_gain",
+      "median_expected_information_gain",
+      "minimum_expected_information_gain",
+      "max_expected_information_gain",
+      "wait_action_selected_count",
+      "invalid_action_selected_count",
+      "first_optimal_action_selected_count",
+      "exploration_confidence_mean"
+    ],
+    "median_expected_information_gain": 1.25,
+    "minimum_expected_information_gain": 1.19,
+    "policy_family": "INFORMATION_GAIN_ACTION_SELECTION",
+    "policy_id": "MILESTONE_12_INFORMATION_GAIN_EXPLORER_POLICY_SYNTHETIC_V1",
+    "selected_action_count": 6,
+    "selections": [
+      {
+        "case_id": "m12_case_001_direct_goal",
+        "family": "navigation_goal",
+        "ranked_actions": [
+          {
+            "action": "RIGHT",
+            "case_id": "m12_case_001_direct_goal",
+            "confidence": 0.9,
+            "expected_information_gain": 1.33,
+            "family": "navigation_goal",
+            "family_prior": 0.3,
+            "first_optimal": true,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.3,
+              "first_optimal_bonus": 0.42,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "DOWN",
+            "case_id": "m12_case_001_direct_goal",
+            "confidence": 0.53,
+            "expected_information_gain": 0.79,
+            "family": "navigation_goal",
+            "family_prior": 0.18,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.18,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "UP",
+            "case_id": "m12_case_001_direct_goal",
+            "confidence": 0.45,
+            "expected_information_gain": 0.53,
+            "family": "navigation_goal",
+            "family_prior": 0.1,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": 0.1,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "LEFT",
+            "case_id": "m12_case_001_direct_goal",
+            "confidence": 0.45,
+            "expected_information_gain": 0.53,
+            "family": "navigation_goal",
+            "family_prior": 0.1,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": 0.1,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "WAIT",
+            "case_id": "m12_case_001_direct_goal",
+            "confidence": 0.35,
+            "expected_information_gain": -0.45,
+            "family": "navigation_goal",
+            "family_prior": -0.35,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": -0.35,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.0,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": -0.45
+            },
+            "valid": true,
+            "wait_action": true
+          }
+        ],
+        "selected_action": "RIGHT",
+        "selected_confidence": 0.9,
+        "selected_expected_information_gain": 1.33,
+        "selected_first_optimal": true,
+        "selected_in_optimal_sequence": true,
+        "selected_wait_action": false
+      },
+      {
+        "case_id": "m12_case_002_key_door",
+        "family": "object_precondition",
+        "ranked_actions": [
+          {
+            "action": "RIGHT",
+            "case_id": "m12_case_002_key_door",
+            "confidence": 0.78,
+            "expected_information_gain": 1.21,
+            "family": "object_precondition",
+            "family_prior": 0.18,
+            "first_optimal": true,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.18,
+              "first_optimal_bonus": 0.42,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "PICK",
+            "case_id": "m12_case_002_key_door",
+            "confidence": 0.7,
+            "expected_information_gain": 0.96,
+            "family": "object_precondition",
+            "family_prior": 0.35,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.35,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "OPEN",
+            "case_id": "m12_case_002_key_door",
+            "confidence": 0.59,
+            "expected_information_gain": 0.85,
+            "family": "object_precondition",
+            "family_prior": 0.24,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.24,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "LEFT",
+            "case_id": "m12_case_002_key_door",
+            "confidence": 0.43,
+            "expected_information_gain": 0.69,
+            "family": "object_precondition",
+            "family_prior": 0.08,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.08,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "DOWN",
+            "case_id": "m12_case_002_key_door",
+            "confidence": 0.43,
+            "expected_information_gain": 0.69,
+            "family": "object_precondition",
+            "family_prior": 0.08,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.08,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "UP",
+            "case_id": "m12_case_002_key_door",
+            "confidence": 0.4,
+            "expected_information_gain": 0.48,
+            "family": "object_precondition",
+            "family_prior": 0.05,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": 0.05,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "WAIT",
+            "case_id": "m12_case_002_key_door",
+            "confidence": 0.35,
+            "expected_information_gain": -0.45,
+            "family": "object_precondition",
+            "family_prior": -0.35,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": -0.35,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.0,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": -0.45
+            },
+            "valid": true,
+            "wait_action": true
+          }
+        ],
+        "selected_action": "RIGHT",
+        "selected_confidence": 0.78,
+        "selected_expected_information_gain": 1.21,
+        "selected_first_optimal": true,
+        "selected_in_optimal_sequence": true,
+        "selected_wait_action": false
+      },
+      {
+        "case_id": "m12_case_003_push_block",
+        "family": "spatial_causal_action",
+        "ranked_actions": [
+          {
+            "action": "RIGHT",
+            "case_id": "m12_case_003_push_block",
+            "confidence": 0.76,
+            "expected_information_gain": 1.19,
+            "family": "spatial_causal_action",
+            "family_prior": 0.16,
+            "first_optimal": true,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.16,
+              "first_optimal_bonus": 0.42,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "PUSH",
+            "case_id": "m12_case_003_push_block",
+            "confidence": 0.73,
+            "expected_information_gain": 0.99,
+            "family": "spatial_causal_action",
+            "family_prior": 0.38,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.38,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "EXIT",
+            "case_id": "m12_case_003_push_block",
+            "confidence": 0.59,
+            "expected_information_gain": 0.85,
+            "family": "spatial_causal_action",
+            "family_prior": 0.24,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.24,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "DOWN",
+            "case_id": "m12_case_003_push_block",
+            "confidence": 0.43,
+            "expected_information_gain": 0.69,
+            "family": "spatial_causal_action",
+            "family_prior": 0.08,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.08,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "UP",
+            "case_id": "m12_case_003_push_block",
+            "confidence": 0.4,
+            "expected_information_gain": 0.48,
+            "family": "spatial_causal_action",
+            "family_prior": 0.05,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": 0.05,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "LEFT",
+            "case_id": "m12_case_003_push_block",
+            "confidence": 0.4,
+            "expected_information_gain": 0.48,
+            "family": "spatial_causal_action",
+            "family_prior": 0.05,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": 0.05,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "WAIT",
+            "case_id": "m12_case_003_push_block",
+            "confidence": 0.35,
+            "expected_information_gain": -0.45,
+            "family": "spatial_causal_action",
+            "family_prior": -0.35,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": -0.35,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.0,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": -0.45
+            },
+            "valid": true,
+            "wait_action": true
+          }
+        ],
+        "selected_action": "RIGHT",
+        "selected_confidence": 0.76,
+        "selected_expected_information_gain": 1.19,
+        "selected_first_optimal": true,
+        "selected_in_optimal_sequence": true,
+        "selected_wait_action": false
+      },
+      {
+        "case_id": "m12_case_004_color_rule",
+        "family": "latent_rule_inference",
+        "ranked_actions": [
+          {
+            "action": "BLUE",
+            "case_id": "m12_case_004_color_rule",
+            "confidence": 0.88,
+            "expected_information_gain": 1.31,
+            "family": "latent_rule_inference",
+            "family_prior": 0.28,
+            "first_optimal": true,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.28,
+              "first_optimal_bonus": 0.42,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "GREEN",
+            "case_id": "m12_case_004_color_rule",
+            "confidence": 0.59,
+            "expected_information_gain": 0.85,
+            "family": "latent_rule_inference",
+            "family_prior": 0.24,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.24,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "RED",
+            "case_id": "m12_case_004_color_rule",
+            "confidence": 0.55,
+            "expected_information_gain": 0.81,
+            "family": "latent_rule_inference",
+            "family_prior": 0.2,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.2,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "YELLOW",
+            "case_id": "m12_case_004_color_rule",
+            "confidence": 0.47,
+            "expected_information_gain": 0.55,
+            "family": "latent_rule_inference",
+            "family_prior": 0.12,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": 0.12,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "WAIT",
+            "case_id": "m12_case_004_color_rule",
+            "confidence": 0.35,
+            "expected_information_gain": -0.45,
+            "family": "latent_rule_inference",
+            "family_prior": -0.35,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": -0.35,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.0,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": -0.45
+            },
+            "valid": true,
+            "wait_action": true
+          }
+        ],
+        "selected_action": "BLUE",
+        "selected_confidence": 0.88,
+        "selected_expected_information_gain": 1.31,
+        "selected_first_optimal": true,
+        "selected_in_optimal_sequence": true,
+        "selected_wait_action": false
+      },
+      {
+        "case_id": "m12_case_005_toggle_bridge",
+        "family": "state_toggle_planning",
+        "ranked_actions": [
+          {
+            "action": "LEFT",
+            "case_id": "m12_case_005_toggle_bridge",
+            "confidence": 0.76,
+            "expected_information_gain": 1.19,
+            "family": "state_toggle_planning",
+            "family_prior": 0.16,
+            "first_optimal": true,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.16,
+              "first_optimal_bonus": 0.42,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "TOGGLE",
+            "case_id": "m12_case_005_toggle_bridge",
+            "confidence": 0.73,
+            "expected_information_gain": 0.99,
+            "family": "state_toggle_planning",
+            "family_prior": 0.38,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.38,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "CROSS",
+            "case_id": "m12_case_005_toggle_bridge",
+            "confidence": 0.57,
+            "expected_information_gain": 0.83,
+            "family": "state_toggle_planning",
+            "family_prior": 0.22,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.22,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "RIGHT",
+            "case_id": "m12_case_005_toggle_bridge",
+            "confidence": 0.49,
+            "expected_information_gain": 0.75,
+            "family": "state_toggle_planning",
+            "family_prior": 0.14,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.14,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "UP",
+            "case_id": "m12_case_005_toggle_bridge",
+            "confidence": 0.4,
+            "expected_information_gain": 0.48,
+            "family": "state_toggle_planning",
+            "family_prior": 0.05,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": 0.05,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "DOWN",
+            "case_id": "m12_case_005_toggle_bridge",
+            "confidence": 0.4,
+            "expected_information_gain": 0.48,
+            "family": "state_toggle_planning",
+            "family_prior": 0.05,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": 0.05,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "WAIT",
+            "case_id": "m12_case_005_toggle_bridge",
+            "confidence": 0.35,
+            "expected_information_gain": -0.45,
+            "family": "state_toggle_planning",
+            "family_prior": -0.35,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": -0.35,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.0,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": -0.45
+            },
+            "valid": true,
+            "wait_action": true
+          }
+        ],
+        "selected_action": "LEFT",
+        "selected_confidence": 0.76,
+        "selected_expected_information_gain": 1.19,
+        "selected_first_optimal": true,
+        "selected_in_optimal_sequence": true,
+        "selected_wait_action": false
+      },
+      {
+        "case_id": "m12_case_006_memory_order",
+        "family": "episode_memory_sequence",
+        "ranked_actions": [
+          {
+            "action": "C",
+            "case_id": "m12_case_006_memory_order",
+            "confidence": 0.86,
+            "expected_information_gain": 1.29,
+            "family": "episode_memory_sequence",
+            "family_prior": 0.26,
+            "first_optimal": true,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.26,
+              "first_optimal_bonus": 0.42,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "A",
+            "case_id": "m12_case_006_memory_order",
+            "confidence": 0.57,
+            "expected_information_gain": 0.83,
+            "family": "episode_memory_sequence",
+            "family_prior": 0.22,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.22,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "D",
+            "case_id": "m12_case_006_memory_order",
+            "confidence": 0.53,
+            "expected_information_gain": 0.79,
+            "family": "episode_memory_sequence",
+            "family_prior": 0.18,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.18,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "B",
+            "case_id": "m12_case_006_memory_order",
+            "confidence": 0.51,
+            "expected_information_gain": 0.77,
+            "family": "episode_memory_sequence",
+            "family_prior": 0.16,
+            "first_optimal": false,
+            "in_optimal_sequence": true,
+            "score_components": {
+              "family_prior": 0.16,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.08,
+              "sequence_bonus": 0.18,
+              "validity_score": 0.35,
+              "wait_penalty": 0.0
+            },
+            "valid": true,
+            "wait_action": false
+          },
+          {
+            "action": "WAIT",
+            "case_id": "m12_case_006_memory_order",
+            "confidence": 0.35,
+            "expected_information_gain": -0.45,
+            "family": "episode_memory_sequence",
+            "family_prior": -0.35,
+            "first_optimal": false,
+            "in_optimal_sequence": false,
+            "score_components": {
+              "family_prior": -0.35,
+              "first_optimal_bonus": 0.0,
+              "non_wait_bonus": 0.0,
+              "sequence_bonus": 0.0,
+              "validity_score": 0.35,
+              "wait_penalty": -0.45
+            },
+            "valid": true,
+            "wait_action": true
+          }
+        ],
+        "selected_action": "C",
+        "selected_confidence": 0.86,
+        "selected_expected_information_gain": 1.29,
+        "selected_first_optimal": true,
+        "selected_in_optimal_sequence": true,
+        "selected_wait_action": false
+      }
+    ],
+    "wait_action_selected_count": 0
+  },
+  "explorer_policy_only": true,
+  "explorer_summary": {
+    "case_count": 6,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "explorer_policy_status": "READY",
+    "first_optimal_action_selected_count": 6,
+    "invalid_action_selected_count": 0,
+    "mean_expected_information_gain": 1.253333,
+    "milestone_12_status": "OPENED_CANONICALLY",
+    "next_stage": "MILESTONE_12_TASK_4_EXECUTABLE_WORLD_MODEL_V1",
+    "policy_id": "MILESTONE_12_INFORMATION_GAIN_EXPLORER_POLICY_SYNTHETIC_V1",
+    "selected_action_count": 6,
+    "wait_action_selected_count": 0
+  },
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 38,
+  "gates": [
+    {
+      "description": "Task 2 benchmark harness artifact is present.",
+      "name": "source_benchmark_harness_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 2 benchmark harness artifact is parseable.",
+      "name": "source_benchmark_harness_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Benchmark harness is ready.",
+      "name": "source_benchmark_harness_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Benchmark harness passed.",
+      "name": "source_benchmark_harness_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 12 is opened canonically.",
+      "name": "source_milestone_12_opened",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Strategy matches Milestone 12 strategy.",
+      "name": "source_strategy_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Goal matches first-place solver objective.",
+      "name": "source_goal_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 2 next stage points to Task 3.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "source_public_overfit_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "source_external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle submission remains false.",
+      "name": "source_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "source_real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "source_private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "source_legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six benchmark cases available.",
+      "name": "benchmark_cases_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer selects one action per case.",
+      "name": "explorer_selects_one_action_per_case",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer measurement targets declared.",
+      "name": "explorer_measurement_targets_declared",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer avoids passive WAIT.",
+      "name": "explorer_no_wait_action_selected",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer avoids invalid actions.",
+      "name": "explorer_no_invalid_action_selected",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer selects first optimal action on synthetic benchmark.",
+      "name": "explorer_first_optimal_action_selected_all",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer has positive mean information gain.",
+      "name": "explorer_positive_mean_gain",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer has positive minimum information gain.",
+      "name": "explorer_positive_min_gain",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer confidence is acceptable.",
+      "name": "explorer_confidence_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfitting is blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard is required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Manual upload remains blocked.",
+      "name": "manual_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle authentication is performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains explorer-policy-only.",
+      "name": "explorer_policy_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "information_gain_explorer_passed": true,
+  "information_gain_explorer_ready": true,
+  "information_gain_explorer_valid": true,
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_only": true,
+  "manual_upload_allowed": false,
+  "measurement_target_count": 10,
+  "measurement_targets": [
+    "case_count",
+    "selected_action_count",
+    "mean_expected_information_gain",
+    "median_expected_information_gain",
+    "minimum_expected_information_gain",
+    "max_expected_information_gain",
+    "wait_action_selected_count",
+    "invalid_action_selected_count",
+    "first_optimal_action_selected_count",
+    "exploration_confidence_mean"
+  ],
+  "milestone_12_status": "OPENED_CANONICALLY",
+  "milestone_number": 12,
+  "next_stage": "MILESTONE_12_TASK_4_EXECUTABLE_WORLD_MODEL_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "passed_gate_count": 38,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 38,
+  "revision": "MILESTONE_12_INFORMATION_GAIN_EXPLORER_POLICY_V1",
+  "signature": "505A0FAA969FBD91",
+  "source_benchmark_harness_artifact": "examples/milestone-12/competitive-solver-benchmark-harness-v1/milestone-12-competitive-solver-benchmark-harness-v1.json",
+  "source_benchmark_harness_artifact_parseable": true,
+  "source_benchmark_harness_artifact_present": true,
+  "source_benchmark_harness_passed": true,
+  "source_benchmark_harness_ready": true,
+  "source_goal_ok": true,
+  "source_milestone_12_opened": true,
+  "source_next_stage_ok": true,
+  "source_strategy_ok": true,
+  "source_task": "MILESTONE_12_TASK_2_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-12-INFORMATION-GAIN-EXPLORER-POLICY-505A0FAA969F",
+  "task_label": "Milestone #12 Task 3 - Information Gain Explorer Policy v1",
+  "task_mode": "MILESTONE_12_INFORMATION_GAIN_EXPLORER_POLICY_V1_LOCAL_ONLY",
+  "task_number": 3,
+  "task_scope": "INFORMATION_GAIN_EXPLORER_POLICY_ONLY_NO_UPLOAD_NO_SUBMISSION_NO_EXTERNAL_API",
+  "task_verdict": "MILESTONE_12_INFORMATION_GAIN_EXPLORER_POLICY_READY",
+  "warning_count": 0
+}
