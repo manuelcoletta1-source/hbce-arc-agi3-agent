@@ -1,0 +1,352 @@
+{
+  "baseline_commit": "efc4787 Update ARC AGI3 controlled runtime wiring review decision artifacts",
+  "closed_chain": [
+    "MILESTONE_11_TASK_24_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_OPERATOR_APPROVAL_V1",
+    "MILESTONE_11_TASK_25_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_EXECUTION_CONTRACT_V1",
+    "MILESTONE_11_TASK_26_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_EXECUTION_DRY_RUN_V1",
+    "MILESTONE_11_TASK_27_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_REVIEW_V1",
+    "MILESTONE_11_TASK_28_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_DECISION_V1",
+    "MILESTONE_11_TASK_29_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_DECISION_CLOSURE_V1"
+  ],
+  "closed_task_count": 6,
+  "closure_controls": [
+    "The controlled runtime wiring review decision chain is closed.",
+    "The branch may advance only to closure audit.",
+    "Real controlled runtime wiring remains blocked.",
+    "Runtime solver patching remains blocked.",
+    "Ranker runtime modification remains blocked.",
+    "Kaggle submission creation remains blocked.",
+    "Kaggle upload remains blocked.",
+    "Kaggle authentication remains blocked.",
+    "External API calls remain blocked.",
+    "Private core exposure remains blocked.",
+    "No official score claim is allowed.",
+    "No competitive score claim is allowed.",
+    "Any later transition from dry-run to real execution requires a separate explicit authorization chain."
+  ],
+  "closure_input_count": 12,
+  "closure_inputs": [
+    {
+      "description": "Task 28 review decision artifact exists.",
+      "name": "source_decision_artifact_present",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 review decision artifact is parseable JSON.",
+      "name": "source_decision_artifact_parseable",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 review decision declared itself valid.",
+      "name": "source_decision_valid",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 review decision passed.",
+      "name": "source_decision_passed",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 explicitly kept real execution blocked.",
+      "name": "source_decision_real_execution_blocked",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 preserved controlled_runtime_wiring_execution_allowed=false.",
+      "name": "source_controlled_runtime_wiring_execution_allowed_false",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 preserved controlled_runtime_wiring_authorized=false.",
+      "name": "source_controlled_runtime_wiring_authorized_false",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 did not perform runtime wiring.",
+      "name": "source_runtime_wiring_not_performed",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 did not patch the runtime solver.",
+      "name": "source_runtime_solver_patch_not_applied",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 did not send a Kaggle submission.",
+      "name": "source_kaggle_submission_not_sent",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 did not expose private core material.",
+      "name": "source_private_core_not_exposed",
+      "required": true,
+      "status": true
+    },
+    {
+      "description": "Task 28 preserved legal_certification=false.",
+      "name": "source_legal_certification_false",
+      "required": true,
+      "status": true
+    }
+  ],
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_runtime_wiring_authorized": false,
+  "controlled_runtime_wiring_execution_allowed": false,
+  "deterministic": true,
+  "diagnostic_only": true,
+  "dry_run_only": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 32,
+  "gates": [
+    {
+      "description": "Task 28 decision artifact is present.",
+      "name": "source_task_28_decision_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 28 decision artifact is parseable.",
+      "name": "source_task_28_decision_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 28 decision is valid.",
+      "name": "source_task_28_decision_valid",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 28 decision passed.",
+      "name": "source_task_28_decision_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 28 kept real execution blocked.",
+      "name": "source_task_28_real_execution_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 29 closure record is built.",
+      "name": "closure_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All required closure inputs passed.",
+      "name": "closure_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task chain 24 through 29 is declared.",
+      "name": "closed_chain_declared",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Next stage is closure audit.",
+      "name": "next_stage_closure_audit_declared",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 29 performs no runtime wiring.",
+      "name": "runtime_wiring_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 29 applies no runtime solver patch.",
+      "name": "runtime_solver_patch_applied_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver patching remains blocked.",
+      "name": "runtime_solver_patch_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime remains unmodified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real controlled runtime wiring execution remains blocked.",
+      "name": "controlled_runtime_wiring_execution_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled runtime wiring is not authorized for real execution.",
+      "name": "controlled_runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle upload is performed.",
+      "name": "kaggle_upload_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle authentication is performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No submission JSON is created.",
+      "name": "submission_json_created_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real submission candidate is created.",
+      "name": "real_submission_candidate_created_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No external API dependency is introduced.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No API keys are contained in this artifact.",
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No private core exposure is introduced.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Legal certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "The task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "The task remains dry-run-only.",
+      "name": "dry_run_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "The task remains diagnostic-only.",
+      "name": "diagnostic_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "The artifact is public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "The closure is deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Any missing required condition fails closed.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No score claim is allowed.",
+      "name": "no_score_claim_allowed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No competitive claim is allowed.",
+      "name": "no_competitive_claim_allowed",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "issue_count": 0,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_only": true,
+  "milestone_subchain_closed": true,
+  "milestone_subchain_locked": true,
+  "next_stage": "MILESTONE_11_TASK_30_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_CLOSURE_AUDIT_V1",
+  "official_score_claim_allowed": false,
+  "passed_gate_count": 32,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_safe": true,
+  "ranker_runtime_modified": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 32,
+  "review_decision_closure": "CLOSED_REAL_EXECUTION_STILL_BLOCKED",
+  "review_decision_closure_passed": true,
+  "review_decision_closure_ready": true,
+  "review_decision_closure_valid": true,
+  "revision": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_DECISION_CLOSURE_V1",
+  "runtime_solver_modified": false,
+  "runtime_solver_patch_allowed": false,
+  "runtime_solver_patch_applied": false,
+  "runtime_wiring_performed": false,
+  "signature": "2A6FEB97711FBD17",
+  "source_decision_artifact": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-review-decision-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-review-decision-v1.json",
+  "source_decision_artifact_parseable": true,
+  "source_decision_artifact_present": true,
+  "source_decision_passed": true,
+  "source_decision_real_execution_blocked": true,
+  "source_decision_valid": true,
+  "source_task": "MILESTONE_11_TASK_28_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_DECISION_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-REVIEW-DECISION-CLOSURE-2A6FEB97711F",
+  "task_label": "Milestone #11 Task 29 - Controlled Runtime Wiring Review Decision Closure v1",
+  "task_mode": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_DECISION_CLOSURE_V1_LOCAL_ONLY",
+  "task_number": 29,
+  "task_scope": "REVIEW_DECISION_CLOSURE_ONLY_NO_RUNTIME_WIRING_NO_SCORE_NO_SUBMISSION",
+  "task_verdict": "CONTROLLED_RUNTIME_WIRING_REVIEW_DECISION_CLOSED_REAL_EXECUTION_STILL_BLOCKED",
+  "warning_count": 0
+}
