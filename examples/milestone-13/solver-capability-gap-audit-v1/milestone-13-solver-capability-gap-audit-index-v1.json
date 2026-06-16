@@ -1,0 +1,22 @@
+{
+  "audit_verdict": "SOLVER_CAPABILITY_GAP_AUDIT_READY_FOR_LOCAL_IMPROVEMENT_PLAN",
+  "baseline_commit": "76ea268 Update ARC AGI3 milestone 13 real evaluation boundary gate artifacts",
+  "capability_area_count": 12,
+  "gap_count": 6,
+  "high_priority_gap_count": 5,
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "next_stage": "MILESTONE_13_TASK_3_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+  "priority_plan_step_count": 6,
+  "private_core_exposure": false,
+  "real_evaluation_performed": false,
+  "real_submission_allowed": false,
+  "revision": "MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_V1",
+  "signature": "4698A59E72AEAC30",
+  "solver_capability_gap_audit_ready": true,
+  "source_boundary_passed": true,
+  "task_id": "MILESTONE-13-SOLVER-CAPABILITY-GAP-AUDIT-4698A59E72AE",
+  "task_verdict": "MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_READY",
+  "top_priority": "TRANSFORMATION_PRIMITIVE_EXPANSION"
+}

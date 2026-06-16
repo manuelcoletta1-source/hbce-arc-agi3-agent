@@ -1,0 +1,655 @@
+{
+  "audit_blocking_issue_count": 0,
+  "audit_gate_count": 38,
+  "audit_pass_count": 38,
+  "audit_summary": {
+    "audit_status": "READY",
+    "audit_verdict": "SOLVER_CAPABILITY_GAP_AUDIT_READY_FOR_LOCAL_IMPROVEMENT_PLAN",
+    "capability_area_count": 12,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "gap_count": 6,
+    "high_priority_gap_count": 5,
+    "next_stage": "MILESTONE_13_TASK_3_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+    "priority_plan_step_count": 6,
+    "source_boundary_passed": true,
+    "top_priority": "TRANSFORMATION_PRIMITIVE_EXPANSION"
+  },
+  "audit_verdict": "SOLVER_CAPABILITY_GAP_AUDIT_READY_FOR_LOCAL_IMPROVEMENT_PLAN",
+  "baseline_commit": "76ea268 Update ARC AGI3 milestone 13 real evaluation boundary gate artifacts",
+  "capability_area_count": 12,
+  "capability_areas": [
+    "object_detection_and_segmentation",
+    "grid_transformation_primitives",
+    "symmetry_and_pattern_completion",
+    "color_mapping_and_palette_reasoning",
+    "shape_extraction_and_recomposition",
+    "multi_step_program_synthesis",
+    "candidate_generation_diversity",
+    "candidate_verification_strength",
+    "ranker_confidence_calibration",
+    "failure_memory_reuse",
+    "public_overfit_resistance",
+    "submission_readiness_control"
+  ],
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gap_audit_package": {
+    "audit_package_id": "MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_PACKAGE_V1",
+    "capability_area_count": 12,
+    "capability_areas": [
+      "object_detection_and_segmentation",
+      "grid_transformation_primitives",
+      "symmetry_and_pattern_completion",
+      "color_mapping_and_palette_reasoning",
+      "shape_extraction_and_recomposition",
+      "multi_step_program_synthesis",
+      "candidate_generation_diversity",
+      "candidate_verification_strength",
+      "ranker_confidence_calibration",
+      "failure_memory_reuse",
+      "public_overfit_resistance",
+      "submission_readiness_control"
+    ],
+    "gap_count": 6,
+    "gaps": [
+      {
+        "area": "grid_transformation_primitives",
+        "finding": "Primitive coverage must expand beyond current safe policy declarations.",
+        "gap_id": "GAP-01",
+        "probability_of_score_impact": 0.82,
+        "recommended_next_task": "MILESTONE_13_TASK_3_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+        "severity": "HIGH"
+      },
+      {
+        "area": "object_detection_and_segmentation",
+        "finding": "Object-centric extraction needs stronger local diagnostics before real submission.",
+        "gap_id": "GAP-02",
+        "probability_of_score_impact": 0.78,
+        "recommended_next_task": "MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1",
+        "severity": "HIGH"
+      },
+      {
+        "area": "multi_step_program_synthesis",
+        "finding": "Multi-step transformation planning remains the central competitive bottleneck.",
+        "gap_id": "GAP-03",
+        "probability_of_score_impact": 0.75,
+        "recommended_next_task": "MILESTONE_13_TASK_5_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+        "severity": "HIGH"
+      },
+      {
+        "area": "candidate_generation_diversity",
+        "finding": "Candidate policy requires broader generation without public-set overfitting.",
+        "gap_id": "GAP-04",
+        "probability_of_score_impact": 0.69,
+        "recommended_next_task": "MILESTONE_13_TASK_6_CANDIDATE_GENERATOR_DIVERSITY_PLAN_V1",
+        "severity": "MEDIUM_HIGH"
+      },
+      {
+        "area": "ranker_confidence_calibration",
+        "finding": "Ranker must separate evidence quality from candidate abundance.",
+        "gap_id": "GAP-05",
+        "probability_of_score_impact": 0.66,
+        "recommended_next_task": "MILESTONE_13_TASK_7_RANKER_CALIBRATION_PLAN_V1",
+        "severity": "MEDIUM_HIGH"
+      },
+      {
+        "area": "failure_memory_reuse",
+        "finding": "Failure classes should be converted into reusable local improvement cases.",
+        "gap_id": "GAP-06",
+        "probability_of_score_impact": 0.58,
+        "recommended_next_task": "MILESTONE_13_TASK_8_FAILURE_MEMORY_REPLAY_PLAN_V1",
+        "severity": "MEDIUM"
+      }
+    ],
+    "high_priority_gap_count": 5,
+    "high_priority_gaps": [
+      {
+        "area": "grid_transformation_primitives",
+        "finding": "Primitive coverage must expand beyond current safe policy declarations.",
+        "gap_id": "GAP-01",
+        "probability_of_score_impact": 0.82,
+        "recommended_next_task": "MILESTONE_13_TASK_3_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+        "severity": "HIGH"
+      },
+      {
+        "area": "object_detection_and_segmentation",
+        "finding": "Object-centric extraction needs stronger local diagnostics before real submission.",
+        "gap_id": "GAP-02",
+        "probability_of_score_impact": 0.78,
+        "recommended_next_task": "MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1",
+        "severity": "HIGH"
+      },
+      {
+        "area": "multi_step_program_synthesis",
+        "finding": "Multi-step transformation planning remains the central competitive bottleneck.",
+        "gap_id": "GAP-03",
+        "probability_of_score_impact": 0.75,
+        "recommended_next_task": "MILESTONE_13_TASK_5_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+        "severity": "HIGH"
+      },
+      {
+        "area": "candidate_generation_diversity",
+        "finding": "Candidate policy requires broader generation without public-set overfitting.",
+        "gap_id": "GAP-04",
+        "probability_of_score_impact": 0.69,
+        "recommended_next_task": "MILESTONE_13_TASK_6_CANDIDATE_GENERATOR_DIVERSITY_PLAN_V1",
+        "severity": "MEDIUM_HIGH"
+      },
+      {
+        "area": "ranker_confidence_calibration",
+        "finding": "Ranker must separate evidence quality from candidate abundance.",
+        "gap_id": "GAP-05",
+        "probability_of_score_impact": 0.66,
+        "recommended_next_task": "MILESTONE_13_TASK_7_RANKER_CALIBRATION_PLAN_V1",
+        "severity": "MEDIUM_HIGH"
+      }
+    ],
+    "measurement_target_count": 10,
+    "measurement_targets": [
+      "source_boundary_gate_passed",
+      "source_real_submission_allowed",
+      "source_kaggle_authentication_allowed",
+      "source_chain_artifact_present_count",
+      "source_chain_artifact_parseable_count",
+      "capability_area_count",
+      "gap_count",
+      "high_priority_gap_count",
+      "priority_plan_step_count",
+      "audit_blocking_issue_count"
+    ],
+    "package_family": "LOCAL_SOLVER_CAPABILITY_AUDIT_NO_REAL_EVALUATION",
+    "priority_plan": [
+      "TRANSFORMATION_PRIMITIVE_EXPANSION",
+      "OBJECT_CENTRIC_REASONING",
+      "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR",
+      "CANDIDATE_DIVERSITY_CONTROL",
+      "RANKER_CONFIDENCE_CALIBRATION",
+      "FAILURE_MEMORY_REPLAY"
+    ],
+    "priority_plan_step_count": 6,
+    "source_boundary_verdict": "MILESTONE_13_OPENED_CANONICALLY_REAL_EVALUATION_PREP_ALLOWED_REAL_SUBMISSION_BLOCKED",
+    "source_chain_artifact_count": 11,
+    "source_chain_artifact_parseable_count": 11,
+    "source_chain_artifact_present_count": 11,
+    "source_chain_artifacts": [
+      {
+        "next_stage": "MILESTONE_12_TASK_5_WORLD_MODEL_VERIFIER_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-12/executable-world-model-v1/milestone-12-executable-world-model-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_EXECUTABLE_WORLD_MODEL_V1",
+        "sha256": "62ff0be73191012d4bf4c182a35ed458dce0834d9705672c61900ef46444b344",
+        "task_verdict": "MILESTONE_12_EXECUTABLE_WORLD_MODEL_READY"
+      },
+      {
+        "next_stage": "MILESTONE_12_TASK_6_VERIFIED_PLANNER_POLICY_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-12/world-model-verifier-v1/milestone-12-world-model-verifier-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_WORLD_MODEL_VERIFIER_V1",
+        "sha256": "b7cac3560d9243e0d31f6f73bd8f4cc848b98518050a4ee8a365a932d11bdec9",
+        "task_verdict": "MILESTONE_12_WORLD_MODEL_VERIFIER_READY"
+      },
+      {
+        "next_stage": "MILESTONE_12_TASK_7_EPISODE_MEMORY_POLICY_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-12/verified-planner-policy-v1/milestone-12-verified-planner-policy-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_VERIFIED_PLANNER_POLICY_V1",
+        "sha256": "f1b4ec7abd14b4ee06c9e6686faaeedb059cb59ed27829cf02e056b8608723d6",
+        "task_verdict": "MILESTONE_12_VERIFIED_PLANNER_POLICY_READY"
+      },
+      {
+        "next_stage": "MILESTONE_12_TASK_8_CANDIDATE_POLICY_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-12/episode-memory-policy-v1/milestone-12-episode-memory-policy-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_EPISODE_MEMORY_POLICY_V1",
+        "sha256": "34e3ca5e2d3a089d0c5a346444ee692880386895351e8430c5095a52147a1117",
+        "task_verdict": "MILESTONE_12_EPISODE_MEMORY_POLICY_READY"
+      },
+      {
+        "next_stage": "MILESTONE_12_TASK_9_CANDIDATE_RANKER_POLICY_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-12/candidate-policy-v1/milestone-12-candidate-policy-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_CANDIDATE_POLICY_V1",
+        "sha256": "16ffb825d00e286ee9e09ac0a60bbd74b2a10365de6a51e853e555cf9961185e",
+        "task_verdict": "MILESTONE_12_CANDIDATE_POLICY_READY"
+      },
+      {
+        "next_stage": "MILESTONE_12_TASK_10_RANKED_CANDIDATE_BENCHMARK_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-12/candidate-ranker-policy-v1/milestone-12-candidate-ranker-policy-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_CANDIDATE_RANKER_POLICY_V1",
+        "sha256": "527c8c327404fbda88767f6de756c51e878183106554948c4f0315c410d345d4",
+        "task_verdict": "MILESTONE_12_CANDIDATE_RANKER_POLICY_READY"
+      },
+      {
+        "next_stage": "MILESTONE_12_TASK_11_PUBLIC_OVERFIT_GUARD_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-12/ranked-candidate-benchmark-v1/milestone-12-ranked-candidate-benchmark-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_V1",
+        "sha256": "6256e49c65ceca24f3506f6a0ff8fb2260af4e2bb2cc4a855841da80a14095e8",
+        "task_verdict": "MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_READY"
+      },
+      {
+        "next_stage": "MILESTONE_12_TASK_12_SUBMISSION_READINESS_GATE_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-12/public-overfit-guard-v1/milestone-12-public-overfit-guard-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_PUBLIC_OVERFIT_GUARD_V1",
+        "sha256": "b6d747e0ee330ff2fe911bd763129fcc5be2feff2157edcae838bc04545f4721",
+        "task_verdict": "MILESTONE_12_PUBLIC_OVERFIT_GUARD_READY"
+      },
+      {
+        "next_stage": "MILESTONE_12_TASK_13_COMPETITIVE_SOLVER_CLOSURE_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-12/submission-readiness-gate-v1/milestone-12-submission-readiness-gate-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_SUBMISSION_READINESS_GATE_V1",
+        "sha256": "f73bf4fdeb6bd22c51936392ef9697578cf9852c1cd2e0c3efadff1757860eed",
+        "task_verdict": "MILESTONE_12_SUBMISSION_READINESS_GATE_READY"
+      },
+      {
+        "next_stage": "MILESTONE_13_NOT_OPENED_CANONICALLY",
+        "parseable_json": true,
+        "path": "examples/milestone-12/competitive-solver-closure-v1/milestone-12-competitive-solver-closure-v1.json",
+        "present": true,
+        "revision": "MILESTONE_12_COMPETITIVE_SOLVER_CLOSURE_V1",
+        "sha256": "b81823d9a260563654c9a5c5564f3c6288192147e462ac3ef6e836eacae548ab",
+        "task_verdict": "MILESTONE_12_COMPETITIVE_SOLVER_CLOSURE_READY"
+      },
+      {
+        "next_stage": "MILESTONE_13_TASK_2_SOLVER_CAPABILITY_GAP_AUDIT_V1",
+        "parseable_json": true,
+        "path": "examples/milestone-13/real-evaluation-boundary-gate-v1/milestone-13-real-evaluation-boundary-gate-v1.json",
+        "present": true,
+        "revision": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_V1",
+        "sha256": "7e89ab476b5c47f4507ad7ff2a558bda8b120714f901f390342c51e984b659a6",
+        "task_verdict": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_READY"
+      }
+    ],
+    "source_kaggle_authentication_allowed": false,
+    "source_local_solver_improvement_allowed": true,
+    "source_milestone_13_status": "OPENED_CANONICALLY",
+    "source_next_stage": "MILESTONE_13_TASK_2_SOLVER_CAPABILITY_GAP_AUDIT_V1",
+    "source_real_evaluation_prep_allowed": true,
+    "source_real_submission_allowed": false,
+    "source_solver_capability_gap_audit_allowed": true
+  },
+  "gap_count": 6,
+  "gaps": [
+    {
+      "area": "grid_transformation_primitives",
+      "finding": "Primitive coverage must expand beyond current safe policy declarations.",
+      "gap_id": "GAP-01",
+      "probability_of_score_impact": 0.82,
+      "recommended_next_task": "MILESTONE_13_TASK_3_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+      "severity": "HIGH"
+    },
+    {
+      "area": "object_detection_and_segmentation",
+      "finding": "Object-centric extraction needs stronger local diagnostics before real submission.",
+      "gap_id": "GAP-02",
+      "probability_of_score_impact": 0.78,
+      "recommended_next_task": "MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1",
+      "severity": "HIGH"
+    },
+    {
+      "area": "multi_step_program_synthesis",
+      "finding": "Multi-step transformation planning remains the central competitive bottleneck.",
+      "gap_id": "GAP-03",
+      "probability_of_score_impact": 0.75,
+      "recommended_next_task": "MILESTONE_13_TASK_5_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+      "severity": "HIGH"
+    },
+    {
+      "area": "candidate_generation_diversity",
+      "finding": "Candidate policy requires broader generation without public-set overfitting.",
+      "gap_id": "GAP-04",
+      "probability_of_score_impact": 0.69,
+      "recommended_next_task": "MILESTONE_13_TASK_6_CANDIDATE_GENERATOR_DIVERSITY_PLAN_V1",
+      "severity": "MEDIUM_HIGH"
+    },
+    {
+      "area": "ranker_confidence_calibration",
+      "finding": "Ranker must separate evidence quality from candidate abundance.",
+      "gap_id": "GAP-05",
+      "probability_of_score_impact": 0.66,
+      "recommended_next_task": "MILESTONE_13_TASK_7_RANKER_CALIBRATION_PLAN_V1",
+      "severity": "MEDIUM_HIGH"
+    },
+    {
+      "area": "failure_memory_reuse",
+      "finding": "Failure classes should be converted into reusable local improvement cases.",
+      "gap_id": "GAP-06",
+      "probability_of_score_impact": 0.58,
+      "recommended_next_task": "MILESTONE_13_TASK_8_FAILURE_MEMORY_REPLAY_PLAN_V1",
+      "severity": "MEDIUM"
+    }
+  ],
+  "gate_count": 38,
+  "gates": [
+    {
+      "description": "Task 1 boundary artifact is present.",
+      "name": "source_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 1 boundary artifact is parseable.",
+      "name": "source_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 1 boundary gate is ready.",
+      "name": "source_boundary_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 1 boundary gate passed.",
+      "name": "source_boundary_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 1 boundary verdict is canonical.",
+      "name": "source_boundary_verdict_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 1 points to Task 2.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Boundary allows local audit.",
+      "name": "source_allows_local_audit",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Boundary blocks real actions.",
+      "name": "source_blocks_real_actions",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source safety boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Expected source chain artifact count is declared.",
+      "name": "chain_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All source chain artifacts are present.",
+      "name": "chain_present_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All source chain artifacts are parseable.",
+      "name": "chain_parseable_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Capability areas are declared.",
+      "name": "capability_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Capability gaps are declared.",
+      "name": "gap_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "High priority gaps are declared.",
+      "name": "high_priority_gap_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Priority plan is declared.",
+      "name": "priority_plan_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Audit measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Audit is ready.",
+      "name": "audit_ready_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Audit is valid.",
+      "name": "audit_valid_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real Kaggle submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Audit fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "high_priority_gap_count": 5,
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "measurement_target_count": 10,
+  "measurement_targets": [
+    "source_boundary_gate_passed",
+    "source_real_submission_allowed",
+    "source_kaggle_authentication_allowed",
+    "source_chain_artifact_present_count",
+    "source_chain_artifact_parseable_count",
+    "capability_area_count",
+    "gap_count",
+    "high_priority_gap_count",
+    "priority_plan_step_count",
+    "audit_blocking_issue_count"
+  ],
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_3_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 38,
+  "priority_plan": [
+    "TRANSFORMATION_PRIMITIVE_EXPANSION",
+    "OBJECT_CENTRIC_REASONING",
+    "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR",
+    "CANDIDATE_DIVERSITY_CONTROL",
+    "RANKER_CONFIDENCE_CALIBRATION",
+    "FAILURE_MEMORY_REPLAY"
+  ],
+  "priority_plan_step_count": 6,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 38,
+  "revision": "MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_V1",
+  "signature": "4698A59E72AEAC30",
+  "solver_capability_gap_audit_allowed": true,
+  "solver_capability_gap_audit_passed": true,
+  "solver_capability_gap_audit_ready": true,
+  "solver_capability_gap_audit_valid": true,
+  "source_allows_local_audit": true,
+  "source_artifact_parseable": true,
+  "source_artifact_present": true,
+  "source_blocks_real_actions": true,
+  "source_boundary_artifact": "examples/milestone-13/real-evaluation-boundary-gate-v1/milestone-13-real-evaluation-boundary-gate-v1.json",
+  "source_boundary_passed": true,
+  "source_boundary_ready": true,
+  "source_boundary_verdict_ok": true,
+  "source_chain_artifact_count": 11,
+  "source_chain_artifact_parseable_count": 11,
+  "source_chain_artifact_present_count": 11,
+  "source_next_stage_ok": true,
+  "source_task": "MILESTONE_13_TASK_1_REAL_EVALUATION_BOUNDARY_GATE_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-13-SOLVER-CAPABILITY-GAP-AUDIT-4698A59E72AE",
+  "task_label": "Milestone #13 Task 2 - Solver Capability Gap Audit v1",
+  "task_mode": "MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_V1_LOCAL_ONLY",
+  "task_number": 2,
+  "task_scope": "CAPABILITY_GAP_AUDIT_ONLY_NO_REAL_EVAL_NO_KAGGLE_AUTH_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_READY",
+  "top_priority": "TRANSFORMATION_PRIMITIVE_EXPANSION",
+  "warning_count": 0
+}
