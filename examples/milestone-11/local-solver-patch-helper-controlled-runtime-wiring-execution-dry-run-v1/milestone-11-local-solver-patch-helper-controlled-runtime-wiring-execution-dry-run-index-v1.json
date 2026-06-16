@@ -1,0 +1,15 @@
+{
+  "baseline_commit": "50cf489 Update ARC AGI3 controlled runtime wiring execution contract artifacts",
+  "controlled_runtime_wiring_dry_run_completed": true,
+  "controlled_runtime_wiring_execution_allowed": false,
+  "execution_dry_run_ready": true,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "next_stage": "MILESTONE_11_TASK_27_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_REVIEW_V1",
+  "revision": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_EXECUTION_DRY_RUN_V1",
+  "runtime_solver_patch_applied": false,
+  "runtime_wiring_performed": false,
+  "signature": "EE12F509E96939A8",
+  "task_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-EXECUTION-DRY-RUN-EE12F509E969",
+  "task_verdict": "CONTROLLED_RUNTIME_WIRING_EXECUTION_DRY_RUN_READY_FOR_REVIEW"
+}
