@@ -1,0 +1,898 @@
+{
+  "baseline_commit": "d5a422c Update ARC AGI3 milestone 12 competitive solver runtime strategy gate artifacts",
+  "benchmark": {
+    "benchmark_case_count": 6,
+    "benchmark_id": "MILESTONE_12_COMPETITIVE_SOLVER_SYNTHETIC_BENCHMARK_V1",
+    "best_candidate_id": "reference_optimal_policy",
+    "best_completion_rate": 1.0,
+    "best_mean_action_efficiency": 1.0,
+    "best_score": 1100.0,
+    "candidate_count": 3,
+    "candidate_results": [
+      {
+        "actual_action_count_sum": 25,
+        "candidate_id": "reference_optimal_policy",
+        "case_count": 6,
+        "case_results": [
+          {
+            "action_efficiency": 1.0,
+            "candidate_action_count": 3,
+            "case_id": "m12_case_001_direct_goal",
+            "completed": true,
+            "excess_action_count": 0,
+            "family": "navigation_goal",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 3,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 1.0,
+            "candidate_action_count": 5,
+            "case_id": "m12_case_002_key_door",
+            "completed": true,
+            "excess_action_count": 0,
+            "family": "object_precondition",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 5,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 1.0,
+            "candidate_action_count": 5,
+            "case_id": "m12_case_003_push_block",
+            "completed": true,
+            "excess_action_count": 0,
+            "family": "spatial_causal_action",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 5,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 1.0,
+            "candidate_action_count": 3,
+            "case_id": "m12_case_004_color_rule",
+            "completed": true,
+            "excess_action_count": 0,
+            "family": "latent_rule_inference",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 3,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 1.0,
+            "candidate_action_count": 5,
+            "case_id": "m12_case_005_toggle_bridge",
+            "completed": true,
+            "excess_action_count": 0,
+            "family": "state_toggle_planning",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 5,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 1.0,
+            "candidate_action_count": 4,
+            "case_id": "m12_case_006_memory_order",
+            "completed": true,
+            "excess_action_count": 0,
+            "family": "episode_memory_sequence",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 4,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          }
+        ],
+        "completed_case_count": 6,
+        "completion_rate": 1.0,
+        "excess_action_count": 0,
+        "failed_case_count": 0,
+        "mean_action_count": 4.166667,
+        "mean_action_efficiency": 1.0,
+        "median_action_count": 4.5,
+        "minimum_action_count_sum": 25,
+        "public_overfit_signal_count": 0,
+        "regression_failure_count": 0,
+        "score": 1100.0
+      },
+      {
+        "actual_action_count_sum": 0,
+        "candidate_id": "reference_noop_policy",
+        "case_count": 6,
+        "case_results": [
+          {
+            "action_efficiency": 0.0,
+            "candidate_action_count": 0,
+            "case_id": "m12_case_001_direct_goal",
+            "completed": false,
+            "excess_action_count": 0,
+            "family": "navigation_goal",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 3,
+            "overfit_sensitive": true,
+            "subsequence_complete": false
+          },
+          {
+            "action_efficiency": 0.0,
+            "candidate_action_count": 0,
+            "case_id": "m12_case_002_key_door",
+            "completed": false,
+            "excess_action_count": 0,
+            "family": "object_precondition",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 5,
+            "overfit_sensitive": true,
+            "subsequence_complete": false
+          },
+          {
+            "action_efficiency": 0.0,
+            "candidate_action_count": 0,
+            "case_id": "m12_case_003_push_block",
+            "completed": false,
+            "excess_action_count": 0,
+            "family": "spatial_causal_action",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 5,
+            "overfit_sensitive": true,
+            "subsequence_complete": false
+          },
+          {
+            "action_efficiency": 0.0,
+            "candidate_action_count": 0,
+            "case_id": "m12_case_004_color_rule",
+            "completed": false,
+            "excess_action_count": 0,
+            "family": "latent_rule_inference",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 3,
+            "overfit_sensitive": true,
+            "subsequence_complete": false
+          },
+          {
+            "action_efficiency": 0.0,
+            "candidate_action_count": 0,
+            "case_id": "m12_case_005_toggle_bridge",
+            "completed": false,
+            "excess_action_count": 0,
+            "family": "state_toggle_planning",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 5,
+            "overfit_sensitive": true,
+            "subsequence_complete": false
+          },
+          {
+            "action_efficiency": 0.0,
+            "candidate_action_count": 0,
+            "case_id": "m12_case_006_memory_order",
+            "completed": false,
+            "excess_action_count": 0,
+            "family": "episode_memory_sequence",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 4,
+            "overfit_sensitive": true,
+            "subsequence_complete": false
+          }
+        ],
+        "completed_case_count": 0,
+        "completion_rate": 0.0,
+        "excess_action_count": 0,
+        "failed_case_count": 6,
+        "mean_action_count": 0,
+        "mean_action_efficiency": 0.0,
+        "median_action_count": 0.0,
+        "minimum_action_count_sum": 25,
+        "public_overfit_signal_count": 0,
+        "regression_failure_count": 6,
+        "score": 0.0
+      },
+      {
+        "actual_action_count_sum": 31,
+        "candidate_id": "reference_probe_then_optimal_policy",
+        "case_count": 6,
+        "case_results": [
+          {
+            "action_efficiency": 0.75,
+            "candidate_action_count": 4,
+            "case_id": "m12_case_001_direct_goal",
+            "completed": true,
+            "excess_action_count": 1,
+            "family": "navigation_goal",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 3,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 0.833333,
+            "candidate_action_count": 6,
+            "case_id": "m12_case_002_key_door",
+            "completed": true,
+            "excess_action_count": 1,
+            "family": "object_precondition",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 5,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 0.833333,
+            "candidate_action_count": 6,
+            "case_id": "m12_case_003_push_block",
+            "completed": true,
+            "excess_action_count": 1,
+            "family": "spatial_causal_action",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 5,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 0.75,
+            "candidate_action_count": 4,
+            "case_id": "m12_case_004_color_rule",
+            "completed": true,
+            "excess_action_count": 1,
+            "family": "latent_rule_inference",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 3,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 0.833333,
+            "candidate_action_count": 6,
+            "case_id": "m12_case_005_toggle_bridge",
+            "completed": true,
+            "excess_action_count": 1,
+            "family": "state_toggle_planning",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 5,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          },
+          {
+            "action_efficiency": 0.8,
+            "candidate_action_count": 5,
+            "case_id": "m12_case_006_memory_order",
+            "completed": true,
+            "excess_action_count": 1,
+            "family": "episode_memory_sequence",
+            "invalid_action_count": 0,
+            "invalid_actions": [],
+            "minimum_action_count": 4,
+            "overfit_sensitive": true,
+            "subsequence_complete": true
+          }
+        ],
+        "completed_case_count": 6,
+        "completion_rate": 1.0,
+        "excess_action_count": 6,
+        "failed_case_count": 0,
+        "mean_action_count": 5.166667,
+        "mean_action_efficiency": 0.8,
+        "median_action_count": 5.5,
+        "minimum_action_count_sum": 25,
+        "public_overfit_signal_count": 0,
+        "regression_failure_count": 0,
+        "score": 1074.0
+      }
+    ],
+    "measurement_target_count": 10,
+    "measurement_targets": [
+      "completion_rate",
+      "completed_case_count",
+      "failed_case_count",
+      "mean_action_count",
+      "median_action_count",
+      "mean_action_efficiency",
+      "minimum_action_count_sum",
+      "excess_action_count",
+      "public_overfit_signal_count",
+      "regression_failure_count"
+    ],
+    "ranked_candidate_ids": [
+      "reference_optimal_policy",
+      "reference_probe_then_optimal_policy",
+      "reference_noop_policy"
+    ]
+  },
+  "benchmark_case_count": 6,
+  "benchmark_cases": [
+    {
+      "action_space": [
+        "UP",
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "WAIT"
+      ],
+      "case_id": "m12_case_001_direct_goal",
+      "family": "navigation_goal",
+      "minimum_action_count": 3,
+      "objective": "Reach goal tile with minimum moves.",
+      "optimal_actions": [
+        "RIGHT",
+        "RIGHT",
+        "DOWN"
+      ],
+      "overfit_sensitive": true,
+      "split": "SYNTHETIC_REGRESSION_PUBLIC_SAFE"
+    },
+    {
+      "action_space": [
+        "UP",
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "PICK",
+        "OPEN",
+        "WAIT"
+      ],
+      "case_id": "m12_case_002_key_door",
+      "family": "object_precondition",
+      "minimum_action_count": 5,
+      "objective": "Collect key before opening door.",
+      "optimal_actions": [
+        "RIGHT",
+        "PICK",
+        "LEFT",
+        "DOWN",
+        "OPEN"
+      ],
+      "overfit_sensitive": true,
+      "split": "SYNTHETIC_REGRESSION_PUBLIC_SAFE"
+    },
+    {
+      "action_space": [
+        "UP",
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "PUSH",
+        "EXIT",
+        "WAIT"
+      ],
+      "case_id": "m12_case_003_push_block",
+      "family": "spatial_causal_action",
+      "minimum_action_count": 5,
+      "objective": "Push block onto switch before exit.",
+      "optimal_actions": [
+        "RIGHT",
+        "PUSH",
+        "RIGHT",
+        "DOWN",
+        "EXIT"
+      ],
+      "overfit_sensitive": true,
+      "split": "SYNTHETIC_REGRESSION_PUBLIC_SAFE"
+    },
+    {
+      "action_space": [
+        "RED",
+        "BLUE",
+        "GREEN",
+        "YELLOW",
+        "WAIT"
+      ],
+      "case_id": "m12_case_004_color_rule",
+      "family": "latent_rule_inference",
+      "minimum_action_count": 3,
+      "objective": "Activate colors in inferred rule order.",
+      "optimal_actions": [
+        "BLUE",
+        "GREEN",
+        "RED"
+      ],
+      "overfit_sensitive": true,
+      "split": "SYNTHETIC_REGRESSION_PUBLIC_SAFE"
+    },
+    {
+      "action_space": [
+        "UP",
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "TOGGLE",
+        "CROSS",
+        "WAIT"
+      ],
+      "case_id": "m12_case_005_toggle_bridge",
+      "family": "state_toggle_planning",
+      "minimum_action_count": 5,
+      "objective": "Toggle bridge before crossing.",
+      "optimal_actions": [
+        "LEFT",
+        "TOGGLE",
+        "RIGHT",
+        "RIGHT",
+        "CROSS"
+      ],
+      "overfit_sensitive": true,
+      "split": "SYNTHETIC_REGRESSION_PUBLIC_SAFE"
+    },
+    {
+      "action_space": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "WAIT"
+      ],
+      "case_id": "m12_case_006_memory_order",
+      "family": "episode_memory_sequence",
+      "minimum_action_count": 4,
+      "objective": "Repeat observed order after distractor.",
+      "optimal_actions": [
+        "C",
+        "A",
+        "D",
+        "B"
+      ],
+      "overfit_sensitive": true,
+      "split": "SYNTHETIC_REGRESSION_PUBLIC_SAFE"
+    }
+  ],
+  "benchmark_harness_only": true,
+  "benchmark_harness_passed": true,
+  "benchmark_harness_ready": true,
+  "benchmark_harness_valid": true,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 36,
+  "gates": [
+    {
+      "description": "Task 1 strategy gate artifact is present.",
+      "name": "source_strategy_gate_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 1 strategy gate artifact is parseable.",
+      "name": "source_strategy_gate_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 12 is opened canonically.",
+      "name": "source_milestone_12_opened",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 12 Task 1 passed.",
+      "name": "source_strategy_gate_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Chosen strategy matches Milestone 12 strategy.",
+      "name": "source_strategy_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive goal matches first-place objective.",
+      "name": "source_goal_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 1 next stage points to Task 2.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "source_public_overfit_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "source_external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle submission remains false.",
+      "name": "source_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "source_real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "source_private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "source_legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six benchmark cases declared.",
+      "name": "benchmark_case_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Three reference candidates declared.",
+      "name": "candidate_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ten measurement targets declared.",
+      "name": "measurement_target_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Reference optimal policy ranks first.",
+      "name": "reference_optimal_policy_ranks_first",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Reference optimal policy completes all cases.",
+      "name": "reference_optimal_policy_completion_rate_one",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Reference optimal policy is action-optimal.",
+      "name": "reference_optimal_policy_efficiency_one",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No-op policy fails all cases.",
+      "name": "reference_noop_policy_completion_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Probe-then-optimal policy completes all cases.",
+      "name": "reference_probe_then_optimal_completes",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfitting is blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard is required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Manual upload remains blocked.",
+      "name": "manual_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle authentication is performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains benchmark-harness-only.",
+      "name": "benchmark_harness_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "harness_check_count": 22,
+  "harness_checks": [
+    {
+      "description": "Milestone 12 Task 1 strategy gate artifact exists.",
+      "name": "source_strategy_gate_artifact_present",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Milestone 12 Task 1 artifact is parseable JSON.",
+      "name": "source_strategy_gate_artifact_parseable",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Milestone 12 is opened canonically.",
+      "name": "source_milestone_12_opened",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Strategy gate passed.",
+      "name": "source_strategy_gate_passed",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source strategy matches executable world model explore/verify/plan.",
+      "name": "source_strategy_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source goal is first-place competitive solver.",
+      "name": "source_goal_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source next stage points to benchmark harness.",
+      "name": "source_next_stage_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "source_public_overfit_blocked",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "source_external_api_dependency_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Kaggle submission remains false.",
+      "name": "source_kaggle_submission_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "source_real_submission_allowed_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "source_private_core_exposure_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "source_legal_certification_false",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source issue count is zero.",
+      "name": "source_issue_count_zero",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Synthetic benchmark cases are ready.",
+      "name": "benchmark_cases_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Reference benchmark candidates are ready.",
+      "name": "benchmark_candidates_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Measurement targets are ready.",
+      "name": "benchmark_measurements_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Reference optimal policy ranks first.",
+      "name": "best_candidate_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Reference optimal policy completes all cases.",
+      "name": "best_completion_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Reference optimal policy uses optimal action counts.",
+      "name": "best_efficiency_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "No-op policy fails all cases.",
+      "name": "noop_failure_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Probe-then-optimal policy completes all cases with lower efficiency.",
+      "name": "probe_candidate_ok",
+      "severity": "PASS",
+      "status": true
+    }
+  ],
+  "harness_summary": {
+    "benchmark_case_count": 6,
+    "benchmark_harness_status": "READY",
+    "benchmark_id": "MILESTONE_12_COMPETITIVE_SOLVER_SYNTHETIC_BENCHMARK_V1",
+    "best_candidate_id": "reference_optimal_policy",
+    "best_completion_rate": 1.0,
+    "best_mean_action_efficiency": 1.0,
+    "candidate_count": 3,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "measurement_target_count": 10,
+    "milestone_12_status": "OPENED_CANONICALLY",
+    "next_stage": "MILESTONE_12_TASK_3_INFORMATION_GAIN_EXPLORER_POLICY_V1"
+  },
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_only": true,
+  "manual_upload_allowed": false,
+  "measurement_target_count": 10,
+  "measurement_targets": [
+    "completion_rate",
+    "completed_case_count",
+    "failed_case_count",
+    "mean_action_count",
+    "median_action_count",
+    "mean_action_efficiency",
+    "minimum_action_count_sum",
+    "excess_action_count",
+    "public_overfit_signal_count",
+    "regression_failure_count"
+  ],
+  "milestone_12_status": "OPENED_CANONICALLY",
+  "milestone_number": 12,
+  "next_stage": "MILESTONE_12_TASK_3_INFORMATION_GAIN_EXPLORER_POLICY_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "passed_gate_count": 36,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "reference_candidate_count": 3,
+  "reference_candidate_ids": [
+    "reference_optimal_policy",
+    "reference_noop_policy",
+    "reference_probe_then_optimal_policy"
+  ],
+  "required_gate_count": 36,
+  "revision": "MILESTONE_12_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_V1",
+  "signature": "C7E3DE4FBE264337",
+  "source_goal_ok": true,
+  "source_milestone_12_opened": true,
+  "source_next_stage_ok": true,
+  "source_strategy_gate_artifact": "examples/milestone-12/competitive-solver-runtime-strategy-gate-v1/milestone-12-competitive-solver-runtime-strategy-gate-v1.json",
+  "source_strategy_gate_artifact_parseable": true,
+  "source_strategy_gate_artifact_present": true,
+  "source_strategy_gate_passed": true,
+  "source_strategy_ok": true,
+  "source_task": "MILESTONE_12_TASK_1_COMPETITIVE_SOLVER_RUNTIME_STRATEGY_GATE_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-12-COMPETITIVE-SOLVER-BENCHMARK-HARNESS-C7E3DE4FBE26",
+  "task_label": "Milestone #12 Task 2 - Competitive Solver Benchmark Harness v1",
+  "task_mode": "MILESTONE_12_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_V1_LOCAL_ONLY",
+  "task_number": 2,
+  "task_scope": "COMPETITIVE_SOLVER_BENCHMARK_HARNESS_ONLY_NO_UPLOAD_NO_SUBMISSION_NO_EXTERNAL_API",
+  "task_verdict": "MILESTONE_12_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_READY",
+  "warning_count": 0
+}

@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "d5a422c Update ARC AGI3 milestone 12 competitive solver runtime strategy gate artifacts",
+  "benchmark_case_count": 6,
+  "benchmark_harness_passed": true,
+  "benchmark_harness_ready": true,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "external_api_dependency": false,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "measurement_target_count": 10,
+  "milestone_12_status": "OPENED_CANONICALLY",
+  "next_stage": "MILESTONE_12_TASK_3_INFORMATION_GAIN_EXPLORER_POLICY_V1",
+  "private_core_exposure": false,
+  "public_overfit_allowed": false,
+  "real_submission_allowed": false,
+  "reference_candidate_count": 3,
+  "revision": "MILESTONE_12_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_V1",
+  "signature": "C7E3DE4FBE264337",
+  "task_id": "MILESTONE-12-COMPETITIVE-SOLVER-BENCHMARK-HARNESS-C7E3DE4FBE26",
+  "task_verdict": "MILESTONE_12_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_READY"
+}
