@@ -1,6 +1,6 @@
 {
   "acceptance_gate_count": 15,
-  "baseline_commit": "f99281d Update ARC AGI3 milestone 13 program synthesis candidate generator local diagnostic harness review artifacts",
+  "baseline_commit": "18c6e69 Add ARC AGI3 milestone 13 program synthesis candidate generator runtime wiring plan",
   "candidate_generator_modified": false,
   "candidate_generator_wiring_authorized": false,
   "controlled_implementation_deferred": true,
@@ -19,9 +19,9 @@
   "runtime_wiring_plan_ready": true,
   "runtime_wiring_plan_review_required": true,
   "runtime_wiring_plan_valid": true,
-  "signature": "1B16C4AE89AB2F66",
+  "signature": "032E23D045AF6D9A",
   "source_review_passed": true,
-  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-RUNTIME-WIRING-PLAN-1B16C4AE89AB",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-RUNTIME-WIRING-PLAN-032E23D045AF",
   "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_READY",
   "wiring_step_count": 6,
   "wiring_target_count": 4

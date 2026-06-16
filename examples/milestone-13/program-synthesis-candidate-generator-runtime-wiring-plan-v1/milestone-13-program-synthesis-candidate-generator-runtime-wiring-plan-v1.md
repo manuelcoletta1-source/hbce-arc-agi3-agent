@@ -1,9 +1,9 @@
 # Milestone #13 Task 10 - Program Synthesis Candidate Generator Runtime Wiring Plan v1
 
 - revision: `MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_V1`
-- task_id: `MILESTONE-13-CANDIDATE-GENERATOR-RUNTIME-WIRING-PLAN-1B16C4AE89AB`
-- signature: `1B16C4AE89AB2F66`
-- baseline_commit: `f99281d Update ARC AGI3 milestone 13 program synthesis candidate generator local diagnostic harness review artifacts`
+- task_id: `MILESTONE-13-CANDIDATE-GENERATOR-RUNTIME-WIRING-PLAN-032E23D045AF`
+- signature: `032E23D045AF6D9A`
+- baseline_commit: `18c6e69 Add ARC AGI3 milestone 13 program synthesis candidate generator runtime wiring plan`
 - task_verdict: `MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_READY`
 - plan_verdict: `PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_READY_FOR_REVIEW`
 - next_stage: `MILESTONE_13_TASK_11_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1`
