@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "efc4787 Update ARC AGI3 controlled runtime wiring review decision artifacts",
+  "baseline_commit": "6ab3933 Add ARC AGI3 controlled runtime wiring review decision closure",
   "controlled_runtime_wiring_execution_allowed": false,
   "kaggle_submission_sent": false,
   "legal_certification": false,
@@ -11,9 +11,9 @@
   "revision": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_REVIEW_DECISION_CLOSURE_V1",
   "runtime_solver_patch_applied": false,
   "runtime_wiring_performed": false,
-  "signature": "2A6FEB97711FBD17",
+  "signature": "A4008D8FFA2D0738",
   "source_decision_passed": true,
   "source_decision_valid": true,
-  "task_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-REVIEW-DECISION-CLOSURE-2A6FEB97711F",
+  "task_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-REVIEW-DECISION-CLOSURE-A4008D8FFA2D",
   "task_verdict": "CONTROLLED_RUNTIME_WIRING_REVIEW_DECISION_CLOSED_REAL_EXECUTION_STILL_BLOCKED"
 }
