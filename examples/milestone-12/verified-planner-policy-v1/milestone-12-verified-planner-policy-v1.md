@@ -1,9 +1,9 @@
 # Milestone #12 Task 6 - Verified Planner Policy v1
 
 - revision: `MILESTONE_12_VERIFIED_PLANNER_POLICY_V1`
-- task_id: `MILESTONE-12-VERIFIED-PLANNER-POLICY-0933D535C453`
-- signature: `0933D535C453AEB1`
-- baseline_commit: `86613ef Update ARC AGI3 milestone 12 world model verifier artifacts`
+- task_id: `MILESTONE-12-VERIFIED-PLANNER-POLICY-E0B364374D83`
+- signature: `E0B364374D83B405`
+- baseline_commit: `a85a3af Add ARC AGI3 milestone 12 verified planner policy`
 - verdict: `MILESTONE_12_VERIFIED_PLANNER_POLICY_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`
