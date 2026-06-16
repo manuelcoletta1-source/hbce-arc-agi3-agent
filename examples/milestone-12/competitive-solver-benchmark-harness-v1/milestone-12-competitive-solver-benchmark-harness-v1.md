@@ -1,9 +1,9 @@
 # Milestone #12 Task 2 - Competitive Solver Benchmark Harness v1
 
 - revision: `MILESTONE_12_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_V1`
-- task_id: `MILESTONE-12-COMPETITIVE-SOLVER-BENCHMARK-HARNESS-C7E3DE4FBE26`
-- signature: `C7E3DE4FBE264337`
-- baseline_commit: `d5a422c Update ARC AGI3 milestone 12 competitive solver runtime strategy gate artifacts`
+- task_id: `MILESTONE-12-COMPETITIVE-SOLVER-BENCHMARK-HARNESS-39CBF4EBCFA1`
+- signature: `39CBF4EBCFA19752`
+- baseline_commit: `74ec4b6 Add ARC AGI3 milestone 12 competitive solver benchmark harness`
 - verdict: `MILESTONE_12_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`

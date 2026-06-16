@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "d5a422c Update ARC AGI3 milestone 12 competitive solver runtime strategy gate artifacts",
+  "baseline_commit": "74ec4b6 Add ARC AGI3 milestone 12 competitive solver benchmark harness",
   "benchmark": {
     "benchmark_case_count": 6,
     "benchmark_id": "MILESTONE_12_COMPETITIVE_SOLVER_SYNTHETIC_BENCHMARK_V1",
@@ -877,7 +877,7 @@
   ],
   "required_gate_count": 36,
   "revision": "MILESTONE_12_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_V1",
-  "signature": "C7E3DE4FBE264337",
+  "signature": "39CBF4EBCFA19752",
   "source_goal_ok": true,
   "source_milestone_12_opened": true,
   "source_next_stage_ok": true,
@@ -888,7 +888,7 @@
   "source_strategy_ok": true,
   "source_task": "MILESTONE_12_TASK_1_COMPETITIVE_SOLVER_RUNTIME_STRATEGY_GATE_V1",
   "submission_json_created": false,
-  "task_id": "MILESTONE-12-COMPETITIVE-SOLVER-BENCHMARK-HARNESS-C7E3DE4FBE26",
+  "task_id": "MILESTONE-12-COMPETITIVE-SOLVER-BENCHMARK-HARNESS-39CBF4EBCFA1",
   "task_label": "Milestone #12 Task 2 - Competitive Solver Benchmark Harness v1",
   "task_mode": "MILESTONE_12_COMPETITIVE_SOLVER_BENCHMARK_HARNESS_V1_LOCAL_ONLY",
   "task_number": 2,
