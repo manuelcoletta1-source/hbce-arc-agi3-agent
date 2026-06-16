@@ -1,0 +1,643 @@
+{
+  "baseline_commit": "a907240 Update ARC AGI3 milestone 13 solver capability gap audit artifacts",
+  "candidate_generator_modified": false,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_implementation_authorized": true,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 37,
+  "gates": [
+    {
+      "description": "Task 2 audit artifact is present.",
+      "name": "source_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 2 audit artifact is parseable.",
+      "name": "source_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 2 audit is ready and passed.",
+      "name": "source_audit_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 2 selected transformation primitives as top priority.",
+      "name": "source_top_priority_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 2 points to Task 3.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source keeps real actions blocked.",
+      "name": "source_blocks_real_actions",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source safety boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Primitive group count is expected.",
+      "name": "primitive_group_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Primitive count is expected.",
+      "name": "primitive_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation slice count is expected.",
+      "name": "implementation_slice_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No implementation slice wires runtime.",
+      "name": "runtime_wiring_forbidden_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Risk controls are declared.",
+      "name": "risk_control_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Quality targets are declared.",
+      "name": "quality_target_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation planning is authorized.",
+      "name": "controlled_implementation_authorized_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring remains blocked in this task.",
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver is not modified.",
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator is not modified.",
+      "name": "candidate_generator_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime is not modified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Plan fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "implementation_slice_count": 6,
+  "implementation_slices": [
+    {
+      "name": "deterministic_primitive_library",
+      "output": "pure local functions with explicit input/output contracts",
+      "runtime_wiring_allowed": false,
+      "slice_id": "SLICE-01"
+    },
+    {
+      "name": "primitive_unit_examples",
+      "output": "small synthetic examples for each primitive family",
+      "runtime_wiring_allowed": false,
+      "slice_id": "SLICE-02"
+    },
+    {
+      "name": "candidate_generator_adapter_plan",
+      "output": "controlled adapter plan for future candidate generation",
+      "runtime_wiring_allowed": false,
+      "slice_id": "SLICE-03"
+    },
+    {
+      "name": "verifier_feature_plan",
+      "output": "evidence features for verifier and ranker scoring",
+      "runtime_wiring_allowed": false,
+      "slice_id": "SLICE-04"
+    },
+    {
+      "name": "anti_overfit_guard_plan",
+      "output": "guardrails against public-set memorization",
+      "runtime_wiring_allowed": false,
+      "slice_id": "SLICE-05"
+    },
+    {
+      "name": "local_benchmark_plan",
+      "output": "local-only benchmark hooks, no Kaggle call",
+      "runtime_wiring_allowed": false,
+      "slice_id": "SLICE-06"
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 37,
+  "plan_blocking_issue_count": 0,
+  "plan_gate_count": 37,
+  "plan_pass_count": 37,
+  "plan_summary": {
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "implementation_slice_count": 6,
+    "next_stage": "MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1",
+    "plan_status": "READY",
+    "plan_verdict": "TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+    "primitive_count": 43,
+    "primitive_group_count": 7,
+    "recommended_first_implementation_slice": "deterministic_primitive_library",
+    "risk_control_count": 10,
+    "source_top_priority": "TRANSFORMATION_PRIMITIVE_EXPANSION"
+  },
+  "plan_verdict": "TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+  "primitive_count": 43,
+  "primitive_expansion_plan": {
+    "controlled_implementation_authorized": true,
+    "implementation_slice_count": 6,
+    "implementation_slices": [
+      {
+        "name": "deterministic_primitive_library",
+        "output": "pure local functions with explicit input/output contracts",
+        "runtime_wiring_allowed": false,
+        "slice_id": "SLICE-01"
+      },
+      {
+        "name": "primitive_unit_examples",
+        "output": "small synthetic examples for each primitive family",
+        "runtime_wiring_allowed": false,
+        "slice_id": "SLICE-02"
+      },
+      {
+        "name": "candidate_generator_adapter_plan",
+        "output": "controlled adapter plan for future candidate generation",
+        "runtime_wiring_allowed": false,
+        "slice_id": "SLICE-03"
+      },
+      {
+        "name": "verifier_feature_plan",
+        "output": "evidence features for verifier and ranker scoring",
+        "runtime_wiring_allowed": false,
+        "slice_id": "SLICE-04"
+      },
+      {
+        "name": "anti_overfit_guard_plan",
+        "output": "guardrails against public-set memorization",
+        "runtime_wiring_allowed": false,
+        "slice_id": "SLICE-05"
+      },
+      {
+        "name": "local_benchmark_plan",
+        "output": "local-only benchmark hooks, no Kaggle call",
+        "runtime_wiring_allowed": false,
+        "slice_id": "SLICE-06"
+      }
+    ],
+    "plan_family": "LOCAL_TRANSFORMATION_PRIMITIVE_EXPANSION_NO_RUNTIME_WIRING",
+    "plan_id": "MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_PACKAGE_V1",
+    "primitive_count": 43,
+    "primitive_group_count": 7,
+    "primitive_groups": [
+      {
+        "group_id": "PRIM-GEOMETRIC-CORE",
+        "primitives": [
+          "identity",
+          "rotate_90",
+          "rotate_180",
+          "rotate_270",
+          "flip_horizontal",
+          "flip_vertical",
+          "transpose"
+        ],
+        "priority": 1,
+        "purpose": "basic deterministic grid orientation transforms"
+      },
+      {
+        "group_id": "PRIM-CROP-PAD-TRANSLATE",
+        "primitives": [
+          "crop_to_non_background_bbox",
+          "crop_to_object_bbox",
+          "pad_to_shape",
+          "translate_object",
+          "center_object",
+          "trim_empty_border"
+        ],
+        "priority": 2,
+        "purpose": "spatial extraction, placement, margin and offset transforms"
+      },
+      {
+        "group_id": "PRIM-COLOR-PALETTE",
+        "primitives": [
+          "map_color_one_to_one",
+          "swap_two_colors",
+          "background_normalize",
+          "palette_compress",
+          "palette_expand",
+          "recolor_object_by_position"
+        ],
+        "priority": 3,
+        "purpose": "color remapping and palette-level reasoning transforms"
+      },
+      {
+        "group_id": "PRIM-OBJECT-BBOX",
+        "primitives": [
+          "extract_connected_components",
+          "extract_largest_object",
+          "extract_smallest_object",
+          "copy_object_to_target",
+          "repeat_object_by_rule",
+          "remove_object_by_color"
+        ],
+        "priority": 4,
+        "purpose": "object extraction, bounding box use and object recomposition"
+      },
+      {
+        "group_id": "PRIM-PATTERN-SYMMETRY",
+        "primitives": [
+          "complete_horizontal_symmetry",
+          "complete_vertical_symmetry",
+          "complete_rotational_symmetry",
+          "repeat_row_pattern",
+          "repeat_column_pattern",
+          "tile_motif"
+        ],
+        "priority": 5,
+        "purpose": "symmetry completion and periodic pattern extension"
+      },
+      {
+        "group_id": "PRIM-COMPOSITION-MASKS",
+        "primitives": [
+          "overlay_non_background",
+          "mask_by_color",
+          "fill_holes",
+          "outline_object",
+          "intersect_masks",
+          "union_masks"
+        ],
+        "priority": 6,
+        "purpose": "overlay, masking, fill and composition transforms"
+      },
+      {
+        "group_id": "PRIM-SCALE-TILE",
+        "primitives": [
+          "scale_nearest_integer",
+          "downsample_by_block",
+          "repeat_grid_tile",
+          "expand_cell_to_block",
+          "compress_blocks_to_cells",
+          "mirror_tile_quadrants"
+        ],
+        "priority": 7,
+        "purpose": "controlled scaling and repetition transforms"
+      }
+    ],
+    "quality_target_count": 7,
+    "quality_targets": [
+      "primitive_contracts_are_explicit",
+      "primitive_groups_are_disjoint_enough_for_testing",
+      "implementation_slices_are_sequenced",
+      "candidate_generation_path_is_defined_but_not_wired",
+      "verifier_and_ranker_hooks_are_planned_but_not_wired",
+      "anti_overfit_boundary_is_preserved",
+      "next_task_is_object_centric_reasoning_plan"
+    ],
+    "recommended_first_implementation_slice": "deterministic_primitive_library",
+    "recommended_next_stage": "MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1",
+    "risk_control_count": 10,
+    "risk_controls": [
+      "NO_REAL_KAGGLE_EVALUATION",
+      "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+      "NO_PUBLIC_SET_MEMORIZATION",
+      "NO_EXTERNAL_API_DEPENDENCY",
+      "NO_INTERNET_DURING_EVAL",
+      "NO_KAGGLE_AUTHENTICATION",
+      "NO_UPLOAD",
+      "NO_SUBMISSION",
+      "NO_OFFICIAL_SCORE_CLAIM",
+      "NO_PRIVATE_CORE_EXPOSURE"
+    ],
+    "runtime_wiring_authorized": false,
+    "runtime_wiring_forbidden_count": 6,
+    "source_audit_verdict": "SOLVER_CAPABILITY_GAP_AUDIT_READY_FOR_LOCAL_IMPROVEMENT_PLAN",
+    "source_next_stage": "MILESTONE_13_TASK_3_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+    "source_revision": "MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_V1",
+    "source_task_verdict": "MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_READY",
+    "source_top_priority": "TRANSFORMATION_PRIMITIVE_EXPANSION"
+  },
+  "primitive_expansion_planning_allowed": true,
+  "primitive_group_count": 7,
+  "primitive_groups": [
+    {
+      "group_id": "PRIM-GEOMETRIC-CORE",
+      "primitives": [
+        "identity",
+        "rotate_90",
+        "rotate_180",
+        "rotate_270",
+        "flip_horizontal",
+        "flip_vertical",
+        "transpose"
+      ],
+      "priority": 1,
+      "purpose": "basic deterministic grid orientation transforms"
+    },
+    {
+      "group_id": "PRIM-CROP-PAD-TRANSLATE",
+      "primitives": [
+        "crop_to_non_background_bbox",
+        "crop_to_object_bbox",
+        "pad_to_shape",
+        "translate_object",
+        "center_object",
+        "trim_empty_border"
+      ],
+      "priority": 2,
+      "purpose": "spatial extraction, placement, margin and offset transforms"
+    },
+    {
+      "group_id": "PRIM-COLOR-PALETTE",
+      "primitives": [
+        "map_color_one_to_one",
+        "swap_two_colors",
+        "background_normalize",
+        "palette_compress",
+        "palette_expand",
+        "recolor_object_by_position"
+      ],
+      "priority": 3,
+      "purpose": "color remapping and palette-level reasoning transforms"
+    },
+    {
+      "group_id": "PRIM-OBJECT-BBOX",
+      "primitives": [
+        "extract_connected_components",
+        "extract_largest_object",
+        "extract_smallest_object",
+        "copy_object_to_target",
+        "repeat_object_by_rule",
+        "remove_object_by_color"
+      ],
+      "priority": 4,
+      "purpose": "object extraction, bounding box use and object recomposition"
+    },
+    {
+      "group_id": "PRIM-PATTERN-SYMMETRY",
+      "primitives": [
+        "complete_horizontal_symmetry",
+        "complete_vertical_symmetry",
+        "complete_rotational_symmetry",
+        "repeat_row_pattern",
+        "repeat_column_pattern",
+        "tile_motif"
+      ],
+      "priority": 5,
+      "purpose": "symmetry completion and periodic pattern extension"
+    },
+    {
+      "group_id": "PRIM-COMPOSITION-MASKS",
+      "primitives": [
+        "overlay_non_background",
+        "mask_by_color",
+        "fill_holes",
+        "outline_object",
+        "intersect_masks",
+        "union_masks"
+      ],
+      "priority": 6,
+      "purpose": "overlay, masking, fill and composition transforms"
+    },
+    {
+      "group_id": "PRIM-SCALE-TILE",
+      "primitives": [
+        "scale_nearest_integer",
+        "downsample_by_block",
+        "repeat_grid_tile",
+        "expand_cell_to_block",
+        "compress_blocks_to_cells",
+        "mirror_tile_quadrants"
+      ],
+      "priority": 7,
+      "purpose": "controlled scaling and repetition transforms"
+    }
+  ],
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "quality_target_count": 7,
+  "quality_targets": [
+    "primitive_contracts_are_explicit",
+    "primitive_groups_are_disjoint_enough_for_testing",
+    "implementation_slices_are_sequenced",
+    "candidate_generation_path_is_defined_but_not_wired",
+    "verifier_and_ranker_hooks_are_planned_but_not_wired",
+    "anti_overfit_boundary_is_preserved",
+    "next_task_is_object_centric_reasoning_plan"
+  ],
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 37,
+  "revision": "MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+  "risk_control_count": 10,
+  "risk_controls": [
+    "NO_REAL_KAGGLE_EVALUATION",
+    "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "NO_EXTERNAL_API_DEPENDENCY",
+    "NO_INTERNET_DURING_EVAL",
+    "NO_KAGGLE_AUTHENTICATION",
+    "NO_UPLOAD",
+    "NO_SUBMISSION",
+    "NO_OFFICIAL_SCORE_CLAIM",
+    "NO_PRIVATE_CORE_EXPOSURE"
+  ],
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "runtime_wiring_forbidden_count": 6,
+  "signature": "2BFF7965AF61E465",
+  "source_artifact_parseable": true,
+  "source_artifact_present": true,
+  "source_audit_artifact": "examples/milestone-13/solver-capability-gap-audit-v1/milestone-13-solver-capability-gap-audit-v1.json",
+  "source_audit_ready": true,
+  "source_blocks_real_actions": true,
+  "source_next_stage_ok": true,
+  "source_task": "MILESTONE_13_TASK_2_SOLVER_CAPABILITY_GAP_AUDIT_V1",
+  "source_top_priority_ok": true,
+  "submission_json_created": false,
+  "task_id": "MILESTONE-13-TRANSFORMATION-PRIMITIVE-EXPANSION-PLAN-2BFF7965AF61",
+  "task_label": "Milestone #13 Task 3 - Transformation Primitive Expansion Plan v1",
+  "task_mode": "MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1_LOCAL_ONLY",
+  "task_number": 3,
+  "task_scope": "PRIMITIVE_EXPANSION_PLAN_ONLY_NO_RUNTIME_WIRING_NO_REAL_EVAL_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_READY",
+  "transformation_primitive_expansion_plan_passed": true,
+  "transformation_primitive_expansion_plan_ready": true,
+  "transformation_primitive_expansion_plan_valid": true,
+  "warning_count": 0
+}

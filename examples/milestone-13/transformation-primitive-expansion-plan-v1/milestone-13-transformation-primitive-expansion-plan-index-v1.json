@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "a907240 Update ARC AGI3 milestone 13 solver capability gap audit artifacts",
+  "implementation_slice_count": 6,
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "next_stage": "MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1",
+  "plan_verdict": "TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+  "primitive_count": 43,
+  "primitive_group_count": 7,
+  "private_core_exposure": false,
+  "real_submission_allowed": false,
+  "revision": "MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "signature": "2BFF7965AF61E465",
+  "source_audit_ready": true,
+  "source_top_priority_ok": true,
+  "task_id": "MILESTONE-13-TRANSFORMATION-PRIMITIVE-EXPANSION-PLAN-2BFF7965AF61",
+  "task_verdict": "MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_READY",
+  "transformation_primitive_expansion_plan_ready": true
+}
