@@ -1,0 +1,775 @@
+{
+  "action_count": 25,
+  "baseline_commit": "86613ef Update ARC AGI3 milestone 12 world model verifier artifacts",
+  "case_count": 6,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 35,
+  "gates": [
+    {
+      "description": "Task 4 world model artifact is present.",
+      "name": "world_model_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 4 world model artifact is parseable.",
+      "name": "world_model_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 5 verifier artifact is present.",
+      "name": "verifier_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 5 verifier artifact is parseable.",
+      "name": "verifier_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "World model is ready.",
+      "name": "world_model_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "World model passed.",
+      "name": "world_model_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Verifier is ready.",
+      "name": "verifier_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Verifier passed.",
+      "name": "verifier_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Verifier points to Task 6.",
+      "name": "verifier_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source strategy is aligned.",
+      "name": "source_strategy_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source goal is aligned.",
+      "name": "source_goal_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six cases are available.",
+      "name": "case_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six cases are verified.",
+      "name": "verified_case_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six plans are emitted.",
+      "name": "plan_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six plans are verified.",
+      "name": "verified_plan_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Planner emits actions.",
+      "name": "action_count_positive",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Plan lengths are valid.",
+      "name": "plan_lengths_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Planner issue count is zero.",
+      "name": "planner_issue_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfitting is blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard is required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Manual upload remains blocked.",
+      "name": "manual_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle authentication is performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains planner-policy-only.",
+      "name": "planner_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_only": true,
+  "manual_upload_allowed": false,
+  "measurement_target_count": 10,
+  "measurement_targets": [
+    "case_count",
+    "verified_case_count",
+    "plan_count",
+    "verified_plan_count",
+    "action_count",
+    "mean_plan_length",
+    "minimum_plan_length",
+    "maximum_plan_length",
+    "planner_gate_count",
+    "planner_issue_count"
+  ],
+  "milestone_12_status": "OPENED_CANONICALLY",
+  "milestone_number": 12,
+  "next_stage": "MILESTONE_12_TASK_7_EPISODE_MEMORY_POLICY_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "passed_gate_count": 35,
+  "plan_count": 6,
+  "planner_check_count": 20,
+  "planner_checks": [
+    {
+      "description": "Task 4 world model artifact is present.",
+      "name": "world_model_artifact_present",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Task 4 world model artifact is parseable.",
+      "name": "world_model_artifact_parseable",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Task 5 verifier artifact is present.",
+      "name": "verifier_artifact_present",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Task 5 verifier artifact is parseable.",
+      "name": "verifier_artifact_parseable",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "World model is ready.",
+      "name": "world_model_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "World model passed.",
+      "name": "world_model_passed",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Verifier is ready.",
+      "name": "verifier_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Verifier passed.",
+      "name": "verifier_passed",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Verifier points to Task 6.",
+      "name": "verifier_next_stage_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source strategy is aligned.",
+      "name": "source_strategy_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source competitive goal is aligned.",
+      "name": "source_goal_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Planner sees six world model cases.",
+      "name": "case_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Planner sees six verified cases.",
+      "name": "verified_case_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Planner emits six plans.",
+      "name": "plan_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Planner verifies six plans.",
+      "name": "verified_plan_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Planner emits executable actions.",
+      "name": "action_count_positive",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Plan lengths are valid.",
+      "name": "plan_lengths_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Planner measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Planner issue count is zero.",
+      "name": "planner_issue_zero",
+      "severity": "PASS",
+      "status": true
+    }
+  ],
+  "planner_issue_count": 0,
+  "planner_only": true,
+  "planner_policy": {
+    "action_count": 25,
+    "case_count": 6,
+    "maximum_plan_length": 5,
+    "mean_plan_length": 4.166667,
+    "measurement_target_count": 10,
+    "measurement_targets": [
+      "case_count",
+      "verified_case_count",
+      "plan_count",
+      "verified_plan_count",
+      "action_count",
+      "mean_plan_length",
+      "minimum_plan_length",
+      "maximum_plan_length",
+      "planner_gate_count",
+      "planner_issue_count"
+    ],
+    "minimum_plan_length": 3,
+    "plan_count": 6,
+    "planner_policy_family": "DETERMINISTIC_VERIFIED_REFERENCE_PLANNER",
+    "planner_policy_id": "MILESTONE_12_VERIFIED_PLANNER_POLICY_SYNTHETIC_V1",
+    "plans": [
+      {
+        "action_count": 3,
+        "actions": [
+          "RIGHT",
+          "RIGHT",
+          "DOWN"
+        ],
+        "actions_valid": true,
+        "case_id": "m12_case_001_direct_goal",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Case passed world model verification.",
+            "name": "case_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "All plan actions are in the action space.",
+            "name": "actions_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan length matches minimum action count.",
+            "name": "minimal_plan",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan is executable under verified model constraints.",
+            "name": "executable",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "confidence": 1.0,
+        "executable": true,
+        "family": "navigation_goal",
+        "issue_count": 0,
+        "minimal_plan": true,
+        "minimum_action_count": 3,
+        "plan_id": "PLAN-M12_CASE_001_DIRECT_GOAL",
+        "planner_policy": "VERIFIED_OPTIMAL_REFERENCE_PLAN",
+        "verified_source_case": true
+      },
+      {
+        "action_count": 5,
+        "actions": [
+          "RIGHT",
+          "PICK",
+          "LEFT",
+          "DOWN",
+          "OPEN"
+        ],
+        "actions_valid": true,
+        "case_id": "m12_case_002_key_door",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Case passed world model verification.",
+            "name": "case_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "All plan actions are in the action space.",
+            "name": "actions_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan length matches minimum action count.",
+            "name": "minimal_plan",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan is executable under verified model constraints.",
+            "name": "executable",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "confidence": 1.0,
+        "executable": true,
+        "family": "object_precondition",
+        "issue_count": 0,
+        "minimal_plan": true,
+        "minimum_action_count": 5,
+        "plan_id": "PLAN-M12_CASE_002_KEY_DOOR",
+        "planner_policy": "VERIFIED_OPTIMAL_REFERENCE_PLAN",
+        "verified_source_case": true
+      },
+      {
+        "action_count": 5,
+        "actions": [
+          "RIGHT",
+          "PUSH",
+          "RIGHT",
+          "DOWN",
+          "EXIT"
+        ],
+        "actions_valid": true,
+        "case_id": "m12_case_003_push_block",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Case passed world model verification.",
+            "name": "case_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "All plan actions are in the action space.",
+            "name": "actions_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan length matches minimum action count.",
+            "name": "minimal_plan",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan is executable under verified model constraints.",
+            "name": "executable",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "confidence": 1.0,
+        "executable": true,
+        "family": "spatial_causal_action",
+        "issue_count": 0,
+        "minimal_plan": true,
+        "minimum_action_count": 5,
+        "plan_id": "PLAN-M12_CASE_003_PUSH_BLOCK",
+        "planner_policy": "VERIFIED_OPTIMAL_REFERENCE_PLAN",
+        "verified_source_case": true
+      },
+      {
+        "action_count": 3,
+        "actions": [
+          "BLUE",
+          "GREEN",
+          "RED"
+        ],
+        "actions_valid": true,
+        "case_id": "m12_case_004_color_rule",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Case passed world model verification.",
+            "name": "case_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "All plan actions are in the action space.",
+            "name": "actions_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan length matches minimum action count.",
+            "name": "minimal_plan",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan is executable under verified model constraints.",
+            "name": "executable",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "confidence": 1.0,
+        "executable": true,
+        "family": "latent_rule_inference",
+        "issue_count": 0,
+        "minimal_plan": true,
+        "minimum_action_count": 3,
+        "plan_id": "PLAN-M12_CASE_004_COLOR_RULE",
+        "planner_policy": "VERIFIED_OPTIMAL_REFERENCE_PLAN",
+        "verified_source_case": true
+      },
+      {
+        "action_count": 5,
+        "actions": [
+          "LEFT",
+          "TOGGLE",
+          "RIGHT",
+          "RIGHT",
+          "CROSS"
+        ],
+        "actions_valid": true,
+        "case_id": "m12_case_005_toggle_bridge",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Case passed world model verification.",
+            "name": "case_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "All plan actions are in the action space.",
+            "name": "actions_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan length matches minimum action count.",
+            "name": "minimal_plan",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan is executable under verified model constraints.",
+            "name": "executable",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "confidence": 1.0,
+        "executable": true,
+        "family": "state_toggle_planning",
+        "issue_count": 0,
+        "minimal_plan": true,
+        "minimum_action_count": 5,
+        "plan_id": "PLAN-M12_CASE_005_TOGGLE_BRIDGE",
+        "planner_policy": "VERIFIED_OPTIMAL_REFERENCE_PLAN",
+        "verified_source_case": true
+      },
+      {
+        "action_count": 4,
+        "actions": [
+          "C",
+          "A",
+          "D",
+          "B"
+        ],
+        "actions_valid": true,
+        "case_id": "m12_case_006_memory_order",
+        "check_count": 5,
+        "checks": [
+          {
+            "description": "Case passed world model verification.",
+            "name": "case_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan has actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "All plan actions are in the action space.",
+            "name": "actions_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan length matches minimum action count.",
+            "name": "minimal_plan",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Plan is executable under verified model constraints.",
+            "name": "executable",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "confidence": 1.0,
+        "executable": true,
+        "family": "episode_memory_sequence",
+        "issue_count": 0,
+        "minimal_plan": true,
+        "minimum_action_count": 4,
+        "plan_id": "PLAN-M12_CASE_006_MEMORY_ORDER",
+        "planner_policy": "VERIFIED_OPTIMAL_REFERENCE_PLAN",
+        "verified_source_case": true
+      }
+    ],
+    "verified_case_count": 6,
+    "verified_plan_count": 6
+  },
+  "planner_summary": {
+    "action_count": 25,
+    "case_count": 6,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "milestone_12_status": "OPENED_CANONICALLY",
+    "next_stage": "MILESTONE_12_TASK_7_EPISODE_MEMORY_POLICY_V1",
+    "plan_count": 6,
+    "planner_policy_id": "MILESTONE_12_VERIFIED_PLANNER_POLICY_SYNTHETIC_V1",
+    "planner_policy_status": "READY",
+    "verified_case_count": 6,
+    "verified_plan_count": 6
+  },
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 35,
+  "revision": "MILESTONE_12_VERIFIED_PLANNER_POLICY_V1",
+  "signature": "0933D535C453AEB1",
+  "source_task": "MILESTONE_12_TASK_5_WORLD_MODEL_VERIFIER_V1",
+  "source_verifier_artifact": "examples/milestone-12/world-model-verifier-v1/milestone-12-world-model-verifier-v1.json",
+  "source_world_model_artifact": "examples/milestone-12/executable-world-model-v1/milestone-12-executable-world-model-v1.json",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-12-VERIFIED-PLANNER-POLICY-0933D535C453",
+  "task_label": "Milestone #12 Task 6 - Verified Planner Policy v1",
+  "task_mode": "MILESTONE_12_VERIFIED_PLANNER_POLICY_V1_LOCAL_ONLY",
+  "task_number": 6,
+  "task_scope": "VERIFIED_PLANNER_POLICY_ONLY_NO_UPLOAD_NO_SUBMISSION_NO_EXTERNAL_API",
+  "task_verdict": "MILESTONE_12_VERIFIED_PLANNER_POLICY_READY",
+  "verified_case_count": 6,
+  "verified_plan_count": 6,
+  "verified_planner_policy_passed": true,
+  "verified_planner_policy_ready": true,
+  "verified_planner_policy_valid": true,
+  "verifier_artifact_parseable": true,
+  "verifier_artifact_present": true,
+  "verifier_next_stage_ok": true,
+  "verifier_passed": true,
+  "verifier_ready": true,
+  "warning_count": 0,
+  "world_model_artifact_parseable": true,
+  "world_model_artifact_present": true,
+  "world_model_passed": true,
+  "world_model_ready": true
+}
