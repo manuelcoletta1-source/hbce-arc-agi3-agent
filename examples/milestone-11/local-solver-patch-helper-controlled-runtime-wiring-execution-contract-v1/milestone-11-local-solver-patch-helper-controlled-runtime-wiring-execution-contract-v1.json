@@ -1,0 +1,228 @@
+{
+  "baseline_commit": "1bc48df Update ARC AGI3 controlled runtime wiring operator approval artifact",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "contract_gate_count": 26,
+  "contract_issue_count": 0,
+  "controlled_runtime_wiring_authorized": false,
+  "controlled_runtime_wiring_dry_run_allowed": true,
+  "controlled_runtime_wiring_execution_allowed": false,
+  "deterministic": true,
+  "diagnostic_only": true,
+  "dry_run_only": true,
+  "execution_condition_count": 15,
+  "execution_conditions": [
+    "Task 24 operator approval artifact must exist before Task 25 is considered valid.",
+    "The contract may authorize only a future dry-run stage, not runtime wiring execution.",
+    "The repo must be clean before opening the next task.",
+    "The test environment must expose the package with PYTHONPATH=src.",
+    "Runtime solver patching must remain blocked.",
+    "Runtime wiring must remain blocked.",
+    "Kaggle submission creation must remain blocked.",
+    "Kaggle upload must remain blocked.",
+    "Kaggle authentication must not be invoked.",
+    "External API calls must remain blocked.",
+    "Private core exposure must remain blocked.",
+    "Legal certification must remain false.",
+    "All produced artifacts must remain local and public-safe.",
+    "Rollback/restoration must be possible before any future controlled execution dry-run.",
+    "Any future execution dry-run must be diagnostic-only unless a later explicit task changes that boundary."
+  ],
+  "execution_contract_ready": true,
+  "execution_contract_valid": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gates": [
+    {
+      "description": "Task 24 operator approval artifact is present.",
+      "name": "source_task_24_operator_approval_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 25 contract record is built.",
+      "name": "execution_contract_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Next stage is a controlled execution dry-run contract stage.",
+      "name": "dry_run_next_stage_declared",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No runtime wiring is performed by this task.",
+      "name": "runtime_wiring_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No runtime solver patch is applied by this task.",
+      "name": "runtime_solver_patch_applied_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver patching remains blocked.",
+      "name": "runtime_solver_patch_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled runtime wiring execution is not allowed by this task.",
+      "name": "controlled_runtime_wiring_execution_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Only the next dry-run stage is allowed.",
+      "name": "controlled_runtime_wiring_dry_run_allowed_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle upload is performed.",
+      "name": "kaggle_upload_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle authentication is performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No external API dependency is introduced.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No private core exposure is introduced.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No API keys are contained in this artifact.",
+      "name": "contains_api_keys_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Legal certification remains explicitly false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "The task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "The task remains diagnostic-only.",
+      "name": "diagnostic_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "The artifact is public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "The contract is deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Manual operator boundary is preserved.",
+      "name": "manual_operator_boundary_preserved",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Repo cleanliness is required before next task.",
+      "name": "repo_clean_required",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "PYTHONPATH=src is required for full-suite verification.",
+      "name": "pythonpath_src_required",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Historical generated artifacts must be restored if full suite rewrites them.",
+      "name": "historical_artifact_drift_must_be_restored",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No score claim is allowed.",
+      "name": "no_score_claim_allowed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No competitive claim is allowed.",
+      "name": "no_competitive_claim_allowed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Any missing required condition must fail closed.",
+      "name": "failure_mode_fail_closed",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_only": true,
+  "next_stage": "MILESTONE_11_TASK_26_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_EXECUTION_DRY_RUN_V1",
+  "official_score_claim_allowed": false,
+  "passed_gate_count": 26,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_safe": true,
+  "ranker_runtime_modified": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 26,
+  "revision": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_EXECUTION_CONTRACT_V1",
+  "runtime_solver_modified": false,
+  "runtime_solver_patch_allowed": false,
+  "runtime_solver_patch_applied": false,
+  "runtime_wiring_performed": false,
+  "signature": "76CC967B542E2ABD",
+  "source_operator_approval_artifact": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-operator-approval-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-operator-approval-v1.json",
+  "source_operator_approval_artifact_present": true,
+  "source_task": "MILESTONE_11_TASK_24_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_OPERATOR_APPROVAL_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-EXECUTION-CONTRACT-76CC967B542E",
+  "task_label": "Milestone #11 Task 25 - Controlled Runtime Wiring Execution Contract v1",
+  "task_mode": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_EXECUTION_CONTRACT_V1_LOCAL_ONLY",
+  "task_number": 25,
+  "task_scope": "EXECUTION_CONTRACT_ONLY_NO_RUNTIME_WIRING_NO_SCORE_NO_SUBMISSION",
+  "task_verdict": "CONTROLLED_RUNTIME_WIRING_EXECUTION_CONTRACT_READY_FOR_DRY_RUN",
+  "warning_count": 0
+}
