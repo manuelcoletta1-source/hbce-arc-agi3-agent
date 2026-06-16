@@ -1,0 +1,23 @@
+{
+  "baseline_commit": "3905cc1 Update ARC AGI3 milestone 12 competitive solver closure artifacts",
+  "boundary_verdict": "MILESTONE_13_OPENED_CANONICALLY_REAL_EVALUATION_PREP_ALLOWED_REAL_SUBMISSION_BLOCKED",
+  "kaggle_authentication_allowed": false,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "local_solver_improvement_allowed": true,
+  "milestone_13_status": "OPENED_CANONICALLY",
+  "next_stage": "MILESTONE_13_TASK_2_SOLVER_CAPABILITY_GAP_AUDIT_V1",
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "private_core_exposure": false,
+  "real_evaluation_boundary_gate_ready": true,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_submission_allowed": false,
+  "revision": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_V1",
+  "signature": "A0B95C2D000230BE",
+  "source_closure_passed": true,
+  "source_milestone_12_closed": true,
+  "task_id": "MILESTONE-13-REAL-EVALUATION-BOUNDARY-GATE-A0B95C2D0002",
+  "task_verdict": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_READY"
+}

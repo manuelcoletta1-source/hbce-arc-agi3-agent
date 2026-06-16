@@ -1,0 +1,454 @@
+{
+  "allowed_local_action_count": 7,
+  "allowed_local_actions": [
+    "LOCAL_SOLVER_IMPROVEMENT",
+    "LOCAL_DIAGNOSTIC_EVALUATION",
+    "LOCAL_DRY_RUN_PACKAGE_PREPARATION",
+    "SOLVER_CAPABILITY_GAP_AUDIT",
+    "TRANSFORMATION_PRIMITIVE_EXPANSION",
+    "OBJECT_CENTRIC_REASONING_REVIEW",
+    "RANKER_POLICY_REVIEW"
+  ],
+  "baseline_commit": "3905cc1 Update ARC AGI3 milestone 12 competitive solver closure artifacts",
+  "blocked_action_count": 9,
+  "blocked_actions": [
+    "KAGGLE_AUTHENTICATION",
+    "KAGGLE_UPLOAD",
+    "REAL_SUBMISSION",
+    "MANUAL_UPLOAD",
+    "OFFICIAL_SCORE_CLAIM",
+    "COMPETITIVE_SCORE_CLAIM",
+    "INTERNET_DURING_EVAL",
+    "EXTERNAL_API_DURING_EVAL",
+    "PRIVATE_CORE_EXPOSURE"
+  ],
+  "boundary_blocking_issue_count": 0,
+  "boundary_gate_count": 44,
+  "boundary_pass_count": 44,
+  "boundary_policy": {
+    "allowed_local_action_count": 7,
+    "allowed_local_actions": [
+      "LOCAL_SOLVER_IMPROVEMENT",
+      "LOCAL_DIAGNOSTIC_EVALUATION",
+      "LOCAL_DRY_RUN_PACKAGE_PREPARATION",
+      "SOLVER_CAPABILITY_GAP_AUDIT",
+      "TRANSFORMATION_PRIMITIVE_EXPANSION",
+      "OBJECT_CENTRIC_REASONING_REVIEW",
+      "RANKER_POLICY_REVIEW"
+    ],
+    "blocked_action_count": 9,
+    "blocked_actions": [
+      "KAGGLE_AUTHENTICATION",
+      "KAGGLE_UPLOAD",
+      "REAL_SUBMISSION",
+      "MANUAL_UPLOAD",
+      "OFFICIAL_SCORE_CLAIM",
+      "COMPETITIVE_SCORE_CLAIM",
+      "INTERNET_DURING_EVAL",
+      "EXTERNAL_API_DURING_EVAL",
+      "PRIVATE_CORE_EXPOSURE"
+    ],
+    "boundary_policy_id": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_POLICY_V1",
+    "competitive_score_claim_allowed": false,
+    "external_api_dependency": false,
+    "internet_during_eval": false,
+    "kaggle_authentication_allowed": false,
+    "kaggle_upload_allowed": false,
+    "legal_certification": false,
+    "local_diagnostic_eval_allowed": true,
+    "local_dry_run_allowed": true,
+    "local_solver_improvement_allowed": true,
+    "manual_upload_allowed": false,
+    "measurement_target_count": 10,
+    "measurement_targets": [
+      "source_milestone_12_closed",
+      "source_closure_passed",
+      "source_real_submission_allowed",
+      "source_ready_for_real_kaggle_submission",
+      "source_milestone_13_opened",
+      "milestone_13_opened",
+      "real_evaluation_prep_allowed",
+      "real_submission_allowed",
+      "kaggle_authentication_allowed",
+      "boundary_blocking_issue_count"
+    ],
+    "official_score_claim_allowed": false,
+    "policy_family": "REAL_EVALUATION_PREPARATION_WITH_REAL_SUBMISSION_BLOCKED",
+    "private_core_exposure": false,
+    "real_evaluation_prep_allowed": true,
+    "real_kaggle_evaluation_allowed": false,
+    "real_submission_allowed": false,
+    "solver_capability_gap_audit_allowed": true,
+    "source_closure_verdict": "MILESTONE_12_CLOSED_LOCAL_COMPETITIVE_SOLVER_READY_REAL_SUBMISSION_BLOCKED",
+    "source_milestone_12_status": "CLOSED",
+    "source_milestone_13_opened": false,
+    "source_milestone_13_opening_allowed": false,
+    "source_next_stage": "MILESTONE_13_NOT_OPENED_CANONICALLY"
+  },
+  "boundary_summary": {
+    "boundary_status": "READY",
+    "boundary_verdict": "MILESTONE_13_OPENED_CANONICALLY_REAL_EVALUATION_PREP_ALLOWED_REAL_SUBMISSION_BLOCKED",
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "kaggle_authentication_allowed": false,
+    "local_solver_improvement_allowed": true,
+    "milestone_13_status": "OPENED_CANONICALLY",
+    "next_stage": "MILESTONE_13_TASK_2_SOLVER_CAPABILITY_GAP_AUDIT_V1",
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "real_evaluation_prep_allowed": true,
+    "real_kaggle_evaluation_allowed": false,
+    "real_submission_allowed": false,
+    "source_closure_passed": true,
+    "source_milestone_12_closed": true
+  },
+  "boundary_verdict": "MILESTONE_13_OPENED_CANONICALLY_REAL_EVALUATION_PREP_ALLOWED_REAL_SUBMISSION_BLOCKED",
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 44,
+  "gates": [
+    {
+      "description": "Milestone 12 closure artifact is present.",
+      "name": "source_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 12 closure artifact is parseable JSON.",
+      "name": "source_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 12 is closed.",
+      "name": "source_milestone_12_closed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 12 closure is ready.",
+      "name": "source_closure_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 12 closure passed.",
+      "name": "source_closure_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 12 closure verdict is canonical.",
+      "name": "source_closure_verdict_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 12 points to Milestone 13 not opened.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source strategy is aligned.",
+      "name": "source_strategy_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source goal is aligned.",
+      "name": "source_goal_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source issue count is zero.",
+      "name": "source_issue_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source keeps real submission blocked.",
+      "name": "source_real_submission_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source confirms Milestone 13 was not previously opened.",
+      "name": "source_milestone_13_not_opened",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 13 is opened by this task.",
+      "name": "milestone_13_opened_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Milestone 13 is opened canonically.",
+      "name": "milestone_13_opened_canonically_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real evaluation preparation is allowed.",
+      "name": "real_evaluation_prep_allowed_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Local solver improvement is allowed.",
+      "name": "local_solver_improvement_allowed_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Local diagnostic evaluation is allowed.",
+      "name": "local_diagnostic_eval_allowed_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Solver capability gap audit is allowed.",
+      "name": "solver_capability_gap_audit_allowed_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real Kaggle evaluation remains blocked.",
+      "name": "real_kaggle_evaluation_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real Kaggle submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Manual upload remains blocked.",
+      "name": "manual_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Operator approval remains required.",
+      "name": "operator_approval_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Operator approval has not been received.",
+      "name": "operator_approval_received_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Boundary measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Allowed local actions are declared.",
+      "name": "allowed_action_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Blocked actions are declared.",
+      "name": "blocked_action_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Gate fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_dry_run_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "measurement_target_count": 10,
+  "measurement_targets": [
+    "source_milestone_12_closed",
+    "source_closure_passed",
+    "source_real_submission_allowed",
+    "source_ready_for_real_kaggle_submission",
+    "source_milestone_13_opened",
+    "milestone_13_opened",
+    "real_evaluation_prep_allowed",
+    "real_submission_allowed",
+    "kaggle_authentication_allowed",
+    "boundary_blocking_issue_count"
+  ],
+  "milestone_13_opened": true,
+  "milestone_13_opened_canonically": true,
+  "milestone_13_status": "OPENED_CANONICALLY",
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_2_SOLVER_CAPABILITY_GAP_AUDIT_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 44,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_boundary_gate_passed": true,
+  "real_evaluation_boundary_gate_ready": true,
+  "real_evaluation_boundary_gate_valid": true,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 44,
+  "revision": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_V1",
+  "signature": "A0B95C2D000230BE",
+  "solver_capability_gap_audit_allowed": true,
+  "source_artifact_parseable": true,
+  "source_artifact_present": true,
+  "source_closure_passed": true,
+  "source_closure_ready": true,
+  "source_closure_verdict_ok": true,
+  "source_milestone_12_closed": true,
+  "source_milestone_12_closure_artifact": "examples/milestone-12/competitive-solver-closure-v1/milestone-12-competitive-solver-closure-v1.json",
+  "source_milestone_13_not_opened": true,
+  "source_next_stage_ok": true,
+  "source_real_submission_blocked": true,
+  "source_task": "MILESTONE_12_TASK_13_COMPETITIVE_SOLVER_CLOSURE_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-13-REAL-EVALUATION-BOUNDARY-GATE-A0B95C2D0002",
+  "task_label": "Milestone #13 Task 1 - Real Evaluation Boundary Gate v1",
+  "task_mode": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_V1_LOCAL_ONLY",
+  "task_number": 1,
+  "task_scope": "MILESTONE_13_OPENING_BOUNDARY_ONLY_NO_KAGGLE_AUTH_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_READY",
+  "warning_count": 0
+}
