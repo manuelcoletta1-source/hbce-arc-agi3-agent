@@ -1,0 +1,839 @@
+{
+  "baseline_commit": "93478ce Update ARC AGI3 milestone 12 candidate ranker policy artifacts",
+  "benchmark": {
+    "benchmark_case_count": 6,
+    "benchmark_cases": [
+      {
+        "action_count": 3,
+        "actions": [
+          "RIGHT",
+          "RIGHT",
+          "DOWN"
+        ],
+        "benchmark_case_id": "BENCHMARK-CASE-23EF526165A4",
+        "benchmark_passed": true,
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "case_id": "m12_case_001_direct_goal",
+        "check_count": 7,
+        "checks": [
+          {
+            "description": "Candidate is selected for case.",
+            "name": "selected_for_case",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank within case is one.",
+            "name": "rank_is_one",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains ranker-ready.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has deterministic actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Top candidate is verified replay.",
+            "name": "top_kind_replay",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "failure_count": 0,
+        "family": "navigation_goal",
+        "global_rank": 1,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_score": 1053,
+        "rank_within_case": 1,
+        "score_claim": null,
+        "source_candidate_id": "CANDIDATE-M12_CASE_001_DIRECT_GOAL-VERIFIED_EPISODE_REPLAY-DA405F68",
+        "source_ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_001_DIRECT_GOAL-VERIFIED_EPISODE_REPLAY-DA405F68",
+        "warning_count": 0
+      },
+      {
+        "action_count": 5,
+        "actions": [
+          "RIGHT",
+          "PICK",
+          "LEFT",
+          "DOWN",
+          "OPEN"
+        ],
+        "benchmark_case_id": "BENCHMARK-CASE-05A389F42750",
+        "benchmark_passed": true,
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "case_id": "m12_case_002_key_door",
+        "check_count": 7,
+        "checks": [
+          {
+            "description": "Candidate is selected for case.",
+            "name": "selected_for_case",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank within case is one.",
+            "name": "rank_is_one",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains ranker-ready.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has deterministic actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Top candidate is verified replay.",
+            "name": "top_kind_replay",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "failure_count": 0,
+        "family": "object_precondition",
+        "global_rank": 4,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_score": 1055,
+        "rank_within_case": 1,
+        "score_claim": null,
+        "source_candidate_id": "CANDIDATE-M12_CASE_002_KEY_DOOR-VERIFIED_EPISODE_REPLAY-1477EF6B",
+        "source_ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_002_KEY_DOOR-VERIFIED_EPISODE_REPLAY-1477EF6B",
+        "warning_count": 0
+      },
+      {
+        "action_count": 5,
+        "actions": [
+          "RIGHT",
+          "PUSH",
+          "RIGHT",
+          "DOWN",
+          "EXIT"
+        ],
+        "benchmark_case_id": "BENCHMARK-CASE-454BD91A3F2C",
+        "benchmark_passed": true,
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "case_id": "m12_case_003_push_block",
+        "check_count": 7,
+        "checks": [
+          {
+            "description": "Candidate is selected for case.",
+            "name": "selected_for_case",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank within case is one.",
+            "name": "rank_is_one",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains ranker-ready.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has deterministic actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Top candidate is verified replay.",
+            "name": "top_kind_replay",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "failure_count": 0,
+        "family": "spatial_causal_action",
+        "global_rank": 7,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_score": 1055,
+        "rank_within_case": 1,
+        "score_claim": null,
+        "source_candidate_id": "CANDIDATE-M12_CASE_003_PUSH_BLOCK-VERIFIED_EPISODE_REPLAY-AD89E2FF",
+        "source_ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_003_PUSH_BLOCK-VERIFIED_EPISODE_REPLAY-AD89E2FF",
+        "warning_count": 0
+      },
+      {
+        "action_count": 3,
+        "actions": [
+          "BLUE",
+          "GREEN",
+          "RED"
+        ],
+        "benchmark_case_id": "BENCHMARK-CASE-1C3E2E4D2E68",
+        "benchmark_passed": true,
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "case_id": "m12_case_004_color_rule",
+        "check_count": 7,
+        "checks": [
+          {
+            "description": "Candidate is selected for case.",
+            "name": "selected_for_case",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank within case is one.",
+            "name": "rank_is_one",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains ranker-ready.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has deterministic actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Top candidate is verified replay.",
+            "name": "top_kind_replay",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "failure_count": 0,
+        "family": "latent_rule_inference",
+        "global_rank": 10,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_score": 1053,
+        "rank_within_case": 1,
+        "score_claim": null,
+        "source_candidate_id": "CANDIDATE-M12_CASE_004_COLOR_RULE-VERIFIED_EPISODE_REPLAY-859236A9",
+        "source_ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_004_COLOR_RULE-VERIFIED_EPISODE_REPLAY-859236A9",
+        "warning_count": 0
+      },
+      {
+        "action_count": 5,
+        "actions": [
+          "LEFT",
+          "TOGGLE",
+          "RIGHT",
+          "RIGHT",
+          "CROSS"
+        ],
+        "benchmark_case_id": "BENCHMARK-CASE-E3222227933D",
+        "benchmark_passed": true,
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "case_id": "m12_case_005_toggle_bridge",
+        "check_count": 7,
+        "checks": [
+          {
+            "description": "Candidate is selected for case.",
+            "name": "selected_for_case",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank within case is one.",
+            "name": "rank_is_one",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains ranker-ready.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has deterministic actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Top candidate is verified replay.",
+            "name": "top_kind_replay",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "failure_count": 0,
+        "family": "state_toggle_planning",
+        "global_rank": 13,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_score": 1055,
+        "rank_within_case": 1,
+        "score_claim": null,
+        "source_candidate_id": "CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-VERIFIED_EPISODE_REPLAY-F1218626",
+        "source_ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_005_TOGGLE_BRIDGE-VERIFIED_EPISODE_REPLAY-F1218626",
+        "warning_count": 0
+      },
+      {
+        "action_count": 4,
+        "actions": [
+          "C",
+          "A",
+          "D",
+          "B"
+        ],
+        "benchmark_case_id": "BENCHMARK-CASE-2B982FE60523",
+        "benchmark_passed": true,
+        "candidate_kind": "VERIFIED_EPISODE_REPLAY",
+        "case_id": "m12_case_006_memory_order",
+        "check_count": 7,
+        "checks": [
+          {
+            "description": "Candidate is selected for case.",
+            "name": "selected_for_case",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank within case is one.",
+            "name": "rank_is_one",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains ranker-ready.",
+            "name": "ranker_ready",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate remains verified.",
+            "name": "candidate_verified",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate has deterministic actions.",
+            "name": "actions_present",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Candidate rank score is positive.",
+            "name": "rank_score_positive",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Top candidate is verified replay.",
+            "name": "top_kind_replay",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "failure_count": 0,
+        "family": "episode_memory_sequence",
+        "global_rank": 16,
+        "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+        "rank_score": 1054,
+        "rank_within_case": 1,
+        "score_claim": null,
+        "source_candidate_id": "CANDIDATE-M12_CASE_006_MEMORY_ORDER-VERIFIED_EPISODE_REPLAY-188004B4",
+        "source_ranked_candidate_id": "RANKED-CANDIDATE-M12_CASE_006_MEMORY_ORDER-VERIFIED_EPISODE_REPLAY-188004B4",
+        "warning_count": 0
+      }
+    ],
+    "benchmark_failure_count": 0,
+    "benchmark_family": "DETERMINISTIC_SELECTED_CANDIDATE_BENCHMARK",
+    "benchmark_pass_count": 6,
+    "benchmark_warning_count": 0,
+    "case_count": 6,
+    "maximum_rank_score": 1055,
+    "mean_rank_score": 1054.166667,
+    "measurement_target_count": 10,
+    "measurement_targets": [
+      "case_count",
+      "selected_candidate_count",
+      "benchmark_case_count",
+      "benchmark_pass_count",
+      "benchmark_warning_count",
+      "benchmark_failure_count",
+      "top_replay_candidate_count",
+      "mean_rank_score",
+      "minimum_rank_score",
+      "maximum_rank_score"
+    ],
+    "minimum_rank_score": 1053,
+    "ranked_candidate_benchmark_id": "MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_SYNTHETIC_V1",
+    "selected_candidate_count": 6,
+    "top_replay_candidate_count": 6
+  },
+  "benchmark_case_count": 6,
+  "benchmark_check_count": 18,
+  "benchmark_checks": [
+    {
+      "description": "Task 9 ranker artifact is present.",
+      "name": "ranker_artifact_present",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Task 9 ranker artifact is parseable.",
+      "name": "ranker_artifact_parseable",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker policy is ready.",
+      "name": "ranker_policy_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker policy passed.",
+      "name": "ranker_policy_passed",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker policy points to Task 10.",
+      "name": "ranker_next_stage_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker strategy is aligned.",
+      "name": "ranker_strategy_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker goal is aligned.",
+      "name": "ranker_goal_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Ranker issue count is zero.",
+      "name": "ranker_issue_zero",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark sees six cases.",
+      "name": "case_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark sees six selected candidates.",
+      "name": "selected_candidate_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark emits six cases.",
+      "name": "benchmark_case_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark passes six cases.",
+      "name": "benchmark_pass_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark warning count is zero.",
+      "name": "benchmark_warning_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark failure count is zero.",
+      "name": "benchmark_failure_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Selected candidates are replay candidates.",
+      "name": "top_replay_candidate_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark scores are valid.",
+      "name": "scores_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "severity": "PASS",
+      "status": true
+    }
+  ],
+  "benchmark_failure_count": 0,
+  "benchmark_pass_count": 6,
+  "benchmark_summary": {
+    "benchmark_case_count": 6,
+    "benchmark_failure_count": 0,
+    "benchmark_pass_count": 6,
+    "case_count": 6,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "milestone_12_status": "OPENED_CANONICALLY",
+    "next_stage": "MILESTONE_12_TASK_11_PUBLIC_OVERFIT_GUARD_V1",
+    "ranked_candidate_benchmark_id": "MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_SYNTHETIC_V1",
+    "ranked_candidate_benchmark_status": "READY",
+    "selected_candidate_count": 6
+  },
+  "benchmark_warning_count": 0,
+  "case_count": 6,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 33,
+  "gates": [
+    {
+      "description": "Task 9 ranker artifact is present.",
+      "name": "ranker_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 9 ranker artifact is parseable.",
+      "name": "ranker_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker policy is ready.",
+      "name": "ranker_policy_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker policy passed.",
+      "name": "ranker_policy_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker policy points to Task 10.",
+      "name": "ranker_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker strategy is aligned.",
+      "name": "ranker_strategy_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker goal is aligned.",
+      "name": "ranker_goal_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker issue count is zero.",
+      "name": "ranker_issue_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six cases are available.",
+      "name": "case_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six selected candidates are available.",
+      "name": "selected_candidate_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six benchmark cases are emitted.",
+      "name": "benchmark_case_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six benchmark cases pass.",
+      "name": "benchmark_pass_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Benchmark warning count is zero.",
+      "name": "benchmark_warning_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Benchmark failure count is zero.",
+      "name": "benchmark_failure_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six selected candidates are replay candidates.",
+      "name": "top_replay_candidate_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Benchmark scores are valid.",
+      "name": "scores_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfitting is blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard is required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Manual upload remains blocked.",
+      "name": "manual_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle authentication is performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains benchmark-only.",
+      "name": "ranked_candidate_benchmark_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_only": true,
+  "manual_upload_allowed": false,
+  "measurement_target_count": 10,
+  "measurement_targets": [
+    "case_count",
+    "selected_candidate_count",
+    "benchmark_case_count",
+    "benchmark_pass_count",
+    "benchmark_warning_count",
+    "benchmark_failure_count",
+    "top_replay_candidate_count",
+    "mean_rank_score",
+    "minimum_rank_score",
+    "maximum_rank_score"
+  ],
+  "milestone_12_status": "OPENED_CANONICALLY",
+  "milestone_number": 12,
+  "next_stage": "MILESTONE_12_TASK_11_PUBLIC_OVERFIT_GUARD_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "passed_gate_count": 33,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "ranked_candidate_benchmark_only": true,
+  "ranked_candidate_benchmark_passed": true,
+  "ranked_candidate_benchmark_ready": true,
+  "ranked_candidate_benchmark_valid": true,
+  "ranker_artifact_parseable": true,
+  "ranker_artifact_present": true,
+  "ranker_next_stage_ok": true,
+  "ranker_policy_passed": true,
+  "ranker_policy_ready": true,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 33,
+  "revision": "MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_V1",
+  "selected_candidate_count": 6,
+  "signature": "7563DF4F2BC92A4A",
+  "source_ranker_artifact": "examples/milestone-12/candidate-ranker-policy-v1/milestone-12-candidate-ranker-policy-v1.json",
+  "source_task": "MILESTONE_12_TASK_9_CANDIDATE_RANKER_POLICY_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-12-RANKED-CANDIDATE-BENCHMARK-7563DF4F2BC9",
+  "task_label": "Milestone #12 Task 10 - Ranked Candidate Benchmark v1",
+  "task_mode": "MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_V1_LOCAL_ONLY",
+  "task_number": 10,
+  "task_scope": "RANKED_CANDIDATE_BENCHMARK_ONLY_NO_UPLOAD_NO_SUBMISSION_NO_EXTERNAL_API",
+  "task_verdict": "MILESTONE_12_RANKED_CANDIDATE_BENCHMARK_READY",
+  "top_replay_candidate_count": 6,
+  "warning_count": 0
+}
