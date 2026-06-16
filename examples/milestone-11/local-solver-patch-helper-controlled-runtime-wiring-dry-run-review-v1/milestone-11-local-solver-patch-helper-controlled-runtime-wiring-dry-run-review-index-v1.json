@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "4308c1a Update ARC AGI3 controlled runtime wiring execution dry run artifacts",
+  "baseline_commit": "39b3e51 Add ARC AGI3 controlled runtime wiring dry run review",
   "controlled_runtime_wiring_execution_allowed": false,
   "dry_run_review_passed": true,
   "dry_run_review_ready": true,
@@ -9,9 +9,9 @@
   "revision": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_DRY_RUN_REVIEW_V1",
   "runtime_solver_patch_applied": false,
   "runtime_wiring_performed": false,
-  "signature": "702E28B51119C110",
+  "signature": "A32C170F4A9A2BC4",
   "source_dry_run_completed": true,
   "source_dry_run_valid": true,
-  "task_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-DRY-RUN-REVIEW-702E28B51119",
+  "task_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-DRY-RUN-REVIEW-A32C170F4A9A",
   "task_verdict": "CONTROLLED_RUNTIME_WIRING_DRY_RUN_REVIEW_READY_FOR_DECISION"
 }
