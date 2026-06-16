@@ -1,0 +1,23 @@
+{
+  "baseline_commit": "b744465 Update ARC AGI3 controlled runtime wiring closure audit report review artifacts",
+  "closure_audit_report_review_decision": "APPROVE_REVIEW_FOR_CLOSURE_REAL_EXECUTION_STILL_BLOCKED",
+  "closure_audit_report_review_decision_passed": true,
+  "closure_audit_report_review_decision_ready": true,
+  "closure_progression_authorized": true,
+  "controlled_runtime_wiring_execution_allowed": false,
+  "decided_task_count": 10,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "next_stage": "MILESTONE_11_TASK_34_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_CLOSURE_AUDIT_REPORT_REVIEW_DECISION_CLOSURE_V1",
+  "private_core_exposure": false,
+  "real_execution_authorized": false,
+  "revision": "MILESTONE_11_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_CLOSURE_AUDIT_REPORT_REVIEW_DECISION_V1",
+  "runtime_solver_patch_applied": false,
+  "runtime_wiring_performed": false,
+  "signature": "E6F764426BD5BE26",
+  "source_review_passed": true,
+  "source_review_real_execution_blocked": true,
+  "source_review_valid": true,
+  "task_id": "MILESTONE-11-LOCAL-SOLVER-PATCH-HELPER-CONTROLLED-RUNTIME-WIRING-CLOSURE-AUDIT-REPORT-REVIEW-DECISION-E6F764426BD5",
+  "task_verdict": "CONTROLLED_RUNTIME_WIRING_CLOSURE_AUDIT_REPORT_REVIEW_DECISION_APPROVED_FOR_CLOSURE_REAL_EXECUTION_BLOCKED"
+}
