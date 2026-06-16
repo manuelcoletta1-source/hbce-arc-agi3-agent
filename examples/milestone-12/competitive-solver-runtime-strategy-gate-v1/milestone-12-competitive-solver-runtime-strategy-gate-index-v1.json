@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "be39eee Update ARC AGI3 controlled runtime wiring final closure artifacts",
+  "baseline_commit": "6b3c052 Open ARC AGI3 milestone 12 competitive solver runtime strategy gate",
   "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
   "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
   "external_api_dependency": false,
@@ -14,8 +14,8 @@
   "public_overfit_allowed": false,
   "real_submission_allowed": false,
   "revision": "MILESTONE_12_COMPETITIVE_SOLVER_RUNTIME_STRATEGY_GATE_V1",
-  "signature": "128E2FD177AA4585",
-  "task_id": "MILESTONE-12-COMPETITIVE-SOLVER-RUNTIME-STRATEGY-GATE-128E2FD177AA",
+  "signature": "6AA0080539426E25",
+  "task_id": "MILESTONE-12-COMPETITIVE-SOLVER-RUNTIME-STRATEGY-GATE-6AA008053942",
   "task_verdict": "MILESTONE_12_COMPETITIVE_SOLVER_RUNTIME_OPENED_CANONICALLY",
   "workstream_count": 8
 }

@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "be39eee Update ARC AGI3 controlled runtime wiring final closure artifacts",
+  "baseline_commit": "6b3c052 Open ARC AGI3 milestone 12 competitive solver runtime strategy gate",
   "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
   "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
   "competitive_score_claim_allowed": false,
@@ -276,7 +276,7 @@
   "runtime_solver_modified": false,
   "runtime_solver_patch_applied": false,
   "runtime_wiring_performed": false,
-  "signature": "128E2FD177AA4585",
+  "signature": "6AA0080539426E25",
   "source_milestone_11_closure_ok": true,
   "source_milestone_11_final_closure_artifact": "examples/milestone-11/local-solver-patch-helper-controlled-runtime-wiring-final-closure-v1/milestone-11-local-solver-patch-helper-controlled-runtime-wiring-final-closure-v1.json",
   "source_milestone_11_final_closure_artifact_parseable": true,
@@ -443,7 +443,7 @@
     "strategy_family": "EXECUTABLE_WORLD_MODEL_WITH_EXPLORATION_VERIFICATION_PLANNING"
   },
   "submission_json_created": false,
-  "task_id": "MILESTONE-12-COMPETITIVE-SOLVER-RUNTIME-STRATEGY-GATE-128E2FD177AA",
+  "task_id": "MILESTONE-12-COMPETITIVE-SOLVER-RUNTIME-STRATEGY-GATE-6AA008053942",
   "task_label": "Milestone #12 Task 1 - Competitive Solver Runtime Strategy Gate v1",
   "task_mode": "MILESTONE_12_COMPETITIVE_SOLVER_RUNTIME_STRATEGY_GATE_V1_LOCAL_ONLY",
   "task_number": 1,

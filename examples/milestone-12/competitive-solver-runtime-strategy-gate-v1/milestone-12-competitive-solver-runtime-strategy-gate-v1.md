@@ -1,9 +1,9 @@
 # Milestone #12 Task 1 - Competitive Solver Runtime Strategy Gate v1
 
 - revision: `MILESTONE_12_COMPETITIVE_SOLVER_RUNTIME_STRATEGY_GATE_V1`
-- task_id: `MILESTONE-12-COMPETITIVE-SOLVER-RUNTIME-STRATEGY-GATE-128E2FD177AA`
-- signature: `128E2FD177AA4585`
-- baseline_commit: `be39eee Update ARC AGI3 controlled runtime wiring final closure artifacts`
+- task_id: `MILESTONE-12-COMPETITIVE-SOLVER-RUNTIME-STRATEGY-GATE-6AA008053942`
+- signature: `6AA0080539426E25`
+- baseline_commit: `6b3c052 Open ARC AGI3 milestone 12 competitive solver runtime strategy gate`
 - verdict: `MILESTONE_12_COMPETITIVE_SOLVER_RUNTIME_OPENED_CANONICALLY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`
