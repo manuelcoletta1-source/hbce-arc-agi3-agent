@@ -1,0 +1,732 @@
+{
+  "baseline_commit": "3c019f9 Update ARC AGI3 milestone 13 transformation primitive expansion plan artifacts",
+  "candidate_generator_modified": false,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_implementation_authorized": true,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 40,
+  "gates": [
+    {
+      "description": "Task 3 plan artifact is present.",
+      "name": "source_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 3 plan artifact is parseable.",
+      "name": "source_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 3 plan is ready and passed.",
+      "name": "source_plan_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 3 primitive plan has expected shape.",
+      "name": "source_primitive_plan_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 3 points to Task 4.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source blocks runtime wiring.",
+      "name": "source_blocks_runtime_wiring",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source keeps real actions blocked.",
+      "name": "source_blocks_real_actions",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source safety boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Object reasoning stages are declared.",
+      "name": "object_stage_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Object features are declared.",
+      "name": "object_feature_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Object operation groups are declared.",
+      "name": "object_operation_group_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Object operation count is expected.",
+      "name": "object_operation_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation lanes are declared.",
+      "name": "implementation_lane_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No implementation lane wires runtime.",
+      "name": "runtime_wiring_forbidden_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Risk controls are declared.",
+      "name": "risk_control_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Quality targets are declared.",
+      "name": "quality_target_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation planning is authorized.",
+      "name": "controlled_implementation_authorized_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring remains blocked in this task.",
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver is not modified.",
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator is not modified.",
+      "name": "candidate_generator_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime is not modified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Plan fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "implementation_lane_count": 6,
+  "implementation_lanes": [
+    {
+      "lane_id": "LANE-01",
+      "name": "object_extractor_contracts",
+      "output": "deterministic extraction contracts and local examples",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-02",
+      "name": "object_feature_schema",
+      "output": "stable public-safe object feature schema",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-03",
+      "name": "object_relation_graph_schema",
+      "output": "relation graph schema for future verifier and planner use",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-04",
+      "name": "object_transform_candidate_plan",
+      "output": "controlled object-level candidate generation plan",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-05",
+      "name": "object_verifier_feature_plan",
+      "output": "future verifier and ranker evidence hooks",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-06",
+      "name": "object_failure_replay_plan",
+      "output": "local-only replay cases for object-centric failures",
+      "runtime_wiring_allowed": false
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_5_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+  "object_centric_reasoning_plan": {
+    "controlled_implementation_authorized": true,
+    "implementation_lane_count": 6,
+    "implementation_lanes": [
+      {
+        "lane_id": "LANE-01",
+        "name": "object_extractor_contracts",
+        "output": "deterministic extraction contracts and local examples",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-02",
+        "name": "object_feature_schema",
+        "output": "stable public-safe object feature schema",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-03",
+        "name": "object_relation_graph_schema",
+        "output": "relation graph schema for future verifier and planner use",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-04",
+        "name": "object_transform_candidate_plan",
+        "output": "controlled object-level candidate generation plan",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-05",
+        "name": "object_verifier_feature_plan",
+        "output": "future verifier and ranker evidence hooks",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-06",
+        "name": "object_failure_replay_plan",
+        "output": "local-only replay cases for object-centric failures",
+        "runtime_wiring_allowed": false
+      }
+    ],
+    "object_feature_count": 14,
+    "object_features": [
+      "color_histogram",
+      "primary_color",
+      "pixel_area",
+      "bounding_box",
+      "height_width",
+      "aspect_ratio",
+      "centroid",
+      "shape_mask",
+      "border_touch_flags",
+      "hole_count",
+      "component_count",
+      "symmetry_flags",
+      "relative_position",
+      "neighbor_distance"
+    ],
+    "object_operation_count": 35,
+    "object_operation_group_count": 7,
+    "object_operation_groups": [
+      {
+        "group_id": "OBJ-OP-EXTRACT",
+        "operations": [
+          "extract_connected_components",
+          "extract_objects_by_color",
+          "extract_largest_object",
+          "extract_smallest_object",
+          "extract_border_touching_objects"
+        ],
+        "priority": 1
+      },
+      {
+        "group_id": "OBJ-OP-FILTER",
+        "operations": [
+          "filter_by_area",
+          "filter_by_color",
+          "filter_by_bbox_shape",
+          "filter_by_position",
+          "filter_by_symmetry"
+        ],
+        "priority": 2
+      },
+      {
+        "group_id": "OBJ-OP-RELATE",
+        "operations": [
+          "compute_alignment",
+          "compute_relative_direction",
+          "compute_distance",
+          "compute_containment",
+          "compute_adjacency"
+        ],
+        "priority": 3
+      },
+      {
+        "group_id": "OBJ-OP-MOVE",
+        "operations": [
+          "translate_object",
+          "center_object",
+          "align_object_to_reference",
+          "move_object_to_corner",
+          "move_object_by_vector"
+        ],
+        "priority": 4
+      },
+      {
+        "group_id": "OBJ-OP-RECOLOR",
+        "operations": [
+          "recolor_object",
+          "swap_object_colors",
+          "recolor_by_relation",
+          "recolor_by_size",
+          "recolor_by_position"
+        ],
+        "priority": 5
+      },
+      {
+        "group_id": "OBJ-OP-COMPOSE",
+        "operations": [
+          "copy_object",
+          "remove_object",
+          "overlay_object",
+          "repeat_object",
+          "merge_objects"
+        ],
+        "priority": 6
+      },
+      {
+        "group_id": "OBJ-OP-COMPLETE",
+        "operations": [
+          "complete_missing_object",
+          "complete_symmetric_object",
+          "complete_pattern_object",
+          "infer_target_object",
+          "repair_object_holes"
+        ],
+        "priority": 7
+      }
+    ],
+    "object_reasoning_stage_count": 6,
+    "object_reasoning_stages": [
+      {
+        "name": "connected_component_extraction",
+        "purpose": "detect non-background connected components under deterministic connectivity rules",
+        "stage_id": "OBJ-STAGE-01"
+      },
+      {
+        "name": "object_feature_encoding",
+        "purpose": "encode color, area, bbox, shape mask, centroid and border contact features",
+        "stage_id": "OBJ-STAGE-02"
+      },
+      {
+        "name": "object_relation_graph",
+        "purpose": "represent relative position, containment, alignment, distance and symmetry relations",
+        "stage_id": "OBJ-STAGE-03"
+      },
+      {
+        "name": "object_transform_hypotheses",
+        "purpose": "derive candidate object moves, copies, removals, recolors and recompositions",
+        "stage_id": "OBJ-STAGE-04"
+      },
+      {
+        "name": "object_level_verification_features",
+        "purpose": "score candidates using object preservation, relation preservation and target fit",
+        "stage_id": "OBJ-STAGE-05"
+      },
+      {
+        "name": "object_memory_replay_cases",
+        "purpose": "convert object-centric failures into reusable local replay tests",
+        "stage_id": "OBJ-STAGE-06"
+      }
+    ],
+    "plan_family": "LOCAL_OBJECT_CENTRIC_REASONING_NO_RUNTIME_WIRING",
+    "plan_id": "MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_PACKAGE_V1",
+    "quality_target_count": 7,
+    "quality_targets": [
+      "object_features_are_explicit",
+      "object_relations_are_named",
+      "operation_groups_are_testable",
+      "implementation_lanes_are_sequenced",
+      "runtime_wiring_is_blocked",
+      "anti_overfit_boundary_is_preserved",
+      "next_task_is_program_synthesis_candidate_generator_plan"
+    ],
+    "recommended_first_implementation_lane": "object_extractor_contracts",
+    "recommended_next_stage": "MILESTONE_13_TASK_5_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+    "risk_control_count": 10,
+    "risk_controls": [
+      "NO_REAL_KAGGLE_EVALUATION",
+      "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+      "NO_CANDIDATE_GENERATOR_WIRING_IN_THIS_TASK",
+      "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+      "NO_PUBLIC_SET_MEMORIZATION",
+      "NO_EXTERNAL_API_DEPENDENCY",
+      "NO_INTERNET_DURING_EVAL",
+      "NO_KAGGLE_AUTHENTICATION",
+      "NO_UPLOAD",
+      "NO_SUBMISSION"
+    ],
+    "runtime_wiring_authorized": false,
+    "runtime_wiring_forbidden_count": 6,
+    "source_next_stage": "MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1",
+    "source_plan_verdict": "TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+    "source_primitive_count": 43,
+    "source_revision": "MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+    "source_task_verdict": "MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_READY"
+  },
+  "object_centric_reasoning_plan_passed": true,
+  "object_centric_reasoning_plan_ready": true,
+  "object_centric_reasoning_plan_valid": true,
+  "object_centric_reasoning_planning_allowed": true,
+  "object_feature_count": 14,
+  "object_features": [
+    "color_histogram",
+    "primary_color",
+    "pixel_area",
+    "bounding_box",
+    "height_width",
+    "aspect_ratio",
+    "centroid",
+    "shape_mask",
+    "border_touch_flags",
+    "hole_count",
+    "component_count",
+    "symmetry_flags",
+    "relative_position",
+    "neighbor_distance"
+  ],
+  "object_operation_count": 35,
+  "object_operation_group_count": 7,
+  "object_operation_groups": [
+    {
+      "group_id": "OBJ-OP-EXTRACT",
+      "operations": [
+        "extract_connected_components",
+        "extract_objects_by_color",
+        "extract_largest_object",
+        "extract_smallest_object",
+        "extract_border_touching_objects"
+      ],
+      "priority": 1
+    },
+    {
+      "group_id": "OBJ-OP-FILTER",
+      "operations": [
+        "filter_by_area",
+        "filter_by_color",
+        "filter_by_bbox_shape",
+        "filter_by_position",
+        "filter_by_symmetry"
+      ],
+      "priority": 2
+    },
+    {
+      "group_id": "OBJ-OP-RELATE",
+      "operations": [
+        "compute_alignment",
+        "compute_relative_direction",
+        "compute_distance",
+        "compute_containment",
+        "compute_adjacency"
+      ],
+      "priority": 3
+    },
+    {
+      "group_id": "OBJ-OP-MOVE",
+      "operations": [
+        "translate_object",
+        "center_object",
+        "align_object_to_reference",
+        "move_object_to_corner",
+        "move_object_by_vector"
+      ],
+      "priority": 4
+    },
+    {
+      "group_id": "OBJ-OP-RECOLOR",
+      "operations": [
+        "recolor_object",
+        "swap_object_colors",
+        "recolor_by_relation",
+        "recolor_by_size",
+        "recolor_by_position"
+      ],
+      "priority": 5
+    },
+    {
+      "group_id": "OBJ-OP-COMPOSE",
+      "operations": [
+        "copy_object",
+        "remove_object",
+        "overlay_object",
+        "repeat_object",
+        "merge_objects"
+      ],
+      "priority": 6
+    },
+    {
+      "group_id": "OBJ-OP-COMPLETE",
+      "operations": [
+        "complete_missing_object",
+        "complete_symmetric_object",
+        "complete_pattern_object",
+        "infer_target_object",
+        "repair_object_holes"
+      ],
+      "priority": 7
+    }
+  ],
+  "object_reasoning_stage_count": 6,
+  "object_reasoning_stages": [
+    {
+      "name": "connected_component_extraction",
+      "purpose": "detect non-background connected components under deterministic connectivity rules",
+      "stage_id": "OBJ-STAGE-01"
+    },
+    {
+      "name": "object_feature_encoding",
+      "purpose": "encode color, area, bbox, shape mask, centroid and border contact features",
+      "stage_id": "OBJ-STAGE-02"
+    },
+    {
+      "name": "object_relation_graph",
+      "purpose": "represent relative position, containment, alignment, distance and symmetry relations",
+      "stage_id": "OBJ-STAGE-03"
+    },
+    {
+      "name": "object_transform_hypotheses",
+      "purpose": "derive candidate object moves, copies, removals, recolors and recompositions",
+      "stage_id": "OBJ-STAGE-04"
+    },
+    {
+      "name": "object_level_verification_features",
+      "purpose": "score candidates using object preservation, relation preservation and target fit",
+      "stage_id": "OBJ-STAGE-05"
+    },
+    {
+      "name": "object_memory_replay_cases",
+      "purpose": "convert object-centric failures into reusable local replay tests",
+      "stage_id": "OBJ-STAGE-06"
+    }
+  ],
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 40,
+  "plan_blocking_issue_count": 0,
+  "plan_gate_count": 40,
+  "plan_pass_count": 40,
+  "plan_summary": {
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "implementation_lane_count": 6,
+    "next_stage": "MILESTONE_13_TASK_5_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+    "object_feature_count": 14,
+    "object_operation_count": 35,
+    "object_operation_group_count": 7,
+    "object_reasoning_stage_count": 6,
+    "plan_status": "READY",
+    "plan_verdict": "OBJECT_CENTRIC_REASONING_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+    "recommended_first_implementation_lane": "object_extractor_contracts"
+  },
+  "plan_verdict": "OBJECT_CENTRIC_REASONING_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "quality_target_count": 7,
+  "quality_targets": [
+    "object_features_are_explicit",
+    "object_relations_are_named",
+    "operation_groups_are_testable",
+    "implementation_lanes_are_sequenced",
+    "runtime_wiring_is_blocked",
+    "anti_overfit_boundary_is_preserved",
+    "next_task_is_program_synthesis_candidate_generator_plan"
+  ],
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 40,
+  "revision": "MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_V1",
+  "risk_control_count": 10,
+  "risk_controls": [
+    "NO_REAL_KAGGLE_EVALUATION",
+    "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+    "NO_CANDIDATE_GENERATOR_WIRING_IN_THIS_TASK",
+    "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "NO_EXTERNAL_API_DEPENDENCY",
+    "NO_INTERNET_DURING_EVAL",
+    "NO_KAGGLE_AUTHENTICATION",
+    "NO_UPLOAD",
+    "NO_SUBMISSION"
+  ],
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "runtime_wiring_forbidden_count": 6,
+  "signature": "A6753DD23F1557C2",
+  "source_artifact_parseable": true,
+  "source_artifact_present": true,
+  "source_blocks_real_actions": true,
+  "source_blocks_runtime_wiring": true,
+  "source_next_stage_ok": true,
+  "source_plan_artifact": "examples/milestone-13/transformation-primitive-expansion-plan-v1/milestone-13-transformation-primitive-expansion-plan-v1.json",
+  "source_plan_ready": true,
+  "source_primitive_plan_ok": true,
+  "source_task": "MILESTONE_13_TASK_3_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-13-OBJECT-CENTRIC-REASONING-PLAN-A6753DD23F15",
+  "task_label": "Milestone #13 Task 4 - Object-Centric Reasoning Plan v1",
+  "task_mode": "MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_V1_LOCAL_ONLY",
+  "task_number": 4,
+  "task_scope": "OBJECT_CENTRIC_REASONING_PLAN_ONLY_NO_RUNTIME_WIRING_NO_REAL_EVAL_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_READY",
+  "warning_count": 0
+}
