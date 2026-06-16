@@ -1,0 +1,857 @@
+{
+  "baseline_commit": "461a75d Update ARC AGI3 milestone 13 program synthesis candidate generator implementation review artifacts",
+  "blocking_issue_count": 0,
+  "blocking_issues": [],
+  "candidate_count": 12,
+  "candidate_family_count": 7,
+  "candidate_fixture_matrix": [
+    {
+      "expected_observation": "identity_candidate_available",
+      "fixture_features": {
+        "cell_count": 4,
+        "colors": [
+          0,
+          1
+        ],
+        "expected_observation": "identity_candidate_available",
+        "fixture_id": "DIAG-FIXTURE-001",
+        "height": 2,
+        "name": "identity_grid",
+        "nonzero_cell_count": 2,
+        "nonzero_colors": [
+          1
+        ],
+        "public_safe": true,
+        "required_family": "primitive_sequence_candidates",
+        "width": 2
+      },
+      "fixture_id": "DIAG-FIXTURE-001",
+      "fixture_name": "identity_grid",
+      "matching_candidate_count": 3,
+      "matching_candidate_ids": [
+        "CAND-M13-T6-01-995D9E3D",
+        "CAND-M13-T6-02-FDA994A8",
+        "CAND-M13-T6-09-54ED55F7"
+      ],
+      "observation_passed": true,
+      "public_safe": true,
+      "real_evaluation_performed": false,
+      "required_family": "primitive_sequence_candidates",
+      "runtime_execution_performed": false
+    },
+    {
+      "expected_observation": "object_candidate_available",
+      "fixture_features": {
+        "cell_count": 9,
+        "colors": [
+          0,
+          2
+        ],
+        "expected_observation": "object_candidate_available",
+        "fixture_id": "DIAG-FIXTURE-002",
+        "height": 3,
+        "name": "simple_object_bbox",
+        "nonzero_cell_count": 2,
+        "nonzero_colors": [
+          2
+        ],
+        "public_safe": true,
+        "required_family": "object_transform_candidates",
+        "width": 3
+      },
+      "fixture_id": "DIAG-FIXTURE-002",
+      "fixture_name": "simple_object_bbox",
+      "matching_candidate_count": 2,
+      "matching_candidate_ids": [
+        "CAND-M13-T6-03-DFD8398F",
+        "CAND-M13-T6-04-06800321"
+      ],
+      "observation_passed": true,
+      "public_safe": true,
+      "real_evaluation_performed": false,
+      "required_family": "object_transform_candidates",
+      "runtime_execution_performed": false
+    },
+    {
+      "expected_observation": "color_rule_candidate_available",
+      "fixture_features": {
+        "cell_count": 6,
+        "colors": [
+          0,
+          1,
+          2
+        ],
+        "expected_observation": "color_rule_candidate_available",
+        "fixture_id": "DIAG-FIXTURE-003",
+        "height": 2,
+        "name": "palette_signal",
+        "nonzero_cell_count": 4,
+        "nonzero_colors": [
+          1,
+          2
+        ],
+        "public_safe": true,
+        "required_family": "color_rule_candidates",
+        "width": 3
+      },
+      "fixture_id": "DIAG-FIXTURE-003",
+      "fixture_name": "palette_signal",
+      "matching_candidate_count": 1,
+      "matching_candidate_ids": [
+        "CAND-M13-T6-07-89AEF3B0"
+      ],
+      "observation_passed": true,
+      "public_safe": true,
+      "real_evaluation_performed": false,
+      "required_family": "color_rule_candidates",
+      "runtime_execution_performed": false
+    },
+    {
+      "expected_observation": "symmetry_candidate_available",
+      "fixture_features": {
+        "cell_count": 9,
+        "colors": [
+          0,
+          3
+        ],
+        "expected_observation": "symmetry_candidate_available",
+        "fixture_id": "DIAG-FIXTURE-004",
+        "height": 3,
+        "name": "symmetry_signal",
+        "nonzero_cell_count": 4,
+        "nonzero_colors": [
+          3
+        ],
+        "public_safe": true,
+        "required_family": "symmetry_completion_candidates",
+        "width": 3
+      },
+      "fixture_id": "DIAG-FIXTURE-004",
+      "fixture_name": "symmetry_signal",
+      "matching_candidate_count": 1,
+      "matching_candidate_ids": [
+        "CAND-M13-T6-06-B12E9C73"
+      ],
+      "observation_passed": true,
+      "public_safe": true,
+      "real_evaluation_performed": false,
+      "required_family": "symmetry_completion_candidates",
+      "runtime_execution_performed": false
+    }
+  ],
+  "candidate_fixture_matrix_count": 4,
+  "candidate_generator_modified": false,
+  "candidate_generator_wiring_authorized": false,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "diagnostic_fixture_count": 4,
+  "diagnostic_fixtures": [
+    {
+      "expected_observation": "identity_candidate_available",
+      "fixture_id": "DIAG-FIXTURE-001",
+      "input_grid": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "name": "identity_grid",
+      "required_family": "primitive_sequence_candidates"
+    },
+    {
+      "expected_observation": "object_candidate_available",
+      "fixture_id": "DIAG-FIXTURE-002",
+      "input_grid": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "name": "simple_object_bbox",
+      "required_family": "object_transform_candidates"
+    },
+    {
+      "expected_observation": "color_rule_candidate_available",
+      "fixture_id": "DIAG-FIXTURE-003",
+      "input_grid": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "name": "palette_signal",
+      "required_family": "color_rule_candidates"
+    },
+    {
+      "expected_observation": "symmetry_candidate_available",
+      "fixture_id": "DIAG-FIXTURE-004",
+      "input_grid": [
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          3
+        ]
+      ],
+      "name": "symmetry_signal",
+      "required_family": "symmetry_completion_candidates"
+    }
+  ],
+  "diagnostic_harness_report": {
+    "blocking_issue_count": 0,
+    "blocking_issues": [],
+    "candidate_count": 12,
+    "candidate_families": [
+      "color_rule_candidates",
+      "composite_program_candidates",
+      "crop_pad_resize_candidates",
+      "object_transform_candidates",
+      "primitive_sequence_candidates",
+      "relation_graph_candidates",
+      "symmetry_completion_candidates"
+    ],
+    "candidate_family_count": 7,
+    "candidate_fixture_matrix": [
+      {
+        "expected_observation": "identity_candidate_available",
+        "fixture_features": {
+          "cell_count": 4,
+          "colors": [
+            0,
+            1
+          ],
+          "expected_observation": "identity_candidate_available",
+          "fixture_id": "DIAG-FIXTURE-001",
+          "height": 2,
+          "name": "identity_grid",
+          "nonzero_cell_count": 2,
+          "nonzero_colors": [
+            1
+          ],
+          "public_safe": true,
+          "required_family": "primitive_sequence_candidates",
+          "width": 2
+        },
+        "fixture_id": "DIAG-FIXTURE-001",
+        "fixture_name": "identity_grid",
+        "matching_candidate_count": 3,
+        "matching_candidate_ids": [
+          "CAND-M13-T6-01-995D9E3D",
+          "CAND-M13-T6-02-FDA994A8",
+          "CAND-M13-T6-09-54ED55F7"
+        ],
+        "observation_passed": true,
+        "public_safe": true,
+        "real_evaluation_performed": false,
+        "required_family": "primitive_sequence_candidates",
+        "runtime_execution_performed": false
+      },
+      {
+        "expected_observation": "object_candidate_available",
+        "fixture_features": {
+          "cell_count": 9,
+          "colors": [
+            0,
+            2
+          ],
+          "expected_observation": "object_candidate_available",
+          "fixture_id": "DIAG-FIXTURE-002",
+          "height": 3,
+          "name": "simple_object_bbox",
+          "nonzero_cell_count": 2,
+          "nonzero_colors": [
+            2
+          ],
+          "public_safe": true,
+          "required_family": "object_transform_candidates",
+          "width": 3
+        },
+        "fixture_id": "DIAG-FIXTURE-002",
+        "fixture_name": "simple_object_bbox",
+        "matching_candidate_count": 2,
+        "matching_candidate_ids": [
+          "CAND-M13-T6-03-DFD8398F",
+          "CAND-M13-T6-04-06800321"
+        ],
+        "observation_passed": true,
+        "public_safe": true,
+        "real_evaluation_performed": false,
+        "required_family": "object_transform_candidates",
+        "runtime_execution_performed": false
+      },
+      {
+        "expected_observation": "color_rule_candidate_available",
+        "fixture_features": {
+          "cell_count": 6,
+          "colors": [
+            0,
+            1,
+            2
+          ],
+          "expected_observation": "color_rule_candidate_available",
+          "fixture_id": "DIAG-FIXTURE-003",
+          "height": 2,
+          "name": "palette_signal",
+          "nonzero_cell_count": 4,
+          "nonzero_colors": [
+            1,
+            2
+          ],
+          "public_safe": true,
+          "required_family": "color_rule_candidates",
+          "width": 3
+        },
+        "fixture_id": "DIAG-FIXTURE-003",
+        "fixture_name": "palette_signal",
+        "matching_candidate_count": 1,
+        "matching_candidate_ids": [
+          "CAND-M13-T6-07-89AEF3B0"
+        ],
+        "observation_passed": true,
+        "public_safe": true,
+        "real_evaluation_performed": false,
+        "required_family": "color_rule_candidates",
+        "runtime_execution_performed": false
+      },
+      {
+        "expected_observation": "symmetry_candidate_available",
+        "fixture_features": {
+          "cell_count": 9,
+          "colors": [
+            0,
+            3
+          ],
+          "expected_observation": "symmetry_candidate_available",
+          "fixture_id": "DIAG-FIXTURE-004",
+          "height": 3,
+          "name": "symmetry_signal",
+          "nonzero_cell_count": 4,
+          "nonzero_colors": [
+            3
+          ],
+          "public_safe": true,
+          "required_family": "symmetry_completion_candidates",
+          "width": 3
+        },
+        "fixture_id": "DIAG-FIXTURE-004",
+        "fixture_name": "symmetry_signal",
+        "matching_candidate_count": 1,
+        "matching_candidate_ids": [
+          "CAND-M13-T6-06-B12E9C73"
+        ],
+        "observation_passed": true,
+        "public_safe": true,
+        "real_evaluation_performed": false,
+        "required_family": "symmetry_completion_candidates",
+        "runtime_execution_performed": false
+      }
+    ],
+    "candidate_fixture_matrix_count": 4,
+    "check_count": 16,
+    "checks": {
+      "all_candidates_bounded": true,
+      "all_candidates_deterministic": true,
+      "all_candidates_local_only": true,
+      "all_candidates_public_safe": true,
+      "all_fixture_observations_passed": true,
+      "all_fixture_required_families_present": true,
+      "all_real_submission_blocked": true,
+      "all_runtime_wiring_blocked": true,
+      "candidate_count_12": true,
+      "candidate_ids_unique": true,
+      "candidate_signatures_unique": true,
+      "fixture_count_4": true,
+      "implementation_record_passed": true,
+      "matrix_count_4": true,
+      "review_authorized_local_diagnostic_harness": true,
+      "review_record_passed": true
+    },
+    "diagnostic_fixture_count": 4,
+    "diagnostic_fixtures": [
+      {
+        "expected_observation": "identity_candidate_available",
+        "fixture_id": "DIAG-FIXTURE-001",
+        "input_grid": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "name": "identity_grid",
+        "required_family": "primitive_sequence_candidates"
+      },
+      {
+        "expected_observation": "object_candidate_available",
+        "fixture_id": "DIAG-FIXTURE-002",
+        "input_grid": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "name": "simple_object_bbox",
+        "required_family": "object_transform_candidates"
+      },
+      {
+        "expected_observation": "color_rule_candidate_available",
+        "fixture_id": "DIAG-FIXTURE-003",
+        "input_grid": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ]
+        ],
+        "name": "palette_signal",
+        "required_family": "color_rule_candidates"
+      },
+      {
+        "expected_observation": "symmetry_candidate_available",
+        "fixture_id": "DIAG-FIXTURE-004",
+        "input_grid": [
+          [
+            3,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            3
+          ]
+        ],
+        "name": "symmetry_signal",
+        "required_family": "symmetry_completion_candidates"
+      }
+    ],
+    "diagnostic_harness_report_id": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_REPORT_V1",
+    "harness_passed": true,
+    "harness_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_READY_FOR_REVIEW",
+    "implementation_revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1",
+    "passed_check_count": 16,
+    "recommended_next_stage": "MILESTONE_13_TASK_9_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_REVIEW_V1",
+    "review_revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_V1"
+  },
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 39,
+  "gates": [
+    {
+      "description": "Task 7 review artifact is present.",
+      "name": "source_review_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 7 review artifact is parseable.",
+      "name": "source_review_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 7 review passed and authorizes local harness.",
+      "name": "source_review_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 implementation artifact is present.",
+      "name": "source_implementation_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 implementation artifact is parseable.",
+      "name": "source_implementation_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 implementation passed.",
+      "name": "source_implementation_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate set is present.",
+      "name": "candidate_set_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Diagnostic fixtures are present.",
+      "name": "diagnostic_fixtures_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate-fixture matrix is complete.",
+      "name": "candidate_fixture_matrix_complete",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Diagnostic harness passed.",
+      "name": "harness_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No blocking issues.",
+      "name": "blocking_issue_count_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Harness is ready.",
+      "name": "local_diagnostic_harness_ready_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Harness passed.",
+      "name": "local_diagnostic_harness_passed_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No runtime execution is performed.",
+      "name": "runtime_execution_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring remains blocked.",
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator runtime wiring remains blocked.",
+      "name": "candidate_generator_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver is not modified.",
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime candidate generator is not modified.",
+      "name": "candidate_generator_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime is not modified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Harness fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "harness_blocking_issue_count": 0,
+  "harness_check_count": 20,
+  "harness_checks": [
+    "source_review_artifact_present",
+    "source_review_artifact_parseable",
+    "source_review_passed",
+    "source_implementation_artifact_present",
+    "source_implementation_artifact_parseable",
+    "candidate_set_present",
+    "diagnostic_fixtures_present",
+    "candidate_fixture_matrix_complete",
+    "all_fixture_required_families_present",
+    "candidate_ids_unique",
+    "candidate_signatures_unique",
+    "all_candidates_deterministic",
+    "all_candidates_local_only",
+    "all_candidates_public_safe",
+    "all_candidates_bounded",
+    "runtime_wiring_blocked",
+    "real_submission_blocked",
+    "harness_is_local_only",
+    "harness_is_deterministic",
+    "next_stage_is_review"
+  ],
+  "harness_gate_count": 39,
+  "harness_pass_count": 39,
+  "harness_summary": {
+    "blocking_issue_count": 0,
+    "candidate_count": 12,
+    "candidate_family_count": 7,
+    "candidate_fixture_matrix_count": 4,
+    "candidate_generator_wiring_authorized": false,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "diagnostic_fixture_count": 4,
+    "harness_status": "READY",
+    "harness_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_READY_FOR_REVIEW",
+    "next_stage": "MILESTONE_13_TASK_9_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_REVIEW_V1",
+    "runtime_wiring_authorized": false
+  },
+  "harness_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_READY_FOR_REVIEW",
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_diagnostic_harness_passed": true,
+  "local_diagnostic_harness_ready": true,
+  "local_diagnostic_harness_valid": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_9_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_REVIEW_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 39,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "program_synthesis_candidate_generator_local_diagnostic_harness_allowed": true,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "quality_target_count": 7,
+  "quality_targets": [
+    "diagnostic_harness_is_deterministic",
+    "diagnostic_fixtures_are_public_safe",
+    "candidate_fixture_matrix_is_complete",
+    "candidate_family_presence_is_verified",
+    "runtime_wiring_remains_blocked",
+    "real_actions_remain_blocked",
+    "next_task_is_harness_review"
+  ],
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 39,
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_V1",
+  "risk_control_count": 10,
+  "risk_controls": [
+    "NO_REAL_KAGGLE_EVALUATION",
+    "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+    "NO_CANDIDATE_GENERATOR_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "NO_EXTERNAL_API_DEPENDENCY",
+    "NO_INTERNET_DURING_EVAL",
+    "NO_KAGGLE_AUTHENTICATION",
+    "NO_UPLOAD",
+    "NO_SUBMISSION"
+  ],
+  "runtime_execution_performed": false,
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "signature": "D11005C02BFFF65D",
+  "source_boundaries_ok": true,
+  "source_implementation_artifact": "examples/milestone-13/program-synthesis-candidate-generator-controlled-implementation-v1/milestone-13-program-synthesis-candidate-generator-controlled-implementation-v1.json",
+  "source_implementation_artifact_parseable": true,
+  "source_implementation_artifact_present": true,
+  "source_implementation_passed": true,
+  "source_review_artifact": "examples/milestone-13/program-synthesis-candidate-generator-implementation-review-v1/milestone-13-program-synthesis-candidate-generator-implementation-review-v1.json",
+  "source_review_artifact_parseable": true,
+  "source_review_artifact_present": true,
+  "source_review_passed": true,
+  "source_task": "MILESTONE_13_TASK_7_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-LOCAL-DIAGNOSTIC-HARNESS-D11005C02BFF",
+  "task_label": "Milestone #13 Task 8 - Program Synthesis Candidate Generator Local Diagnostic Harness v1",
+  "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_V1_LOCAL_ONLY",
+  "task_number": 8,
+  "task_scope": "LOCAL_DIAGNOSTIC_HARNESS_ONLY_NO_RUNTIME_WIRING_NO_REAL_EVAL_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_READY",
+  "warning_count": 0
+}
