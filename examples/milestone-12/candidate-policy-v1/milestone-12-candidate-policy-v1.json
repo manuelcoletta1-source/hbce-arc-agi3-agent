@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "7ded6a7 Update ARC AGI3 milestone 12 episode memory policy artifacts",
+  "baseline_commit": "216433d Add ARC AGI3 milestone 12 candidate policy",
   "candidate_check_count": 20,
   "candidate_checks": [
     {
@@ -1453,11 +1453,11 @@
   "replay_candidate_count": 6,
   "required_gate_count": 35,
   "revision": "MILESTONE_12_CANDIDATE_POLICY_V1",
-  "signature": "A31A7B90950479AA",
+  "signature": "E7E98CEF163BEA20",
   "source_episode_memory_artifact": "examples/milestone-12/episode-memory-policy-v1/milestone-12-episode-memory-policy-v1.json",
   "source_task": "MILESTONE_12_TASK_7_EPISODE_MEMORY_POLICY_V1",
   "submission_json_created": false,
-  "task_id": "MILESTONE-12-CANDIDATE-POLICY-A31A7B909504",
+  "task_id": "MILESTONE-12-CANDIDATE-POLICY-E7E98CEF163B",
   "task_label": "Milestone #12 Task 8 - Candidate Policy v1",
   "task_mode": "MILESTONE_12_CANDIDATE_POLICY_V1_LOCAL_ONLY",
   "task_number": 8,

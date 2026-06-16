@@ -1,9 +1,9 @@
 # Milestone #12 Task 8 - Candidate Policy v1
 
 - revision: `MILESTONE_12_CANDIDATE_POLICY_V1`
-- task_id: `MILESTONE-12-CANDIDATE-POLICY-A31A7B909504`
-- signature: `A31A7B90950479AA`
-- baseline_commit: `7ded6a7 Update ARC AGI3 milestone 12 episode memory policy artifacts`
+- task_id: `MILESTONE-12-CANDIDATE-POLICY-E7E98CEF163B`
+- signature: `E7E98CEF163BEA20`
+- baseline_commit: `216433d Add ARC AGI3 milestone 12 candidate policy`
 - verdict: `MILESTONE_12_CANDIDATE_POLICY_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`

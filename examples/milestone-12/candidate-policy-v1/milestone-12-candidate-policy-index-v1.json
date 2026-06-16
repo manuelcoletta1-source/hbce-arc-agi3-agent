@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "7ded6a7 Update ARC AGI3 milestone 12 episode memory policy artifacts",
+  "baseline_commit": "216433d Add ARC AGI3 milestone 12 candidate policy",
   "candidate_count": 18,
   "candidate_issue_count": 0,
   "candidate_policy_passed": true,
@@ -18,8 +18,8 @@
   "ranker_ready_candidate_count": 18,
   "real_submission_allowed": false,
   "revision": "MILESTONE_12_CANDIDATE_POLICY_V1",
-  "signature": "A31A7B90950479AA",
-  "task_id": "MILESTONE-12-CANDIDATE-POLICY-A31A7B909504",
+  "signature": "E7E98CEF163BEA20",
+  "task_id": "MILESTONE-12-CANDIDATE-POLICY-E7E98CEF163B",
   "task_verdict": "MILESTONE_12_CANDIDATE_POLICY_READY",
   "verified_candidate_count": 18
 }
