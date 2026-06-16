@@ -1,0 +1,686 @@
+{
+  "baseline_commit": "b3d407b Update ARC AGI3 milestone 13 object centric reasoning plan artifacts",
+  "candidate_families": [
+    {
+      "description": "bounded sequences of deterministic grid primitives",
+      "family_id": "CAND-FAMILY-01",
+      "name": "primitive_sequence_candidates",
+      "priority": 1
+    },
+    {
+      "description": "extract, move, copy, remove, recolor or compose detected objects",
+      "family_id": "CAND-FAMILY-02",
+      "name": "object_transform_candidates",
+      "priority": 2
+    },
+    {
+      "description": "palette remaps, swaps and conditional recolor rules",
+      "family_id": "CAND-FAMILY-03",
+      "name": "color_rule_candidates",
+      "priority": 3
+    },
+    {
+      "description": "complete missing grid or object structure using symmetry hypotheses",
+      "family_id": "CAND-FAMILY-04",
+      "name": "symmetry_completion_candidates",
+      "priority": 4
+    },
+    {
+      "description": "shape and canvas transforms around object or non-background bounds",
+      "family_id": "CAND-FAMILY-05",
+      "name": "crop_pad_resize_candidates",
+      "priority": 5
+    },
+    {
+      "description": "generate candidates from object alignment, containment and adjacency relations",
+      "family_id": "CAND-FAMILY-06",
+      "name": "relation_graph_candidates",
+      "priority": 6
+    },
+    {
+      "description": "small bounded compositions of primitive, object and color programs",
+      "family_id": "CAND-FAMILY-07",
+      "name": "composite_program_candidates",
+      "priority": 7
+    }
+  ],
+  "candidate_family_count": 7,
+  "candidate_generator_modified": false,
+  "candidate_generator_wiring_authorized": false,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_implementation_authorized": true,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 41,
+  "gates": [
+    {
+      "description": "Task 4 object plan artifact is present.",
+      "name": "source_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 4 object plan artifact is parseable.",
+      "name": "source_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 4 plan is ready and passed.",
+      "name": "source_plan_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 4 object plan has expected shape.",
+      "name": "source_object_plan_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 4 points to Task 5.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source blocks runtime wiring.",
+      "name": "source_blocks_runtime_wiring",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source keeps real actions blocked.",
+      "name": "source_blocks_real_actions",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source safety boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Synthesis stages are declared.",
+      "name": "synthesis_stage_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Program templates are declared.",
+      "name": "program_template_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate families are declared.",
+      "name": "candidate_family_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Search controls are declared.",
+      "name": "search_control_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation lanes are declared.",
+      "name": "implementation_lane_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No implementation lane wires runtime.",
+      "name": "runtime_wiring_forbidden_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Risk controls are declared.",
+      "name": "risk_control_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Quality targets are declared.",
+      "name": "quality_target_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation planning is authorized.",
+      "name": "controlled_implementation_authorized_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator wiring remains blocked.",
+      "name": "candidate_generator_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring remains blocked in this task.",
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver is not modified.",
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator is not modified.",
+      "name": "candidate_generator_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime is not modified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Plan fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "implementation_lane_count": 6,
+  "implementation_lanes": [
+    {
+      "lane_id": "LANE-01",
+      "name": "program_template_schema",
+      "output": "stable schema for local candidate program templates",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-02",
+      "name": "parameter_binding_contract",
+      "output": "bounded deterministic binding of colors, objects, vectors and axes",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-03",
+      "name": "candidate_execution_contract",
+      "output": "local-only execution contract for generated candidate programs",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-04",
+      "name": "candidate_evidence_schema",
+      "output": "evidence structure for future verifier and ranker integration",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-05",
+      "name": "bounded_search_policy",
+      "output": "depth, count and deterministic ordering rules for candidate search",
+      "runtime_wiring_allowed": false
+    },
+    {
+      "lane_id": "LANE-06",
+      "name": "controlled_implementation_entrypoint",
+      "output": "next-stage implementation entrypoint with runtime still blocked",
+      "runtime_wiring_allowed": false
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_6_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 41,
+  "plan_blocking_issue_count": 0,
+  "plan_gate_count": 41,
+  "plan_pass_count": 41,
+  "plan_summary": {
+    "candidate_family_count": 7,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "implementation_lane_count": 6,
+    "next_stage": "MILESTONE_13_TASK_6_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1",
+    "plan_status": "READY",
+    "plan_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+    "program_template_count": 12,
+    "recommended_first_implementation_lane": "program_template_schema",
+    "search_control_count": 8,
+    "synthesis_stage_count": 6
+  },
+  "plan_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "program_synthesis_candidate_generator_plan": {
+    "candidate_families": [
+      {
+        "description": "bounded sequences of deterministic grid primitives",
+        "family_id": "CAND-FAMILY-01",
+        "name": "primitive_sequence_candidates",
+        "priority": 1
+      },
+      {
+        "description": "extract, move, copy, remove, recolor or compose detected objects",
+        "family_id": "CAND-FAMILY-02",
+        "name": "object_transform_candidates",
+        "priority": 2
+      },
+      {
+        "description": "palette remaps, swaps and conditional recolor rules",
+        "family_id": "CAND-FAMILY-03",
+        "name": "color_rule_candidates",
+        "priority": 3
+      },
+      {
+        "description": "complete missing grid or object structure using symmetry hypotheses",
+        "family_id": "CAND-FAMILY-04",
+        "name": "symmetry_completion_candidates",
+        "priority": 4
+      },
+      {
+        "description": "shape and canvas transforms around object or non-background bounds",
+        "family_id": "CAND-FAMILY-05",
+        "name": "crop_pad_resize_candidates",
+        "priority": 5
+      },
+      {
+        "description": "generate candidates from object alignment, containment and adjacency relations",
+        "family_id": "CAND-FAMILY-06",
+        "name": "relation_graph_candidates",
+        "priority": 6
+      },
+      {
+        "description": "small bounded compositions of primitive, object and color programs",
+        "family_id": "CAND-FAMILY-07",
+        "name": "composite_program_candidates",
+        "priority": 7
+      }
+    ],
+    "candidate_family_count": 7,
+    "candidate_generator_wiring_authorized": false,
+    "controlled_implementation_authorized": true,
+    "implementation_lane_count": 6,
+    "implementation_lanes": [
+      {
+        "lane_id": "LANE-01",
+        "name": "program_template_schema",
+        "output": "stable schema for local candidate program templates",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-02",
+        "name": "parameter_binding_contract",
+        "output": "bounded deterministic binding of colors, objects, vectors and axes",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-03",
+        "name": "candidate_execution_contract",
+        "output": "local-only execution contract for generated candidate programs",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-04",
+        "name": "candidate_evidence_schema",
+        "output": "evidence structure for future verifier and ranker integration",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-05",
+        "name": "bounded_search_policy",
+        "output": "depth, count and deterministic ordering rules for candidate search",
+        "runtime_wiring_allowed": false
+      },
+      {
+        "lane_id": "LANE-06",
+        "name": "controlled_implementation_entrypoint",
+        "output": "next-stage implementation entrypoint with runtime still blocked",
+        "runtime_wiring_allowed": false
+      }
+    ],
+    "plan_family": "LOCAL_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_NO_RUNTIME_WIRING",
+    "plan_id": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_PACKAGE_V1",
+    "program_template_count": 12,
+    "program_templates": [
+      "single_primitive_transform",
+      "two_step_primitive_sequence",
+      "object_extract_then_transform",
+      "object_filter_then_recolor",
+      "object_relation_guided_move",
+      "symmetry_completion_program",
+      "palette_remap_program",
+      "crop_pad_resize_program",
+      "tile_or_repeat_program",
+      "mask_overlay_program",
+      "object_compose_or_remove_program",
+      "conditional_rule_program"
+    ],
+    "quality_target_count": 7,
+    "quality_targets": [
+      "program_templates_are_explicit",
+      "candidate_families_are_bounded",
+      "search_controls_are_fail_closed",
+      "object_source_plan_is_verified",
+      "evidence_schema_is_planned",
+      "runtime_wiring_is_blocked",
+      "next_task_is_controlled_implementation"
+    ],
+    "recommended_first_implementation_lane": "program_template_schema",
+    "recommended_next_stage": "MILESTONE_13_TASK_6_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1",
+    "risk_control_count": 10,
+    "risk_controls": [
+      "NO_REAL_KAGGLE_EVALUATION",
+      "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+      "NO_CANDIDATE_GENERATOR_WIRING_IN_THIS_TASK",
+      "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+      "NO_PUBLIC_SET_MEMORIZATION",
+      "NO_EXTERNAL_API_DEPENDENCY",
+      "NO_INTERNET_DURING_EVAL",
+      "NO_KAGGLE_AUTHENTICATION",
+      "NO_UPLOAD",
+      "NO_SUBMISSION"
+    ],
+    "runtime_wiring_authorized": false,
+    "runtime_wiring_forbidden_count": 6,
+    "search_control_count": 8,
+    "search_controls": [
+      "MAX_PROGRAM_DEPTH_3_INITIAL",
+      "MAX_CANDIDATES_PER_FAMILY_BOUNDED",
+      "DETERMINISTIC_ORDERING_REQUIRED",
+      "TRAINING_PAIR_MATCH_REQUIRED",
+      "NO_PUBLIC_SET_MEMORIZATION",
+      "FAIL_CLOSED_ON_EMPTY_SOURCE_PLAN",
+      "NO_EXTERNAL_MODEL_CALLS",
+      "NO_RUNTIME_WIRING_IN_PLAN_TASK"
+    ],
+    "source_next_stage": "MILESTONE_13_TASK_5_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+    "source_object_operation_count": 35,
+    "source_plan_verdict": "OBJECT_CENTRIC_REASONING_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION",
+    "source_revision": "MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_V1",
+    "source_task_verdict": "MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_READY",
+    "synthesis_stage_count": 6,
+    "synthesis_stages": [
+      {
+        "name": "training_pair_feature_read",
+        "purpose": "read grid, object, color and relation features from local training pairs",
+        "stage_id": "SYN-STAGE-01"
+      },
+      {
+        "name": "program_template_selection",
+        "purpose": "select bounded program templates from primitive and object-centric families",
+        "stage_id": "SYN-STAGE-02"
+      },
+      {
+        "name": "bounded_parameter_binding",
+        "purpose": "bind colors, object selectors, directions, bbox references and symmetry axes",
+        "stage_id": "SYN-STAGE-03"
+      },
+      {
+        "name": "candidate_program_execution",
+        "purpose": "execute candidate programs locally against training examples",
+        "stage_id": "SYN-STAGE-04"
+      },
+      {
+        "name": "candidate_evidence_packaging",
+        "purpose": "package match evidence for future verifier and ranker layers",
+        "stage_id": "SYN-STAGE-05"
+      },
+      {
+        "name": "fail_closed_candidate_export",
+        "purpose": "export only deterministic public-safe candidates for the next controlled stage",
+        "stage_id": "SYN-STAGE-06"
+      }
+    ]
+  },
+  "program_synthesis_candidate_generator_plan_passed": true,
+  "program_synthesis_candidate_generator_plan_ready": true,
+  "program_synthesis_candidate_generator_plan_valid": true,
+  "program_synthesis_candidate_generator_planning_allowed": true,
+  "program_template_count": 12,
+  "program_templates": [
+    "single_primitive_transform",
+    "two_step_primitive_sequence",
+    "object_extract_then_transform",
+    "object_filter_then_recolor",
+    "object_relation_guided_move",
+    "symmetry_completion_program",
+    "palette_remap_program",
+    "crop_pad_resize_program",
+    "tile_or_repeat_program",
+    "mask_overlay_program",
+    "object_compose_or_remove_program",
+    "conditional_rule_program"
+  ],
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "quality_target_count": 7,
+  "quality_targets": [
+    "program_templates_are_explicit",
+    "candidate_families_are_bounded",
+    "search_controls_are_fail_closed",
+    "object_source_plan_is_verified",
+    "evidence_schema_is_planned",
+    "runtime_wiring_is_blocked",
+    "next_task_is_controlled_implementation"
+  ],
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 41,
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1",
+  "risk_control_count": 10,
+  "risk_controls": [
+    "NO_REAL_KAGGLE_EVALUATION",
+    "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+    "NO_CANDIDATE_GENERATOR_WIRING_IN_THIS_TASK",
+    "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "NO_EXTERNAL_API_DEPENDENCY",
+    "NO_INTERNET_DURING_EVAL",
+    "NO_KAGGLE_AUTHENTICATION",
+    "NO_UPLOAD",
+    "NO_SUBMISSION"
+  ],
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "runtime_wiring_forbidden_count": 6,
+  "search_control_count": 8,
+  "search_controls": [
+    "MAX_PROGRAM_DEPTH_3_INITIAL",
+    "MAX_CANDIDATES_PER_FAMILY_BOUNDED",
+    "DETERMINISTIC_ORDERING_REQUIRED",
+    "TRAINING_PAIR_MATCH_REQUIRED",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "FAIL_CLOSED_ON_EMPTY_SOURCE_PLAN",
+    "NO_EXTERNAL_MODEL_CALLS",
+    "NO_RUNTIME_WIRING_IN_PLAN_TASK"
+  ],
+  "signature": "4E4A15EB0254C41C",
+  "source_artifact_parseable": true,
+  "source_artifact_present": true,
+  "source_blocks_real_actions": true,
+  "source_blocks_runtime_wiring": true,
+  "source_next_stage_ok": true,
+  "source_object_plan_artifact": "examples/milestone-13/object-centric-reasoning-plan-v1/milestone-13-object-centric-reasoning-plan-v1.json",
+  "source_object_plan_ok": true,
+  "source_plan_ready": true,
+  "source_task": "MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1",
+  "submission_json_created": false,
+  "synthesis_stage_count": 6,
+  "synthesis_stages": [
+    {
+      "name": "training_pair_feature_read",
+      "purpose": "read grid, object, color and relation features from local training pairs",
+      "stage_id": "SYN-STAGE-01"
+    },
+    {
+      "name": "program_template_selection",
+      "purpose": "select bounded program templates from primitive and object-centric families",
+      "stage_id": "SYN-STAGE-02"
+    },
+    {
+      "name": "bounded_parameter_binding",
+      "purpose": "bind colors, object selectors, directions, bbox references and symmetry axes",
+      "stage_id": "SYN-STAGE-03"
+    },
+    {
+      "name": "candidate_program_execution",
+      "purpose": "execute candidate programs locally against training examples",
+      "stage_id": "SYN-STAGE-04"
+    },
+    {
+      "name": "candidate_evidence_packaging",
+      "purpose": "package match evidence for future verifier and ranker layers",
+      "stage_id": "SYN-STAGE-05"
+    },
+    {
+      "name": "fail_closed_candidate_export",
+      "purpose": "export only deterministic public-safe candidates for the next controlled stage",
+      "stage_id": "SYN-STAGE-06"
+    }
+  ],
+  "task_id": "MILESTONE-13-PROGRAM-SYNTHESIS-CANDIDATE-GENERATOR-PLAN-4E4A15EB0254",
+  "task_label": "Milestone #13 Task 5 - Program Synthesis Candidate Generator Plan v1",
+  "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1_LOCAL_ONLY",
+  "task_number": 5,
+  "task_scope": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_ONLY_NO_RUNTIME_WIRING_NO_REAL_EVAL_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_READY",
+  "warning_count": 0
+}
