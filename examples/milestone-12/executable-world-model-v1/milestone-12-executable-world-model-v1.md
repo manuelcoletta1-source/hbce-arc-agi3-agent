@@ -1,9 +1,9 @@
 # Milestone #12 Task 4 - Executable World Model v1
 
 - revision: `MILESTONE_12_EXECUTABLE_WORLD_MODEL_V1`
-- task_id: `MILESTONE-12-EXECUTABLE-WORLD-MODEL-FDFB614D506F`
-- signature: `FDFB614D506F7A46`
-- baseline_commit: `92bcd51 Update ARC AGI3 milestone 12 information gain explorer policy artifacts`
+- task_id: `MILESTONE-12-EXECUTABLE-WORLD-MODEL-A5E82A2393AF`
+- signature: `A5E82A2393AFEDDF`
+- baseline_commit: `954b8b1 Add ARC AGI3 milestone 12 executable world model`
 - verdict: `MILESTONE_12_EXECUTABLE_WORLD_MODEL_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`

@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "92bcd51 Update ARC AGI3 milestone 12 information gain explorer policy artifacts",
+  "baseline_commit": "954b8b1 Add ARC AGI3 milestone 12 executable world model",
   "case_count": 6,
   "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
   "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
@@ -18,8 +18,8 @@
   "real_submission_allowed": false,
   "revision": "MILESTONE_12_EXECUTABLE_WORLD_MODEL_V1",
   "rollout_count": 18,
-  "signature": "FDFB614D506F7A46",
-  "task_id": "MILESTONE-12-EXECUTABLE-WORLD-MODEL-FDFB614D506F",
+  "signature": "A5E82A2393AFEDDF",
+  "task_id": "MILESTONE-12-EXECUTABLE-WORLD-MODEL-A5E82A2393AF",
   "task_verdict": "MILESTONE_12_EXECUTABLE_WORLD_MODEL_READY",
   "transition_count": 37
 }
