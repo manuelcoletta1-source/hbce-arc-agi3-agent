@@ -343,11 +343,17 @@ does not authenticate to Kaggle, and does not call external APIs.
 """
     markdown_path.write_text(markdown, encoding="utf-8")
 
+    def _artifact_ref(path: Path) -> str:
+        try:
+            return str(path.relative_to(PROJECT_ROOT))
+        except ValueError:
+            return str(path)
+
     return {
-        "json": str(json_path.relative_to(PROJECT_ROOT)),
-        "index": str(index_path.relative_to(PROJECT_ROOT)),
-        "manifest": str(manifest_path.relative_to(PROJECT_ROOT)),
-        "markdown": str(markdown_path.relative_to(PROJECT_ROOT)),
+        "json": _artifact_ref(json_path),
+        "index": _artifact_ref(index_path),
+        "manifest": _artifact_ref(manifest_path),
+        "markdown": _artifact_ref(markdown_path),
     }
 
 
