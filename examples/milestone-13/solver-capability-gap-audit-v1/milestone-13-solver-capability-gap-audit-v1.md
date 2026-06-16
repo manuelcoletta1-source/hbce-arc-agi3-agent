@@ -1,9 +1,9 @@
 # Milestone #13 Task 2 - Solver Capability Gap Audit v1
 
 - revision: `MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_V1`
-- task_id: `MILESTONE-13-SOLVER-CAPABILITY-GAP-AUDIT-4698A59E72AE`
-- signature: `4698A59E72AEAC30`
-- baseline_commit: `76ea268 Update ARC AGI3 milestone 13 real evaluation boundary gate artifacts`
+- task_id: `MILESTONE-13-SOLVER-CAPABILITY-GAP-AUDIT-08908F1D2332`
+- signature: `08908F1D23320CD7`
+- baseline_commit: `1c08eb0 Add ARC AGI3 milestone 13 solver capability gap audit`
 - task_verdict: `MILESTONE_13_SOLVER_CAPABILITY_GAP_AUDIT_READY`
 - audit_verdict: `SOLVER_CAPABILITY_GAP_AUDIT_READY_FOR_LOCAL_IMPROVEMENT_PLAN`
 - next_stage: `MILESTONE_13_TASK_3_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1`
