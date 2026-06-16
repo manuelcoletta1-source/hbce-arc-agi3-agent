@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "59e9d71 Update ARC AGI3 milestone 12 competitive solver benchmark harness artifacts",
+  "baseline_commit": "c030cc2 Add ARC AGI3 milestone 12 information gain explorer policy",
   "benchmark_case_count": 6,
   "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
   "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
@@ -18,8 +18,8 @@
   "public_overfit_allowed": false,
   "real_submission_allowed": false,
   "revision": "MILESTONE_12_INFORMATION_GAIN_EXPLORER_POLICY_V1",
-  "signature": "505A0FAA969FBD91",
-  "task_id": "MILESTONE-12-INFORMATION-GAIN-EXPLORER-POLICY-505A0FAA969F",
+  "signature": "BB4A3C2F462916C4",
+  "task_id": "MILESTONE-12-INFORMATION-GAIN-EXPLORER-POLICY-BB4A3C2F4629",
   "task_verdict": "MILESTONE_12_INFORMATION_GAIN_EXPLORER_POLICY_READY",
   "wait_action_selected_count": 0
 }

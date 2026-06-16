@@ -1,9 +1,9 @@
 # Milestone #12 Task 3 - Information Gain Explorer Policy v1
 
 - revision: `MILESTONE_12_INFORMATION_GAIN_EXPLORER_POLICY_V1`
-- task_id: `MILESTONE-12-INFORMATION-GAIN-EXPLORER-POLICY-505A0FAA969F`
-- signature: `505A0FAA969FBD91`
-- baseline_commit: `59e9d71 Update ARC AGI3 milestone 12 competitive solver benchmark harness artifacts`
+- task_id: `MILESTONE-12-INFORMATION-GAIN-EXPLORER-POLICY-BB4A3C2F4629`
+- signature: `BB4A3C2F462916C4`
+- baseline_commit: `c030cc2 Add ARC AGI3 milestone 12 information gain explorer policy`
 - verdict: `MILESTONE_12_INFORMATION_GAIN_EXPLORER_POLICY_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`
