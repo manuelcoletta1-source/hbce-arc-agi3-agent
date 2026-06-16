@@ -1,0 +1,629 @@
+{
+  "baseline_commit": "7a12be2 Update ARC AGI3 milestone 13 program synthesis candidate generator implementation artifacts",
+  "blocking_issue_count": 0,
+  "blocking_issues": [],
+  "candidate_count": 12,
+  "candidate_family_count": 7,
+  "candidate_generator_modified": false,
+  "candidate_generator_wiring_authorized": false,
+  "candidate_ids_unique": true,
+  "candidate_review": {
+    "all_candidate_generator_runtime_wiring_blocked": true,
+    "all_candidates_bounded": true,
+    "all_candidates_deterministic": true,
+    "all_candidates_local_only": true,
+    "all_candidates_public_safe": true,
+    "all_kaggle_payload_blocked": true,
+    "all_ranker_runtime_wiring_blocked": true,
+    "all_real_submission_blocked": true,
+    "all_runtime_solver_patch_blocked": true,
+    "all_runtime_wiring_blocked": true,
+    "candidate_count": 12,
+    "candidate_family_count": 7,
+    "candidate_id_count": 12,
+    "candidate_signature_count": 12,
+    "expected_family_count": 7,
+    "families_present": [
+      "color_rule_candidates",
+      "composite_program_candidates",
+      "crop_pad_resize_candidates",
+      "object_transform_candidates",
+      "primitive_sequence_candidates",
+      "relation_graph_candidates",
+      "symmetry_completion_candidates"
+    ],
+    "max_program_depth": 2,
+    "min_program_depth": 1,
+    "missing_families": [],
+    "unexpected_families": [],
+    "unique_candidate_ids": true,
+    "unique_candidate_signatures": true
+  },
+  "candidate_signatures_unique": true,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "expected_candidate_family_count": 7,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 44,
+  "gates": [
+    {
+      "description": "Task 6 implementation artifact is present.",
+      "name": "source_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 implementation artifact is parseable.",
+      "name": "source_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 implementation is ready and passed.",
+      "name": "source_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 implementation has expected shape.",
+      "name": "source_shape_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 points to Task 7.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 blocks runtime wiring.",
+      "name": "source_blocks_runtime_wiring",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 blocks real actions.",
+      "name": "source_blocks_real_actions",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 6 preserves boundaries.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation review passed.",
+      "name": "review_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Twelve candidates are present.",
+      "name": "candidate_count_12",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate IDs are unique.",
+      "name": "candidate_ids_unique",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate family coverage is complete.",
+      "name": "candidate_families_complete",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Program depth is bounded.",
+      "name": "max_program_depth_bounded",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidates are deterministic.",
+      "name": "all_candidates_deterministic",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidates are local-only.",
+      "name": "all_candidates_local_only",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidates are public-safe.",
+      "name": "all_candidates_public_safe",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring is blocked.",
+      "name": "all_runtime_wiring_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission is blocked.",
+      "name": "all_real_submission_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation review is ready.",
+      "name": "implementation_review_ready_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Local diagnostic harness is authorized as next stage.",
+      "name": "local_diagnostic_harness_authorized_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator runtime wiring remains blocked.",
+      "name": "candidate_generator_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring remains blocked.",
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver is not modified.",
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime candidate generator is not modified.",
+      "name": "candidate_generator_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime is not modified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Review fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "implementation_review_passed": true,
+  "implementation_review_ready": true,
+  "implementation_review_valid": true,
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_diagnostic_harness_authorized": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "max_program_depth": 2,
+  "milestone_number": 13,
+  "missing_families": [],
+  "next_stage": "MILESTONE_13_TASK_8_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 44,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "program_synthesis_candidate_generator_implementation_review_allowed": true,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "quality_target_count": 7,
+  "quality_targets": [
+    "implementation_review_is_deterministic",
+    "candidate_count_is_verified",
+    "candidate_family_coverage_is_verified",
+    "candidate_depth_is_verified",
+    "candidate_boundary_is_verified",
+    "runtime_wiring_remains_blocked",
+    "next_task_is_local_diagnostic_harness"
+  ],
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 44,
+  "review_blocking_issue_count": 0,
+  "review_criteria": [
+    "source_artifact_present",
+    "source_artifact_parseable",
+    "implementation_ready",
+    "implementation_passed",
+    "candidate_count_12",
+    "candidate_ids_unique",
+    "candidate_families_complete",
+    "max_program_depth_bounded",
+    "all_candidates_deterministic",
+    "all_candidates_local_only",
+    "all_candidates_public_safe",
+    "all_candidates_bounded",
+    "all_runtime_wiring_blocked",
+    "all_real_submission_blocked",
+    "candidate_generator_wiring_blocked",
+    "runtime_wiring_blocked",
+    "runtime_solver_unmodified",
+    "candidate_generator_runtime_unmodified",
+    "ranker_runtime_unmodified",
+    "real_evaluation_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_upload_blocked",
+    "kaggle_submission_blocked",
+    "private_core_not_exposed",
+    "legal_certification_false"
+  ],
+  "review_criterion_count": 25,
+  "review_finding_count": 7,
+  "review_findings": [
+    {
+      "description": "Task 6 provides a controlled local candidate generator implementation artifact.",
+      "finding_id": "REVIEW-FINDING-01",
+      "name": "candidate_generator_exists",
+      "severity": "PASS"
+    },
+    {
+      "description": "Generated candidate count and program depth are bounded.",
+      "finding_id": "REVIEW-FINDING-02",
+      "name": "candidate_generation_is_bounded",
+      "severity": "PASS"
+    },
+    {
+      "description": "Candidate IDs and signatures are deterministic and unique.",
+      "finding_id": "REVIEW-FINDING-03",
+      "name": "candidate_identity_is_stable",
+      "severity": "PASS"
+    },
+    {
+      "description": "All seven planned candidate families are represented.",
+      "finding_id": "REVIEW-FINDING-04",
+      "name": "candidate_family_coverage_is_complete",
+      "severity": "PASS"
+    },
+    {
+      "description": "The implementation remains disconnected from solver runtime wiring.",
+      "finding_id": "REVIEW-FINDING-05",
+      "name": "runtime_wiring_is_blocked",
+      "severity": "PASS"
+    },
+    {
+      "description": "No real evaluation, authentication, upload, or submission is allowed.",
+      "finding_id": "REVIEW-FINDING-06",
+      "name": "real_submission_is_blocked",
+      "severity": "PASS"
+    },
+    {
+      "description": "The reviewed implementation may proceed to a local diagnostic harness.",
+      "finding_id": "REVIEW-FINDING-07",
+      "name": "ready_for_local_diagnostic_harness",
+      "severity": "PASS"
+    }
+  ],
+  "review_gate_count": 44,
+  "review_pass_count": 44,
+  "review_report": {
+    "blocking_issue_count": 0,
+    "blocking_issues": [],
+    "candidate_review": {
+      "all_candidate_generator_runtime_wiring_blocked": true,
+      "all_candidates_bounded": true,
+      "all_candidates_deterministic": true,
+      "all_candidates_local_only": true,
+      "all_candidates_public_safe": true,
+      "all_kaggle_payload_blocked": true,
+      "all_ranker_runtime_wiring_blocked": true,
+      "all_real_submission_blocked": true,
+      "all_runtime_solver_patch_blocked": true,
+      "all_runtime_wiring_blocked": true,
+      "candidate_count": 12,
+      "candidate_family_count": 7,
+      "candidate_id_count": 12,
+      "candidate_signature_count": 12,
+      "expected_family_count": 7,
+      "families_present": [
+        "color_rule_candidates",
+        "composite_program_candidates",
+        "crop_pad_resize_candidates",
+        "object_transform_candidates",
+        "primitive_sequence_candidates",
+        "relation_graph_candidates",
+        "symmetry_completion_candidates"
+      ],
+      "max_program_depth": 2,
+      "min_program_depth": 1,
+      "missing_families": [],
+      "unexpected_families": [],
+      "unique_candidate_ids": true,
+      "unique_candidate_signatures": true
+    },
+    "check_count": 19,
+    "checks": {
+      "all_candidate_generator_runtime_wiring_blocked": true,
+      "all_candidates_bounded": true,
+      "all_candidates_deterministic": true,
+      "all_candidates_local_only": true,
+      "all_candidates_public_safe": true,
+      "all_kaggle_payload_blocked": true,
+      "all_ranker_runtime_wiring_blocked": true,
+      "all_real_submission_blocked": true,
+      "all_runtime_solver_patch_blocked": true,
+      "all_runtime_wiring_blocked": true,
+      "candidate_count_12": true,
+      "candidate_families_complete": true,
+      "candidate_ids_unique": true,
+      "candidate_signatures_unique": true,
+      "max_program_depth_bounded": true,
+      "source_evidence_candidate_count_ok": true,
+      "source_evidence_depth_ok": true,
+      "source_evidence_runtime_blocked": true,
+      "source_evidence_submission_blocked": true
+    },
+    "passed_check_count": 19,
+    "recommended_next_stage": "MILESTONE_13_TASK_8_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_V1",
+    "review_finding_count": 7,
+    "review_findings": [
+      {
+        "description": "Task 6 provides a controlled local candidate generator implementation artifact.",
+        "finding_id": "REVIEW-FINDING-01",
+        "name": "candidate_generator_exists",
+        "severity": "PASS"
+      },
+      {
+        "description": "Generated candidate count and program depth are bounded.",
+        "finding_id": "REVIEW-FINDING-02",
+        "name": "candidate_generation_is_bounded",
+        "severity": "PASS"
+      },
+      {
+        "description": "Candidate IDs and signatures are deterministic and unique.",
+        "finding_id": "REVIEW-FINDING-03",
+        "name": "candidate_identity_is_stable",
+        "severity": "PASS"
+      },
+      {
+        "description": "All seven planned candidate families are represented.",
+        "finding_id": "REVIEW-FINDING-04",
+        "name": "candidate_family_coverage_is_complete",
+        "severity": "PASS"
+      },
+      {
+        "description": "The implementation remains disconnected from solver runtime wiring.",
+        "finding_id": "REVIEW-FINDING-05",
+        "name": "runtime_wiring_is_blocked",
+        "severity": "PASS"
+      },
+      {
+        "description": "No real evaluation, authentication, upload, or submission is allowed.",
+        "finding_id": "REVIEW-FINDING-06",
+        "name": "real_submission_is_blocked",
+        "severity": "PASS"
+      },
+      {
+        "description": "The reviewed implementation may proceed to a local diagnostic harness.",
+        "finding_id": "REVIEW-FINDING-07",
+        "name": "ready_for_local_diagnostic_harness",
+        "severity": "PASS"
+      }
+    ],
+    "review_id": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_REPORT_V1",
+    "review_passed": true,
+    "review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_PASS_READY_FOR_LOCAL_DIAGNOSTIC_HARNESS",
+    "source_evidence_pack": {
+      "all_candidates_bounded": true,
+      "all_candidates_deterministic": true,
+      "all_candidates_local_only": true,
+      "all_candidates_public_safe": true,
+      "all_real_submission_blocked": true,
+      "all_runtime_wiring_blocked": true,
+      "candidate_count": 12,
+      "candidate_family_count": 7,
+      "families_present": [
+        "color_rule_candidates",
+        "composite_program_candidates",
+        "crop_pad_resize_candidates",
+        "object_transform_candidates",
+        "primitive_sequence_candidates",
+        "relation_graph_candidates",
+        "symmetry_completion_candidates"
+      ],
+      "max_program_depth": 2,
+      "unique_candidate_ids": true
+    },
+    "source_implementation_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_READY_FOR_REVIEW",
+    "source_next_stage": "MILESTONE_13_TASK_7_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_V1",
+    "source_revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1",
+    "source_task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_READY"
+  },
+  "review_summary": {
+    "blocking_issue_count": 0,
+    "candidate_count": 12,
+    "candidate_family_count": 7,
+    "candidate_generator_wiring_authorized": false,
+    "candidate_ids_unique": true,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "max_program_depth": 2,
+    "next_stage": "MILESTONE_13_TASK_8_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_V1",
+    "review_status": "PASS",
+    "review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_PASS_READY_FOR_LOCAL_DIAGNOSTIC_HARNESS",
+    "runtime_wiring_authorized": false
+  },
+  "review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_PASS_READY_FOR_LOCAL_DIAGNOSTIC_HARNESS",
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_V1",
+  "risk_control_count": 10,
+  "risk_controls": [
+    "NO_REAL_KAGGLE_EVALUATION",
+    "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+    "NO_CANDIDATE_GENERATOR_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "NO_EXTERNAL_API_DEPENDENCY",
+    "NO_INTERNET_DURING_EVAL",
+    "NO_KAGGLE_AUTHENTICATION",
+    "NO_UPLOAD",
+    "NO_SUBMISSION"
+  ],
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "signature": "B5F5C622198370FB",
+  "source_artifact_parseable": true,
+  "source_artifact_present": true,
+  "source_blocks_real_actions": true,
+  "source_blocks_runtime_wiring": true,
+  "source_boundaries_ok": true,
+  "source_implementation_artifact": "examples/milestone-13/program-synthesis-candidate-generator-controlled-implementation-v1/milestone-13-program-synthesis-candidate-generator-controlled-implementation-v1.json",
+  "source_next_stage_ok": true,
+  "source_ready": true,
+  "source_shape_ok": true,
+  "source_task": "MILESTONE_13_TASK_6_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-IMPLEMENTATION-REVIEW-B5F5C6221983",
+  "task_label": "Milestone #13 Task 7 - Program Synthesis Candidate Generator Implementation Review v1",
+  "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_V1_LOCAL_ONLY",
+  "task_number": 7,
+  "task_scope": "IMPLEMENTATION_REVIEW_ONLY_NO_RUNTIME_WIRING_NO_REAL_EVAL_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_READY",
+  "unexpected_families": [],
+  "warning_count": 0
+}
