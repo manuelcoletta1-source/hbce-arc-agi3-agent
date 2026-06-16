@@ -1,9 +1,9 @@
 # Milestone #12 Task 11 - Public Overfit Guard v1
 
 - revision: `MILESTONE_12_PUBLIC_OVERFIT_GUARD_V1`
-- task_id: `MILESTONE-12-PUBLIC-OVERFIT-GUARD-DA8A655D91F4`
-- signature: `DA8A655D91F496A0`
-- baseline_commit: `12eee5d Update ARC AGI3 milestone 12 ranked candidate benchmark artifacts`
+- task_id: `MILESTONE-12-PUBLIC-OVERFIT-GUARD-303509D70F51`
+- signature: `303509D70F51C65A`
+- baseline_commit: `b1c7bbf Add ARC AGI3 milestone 12 public overfit guard`
 - verdict: `MILESTONE_12_PUBLIC_OVERFIT_GUARD_READY`
 - milestone_12_status: `OPENED_CANONICALLY`
 - competitive_goal: `FIRST_PLACE_COMPETITIVE_SOLVER`
