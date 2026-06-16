@@ -1,9 +1,9 @@
 # Milestone #13 Task 4 - Object-Centric Reasoning Plan v1
 
 - revision: `MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_V1`
-- task_id: `MILESTONE-13-OBJECT-CENTRIC-REASONING-PLAN-A6753DD23F15`
-- signature: `A6753DD23F1557C2`
-- baseline_commit: `3c019f9 Update ARC AGI3 milestone 13 transformation primitive expansion plan artifacts`
+- task_id: `MILESTONE-13-OBJECT-CENTRIC-REASONING-PLAN-C7B9055B7935`
+- signature: `C7B9055B79356A93`
+- baseline_commit: `2521872 Add ARC AGI3 milestone 13 object centric reasoning plan`
 - task_verdict: `MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_READY`
 - plan_verdict: `OBJECT_CENTRIC_REASONING_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION`
 - next_stage: `MILESTONE_13_TASK_5_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1`

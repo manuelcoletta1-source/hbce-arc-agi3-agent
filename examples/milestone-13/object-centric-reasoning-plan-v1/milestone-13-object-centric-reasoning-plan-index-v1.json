@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "3c019f9 Update ARC AGI3 milestone 13 transformation primitive expansion plan artifacts",
+  "baseline_commit": "2521872 Add ARC AGI3 milestone 13 object centric reasoning plan",
   "candidate_generator_modified": false,
   "implementation_lane_count": 6,
   "kaggle_authentication_allowed": false,
@@ -17,9 +17,9 @@
   "revision": "MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_V1",
   "runtime_solver_modified": false,
   "runtime_wiring_authorized": false,
-  "signature": "A6753DD23F1557C2",
+  "signature": "C7B9055B79356A93",
   "source_plan_ready": true,
   "source_primitive_plan_ok": true,
-  "task_id": "MILESTONE-13-OBJECT-CENTRIC-REASONING-PLAN-A6753DD23F15",
+  "task_id": "MILESTONE-13-OBJECT-CENTRIC-REASONING-PLAN-C7B9055B7935",
   "task_verdict": "MILESTONE_13_OBJECT_CENTRIC_REASONING_PLAN_READY"
 }
