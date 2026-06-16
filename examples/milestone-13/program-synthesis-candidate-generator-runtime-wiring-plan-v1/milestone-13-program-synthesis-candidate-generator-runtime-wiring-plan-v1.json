@@ -1,0 +1,551 @@
+{
+  "acceptance_gate_count": 15,
+  "acceptance_gates": [
+    "source_review_artifact_present",
+    "source_review_artifact_parseable",
+    "source_review_passed",
+    "source_runtime_wiring_plan_authorized",
+    "source_runtime_wiring_not_performed",
+    "source_candidate_generator_wiring_not_performed",
+    "source_real_eval_not_performed",
+    "wiring_targets_defined",
+    "wiring_steps_defined",
+    "no_target_runtime_modification_now",
+    "no_step_implementation_allowed_now",
+    "runtime_wiring_plan_created",
+    "runtime_wiring_plan_review_required",
+    "controlled_implementation_deferred",
+    "real_submission_blocked"
+  ],
+  "all_targets_require_review": true,
+  "baseline_commit": "f99281d Update ARC AGI3 milestone 13 program synthesis candidate generator local diagnostic harness review artifacts",
+  "candidate_generator_modified": false,
+  "candidate_generator_wiring_authorized": false,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_implementation_deferred": true,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 38,
+  "gates": [
+    {
+      "description": "Task 9 review artifact is present.",
+      "name": "source_review_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 9 review artifact is parseable.",
+      "name": "source_review_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 9 review passed and authorizes wiring plan.",
+      "name": "source_review_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 9 boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Four wiring targets are defined.",
+      "name": "wiring_targets_defined",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six wiring steps are defined.",
+      "name": "wiring_steps_defined",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All wiring targets require review before implementation.",
+      "name": "all_targets_require_review",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No target modifies runtime now.",
+      "name": "no_target_runtime_modification_now",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No step implements wiring now.",
+      "name": "no_step_implementation_allowed_now",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring plan is created.",
+      "name": "runtime_wiring_plan_created",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring plan is ready.",
+      "name": "runtime_wiring_plan_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring plan requires review.",
+      "name": "runtime_wiring_plan_review_required",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation is deferred.",
+      "name": "controlled_implementation_deferred",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No runtime execution is performed.",
+      "name": "runtime_execution_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator wiring remains blocked.",
+      "name": "candidate_generator_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring remains blocked.",
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver is not modified.",
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator is not modified.",
+      "name": "candidate_generator_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime is not modified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Plan fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "implementation_allowed_now": false,
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_11_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1",
+  "no_step_implementation_allowed_now": true,
+  "no_target_runtime_modification_now": true,
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 38,
+  "plan_blocking_issue_count": 0,
+  "plan_gate_count": 38,
+  "plan_pass_count": 38,
+  "plan_summary": {
+    "acceptance_gate_count": 15,
+    "candidate_generator_wiring_authorized": false,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "controlled_implementation_deferred": true,
+    "next_stage": "MILESTONE_13_TASK_11_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1",
+    "plan_status": "READY",
+    "plan_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_READY_FOR_REVIEW",
+    "runtime_wiring_authorized": false,
+    "runtime_wiring_plan_created": true,
+    "runtime_wiring_plan_ready": true,
+    "runtime_wiring_plan_review_required": true,
+    "wiring_step_count": 6,
+    "wiring_target_count": 4
+  },
+  "plan_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_READY_FOR_REVIEW",
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "program_synthesis_candidate_generator_runtime_wiring_plan_allowed": true,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "quality_target_count": 7,
+  "quality_targets": [
+    "runtime_wiring_plan_is_deterministic",
+    "source_review_artifact_is_verified",
+    "wiring_targets_are_explicit",
+    "wiring_steps_are_explicit",
+    "implementation_is_deferred",
+    "runtime_wiring_remains_blocked",
+    "next_task_is_plan_review"
+  ],
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 38,
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_V1",
+  "risk_control_count": 11,
+  "risk_controls": [
+    "NO_REAL_KAGGLE_EVALUATION",
+    "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+    "NO_CANDIDATE_GENERATOR_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "NO_EXTERNAL_API_DEPENDENCY",
+    "NO_INTERNET_DURING_EVAL",
+    "NO_KAGGLE_AUTHENTICATION",
+    "NO_UPLOAD",
+    "NO_SUBMISSION",
+    "PLAN_ONLY_NO_CODEPATH_ACTIVATION"
+  ],
+  "runtime_execution_performed": false,
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "runtime_wiring_plan_created": true,
+  "runtime_wiring_plan_ready": true,
+  "runtime_wiring_plan_review_required": true,
+  "runtime_wiring_plan_valid": true,
+  "signature": "1B16C4AE89AB2F66",
+  "source_boundaries_ok": true,
+  "source_review_artifact": "examples/milestone-13/program-synthesis-candidate-generator-local-diagnostic-harness-review-v1/milestone-13-program-synthesis-candidate-generator-local-diagnostic-harness-review-v1.json",
+  "source_review_artifact_parseable": true,
+  "source_review_artifact_present": true,
+  "source_review_passed": true,
+  "source_task": "MILESTONE_13_TASK_9_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_REVIEW_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-RUNTIME-WIRING-PLAN-1B16C4AE89AB",
+  "task_label": "Milestone #13 Task 10 - Program Synthesis Candidate Generator Runtime Wiring Plan v1",
+  "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_V1_LOCAL_ONLY",
+  "task_number": 10,
+  "task_scope": "RUNTIME_WIRING_PLAN_ONLY_NO_RUNTIME_WIRING_NO_REAL_EVAL_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_READY",
+  "warning_count": 0,
+  "wiring_plan": {
+    "acceptance_gate_count": 15,
+    "acceptance_gates": [
+      "source_review_artifact_present",
+      "source_review_artifact_parseable",
+      "source_review_passed",
+      "source_runtime_wiring_plan_authorized",
+      "source_runtime_wiring_not_performed",
+      "source_candidate_generator_wiring_not_performed",
+      "source_real_eval_not_performed",
+      "wiring_targets_defined",
+      "wiring_steps_defined",
+      "no_target_runtime_modification_now",
+      "no_step_implementation_allowed_now",
+      "runtime_wiring_plan_created",
+      "runtime_wiring_plan_review_required",
+      "controlled_implementation_deferred",
+      "real_submission_blocked"
+    ],
+    "candidate_count": 12,
+    "candidate_family_count": 7,
+    "candidate_fixture_matrix_count": 4,
+    "candidate_generator_runtime_modification_allowed_now": false,
+    "diagnostic_fixture_count": 4,
+    "implementation_deferred_to_next_reviewed_stage": true,
+    "next_stage": "MILESTONE_13_TASK_11_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1",
+    "plan_mode": "PLAN_ONLY",
+    "ranker_runtime_modification_allowed_now": false,
+    "review_required_before_implementation": true,
+    "runtime_modification_allowed_now": false,
+    "source_review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_REVIEW_PASS_READY_FOR_RUNTIME_WIRING_PLAN",
+    "source_revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_REVIEW_V1",
+    "source_runtime_wiring_plan_authorized": true,
+    "wiring_plan_id": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_SPEC_V1",
+    "wiring_step_count": 6,
+    "wiring_steps": [
+      {
+        "description": "Use Task 9 review artifact as the frozen prerequisite for wiring design.",
+        "implementation_allowed_now": false,
+        "name": "freeze_reviewed_harness_contract",
+        "step_id": "WIRING-PLAN-STEP-01"
+      },
+      {
+        "description": "Define deterministic local adapter interface for generated candidates.",
+        "implementation_allowed_now": false,
+        "name": "define_adapter_interface",
+        "step_id": "WIRING-PLAN-STEP-02"
+      },
+      {
+        "description": "Define future solver call site without modifying solver runtime.",
+        "implementation_allowed_now": false,
+        "name": "define_solver_call_site_boundary",
+        "step_id": "WIRING-PLAN-STEP-03"
+      },
+      {
+        "description": "Define future ranker extension contract without changing ranker runtime.",
+        "implementation_allowed_now": false,
+        "name": "define_ranker_contract_extension",
+        "step_id": "WIRING-PLAN-STEP-04"
+      },
+      {
+        "description": "Require local diagnostic harness pass before any controlled implementation.",
+        "implementation_allowed_now": false,
+        "name": "define_diagnostic_only_acceptance_gate",
+        "step_id": "WIRING-PLAN-STEP-05"
+      },
+      {
+        "description": "Defer actual wiring until plan review authorizes a controlled implementation task.",
+        "implementation_allowed_now": false,
+        "name": "defer_runtime_wiring_to_reviewed_task",
+        "step_id": "WIRING-PLAN-STEP-06"
+      }
+    ],
+    "wiring_target_count": 4,
+    "wiring_targets": [
+      {
+        "name": "candidate_generation_entrypoint_adapter",
+        "planned_module": "src/hbce_arc_agi3/program_synthesis_candidate_generator_runtime_adapter.py",
+        "purpose": "Expose reviewed candidate generator output behind a local deterministic adapter.",
+        "requires_review_before_implementation": true,
+        "runtime_modification_now": false,
+        "target_id": "WIRING-TARGET-01"
+      },
+      {
+        "name": "local_candidate_generation_call_site",
+        "planned_module": "src/hbce_arc_agi3/solver_runtime_candidate_generation_hook.py",
+        "purpose": "Define a future local-only call site for candidate generation inside solver exploration.",
+        "requires_review_before_implementation": true,
+        "runtime_modification_now": false,
+        "target_id": "WIRING-TARGET-02"
+      },
+      {
+        "name": "candidate_fixture_matrix_bridge",
+        "planned_module": "src/hbce_arc_agi3/program_synthesis_candidate_fixture_bridge.py",
+        "purpose": "Map candidate generator results into diagnostic harness compatible records.",
+        "requires_review_before_implementation": true,
+        "runtime_modification_now": false,
+        "target_id": "WIRING-TARGET-03"
+      },
+      {
+        "name": "ranker_input_contract_extension",
+        "planned_module": "src/hbce_arc_agi3/candidate_ranker.py",
+        "purpose": "Plan future ranker input contract extension without changing runtime ranking now.",
+        "requires_review_before_implementation": true,
+        "runtime_modification_now": false,
+        "target_id": "WIRING-TARGET-04"
+      }
+    ]
+  },
+  "wiring_step_count": 6,
+  "wiring_steps": [
+    {
+      "description": "Use Task 9 review artifact as the frozen prerequisite for wiring design.",
+      "implementation_allowed_now": false,
+      "name": "freeze_reviewed_harness_contract",
+      "step_id": "WIRING-PLAN-STEP-01"
+    },
+    {
+      "description": "Define deterministic local adapter interface for generated candidates.",
+      "implementation_allowed_now": false,
+      "name": "define_adapter_interface",
+      "step_id": "WIRING-PLAN-STEP-02"
+    },
+    {
+      "description": "Define future solver call site without modifying solver runtime.",
+      "implementation_allowed_now": false,
+      "name": "define_solver_call_site_boundary",
+      "step_id": "WIRING-PLAN-STEP-03"
+    },
+    {
+      "description": "Define future ranker extension contract without changing ranker runtime.",
+      "implementation_allowed_now": false,
+      "name": "define_ranker_contract_extension",
+      "step_id": "WIRING-PLAN-STEP-04"
+    },
+    {
+      "description": "Require local diagnostic harness pass before any controlled implementation.",
+      "implementation_allowed_now": false,
+      "name": "define_diagnostic_only_acceptance_gate",
+      "step_id": "WIRING-PLAN-STEP-05"
+    },
+    {
+      "description": "Defer actual wiring until plan review authorizes a controlled implementation task.",
+      "implementation_allowed_now": false,
+      "name": "defer_runtime_wiring_to_reviewed_task",
+      "step_id": "WIRING-PLAN-STEP-06"
+    }
+  ],
+  "wiring_target_count": 4,
+  "wiring_targets": [
+    {
+      "name": "candidate_generation_entrypoint_adapter",
+      "planned_module": "src/hbce_arc_agi3/program_synthesis_candidate_generator_runtime_adapter.py",
+      "purpose": "Expose reviewed candidate generator output behind a local deterministic adapter.",
+      "requires_review_before_implementation": true,
+      "runtime_modification_now": false,
+      "target_id": "WIRING-TARGET-01"
+    },
+    {
+      "name": "local_candidate_generation_call_site",
+      "planned_module": "src/hbce_arc_agi3/solver_runtime_candidate_generation_hook.py",
+      "purpose": "Define a future local-only call site for candidate generation inside solver exploration.",
+      "requires_review_before_implementation": true,
+      "runtime_modification_now": false,
+      "target_id": "WIRING-TARGET-02"
+    },
+    {
+      "name": "candidate_fixture_matrix_bridge",
+      "planned_module": "src/hbce_arc_agi3/program_synthesis_candidate_fixture_bridge.py",
+      "purpose": "Map candidate generator results into diagnostic harness compatible records.",
+      "requires_review_before_implementation": true,
+      "runtime_modification_now": false,
+      "target_id": "WIRING-TARGET-03"
+    },
+    {
+      "name": "ranker_input_contract_extension",
+      "planned_module": "src/hbce_arc_agi3/candidate_ranker.py",
+      "purpose": "Plan future ranker input contract extension without changing runtime ranking now.",
+      "requires_review_before_implementation": true,
+      "runtime_modification_now": false,
+      "target_id": "WIRING-TARGET-04"
+    }
+  ]
+}
