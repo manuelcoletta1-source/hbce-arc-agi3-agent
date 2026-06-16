@@ -1,9 +1,9 @@
 # Milestone #13 Task 3 - Transformation Primitive Expansion Plan v1
 
 - revision: `MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_V1`
-- task_id: `MILESTONE-13-TRANSFORMATION-PRIMITIVE-EXPANSION-PLAN-2BFF7965AF61`
-- signature: `2BFF7965AF61E465`
-- baseline_commit: `a907240 Update ARC AGI3 milestone 13 solver capability gap audit artifacts`
+- task_id: `MILESTONE-13-TRANSFORMATION-PRIMITIVE-EXPANSION-PLAN-85611EC0C049`
+- signature: `85611EC0C049CDCE`
+- baseline_commit: `2ab1228 Add ARC AGI3 milestone 13 transformation primitive expansion plan`
 - task_verdict: `MILESTONE_13_TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_READY`
 - plan_verdict: `TRANSFORMATION_PRIMITIVE_EXPANSION_PLAN_READY_FOR_CONTROLLED_IMPLEMENTATION`
 - next_stage: `MILESTONE_13_TASK_4_OBJECT_CENTRIC_REASONING_PLAN_V1`
