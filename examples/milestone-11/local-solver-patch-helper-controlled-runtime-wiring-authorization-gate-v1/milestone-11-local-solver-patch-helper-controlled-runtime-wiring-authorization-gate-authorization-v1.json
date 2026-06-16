@@ -1,0 +1,92 @@
+[
+  {
+    "authorization_id": "authorize_operator_approval_record",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "authorization_id": "authorize_static_runtime_wiring_auth_review",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "authorization_id": "authorize_runtime_boundary_manifest",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "authorization_id": "authorize_fail_closed_authorization_matrix",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "authorization_id": "authorize_manual_review_packet",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "authorization_id": "authorize_task24_operator_approval_only",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "authorization_id": "authorize_no_score_no_submission_audit",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "authorization_id": "authorize_regression_guard_reconfirmation",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "authorization_id": "authorize_rollback_readiness_reconfirmation",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  },
+  {
+    "authorization_id": "authorize_public_safe_artifact_index",
+    "authorized": true,
+    "ranker_runtime_mutation_allowed": false,
+    "runtime_solver_mutation_allowed": false,
+    "scope": "OPERATOR_APPROVAL_ONLY",
+    "score_claim_allowed": false,
+    "submission_allowed": false
+  }
+]

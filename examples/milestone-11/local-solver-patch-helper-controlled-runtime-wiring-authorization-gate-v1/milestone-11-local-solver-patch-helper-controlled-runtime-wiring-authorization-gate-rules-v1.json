@@ -1,0 +1,114 @@
+[
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "task22_review_ready",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "task22_review_valid",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "runtime_wiring_review_passed",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "authorization_gate_required",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "operator_approval_required",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "runtime_solver_patch_still_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "ranker_runtime_patch_still_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "runtime_import_change_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "helper_execution_in_runtime_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "external_solver_dependency_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "score_claim_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "submission_artifact_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "kaggle_authentication_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "private_core_exposure_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "legal_certification_blocked",
+    "passed": true,
+    "required": true
+  },
+  {
+    "allows_runtime_mutation": false,
+    "failure_action": "STOP_AUTHORIZATION_GATE",
+    "gate_id": "fail_closed_active",
+    "passed": true,
+    "required": true
+  }
+]

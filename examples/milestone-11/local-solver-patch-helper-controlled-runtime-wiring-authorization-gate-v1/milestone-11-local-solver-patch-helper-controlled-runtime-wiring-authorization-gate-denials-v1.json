@@ -1,0 +1,62 @@
+[
+  {
+    "denial_id": "deny_runtime_solver_mutation",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_ranker_runtime_mutation",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_runtime_import_change",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_helper_execution_in_runtime",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_external_solver_dependency",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_score_claim",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_submission_json",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_upload_package",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_kaggle_authentication",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_legal_certification_claim",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_private_core_exposure",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  },
+  {
+    "denial_id": "deny_real_submission",
+    "denied": true,
+    "failure_action": "STOP_AND_REVIEW"
+  }
+]

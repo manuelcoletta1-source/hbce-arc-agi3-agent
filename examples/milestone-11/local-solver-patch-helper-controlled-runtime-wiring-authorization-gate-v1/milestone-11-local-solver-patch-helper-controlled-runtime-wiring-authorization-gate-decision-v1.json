@@ -1,0 +1,15 @@
+{
+  "authorization_gate_passed": true,
+  "controlled_runtime_wiring_authorized": false,
+  "decision_boundary": "AUTHORIZATION_GATE_ONLY_NEXT_OPERATOR_APPROVAL_NO_RUNTIME_WIRING_NO_SCORE_NO_SUBMISSION",
+  "decision_id": "M11-TASK23-CONTROLLED-RUNTIME-WIRING-AUTHORIZATION-GATE-DECISION-v1",
+  "next_stage": "MILESTONE_11_TASK_24_LOCAL_SOLVER_PATCH_HELPER_CONTROLLED_RUNTIME_WIRING_OPERATOR_APPROVAL_V1",
+  "operator_approval_granted": false,
+  "operator_approval_required": true,
+  "ranker_runtime_patch_allowed": false,
+  "real_submission_allowed": false,
+  "runtime_solver_patch_allowed": false,
+  "runtime_wiring_performed": false,
+  "score_claim_allowed": false,
+  "verdict": "CONTROLLED_RUNTIME_WIRING_AUTHORIZATION_GATE_READY_FOR_OPERATOR_APPROVAL"
+}
