@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "3905cc1 Update ARC AGI3 milestone 12 competitive solver closure artifacts",
+  "baseline_commit": "9206e6e Add ARC AGI3 milestone 13 real evaluation boundary gate",
   "boundary_verdict": "MILESTONE_13_OPENED_CANONICALLY_REAL_EVALUATION_PREP_ALLOWED_REAL_SUBMISSION_BLOCKED",
   "kaggle_authentication_allowed": false,
   "kaggle_submission_sent": false,
@@ -15,9 +15,9 @@
   "real_kaggle_evaluation_allowed": false,
   "real_submission_allowed": false,
   "revision": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_V1",
-  "signature": "A0B95C2D000230BE",
+  "signature": "31330F26CD37344F",
   "source_closure_passed": true,
   "source_milestone_12_closed": true,
-  "task_id": "MILESTONE-13-REAL-EVALUATION-BOUNDARY-GATE-A0B95C2D0002",
+  "task_id": "MILESTONE-13-REAL-EVALUATION-BOUNDARY-GATE-31330F26CD37",
   "task_verdict": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_READY"
 }

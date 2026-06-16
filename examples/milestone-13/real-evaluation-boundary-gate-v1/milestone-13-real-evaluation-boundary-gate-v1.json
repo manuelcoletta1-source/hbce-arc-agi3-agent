@@ -9,7 +9,7 @@
     "OBJECT_CENTRIC_REASONING_REVIEW",
     "RANKER_POLICY_REVIEW"
   ],
-  "baseline_commit": "3905cc1 Update ARC AGI3 milestone 12 competitive solver closure artifacts",
+  "baseline_commit": "9206e6e Add ARC AGI3 milestone 13 real evaluation boundary gate",
   "blocked_action_count": 9,
   "blocked_actions": [
     "KAGGLE_AUTHENTICATION",
@@ -430,7 +430,7 @@
   "real_submission_candidate_created": false,
   "required_gate_count": 44,
   "revision": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_V1",
-  "signature": "A0B95C2D000230BE",
+  "signature": "31330F26CD37344F",
   "solver_capability_gap_audit_allowed": true,
   "source_artifact_parseable": true,
   "source_artifact_present": true,
@@ -444,7 +444,7 @@
   "source_real_submission_blocked": true,
   "source_task": "MILESTONE_12_TASK_13_COMPETITIVE_SOLVER_CLOSURE_V1",
   "submission_json_created": false,
-  "task_id": "MILESTONE-13-REAL-EVALUATION-BOUNDARY-GATE-A0B95C2D0002",
+  "task_id": "MILESTONE-13-REAL-EVALUATION-BOUNDARY-GATE-31330F26CD37",
   "task_label": "Milestone #13 Task 1 - Real Evaluation Boundary Gate v1",
   "task_mode": "MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_V1_LOCAL_ONLY",
   "task_number": 1,

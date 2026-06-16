@@ -1,9 +1,9 @@
 # Milestone #13 Task 1 - Real Evaluation Boundary Gate v1
 
 - revision: `MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_V1`
-- task_id: `MILESTONE-13-REAL-EVALUATION-BOUNDARY-GATE-A0B95C2D0002`
-- signature: `A0B95C2D000230BE`
-- baseline_commit: `3905cc1 Update ARC AGI3 milestone 12 competitive solver closure artifacts`
+- task_id: `MILESTONE-13-REAL-EVALUATION-BOUNDARY-GATE-31330F26CD37`
+- signature: `31330F26CD37344F`
+- baseline_commit: `9206e6e Add ARC AGI3 milestone 13 real evaluation boundary gate`
 - task_verdict: `MILESTONE_13_REAL_EVALUATION_BOUNDARY_GATE_READY`
 - boundary_verdict: `MILESTONE_13_OPENED_CANONICALLY_REAL_EVALUATION_PREP_ALLOWED_REAL_SUBMISSION_BLOCKED`
 - milestone_13_status: `OPENED_CANONICALLY`
