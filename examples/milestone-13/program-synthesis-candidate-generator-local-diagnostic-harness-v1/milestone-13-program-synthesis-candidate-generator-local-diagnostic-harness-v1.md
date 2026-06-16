@@ -1,9 +1,9 @@
 # Milestone #13 Task 8 - Program Synthesis Candidate Generator Local Diagnostic Harness v1
 
 - revision: `MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_V1`
-- task_id: `MILESTONE-13-CANDIDATE-GENERATOR-LOCAL-DIAGNOSTIC-HARNESS-D11005C02BFF`
-- signature: `D11005C02BFFF65D`
-- baseline_commit: `461a75d Update ARC AGI3 milestone 13 program synthesis candidate generator implementation review artifacts`
+- task_id: `MILESTONE-13-CANDIDATE-GENERATOR-LOCAL-DIAGNOSTIC-HARNESS-56AFCD00C3D5`
+- signature: `56AFCD00C3D5101F`
+- baseline_commit: `1c4cd5c Add ARC AGI3 milestone 13 program synthesis candidate generator local diagnostic harness`
 - task_verdict: `MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_READY`
 - harness_verdict: `PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_READY_FOR_REVIEW`
 - next_stage: `MILESTONE_13_TASK_9_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_LOCAL_DIAGNOSTIC_HARNESS_REVIEW_V1`
