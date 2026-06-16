@@ -1,0 +1,379 @@
+{
+  "baseline_commit": "15a4bc9 Update ARC AGI3 milestone 12 public overfit guard artifacts",
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 37,
+  "gates": [
+    {
+      "description": "Task 11 public overfit guard artifact is present.",
+      "name": "source_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 11 public overfit guard artifact is parseable.",
+      "name": "source_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 11 guard is ready.",
+      "name": "source_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 11 guard passed.",
+      "name": "source_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 11 points to Task 12.",
+      "name": "source_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source strategy is aligned.",
+      "name": "source_strategy_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source goal is aligned.",
+      "name": "source_goal_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source issue count is zero.",
+      "name": "source_issue_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source has no public overfit leakage.",
+      "name": "source_no_overfit",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source has no score claim or submission behavior.",
+      "name": "source_no_score_or_submission",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Required Task 8-11 artifacts are present.",
+      "name": "required_artifacts_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Required Task 8-11 artifacts are parseable JSON.",
+      "name": "required_artifacts_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source guard has six cases.",
+      "name": "source_guard_cases_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source guard passes six cases.",
+      "name": "source_guard_pass_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source public overfit violation count is zero.",
+      "name": "source_overfit_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source boundary violation count is zero.",
+      "name": "source_boundary_zero",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Readiness measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission is not allowed by this gate.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real Kaggle submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Manual upload remains blocked.",
+      "name": "manual_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explicit operator approval remains required.",
+      "name": "operator_approval_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Operator approval has not been received.",
+      "name": "operator_approval_received_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfitting remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle authentication is performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim is blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim is blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Gate fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_only": true,
+  "manual_upload_allowed": false,
+  "measurement_target_count": 10,
+  "measurement_targets": [
+    "required_source_artifact_count",
+    "required_source_artifact_present_count",
+    "source_guard_case_count",
+    "source_guard_pass_count",
+    "source_public_overfit_violation_count",
+    "source_boundary_violation_count",
+    "readiness_gate_count",
+    "readiness_pass_count",
+    "readiness_blocking_issue_count",
+    "real_submission_allowed"
+  ],
+  "milestone_12_status": "OPENED_CANONICALLY",
+  "milestone_number": 12,
+  "next_stage": "MILESTONE_12_TASK_13_COMPETITIVE_SOLVER_CLOSURE_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 37,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "readiness_blocking_issue_count": 0,
+  "readiness_gate_count": 37,
+  "readiness_package": {
+    "measurement_target_count": 10,
+    "measurement_targets": [
+      "required_source_artifact_count",
+      "required_source_artifact_present_count",
+      "source_guard_case_count",
+      "source_guard_pass_count",
+      "source_public_overfit_violation_count",
+      "source_boundary_violation_count",
+      "readiness_gate_count",
+      "readiness_pass_count",
+      "readiness_blocking_issue_count",
+      "real_submission_allowed"
+    ],
+    "package_family": "LOCAL_PUBLIC_SAFE_READINESS_PACKAGE_NO_SUBMISSION",
+    "readiness_package_id": "MILESTONE_12_SUBMISSION_READINESS_PACKAGE_SYNTHETIC_V1",
+    "required_source_artifact_count": 4,
+    "required_source_artifact_parseable_count": 4,
+    "required_source_artifact_present_count": 4,
+    "required_source_artifacts": [
+      {
+        "parseable_json": true,
+        "path": "examples/milestone-12/candidate-policy-v1/milestone-12-candidate-policy-v1.json",
+        "present": true,
+        "sha256": "16ffb825d00e286ee9e09ac0a60bbd74b2a10365de6a51e853e555cf9961185e"
+      },
+      {
+        "parseable_json": true,
+        "path": "examples/milestone-12/candidate-ranker-policy-v1/milestone-12-candidate-ranker-policy-v1.json",
+        "present": true,
+        "sha256": "527c8c327404fbda88767f6de756c51e878183106554948c4f0315c410d345d4"
+      },
+      {
+        "parseable_json": true,
+        "path": "examples/milestone-12/ranked-candidate-benchmark-v1/milestone-12-ranked-candidate-benchmark-v1.json",
+        "present": true,
+        "sha256": "6256e49c65ceca24f3506f6a0ff8fb2260af4e2bb2cc4a855841da80a14095e8"
+      },
+      {
+        "parseable_json": true,
+        "path": "examples/milestone-12/public-overfit-guard-v1/milestone-12-public-overfit-guard-v1.json",
+        "present": true,
+        "sha256": "b6d747e0ee330ff2fe911bd763129fcc5be2feff2157edcae838bc04545f4721"
+      }
+    ],
+    "source_boundary_violation_count": 0,
+    "source_forbidden_field_hit_count": 0,
+    "source_forbidden_text_hit_count": 0,
+    "source_guard_case_count": 6,
+    "source_guard_pass_count": 6,
+    "source_public_overfit_violation_count": 0,
+    "source_score_claim_violation_count": 0,
+    "source_submission_violation_count": 0
+  },
+  "readiness_pass_count": 37,
+  "readiness_summary": {
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "milestone_12_status": "OPENED_CANONICALLY",
+    "next_stage": "MILESTONE_12_TASK_13_COMPETITIVE_SOLVER_CLOSURE_V1",
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "readiness_verdict": "LOCAL_READINESS_PACKAGE_READY_REAL_SUBMISSION_BLOCKED",
+    "ready_for_real_kaggle_submission": false,
+    "real_submission_allowed": false,
+    "required_source_artifact_count": 4,
+    "required_source_artifact_present_count": 4,
+    "source_boundary_violation_count": 0,
+    "source_guard_case_count": 6,
+    "source_guard_pass_count": 6,
+    "source_public_overfit_violation_count": 0,
+    "submission_readiness_gate_status": "READY"
+  },
+  "readiness_verdict": "LOCAL_READINESS_PACKAGE_READY_REAL_SUBMISSION_BLOCKED",
+  "ready_for_real_kaggle_submission": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 37,
+  "required_source_artifact_count": 4,
+  "required_source_artifact_parseable_count": 4,
+  "required_source_artifact_present_count": 4,
+  "revision": "MILESTONE_12_SUBMISSION_READINESS_GATE_V1",
+  "signature": "836E859CE6D91E62",
+  "source_artifact_parseable": true,
+  "source_artifact_present": true,
+  "source_boundary_violation_count": 0,
+  "source_guard_case_count": 6,
+  "source_guard_pass_count": 6,
+  "source_next_stage_ok": true,
+  "source_passed": true,
+  "source_public_overfit_guard_artifact": "examples/milestone-12/public-overfit-guard-v1/milestone-12-public-overfit-guard-v1.json",
+  "source_public_overfit_violation_count": 0,
+  "source_ready": true,
+  "source_task": "MILESTONE_12_TASK_11_PUBLIC_OVERFIT_GUARD_V1",
+  "submission_json_created": false,
+  "submission_readiness_gate_passed": true,
+  "submission_readiness_gate_ready": true,
+  "submission_readiness_gate_valid": true,
+  "task_id": "MILESTONE-12-SUBMISSION-READINESS-GATE-836E859CE6D9",
+  "task_label": "Milestone #12 Task 12 - Submission Readiness Gate v1",
+  "task_mode": "MILESTONE_12_SUBMISSION_READINESS_GATE_V1_LOCAL_ONLY",
+  "task_number": 12,
+  "task_scope": "SUBMISSION_READINESS_GATE_ONLY_NO_UPLOAD_NO_SUBMISSION_NO_SCORE_CLAIM",
+  "task_verdict": "MILESTONE_12_SUBMISSION_READINESS_GATE_READY",
+  "warning_count": 0
+}
