@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "25f7563 Update ARC AGI3 milestone 12 submission readiness gate artifacts",
+  "closure_verdict": "MILESTONE_12_CLOSED_LOCAL_COMPETITIVE_SOLVER_READY_REAL_SUBMISSION_BLOCKED",
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "milestone_12_closure_passed": true,
+  "milestone_12_closure_ready": true,
+  "milestone_12_status": "CLOSED",
+  "milestone_13_opened": false,
+  "milestone_13_opening_allowed": false,
+  "next_stage": "MILESTONE_13_NOT_OPENED_CANONICALLY",
+  "private_core_exposure": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_submission_allowed": false,
+  "required_chain_artifact_count": 12,
+  "required_chain_artifact_present_count": 12,
+  "revision": "MILESTONE_12_COMPETITIVE_SOLVER_CLOSURE_V1",
+  "signature": "548B6F123C1F800D",
+  "source_readiness_verdict": "LOCAL_READINESS_PACKAGE_READY_REAL_SUBMISSION_BLOCKED",
+  "task_id": "MILESTONE-12-COMPETITIVE-SOLVER-CLOSURE-548B6F123C1F",
+  "task_verdict": "MILESTONE_12_COMPETITIVE_SOLVER_CLOSURE_READY"
+}
