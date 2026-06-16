@@ -1,0 +1,2592 @@
+{
+  "baseline_commit": "92bcd51 Update ARC AGI3 milestone 12 information gain explorer policy artifacts",
+  "benchmark_artifact_parseable": true,
+  "benchmark_artifact_present": true,
+  "benchmark_passed": true,
+  "benchmark_ready": true,
+  "case_count": 6,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "deterministic": true,
+  "executable_world_model_passed": true,
+  "executable_world_model_ready": true,
+  "executable_world_model_valid": true,
+  "explorer_artifact_parseable": true,
+  "explorer_artifact_present": true,
+  "explorer_passed": true,
+  "explorer_ready": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 37,
+  "gates": [
+    {
+      "description": "Task 2 benchmark harness artifact is present.",
+      "name": "benchmark_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 2 benchmark harness artifact is parseable.",
+      "name": "benchmark_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 3 explorer artifact is present.",
+      "name": "explorer_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 3 explorer artifact is parseable.",
+      "name": "explorer_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Benchmark harness is ready.",
+      "name": "benchmark_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Benchmark harness passed.",
+      "name": "benchmark_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer policy is ready.",
+      "name": "explorer_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer policy passed.",
+      "name": "explorer_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer next stage points to Task 4.",
+      "name": "explorer_next_stage_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer strategy matches Milestone 12 strategy.",
+      "name": "explorer_strategy_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer goal matches first-place objective.",
+      "name": "explorer_goal_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Source artifacts preserve boundaries.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six benchmark cases are available.",
+      "name": "cases_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six explorer selections are available.",
+      "name": "selections_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "World model covers all cases.",
+      "name": "world_model_case_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "World model emits eighteen rollouts.",
+      "name": "rollout_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "World model executes transitions.",
+      "name": "transition_count_positive",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Reference rollouts complete.",
+      "name": "completed_reference_rollouts_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Invalid action guard is active.",
+      "name": "invalid_guard_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Explorer actions are valid.",
+      "name": "explorer_actions_valid_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All case models are consistent.",
+      "name": "consistency_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfitting is blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard is required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Manual upload remains blocked.",
+      "name": "manual_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle authentication is performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains world-model-only.",
+      "name": "world_model_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_only": true,
+  "manual_upload_allowed": false,
+  "measurement_target_count": 10,
+  "measurement_targets": [
+    "case_count",
+    "transition_count",
+    "rollout_count",
+    "completed_rollout_count",
+    "failed_rollout_count",
+    "invalid_transition_count",
+    "mean_rollout_completion_rate",
+    "mean_rollout_action_efficiency",
+    "explorer_action_valid_count",
+    "model_consistency_check_count"
+  ],
+  "milestone_12_status": "OPENED_CANONICALLY",
+  "milestone_number": 12,
+  "next_stage": "MILESTONE_12_TASK_5_WORLD_MODEL_VERIFIER_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "passed_gate_count": 37,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 37,
+  "revision": "MILESTONE_12_EXECUTABLE_WORLD_MODEL_V1",
+  "rollout_count": 18,
+  "signature": "FDFB614D506F7A46",
+  "source_benchmark_harness_artifact": "examples/milestone-12/competitive-solver-benchmark-harness-v1/milestone-12-competitive-solver-benchmark-harness-v1.json",
+  "source_explorer_artifact": "examples/milestone-12/information-gain-explorer-policy-v1/milestone-12-information-gain-explorer-policy-v1.json",
+  "source_task": "MILESTONE_12_TASK_3_INFORMATION_GAIN_EXPLORER_POLICY_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-12-EXECUTABLE-WORLD-MODEL-FDFB614D506F",
+  "task_label": "Milestone #12 Task 4 - Executable World Model v1",
+  "task_mode": "MILESTONE_12_EXECUTABLE_WORLD_MODEL_V1_LOCAL_ONLY",
+  "task_number": 4,
+  "task_scope": "EXECUTABLE_WORLD_MODEL_ONLY_NO_UPLOAD_NO_SUBMISSION_NO_EXTERNAL_API",
+  "task_verdict": "MILESTONE_12_EXECUTABLE_WORLD_MODEL_READY",
+  "transition_count": 37,
+  "warning_count": 0,
+  "world_model": {
+    "case_count": 6,
+    "case_models": [
+      {
+        "action_space": [
+          "UP",
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "WAIT"
+        ],
+        "case_id": "m12_case_001_direct_goal",
+        "completed_rollout_count": 1,
+        "explorer_action": "RIGHT",
+        "explorer_action_valid": true,
+        "failed_rollout_count": 1,
+        "family": "navigation_goal",
+        "invalid_transition_count": 1,
+        "minimum_action_count": 3,
+        "model_consistency_check_count": 5,
+        "model_consistency_checks": [
+          {
+            "description": "Optimal reference rollout reaches completion.",
+            "name": "optimal_rollout_completed",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Optimal rollout uses the declared minimum action count.",
+            "name": "optimal_rollout_action_count_minimal",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Explorer selected action is valid in the case action space.",
+            "name": "explorer_action_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Invalid action guard fails closed.",
+            "name": "invalid_action_guard_fails",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "World model emits executable state history.",
+            "name": "deterministic_state_history_present",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "model_consistent": true,
+        "optimal_actions": [
+          "RIGHT",
+          "RIGHT",
+          "DOWN"
+        ],
+        "rollout_count": 3,
+        "rollouts": [
+          {
+            "action_efficiency": 1.0,
+            "case_id": "m12_case_001_direct_goal",
+            "completed": true,
+            "completion_rate": 1.0,
+            "executed_action_count": 3,
+            "failed": false,
+            "family": "navigation_goal",
+            "final_progress_index": 3,
+            "invalid_action_count": 0,
+            "minimum_action_count": 3,
+            "requested_actions": [
+              "RIGHT",
+              "RIGHT",
+              "DOWN"
+            ],
+            "rollout_kind": "OPTIMAL_REFERENCE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_001_direct_goal",
+                "completed": false,
+                "failed": false,
+                "family": "navigation_goal",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_001_direct_goal",
+                "completed": false,
+                "failed": false,
+                "family": "navigation_goal",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              },
+              {
+                "case_id": "m12_case_001_direct_goal",
+                "completed": false,
+                "failed": false,
+                "family": "navigation_goal",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 2,
+                "step_count": 2
+              },
+              {
+                "case_id": "m12_case_001_direct_goal",
+                "completed": true,
+                "failed": false,
+                "family": "navigation_goal",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "DOWN",
+                    "completed_after_transition": true,
+                    "expected_action": "DOWN",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 3,
+                "step_count": 3
+              }
+            ],
+            "target_progress_index": 3
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_001_direct_goal",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": false,
+            "family": "navigation_goal",
+            "final_progress_index": 1,
+            "invalid_action_count": 0,
+            "minimum_action_count": 3,
+            "requested_actions": [
+              "RIGHT"
+            ],
+            "rollout_kind": "EXPLORER_SINGLE_PROBE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_001_direct_goal",
+                "completed": false,
+                "failed": false,
+                "family": "navigation_goal",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_001_direct_goal",
+                "completed": false,
+                "failed": false,
+                "family": "navigation_goal",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 3
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_001_direct_goal",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": true,
+            "family": "navigation_goal",
+            "final_progress_index": 0,
+            "invalid_action_count": 1,
+            "minimum_action_count": 3,
+            "requested_actions": [
+              "__INVALID_ACTION__"
+            ],
+            "rollout_kind": "INVALID_ACTION_GUARD_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_001_direct_goal",
+                "completed": false,
+                "failed": false,
+                "family": "navigation_goal",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_001_direct_goal",
+                "completed": false,
+                "failed": true,
+                "family": "navigation_goal",
+                "history": [
+                  {
+                    "action": "__INVALID_ACTION__",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": true,
+                    "from_progress_index": 0,
+                    "progress_made": false,
+                    "to_progress_index": 0,
+                    "valid": false
+                  }
+                ],
+                "invalid_action_count": 1,
+                "progress_index": 0,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 3
+          }
+        ],
+        "transition_count": 5
+      },
+      {
+        "action_space": [
+          "UP",
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "PICK",
+          "OPEN",
+          "WAIT"
+        ],
+        "case_id": "m12_case_002_key_door",
+        "completed_rollout_count": 1,
+        "explorer_action": "RIGHT",
+        "explorer_action_valid": true,
+        "failed_rollout_count": 1,
+        "family": "object_precondition",
+        "invalid_transition_count": 1,
+        "minimum_action_count": 5,
+        "model_consistency_check_count": 5,
+        "model_consistency_checks": [
+          {
+            "description": "Optimal reference rollout reaches completion.",
+            "name": "optimal_rollout_completed",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Optimal rollout uses the declared minimum action count.",
+            "name": "optimal_rollout_action_count_minimal",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Explorer selected action is valid in the case action space.",
+            "name": "explorer_action_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Invalid action guard fails closed.",
+            "name": "invalid_action_guard_fails",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "World model emits executable state history.",
+            "name": "deterministic_state_history_present",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "model_consistent": true,
+        "optimal_actions": [
+          "RIGHT",
+          "PICK",
+          "LEFT",
+          "DOWN",
+          "OPEN"
+        ],
+        "rollout_count": 3,
+        "rollouts": [
+          {
+            "action_efficiency": 1.0,
+            "case_id": "m12_case_002_key_door",
+            "completed": true,
+            "completion_rate": 1.0,
+            "executed_action_count": 5,
+            "failed": false,
+            "family": "object_precondition",
+            "final_progress_index": 5,
+            "invalid_action_count": 0,
+            "minimum_action_count": 5,
+            "requested_actions": [
+              "RIGHT",
+              "PICK",
+              "LEFT",
+              "DOWN",
+              "OPEN"
+            ],
+            "rollout_kind": "OPTIMAL_REFERENCE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": false,
+                "failed": false,
+                "family": "object_precondition",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": false,
+                "failed": false,
+                "family": "object_precondition",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              },
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": false,
+                "failed": false,
+                "family": "object_precondition",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "PICK",
+                    "completed_after_transition": false,
+                    "expected_action": "PICK",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 2,
+                "step_count": 2
+              },
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": false,
+                "failed": false,
+                "family": "object_precondition",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "PICK",
+                    "completed_after_transition": false,
+                    "expected_action": "PICK",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "LEFT",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 3,
+                "step_count": 3
+              },
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": false,
+                "failed": false,
+                "family": "object_precondition",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "PICK",
+                    "completed_after_transition": false,
+                    "expected_action": "PICK",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "LEFT",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  },
+                  {
+                    "action": "DOWN",
+                    "completed_after_transition": false,
+                    "expected_action": "DOWN",
+                    "failed_after_transition": false,
+                    "from_progress_index": 3,
+                    "progress_made": true,
+                    "to_progress_index": 4,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 4,
+                "step_count": 4
+              },
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": true,
+                "failed": false,
+                "family": "object_precondition",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "PICK",
+                    "completed_after_transition": false,
+                    "expected_action": "PICK",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "LEFT",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  },
+                  {
+                    "action": "DOWN",
+                    "completed_after_transition": false,
+                    "expected_action": "DOWN",
+                    "failed_after_transition": false,
+                    "from_progress_index": 3,
+                    "progress_made": true,
+                    "to_progress_index": 4,
+                    "valid": true
+                  },
+                  {
+                    "action": "OPEN",
+                    "completed_after_transition": true,
+                    "expected_action": "OPEN",
+                    "failed_after_transition": false,
+                    "from_progress_index": 4,
+                    "progress_made": true,
+                    "to_progress_index": 5,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 5,
+                "step_count": 5
+              }
+            ],
+            "target_progress_index": 5
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_002_key_door",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": false,
+            "family": "object_precondition",
+            "final_progress_index": 1,
+            "invalid_action_count": 0,
+            "minimum_action_count": 5,
+            "requested_actions": [
+              "RIGHT"
+            ],
+            "rollout_kind": "EXPLORER_SINGLE_PROBE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": false,
+                "failed": false,
+                "family": "object_precondition",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": false,
+                "failed": false,
+                "family": "object_precondition",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 5
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_002_key_door",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": true,
+            "family": "object_precondition",
+            "final_progress_index": 0,
+            "invalid_action_count": 1,
+            "minimum_action_count": 5,
+            "requested_actions": [
+              "__INVALID_ACTION__"
+            ],
+            "rollout_kind": "INVALID_ACTION_GUARD_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": false,
+                "failed": false,
+                "family": "object_precondition",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_002_key_door",
+                "completed": false,
+                "failed": true,
+                "family": "object_precondition",
+                "history": [
+                  {
+                    "action": "__INVALID_ACTION__",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": true,
+                    "from_progress_index": 0,
+                    "progress_made": false,
+                    "to_progress_index": 0,
+                    "valid": false
+                  }
+                ],
+                "invalid_action_count": 1,
+                "progress_index": 0,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 5
+          }
+        ],
+        "transition_count": 7
+      },
+      {
+        "action_space": [
+          "UP",
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "PUSH",
+          "EXIT",
+          "WAIT"
+        ],
+        "case_id": "m12_case_003_push_block",
+        "completed_rollout_count": 1,
+        "explorer_action": "RIGHT",
+        "explorer_action_valid": true,
+        "failed_rollout_count": 1,
+        "family": "spatial_causal_action",
+        "invalid_transition_count": 1,
+        "minimum_action_count": 5,
+        "model_consistency_check_count": 5,
+        "model_consistency_checks": [
+          {
+            "description": "Optimal reference rollout reaches completion.",
+            "name": "optimal_rollout_completed",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Optimal rollout uses the declared minimum action count.",
+            "name": "optimal_rollout_action_count_minimal",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Explorer selected action is valid in the case action space.",
+            "name": "explorer_action_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Invalid action guard fails closed.",
+            "name": "invalid_action_guard_fails",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "World model emits executable state history.",
+            "name": "deterministic_state_history_present",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "model_consistent": true,
+        "optimal_actions": [
+          "RIGHT",
+          "PUSH",
+          "RIGHT",
+          "DOWN",
+          "EXIT"
+        ],
+        "rollout_count": 3,
+        "rollouts": [
+          {
+            "action_efficiency": 1.0,
+            "case_id": "m12_case_003_push_block",
+            "completed": true,
+            "completion_rate": 1.0,
+            "executed_action_count": 5,
+            "failed": false,
+            "family": "spatial_causal_action",
+            "final_progress_index": 5,
+            "invalid_action_count": 0,
+            "minimum_action_count": 5,
+            "requested_actions": [
+              "RIGHT",
+              "PUSH",
+              "RIGHT",
+              "DOWN",
+              "EXIT"
+            ],
+            "rollout_kind": "OPTIMAL_REFERENCE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": false,
+                "failed": false,
+                "family": "spatial_causal_action",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": false,
+                "failed": false,
+                "family": "spatial_causal_action",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              },
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": false,
+                "failed": false,
+                "family": "spatial_causal_action",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "PUSH",
+                    "completed_after_transition": false,
+                    "expected_action": "PUSH",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 2,
+                "step_count": 2
+              },
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": false,
+                "failed": false,
+                "family": "spatial_causal_action",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "PUSH",
+                    "completed_after_transition": false,
+                    "expected_action": "PUSH",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 3,
+                "step_count": 3
+              },
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": false,
+                "failed": false,
+                "family": "spatial_causal_action",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "PUSH",
+                    "completed_after_transition": false,
+                    "expected_action": "PUSH",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  },
+                  {
+                    "action": "DOWN",
+                    "completed_after_transition": false,
+                    "expected_action": "DOWN",
+                    "failed_after_transition": false,
+                    "from_progress_index": 3,
+                    "progress_made": true,
+                    "to_progress_index": 4,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 4,
+                "step_count": 4
+              },
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": true,
+                "failed": false,
+                "family": "spatial_causal_action",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "PUSH",
+                    "completed_after_transition": false,
+                    "expected_action": "PUSH",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  },
+                  {
+                    "action": "DOWN",
+                    "completed_after_transition": false,
+                    "expected_action": "DOWN",
+                    "failed_after_transition": false,
+                    "from_progress_index": 3,
+                    "progress_made": true,
+                    "to_progress_index": 4,
+                    "valid": true
+                  },
+                  {
+                    "action": "EXIT",
+                    "completed_after_transition": true,
+                    "expected_action": "EXIT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 4,
+                    "progress_made": true,
+                    "to_progress_index": 5,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 5,
+                "step_count": 5
+              }
+            ],
+            "target_progress_index": 5
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_003_push_block",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": false,
+            "family": "spatial_causal_action",
+            "final_progress_index": 1,
+            "invalid_action_count": 0,
+            "minimum_action_count": 5,
+            "requested_actions": [
+              "RIGHT"
+            ],
+            "rollout_kind": "EXPLORER_SINGLE_PROBE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": false,
+                "failed": false,
+                "family": "spatial_causal_action",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": false,
+                "failed": false,
+                "family": "spatial_causal_action",
+                "history": [
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 5
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_003_push_block",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": true,
+            "family": "spatial_causal_action",
+            "final_progress_index": 0,
+            "invalid_action_count": 1,
+            "minimum_action_count": 5,
+            "requested_actions": [
+              "__INVALID_ACTION__"
+            ],
+            "rollout_kind": "INVALID_ACTION_GUARD_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": false,
+                "failed": false,
+                "family": "spatial_causal_action",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_003_push_block",
+                "completed": false,
+                "failed": true,
+                "family": "spatial_causal_action",
+                "history": [
+                  {
+                    "action": "__INVALID_ACTION__",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": true,
+                    "from_progress_index": 0,
+                    "progress_made": false,
+                    "to_progress_index": 0,
+                    "valid": false
+                  }
+                ],
+                "invalid_action_count": 1,
+                "progress_index": 0,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 5
+          }
+        ],
+        "transition_count": 7
+      },
+      {
+        "action_space": [
+          "RED",
+          "BLUE",
+          "GREEN",
+          "YELLOW",
+          "WAIT"
+        ],
+        "case_id": "m12_case_004_color_rule",
+        "completed_rollout_count": 1,
+        "explorer_action": "BLUE",
+        "explorer_action_valid": true,
+        "failed_rollout_count": 1,
+        "family": "latent_rule_inference",
+        "invalid_transition_count": 1,
+        "minimum_action_count": 3,
+        "model_consistency_check_count": 5,
+        "model_consistency_checks": [
+          {
+            "description": "Optimal reference rollout reaches completion.",
+            "name": "optimal_rollout_completed",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Optimal rollout uses the declared minimum action count.",
+            "name": "optimal_rollout_action_count_minimal",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Explorer selected action is valid in the case action space.",
+            "name": "explorer_action_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Invalid action guard fails closed.",
+            "name": "invalid_action_guard_fails",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "World model emits executable state history.",
+            "name": "deterministic_state_history_present",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "model_consistent": true,
+        "optimal_actions": [
+          "BLUE",
+          "GREEN",
+          "RED"
+        ],
+        "rollout_count": 3,
+        "rollouts": [
+          {
+            "action_efficiency": 1.0,
+            "case_id": "m12_case_004_color_rule",
+            "completed": true,
+            "completion_rate": 1.0,
+            "executed_action_count": 3,
+            "failed": false,
+            "family": "latent_rule_inference",
+            "final_progress_index": 3,
+            "invalid_action_count": 0,
+            "minimum_action_count": 3,
+            "requested_actions": [
+              "BLUE",
+              "GREEN",
+              "RED"
+            ],
+            "rollout_kind": "OPTIMAL_REFERENCE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_004_color_rule",
+                "completed": false,
+                "failed": false,
+                "family": "latent_rule_inference",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_004_color_rule",
+                "completed": false,
+                "failed": false,
+                "family": "latent_rule_inference",
+                "history": [
+                  {
+                    "action": "BLUE",
+                    "completed_after_transition": false,
+                    "expected_action": "BLUE",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              },
+              {
+                "case_id": "m12_case_004_color_rule",
+                "completed": false,
+                "failed": false,
+                "family": "latent_rule_inference",
+                "history": [
+                  {
+                    "action": "BLUE",
+                    "completed_after_transition": false,
+                    "expected_action": "BLUE",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "GREEN",
+                    "completed_after_transition": false,
+                    "expected_action": "GREEN",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 2,
+                "step_count": 2
+              },
+              {
+                "case_id": "m12_case_004_color_rule",
+                "completed": true,
+                "failed": false,
+                "family": "latent_rule_inference",
+                "history": [
+                  {
+                    "action": "BLUE",
+                    "completed_after_transition": false,
+                    "expected_action": "BLUE",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "GREEN",
+                    "completed_after_transition": false,
+                    "expected_action": "GREEN",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "RED",
+                    "completed_after_transition": true,
+                    "expected_action": "RED",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 3,
+                "step_count": 3
+              }
+            ],
+            "target_progress_index": 3
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_004_color_rule",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": false,
+            "family": "latent_rule_inference",
+            "final_progress_index": 1,
+            "invalid_action_count": 0,
+            "minimum_action_count": 3,
+            "requested_actions": [
+              "BLUE"
+            ],
+            "rollout_kind": "EXPLORER_SINGLE_PROBE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_004_color_rule",
+                "completed": false,
+                "failed": false,
+                "family": "latent_rule_inference",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_004_color_rule",
+                "completed": false,
+                "failed": false,
+                "family": "latent_rule_inference",
+                "history": [
+                  {
+                    "action": "BLUE",
+                    "completed_after_transition": false,
+                    "expected_action": "BLUE",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 3
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_004_color_rule",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": true,
+            "family": "latent_rule_inference",
+            "final_progress_index": 0,
+            "invalid_action_count": 1,
+            "minimum_action_count": 3,
+            "requested_actions": [
+              "__INVALID_ACTION__"
+            ],
+            "rollout_kind": "INVALID_ACTION_GUARD_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_004_color_rule",
+                "completed": false,
+                "failed": false,
+                "family": "latent_rule_inference",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_004_color_rule",
+                "completed": false,
+                "failed": true,
+                "family": "latent_rule_inference",
+                "history": [
+                  {
+                    "action": "__INVALID_ACTION__",
+                    "completed_after_transition": false,
+                    "expected_action": "BLUE",
+                    "failed_after_transition": true,
+                    "from_progress_index": 0,
+                    "progress_made": false,
+                    "to_progress_index": 0,
+                    "valid": false
+                  }
+                ],
+                "invalid_action_count": 1,
+                "progress_index": 0,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 3
+          }
+        ],
+        "transition_count": 5
+      },
+      {
+        "action_space": [
+          "UP",
+          "DOWN",
+          "LEFT",
+          "RIGHT",
+          "TOGGLE",
+          "CROSS",
+          "WAIT"
+        ],
+        "case_id": "m12_case_005_toggle_bridge",
+        "completed_rollout_count": 1,
+        "explorer_action": "LEFT",
+        "explorer_action_valid": true,
+        "failed_rollout_count": 1,
+        "family": "state_toggle_planning",
+        "invalid_transition_count": 1,
+        "minimum_action_count": 5,
+        "model_consistency_check_count": 5,
+        "model_consistency_checks": [
+          {
+            "description": "Optimal reference rollout reaches completion.",
+            "name": "optimal_rollout_completed",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Optimal rollout uses the declared minimum action count.",
+            "name": "optimal_rollout_action_count_minimal",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Explorer selected action is valid in the case action space.",
+            "name": "explorer_action_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Invalid action guard fails closed.",
+            "name": "invalid_action_guard_fails",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "World model emits executable state history.",
+            "name": "deterministic_state_history_present",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "model_consistent": true,
+        "optimal_actions": [
+          "LEFT",
+          "TOGGLE",
+          "RIGHT",
+          "RIGHT",
+          "CROSS"
+        ],
+        "rollout_count": 3,
+        "rollouts": [
+          {
+            "action_efficiency": 1.0,
+            "case_id": "m12_case_005_toggle_bridge",
+            "completed": true,
+            "completion_rate": 1.0,
+            "executed_action_count": 5,
+            "failed": false,
+            "family": "state_toggle_planning",
+            "final_progress_index": 5,
+            "invalid_action_count": 0,
+            "minimum_action_count": 5,
+            "requested_actions": [
+              "LEFT",
+              "TOGGLE",
+              "RIGHT",
+              "RIGHT",
+              "CROSS"
+            ],
+            "rollout_kind": "OPTIMAL_REFERENCE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": false,
+                "failed": false,
+                "family": "state_toggle_planning",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": false,
+                "failed": false,
+                "family": "state_toggle_planning",
+                "history": [
+                  {
+                    "action": "LEFT",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              },
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": false,
+                "failed": false,
+                "family": "state_toggle_planning",
+                "history": [
+                  {
+                    "action": "LEFT",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "TOGGLE",
+                    "completed_after_transition": false,
+                    "expected_action": "TOGGLE",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 2,
+                "step_count": 2
+              },
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": false,
+                "failed": false,
+                "family": "state_toggle_planning",
+                "history": [
+                  {
+                    "action": "LEFT",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "TOGGLE",
+                    "completed_after_transition": false,
+                    "expected_action": "TOGGLE",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 3,
+                "step_count": 3
+              },
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": false,
+                "failed": false,
+                "family": "state_toggle_planning",
+                "history": [
+                  {
+                    "action": "LEFT",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "TOGGLE",
+                    "completed_after_transition": false,
+                    "expected_action": "TOGGLE",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 3,
+                    "progress_made": true,
+                    "to_progress_index": 4,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 4,
+                "step_count": 4
+              },
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": true,
+                "failed": false,
+                "family": "state_toggle_planning",
+                "history": [
+                  {
+                    "action": "LEFT",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "TOGGLE",
+                    "completed_after_transition": false,
+                    "expected_action": "TOGGLE",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  },
+                  {
+                    "action": "RIGHT",
+                    "completed_after_transition": false,
+                    "expected_action": "RIGHT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 3,
+                    "progress_made": true,
+                    "to_progress_index": 4,
+                    "valid": true
+                  },
+                  {
+                    "action": "CROSS",
+                    "completed_after_transition": true,
+                    "expected_action": "CROSS",
+                    "failed_after_transition": false,
+                    "from_progress_index": 4,
+                    "progress_made": true,
+                    "to_progress_index": 5,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 5,
+                "step_count": 5
+              }
+            ],
+            "target_progress_index": 5
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_005_toggle_bridge",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": false,
+            "family": "state_toggle_planning",
+            "final_progress_index": 1,
+            "invalid_action_count": 0,
+            "minimum_action_count": 5,
+            "requested_actions": [
+              "LEFT"
+            ],
+            "rollout_kind": "EXPLORER_SINGLE_PROBE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": false,
+                "failed": false,
+                "family": "state_toggle_planning",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": false,
+                "failed": false,
+                "family": "state_toggle_planning",
+                "history": [
+                  {
+                    "action": "LEFT",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 5
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_005_toggle_bridge",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": true,
+            "family": "state_toggle_planning",
+            "final_progress_index": 0,
+            "invalid_action_count": 1,
+            "minimum_action_count": 5,
+            "requested_actions": [
+              "__INVALID_ACTION__"
+            ],
+            "rollout_kind": "INVALID_ACTION_GUARD_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": false,
+                "failed": false,
+                "family": "state_toggle_planning",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_005_toggle_bridge",
+                "completed": false,
+                "failed": true,
+                "family": "state_toggle_planning",
+                "history": [
+                  {
+                    "action": "__INVALID_ACTION__",
+                    "completed_after_transition": false,
+                    "expected_action": "LEFT",
+                    "failed_after_transition": true,
+                    "from_progress_index": 0,
+                    "progress_made": false,
+                    "to_progress_index": 0,
+                    "valid": false
+                  }
+                ],
+                "invalid_action_count": 1,
+                "progress_index": 0,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 5
+          }
+        ],
+        "transition_count": 7
+      },
+      {
+        "action_space": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "WAIT"
+        ],
+        "case_id": "m12_case_006_memory_order",
+        "completed_rollout_count": 1,
+        "explorer_action": "C",
+        "explorer_action_valid": true,
+        "failed_rollout_count": 1,
+        "family": "episode_memory_sequence",
+        "invalid_transition_count": 1,
+        "minimum_action_count": 4,
+        "model_consistency_check_count": 5,
+        "model_consistency_checks": [
+          {
+            "description": "Optimal reference rollout reaches completion.",
+            "name": "optimal_rollout_completed",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Optimal rollout uses the declared minimum action count.",
+            "name": "optimal_rollout_action_count_minimal",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Explorer selected action is valid in the case action space.",
+            "name": "explorer_action_valid",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "Invalid action guard fails closed.",
+            "name": "invalid_action_guard_fails",
+            "severity": "PASS",
+            "status": true
+          },
+          {
+            "description": "World model emits executable state history.",
+            "name": "deterministic_state_history_present",
+            "severity": "PASS",
+            "status": true
+          }
+        ],
+        "model_consistent": true,
+        "optimal_actions": [
+          "C",
+          "A",
+          "D",
+          "B"
+        ],
+        "rollout_count": 3,
+        "rollouts": [
+          {
+            "action_efficiency": 1.0,
+            "case_id": "m12_case_006_memory_order",
+            "completed": true,
+            "completion_rate": 1.0,
+            "executed_action_count": 4,
+            "failed": false,
+            "family": "episode_memory_sequence",
+            "final_progress_index": 4,
+            "invalid_action_count": 0,
+            "minimum_action_count": 4,
+            "requested_actions": [
+              "C",
+              "A",
+              "D",
+              "B"
+            ],
+            "rollout_kind": "OPTIMAL_REFERENCE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_006_memory_order",
+                "completed": false,
+                "failed": false,
+                "family": "episode_memory_sequence",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_006_memory_order",
+                "completed": false,
+                "failed": false,
+                "family": "episode_memory_sequence",
+                "history": [
+                  {
+                    "action": "C",
+                    "completed_after_transition": false,
+                    "expected_action": "C",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              },
+              {
+                "case_id": "m12_case_006_memory_order",
+                "completed": false,
+                "failed": false,
+                "family": "episode_memory_sequence",
+                "history": [
+                  {
+                    "action": "C",
+                    "completed_after_transition": false,
+                    "expected_action": "C",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "A",
+                    "completed_after_transition": false,
+                    "expected_action": "A",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 2,
+                "step_count": 2
+              },
+              {
+                "case_id": "m12_case_006_memory_order",
+                "completed": false,
+                "failed": false,
+                "family": "episode_memory_sequence",
+                "history": [
+                  {
+                    "action": "C",
+                    "completed_after_transition": false,
+                    "expected_action": "C",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "A",
+                    "completed_after_transition": false,
+                    "expected_action": "A",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "D",
+                    "completed_after_transition": false,
+                    "expected_action": "D",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 3,
+                "step_count": 3
+              },
+              {
+                "case_id": "m12_case_006_memory_order",
+                "completed": true,
+                "failed": false,
+                "family": "episode_memory_sequence",
+                "history": [
+                  {
+                    "action": "C",
+                    "completed_after_transition": false,
+                    "expected_action": "C",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  },
+                  {
+                    "action": "A",
+                    "completed_after_transition": false,
+                    "expected_action": "A",
+                    "failed_after_transition": false,
+                    "from_progress_index": 1,
+                    "progress_made": true,
+                    "to_progress_index": 2,
+                    "valid": true
+                  },
+                  {
+                    "action": "D",
+                    "completed_after_transition": false,
+                    "expected_action": "D",
+                    "failed_after_transition": false,
+                    "from_progress_index": 2,
+                    "progress_made": true,
+                    "to_progress_index": 3,
+                    "valid": true
+                  },
+                  {
+                    "action": "B",
+                    "completed_after_transition": true,
+                    "expected_action": "B",
+                    "failed_after_transition": false,
+                    "from_progress_index": 3,
+                    "progress_made": true,
+                    "to_progress_index": 4,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 4,
+                "step_count": 4
+              }
+            ],
+            "target_progress_index": 4
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_006_memory_order",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": false,
+            "family": "episode_memory_sequence",
+            "final_progress_index": 1,
+            "invalid_action_count": 0,
+            "minimum_action_count": 4,
+            "requested_actions": [
+              "C"
+            ],
+            "rollout_kind": "EXPLORER_SINGLE_PROBE_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_006_memory_order",
+                "completed": false,
+                "failed": false,
+                "family": "episode_memory_sequence",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_006_memory_order",
+                "completed": false,
+                "failed": false,
+                "family": "episode_memory_sequence",
+                "history": [
+                  {
+                    "action": "C",
+                    "completed_after_transition": false,
+                    "expected_action": "C",
+                    "failed_after_transition": false,
+                    "from_progress_index": 0,
+                    "progress_made": true,
+                    "to_progress_index": 1,
+                    "valid": true
+                  }
+                ],
+                "invalid_action_count": 0,
+                "progress_index": 1,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 4
+          },
+          {
+            "action_efficiency": 0.0,
+            "case_id": "m12_case_006_memory_order",
+            "completed": false,
+            "completion_rate": 0.0,
+            "executed_action_count": 1,
+            "failed": true,
+            "family": "episode_memory_sequence",
+            "final_progress_index": 0,
+            "invalid_action_count": 1,
+            "minimum_action_count": 4,
+            "requested_actions": [
+              "__INVALID_ACTION__"
+            ],
+            "rollout_kind": "INVALID_ACTION_GUARD_ROLLOUT",
+            "states": [
+              {
+                "case_id": "m12_case_006_memory_order",
+                "completed": false,
+                "failed": false,
+                "family": "episode_memory_sequence",
+                "history": [],
+                "invalid_action_count": 0,
+                "progress_index": 0,
+                "step_count": 0
+              },
+              {
+                "case_id": "m12_case_006_memory_order",
+                "completed": false,
+                "failed": true,
+                "family": "episode_memory_sequence",
+                "history": [
+                  {
+                    "action": "__INVALID_ACTION__",
+                    "completed_after_transition": false,
+                    "expected_action": "C",
+                    "failed_after_transition": true,
+                    "from_progress_index": 0,
+                    "progress_made": false,
+                    "to_progress_index": 0,
+                    "valid": false
+                  }
+                ],
+                "invalid_action_count": 1,
+                "progress_index": 0,
+                "step_count": 1
+              }
+            ],
+            "target_progress_index": 4
+          }
+        ],
+        "transition_count": 6
+      }
+    ],
+    "completed_rollout_count": 6,
+    "explorer_action_valid_count": 6,
+    "failed_rollout_count": 6,
+    "invalid_transition_count": 6,
+    "mean_rollout_action_efficiency": 0.333333,
+    "mean_rollout_completion_rate": 0.333333,
+    "measurement_target_count": 10,
+    "measurement_targets": [
+      "case_count",
+      "transition_count",
+      "rollout_count",
+      "completed_rollout_count",
+      "failed_rollout_count",
+      "invalid_transition_count",
+      "mean_rollout_completion_rate",
+      "mean_rollout_action_efficiency",
+      "explorer_action_valid_count",
+      "model_consistency_check_count"
+    ],
+    "model_consistency_check_count": 30,
+    "model_consistent_case_count": 6,
+    "rollout_count": 18,
+    "transition_count": 37,
+    "world_model_family": "DETERMINISTIC_SYMBOLIC_TRANSITION_MODEL",
+    "world_model_id": "MILESTONE_12_EXECUTABLE_SYMBOLIC_WORLD_MODEL_SYNTHETIC_V1"
+  },
+  "world_model_check_count": 22,
+  "world_model_checks": [
+    {
+      "description": "Task 2 benchmark harness artifact is present.",
+      "name": "benchmark_artifact_present",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Task 2 benchmark harness artifact is parseable.",
+      "name": "benchmark_artifact_parseable",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Task 3 explorer artifact is present.",
+      "name": "explorer_artifact_present",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Task 3 explorer artifact is parseable.",
+      "name": "explorer_artifact_parseable",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark harness is ready.",
+      "name": "benchmark_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Benchmark harness passed.",
+      "name": "benchmark_passed",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer policy is ready.",
+      "name": "explorer_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer policy passed.",
+      "name": "explorer_passed",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer next stage points to Task 4.",
+      "name": "explorer_next_stage_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer strategy matches Milestone 12 strategy.",
+      "name": "explorer_strategy_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer goal matches first-place objective.",
+      "name": "explorer_goal_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Source artifacts preserve public-safe boundaries.",
+      "name": "source_boundaries_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Six benchmark cases are available.",
+      "name": "cases_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Six explorer selections are available.",
+      "name": "selections_ready",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "World model covers all cases.",
+      "name": "world_model_case_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "World model emits three rollouts per case.",
+      "name": "rollout_count_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "World model executes transitions.",
+      "name": "transition_count_positive",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Reference rollouts complete.",
+      "name": "completed_reference_rollouts_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Invalid action guard is active.",
+      "name": "invalid_guard_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "Explorer actions are valid in the world model.",
+      "name": "explorer_actions_valid_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "All case models are internally consistent.",
+      "name": "consistency_ok",
+      "severity": "PASS",
+      "status": true
+    },
+    {
+      "description": "World model measurement targets are declared.",
+      "name": "measurement_count_ok",
+      "severity": "PASS",
+      "status": true
+    }
+  ],
+  "world_model_only": true,
+  "world_model_summary": {
+    "case_count": 6,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "completed_rollout_count": 6,
+    "explorer_action_valid_count": 6,
+    "invalid_transition_count": 6,
+    "milestone_12_status": "OPENED_CANONICALLY",
+    "model_consistent_case_count": 6,
+    "next_stage": "MILESTONE_12_TASK_5_WORLD_MODEL_VERIFIER_V1",
+    "rollout_count": 18,
+    "transition_count": 37,
+    "world_model_id": "MILESTONE_12_EXECUTABLE_SYMBOLIC_WORLD_MODEL_SYNTHETIC_V1",
+    "world_model_status": "READY"
+  }
+}
