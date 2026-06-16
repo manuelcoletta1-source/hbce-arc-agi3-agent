@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "23f9b38 Update ARC AGI3 milestone 13 program synthesis candidate generator plan artifacts",
+  "baseline_commit": "2d6510e Add ARC AGI3 milestone 13 program synthesis candidate generator implementation",
   "candidate_family_count": 7,
   "candidate_generator_modified": false,
   "candidate_generator_wiring_authorized": false,
@@ -17,9 +17,9 @@
   "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_V1",
   "runtime_solver_modified": false,
   "runtime_wiring_authorized": false,
-  "signature": "A831131C233E4D34",
+  "signature": "F01E98386C38F2AF",
   "source_plan_ready": true,
   "source_plan_shape_ok": true,
-  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-IMPLEMENTATION-A831131C233E",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-IMPLEMENTATION-F01E98386C38",
   "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_IMPLEMENTATION_READY"
 }
