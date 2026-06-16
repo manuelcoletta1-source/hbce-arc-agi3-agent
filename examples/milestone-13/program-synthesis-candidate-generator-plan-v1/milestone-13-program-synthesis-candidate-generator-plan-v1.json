@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "b3d407b Update ARC AGI3 milestone 13 object centric reasoning plan artifacts",
+  "baseline_commit": "440a5a2 Add ARC AGI3 milestone 13 program synthesis candidate generator plan",
   "candidate_families": [
     {
       "description": "bounded sequences of deterministic grid primitives",
@@ -632,7 +632,7 @@
     "NO_EXTERNAL_MODEL_CALLS",
     "NO_RUNTIME_WIRING_IN_PLAN_TASK"
   ],
-  "signature": "4E4A15EB0254C41C",
+  "signature": "85195151C7720763",
   "source_artifact_parseable": true,
   "source_artifact_present": true,
   "source_blocks_real_actions": true,
@@ -676,7 +676,7 @@
       "stage_id": "SYN-STAGE-06"
     }
   ],
-  "task_id": "MILESTONE-13-PROGRAM-SYNTHESIS-CANDIDATE-GENERATOR-PLAN-4E4A15EB0254",
+  "task_id": "MILESTONE-13-PROGRAM-SYNTHESIS-CANDIDATE-GENERATOR-PLAN-85195151C772",
   "task_label": "Milestone #13 Task 5 - Program Synthesis Candidate Generator Plan v1",
   "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_V1_LOCAL_ONLY",
   "task_number": 5,

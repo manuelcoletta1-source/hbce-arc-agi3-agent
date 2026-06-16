@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "b3d407b Update ARC AGI3 milestone 13 object centric reasoning plan artifacts",
+  "baseline_commit": "440a5a2 Add ARC AGI3 milestone 13 program synthesis candidate generator plan",
   "candidate_family_count": 7,
   "candidate_generator_modified": false,
   "candidate_generator_wiring_authorized": false,
@@ -17,10 +17,10 @@
   "runtime_solver_modified": false,
   "runtime_wiring_authorized": false,
   "search_control_count": 8,
-  "signature": "4E4A15EB0254C41C",
+  "signature": "85195151C7720763",
   "source_object_plan_ok": true,
   "source_plan_ready": true,
   "synthesis_stage_count": 6,
-  "task_id": "MILESTONE-13-PROGRAM-SYNTHESIS-CANDIDATE-GENERATOR-PLAN-4E4A15EB0254",
+  "task_id": "MILESTONE-13-PROGRAM-SYNTHESIS-CANDIDATE-GENERATOR-PLAN-85195151C772",
   "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_PLAN_READY"
 }
