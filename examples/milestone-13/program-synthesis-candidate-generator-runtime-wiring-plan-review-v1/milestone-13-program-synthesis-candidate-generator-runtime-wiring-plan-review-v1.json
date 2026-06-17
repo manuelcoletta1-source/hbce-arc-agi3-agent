@@ -1,0 +1,635 @@
+{
+  "baseline_commit": "798b870 Update ARC AGI3 milestone 13 program synthesis candidate generator runtime wiring plan artifacts",
+  "blocking_issue_count": 0,
+  "blocking_issues": [],
+  "candidate_generator_modified": false,
+  "candidate_generator_wiring_authorized": false,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_implementation_authorized": false,
+  "controlled_implementation_plan_authorized": true,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 47,
+  "gates": [
+    {
+      "description": "Task 10 runtime wiring plan artifact is present.",
+      "name": "source_plan_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 10 runtime wiring plan artifact is parseable.",
+      "name": "source_plan_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 10 runtime wiring plan is ready and valid.",
+      "name": "source_plan_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 10 runtime wiring plan has expected shape.",
+      "name": "source_plan_shape_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 10 runtime wiring plan boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring plan review passed.",
+      "name": "review_report_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Four wiring targets are present.",
+      "name": "target_count_4",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Wiring target IDs are unique.",
+      "name": "target_ids_unique",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All wiring targets have names.",
+      "name": "targets_have_names",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All wiring targets have planned modules.",
+      "name": "targets_have_planned_modules",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No wiring target modifies runtime now.",
+      "name": "targets_runtime_modification_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All wiring targets require review.",
+      "name": "targets_require_review",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Six wiring steps are present.",
+      "name": "step_count_6",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Wiring step IDs are unique.",
+      "name": "step_ids_unique",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All wiring steps have names.",
+      "name": "steps_have_names",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All wiring steps have descriptions.",
+      "name": "steps_have_descriptions",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No wiring step implements now.",
+      "name": "steps_implementation_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring plan review is ready.",
+      "name": "runtime_wiring_plan_review_ready_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring plan review is valid.",
+      "name": "runtime_wiring_plan_review_valid_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring plan review passed.",
+      "name": "runtime_wiring_plan_review_passed_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation plan may open.",
+      "name": "controlled_implementation_plan_authorized_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation itself remains blocked.",
+      "name": "controlled_implementation_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No runtime execution is performed.",
+      "name": "runtime_execution_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator wiring remains blocked.",
+      "name": "candidate_generator_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring remains blocked.",
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver is not modified.",
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator is not modified.",
+      "name": "candidate_generator_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime is not modified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Review fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "implementation_allowed_now": false,
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_12_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 47,
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "program_synthesis_candidate_generator_runtime_wiring_plan_review_allowed": true,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "quality_target_count": 7,
+  "quality_targets": [
+    "runtime_wiring_plan_review_is_deterministic",
+    "source_plan_artifact_is_verified",
+    "wiring_targets_are_verified",
+    "wiring_steps_are_verified",
+    "implementation_remains_deferred",
+    "runtime_wiring_remains_blocked",
+    "next_task_is_controlled_implementation_plan"
+  ],
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 47,
+  "review_blocking_issue_count": 0,
+  "review_criteria": [
+    "source_plan_artifact_present",
+    "source_plan_artifact_parseable",
+    "source_plan_ready",
+    "source_plan_valid",
+    "source_plan_review_required",
+    "source_controlled_implementation_deferred",
+    "source_implementation_not_allowed_now",
+    "wiring_target_count_4",
+    "wiring_step_count_6",
+    "acceptance_gate_count_15",
+    "all_targets_require_review",
+    "no_target_runtime_modification_now",
+    "no_step_implementation_allowed_now",
+    "runtime_execution_blocked",
+    "candidate_generator_wiring_blocked",
+    "runtime_wiring_blocked",
+    "runtime_solver_unmodified",
+    "candidate_generator_unmodified",
+    "ranker_runtime_unmodified",
+    "real_evaluation_blocked",
+    "real_submission_blocked",
+    "kaggle_authentication_blocked",
+    "kaggle_upload_blocked",
+    "kaggle_submission_blocked",
+    "private_core_not_exposed",
+    "legal_certification_false",
+    "controlled_implementation_plan_authorized"
+  ],
+  "review_criterion_count": 27,
+  "review_finding_count": 7,
+  "review_findings": [
+    {
+      "description": "Task 10 runtime wiring plan artifact exists and is parseable.",
+      "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-01",
+      "name": "source_plan_exists",
+      "severity": "PASS"
+    },
+    {
+      "description": "The source plan is explicitly plan-only and does not activate runtime code paths.",
+      "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-02",
+      "name": "plan_is_plan_only",
+      "severity": "PASS"
+    },
+    {
+      "description": "The source plan defines four wiring targets.",
+      "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-03",
+      "name": "wiring_targets_are_explicit",
+      "severity": "PASS"
+    },
+    {
+      "description": "The source plan defines six deferred wiring steps.",
+      "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-04",
+      "name": "wiring_steps_are_deferred",
+      "severity": "PASS"
+    },
+    {
+      "description": "Runtime wiring is not authorized in the plan review.",
+      "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-05",
+      "name": "runtime_wiring_remains_blocked",
+      "severity": "PASS"
+    },
+    {
+      "description": "Real evaluation, authentication, upload, and submission remain blocked.",
+      "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-06",
+      "name": "real_actions_remain_blocked",
+      "severity": "PASS"
+    },
+    {
+      "description": "The next stage may define a controlled implementation plan, not perform implementation.",
+      "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-07",
+      "name": "controlled_implementation_plan_can_open",
+      "severity": "PASS"
+    }
+  ],
+  "review_gate_count": 47,
+  "review_pass_count": 47,
+  "review_summary": {
+    "candidate_generator_wiring_authorized": false,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "controlled_implementation_authorized": false,
+    "controlled_implementation_plan_authorized": true,
+    "next_stage": "MILESTONE_13_TASK_12_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_V1",
+    "review_status": "PASS",
+    "review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_PASS_READY_FOR_CONTROLLED_IMPLEMENTATION_PLAN",
+    "runtime_wiring_authorized": false,
+    "runtime_wiring_plan_review_passed": true,
+    "runtime_wiring_plan_review_ready": true,
+    "source_acceptance_gate_count": 15,
+    "wiring_step_count": 6,
+    "wiring_target_count": 4
+  },
+  "review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_PASS_READY_FOR_CONTROLLED_IMPLEMENTATION_PLAN",
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1",
+  "risk_control_count": 12,
+  "risk_controls": [
+    "NO_REAL_KAGGLE_EVALUATION",
+    "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+    "NO_CANDIDATE_GENERATOR_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_RUNTIME_IMPLEMENTATION_IN_THIS_TASK",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "NO_EXTERNAL_API_DEPENDENCY",
+    "NO_INTERNET_DURING_EVAL",
+    "NO_KAGGLE_AUTHENTICATION",
+    "NO_UPLOAD",
+    "NO_SUBMISSION",
+    "REVIEW_ONLY_NO_CODEPATH_ACTIVATION"
+  ],
+  "runtime_execution_performed": false,
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "runtime_wiring_plan_review_passed": true,
+  "runtime_wiring_plan_review_ready": true,
+  "runtime_wiring_plan_review_report": {
+    "blocking_issue_count": 0,
+    "blocking_issues": [],
+    "check_count": 33,
+    "checks": {
+      "acceptance_gate_count_15": true,
+      "all_steps_have_descriptions": true,
+      "all_steps_have_names": true,
+      "all_steps_implementation_blocked": true,
+      "all_targets_have_names": true,
+      "all_targets_have_planned_modules": true,
+      "all_targets_require_review": true,
+      "all_targets_runtime_modification_blocked": true,
+      "candidate_generator_modified_false": true,
+      "candidate_generator_wiring_authorized_false": true,
+      "kaggle_authentication_allowed_false": true,
+      "kaggle_authentication_performed_false": true,
+      "kaggle_submission_sent_false": true,
+      "kaggle_upload_allowed_false": true,
+      "legal_certification_false": true,
+      "next_stage_is_task_11": true,
+      "private_core_exposure_false": true,
+      "ranker_runtime_modified_false": true,
+      "ready_for_real_kaggle_submission_false": true,
+      "real_evaluation_performed_false": true,
+      "real_submission_allowed_false": true,
+      "runtime_execution_performed_false": true,
+      "runtime_solver_modified_false": true,
+      "runtime_wiring_authorized_false": true,
+      "source_controlled_implementation_deferred": true,
+      "source_implementation_not_allowed_now": true,
+      "source_plan_ready": true,
+      "source_plan_review_required": true,
+      "source_plan_valid": true,
+      "step_ids_unique": true,
+      "target_ids_unique": true,
+      "wiring_step_count_6": true,
+      "wiring_target_count_4": true
+    },
+    "passed_check_count": 33,
+    "recommended_next_stage": "MILESTONE_13_TASK_12_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_V1",
+    "review_finding_count": 7,
+    "review_findings": [
+      {
+        "description": "Task 10 runtime wiring plan artifact exists and is parseable.",
+        "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-01",
+        "name": "source_plan_exists",
+        "severity": "PASS"
+      },
+      {
+        "description": "The source plan is explicitly plan-only and does not activate runtime code paths.",
+        "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-02",
+        "name": "plan_is_plan_only",
+        "severity": "PASS"
+      },
+      {
+        "description": "The source plan defines four wiring targets.",
+        "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-03",
+        "name": "wiring_targets_are_explicit",
+        "severity": "PASS"
+      },
+      {
+        "description": "The source plan defines six deferred wiring steps.",
+        "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-04",
+        "name": "wiring_steps_are_deferred",
+        "severity": "PASS"
+      },
+      {
+        "description": "Runtime wiring is not authorized in the plan review.",
+        "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-05",
+        "name": "runtime_wiring_remains_blocked",
+        "severity": "PASS"
+      },
+      {
+        "description": "Real evaluation, authentication, upload, and submission remain blocked.",
+        "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-06",
+        "name": "real_actions_remain_blocked",
+        "severity": "PASS"
+      },
+      {
+        "description": "The next stage may define a controlled implementation plan, not perform implementation.",
+        "finding_id": "RUNTIME-WIRING-PLAN-REVIEW-07",
+        "name": "controlled_implementation_plan_can_open",
+        "severity": "PASS"
+      }
+    ],
+    "review_passed": true,
+    "review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_PASS_READY_FOR_CONTROLLED_IMPLEMENTATION_PLAN",
+    "runtime_wiring_plan_review_report_id": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_REPORT_V1",
+    "source_next_stage": "MILESTONE_13_TASK_11_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1",
+    "source_plan_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_READY_FOR_REVIEW",
+    "source_revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_V1",
+    "source_task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_READY",
+    "step_review": {
+      "all_steps_have_descriptions": true,
+      "all_steps_have_names": true,
+      "all_steps_implementation_blocked": true,
+      "step_ids": [
+        "WIRING-PLAN-STEP-01",
+        "WIRING-PLAN-STEP-02",
+        "WIRING-PLAN-STEP-03",
+        "WIRING-PLAN-STEP-04",
+        "WIRING-PLAN-STEP-05",
+        "WIRING-PLAN-STEP-06"
+      ],
+      "step_ids_unique": true,
+      "wiring_step_count": 6
+    },
+    "target_review": {
+      "all_targets_have_names": true,
+      "all_targets_have_planned_modules": true,
+      "all_targets_require_review": true,
+      "all_targets_runtime_modification_blocked": true,
+      "target_ids": [
+        "WIRING-TARGET-01",
+        "WIRING-TARGET-02",
+        "WIRING-TARGET-03",
+        "WIRING-TARGET-04"
+      ],
+      "target_ids_unique": true,
+      "wiring_target_count": 4
+    }
+  },
+  "runtime_wiring_plan_review_valid": true,
+  "signature": "FD8280FCD0FF2443",
+  "source_acceptance_gate_count": 15,
+  "source_boundaries_ok": true,
+  "source_plan_artifact": "examples/milestone-13/program-synthesis-candidate-generator-runtime-wiring-plan-v1/milestone-13-program-synthesis-candidate-generator-runtime-wiring-plan-v1.json",
+  "source_plan_artifact_parseable": true,
+  "source_plan_artifact_present": true,
+  "source_plan_ready": true,
+  "source_plan_shape_ok": true,
+  "source_task": "MILESTONE_13_TASK_10_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_V1",
+  "step_review": {
+    "all_steps_have_descriptions": true,
+    "all_steps_have_names": true,
+    "all_steps_implementation_blocked": true,
+    "step_ids": [
+      "WIRING-PLAN-STEP-01",
+      "WIRING-PLAN-STEP-02",
+      "WIRING-PLAN-STEP-03",
+      "WIRING-PLAN-STEP-04",
+      "WIRING-PLAN-STEP-05",
+      "WIRING-PLAN-STEP-06"
+    ],
+    "step_ids_unique": true,
+    "wiring_step_count": 6
+  },
+  "submission_json_created": false,
+  "target_review": {
+    "all_targets_have_names": true,
+    "all_targets_have_planned_modules": true,
+    "all_targets_require_review": true,
+    "all_targets_runtime_modification_blocked": true,
+    "target_ids": [
+      "WIRING-TARGET-01",
+      "WIRING-TARGET-02",
+      "WIRING-TARGET-03",
+      "WIRING-TARGET-04"
+    ],
+    "target_ids_unique": true,
+    "wiring_target_count": 4
+  },
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-RUNTIME-WIRING-PLAN-REVIEW-FD8280FCD0FF",
+  "task_label": "Milestone #13 Task 11 - Program Synthesis Candidate Generator Runtime Wiring Plan Review v1",
+  "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1_LOCAL_ONLY",
+  "task_number": 11,
+  "task_scope": "RUNTIME_WIRING_PLAN_REVIEW_ONLY_NO_IMPLEMENTATION_NO_RUNTIME_WIRING_NO_REAL_EVAL_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_READY",
+  "warning_count": 0,
+  "wiring_step_count": 6,
+  "wiring_target_count": 4
+}
