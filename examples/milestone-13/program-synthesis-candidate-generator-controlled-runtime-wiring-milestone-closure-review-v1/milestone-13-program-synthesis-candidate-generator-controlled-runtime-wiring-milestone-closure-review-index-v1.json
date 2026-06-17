@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "0b49735 Update ARC AGI3 milestone 13 controlled runtime wiring local diagnostic evaluation closure artifacts",
+  "baseline_commit": "469566b Add ARC AGI3 milestone 13 controlled runtime wiring milestone closure review",
   "diagnostic_average_score": 0.6875,
   "diagnostic_case_count": 12,
   "diagnostic_failure_count": 0,
@@ -16,7 +16,7 @@
   "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_MILESTONE_CLOSURE_REVIEW_V1",
   "runtime_activation_performed": false,
   "runtime_execution_performed": false,
-  "signature": "EBCBC9B1C6AD7872",
-  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-RUNTIME-WIRING-MILESTONE-CLOSURE-REVIEW-EBCBC9B1C6AD",
+  "signature": "65939E046610ABE4",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-RUNTIME-WIRING-MILESTONE-CLOSURE-REVIEW-65939E046610",
   "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_MILESTONE_CLOSURE_REVIEW_READY"
 }
