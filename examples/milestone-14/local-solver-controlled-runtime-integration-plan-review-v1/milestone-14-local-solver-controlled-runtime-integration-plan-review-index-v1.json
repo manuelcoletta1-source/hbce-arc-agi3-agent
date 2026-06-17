@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "04d95b8 Update ARC AGI3 milestone 14 local solver controlled runtime integration planning artifacts",
+  "candidate_fixture_matrix_count": 12,
+  "diagnostic_average_score": 0.6875,
+  "implementation_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "next_stage": "MILESTONE_14_TASK_3_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_PLAN_V1",
+  "plan_review_passed": true,
+  "private_core_exposure": false,
+  "ready_for_implementation_plan": true,
+  "real_submission_allowed": false,
+  "review_verdict": "LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_PLAN_REVIEW_PASS_READY_FOR_IMPLEMENTATION_PLAN",
+  "revision": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_PLAN_REVIEW_V1",
+  "runtime_activation_performed": false,
+  "runtime_candidate_count": 4,
+  "runtime_execution_performed": false,
+  "signature": "5FB814A16F3028DD",
+  "task_id": "MILESTONE-14-LOCAL-SOLVER-CONTROLLED-RUNTIME-INTEGRATION-PLAN-REVIEW-5FB814A16F30",
+  "task_verdict": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_PLAN_REVIEW_READY"
+}
