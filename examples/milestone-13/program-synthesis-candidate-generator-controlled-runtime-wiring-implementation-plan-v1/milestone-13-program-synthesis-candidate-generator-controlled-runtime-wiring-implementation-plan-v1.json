@@ -1,0 +1,654 @@
+{
+  "baseline_commit": "3f1afd9 Update ARC AGI3 milestone 13 program synthesis candidate generator runtime wiring plan review artifacts",
+  "candidate_generator_modified": false,
+  "candidate_generator_wiring_authorized": false,
+  "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+  "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_implementation_authorized": false,
+  "controlled_implementation_plan": {
+    "candidate_generator_wiring_allowed_now": false,
+    "controlled_implementation_deferred_to_reviewed_task": true,
+    "controlled_implementation_plan_review_required": true,
+    "implementation_allowed_now": false,
+    "implementation_gate_count": 18,
+    "implementation_gates": [
+      "source_review_artifact_present",
+      "source_review_artifact_parseable",
+      "source_review_passed",
+      "controlled_implementation_plan_authorized_by_source",
+      "controlled_implementation_not_authorized_by_source",
+      "source_implementation_not_allowed_now",
+      "implementation_units_defined",
+      "implementation_phases_defined",
+      "all_units_require_review_before_code",
+      "all_units_runtime_activation_blocked",
+      "all_units_implementation_blocked_now",
+      "all_phases_implementation_blocked_now",
+      "controlled_implementation_plan_created",
+      "controlled_implementation_plan_review_required",
+      "runtime_wiring_remains_blocked",
+      "candidate_generator_wiring_remains_blocked",
+      "real_submission_blocked",
+      "kaggle_actions_blocked"
+    ],
+    "implementation_phase_count": 7,
+    "implementation_phases": [
+      {
+        "description": "Plan adapter skeleton creation behind inactive local-only imports.",
+        "implementation_allowed_now": false,
+        "name": "contract_only_adapter_skeleton",
+        "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-01"
+      },
+      {
+        "description": "Plan guarded solver hook contract without runtime invocation.",
+        "implementation_allowed_now": false,
+        "name": "contract_only_solver_hook",
+        "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-02"
+      },
+      {
+        "description": "Plan candidate fixture bridge shape and validation checks.",
+        "implementation_allowed_now": false,
+        "name": "fixture_bridge_contract",
+        "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-03"
+      },
+      {
+        "description": "Plan ranker contract guard without changing ranker scoring behavior.",
+        "implementation_allowed_now": false,
+        "name": "ranker_contract_guard",
+        "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-04"
+      },
+      {
+        "description": "Require targeted tests before any future runtime-adjacent code is committed.",
+        "implementation_allowed_now": false,
+        "name": "targeted_tests_first",
+        "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-05"
+      },
+      {
+        "description": "Require full suite and historical drift restore before closure.",
+        "implementation_allowed_now": false,
+        "name": "full_suite_and_drift_restore",
+        "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-06"
+      },
+      {
+        "description": "Defer code creation until this implementation plan is reviewed.",
+        "implementation_allowed_now": false,
+        "name": "defer_actual_code_to_reviewed_task",
+        "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-07"
+      }
+    ],
+    "implementation_plan_id": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_SPEC_V1",
+    "implementation_unit_count": 4,
+    "implementation_units": [
+      {
+        "implementation_allowed_now": false,
+        "name": "candidate_generation_adapter_contract",
+        "planned_file": "src/hbce_arc_agi3/program_synthesis_candidate_generator_runtime_adapter.py",
+        "purpose": "Define a deterministic adapter contract for reviewed generated candidates.",
+        "requires_plan_review_before_code": true,
+        "runtime_activation_allowed": false,
+        "unit_id": "CONTROLLED-IMPLEMENTATION-UNIT-01"
+      },
+      {
+        "implementation_allowed_now": false,
+        "name": "solver_candidate_generation_hook_contract",
+        "planned_file": "src/hbce_arc_agi3/solver_runtime_candidate_generation_hook.py",
+        "purpose": "Define a guarded solver hook contract without activating solver runtime wiring.",
+        "requires_plan_review_before_code": true,
+        "runtime_activation_allowed": false,
+        "unit_id": "CONTROLLED-IMPLEMENTATION-UNIT-02"
+      },
+      {
+        "implementation_allowed_now": false,
+        "name": "candidate_fixture_bridge_contract",
+        "planned_file": "src/hbce_arc_agi3/program_synthesis_candidate_fixture_bridge.py",
+        "purpose": "Define a bridge contract between generated candidates and diagnostic harness records.",
+        "requires_plan_review_before_code": true,
+        "runtime_activation_allowed": false,
+        "unit_id": "CONTROLLED-IMPLEMENTATION-UNIT-03"
+      },
+      {
+        "implementation_allowed_now": false,
+        "name": "ranker_input_contract_guard",
+        "planned_file": "src/hbce_arc_agi3/candidate_ranker.py",
+        "purpose": "Define a future ranker input extension guard without modifying ranker runtime now.",
+        "requires_plan_review_before_code": true,
+        "runtime_activation_allowed": false,
+        "unit_id": "CONTROLLED-IMPLEMENTATION-UNIT-04"
+      }
+    ],
+    "next_stage": "MILESTONE_13_TASK_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_REVIEW_V1",
+    "plan_mode": "CONTROLLED_IMPLEMENTATION_PLAN_ONLY",
+    "ranker_runtime_modification_allowed_now": false,
+    "runtime_wiring_allowed_now": false,
+    "source_controlled_implementation_authorized": false,
+    "source_controlled_implementation_plan_authorized": true,
+    "source_review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_PASS_READY_FOR_CONTROLLED_IMPLEMENTATION_PLAN",
+    "source_revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1"
+  },
+  "controlled_implementation_plan_created": true,
+  "controlled_implementation_plan_ready": true,
+  "controlled_implementation_plan_review_required": true,
+  "controlled_implementation_plan_valid": true,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "gate_count": 46,
+  "gates": [
+    {
+      "description": "Task 11 review artifact is present.",
+      "name": "source_review_artifact_present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 11 review artifact is parseable.",
+      "name": "source_review_artifact_parseable",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 11 review authorizes implementation planning.",
+      "name": "source_review_passed",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task 11 boundaries are preserved.",
+      "name": "source_boundaries_ok",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Four implementation units are defined.",
+      "name": "implementation_units_defined",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Seven implementation phases are defined.",
+      "name": "implementation_phases_defined",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation unit IDs are unique.",
+      "name": "unit_ids_unique",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All implementation units have names.",
+      "name": "units_have_names",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All implementation units have planned files.",
+      "name": "units_have_planned_files",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No implementation unit is allowed now.",
+      "name": "units_implementation_blocked_now",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No implementation unit activates runtime.",
+      "name": "units_runtime_activation_blocked",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All implementation units require review before code.",
+      "name": "units_require_review_before_code",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation phase IDs are unique.",
+      "name": "phase_ids_unique",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All implementation phases have names.",
+      "name": "phases_have_names",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "All implementation phases have descriptions.",
+      "name": "phases_have_descriptions",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No implementation phase is allowed now.",
+      "name": "phases_implementation_blocked_now",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation plan is created.",
+      "name": "controlled_implementation_plan_created",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation plan is ready.",
+      "name": "controlled_implementation_plan_ready",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Plan review is required before code.",
+      "name": "controlled_implementation_plan_review_required",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Controlled implementation itself remains blocked.",
+      "name": "controlled_implementation_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Implementation is not allowed now.",
+      "name": "implementation_allowed_now_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No runtime execution is performed.",
+      "name": "runtime_execution_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator wiring remains blocked.",
+      "name": "candidate_generator_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime wiring remains blocked.",
+      "name": "runtime_wiring_authorized_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Runtime solver is not modified.",
+      "name": "runtime_solver_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Candidate generator is not modified.",
+      "name": "candidate_generator_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Ranker runtime is not modified.",
+      "name": "ranker_runtime_modified_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No real evaluation is performed.",
+      "name": "real_evaluation_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission remains blocked.",
+      "name": "real_submission_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Real submission readiness remains blocked.",
+      "name": "ready_for_real_kaggle_submission_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication remains blocked.",
+      "name": "kaggle_authentication_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle authentication is not performed.",
+      "name": "kaggle_authentication_performed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Kaggle upload remains blocked.",
+      "name": "kaggle_upload_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "No Kaggle submission is sent.",
+      "name": "kaggle_submission_sent_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit remains blocked.",
+      "name": "public_overfit_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Public overfit guard remains required.",
+      "name": "public_overfit_guard_required_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "External API dependency remains false.",
+      "name": "external_api_dependency_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Internet during evaluation remains false.",
+      "name": "internet_during_eval_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Private core exposure remains false.",
+      "name": "private_core_exposure_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "legal_certification remains false.",
+      "name": "legal_certification_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Official score claim remains blocked.",
+      "name": "official_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Competitive score claim remains blocked.",
+      "name": "competitive_score_claim_allowed_false",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains local-only.",
+      "name": "local_only_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains deterministic.",
+      "name": "deterministic_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Task remains public-safe.",
+      "name": "public_safe_true",
+      "passed": true,
+      "required": true
+    },
+    {
+      "description": "Plan fails closed on missing prerequisites.",
+      "name": "fail_closed_active",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "implementation_allowed_now": false,
+  "implementation_gate_count": 18,
+  "implementation_gates": [
+    "source_review_artifact_present",
+    "source_review_artifact_parseable",
+    "source_review_passed",
+    "controlled_implementation_plan_authorized_by_source",
+    "controlled_implementation_not_authorized_by_source",
+    "source_implementation_not_allowed_now",
+    "implementation_units_defined",
+    "implementation_phases_defined",
+    "all_units_require_review_before_code",
+    "all_units_runtime_activation_blocked",
+    "all_units_implementation_blocked_now",
+    "all_phases_implementation_blocked_now",
+    "controlled_implementation_plan_created",
+    "controlled_implementation_plan_review_required",
+    "runtime_wiring_remains_blocked",
+    "candidate_generator_wiring_remains_blocked",
+    "real_submission_blocked",
+    "kaggle_actions_blocked"
+  ],
+  "implementation_phase_count": 7,
+  "implementation_phases": [
+    {
+      "description": "Plan adapter skeleton creation behind inactive local-only imports.",
+      "implementation_allowed_now": false,
+      "name": "contract_only_adapter_skeleton",
+      "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-01"
+    },
+    {
+      "description": "Plan guarded solver hook contract without runtime invocation.",
+      "implementation_allowed_now": false,
+      "name": "contract_only_solver_hook",
+      "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-02"
+    },
+    {
+      "description": "Plan candidate fixture bridge shape and validation checks.",
+      "implementation_allowed_now": false,
+      "name": "fixture_bridge_contract",
+      "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-03"
+    },
+    {
+      "description": "Plan ranker contract guard without changing ranker scoring behavior.",
+      "implementation_allowed_now": false,
+      "name": "ranker_contract_guard",
+      "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-04"
+    },
+    {
+      "description": "Require targeted tests before any future runtime-adjacent code is committed.",
+      "implementation_allowed_now": false,
+      "name": "targeted_tests_first",
+      "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-05"
+    },
+    {
+      "description": "Require full suite and historical drift restore before closure.",
+      "implementation_allowed_now": false,
+      "name": "full_suite_and_drift_restore",
+      "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-06"
+    },
+    {
+      "description": "Defer code creation until this implementation plan is reviewed.",
+      "implementation_allowed_now": false,
+      "name": "defer_actual_code_to_reviewed_task",
+      "phase_id": "CONTROLLED-IMPLEMENTATION-PHASE-07"
+    }
+  ],
+  "implementation_unit_count": 4,
+  "implementation_units": [
+    {
+      "implementation_allowed_now": false,
+      "name": "candidate_generation_adapter_contract",
+      "planned_file": "src/hbce_arc_agi3/program_synthesis_candidate_generator_runtime_adapter.py",
+      "purpose": "Define a deterministic adapter contract for reviewed generated candidates.",
+      "requires_plan_review_before_code": true,
+      "runtime_activation_allowed": false,
+      "unit_id": "CONTROLLED-IMPLEMENTATION-UNIT-01"
+    },
+    {
+      "implementation_allowed_now": false,
+      "name": "solver_candidate_generation_hook_contract",
+      "planned_file": "src/hbce_arc_agi3/solver_runtime_candidate_generation_hook.py",
+      "purpose": "Define a guarded solver hook contract without activating solver runtime wiring.",
+      "requires_plan_review_before_code": true,
+      "runtime_activation_allowed": false,
+      "unit_id": "CONTROLLED-IMPLEMENTATION-UNIT-02"
+    },
+    {
+      "implementation_allowed_now": false,
+      "name": "candidate_fixture_bridge_contract",
+      "planned_file": "src/hbce_arc_agi3/program_synthesis_candidate_fixture_bridge.py",
+      "purpose": "Define a bridge contract between generated candidates and diagnostic harness records.",
+      "requires_plan_review_before_code": true,
+      "runtime_activation_allowed": false,
+      "unit_id": "CONTROLLED-IMPLEMENTATION-UNIT-03"
+    },
+    {
+      "implementation_allowed_now": false,
+      "name": "ranker_input_contract_guard",
+      "planned_file": "src/hbce_arc_agi3/candidate_ranker.py",
+      "purpose": "Define a future ranker input extension guard without modifying ranker runtime now.",
+      "requires_plan_review_before_code": true,
+      "runtime_activation_allowed": false,
+      "unit_id": "CONTROLLED-IMPLEMENTATION-UNIT-04"
+    }
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_REVIEW_V1",
+  "official_score_claim_allowed": false,
+  "open_source_prize_eligibility_required": true,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 46,
+  "phase_review": {
+    "all_phases_have_descriptions": true,
+    "all_phases_have_names": true,
+    "all_phases_implementation_blocked_now": true,
+    "implementation_phase_count": 7,
+    "phase_ids": [
+      "CONTROLLED-IMPLEMENTATION-PHASE-01",
+      "CONTROLLED-IMPLEMENTATION-PHASE-02",
+      "CONTROLLED-IMPLEMENTATION-PHASE-03",
+      "CONTROLLED-IMPLEMENTATION-PHASE-04",
+      "CONTROLLED-IMPLEMENTATION-PHASE-05",
+      "CONTROLLED-IMPLEMENTATION-PHASE-06",
+      "CONTROLLED-IMPLEMENTATION-PHASE-07"
+    ],
+    "phase_ids_unique": true
+  },
+  "plan_blocking_issue_count": 0,
+  "plan_gate_count": 46,
+  "plan_pass_count": 46,
+  "plan_summary": {
+    "candidate_generator_wiring_authorized": false,
+    "chosen_strategy": "EXECUTABLE_WORLD_MODEL_EXPLORE_VERIFY_PLAN",
+    "competitive_goal": "FIRST_PLACE_COMPETITIVE_SOLVER",
+    "controlled_implementation_authorized": false,
+    "controlled_implementation_plan_created": true,
+    "controlled_implementation_plan_ready": true,
+    "controlled_implementation_plan_review_required": true,
+    "implementation_allowed_now": false,
+    "implementation_gate_count": 18,
+    "implementation_phase_count": 7,
+    "implementation_unit_count": 4,
+    "next_stage": "MILESTONE_13_TASK_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_REVIEW_V1",
+    "plan_status": "READY",
+    "plan_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_READY_FOR_REVIEW",
+    "runtime_wiring_authorized": false
+  },
+  "plan_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_READY_FOR_REVIEW",
+  "private_core_exposure": false,
+  "private_score_claimed": false,
+  "program_synthesis_candidate_generator_controlled_runtime_wiring_implementation_plan_allowed": true,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "quality_target_count": 7,
+  "quality_targets": [
+    "implementation_plan_is_deterministic",
+    "source_review_artifact_is_verified",
+    "implementation_units_are_explicit",
+    "implementation_phases_are_explicit",
+    "code_creation_is_deferred",
+    "runtime_wiring_remains_blocked",
+    "next_task_is_implementation_plan_review"
+  ],
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_public_score_claimed": false,
+  "real_submission_allowed": false,
+  "real_submission_candidate_created": false,
+  "required_gate_count": 46,
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_V1",
+  "risk_control_count": 13,
+  "risk_controls": [
+    "NO_REAL_KAGGLE_EVALUATION",
+    "NO_RUNTIME_SOLVER_WIRING_IN_THIS_TASK",
+    "NO_CANDIDATE_GENERATOR_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_RANKER_RUNTIME_WIRING_IN_THIS_TASK",
+    "NO_RUNTIME_IMPLEMENTATION_IN_THIS_TASK",
+    "NO_CODEPATH_ACTIVATION",
+    "NO_PUBLIC_SET_MEMORIZATION",
+    "NO_EXTERNAL_API_DEPENDENCY",
+    "NO_INTERNET_DURING_EVAL",
+    "NO_KAGGLE_AUTHENTICATION",
+    "NO_UPLOAD",
+    "NO_SUBMISSION",
+    "PLAN_ONLY_REVIEW_REQUIRED_BEFORE_CODE"
+  ],
+  "runtime_execution_performed": false,
+  "runtime_solver_modified": false,
+  "runtime_wiring_authorized": false,
+  "signature": "7C7F239DB33F92D0",
+  "source_boundaries_ok": true,
+  "source_review_artifact": "examples/milestone-13/program-synthesis-candidate-generator-runtime-wiring-plan-review-v1/milestone-13-program-synthesis-candidate-generator-runtime-wiring-plan-review-v1.json",
+  "source_review_artifact_parseable": true,
+  "source_review_artifact_present": true,
+  "source_review_passed": true,
+  "source_task": "MILESTONE_13_TASK_11_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1",
+  "submission_json_created": false,
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-IMPLEMENTATION-PLAN-7C7F239DB33F",
+  "task_label": "Milestone #13 Task 12 - Program Synthesis Candidate Generator Controlled Runtime Wiring Implementation Plan v1",
+  "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_V1_LOCAL_ONLY",
+  "task_number": 12,
+  "task_scope": "CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_ONLY_NO_IMPLEMENTATION_NO_RUNTIME_WIRING_NO_REAL_EVAL_NO_UPLOAD_NO_SUBMISSION",
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_READY",
+  "unit_review": {
+    "all_units_have_names": true,
+    "all_units_have_planned_files": true,
+    "all_units_implementation_blocked_now": true,
+    "all_units_require_review_before_code": true,
+    "all_units_runtime_activation_blocked": true,
+    "implementation_unit_count": 4,
+    "unit_ids": [
+      "CONTROLLED-IMPLEMENTATION-UNIT-01",
+      "CONTROLLED-IMPLEMENTATION-UNIT-02",
+      "CONTROLLED-IMPLEMENTATION-UNIT-03",
+      "CONTROLLED-IMPLEMENTATION-UNIT-04"
+    ],
+    "unit_ids_unique": true
+  },
+  "warning_count": 0
+}
