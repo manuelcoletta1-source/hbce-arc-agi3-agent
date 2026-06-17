@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "81e588c Update ARC AGI3 milestone 13 controlled runtime wiring implementation plan review artifacts",
+  "baseline_commit": "2366d52 Add ARC AGI3 milestone 13 controlled runtime wiring implementation",
   "candidate_fixture_matrix_count": 12,
   "controlled_fixture_bridge_created": true,
   "controlled_implementation_performed": true,
@@ -15,7 +15,7 @@
   "runtime_activation_performed": false,
   "runtime_candidate_count": 4,
   "runtime_execution_performed": false,
-  "signature": "0E9ED54B2A62FCE0",
-  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-RUNTIME-WIRING-IMPLEMENTATION-0E9ED54B2A62",
+  "signature": "9399A0EF009B2BEF",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-RUNTIME-WIRING-IMPLEMENTATION-9399A0EF009B",
   "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_READY"
 }
