@@ -1,0 +1,143 @@
+{
+  "record": {
+    "baseline_commit": "423eae0",
+    "blocking_issue_count": 0,
+    "candidate_generator_modified": false,
+    "competitive_score_claim_allowed": false,
+    "created_at_utc": "2026-06-17T18:52:01+00:00",
+    "deterministic": true,
+    "dry_run_check_count": 24,
+    "dry_run_failure_count": 0,
+    "dry_run_pass_count": 24,
+    "dry_run_projection_created": true,
+    "dry_run_verdict": "LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_DRY_RUN_PASS_READY_FOR_REVIEW",
+    "external_api_dependency": false,
+    "fail_closed_active": true,
+    "fail_closed_required": true,
+    "implementation_dry_run_performed": true,
+    "implementation_performed": false,
+    "implementation_plan_review_passed": true,
+    "implementation_step_count": 10,
+    "implementation_steps": [
+      "load_review_artifact",
+      "verify_review_passed",
+      "project_target_modules",
+      "project_integration_contracts",
+      "project_regression_tests",
+      "project_rollback_points",
+      "simulate_runtime_adapter_wiring",
+      "simulate_solver_hook_wiring",
+      "simulate_ranker_gate_wiring",
+      "emit_dry_run_artifacts"
+    ],
+    "integration_contract_count": 8,
+    "integration_contracts": [
+      "no_runtime_activation",
+      "no_runtime_execution",
+      "no_solver_mutation",
+      "no_ranker_mutation",
+      "no_candidate_generator_mutation",
+      "deterministic_local_fixture_scope",
+      "rollback_manifest_required",
+      "kaggle_score_semantics_forbidden"
+    ],
+    "internet_during_eval": false,
+    "issue_count": 0,
+    "kaggle_authentication_allowed": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+    "kaggle_submission_sent": false,
+    "kaggle_upload_allowed": false,
+    "kaggle_upload_performed": false,
+    "legal_certification": false,
+    "local_only": true,
+    "manual_upload_allowed": false,
+    "milestone_number": 14,
+    "next_stage": "MILESTONE_14_TASK_6_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_DRY_RUN_REVIEW_V1",
+    "official_score_claim_allowed": false,
+    "operator_approval_received": false,
+    "operator_approval_required": true,
+    "private_core_exposure": false,
+    "public_overfit_allowed": false,
+    "public_overfit_guard_required": true,
+    "public_safe": true,
+    "ranker_runtime_modified": false,
+    "ready_for_implementation_dry_run": true,
+    "ready_for_real_kaggle_submission": false,
+    "real_evaluation_performed": false,
+    "real_submission_allowed": false,
+    "regression_test_count": 8,
+    "regression_tests": [
+      "import_check",
+      "review_artifact_presence",
+      "dry_run_projection_count",
+      "target_module_count",
+      "integration_contract_count",
+      "runtime_activation_block",
+      "submission_block",
+      "boundary_integrity"
+    ],
+    "rollback_item_count": 5,
+    "rollback_items": [
+      "restore_target_modules",
+      "restore_runtime_hook",
+      "restore_candidate_bridge",
+      "restore_ranker_gate",
+      "restore_regression_guard"
+    ],
+    "runtime_activation_performed": false,
+    "runtime_execution_performed": false,
+    "runtime_solver_modified": false,
+    "signature": "8DA95661BAAE40D6",
+    "source_review_artifact": "examples/milestone-14/local-solver-controlled-runtime-integration-implementation-plan-review-v1/milestone-14-local-solver-controlled-runtime-integration-implementation-plan-review-v1.json",
+    "source_review_loaded": true,
+    "source_review_passed": true,
+    "source_task": "MILESTONE_14_TASK_4_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_PLAN_REVIEW_V1",
+    "target_module_count": 5,
+    "target_modules": [
+      {
+        "dry_run_action": "SIMULATED_CREATE_OR_UPDATE",
+        "module_id": "M14-RUNTIME-ADAPTER",
+        "path": "src/hbce_arc_agi3/local_solver_controlled_runtime_integration_adapter.py",
+        "planned_action": "prepare_runtime_adapter_contract"
+      },
+      {
+        "dry_run_action": "SIMULATED_CREATE_OR_UPDATE",
+        "module_id": "M14-CANDIDATE-BRIDGE",
+        "path": "src/hbce_arc_agi3/local_solver_candidate_bridge.py",
+        "planned_action": "prepare_candidate_bridge_contract"
+      },
+      {
+        "dry_run_action": "SIMULATED_CREATE_OR_UPDATE",
+        "module_id": "M14-RANKER-GATE",
+        "path": "src/hbce_arc_agi3/local_solver_ranker_gate.py",
+        "planned_action": "prepare_ranker_gate_contract"
+      },
+      {
+        "dry_run_action": "SIMULATED_CREATE_OR_UPDATE",
+        "module_id": "M14-SOLVER-HOOK",
+        "path": "src/hbce_arc_agi3/local_solver_runtime_hook.py",
+        "planned_action": "prepare_solver_hook_contract"
+      },
+      {
+        "dry_run_action": "SIMULATED_CREATE_OR_UPDATE",
+        "module_id": "M14-REGRESSION-GUARD",
+        "path": "src/hbce_arc_agi3/local_solver_runtime_regression_guard.py",
+        "planned_action": "prepare_regression_guard_contract"
+      }
+    ],
+    "task_mode": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_DRY_RUN_V1_DRY_RUN_ONLY_LOCAL_ONLY",
+    "task_name": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_DRY_RUN_V1",
+    "task_number": 5,
+    "task_verdict": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_DRY_RUN_READY",
+    "warning_count": 0
+  },
+  "validation": {
+    "issue_count": 0,
+    "issues": [],
+    "status": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_DRY_RUN_V1_VALID",
+    "valid": true,
+    "warning_count": 0,
+    "warnings": []
+  }
+}
