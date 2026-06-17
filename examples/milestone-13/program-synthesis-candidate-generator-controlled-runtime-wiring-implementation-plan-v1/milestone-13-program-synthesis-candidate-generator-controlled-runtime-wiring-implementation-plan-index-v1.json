@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "3f1afd9 Update ARC AGI3 milestone 13 program synthesis candidate generator runtime wiring plan review artifacts",
+  "baseline_commit": "2e71365 Add ARC AGI3 milestone 13 controlled runtime wiring implementation plan",
   "candidate_generator_modified": false,
   "candidate_generator_wiring_authorized": false,
   "controlled_implementation_authorized": false,
@@ -22,8 +22,8 @@
   "runtime_execution_performed": false,
   "runtime_solver_modified": false,
   "runtime_wiring_authorized": false,
-  "signature": "7C7F239DB33F92D0",
+  "signature": "3DFE4E3C5F8E657C",
   "source_review_passed": true,
-  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-IMPLEMENTATION-PLAN-7C7F239DB33F",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-IMPLEMENTATION-PLAN-3DFE4E3C5F8E",
   "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_READY"
 }
