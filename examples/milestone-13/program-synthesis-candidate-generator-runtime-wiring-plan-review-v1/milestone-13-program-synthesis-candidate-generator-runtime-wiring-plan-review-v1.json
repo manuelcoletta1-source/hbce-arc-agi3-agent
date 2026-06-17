@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "798b870 Update ARC AGI3 milestone 13 program synthesis candidate generator runtime wiring plan artifacts",
+  "baseline_commit": "a4e97e7 Add ARC AGI3 milestone 13 program synthesis candidate generator runtime wiring plan review",
   "blocking_issue_count": 0,
   "blocking_issues": [],
   "candidate_generator_modified": false,
@@ -584,7 +584,7 @@
     }
   },
   "runtime_wiring_plan_review_valid": true,
-  "signature": "FD8280FCD0FF2443",
+  "signature": "F16A81C0AFC748E4",
   "source_acceptance_gate_count": 15,
   "source_boundaries_ok": true,
   "source_plan_artifact": "examples/milestone-13/program-synthesis-candidate-generator-runtime-wiring-plan-v1/milestone-13-program-synthesis-candidate-generator-runtime-wiring-plan-v1.json",
@@ -623,7 +623,7 @@
     "target_ids_unique": true,
     "wiring_target_count": 4
   },
-  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-RUNTIME-WIRING-PLAN-REVIEW-FD8280FCD0FF",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-RUNTIME-WIRING-PLAN-REVIEW-F16A81C0AFC7",
   "task_label": "Milestone #13 Task 11 - Program Synthesis Candidate Generator Runtime Wiring Plan Review v1",
   "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_RUNTIME_WIRING_PLAN_REVIEW_V1_LOCAL_ONLY",
   "task_number": 11,
