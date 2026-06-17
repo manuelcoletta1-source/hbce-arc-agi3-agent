@@ -6,9 +6,9 @@
     "manifest": "examples/milestone-14/local-solver-controlled-runtime-integration-implementation-dry-run-v1/milestone-14-local-solver-controlled-runtime-integration-implementation-dry-run-manifest-v1.txt",
     "markdown": "examples/milestone-14/local-solver-controlled-runtime-integration-implementation-dry-run-v1/milestone-14-local-solver-controlled-runtime-integration-implementation-dry-run-v1.md"
   },
-  "baseline_commit": "2ef6fba",
+  "baseline_commit": "5f7c6d8",
   "next_stage": "MILESTONE_14_TASK_6_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_DRY_RUN_REVIEW_V1",
-  "signature": "01116356EF750C53",
+  "signature": "1DCD333F6692AA30",
   "status": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_DRY_RUN_V1_READY",
   "task_name": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_DRY_RUN_V1",
   "valid": true,
