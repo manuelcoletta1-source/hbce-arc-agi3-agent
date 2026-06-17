@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "0b49735 Update ARC AGI3 milestone 13 controlled runtime wiring local diagnostic evaluation closure artifacts",
+  "diagnostic_average_score": 0.6875,
+  "diagnostic_case_count": 12,
+  "diagnostic_failure_count": 0,
+  "diagnostic_pass_count": 12,
+  "kaggle_score_semantics": "NOT_A_KAGGLE_SCORE",
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "milestone_closure_review_passed": true,
+  "next_stage": "MILESTONE_13_TASK_20_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_MILESTONE_CLOSURE_V1",
+  "private_core_exposure": false,
+  "ready_for_final_milestone_closure": true,
+  "real_submission_allowed": false,
+  "review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_MILESTONE_CLOSURE_REVIEW_PASS_READY_FOR_FINAL_CLOSURE",
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_MILESTONE_CLOSURE_REVIEW_V1",
+  "runtime_activation_performed": false,
+  "runtime_execution_performed": false,
+  "signature": "EBCBC9B1C6AD7872",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-RUNTIME-WIRING-MILESTONE-CLOSURE-REVIEW-EBCBC9B1C6AD",
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_MILESTONE_CLOSURE_REVIEW_READY"
+}
