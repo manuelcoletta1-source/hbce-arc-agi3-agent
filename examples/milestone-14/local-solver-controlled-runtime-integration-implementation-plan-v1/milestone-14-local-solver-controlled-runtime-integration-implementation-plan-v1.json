@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "38a2fc4 Update ARC AGI3 milestone 14 local solver controlled runtime integration plan review artifacts",
+  "baseline_commit": "0d9a2ba Add ARC AGI3 milestone 14 local solver controlled runtime integration implementation plan",
   "blocking_issue_count": 0,
   "blocking_issues": [],
   "candidate_fixture_matrix_count": 12,
@@ -147,7 +147,7 @@
   "runtime_candidate_count": 4,
   "runtime_execution_performed": false,
   "runtime_solver_modified": false,
-  "signature": "9189145260604313",
+  "signature": "38B9E68A0D5C2FF7",
   "source_plan_review_artifact": "examples/milestone-14/local-solver-controlled-runtime-integration-plan-review-v1/milestone-14-local-solver-controlled-runtime-integration-plan-review-v1.json",
   "source_review": {
     "source_plan_review_artifact_parseable": true,
@@ -1437,7 +1437,7 @@
       "role": "future deterministic regression harness"
     }
   ],
-  "task_id": "MILESTONE-14-LOCAL-SOLVER-CONTROLLED-RUNTIME-INTEGRATION-IMPLEMENTATION-PLAN-918914526060",
+  "task_id": "MILESTONE-14-LOCAL-SOLVER-CONTROLLED-RUNTIME-INTEGRATION-IMPLEMENTATION-PLAN-38B9E68A0D5C",
   "task_label": "Milestone #14 Task 3 - Local Solver Controlled Runtime Integration Implementation Plan v1",
   "task_mode": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_PLAN_V1_PLAN_ONLY_LOCAL_ONLY",
   "task_number": 3,
