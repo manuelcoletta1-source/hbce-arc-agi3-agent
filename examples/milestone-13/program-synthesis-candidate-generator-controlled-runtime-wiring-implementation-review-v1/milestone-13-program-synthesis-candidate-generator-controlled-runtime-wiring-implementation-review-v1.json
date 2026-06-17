@@ -1,0 +1,541 @@
+{
+  "adapter_review": {
+    "all_candidate_ids_runtime_prefixed": true,
+    "all_runtime_activation_blocked": true,
+    "runtime_candidate_count": 4,
+    "runtime_candidate_ids_unique": true,
+    "runtime_candidates": [
+      {
+        "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+        "confidence": 0.72,
+        "family": "color_mapping",
+        "operation": "map_non_background_colors",
+        "program": [
+          "extract_palette",
+          "map_colors"
+        ],
+        "runtime_activation_allowed": false,
+        "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+      },
+      {
+        "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+        "confidence": 0.58,
+        "family": "composition",
+        "operation": "compose_color_then_object",
+        "program": [
+          "map_colors",
+          "translate"
+        ],
+        "runtime_activation_allowed": false,
+        "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+      },
+      {
+        "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+        "confidence": 0.66,
+        "family": "object_model",
+        "operation": "translate_detected_object",
+        "program": [
+          "find_object",
+          "translate"
+        ],
+        "runtime_activation_allowed": false,
+        "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+      },
+      {
+        "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+        "confidence": 0.61,
+        "family": "shape_symmetry",
+        "operation": "mirror_shape_candidate",
+        "program": [
+          "detect_axis",
+          "mirror"
+        ],
+        "runtime_activation_allowed": false,
+        "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+      }
+    ]
+  },
+  "baseline_commit": "5c571d7 Update ARC AGI3 milestone 13 controlled runtime wiring implementation artifacts",
+  "blocking_issue_count": 0,
+  "blocking_issues": [],
+  "bridge_review": {
+    "all_rows_diagnostic_only": true,
+    "all_rows_real_evaluation_false": true,
+    "all_rows_runtime_execution_false": true,
+    "candidate_fixture_matrix": [
+      {
+        "candidate_family": "color_mapping",
+        "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+        "candidate_operation": "map_non_background_colors",
+        "diagnostic_only": true,
+        "fixture_family": "color_mapping",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "composition",
+        "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+        "candidate_operation": "compose_color_then_object",
+        "diagnostic_only": true,
+        "fixture_family": "color_mapping",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "object_model",
+        "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+        "candidate_operation": "translate_detected_object",
+        "diagnostic_only": true,
+        "fixture_family": "color_mapping",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "shape_symmetry",
+        "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+        "candidate_operation": "mirror_shape_candidate",
+        "diagnostic_only": true,
+        "fixture_family": "color_mapping",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "color_mapping",
+        "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+        "candidate_operation": "map_non_background_colors",
+        "diagnostic_only": true,
+        "fixture_family": "object_model",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "composition",
+        "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+        "candidate_operation": "compose_color_then_object",
+        "diagnostic_only": true,
+        "fixture_family": "object_model",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "object_model",
+        "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+        "candidate_operation": "translate_detected_object",
+        "diagnostic_only": true,
+        "fixture_family": "object_model",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "shape_symmetry",
+        "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+        "candidate_operation": "mirror_shape_candidate",
+        "diagnostic_only": true,
+        "fixture_family": "object_model",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "color_mapping",
+        "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+        "candidate_operation": "map_non_background_colors",
+        "diagnostic_only": true,
+        "fixture_family": "shape_symmetry",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "composition",
+        "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+        "candidate_operation": "compose_color_then_object",
+        "diagnostic_only": true,
+        "fixture_family": "shape_symmetry",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "object_model",
+        "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+        "candidate_operation": "translate_detected_object",
+        "diagnostic_only": true,
+        "fixture_family": "shape_symmetry",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "shape_symmetry",
+        "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+        "candidate_operation": "mirror_shape_candidate",
+        "diagnostic_only": true,
+        "fixture_family": "shape_symmetry",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      }
+    ],
+    "candidate_fixture_matrix_count": 12
+  },
+  "candidate_fixture_matrix_count": 12,
+  "candidate_generator_modified": false,
+  "candidate_generator_wiring_implemented": true,
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_implementation_performed": true,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "file_review": {
+    "all_implemented_files_present": true,
+    "files": [
+      {
+        "file": "src/hbce_arc_agi3/program_synthesis_candidate_generator_runtime_adapter.py",
+        "is_file": true,
+        "present": true
+      },
+      {
+        "file": "src/hbce_arc_agi3/program_synthesis_candidate_fixture_bridge.py",
+        "is_file": true,
+        "present": true
+      },
+      {
+        "file": "src/hbce_arc_agi3/solver_runtime_candidate_generation_hook.py",
+        "is_file": true,
+        "present": true
+      }
+    ],
+    "implemented_file_count": 3,
+    "present_file_count": 3
+  },
+  "hook_review": {
+    "candidate_fixture_matrix_count": 12,
+    "controlled_implementation_performed": true,
+    "hook_mode": "LOCAL_ONLY_DIAGNOSTIC_CONTROLLED_IMPLEMENTATION",
+    "hook_revision": "CONTROLLED_RUNTIME_CANDIDATE_GENERATION_HOOK_V1",
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "kaggle_upload_performed": false,
+    "legal_certification": false,
+    "payload": {
+      "candidate_fixture_matrix": [
+        {
+          "candidate_family": "color_mapping",
+          "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+          "candidate_operation": "map_non_background_colors",
+          "diagnostic_only": true,
+          "fixture_family": "color_mapping",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "composition",
+          "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+          "candidate_operation": "compose_color_then_object",
+          "diagnostic_only": true,
+          "fixture_family": "color_mapping",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "object_model",
+          "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+          "candidate_operation": "translate_detected_object",
+          "diagnostic_only": true,
+          "fixture_family": "color_mapping",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "shape_symmetry",
+          "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+          "candidate_operation": "mirror_shape_candidate",
+          "diagnostic_only": true,
+          "fixture_family": "color_mapping",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "color_mapping",
+          "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+          "candidate_operation": "map_non_background_colors",
+          "diagnostic_only": true,
+          "fixture_family": "object_model",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "composition",
+          "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+          "candidate_operation": "compose_color_then_object",
+          "diagnostic_only": true,
+          "fixture_family": "object_model",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "object_model",
+          "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+          "candidate_operation": "translate_detected_object",
+          "diagnostic_only": true,
+          "fixture_family": "object_model",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "shape_symmetry",
+          "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+          "candidate_operation": "mirror_shape_candidate",
+          "diagnostic_only": true,
+          "fixture_family": "object_model",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "color_mapping",
+          "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+          "candidate_operation": "map_non_background_colors",
+          "diagnostic_only": true,
+          "fixture_family": "shape_symmetry",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "composition",
+          "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+          "candidate_operation": "compose_color_then_object",
+          "diagnostic_only": true,
+          "fixture_family": "shape_symmetry",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "object_model",
+          "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+          "candidate_operation": "translate_detected_object",
+          "diagnostic_only": true,
+          "fixture_family": "shape_symmetry",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        },
+        {
+          "candidate_family": "shape_symmetry",
+          "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+          "candidate_operation": "mirror_shape_candidate",
+          "diagnostic_only": true,
+          "fixture_family": "shape_symmetry",
+          "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+          "real_evaluation_performed": false,
+          "runtime_execution_performed": false
+        }
+      ],
+      "candidate_fixture_matrix_count": 12,
+      "controlled_implementation_performed": true,
+      "hook_mode": "LOCAL_ONLY_DIAGNOSTIC_CONTROLLED_IMPLEMENTATION",
+      "hook_revision": "CONTROLLED_RUNTIME_CANDIDATE_GENERATION_HOOK_V1",
+      "kaggle_authentication_performed": false,
+      "kaggle_submission_sent": false,
+      "kaggle_upload_performed": false,
+      "legal_certification": false,
+      "private_core_exposure": false,
+      "real_evaluation_performed": false,
+      "real_submission_allowed": false,
+      "runtime_activation_performed": false,
+      "runtime_candidate_count": 4,
+      "runtime_candidates": [
+        {
+          "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+          "confidence": 0.72,
+          "family": "color_mapping",
+          "operation": "map_non_background_colors",
+          "program": [
+            "extract_palette",
+            "map_colors"
+          ],
+          "runtime_activation_allowed": false,
+          "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+        },
+        {
+          "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+          "confidence": 0.58,
+          "family": "composition",
+          "operation": "compose_color_then_object",
+          "program": [
+            "map_colors",
+            "translate"
+          ],
+          "runtime_activation_allowed": false,
+          "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+        },
+        {
+          "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+          "confidence": 0.66,
+          "family": "object_model",
+          "operation": "translate_detected_object",
+          "program": [
+            "find_object",
+            "translate"
+          ],
+          "runtime_activation_allowed": false,
+          "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+        },
+        {
+          "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+          "confidence": 0.61,
+          "family": "shape_symmetry",
+          "operation": "mirror_shape_candidate",
+          "program": [
+            "detect_axis",
+            "mirror"
+          ],
+          "runtime_activation_allowed": false,
+          "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+        }
+      ],
+      "runtime_execution_performed": false
+    },
+    "private_core_exposure": false,
+    "real_evaluation_performed": false,
+    "real_submission_allowed": false,
+    "runtime_activation_performed": false,
+    "runtime_candidate_count": 4,
+    "runtime_execution_performed": false
+  },
+  "implementation_review_passed": true,
+  "implementation_review_ready": true,
+  "implementation_review_valid": true,
+  "implemented_file_count": 3,
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_16_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_LOCAL_DIAGNOSTIC_EVALUATION_V1",
+  "official_score_claim_allowed": false,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "private_core_exposure": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "ranker_runtime_modified": false,
+  "ready_for_local_diagnostic_evaluation": true,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_submission_allowed": false,
+  "review_check_count": 24,
+  "review_checks": {
+    "adapter_candidate_ids_runtime_prefixed": true,
+    "adapter_candidate_ids_unique": true,
+    "adapter_runtime_activation_blocked": true,
+    "adapter_runtime_candidate_count_4": true,
+    "all_implemented_files_present": true,
+    "bridge_matrix_count_12": true,
+    "bridge_rows_diagnostic_only": true,
+    "bridge_rows_real_evaluation_false": true,
+    "bridge_rows_runtime_execution_false": true,
+    "hook_controlled_implementation_performed_true": true,
+    "hook_kaggle_auth_false": true,
+    "hook_kaggle_submission_false": true,
+    "hook_kaggle_upload_false": true,
+    "hook_legal_certification_false": true,
+    "hook_matrix_count_12": true,
+    "hook_private_core_false": true,
+    "hook_real_evaluation_false": true,
+    "hook_real_submission_false": true,
+    "hook_runtime_activation_false": true,
+    "hook_runtime_candidate_count_4": true,
+    "hook_runtime_execution_false": true,
+    "implemented_file_count_3": true,
+    "present_file_count_3": true,
+    "source_implementation_passed": true
+  },
+  "review_finding_count": 6,
+  "review_findings": [
+    {
+      "description": "The runtime adapter module exists and normalizes generated candidates deterministically.",
+      "finding_id": "TASK15-IMPLEMENTATION-REVIEW-01",
+      "name": "runtime_adapter_present",
+      "severity": "PASS"
+    },
+    {
+      "description": "The fixture bridge module exists and builds diagnostic-only candidate/fixture matrices.",
+      "finding_id": "TASK15-IMPLEMENTATION-REVIEW-02",
+      "name": "fixture_bridge_present",
+      "severity": "PASS"
+    },
+    {
+      "description": "The controlled solver hook exists and returns a local-only blocked runtime payload.",
+      "finding_id": "TASK15-IMPLEMENTATION-REVIEW-03",
+      "name": "solver_hook_present",
+      "severity": "PASS"
+    },
+    {
+      "description": "The implementation does not activate runtime solving or real evaluation.",
+      "finding_id": "TASK15-IMPLEMENTATION-REVIEW-04",
+      "name": "runtime_not_activated",
+      "severity": "PASS"
+    },
+    {
+      "description": "Kaggle authentication, upload, and submission remain blocked.",
+      "finding_id": "TASK15-IMPLEMENTATION-REVIEW-05",
+      "name": "kaggle_actions_blocked",
+      "severity": "PASS"
+    },
+    {
+      "description": "The next stage may run local diagnostic evaluation under boundaries.",
+      "finding_id": "TASK15-IMPLEMENTATION-REVIEW-06",
+      "name": "local_diagnostic_evaluation_can_open",
+      "severity": "PASS"
+    }
+  ],
+  "review_pass_count": 24,
+  "review_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_REVIEW_PASS_READY_FOR_LOCAL_DIAGNOSTIC_EVALUATION",
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_REVIEW_V1",
+  "runtime_activation_performed": false,
+  "runtime_candidate_count": 4,
+  "runtime_execution_performed": false,
+  "runtime_solver_modified": false,
+  "runtime_wiring_implemented": true,
+  "signature": "9C041B0CC42FBE9E",
+  "source_implementation_artifact": "examples/milestone-13/program-synthesis-candidate-generator-controlled-runtime-wiring-implementation-v1/milestone-13-program-synthesis-candidate-generator-controlled-runtime-wiring-implementation-v1.json",
+  "source_implementation_passed": true,
+  "source_task": "MILESTONE_13_TASK_14_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_V1",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-RUNTIME-WIRING-IMPLEMENTATION-REVIEW-9C041B0CC42F",
+  "task_label": "Milestone #13 Task 15 - Program Synthesis Candidate Generator Controlled Runtime Wiring Implementation Review v1",
+  "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_REVIEW_V1_LOCAL_ONLY",
+  "task_number": 15,
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_REVIEW_READY",
+  "warning_count": 0
+}
