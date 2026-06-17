@@ -1,10 +1,10 @@
 {
   "record": {
-    "baseline_commit": "ba59e10",
+    "baseline_commit": "dfa7a0a",
     "blocking_issue_count": 0,
     "candidate_generator_modified": false,
     "competitive_score_claim_allowed": false,
-    "created_at_utc": "2026-06-17T19:26:52+00:00",
+    "created_at_utc": "2026-06-17T19:29:38+00:00",
     "deterministic": true,
     "dry_run_check_count": 24,
     "dry_run_failure_count": 0,
@@ -112,7 +112,7 @@
     "runtime_activation_performed": false,
     "runtime_execution_performed": false,
     "runtime_solver_modified": false,
-    "signature": "A67C045A48EA4B06",
+    "signature": "29886E660FD104EE",
     "source_dry_run_artifact": "examples/milestone-14/local-solver-controlled-runtime-integration-implementation-dry-run-v1/milestone-14-local-solver-controlled-runtime-integration-implementation-dry-run-v1.json",
     "source_dry_run_baseline_commit": "5f7c6d8",
     "source_dry_run_loaded": true,
