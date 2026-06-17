@@ -1,0 +1,257 @@
+{
+  "baseline_commit": "81e588c Update ARC AGI3 milestone 13 controlled runtime wiring implementation plan review artifacts",
+  "candidate_fixture_matrix_count": 12,
+  "candidate_generator_modified": false,
+  "candidate_generator_wiring_implemented": true,
+  "competitive_score_claim_allowed": false,
+  "contains_api_keys": false,
+  "controlled_fixture_bridge_created": true,
+  "controlled_implementation_performed": true,
+  "controlled_runtime_adapter_created": true,
+  "controlled_solver_hook_created": true,
+  "deterministic": true,
+  "external_api_dependency": false,
+  "fail_closed_active": true,
+  "fail_closed_required": true,
+  "hook_payload": {
+    "candidate_fixture_matrix": [
+      {
+        "candidate_family": "color_mapping",
+        "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+        "candidate_operation": "map_non_background_colors",
+        "diagnostic_only": true,
+        "fixture_family": "color_mapping",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "composition",
+        "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+        "candidate_operation": "compose_color_then_object",
+        "diagnostic_only": true,
+        "fixture_family": "color_mapping",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "object_model",
+        "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+        "candidate_operation": "translate_detected_object",
+        "diagnostic_only": true,
+        "fixture_family": "color_mapping",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "shape_symmetry",
+        "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+        "candidate_operation": "mirror_shape_candidate",
+        "diagnostic_only": true,
+        "fixture_family": "color_mapping",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-COLOR-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "color_mapping",
+        "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+        "candidate_operation": "map_non_background_colors",
+        "diagnostic_only": true,
+        "fixture_family": "object_model",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "composition",
+        "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+        "candidate_operation": "compose_color_then_object",
+        "diagnostic_only": true,
+        "fixture_family": "object_model",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "object_model",
+        "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+        "candidate_operation": "translate_detected_object",
+        "diagnostic_only": true,
+        "fixture_family": "object_model",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "shape_symmetry",
+        "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+        "candidate_operation": "mirror_shape_candidate",
+        "diagnostic_only": true,
+        "fixture_family": "object_model",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-OBJECT-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "color_mapping",
+        "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+        "candidate_operation": "map_non_background_colors",
+        "diagnostic_only": true,
+        "fixture_family": "shape_symmetry",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "composition",
+        "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+        "candidate_operation": "compose_color_then_object",
+        "diagnostic_only": true,
+        "fixture_family": "shape_symmetry",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "object_model",
+        "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+        "candidate_operation": "translate_detected_object",
+        "diagnostic_only": true,
+        "fixture_family": "shape_symmetry",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      },
+      {
+        "candidate_family": "shape_symmetry",
+        "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+        "candidate_operation": "mirror_shape_candidate",
+        "diagnostic_only": true,
+        "fixture_family": "shape_symmetry",
+        "fixture_id": "DIAGNOSTIC-FIXTURE-SYMMETRY-01",
+        "real_evaluation_performed": false,
+        "runtime_execution_performed": false
+      }
+    ],
+    "candidate_fixture_matrix_count": 12,
+    "controlled_implementation_performed": true,
+    "hook_mode": "LOCAL_ONLY_DIAGNOSTIC_CONTROLLED_IMPLEMENTATION",
+    "hook_revision": "CONTROLLED_RUNTIME_CANDIDATE_GENERATION_HOOK_V1",
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "kaggle_upload_performed": false,
+    "legal_certification": false,
+    "private_core_exposure": false,
+    "real_evaluation_performed": false,
+    "real_submission_allowed": false,
+    "runtime_activation_performed": false,
+    "runtime_candidate_count": 4,
+    "runtime_candidates": [
+      {
+        "candidate_id": "RUNTIME-CANDIDATE-00B32CD4604F",
+        "confidence": 0.72,
+        "family": "color_mapping",
+        "operation": "map_non_background_colors",
+        "program": [
+          "extract_palette",
+          "map_colors"
+        ],
+        "runtime_activation_allowed": false,
+        "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+      },
+      {
+        "candidate_id": "RUNTIME-CANDIDATE-D0A20F47A160",
+        "confidence": 0.58,
+        "family": "composition",
+        "operation": "compose_color_then_object",
+        "program": [
+          "map_colors",
+          "translate"
+        ],
+        "runtime_activation_allowed": false,
+        "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+      },
+      {
+        "candidate_id": "RUNTIME-CANDIDATE-78B44F17DFED",
+        "confidence": 0.66,
+        "family": "object_model",
+        "operation": "translate_detected_object",
+        "program": [
+          "find_object",
+          "translate"
+        ],
+        "runtime_activation_allowed": false,
+        "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+      },
+      {
+        "candidate_id": "RUNTIME-CANDIDATE-5B8DFD6AC820",
+        "confidence": 0.61,
+        "family": "shape_symmetry",
+        "operation": "mirror_shape_candidate",
+        "program": [
+          "detect_axis",
+          "mirror"
+        ],
+        "runtime_activation_allowed": false,
+        "source": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR"
+      }
+    ],
+    "runtime_execution_performed": false
+  },
+  "implementation_gate_count": 17,
+  "implementation_valid": true,
+  "implementation_verdict": "PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_READY_FOR_REVIEW",
+  "implemented_file_count": 3,
+  "implemented_files": [
+    "src/hbce_arc_agi3/program_synthesis_candidate_generator_runtime_adapter.py",
+    "src/hbce_arc_agi3/solver_runtime_candidate_generation_hook.py",
+    "src/hbce_arc_agi3/program_synthesis_candidate_fixture_bridge.py"
+  ],
+  "internet_during_eval": false,
+  "issue_count": 0,
+  "kaggle_authentication_allowed": false,
+  "kaggle_authentication_performed": false,
+  "kaggle_submission_sent": false,
+  "kaggle_upload_allowed": false,
+  "kaggle_upload_performed": false,
+  "legal_certification": false,
+  "local_diagnostic_eval_allowed": true,
+  "local_only": true,
+  "local_solver_improvement_allowed": true,
+  "manual_upload_allowed": false,
+  "milestone_number": 13,
+  "next_stage": "MILESTONE_13_TASK_15_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_REVIEW_V1",
+  "official_score_claim_allowed": false,
+  "operator_approval_received": false,
+  "operator_approval_required": true,
+  "passed_gate_count": 17,
+  "private_core_exposure": false,
+  "public_overfit_allowed": false,
+  "public_overfit_guard_required": true,
+  "public_safe": true,
+  "ranker_runtime_modified": false,
+  "ready_for_real_kaggle_submission": false,
+  "real_evaluation_performed": false,
+  "real_evaluation_prep_allowed": true,
+  "real_kaggle_evaluation_allowed": false,
+  "real_submission_allowed": false,
+  "revision": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_V1",
+  "runtime_activation_performed": false,
+  "runtime_candidate_count": 4,
+  "runtime_execution_performed": false,
+  "runtime_solver_modified": false,
+  "runtime_wiring_implemented": true,
+  "signature": "0E9ED54B2A62FCE0",
+  "source_review_artifact": "examples/milestone-13/program-synthesis-candidate-generator-controlled-runtime-wiring-implementation-plan-review-v1/milestone-13-program-synthesis-candidate-generator-controlled-runtime-wiring-implementation-plan-review-v1.json",
+  "source_review_passed": true,
+  "source_task": "MILESTONE_13_TASK_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_PLAN_REVIEW_V1",
+  "task_id": "MILESTONE-13-CANDIDATE-GENERATOR-CONTROLLED-RUNTIME-WIRING-IMPLEMENTATION-0E9ED54B2A62",
+  "task_label": "Milestone #13 Task 14 - Program Synthesis Candidate Generator Controlled Runtime Wiring Implementation v1",
+  "task_mode": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_V1_LOCAL_ONLY",
+  "task_number": 14,
+  "task_verdict": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_IMPLEMENTATION_READY",
+  "warning_count": 0
+}
