@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "a8faac5 Update ARC AGI3 milestone 13 controlled runtime wiring milestone closure artifacts",
+  "baseline_commit": "537a742 Add ARC AGI3 milestone 14 local solver controlled runtime integration planning",
   "blocking_issue_count": 0,
   "blocking_issues": [],
   "candidate_fixture_matrix_count": 12,
@@ -152,7 +152,7 @@
   "runtime_candidate_count": 4,
   "runtime_execution_performed": false,
   "runtime_solver_modified": false,
-  "signature": "40F7FC407EB94618",
+  "signature": "5FBA278E35D19888",
   "source_milestone": "MILESTONE_13_PROGRAM_SYNTHESIS_CANDIDATE_GENERATOR_CONTROLLED_RUNTIME_WIRING_MILESTONE_CLOSURE_V1",
   "source_milestone_13_closure_artifact": "examples/milestone-13/program-synthesis-candidate-generator-controlled-runtime-wiring-milestone-closure-v1/milestone-13-program-synthesis-candidate-generator-controlled-runtime-wiring-milestone-closure-v1.json",
   "source_review": {
@@ -1107,7 +1107,7 @@
       "warning_count": 0
     }
   },
-  "task_id": "MILESTONE-14-LOCAL-SOLVER-CONTROLLED-RUNTIME-INTEGRATION-PLANNING-40F7FC407EB9",
+  "task_id": "MILESTONE-14-LOCAL-SOLVER-CONTROLLED-RUNTIME-INTEGRATION-PLANNING-5FBA278E35D1",
   "task_label": "Milestone #14 Task 1 - Local Solver Controlled Runtime Integration Planning v1",
   "task_mode": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_PLANNING_V1_PLANNING_ONLY_LOCAL_ONLY",
   "task_number": 1,

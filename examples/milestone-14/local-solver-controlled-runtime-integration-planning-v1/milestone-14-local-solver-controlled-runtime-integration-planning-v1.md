@@ -1,9 +1,9 @@
 # Milestone #14 Task 1 - Local Solver Controlled Runtime Integration Planning v1
 
 - revision: `MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_PLANNING_V1`
-- task_id: `MILESTONE-14-LOCAL-SOLVER-CONTROLLED-RUNTIME-INTEGRATION-PLANNING-40F7FC407EB9`
-- signature: `40F7FC407EB94618`
-- baseline_commit: `a8faac5 Update ARC AGI3 milestone 13 controlled runtime wiring milestone closure artifacts`
+- task_id: `MILESTONE-14-LOCAL-SOLVER-CONTROLLED-RUNTIME-INTEGRATION-PLANNING-5FBA278E35D1`
+- signature: `5FBA278E35D19888`
+- baseline_commit: `537a742 Add ARC AGI3 milestone 14 local solver controlled runtime integration planning`
 - task_verdict: `MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_PLANNING_READY`
 - planning_verdict: `LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_PLANNING_READY_FOR_PLAN_REVIEW`
 - next_stage: `MILESTONE_14_TASK_2_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_PLAN_REVIEW_V1`
