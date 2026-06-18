@@ -2,8 +2,8 @@
 
 Status: `MILESTONE_15_TASK_10_FINAL_CLOSURE_V1_READY`
 Validation: `MILESTONE_15_TASK_10_FINAL_CLOSURE_V1_VALID`
-Signature: `04B0FA38665B3CE8`
-Baseline commit: `ff4aa9f`
+Signature: `BC6F6D21366FDBCB`
+Baseline commit: `d5f2d42`
 
 ## Purpose
 
