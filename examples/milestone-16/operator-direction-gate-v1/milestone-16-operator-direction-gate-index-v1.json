@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-16/operator-direction-gate-v1/milestone-16-operator-direction-gate-manifest-v1.txt",
     "markdown": "examples/milestone-16/operator-direction-gate-v1/milestone-16-operator-direction-gate-v1.md"
   },
-  "baseline_commit": "760ec5a",
+  "baseline_commit": "5f0d51f",
   "gate_decision": "WAIT_FOR_OPERATOR_DIRECTION_NO_IMPLEMENTATION_ALLOWED",
   "gate_verdict": "MILESTONE_16_OPENED_PENDING_EXPLICIT_OPERATOR_DIRECTION",
   "implementation_authorized": false,
@@ -16,7 +16,7 @@
   "previous_stage": "MILESTONE_15_TASK_10_FINAL_CLOSURE_V1",
   "real_submission_allowed": false,
   "runtime_activation_performed": false,
-  "signature": "EE350067D4DA483C",
+  "signature": "CC061B8120F619BA",
   "status": "MILESTONE_16_TASK_1_OPERATOR_DIRECTION_GATE_V1_READY",
   "task_name": "MILESTONE_16_TASK_1_OPERATOR_DIRECTION_GATE_V1",
   "valid": true,

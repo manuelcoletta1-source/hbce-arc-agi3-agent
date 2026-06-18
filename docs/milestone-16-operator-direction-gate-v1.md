@@ -2,8 +2,8 @@
 
 Status: `MILESTONE_16_TASK_1_OPERATOR_DIRECTION_GATE_V1_READY`
 Validation: `MILESTONE_16_TASK_1_OPERATOR_DIRECTION_GATE_V1_VALID`
-Signature: `EE350067D4DA483C`
-Baseline commit: `760ec5a`
+Signature: `CC061B8120F619BA`
+Baseline commit: `5f0d51f`
 
 ## Purpose
 
