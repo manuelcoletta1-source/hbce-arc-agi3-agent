@@ -1,0 +1,23 @@
+{
+  "artifact_paths": {
+    "doc": "docs/milestone-15-implementation-block-closure-review-v1.md",
+    "index": "examples/milestone-15/implementation-block-closure-review-v1/milestone-15-implementation-block-closure-review-index-v1.json",
+    "json": "examples/milestone-15/implementation-block-closure-review-v1/milestone-15-implementation-block-closure-review-v1.json",
+    "manifest": "examples/milestone-15/implementation-block-closure-review-v1/milestone-15-implementation-block-closure-review-manifest-v1.txt",
+    "markdown": "examples/milestone-15/implementation-block-closure-review-v1/milestone-15-implementation-block-closure-review-v1.md"
+  },
+  "baseline_commit": "115a6a9",
+  "implementation_authorization_granted": false,
+  "implementation_authorized": false,
+  "implementation_performed": false,
+  "next_stage": "MILESTONE_15_TASK_10_MILESTONE_15_FINAL_CLOSURE_V1",
+  "previous_stage": "MILESTONE_15_TASK_8_IMPLEMENTATION_AUTHORIZATION_RECORD_V1",
+  "ready_for_milestone_15_final_closure": true,
+  "review_decision": "CLOSE_IMPLEMENTATION_BLOCK_REVIEW_WITH_BLOCK_ACTIVE",
+  "review_verdict": "IMPLEMENTATION_BLOCK_CLOSURE_REVIEW_PASS_BLOCK_STILL_ACTIVE",
+  "signature": "479352991E0AAA9F",
+  "status": "MILESTONE_15_TASK_9_IMPLEMENTATION_BLOCK_CLOSURE_REVIEW_V1_READY",
+  "task_name": "MILESTONE_15_TASK_9_IMPLEMENTATION_BLOCK_CLOSURE_REVIEW_V1",
+  "valid": true,
+  "validation_status": "MILESTONE_15_TASK_9_IMPLEMENTATION_BLOCK_CLOSURE_REVIEW_V1_VALID"
+}
