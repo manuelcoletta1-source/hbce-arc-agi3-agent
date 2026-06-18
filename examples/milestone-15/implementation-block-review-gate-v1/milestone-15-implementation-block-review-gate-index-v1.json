@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-15/implementation-block-review-gate-v1/milestone-15-implementation-block-review-gate-manifest-v1.txt",
     "markdown": "examples/milestone-15/implementation-block-review-gate-v1/milestone-15-implementation-block-review-gate-v1.md"
   },
-  "baseline_commit": "cd005ad",
+  "baseline_commit": "627e557",
   "implementation_authorized": false,
   "implementation_performed": false,
   "next_stage": "MILESTONE_15_TASK_7_IMPLEMENTATION_AUTHORIZATION_DECISION_GATE_V1",
@@ -14,7 +14,7 @@
   "review_gate_decision": "KEEP_IMPLEMENTATION_BLOCKED_PENDING_EXPLICIT_OPERATOR_AUTHORIZATION",
   "review_gate_verdict": "IMPLEMENTATION_BLOCK_REVIEW_PASS_BLOCK_STILL_ACTIVE",
   "runtime_solver_modified": false,
-  "signature": "6A2C73BA4A9D6B2F",
+  "signature": "5BFD88E00AEA1E86",
   "status": "MILESTONE_15_TASK_6_IMPLEMENTATION_BLOCK_REVIEW_GATE_V1_READY",
   "task_name": "MILESTONE_15_TASK_6_IMPLEMENTATION_BLOCK_REVIEW_GATE_V1",
   "valid": true,
