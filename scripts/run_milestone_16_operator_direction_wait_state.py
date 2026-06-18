@@ -1,0 +1,78 @@
+from __future__ import annotations
+
+from hbce_arc_agi3.milestone_16_operator_direction_wait_state import (
+    PIPELINE_READY,
+    write_milestone_16_task_5_operator_direction_wait_state_artifacts,
+)
+
+
+def main() -> int:
+    wait_state, validation, paths = write_milestone_16_task_5_operator_direction_wait_state_artifacts()
+
+    print(PIPELINE_READY)
+    print(wait_state["status"])
+    print(validation["status"])
+    print(wait_state["signature"])
+    print(wait_state["baseline_commit"])
+    print(wait_state["mode"])
+    print(wait_state["wait_state_status"])
+    print(wait_state["wait_state_verdict"])
+    print(wait_state["wait_state_decision"])
+    print(wait_state["block_reason"])
+    print(wait_state["previous_stage"])
+    print(wait_state["next_stage"])
+    print(f"source_task_4_final_baseline_commit={wait_state['source_task_4_final_baseline_commit']}")
+    print(f"source_task_4_final_signature={wait_state['source_task_4_final_signature']}")
+    print(f"wait_state_ready={wait_state['wait_state_ready']}")
+    print(f"wait_state_active={wait_state['wait_state_active']}")
+    print(f"wait_state_closed={wait_state['wait_state_closed']}")
+    print(f"decision_gate_ready={wait_state['decision_gate_ready']}")
+    print(f"decision_gate_open={wait_state['decision_gate_open']}")
+    print(f"decision_gate_blocked={wait_state['decision_gate_blocked']}")
+    print(f"direction_option_count={wait_state['direction_option_count']}")
+    print(f"direction_option_selected={wait_state['direction_option_selected']}")
+    print(f"selected_direction_option_id={wait_state['selected_direction_option_id']}")
+    print(f"selected_direction_option_count={wait_state['selected_direction_option_count']}")
+    print(f"operator_direction_required={wait_state['operator_direction_required']}")
+    print(f"operator_direction_received={wait_state['operator_direction_received']}")
+    print(f"operator_direction_value={wait_state['operator_direction_value']}")
+    print(f"operator_decision_required={wait_state['operator_decision_required']}")
+    print(f"operator_decision_received={wait_state['operator_decision_received']}")
+    print(f"explicit_operator_authorization_required={wait_state['explicit_operator_authorization_required']}")
+    print(f"explicit_operator_authorization_received={wait_state['explicit_operator_authorization_received']}")
+    print(f"implementation_authorization_granted={wait_state['implementation_authorization_granted']}")
+    print(f"implementation_authorized={wait_state['implementation_authorized']}")
+    print(f"implementation_blocked={wait_state['implementation_blocked']}")
+    print(f"implementation_performed={wait_state['implementation_performed']}")
+    print(f"implementation_patch_created={wait_state['implementation_patch_created']}")
+    print(f"implementation_patch_applied={wait_state['implementation_patch_applied']}")
+    print(f"runtime_solver_patch_allowed={wait_state['runtime_solver_patch_allowed']}")
+    print(f"runtime_solver_modified={wait_state['runtime_solver_modified']}")
+    print(f"ranker_runtime_patch_allowed={wait_state['ranker_runtime_patch_allowed']}")
+    print(f"ranker_runtime_modified={wait_state['ranker_runtime_modified']}")
+    print(f"candidate_generator_patch_allowed={wait_state['candidate_generator_patch_allowed']}")
+    print(f"candidate_generator_modified={wait_state['candidate_generator_modified']}")
+    print(f"runtime_wiring_allowed={wait_state['runtime_wiring_allowed']}")
+    print(f"runtime_wiring_performed={wait_state['runtime_wiring_performed']}")
+    print(f"runtime_activation_authorized={wait_state['runtime_activation_authorized']}")
+    print(f"runtime_activation_performed={wait_state['runtime_activation_performed']}")
+    print(f"runtime_execution_allowed={wait_state['runtime_execution_allowed']}")
+    print(f"runtime_execution_performed={wait_state['runtime_execution_performed']}")
+    print(f"real_evaluation_allowed={wait_state['real_evaluation_allowed']}")
+    print(f"real_submission_allowed={wait_state['real_submission_allowed']}")
+    print(f"kaggle_submission_sent={wait_state['kaggle_submission_sent']}")
+    print(f"private_core_exposure={wait_state['private_core_exposure']}")
+    print(f"legal_certification={wait_state['legal_certification']}")
+    print(f"milestone_16_operator_direction_wait_state_check_count={wait_state['milestone_16_operator_direction_wait_state_check_count']}")
+    print(f"milestone_16_operator_direction_wait_state_failure_count={wait_state['milestone_16_operator_direction_wait_state_failure_count']}")
+    print(paths["json"])
+    print(paths["index"])
+    print(paths["manifest"])
+    print(paths["markdown"])
+    print(paths["doc"])
+
+    return 0 if validation["valid"] else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
