@@ -1,0 +1,20 @@
+{
+  "artifact_paths": {
+    "doc": "docs/milestone-14-local-solver-controlled-runtime-integration-implementation-authorization-review-v1.md",
+    "index": "examples/milestone-14/local-solver-controlled-runtime-integration-implementation-authorization-review-v1/milestone-14-local-solver-controlled-runtime-integration-implementation-authorization-review-index-v1.json",
+    "json": "examples/milestone-14/local-solver-controlled-runtime-integration-implementation-authorization-review-v1/milestone-14-local-solver-controlled-runtime-integration-implementation-authorization-review-v1.json",
+    "manifest": "examples/milestone-14/local-solver-controlled-runtime-integration-implementation-authorization-review-v1/milestone-14-local-solver-controlled-runtime-integration-implementation-authorization-review-manifest-v1.txt",
+    "markdown": "examples/milestone-14/local-solver-controlled-runtime-integration-implementation-authorization-review-v1/milestone-14-local-solver-controlled-runtime-integration-implementation-authorization-review-v1.md"
+  },
+  "authorization_status": "NOT_AUTHORIZED",
+  "baseline_commit": "9589d48",
+  "next_stage": "MILESTONE_14_TASK_10_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_CLOSURE_REVIEW_V1",
+  "previous_stage": "MILESTONE_14_TASK_8_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_OPERATOR_APPROVAL_GATE_V1",
+  "qiv_stage": "QIV_V2_4_RUNTIME_CONSTRAINT_LINK_V1",
+  "review_verdict": "IMPLEMENTATION_AUTHORIZATION_DENIED_PENDING_EXPLICIT_OPERATOR_APPROVAL",
+  "signature": "ECB891B949E6DBF4",
+  "status": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1_READY",
+  "task_name": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1",
+  "valid": true,
+  "validation_status": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1_VALID"
+}
