@@ -1,0 +1,24 @@
+{
+  "artifact_paths": {
+    "doc": "docs/milestone-15-implementation-authorization-decision-gate-v1.md",
+    "index": "examples/milestone-15/implementation-authorization-decision-gate-v1/milestone-15-implementation-authorization-decision-gate-index-v1.json",
+    "json": "examples/milestone-15/implementation-authorization-decision-gate-v1/milestone-15-implementation-authorization-decision-gate-v1.json",
+    "manifest": "examples/milestone-15/implementation-authorization-decision-gate-v1/milestone-15-implementation-authorization-decision-gate-manifest-v1.txt",
+    "markdown": "examples/milestone-15/implementation-authorization-decision-gate-v1/milestone-15-implementation-authorization-decision-gate-v1.md"
+  },
+  "baseline_commit": "c70df02",
+  "gate_decision": "DO_NOT_IMPLEMENT_PENDING_EXPLICIT_OPERATOR_AUTHORIZATION",
+  "gate_verdict": "IMPLEMENTATION_AUTHORIZATION_NOT_GRANTED_IMPLEMENTATION_REMAINS_BLOCKED",
+  "implementation_authorization_granted": false,
+  "implementation_authorized": false,
+  "implementation_performed": false,
+  "next_stage": "MILESTONE_15_TASK_8_IMPLEMENTATION_AUTHORIZATION_RECORD_V1",
+  "previous_stage": "MILESTONE_15_TASK_6_IMPLEMENTATION_BLOCK_REVIEW_GATE_V1",
+  "runtime_solver_modified": false,
+  "runtime_wiring_performed": false,
+  "signature": "F3E298264E0C206A",
+  "status": "MILESTONE_15_TASK_7_IMPLEMENTATION_AUTHORIZATION_DECISION_GATE_V1_READY",
+  "task_name": "MILESTONE_15_TASK_7_IMPLEMENTATION_AUTHORIZATION_DECISION_GATE_V1",
+  "valid": true,
+  "validation_status": "MILESTONE_15_TASK_7_IMPLEMENTATION_AUTHORIZATION_DECISION_GATE_V1_VALID"
+}
