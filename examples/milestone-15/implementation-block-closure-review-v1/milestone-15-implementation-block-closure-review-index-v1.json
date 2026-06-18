@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-15/implementation-block-closure-review-v1/milestone-15-implementation-block-closure-review-manifest-v1.txt",
     "markdown": "examples/milestone-15/implementation-block-closure-review-v1/milestone-15-implementation-block-closure-review-v1.md"
   },
-  "baseline_commit": "80d9ed6",
+  "baseline_commit": "4ecb75f",
   "implementation_authorization_granted": false,
   "implementation_authorized": false,
   "implementation_performed": false,
@@ -15,7 +15,7 @@
   "ready_for_milestone_15_final_closure": true,
   "review_decision": "CLOSE_IMPLEMENTATION_BLOCK_REVIEW_WITH_BLOCK_ACTIVE",
   "review_verdict": "IMPLEMENTATION_BLOCK_CLOSURE_REVIEW_PASS_BLOCK_STILL_ACTIVE",
-  "signature": "FD0D4D34D0D38669",
+  "signature": "3409B78DFD78F374",
   "status": "MILESTONE_15_TASK_9_IMPLEMENTATION_BLOCK_CLOSURE_REVIEW_V1_READY",
   "task_name": "MILESTONE_15_TASK_9_IMPLEMENTATION_BLOCK_CLOSURE_REVIEW_V1",
   "valid": true,
