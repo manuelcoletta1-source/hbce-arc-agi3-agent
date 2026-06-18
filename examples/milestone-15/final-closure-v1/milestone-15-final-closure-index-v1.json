@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-15/final-closure-v1/milestone-15-final-closure-manifest-v1.txt",
     "markdown": "examples/milestone-15/final-closure-v1/milestone-15-final-closure-v1.md"
   },
-  "baseline_commit": "d5f2d42",
+  "baseline_commit": "7d010ca",
   "closure_decision": "CLOSE_MILESTONE_15_WITH_IMPLEMENTATION_BLOCK_CONFIRMED",
   "closure_verdict": "MILESTONE_15_CLOSED_IMPLEMENTATION_BLOCK_ACTIVE_NO_RUNTIME_ACTIVATION",
   "implementation_authorized": false,
@@ -16,7 +16,7 @@
   "previous_stage": "MILESTONE_15_TASK_9_IMPLEMENTATION_BLOCK_CLOSURE_REVIEW_V1",
   "real_submission_allowed": false,
   "runtime_activation_performed": false,
-  "signature": "BC6F6D21366FDBCB",
+  "signature": "7D901B580AA49543",
   "status": "MILESTONE_15_TASK_10_FINAL_CLOSURE_V1_READY",
   "task_name": "MILESTONE_15_TASK_10_FINAL_CLOSURE_V1",
   "valid": true,
