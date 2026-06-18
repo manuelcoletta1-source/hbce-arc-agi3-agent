@@ -2,8 +2,8 @@
 
 Status: `MILESTONE_16_TASK_5_OPERATOR_DIRECTION_WAIT_STATE_V1_READY`
 Validation: `MILESTONE_16_TASK_5_OPERATOR_DIRECTION_WAIT_STATE_V1_VALID`
-Signature: `26771F2497DC5AA5`
-Baseline commit: `c8ebcf2`
+Signature: `EC9F02EC0CF5AC8F`
+Baseline commit: `1f5d417`
 
 ## Purpose
 

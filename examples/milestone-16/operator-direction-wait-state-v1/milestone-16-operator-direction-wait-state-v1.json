@@ -8,12 +8,12 @@
     "warnings": []
   },
   "wait_state": {
-    "baseline_commit": "c8ebcf2",
+    "baseline_commit": "1f5d417",
     "block_reason": "TASK_4_DECISION_GATE_CONFIRMED_DIRECTION_BLOCKED",
     "candidate_generator_modified": false,
     "candidate_generator_patch_allowed": false,
     "competitive_score_claim_allowed": false,
-    "created_at_utc": "2026-06-18T18:43:55+00:00",
+    "created_at_utc": "2026-06-18T18:51:56+00:00",
     "decision_gate_blocked": true,
     "decision_gate_open": false,
     "decision_gate_ready": true,
@@ -111,7 +111,7 @@
     "runtime_wiring_performed": false,
     "selected_direction_option_count": 0,
     "selected_direction_option_id": "NONE",
-    "signature": "26771F2497DC5AA5",
+    "signature": "EC9F02EC0CF5AC8F",
     "source_task_3_final_baseline_commit": "38a72a0",
     "source_task_3_final_signature": "BF984E621D7692D6",
     "source_task_4_final_baseline_commit": "36887a0",
