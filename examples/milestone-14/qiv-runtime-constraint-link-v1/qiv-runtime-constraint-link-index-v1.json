@@ -6,11 +6,11 @@
     "manifest": "examples/milestone-14/qiv-runtime-constraint-link-v1/qiv-runtime-constraint-link-manifest-v1.txt",
     "markdown": "examples/milestone-14/qiv-runtime-constraint-link-v1/qiv-runtime-constraint-link-v1.md"
   },
-  "baseline_commit": "40c97f8",
+  "baseline_commit": "c09105e",
   "link_name": "QIV_V2_4_RUNTIME_CONSTRAINT_LINK_V1",
   "next_stage": "MILESTONE_14_TASK_9_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1",
   "previous_stage": "MILESTONE_14_TASK_8_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_OPERATOR_APPROVAL_GATE_V1",
-  "signature": "48446B179671D332",
+  "signature": "F9F238F1EEAAF02B",
   "source_document_filename": "QIV_v2_4_Quadro_Quantistico_Informazionale_dei_Vincoli.pdf",
   "source_document_title": "Quadro Quantistico-Informazionale dei Vincoli v2.4",
   "status": "QIV_V2_4_RUNTIME_CONSTRAINT_LINK_V1_READY",

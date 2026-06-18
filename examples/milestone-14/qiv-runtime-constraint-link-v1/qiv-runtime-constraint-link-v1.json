@@ -1,7 +1,7 @@
 {
   "record": {
-    "baseline_commit": "40c97f8",
-    "created_at_utc": "2026-06-18T11:20:15+00:00",
+    "baseline_commit": "c09105e",
+    "created_at_utc": "2026-06-18T11:22:18+00:00",
     "deterministic": true,
     "example_record": {
       "active_constraints": [
@@ -91,7 +91,7 @@
     "real_submission_allowed": false,
     "runtime_activation_performed": false,
     "runtime_execution_performed": false,
-    "signature": "48446B179671D332",
+    "signature": "F9F238F1EEAAF02B",
     "source_document_filename": "QIV_v2_4_Quadro_Quantistico_Informazionale_dei_Vincoli.pdf",
     "source_document_module": "Programmazione & Addestramento",
     "source_document_title": "Quadro Quantistico-Informazionale dei Vincoli v2.4",
