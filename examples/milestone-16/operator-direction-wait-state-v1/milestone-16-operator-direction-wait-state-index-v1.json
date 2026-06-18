@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-16/operator-direction-wait-state-v1/milestone-16-operator-direction-wait-state-manifest-v1.txt",
     "markdown": "examples/milestone-16/operator-direction-wait-state-v1/milestone-16-operator-direction-wait-state-v1.md"
   },
-  "baseline_commit": "36887a0",
+  "baseline_commit": "c8ebcf2",
   "implementation_authorized": false,
   "next_stage": "MILESTONE_16_TASK_6_OPERATOR_DIRECTION_WAIT_STATE_REVIEW_V1",
   "operator_direction_received": false,
@@ -14,7 +14,7 @@
   "real_submission_allowed": false,
   "runtime_activation_performed": false,
   "selected_direction_option_id": "NONE",
-  "signature": "07BC5CEEAC82D088",
+  "signature": "26771F2497DC5AA5",
   "status": "MILESTONE_16_TASK_5_OPERATOR_DIRECTION_WAIT_STATE_V1_READY",
   "task_name": "MILESTONE_16_TASK_5_OPERATOR_DIRECTION_WAIT_STATE_V1",
   "valid": true,
