@@ -1,12 +1,12 @@
 {
   "record": {
     "authorization_review_denied": true,
-    "baseline_commit": "5bb8cba",
+    "baseline_commit": "3277a42",
     "block_reason": "OPERATOR_APPROVAL_NOT_RECEIVED_IMPLEMENTATION_AUTHORIZATION_DENIED_RUNTIME_REMAINS_INACTIVE",
     "candidate_generator_modified": false,
     "closure_review_passed": true,
     "competitive_score_claim_allowed": false,
-    "created_at_utc": "2026-06-18T11:55:03+00:00",
+    "created_at_utc": "2026-06-18T11:57:46+00:00",
     "deterministic": true,
     "external_api_dependency": false,
     "fail_closed_active": true,
@@ -66,7 +66,7 @@
     "runtime_activation_performed": false,
     "runtime_execution_performed": false,
     "runtime_solver_modified": false,
-    "signature": "6019D7526F1B0B2F",
+    "signature": "05F1CDD559B63B8C",
     "source_authorization_stage": "MILESTONE_14_TASK_9_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1",
     "source_operator_gate_stage": "MILESTONE_14_TASK_8_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_OPERATOR_APPROVAL_GATE_V1",
     "source_qiv_final_baseline_commit": "9589d48",
