@@ -1,11 +1,11 @@
 {
   "record": {
-    "baseline_commit": "cfb476b",
+    "baseline_commit": "8deba8a",
     "block_reason": "TASK_7_DECISION_GATE_CONFIRMED_IMPLEMENTATION_AUTHORIZATION_NOT_GRANTED",
     "candidate_generator_modified": false,
     "candidate_generator_patch_allowed": false,
     "competitive_score_claim_allowed": false,
-    "created_at_utc": "2026-06-18T13:45:34+00:00",
+    "created_at_utc": "2026-06-18T13:48:22+00:00",
     "deterministic": true,
     "explicit_operator_authorization_received": false,
     "explicit_operator_authorization_required": true,
@@ -87,7 +87,7 @@
     "runtime_solver_patch_allowed": false,
     "runtime_wiring_allowed": false,
     "runtime_wiring_performed": false,
-    "signature": "8E25DE9E24A37874",
+    "signature": "C08A4A04B5EBA5C9",
     "source_milestone_14_final_baseline_commit": "f7ee729",
     "source_milestone_14_final_signature": "05F1CDD559B63B8C",
     "source_task_1_final_baseline_commit": "ed48f9c",
