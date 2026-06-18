@@ -2,8 +2,8 @@
 
 Status: `MILESTONE_15_TASK_2_OPERATOR_DECISION_RECORD_V1_READY`
 Validation: `MILESTONE_15_TASK_2_OPERATOR_DECISION_RECORD_V1_VALID`
-Signature: `B1154B3679340799`
-Baseline commit: `5e20cf6`
+Signature: `92DD45142240063F`
+Baseline commit: `8256b97`
 
 ## Purpose
 
