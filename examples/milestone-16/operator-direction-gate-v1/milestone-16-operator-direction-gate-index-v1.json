@@ -1,0 +1,24 @@
+{
+  "artifact_paths": {
+    "doc": "docs/milestone-16-operator-direction-gate-v1.md",
+    "index": "examples/milestone-16/operator-direction-gate-v1/milestone-16-operator-direction-gate-index-v1.json",
+    "json": "examples/milestone-16/operator-direction-gate-v1/milestone-16-operator-direction-gate-v1.json",
+    "manifest": "examples/milestone-16/operator-direction-gate-v1/milestone-16-operator-direction-gate-manifest-v1.txt",
+    "markdown": "examples/milestone-16/operator-direction-gate-v1/milestone-16-operator-direction-gate-v1.md"
+  },
+  "baseline_commit": "5f80a18",
+  "gate_decision": "WAIT_FOR_OPERATOR_DIRECTION_NO_IMPLEMENTATION_ALLOWED",
+  "gate_verdict": "MILESTONE_16_OPENED_PENDING_EXPLICIT_OPERATOR_DIRECTION",
+  "implementation_authorized": false,
+  "milestone_16_direction_status": "PENDING_OPERATOR_DIRECTION",
+  "next_stage": "MILESTONE_16_TASK_2_OPERATOR_DIRECTION_RECORD_V1",
+  "operator_direction_received": false,
+  "previous_stage": "MILESTONE_15_TASK_10_FINAL_CLOSURE_V1",
+  "real_submission_allowed": false,
+  "runtime_activation_performed": false,
+  "signature": "E075120519DE637F",
+  "status": "MILESTONE_16_TASK_1_OPERATOR_DIRECTION_GATE_V1_READY",
+  "task_name": "MILESTONE_16_TASK_1_OPERATOR_DIRECTION_GATE_V1",
+  "valid": true,
+  "validation_status": "MILESTONE_16_TASK_1_OPERATOR_DIRECTION_GATE_V1_VALID"
+}
