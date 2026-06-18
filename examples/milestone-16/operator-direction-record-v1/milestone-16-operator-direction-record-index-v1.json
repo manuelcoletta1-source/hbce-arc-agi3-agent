@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-16/operator-direction-record-v1/milestone-16-operator-direction-record-manifest-v1.txt",
     "markdown": "examples/milestone-16/operator-direction-record-v1/milestone-16-operator-direction-record-v1.md"
   },
-  "baseline_commit": "6393a02",
+  "baseline_commit": "523489f",
   "implementation_authorized": false,
   "next_stage": "MILESTONE_16_TASK_3_DIRECTION_OPTIONS_REVIEW_V1",
   "operator_direction_received": false,
@@ -15,7 +15,7 @@
   "record_decision": "RECORD_PENDING_DIRECTION_NO_RUNTIME_ACTION",
   "record_verdict": "OPERATOR_DIRECTION_NOT_RECEIVED_IMPLEMENTATION_STILL_BLOCKED",
   "runtime_activation_performed": false,
-  "signature": "A64260500EBA3A4C",
+  "signature": "B1B5634892683D57",
   "status": "MILESTONE_16_TASK_2_OPERATOR_DIRECTION_RECORD_V1_READY",
   "task_name": "MILESTONE_16_TASK_2_OPERATOR_DIRECTION_RECORD_V1",
   "valid": true,
