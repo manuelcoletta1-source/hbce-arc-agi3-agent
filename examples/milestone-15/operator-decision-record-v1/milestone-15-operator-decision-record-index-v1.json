@@ -1,0 +1,20 @@
+{
+  "artifact_paths": {
+    "doc": "docs/milestone-15-operator-decision-record-v1.md",
+    "index": "examples/milestone-15/operator-decision-record-v1/milestone-15-operator-decision-record-index-v1.json",
+    "json": "examples/milestone-15/operator-decision-record-v1/milestone-15-operator-decision-record-v1.json",
+    "manifest": "examples/milestone-15/operator-decision-record-v1/milestone-15-operator-decision-record-manifest-v1.txt",
+    "markdown": "examples/milestone-15/operator-decision-record-v1/milestone-15-operator-decision-record-v1.md"
+  },
+  "baseline_commit": "ed48f9c",
+  "next_stage": "MILESTONE_15_TASK_3_OPERATOR_DECISION_AUTHORIZATION_BOUNDARY_V1",
+  "operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "previous_stage": "MILESTONE_15_TASK_1_EXPLICIT_OPERATOR_DECISION_GATE_V1",
+  "record_decision": "RECORD_PENDING_OPERATOR_DECISION_ONLY",
+  "record_verdict": "OPERATOR_DECISION_NOT_RECEIVED_IMPLEMENTATION_STILL_BLOCKED",
+  "signature": "A17EA8635F281F58",
+  "status": "MILESTONE_15_TASK_2_OPERATOR_DECISION_RECORD_V1_READY",
+  "task_name": "MILESTONE_15_TASK_2_OPERATOR_DECISION_RECORD_V1",
+  "valid": true,
+  "validation_status": "MILESTONE_15_TASK_2_OPERATOR_DECISION_RECORD_V1_VALID"
+}
