@@ -1,0 +1,24 @@
+{
+  "artifact_paths": {
+    "doc": "docs/milestone-15-final-closure-v1.md",
+    "index": "examples/milestone-15/final-closure-v1/milestone-15-final-closure-index-v1.json",
+    "json": "examples/milestone-15/final-closure-v1/milestone-15-final-closure-v1.json",
+    "manifest": "examples/milestone-15/final-closure-v1/milestone-15-final-closure-manifest-v1.txt",
+    "markdown": "examples/milestone-15/final-closure-v1/milestone-15-final-closure-v1.md"
+  },
+  "baseline_commit": "ff4aa9f",
+  "closure_decision": "CLOSE_MILESTONE_15_WITH_IMPLEMENTATION_BLOCK_CONFIRMED",
+  "closure_verdict": "MILESTONE_15_CLOSED_IMPLEMENTATION_BLOCK_ACTIVE_NO_RUNTIME_ACTIVATION",
+  "implementation_authorized": false,
+  "implementation_performed": false,
+  "milestone_15_closed": true,
+  "next_stage": "MILESTONE_16_PENDING_OPERATOR_DIRECTION",
+  "previous_stage": "MILESTONE_15_TASK_9_IMPLEMENTATION_BLOCK_CLOSURE_REVIEW_V1",
+  "real_submission_allowed": false,
+  "runtime_activation_performed": false,
+  "signature": "04B0FA38665B3CE8",
+  "status": "MILESTONE_15_TASK_10_FINAL_CLOSURE_V1_READY",
+  "task_name": "MILESTONE_15_TASK_10_FINAL_CLOSURE_V1",
+  "valid": true,
+  "validation_status": "MILESTONE_15_TASK_10_FINAL_CLOSURE_V1_VALID"
+}
