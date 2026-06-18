@@ -1,7 +1,7 @@
 {
   "record": {
     "authorization_review_denied": true,
-    "baseline_commit": "3c77c78",
+    "baseline_commit": "51cfff6",
     "block_reason": "OPERATOR_APPROVAL_NOT_RECEIVED_AND_AUTHORIZATION_REVIEW_DENIED_IMPLEMENTATION",
     "candidate_generator_modified": false,
     "closure_decision": "CLOSE_REVIEW_CHAIN_WITHOUT_IMPLEMENTATION",
@@ -22,7 +22,7 @@
     "closure_status": "CONTROLLED_RUNTIME_INTEGRATION_CLOSURE_REVIEW_READY",
     "closure_verdict": "CONTROLLED_RUNTIME_INTEGRATION_REVIEW_CLOSED_IMPLEMENTATION_STILL_BLOCKED",
     "competitive_score_claim_allowed": false,
-    "created_at_utc": "2026-06-18T11:40:59+00:00",
+    "created_at_utc": "2026-06-18T11:44:59+00:00",
     "deterministic": true,
     "external_api_dependency": false,
     "fail_closed_active": true,
@@ -62,7 +62,7 @@
     "runtime_activation_performed": false,
     "runtime_execution_performed": false,
     "runtime_solver_modified": false,
-    "signature": "67BFB5C2E4ADF5C5",
+    "signature": "18D905E701373134",
     "source_authorization_review_final_baseline_commit": "9a092a5",
     "source_authorization_review_final_signature": "D6D132659FF2406B",
     "source_operator_gate_final_baseline_commit": "f5a263c",
