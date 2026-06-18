@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-16/direction-options-review-v1/milestone-16-direction-options-review-manifest-v1.txt",
     "markdown": "examples/milestone-16/direction-options-review-v1/milestone-16-direction-options-review-v1.md"
   },
-  "baseline_commit": "723759c",
+  "baseline_commit": "064a538",
   "direction_option_count": 5,
   "implementation_authorized": false,
   "next_stage": "MILESTONE_16_TASK_4_OPERATOR_DIRECTION_DECISION_GATE_V1",
@@ -17,7 +17,7 @@
   "review_verdict": "DIRECTION_OPTIONS_REVIEW_READY_NO_OPTION_SELECTED",
   "runtime_activation_performed": false,
   "selected_direction_option_id": "NONE",
-  "signature": "6982DCEE311A2485",
+  "signature": "C78F766353282869",
   "status": "MILESTONE_16_TASK_3_DIRECTION_OPTIONS_REVIEW_V1_READY",
   "task_name": "MILESTONE_16_TASK_3_DIRECTION_OPTIONS_REVIEW_V1",
   "valid": true,
