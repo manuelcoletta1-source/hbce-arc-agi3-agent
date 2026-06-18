@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-14/local-solver-controlled-runtime-integration-operator-approval-gate-v1/milestone-14-local-solver-controlled-runtime-integration-operator-approval-gate-manifest-v1.txt",
     "markdown": "examples/milestone-14/local-solver-controlled-runtime-integration-operator-approval-gate-v1/milestone-14-local-solver-controlled-runtime-integration-operator-approval-gate-v1.md"
   },
-  "baseline_commit": "62e88c8",
+  "baseline_commit": "5184a07",
   "gate_status": "WAITING_FOR_EXPLICIT_OPERATOR_APPROVAL",
   "gate_verdict": "OPERATOR_APPROVAL_GATE_CLOSED_IMPLEMENTATION_NOT_AUTHORIZED",
   "implementation_authorized": false,
@@ -14,7 +14,7 @@
   "next_stage": "MILESTONE_14_TASK_9_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1",
   "operator_approval_received": false,
   "operator_approval_required": true,
-  "signature": "1E3FCB4BE0F8744A",
+  "signature": "3053973DF988BEE5",
   "source_decision_baseline_commit": "0f19749",
   "source_decision_signature": "12B5C74AFD5B5B49",
   "status": "MILESTONE_14_LOCAL_SOLVER_CONTROLLED_RUNTIME_INTEGRATION_OPERATOR_APPROVAL_GATE_V1_READY",
