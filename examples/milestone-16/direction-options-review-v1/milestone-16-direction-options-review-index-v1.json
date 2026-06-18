@@ -1,0 +1,25 @@
+{
+  "artifact_paths": {
+    "doc": "docs/milestone-16-direction-options-review-v1.md",
+    "index": "examples/milestone-16/direction-options-review-v1/milestone-16-direction-options-review-index-v1.json",
+    "json": "examples/milestone-16/direction-options-review-v1/milestone-16-direction-options-review-v1.json",
+    "manifest": "examples/milestone-16/direction-options-review-v1/milestone-16-direction-options-review-manifest-v1.txt",
+    "markdown": "examples/milestone-16/direction-options-review-v1/milestone-16-direction-options-review-v1.md"
+  },
+  "baseline_commit": "723759c",
+  "direction_option_count": 5,
+  "implementation_authorized": false,
+  "next_stage": "MILESTONE_16_TASK_4_OPERATOR_DIRECTION_DECISION_GATE_V1",
+  "operator_direction_received": false,
+  "previous_stage": "MILESTONE_16_TASK_2_OPERATOR_DIRECTION_RECORD_V1",
+  "real_submission_allowed": false,
+  "review_decision": "REVIEW_OPTIONS_NO_OPERATOR_DIRECTION_SELECTED",
+  "review_verdict": "DIRECTION_OPTIONS_REVIEW_READY_NO_OPTION_SELECTED",
+  "runtime_activation_performed": false,
+  "selected_direction_option_id": "NONE",
+  "signature": "6982DCEE311A2485",
+  "status": "MILESTONE_16_TASK_3_DIRECTION_OPTIONS_REVIEW_V1_READY",
+  "task_name": "MILESTONE_16_TASK_3_DIRECTION_OPTIONS_REVIEW_V1",
+  "valid": true,
+  "validation_status": "MILESTONE_16_TASK_3_DIRECTION_OPTIONS_REVIEW_V1_VALID"
+}
