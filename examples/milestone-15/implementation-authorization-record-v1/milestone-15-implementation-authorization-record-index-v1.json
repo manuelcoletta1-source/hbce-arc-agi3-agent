@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-15/implementation-authorization-record-v1/milestone-15-implementation-authorization-record-manifest-v1.txt",
     "markdown": "examples/milestone-15/implementation-authorization-record-v1/milestone-15-implementation-authorization-record-v1.md"
   },
-  "baseline_commit": "73a7fbd",
+  "baseline_commit": "cfb476b",
   "implementation_authorization_granted": false,
   "implementation_authorization_recorded_as_granted": false,
   "implementation_authorized": false,
@@ -15,7 +15,7 @@
   "previous_stage": "MILESTONE_15_TASK_7_IMPLEMENTATION_AUTHORIZATION_DECISION_GATE_V1",
   "record_decision": "RECORD_NO_IMPLEMENTATION_AUTHORIZATION_GRANTED",
   "record_verdict": "IMPLEMENTATION_AUTHORIZATION_NOT_RECORDED_AS_GRANTED",
-  "signature": "BDD9134E900A000D",
+  "signature": "8E25DE9E24A37874",
   "status": "MILESTONE_15_TASK_8_IMPLEMENTATION_AUTHORIZATION_RECORD_V1_READY",
   "task_name": "MILESTONE_15_TASK_8_IMPLEMENTATION_AUTHORIZATION_RECORD_V1",
   "valid": true,
