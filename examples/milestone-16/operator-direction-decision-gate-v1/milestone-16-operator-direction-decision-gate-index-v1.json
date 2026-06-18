@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-16/operator-direction-decision-gate-v1/milestone-16-operator-direction-decision-gate-manifest-v1.txt",
     "markdown": "examples/milestone-16/operator-direction-decision-gate-v1/milestone-16-operator-direction-decision-gate-v1.md"
   },
-  "baseline_commit": "c6fc58b",
+  "baseline_commit": "6d7d874",
   "decision_gate_blocked": true,
   "decision_gate_open": false,
   "gate_decision": "NO_OPERATOR_DIRECTION_SELECTED_IMPLEMENTATION_BLOCKED",
@@ -18,7 +18,7 @@
   "real_submission_allowed": false,
   "runtime_activation_performed": false,
   "selected_direction_option_id": "NONE",
-  "signature": "1F52758B84A11921",
+  "signature": "7A0DD6F0A4F3F4C8",
   "status": "MILESTONE_16_TASK_4_OPERATOR_DIRECTION_DECISION_GATE_V1_READY",
   "task_name": "MILESTONE_16_TASK_4_OPERATOR_DIRECTION_DECISION_GATE_V1",
   "valid": true,
