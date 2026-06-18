@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-15/runtime-activation-authorization-boundary-v1/milestone-15-runtime-activation-authorization-boundary-manifest-v1.txt",
     "markdown": "examples/milestone-15/runtime-activation-authorization-boundary-v1/milestone-15-runtime-activation-authorization-boundary-v1.md"
   },
-  "baseline_commit": "00fe84a",
+  "baseline_commit": "95e3833",
   "boundary_decision": "KEEP_RUNTIME_INACTIVE_AND_IMPLEMENTATION_BLOCKED",
   "boundary_verdict": "RUNTIME_ACTIVATION_NOT_AUTHORIZED_PENDING_EXPLICIT_OPERATOR_DECISION",
   "next_stage": "MILESTONE_15_TASK_5_RUNTIME_ACTIVATION_REVIEW_GATE_V1",
@@ -14,7 +14,7 @@
   "previous_stage": "MILESTONE_15_TASK_3_OPERATOR_DECISION_AUTHORIZATION_BOUNDARY_V1",
   "runtime_activation_authorized": false,
   "runtime_activation_performed": false,
-  "signature": "F332E956C95485B6",
+  "signature": "3DA3C07D68125962",
   "status": "MILESTONE_15_TASK_4_RUNTIME_ACTIVATION_AUTHORIZATION_BOUNDARY_V1_READY",
   "task_name": "MILESTONE_15_TASK_4_RUNTIME_ACTIVATION_AUTHORIZATION_BOUNDARY_V1",
   "valid": true,
