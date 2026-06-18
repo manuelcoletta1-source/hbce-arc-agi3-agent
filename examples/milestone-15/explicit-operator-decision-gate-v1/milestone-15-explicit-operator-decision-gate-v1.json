@@ -1,10 +1,10 @@
 {
   "record": {
-    "baseline_commit": "f7ee729",
+    "baseline_commit": "1e6517d",
     "block_reason": "MILESTONE_14_CLOSED_WITHOUT_RUNTIME_ACTIVATION_OPERATOR_DECISION_REQUIRED",
     "candidate_generator_modified": false,
     "competitive_score_claim_allowed": false,
-    "created_at_utc": "2026-06-18T12:05:41+00:00",
+    "created_at_utc": "2026-06-18T12:12:18+00:00",
     "decision_gate_check_count": 9,
     "decision_gate_checks": [
       "MILESTONE_14_FINAL_CLOSURE_CONFIRMED",
@@ -62,7 +62,7 @@
     "runtime_activation_performed": false,
     "runtime_execution_performed": false,
     "runtime_solver_modified": false,
-    "signature": "7C197C4EAF41A398",
+    "signature": "258AA2292428141D",
     "source_milestone_14_final_baseline_commit": "f7ee729",
     "source_milestone_14_final_closure": "MILESTONE_14_CLOSED_WITHOUT_RUNTIME_ACTIVATION",
     "source_milestone_14_final_signature": "05F1CDD559B63B8C",
