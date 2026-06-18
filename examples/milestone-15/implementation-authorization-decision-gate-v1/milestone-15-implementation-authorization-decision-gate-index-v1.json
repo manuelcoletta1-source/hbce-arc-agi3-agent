@@ -6,7 +6,7 @@
     "manifest": "examples/milestone-15/implementation-authorization-decision-gate-v1/milestone-15-implementation-authorization-decision-gate-manifest-v1.txt",
     "markdown": "examples/milestone-15/implementation-authorization-decision-gate-v1/milestone-15-implementation-authorization-decision-gate-v1.md"
   },
-  "baseline_commit": "5d1cf3f",
+  "baseline_commit": "b144af0",
   "gate_decision": "DO_NOT_IMPLEMENT_PENDING_EXPLICIT_OPERATOR_AUTHORIZATION",
   "gate_verdict": "IMPLEMENTATION_AUTHORIZATION_NOT_GRANTED_IMPLEMENTATION_REMAINS_BLOCKED",
   "implementation_authorization_granted": false,
@@ -16,7 +16,7 @@
   "previous_stage": "MILESTONE_15_TASK_6_IMPLEMENTATION_BLOCK_REVIEW_GATE_V1",
   "runtime_solver_modified": false,
   "runtime_wiring_performed": false,
-  "signature": "E8A1CA77032CA319",
+  "signature": "B2CDE3D0D82C2DD6",
   "status": "MILESTONE_15_TASK_7_IMPLEMENTATION_AUTHORIZATION_DECISION_GATE_V1_READY",
   "task_name": "MILESTONE_15_TASK_7_IMPLEMENTATION_AUTHORIZATION_DECISION_GATE_V1",
   "valid": true,
