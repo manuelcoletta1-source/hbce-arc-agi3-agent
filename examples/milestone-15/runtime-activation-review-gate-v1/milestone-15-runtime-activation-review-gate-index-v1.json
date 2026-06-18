@@ -1,0 +1,21 @@
+{
+  "artifact_paths": {
+    "doc": "docs/milestone-15-runtime-activation-review-gate-v1.md",
+    "index": "examples/milestone-15/runtime-activation-review-gate-v1/milestone-15-runtime-activation-review-gate-index-v1.json",
+    "json": "examples/milestone-15/runtime-activation-review-gate-v1/milestone-15-runtime-activation-review-gate-v1.json",
+    "manifest": "examples/milestone-15/runtime-activation-review-gate-v1/milestone-15-runtime-activation-review-gate-manifest-v1.txt",
+    "markdown": "examples/milestone-15/runtime-activation-review-gate-v1/milestone-15-runtime-activation-review-gate-v1.md"
+  },
+  "baseline_commit": "2e7e02c",
+  "next_stage": "MILESTONE_15_TASK_6_IMPLEMENTATION_BLOCK_REVIEW_GATE_V1",
+  "previous_stage": "MILESTONE_15_TASK_4_RUNTIME_ACTIVATION_AUTHORIZATION_BOUNDARY_V1",
+  "review_gate_decision": "KEEP_RUNTIME_ACTIVATION_BLOCKED_PENDING_EXPLICIT_OPERATOR_AUTHORIZATION",
+  "review_gate_verdict": "RUNTIME_ACTIVATION_REVIEW_PASS_BLOCK_STILL_ACTIVE",
+  "runtime_activation_authorized": false,
+  "runtime_activation_performed": false,
+  "signature": "D5918217E941CFAA",
+  "status": "MILESTONE_15_TASK_5_RUNTIME_ACTIVATION_REVIEW_GATE_V1_READY",
+  "task_name": "MILESTONE_15_TASK_5_RUNTIME_ACTIVATION_REVIEW_GATE_V1",
+  "valid": true,
+  "validation_status": "MILESTONE_15_TASK_5_RUNTIME_ACTIVATION_REVIEW_GATE_V1_VALID"
+}
