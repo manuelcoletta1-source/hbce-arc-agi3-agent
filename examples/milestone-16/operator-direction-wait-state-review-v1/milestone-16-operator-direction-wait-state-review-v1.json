@@ -1,11 +1,11 @@
 {
   "review": {
-    "baseline_commit": "846861a",
+    "baseline_commit": "75987db",
     "block_reason": "TASK_5_WAIT_STATE_CONFIRMED_ACTIVE",
     "candidate_generator_modified": false,
     "candidate_generator_patch_allowed": false,
     "competitive_score_claim_allowed": false,
-    "created_at_utc": "2026-06-18T19:39:01+00:00",
+    "created_at_utc": "2026-06-18T19:47:05+00:00",
     "decision_gate_blocked": true,
     "decision_gate_open": false,
     "decision_gate_ready": true,
@@ -107,7 +107,7 @@
     "runtime_wiring_performed": false,
     "selected_direction_option_count": 0,
     "selected_direction_option_id": "NONE",
-    "signature": "556005C75DD5C434",
+    "signature": "82CD7B4CA93E692A",
     "source_task_4_final_baseline_commit": "36887a0",
     "source_task_4_final_signature": "7A0DD6F0A4F3F4C8",
     "source_task_5_final_baseline_commit": "03acb5a",
