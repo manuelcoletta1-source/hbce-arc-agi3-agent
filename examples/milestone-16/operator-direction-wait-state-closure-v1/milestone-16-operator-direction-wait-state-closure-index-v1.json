@@ -1,0 +1,27 @@
+{
+  "artifact_paths": {
+    "doc": "docs/milestone-16-operator-direction-wait-state-closure-v1.md",
+    "index": "examples/milestone-16/operator-direction-wait-state-closure-v1/milestone-16-operator-direction-wait-state-closure-index-v1.json",
+    "json": "examples/milestone-16/operator-direction-wait-state-closure-v1/milestone-16-operator-direction-wait-state-closure-v1.json",
+    "manifest": "examples/milestone-16/operator-direction-wait-state-closure-v1/milestone-16-operator-direction-wait-state-closure-manifest-v1.txt",
+    "markdown": "examples/milestone-16/operator-direction-wait-state-closure-v1/milestone-16-operator-direction-wait-state-closure-v1.md"
+  },
+  "baseline_commit": "0c60e2f",
+  "closure_decision": "CLOSE_WAIT_STATE_REVIEW_WITH_WAIT_STATE_ACTIVE_NO_IMPLEMENTATION",
+  "closure_verdict": "OPERATOR_DIRECTION_WAIT_STATE_CLOSURE_PASS_REVIEW_CLOSED_WAIT_STATE_STILL_ACTIVE",
+  "implementation_authorized": false,
+  "next_stage": "MILESTONE_16_TASK_8_OPERATOR_DIRECTION_CYCLE_STATUS_V1",
+  "operator_direction_received": false,
+  "previous_stage": "MILESTONE_16_TASK_6_OPERATOR_DIRECTION_WAIT_STATE_REVIEW_V1",
+  "real_submission_allowed": false,
+  "runtime_activation_performed": false,
+  "selected_direction_option_id": "NONE",
+  "signature": "3940900FE30D3C40",
+  "status": "MILESTONE_16_TASK_7_OPERATOR_DIRECTION_WAIT_STATE_CLOSURE_V1_READY",
+  "task_name": "MILESTONE_16_TASK_7_OPERATOR_DIRECTION_WAIT_STATE_CLOSURE_V1",
+  "valid": true,
+  "validation_status": "MILESTONE_16_TASK_7_OPERATOR_DIRECTION_WAIT_STATE_CLOSURE_V1_VALID",
+  "wait_state_active": true,
+  "wait_state_closed": false,
+  "wait_state_closure_closed": true
+}
