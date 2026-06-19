@@ -1,0 +1,21 @@
+{
+  "artifact_count": 5,
+  "decision": "CONFIRM_OPERATOR_DIRECTION_CYCLE_BLOCKED_PENDING_EXPLICIT_OPERATOR_DIRECTION",
+  "decision_gate_blocked": true,
+  "implementation_blocked": true,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "next_stage": "MILESTONE_16_TASK_9_OPERATOR_DIRECTION_CYCLE_STATUS_REVIEW_V1",
+  "operator_direction_received": false,
+  "previous_stage": "MILESTONE_16_TASK_7_OPERATOR_DIRECTION_WAIT_STATE_CLOSURE_V1",
+  "private_core_exposure": false,
+  "real_evaluation_allowed": false,
+  "runtime_execution_allowed": false,
+  "signature": "EEE53EAAFCE839F9",
+  "source_task_7_final_baseline_commit": "9b36b35",
+  "source_task_7_final_signature": "3940900FE30D3C40",
+  "status": "MILESTONE_16_OPERATOR_DIRECTION_CYCLE_STATUS_READY",
+  "task_name": "MILESTONE_16_TASK_8_OPERATOR_DIRECTION_CYCLE_STATUS_V1",
+  "verdict": "OPERATOR_DIRECTION_CYCLE_STATUS_PASS_WAIT_STATE_ACTIVE_DECISION_GATE_BLOCKED",
+  "wait_state_active": true
+}
