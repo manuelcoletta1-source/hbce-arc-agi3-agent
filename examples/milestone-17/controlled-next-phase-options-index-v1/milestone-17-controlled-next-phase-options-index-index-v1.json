@@ -1,0 +1,22 @@
+{
+  "artifact_count": 5,
+  "controlled_option_count": 5,
+  "fail_closed_active": true,
+  "implementation_blocked": true,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "next_stage": "MILESTONE_17_TASK_3_CONTROLLED_NEXT_PHASE_OPTIONS_REVIEW_V1",
+  "operator_direction_value": "PROCEED_TO_CONTROLLED_NEXT_PHASE_PLANNING",
+  "options_index_check_count": 29,
+  "options_index_failure_count": 0,
+  "previous_stage": "MILESTONE_17_TASK_1_OPERATOR_DIRECTION_GATE_INTAKE_V1",
+  "private_core_exposure": false,
+  "real_submission_allowed": false,
+  "runtime_execution_allowed": false,
+  "selected_option_id": "NONE",
+  "signature": "7B8D1D3DF8328852",
+  "source_task_1_final_baseline_commit": "c0c771b",
+  "source_task_1_final_signature": "A5CFBFD5F492BE49",
+  "status": "MILESTONE_17_CONTROLLED_NEXT_PHASE_OPTIONS_INDEX_READY",
+  "task_name": "MILESTONE_17_TASK_2_CONTROLLED_NEXT_PHASE_OPTIONS_INDEX_V1"
+}
