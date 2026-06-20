@@ -1,0 +1,607 @@
+{
+  "task": "MILESTONE_18_TASK_10_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_PROPOSAL_V1",
+  "task_label": "Controlled Technical Candidate Generator Implementation Proposal v1",
+  "milestone_18_name": "MILESTONE_18_CONTROLLED_TECHNICAL_SOLVER_IMPROVEMENT",
+  "status": "MILESTONE_18_TASK_10_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_PROPOSAL_V1_READY",
+  "validation": "MILESTONE_18_TASK_10_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_PROPOSAL_V1_VALID",
+  "verdict": "CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_PROPOSAL_READY_NO_CODE_NO_RUNTIME",
+  "proposal_scope": "CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_PROPOSAL_ONLY",
+  "previous_task": "MILESTONE_18_TASK_9_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_DECISION_GATE_REVIEW_V1",
+  "previous_commit": "51a7e3b",
+  "previous_signature": "3C632A7BAA041134",
+  "source_decision_gate_review_task": "MILESTONE_18_TASK_9_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_DECISION_GATE_REVIEW_V1",
+  "source_decision_gate_review_id": "MILESTONE-18-TASK-9-CANDIDATE-GENERATOR-IMPLEMENTATION-DECISION-GATE-REVIEW-3C632A7BAA041134",
+  "source_decision_gate_review_signature": "3C632A7BAA041134",
+  "source_decision_gate_review_validation": "MILESTONE_18_TASK_9_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_DECISION_GATE_REVIEW_V1_VALID",
+  "source_decision_gate_review_verdict": "CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_DECISION_GATE_REVIEW_PASS_PROPOSAL_STAGE_ALLOWED_NO_IMPLEMENTATION",
+  "next_stage": "MILESTONE_18_TASK_11_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_PROPOSAL_REVIEW_V1",
+  "implementation_proposal_ready": true,
+  "implementation_proposal_created": true,
+  "implementation_proposal_review_required": true,
+  "implementation_code_authorized": false,
+  "implementation_allowed_now": false,
+  "implementation_authorization_scope": "PROPOSAL_ONLY_NO_CODE_NO_RUNTIME",
+  "operator_authorization_required": true,
+  "operator_authorization_received": false,
+  "proposal_item_count": 6,
+  "blocking_issue_count": 0,
+  "boundary_controls": {
+    "implementation_proposal_only": true,
+    "implementation_proposal_created": true,
+    "implementation_proposal_review_required": true,
+    "implementation_proposal_ready": true,
+    "implementation_code_authorization_granted": false,
+    "implementation_code_authorized": false,
+    "implementation_authorization_granted": false,
+    "implementation_authorized": false,
+    "implementation_blocked": true,
+    "implementation_performed": false,
+    "candidate_generator_modified": false,
+    "candidate_generator_wiring_authorized": false,
+    "candidate_generator_runtime_patch_allowed": false,
+    "solver_runtime_modified": false,
+    "solver_patch_execution_allowed": false,
+    "ranker_runtime_modified": false,
+    "runtime_execution_allowed": false,
+    "runtime_execution_performed": false,
+    "real_evaluation_allowed": false,
+    "real_submission_allowed": false,
+    "submission_artifact_created": false,
+    "manual_upload_allowed": false,
+    "upload_performed": false,
+    "kaggle_authentication_allowed": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "competitive_score_claim_allowed": false,
+    "official_score_claim_allowed": false,
+    "private_core_exposure": false,
+    "legal_certification": false,
+    "fail_closed_required": true,
+    "fail_closed_active": true,
+    "local_only": true,
+    "deterministic": true,
+    "public_safe": true,
+    "external_api_dependency": false,
+    "internet_during_eval": false
+  },
+  "proposal_items": [
+    {
+      "proposal_id": "M18-CG-IMPL-PROPOSAL-1",
+      "source_review_item": "M18-CG-IMPL-DECISION-GATE-REV-1",
+      "source_decision_id": "M18-CG-IMPL-DECISION-1",
+      "source_improvement_item": "M18-CGIM-1",
+      "source_limitation_id": "M18-LIM-1",
+      "proposal_area": "solver coverage",
+      "proposal_kind": "CONTROLLED_IMPLEMENTATION_PROPOSAL_ONLY",
+      "design_intent": "Define controlled candidate-family coverage expansion without altering solver runtime behavior.",
+      "deterministic_constraints": [
+        "candidate family IDs must be stable and deterministic",
+        "coverage labels must be diagnostic-only",
+        "no official score claim may be derived from proposal artifacts"
+      ],
+      "test_expectations": [
+        "public-safe local fixtures cover every proposed candidate family",
+        "proposal output remains stable across repeated local runs",
+        "no runtime solver mutation is performed"
+      ],
+      "guardrails": [
+        "no solver runtime modification",
+        "no private core exposure",
+        "no real evaluation execution"
+      ],
+      "implementation_scope": "PROPOSAL_ONLY_NO_CODE_NO_RUNTIME",
+      "proposal_review_required": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false
+    },
+    {
+      "proposal_id": "M18-CG-IMPL-PROPOSAL-2",
+      "source_review_item": "M18-CG-IMPL-DECISION-GATE-REV-2",
+      "source_decision_id": "M18-CG-IMPL-DECISION-2",
+      "source_improvement_item": "M18-CGIM-2",
+      "source_limitation_id": "M18-LIM-2",
+      "proposal_area": "candidate generation",
+      "proposal_kind": "CONTROLLED_IMPLEMENTATION_PROPOSAL_ONLY",
+      "design_intent": "Define deterministic candidate construction rules with stable IDs, ordering, confidence hints, and rejection paths.",
+      "deterministic_constraints": [
+        "candidate ordering must be deterministic",
+        "candidate IDs must be reproducible",
+        "confidence hints must not overwrite ranker evidence"
+      ],
+      "test_expectations": [
+        "candidate list is reproducible across repeated runs",
+        "invalid candidate paths are rejected fail-closed",
+        "confidence hints remain metadata-only"
+      ],
+      "guardrails": [
+        "no runtime patch in this task",
+        "no generated submission artifact",
+        "no hidden network dependency"
+      ],
+      "implementation_scope": "PROPOSAL_ONLY_NO_CODE_NO_RUNTIME",
+      "proposal_review_required": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false
+    },
+    {
+      "proposal_id": "M18-CG-IMPL-PROPOSAL-3",
+      "source_review_item": "M18-CG-IMPL-DECISION-GATE-REV-3",
+      "source_decision_id": "M18-CG-IMPL-DECISION-3",
+      "source_improvement_item": "M18-CGIM-3",
+      "source_limitation_id": "M18-LIM-3",
+      "proposal_area": "ranker evidence",
+      "proposal_kind": "CONTROLLED_IMPLEMENTATION_PROPOSAL_ONLY",
+      "design_intent": "Define ranker-neutral evidence metadata mapping without modifying ranker weights or runtime ranking logic.",
+      "deterministic_constraints": [
+        "ranker inputs must remain unchanged",
+        "evidence metadata must be additive and diagnostic-only",
+        "score claims must remain blocked"
+      ],
+      "test_expectations": [
+        "ranker output compatibility is preserved",
+        "metadata emission is deterministic",
+        "no ranker weight mutation occurs"
+      ],
+      "guardrails": [
+        "no ranker runtime modification",
+        "no competitive score claim",
+        "no official score claim"
+      ],
+      "implementation_scope": "PROPOSAL_ONLY_NO_CODE_NO_RUNTIME",
+      "proposal_review_required": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false
+    },
+    {
+      "proposal_id": "M18-CG-IMPL-PROPOSAL-4",
+      "source_review_item": "M18-CG-IMPL-DECISION-GATE-REV-4",
+      "source_decision_id": "M18-CG-IMPL-DECISION-4",
+      "source_improvement_item": "M18-CGIM-4",
+      "source_limitation_id": "M18-LIM-4",
+      "proposal_area": "local diagnostics",
+      "proposal_kind": "CONTROLLED_IMPLEMENTATION_PROPOSAL_ONLY",
+      "design_intent": "Define public-safe diagnostic fixtures and regression guards for future controlled implementation review.",
+      "deterministic_constraints": [
+        "fixtures must be local-only",
+        "fixtures must contain no private datasets",
+        "diagnostic outputs must be deterministic"
+      ],
+      "test_expectations": [
+        "fixture manifest validates expected cases",
+        "regression guard blocks missing fixture coverage",
+        "local-only execution remains enforced"
+      ],
+      "guardrails": [
+        "no external API dependency",
+        "no internet during evaluation",
+        "no private dataset exposure"
+      ],
+      "implementation_scope": "PROPOSAL_ONLY_NO_CODE_NO_RUNTIME",
+      "proposal_review_required": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false
+    },
+    {
+      "proposal_id": "M18-CG-IMPL-PROPOSAL-5",
+      "source_review_item": "M18-CG-IMPL-DECISION-GATE-REV-5",
+      "source_decision_id": "M18-CG-IMPL-DECISION-5",
+      "source_improvement_item": "M18-CGIM-5",
+      "source_limitation_id": "M18-LIM-5",
+      "proposal_area": "submission discipline",
+      "proposal_kind": "CONTROLLED_IMPLEMENTATION_PROPOSAL_ONLY",
+      "design_intent": "Define separation rules between candidate artifacts and submission artifacts.",
+      "deterministic_constraints": [
+        "candidate artifacts must not become submission.json",
+        "real submission must remain blocked",
+        "manual upload must remain blocked"
+      ],
+      "test_expectations": [
+        "candidate artifact generation is distinguishable from submission generation",
+        "submission path remains disabled",
+        "Kaggle authentication remains blocked"
+      ],
+      "guardrails": [
+        "no submission.json creation",
+        "no Kaggle authentication",
+        "no Kaggle submission"
+      ],
+      "implementation_scope": "PROPOSAL_ONLY_NO_CODE_NO_RUNTIME",
+      "proposal_review_required": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false
+    },
+    {
+      "proposal_id": "M18-CG-IMPL-PROPOSAL-6",
+      "source_review_item": "M18-CG-IMPL-DECISION-GATE-REV-6",
+      "source_decision_id": "M18-CG-IMPL-DECISION-6",
+      "source_improvement_item": "M18-CGIM-6",
+      "source_limitation_id": "M18-LIM-6",
+      "proposal_area": "authorization boundary",
+      "proposal_kind": "CONTROLLED_IMPLEMENTATION_PROPOSAL_ONLY",
+      "design_intent": "Define the authorization boundary for any future implementation patch and keep fail-closed active.",
+      "deterministic_constraints": [
+        "operator authorization must be explicit",
+        "implementation review must pass before code changes",
+        "fail-closed must remain active until a separate implementation authorization step"
+      ],
+      "test_expectations": [
+        "proposal records explicit authorization requirements",
+        "implementation remains blocked",
+        "boundary controls are all validated"
+      ],
+      "guardrails": [
+        "no implicit authorization",
+        "no runtime execution",
+        "no legal certification claim"
+      ],
+      "implementation_scope": "PROPOSAL_ONLY_NO_CODE_NO_RUNTIME",
+      "proposal_review_required": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false
+    }
+  ],
+  "acceptance_gates": [
+    {
+      "gate_id": "M18-T10-GATE-001",
+      "name": "previous_task_matches_task_9",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-002",
+      "name": "previous_commit_matches_task_9_commit",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-003",
+      "name": "previous_signature_matches_task_9_signature",
+      "expected": "3C632A7BAA041134",
+      "actual": "3C632A7BAA041134",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-004",
+      "name": "source_decision_gate_review_valid",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-005",
+      "name": "source_allows_next_proposal_stage",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-006",
+      "name": "source_does_not_authorize_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-007",
+      "name": "six_proposal_items_created",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-008",
+      "name": "all_proposal_items_are_proposal_only",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-009",
+      "name": "all_proposal_items_require_review",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-010",
+      "name": "no_proposal_item_authorizes_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-011",
+      "name": "no_proposal_item_authorizes_runtime",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-012",
+      "name": "no_proposal_item_authorizes_real_submission",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-013",
+      "name": "implementation_proposal_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-014",
+      "name": "implementation_proposal_created",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-015",
+      "name": "implementation_proposal_review_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-016",
+      "name": "implementation_proposal_ready",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-017",
+      "name": "implementation_code_authorization_granted",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-018",
+      "name": "implementation_code_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-019",
+      "name": "implementation_authorization_granted",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-020",
+      "name": "implementation_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-021",
+      "name": "implementation_blocked",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-022",
+      "name": "implementation_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-023",
+      "name": "candidate_generator_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-024",
+      "name": "candidate_generator_wiring_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-025",
+      "name": "candidate_generator_runtime_patch_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-026",
+      "name": "solver_runtime_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-027",
+      "name": "solver_patch_execution_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-028",
+      "name": "ranker_runtime_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-029",
+      "name": "runtime_execution_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-030",
+      "name": "runtime_execution_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-031",
+      "name": "real_evaluation_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-032",
+      "name": "real_submission_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-033",
+      "name": "submission_artifact_created",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-034",
+      "name": "manual_upload_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-035",
+      "name": "upload_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-036",
+      "name": "kaggle_authentication_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-037",
+      "name": "kaggle_authentication_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-038",
+      "name": "kaggle_submission_sent",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-039",
+      "name": "competitive_score_claim_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-040",
+      "name": "official_score_claim_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-041",
+      "name": "private_core_exposure",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-042",
+      "name": "legal_certification",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-043",
+      "name": "fail_closed_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-044",
+      "name": "fail_closed_active",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-045",
+      "name": "local_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-046",
+      "name": "deterministic",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-047",
+      "name": "public_safe",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-048",
+      "name": "external_api_dependency",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-049",
+      "name": "internet_during_eval",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-050",
+      "name": "M18-CG-IMPL-PROPOSAL-1_proposal_only_no_runtime",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-051",
+      "name": "M18-CG-IMPL-PROPOSAL-2_proposal_only_no_runtime",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-052",
+      "name": "M18-CG-IMPL-PROPOSAL-3_proposal_only_no_runtime",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-053",
+      "name": "M18-CG-IMPL-PROPOSAL-4_proposal_only_no_runtime",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-054",
+      "name": "M18-CG-IMPL-PROPOSAL-5_proposal_only_no_runtime",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T10-GATE-055",
+      "name": "M18-CG-IMPL-PROPOSAL-6_proposal_only_no_runtime",
+      "passed": true
+    }
+  ],
+  "acceptance_gate_count": 55,
+  "acceptance_gate_failure_count": 0,
+  "acceptance_gate_failures": [],
+  "signature": "A2BE24B5965B838E",
+  "implementation_proposal_id": "MILESTONE-18-TASK-10-CANDIDATE-GENERATOR-IMPLEMENTATION-PROPOSAL-A2BE24B5965B838E"
+}
