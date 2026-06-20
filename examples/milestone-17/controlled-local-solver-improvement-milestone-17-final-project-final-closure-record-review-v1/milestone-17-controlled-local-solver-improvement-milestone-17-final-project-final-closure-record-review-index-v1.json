@@ -1,0 +1,23 @@
+{
+  "artifact_count": 5,
+  "controlled_local_solver_improvement_milestone_17_project_final_closure_record_reviewed": true,
+  "fail_closed_active": true,
+  "final_project_final_closure_record_review_gate_count": 87,
+  "final_project_final_closure_record_review_gate_failure_count": 0,
+  "final_project_final_closure_record_review_scope": "REVIEW_FINAL_PROJECT_FINAL_CLOSURE_RECORD_ONLY",
+  "implementation_blocked": true,
+  "kaggle_submission_sent": false,
+  "legal_certification": false,
+  "milestone_17_final_project_final_closure_record_reviewed": true,
+  "next_stage": "MILESTONE_17_TASK_63_CONTROLLED_LOCAL_SOLVER_IMPROVEMENT_MILESTONE_17_FINAL_PROJECT_FINAL_CLOSURE_RECORD_REVIEW_CLOSURE_V1",
+  "official_score_claim_allowed": false,
+  "previous_stage": "MILESTONE_17_TASK_61_CONTROLLED_LOCAL_SOLVER_IMPROVEMENT_MILESTONE_17_FINAL_PROJECT_FINAL_CLOSURE_RECORD_V1",
+  "private_core_exposure": false,
+  "reviewed_final_project_final_closure_record_stage_count": 51,
+  "runtime_execution_allowed": false,
+  "signature": "20625029F9D7D827",
+  "source_task_61_final_baseline_commit": "050e8b8",
+  "source_task_61_final_signature": "99070318A707EDE5",
+  "status": "MILESTONE_17_CONTROLLED_LOCAL_SOLVER_IMPROVEMENT_FINAL_PROJECT_FINAL_CLOSURE_RECORD_REVIEW_READY",
+  "task_name": "MILESTONE_17_TASK_62_CONTROLLED_LOCAL_SOLVER_IMPROVEMENT_MILESTONE_17_FINAL_PROJECT_FINAL_CLOSURE_RECORD_REVIEW_V1"
+}
