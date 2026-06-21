@@ -1,0 +1,906 @@
+{
+  "task": "MILESTONE_18_TASK_27_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_REVIEW_V1",
+  "task_label": "Controlled Technical Candidate Generator Implementation Operator Decision Value Record Review v1",
+  "milestone_18_name": "MILESTONE_18_CONTROLLED_TECHNICAL_SOLVER_IMPROVEMENT",
+  "status": "MILESTONE_18_TASK_27_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_REVIEW_V1_READY",
+  "validation": "MILESTONE_18_TASK_27_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_REVIEW_V1_VALID",
+  "verdict": "CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_REVIEW_PASS_SELECTION_AUTHORIZATION_GATE_REQUIRED_NO_CODE",
+  "review_scope": "CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_REVIEW_ONLY",
+  "previous_task": "MILESTONE_18_TASK_26_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_V1",
+  "previous_commit": "af84efc",
+  "previous_signature": "586D185BB81DF250",
+  "source_operator_decision_value_record_task": "MILESTONE_18_TASK_26_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_V1",
+  "source_operator_decision_value_record_id": "MILESTONE-18-TASK-26-CANDIDATE-GENERATOR-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-586D185BB81DF250",
+  "source_operator_decision_value_record_signature": "586D185BB81DF250",
+  "source_operator_decision_value_record_validation": "MILESTONE_18_TASK_26_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_V1_VALID",
+  "source_operator_decision_value_record_verdict": "CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_CREATED_PENDING_EXPLICIT_OPERATOR_VALUE_NO_CODE",
+  "next_stage": "MILESTONE_18_TASK_28_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_AUTHORIZATION_GATE_V1",
+  "operator_decision_value_record_review_ready": true,
+  "operator_decision_value_record_review_passed": true,
+  "operator_decision_value_record_confirmed": true,
+  "operator_decision_selection_authorization_gate_required": true,
+  "operator_decision_selection_authorization_gate_allowed_next": true,
+  "operator_decision_value_required": true,
+  "operator_decision_value_received": false,
+  "operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "operator_decision_value_selected": false,
+  "operator_decision_required": true,
+  "operator_decision_received": false,
+  "operator_decision_selection_required": true,
+  "operator_decision_selection_received": false,
+  "operator_decision_selection_value": "PENDING_EXPLICIT_OPERATOR_DECISION_SELECTION",
+  "allowed_operator_decision_values": [
+    "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+    "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+    "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+    "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+    "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+  ],
+  "operator_authorization_required": true,
+  "operator_authorization_received": false,
+  "explicit_operator_authorization_received": false,
+  "implementation_authorization_candidate_confirmed": true,
+  "implementation_code_authorized": false,
+  "implementation_allowed_now": false,
+  "implementation_authorization_scope": "OPERATOR_DECISION_VALUE_RECORD_REVIEW_ONLY_PENDING_SELECTION_AUTHORIZATION_GATE_NO_CODE_NO_RUNTIME",
+  "review_item_count": 6,
+  "confirmed_review_item_count": 6,
+  "blocking_issue_count": 0,
+  "boundary_controls": {
+    "operator_decision_value_record_review_only": true,
+    "operator_decision_value_record_confirmed": true,
+    "operator_decision_value_record_review_passed": true,
+    "operator_decision_selection_authorization_gate_required": true,
+    "operator_decision_selection_authorization_gate_created": false,
+    "operator_decision_selection_authorization_gate_allowed_next": true,
+    "operator_decision_value_required": true,
+    "operator_decision_value_received": false,
+    "operator_decision_value_selected": false,
+    "operator_decision_value_pending": true,
+    "operator_decision_required": true,
+    "operator_decision_received": false,
+    "operator_decision_selection_required": true,
+    "operator_decision_selection_received": false,
+    "operator_decision_selection_value_normalized": true,
+    "operator_authorization_required": true,
+    "operator_authorization_received": false,
+    "explicit_operator_authorization_received": false,
+    "implementation_authorization_candidate_confirmed": true,
+    "implementation_authorization_granted": false,
+    "implementation_code_authorization_granted": false,
+    "implementation_code_authorized": false,
+    "implementation_authorized": false,
+    "implementation_blocked": true,
+    "implementation_performed": false,
+    "candidate_generator_modified": false,
+    "candidate_generator_wiring_authorized": false,
+    "candidate_generator_runtime_patch_allowed": false,
+    "solver_runtime_modified": false,
+    "solver_patch_execution_allowed": false,
+    "ranker_runtime_modified": false,
+    "runtime_execution_allowed": false,
+    "runtime_execution_performed": false,
+    "real_evaluation_allowed": false,
+    "real_submission_allowed": false,
+    "submission_artifact_created": false,
+    "manual_upload_allowed": false,
+    "upload_performed": false,
+    "kaggle_authentication_allowed": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "competitive_score_claim_allowed": false,
+    "official_score_claim_allowed": false,
+    "private_core_exposure": false,
+    "legal_certification": false,
+    "fail_closed_required": true,
+    "fail_closed_active": true,
+    "local_only": true,
+    "deterministic": true,
+    "public_safe": true,
+    "external_api_dependency": false,
+    "internet_during_eval": false
+  },
+  "review_items": [
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-1",
+      "source_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-1",
+      "source_operator_decision_value_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-REV-1",
+      "source_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-1",
+      "source_operator_decision_selection_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-REV-1",
+      "source_operator_decision_selection_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-1",
+      "source_operator_decision_selection_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-REV-1",
+      "source_operator_decision_selection_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-1",
+      "source_operator_decision_record_item": "M18-CG-IMPL-OPERATOR-DECISION-RECORD-1",
+      "source_operator_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-GATE-1",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-1",
+      "source_improvement_item": "M18-CGIM-1",
+      "source_limitation_id": "M18-LIM-1",
+      "review_area": "solver coverage",
+      "review_decision": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_SELECTION_AUTHORIZATION_GATE",
+      "review_effect": "NEXT_OPERATOR_DECISION_SELECTION_AUTHORIZATION_GATE_REQUIRED_NO_VALUE_SELECTED_NO_CODE_IMPLEMENTATION",
+      "operator_decision_value_record_status_confirmed": "OPERATOR_DECISION_VALUE_RECORD_CREATED_PENDING_EXPLICIT_OPERATOR_VALUE",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "operator_decision_selection_authorization_gate_required": true,
+      "operator_decision_selection_authorization_gate_allowed_next": true,
+      "operator_decision_value_required_confirmed": true,
+      "operator_decision_value_received_confirmed_false": true,
+      "operator_decision_value_pending_confirmed": true,
+      "operator_decision_value_selected_confirmed_false": true,
+      "operator_decision_required_confirmed": true,
+      "operator_decision_received_confirmed_false": true,
+      "operator_decision_selection_required_confirmed": true,
+      "operator_decision_selection_received_confirmed_false": true,
+      "operator_decision_selection_value_pending_confirmed": true,
+      "explicit_operator_authorization_received_confirmed_false": true,
+      "implementation_authorization_candidate_confirmed": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-2",
+      "source_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-2",
+      "source_operator_decision_value_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-REV-2",
+      "source_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-2",
+      "source_operator_decision_selection_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-REV-2",
+      "source_operator_decision_selection_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-2",
+      "source_operator_decision_selection_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-REV-2",
+      "source_operator_decision_selection_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-2",
+      "source_operator_decision_record_item": "M18-CG-IMPL-OPERATOR-DECISION-RECORD-2",
+      "source_operator_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-GATE-2",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-2",
+      "source_improvement_item": "M18-CGIM-2",
+      "source_limitation_id": "M18-LIM-2",
+      "review_area": "candidate generation",
+      "review_decision": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_SELECTION_AUTHORIZATION_GATE",
+      "review_effect": "NEXT_OPERATOR_DECISION_SELECTION_AUTHORIZATION_GATE_REQUIRED_NO_VALUE_SELECTED_NO_CODE_IMPLEMENTATION",
+      "operator_decision_value_record_status_confirmed": "OPERATOR_DECISION_VALUE_RECORD_CREATED_PENDING_EXPLICIT_OPERATOR_VALUE",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "operator_decision_selection_authorization_gate_required": true,
+      "operator_decision_selection_authorization_gate_allowed_next": true,
+      "operator_decision_value_required_confirmed": true,
+      "operator_decision_value_received_confirmed_false": true,
+      "operator_decision_value_pending_confirmed": true,
+      "operator_decision_value_selected_confirmed_false": true,
+      "operator_decision_required_confirmed": true,
+      "operator_decision_received_confirmed_false": true,
+      "operator_decision_selection_required_confirmed": true,
+      "operator_decision_selection_received_confirmed_false": true,
+      "operator_decision_selection_value_pending_confirmed": true,
+      "explicit_operator_authorization_received_confirmed_false": true,
+      "implementation_authorization_candidate_confirmed": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-3",
+      "source_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-3",
+      "source_operator_decision_value_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-REV-3",
+      "source_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-3",
+      "source_operator_decision_selection_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-REV-3",
+      "source_operator_decision_selection_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-3",
+      "source_operator_decision_selection_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-REV-3",
+      "source_operator_decision_selection_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-3",
+      "source_operator_decision_record_item": "M18-CG-IMPL-OPERATOR-DECISION-RECORD-3",
+      "source_operator_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-GATE-3",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-3",
+      "source_improvement_item": "M18-CGIM-3",
+      "source_limitation_id": "M18-LIM-3",
+      "review_area": "ranker evidence",
+      "review_decision": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_SELECTION_AUTHORIZATION_GATE",
+      "review_effect": "NEXT_OPERATOR_DECISION_SELECTION_AUTHORIZATION_GATE_REQUIRED_NO_VALUE_SELECTED_NO_CODE_IMPLEMENTATION",
+      "operator_decision_value_record_status_confirmed": "OPERATOR_DECISION_VALUE_RECORD_CREATED_PENDING_EXPLICIT_OPERATOR_VALUE",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "operator_decision_selection_authorization_gate_required": true,
+      "operator_decision_selection_authorization_gate_allowed_next": true,
+      "operator_decision_value_required_confirmed": true,
+      "operator_decision_value_received_confirmed_false": true,
+      "operator_decision_value_pending_confirmed": true,
+      "operator_decision_value_selected_confirmed_false": true,
+      "operator_decision_required_confirmed": true,
+      "operator_decision_received_confirmed_false": true,
+      "operator_decision_selection_required_confirmed": true,
+      "operator_decision_selection_received_confirmed_false": true,
+      "operator_decision_selection_value_pending_confirmed": true,
+      "explicit_operator_authorization_received_confirmed_false": true,
+      "implementation_authorization_candidate_confirmed": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-4",
+      "source_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-4",
+      "source_operator_decision_value_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-REV-4",
+      "source_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-4",
+      "source_operator_decision_selection_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-REV-4",
+      "source_operator_decision_selection_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-4",
+      "source_operator_decision_selection_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-REV-4",
+      "source_operator_decision_selection_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-4",
+      "source_operator_decision_record_item": "M18-CG-IMPL-OPERATOR-DECISION-RECORD-4",
+      "source_operator_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-GATE-4",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-4",
+      "source_improvement_item": "M18-CGIM-4",
+      "source_limitation_id": "M18-LIM-4",
+      "review_area": "local diagnostics",
+      "review_decision": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_SELECTION_AUTHORIZATION_GATE",
+      "review_effect": "NEXT_OPERATOR_DECISION_SELECTION_AUTHORIZATION_GATE_REQUIRED_NO_VALUE_SELECTED_NO_CODE_IMPLEMENTATION",
+      "operator_decision_value_record_status_confirmed": "OPERATOR_DECISION_VALUE_RECORD_CREATED_PENDING_EXPLICIT_OPERATOR_VALUE",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "operator_decision_selection_authorization_gate_required": true,
+      "operator_decision_selection_authorization_gate_allowed_next": true,
+      "operator_decision_value_required_confirmed": true,
+      "operator_decision_value_received_confirmed_false": true,
+      "operator_decision_value_pending_confirmed": true,
+      "operator_decision_value_selected_confirmed_false": true,
+      "operator_decision_required_confirmed": true,
+      "operator_decision_received_confirmed_false": true,
+      "operator_decision_selection_required_confirmed": true,
+      "operator_decision_selection_received_confirmed_false": true,
+      "operator_decision_selection_value_pending_confirmed": true,
+      "explicit_operator_authorization_received_confirmed_false": true,
+      "implementation_authorization_candidate_confirmed": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-5",
+      "source_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-5",
+      "source_operator_decision_value_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-REV-5",
+      "source_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-5",
+      "source_operator_decision_selection_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-REV-5",
+      "source_operator_decision_selection_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-5",
+      "source_operator_decision_selection_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-REV-5",
+      "source_operator_decision_selection_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-5",
+      "source_operator_decision_record_item": "M18-CG-IMPL-OPERATOR-DECISION-RECORD-5",
+      "source_operator_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-GATE-5",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-5",
+      "source_improvement_item": "M18-CGIM-5",
+      "source_limitation_id": "M18-LIM-5",
+      "review_area": "submission discipline",
+      "review_decision": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_SELECTION_AUTHORIZATION_GATE",
+      "review_effect": "NEXT_OPERATOR_DECISION_SELECTION_AUTHORIZATION_GATE_REQUIRED_NO_VALUE_SELECTED_NO_CODE_IMPLEMENTATION",
+      "operator_decision_value_record_status_confirmed": "OPERATOR_DECISION_VALUE_RECORD_CREATED_PENDING_EXPLICIT_OPERATOR_VALUE",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "operator_decision_selection_authorization_gate_required": true,
+      "operator_decision_selection_authorization_gate_allowed_next": true,
+      "operator_decision_value_required_confirmed": true,
+      "operator_decision_value_received_confirmed_false": true,
+      "operator_decision_value_pending_confirmed": true,
+      "operator_decision_value_selected_confirmed_false": true,
+      "operator_decision_required_confirmed": true,
+      "operator_decision_received_confirmed_false": true,
+      "operator_decision_selection_required_confirmed": true,
+      "operator_decision_selection_received_confirmed_false": true,
+      "operator_decision_selection_value_pending_confirmed": true,
+      "explicit_operator_authorization_received_confirmed_false": true,
+      "implementation_authorization_candidate_confirmed": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-6",
+      "source_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-6",
+      "source_operator_decision_value_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-REV-6",
+      "source_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-GATE-6",
+      "source_operator_decision_selection_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-REV-6",
+      "source_operator_decision_selection_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-RECORD-6",
+      "source_operator_decision_selection_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-REV-6",
+      "source_operator_decision_selection_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-GATE-6",
+      "source_operator_decision_record_item": "M18-CG-IMPL-OPERATOR-DECISION-RECORD-6",
+      "source_operator_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-GATE-6",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-6",
+      "source_improvement_item": "M18-CGIM-6",
+      "source_limitation_id": "M18-LIM-6",
+      "review_area": "authorization boundary",
+      "review_decision": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_SELECTION_AUTHORIZATION_GATE",
+      "review_effect": "NEXT_OPERATOR_DECISION_SELECTION_AUTHORIZATION_GATE_REQUIRED_NO_VALUE_SELECTED_NO_CODE_IMPLEMENTATION",
+      "operator_decision_value_record_status_confirmed": "OPERATOR_DECISION_VALUE_RECORD_CREATED_PENDING_EXPLICIT_OPERATOR_VALUE",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "operator_decision_selection_authorization_gate_required": true,
+      "operator_decision_selection_authorization_gate_allowed_next": true,
+      "operator_decision_value_required_confirmed": true,
+      "operator_decision_value_received_confirmed_false": true,
+      "operator_decision_value_pending_confirmed": true,
+      "operator_decision_value_selected_confirmed_false": true,
+      "operator_decision_required_confirmed": true,
+      "operator_decision_received_confirmed_false": true,
+      "operator_decision_selection_required_confirmed": true,
+      "operator_decision_selection_received_confirmed_false": true,
+      "operator_decision_selection_value_pending_confirmed": true,
+      "explicit_operator_authorization_received_confirmed_false": true,
+      "implementation_authorization_candidate_confirmed": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    }
+  ],
+  "acceptance_gates": [
+    {
+      "gate_id": "M18-T27-GATE-001",
+      "name": "previous_task_matches_task_26",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-002",
+      "name": "previous_commit_matches_task_26",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-003",
+      "name": "previous_signature_matches_task_26",
+      "expected": "586D185BB81DF250",
+      "actual": "586D185BB81DF250",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-004",
+      "name": "source_value_record_valid",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-005",
+      "name": "source_value_record_created",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-006",
+      "name": "source_value_record_requires_review",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-007",
+      "name": "source_value_record_not_passed_yet",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-008",
+      "name": "source_value_required_but_not_received",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-009",
+      "name": "source_value_pending",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-010",
+      "name": "source_value_not_selected",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-011",
+      "name": "source_selection_value_still_pending",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-012",
+      "name": "source_allowed_operator_decision_values_confirmed",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-013",
+      "name": "source_explicit_authorization_not_received",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-014",
+      "name": "source_does_not_authorize_code_runtime_submission",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-015",
+      "name": "six_value_record_review_items_created",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-016",
+      "name": "all_review_items_confirm_selection_authorization_gate_required",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-017",
+      "name": "all_review_items_confirm_allowed_values",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-018",
+      "name": "all_review_items_keep_value_pending",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-019",
+      "name": "all_review_items_keep_selection_pending",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-020",
+      "name": "all_review_items_block_code_runtime_submission",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-021",
+      "name": "operator_decision_value_record_review_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-022",
+      "name": "operator_decision_value_record_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-023",
+      "name": "operator_decision_value_record_review_passed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-024",
+      "name": "operator_decision_selection_authorization_gate_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-025",
+      "name": "operator_decision_selection_authorization_gate_created",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-026",
+      "name": "operator_decision_selection_authorization_gate_allowed_next",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-027",
+      "name": "operator_decision_value_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-028",
+      "name": "operator_decision_value_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-029",
+      "name": "operator_decision_value_selected",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-030",
+      "name": "operator_decision_value_pending",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-031",
+      "name": "operator_decision_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-032",
+      "name": "operator_decision_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-033",
+      "name": "operator_decision_selection_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-034",
+      "name": "operator_decision_selection_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-035",
+      "name": "operator_decision_selection_value_normalized",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-036",
+      "name": "operator_authorization_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-037",
+      "name": "operator_authorization_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-038",
+      "name": "explicit_operator_authorization_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-039",
+      "name": "implementation_authorization_candidate_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-040",
+      "name": "implementation_authorization_granted",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-041",
+      "name": "implementation_code_authorization_granted",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-042",
+      "name": "implementation_code_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-043",
+      "name": "implementation_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-044",
+      "name": "implementation_blocked",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-045",
+      "name": "implementation_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-046",
+      "name": "candidate_generator_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-047",
+      "name": "candidate_generator_wiring_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-048",
+      "name": "candidate_generator_runtime_patch_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-049",
+      "name": "solver_runtime_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-050",
+      "name": "solver_patch_execution_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-051",
+      "name": "ranker_runtime_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-052",
+      "name": "runtime_execution_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-053",
+      "name": "runtime_execution_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-054",
+      "name": "real_evaluation_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-055",
+      "name": "real_submission_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-056",
+      "name": "submission_artifact_created",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-057",
+      "name": "manual_upload_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-058",
+      "name": "upload_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-059",
+      "name": "kaggle_authentication_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-060",
+      "name": "kaggle_authentication_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-061",
+      "name": "kaggle_submission_sent",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-062",
+      "name": "competitive_score_claim_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-063",
+      "name": "official_score_claim_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-064",
+      "name": "private_core_exposure",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-065",
+      "name": "legal_certification",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-066",
+      "name": "fail_closed_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-067",
+      "name": "fail_closed_active",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-068",
+      "name": "local_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-069",
+      "name": "deterministic",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-070",
+      "name": "public_safe",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-071",
+      "name": "external_api_dependency",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-072",
+      "name": "internet_during_eval",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-073",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-1_selection_authorization_gate_required_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-074",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-2_selection_authorization_gate_required_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-075",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-3_selection_authorization_gate_required_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-076",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-4_selection_authorization_gate_required_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-077",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-5_selection_authorization_gate_required_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-078",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-VALUE-RECORD-REV-6_selection_authorization_gate_required_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-079",
+      "name": "deterministic_value_record_review_padding_check_079",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-080",
+      "name": "deterministic_value_record_review_padding_check_080",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-081",
+      "name": "deterministic_value_record_review_padding_check_081",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-082",
+      "name": "deterministic_value_record_review_padding_check_082",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-083",
+      "name": "deterministic_value_record_review_padding_check_083",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-084",
+      "name": "deterministic_value_record_review_padding_check_084",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-085",
+      "name": "deterministic_value_record_review_padding_check_085",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T27-GATE-086",
+      "name": "deterministic_value_record_review_padding_check_086",
+      "passed": true
+    }
+  ],
+  "acceptance_gate_count": 86,
+  "acceptance_gate_failure_count": 0,
+  "acceptance_gate_failures": [],
+  "signature": "1E74C368FA01F00B",
+  "operator_decision_value_record_review_id": "MILESTONE-18-TASK-27-CANDIDATE-GENERATOR-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-REVIEW-1E74C368FA01F00B"
+}
