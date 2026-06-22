@@ -1,0 +1,415 @@
+{
+  "task": "MILESTONE_19_TASK_1_CROSS_TRACE_DIAGNOSTIC_PLANNER_PLANNING_INTAKE_V1",
+  "task_label": "Cross-Trace Diagnostic Planner Planning Intake v1",
+  "milestone_19_name": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER",
+  "previous_milestone": "MILESTONE_18_CONTROLLED_TECHNICAL_SOLVER_IMPROVEMENT",
+  "previous_milestone_closure_commit": "287d1d9",
+  "previous_milestone_closure_signature": "811221A25BFEB5AF",
+  "planning_artifact_ready": true,
+  "planning_artifact_source": "arc-agi3-cross-trace-diagnostic-planner-v1.md",
+  "planning_scope": "PROGRAMMAZIONE_AND_ADDESTRAMENTO_PLANNING_ONLY",
+  "pipeline_model": [
+    "task_parser",
+    "deterministic_feature_extractor",
+    "cross_trace_diagnostic_planner",
+    "authorized_candidate_generator",
+    "existing_verifier",
+    "ranker_or_benchmark_report"
+  ],
+  "feature_families": [
+    "color",
+    "geometry",
+    "position",
+    "count",
+    "transformation",
+    "invariance",
+    "contradiction",
+    "complexity"
+  ],
+  "required_output_fields": [
+    "diagnosticId",
+    "taskId",
+    "sourceScope",
+    "observation",
+    "evidence",
+    "hypothesis",
+    "invariants",
+    "contradictions",
+    "confidence",
+    "verificationStatus",
+    "candidateInterface",
+    "boundary"
+  ],
+  "test_plan": [
+    {
+      "test_id": "CTDP-T1",
+      "objective": "deterministic_feature_extraction",
+      "pass_condition": "same_training_pair_yields_identical_snapshot_and_hash"
+    },
+    {
+      "test_id": "CTDP-T2",
+      "objective": "cross_pair_relation_classification",
+      "pass_condition": "known_fixture_relations_classified_correctly"
+    },
+    {
+      "test_id": "CTDP-T3",
+      "objective": "contradiction_handling",
+      "pass_condition": "candidate_failing_one_training_pair_is_not_marked_consistent"
+    },
+    {
+      "test_id": "CTDP-T4",
+      "objective": "boundary_enforcement",
+      "pass_condition": "network_external_source_hidden_label_private_core_paths_denied"
+    },
+    {
+      "test_id": "CTDP-T5",
+      "objective": "candidate_handoff_integrity",
+      "pass_condition": "diagnostic_record_preserves_source_pair_refs_and_cannot_alter_verifier_output"
+    },
+    {
+      "test_id": "CTDP-T6",
+      "objective": "regression_and_determinism",
+      "pass_condition": "same_fixtures_version_seed_produce_same_diagnostic_records"
+    }
+  ],
+  "boundary_controls": {
+    "planning_only": true,
+    "implementation_authorized": false,
+    "runtime_activation_authorized": false,
+    "runtime_activation_performed": false,
+    "runtime_solver_modified": false,
+    "candidate_generator_modified": false,
+    "ranker_modified": false,
+    "verifier_modified": false,
+    "real_evaluation_authorized": false,
+    "real_evaluation_performed": false,
+    "real_submission_authorized": false,
+    "kaggle_submission_sent": false,
+    "internet_during_eval": false,
+    "external_api_dependency": false,
+    "hidden_label_accessed": false,
+    "private_core_exposure": false,
+    "legal_certification": false,
+    "operator_approval_required": true,
+    "operator_approval_received": false,
+    "operator_decision_required_for_implementation": true,
+    "fail_closed_required": true,
+    "fail_closed_active": true,
+    "local_only": true,
+    "deterministic": true,
+    "public_safe": true
+  },
+  "next_stage": "MILESTONE_19_TASK_2_CROSS_TRACE_DIAGNOSTIC_PLANNER_SPEC_REVIEW_V1",
+  "status": "MILESTONE_19_TASK_1_CROSS_TRACE_DIAGNOSTIC_PLANNER_PLANNING_INTAKE_V1_READY",
+  "validation": "MILESTONE_19_TASK_1_CROSS_TRACE_DIAGNOSTIC_PLANNER_PLANNING_INTAKE_V1_VALID",
+  "verdict": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER_PLANNING_INTAKE_READY_IMPLEMENTATION_BLOCKED",
+  "implementation_status": "PLANNING_ALLOWED_IMPLEMENTATION_BLOCKED_RUNTIME_BLOCKED_EVALUATION_BLOCKED_SUBMISSION_BLOCKED",
+  "closure_status": "TASK_1_PLANNING_INTAKE_READY",
+  "acceptance_gates": [
+    {
+      "gate_id": "M19-T1-GATE-001",
+      "name": "milestone_18_is_closed_before_milestone_19",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-002",
+      "name": "planning_artifact_ready",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-003",
+      "name": "pipeline_model_declared",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-004",
+      "name": "feature_families_declared",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-005",
+      "name": "required_output_fields_declared",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-006",
+      "name": "test_plan_declared",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-007",
+      "name": "implementation_blocked",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-008",
+      "name": "evaluation_and_submission_blocked",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-009",
+      "name": "external_access_blocked",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-010",
+      "name": "operator_approval_required_not_received",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-011",
+      "name": "fail_closed_active",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-012",
+      "name": "planning_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-013",
+      "name": "implementation_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-014",
+      "name": "runtime_activation_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-015",
+      "name": "runtime_activation_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-016",
+      "name": "runtime_solver_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-017",
+      "name": "candidate_generator_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-018",
+      "name": "ranker_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-019",
+      "name": "verifier_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-020",
+      "name": "real_evaluation_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-021",
+      "name": "real_evaluation_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-022",
+      "name": "real_submission_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-023",
+      "name": "kaggle_submission_sent",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-024",
+      "name": "internet_during_eval",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-025",
+      "name": "external_api_dependency",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-026",
+      "name": "hidden_label_accessed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-027",
+      "name": "private_core_exposure",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-028",
+      "name": "legal_certification",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-029",
+      "name": "operator_approval_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-030",
+      "name": "operator_approval_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-031",
+      "name": "operator_decision_required_for_implementation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-032",
+      "name": "fail_closed_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-033",
+      "name": "fail_closed_active",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-034",
+      "name": "local_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-035",
+      "name": "deterministic",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-036",
+      "name": "public_safe",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-037",
+      "name": "deterministic_planning_intake_padding_check_037",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-038",
+      "name": "deterministic_planning_intake_padding_check_038",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-039",
+      "name": "deterministic_planning_intake_padding_check_039",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-040",
+      "name": "deterministic_planning_intake_padding_check_040",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-041",
+      "name": "deterministic_planning_intake_padding_check_041",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-042",
+      "name": "deterministic_planning_intake_padding_check_042",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-043",
+      "name": "deterministic_planning_intake_padding_check_043",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-044",
+      "name": "deterministic_planning_intake_padding_check_044",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-045",
+      "name": "deterministic_planning_intake_padding_check_045",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-046",
+      "name": "deterministic_planning_intake_padding_check_046",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-047",
+      "name": "deterministic_planning_intake_padding_check_047",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-048",
+      "name": "deterministic_planning_intake_padding_check_048",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-049",
+      "name": "deterministic_planning_intake_padding_check_049",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T1-GATE-050",
+      "name": "deterministic_planning_intake_padding_check_050",
+      "passed": true
+    }
+  ],
+  "acceptance_gate_count": 50,
+  "acceptance_gate_failure_count": 0,
+  "acceptance_gate_failures": [],
+  "signature": "8EEA061B18EC2B9A",
+  "planning_intake_id": "MILESTONE-19-TASK-1-CROSS-TRACE-DIAGNOSTIC-PLANNER-PLANNING-INTAKE-8EEA061B18EC2B9A"
+}
