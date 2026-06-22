@@ -1,0 +1,198 @@
+from __future__ import annotations
+
+import json
+
+from hbce_arc_agi3.milestone_19_cross_trace_diagnostic_planner_implementation_authorization_gate_task_3 import (
+    ALLOWED_OPERATOR_DECISION_VALUES,
+)
+from hbce_arc_agi3.milestone_19_cross_trace_diagnostic_planner_implementation_operator_decision_record_task_5 import (
+    SELECTED_OPERATOR_DECISION_VALUE,
+)
+from hbce_arc_agi3.milestone_19_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_pending_status_closure_review_task_22 import (
+    build_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_pending_status_closure_review,
+)
+from hbce_arc_agi3.milestone_19_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_operator_prompt_package_task_23 import (
+    PREVIOUS_COMMIT,
+    PREVIOUS_SIGNATURE,
+    TASK_NAME,
+    build_boundary_controls,
+    build_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_operator_prompt_package,
+    build_operator_prompt_options,
+    build_prompt_package_items,
+    write_artifacts,
+)
+from hbce_arc_agi3.milestone_19_cross_trace_diagnostic_planner_planning_intake_task_1 import (
+    build_feature_families,
+    build_pipeline_model,
+    build_required_output_fields,
+    build_test_plan,
+)
+
+
+def test_task_23_ready_valid_prompt_package_created_but_no_selection_or_authorization() -> None:
+    data = build_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_operator_prompt_package()
+
+    assert data["task"] == TASK_NAME
+    assert data["status"] == f"{TASK_NAME}_READY"
+    assert data["validation"] == f"{TASK_NAME}_VALID"
+    assert data["explicit_operator_decision_value_selection_operator_prompt_package_ready"] is True
+    assert data["explicit_operator_decision_value_selection_operator_prompt_package_created"] is True
+    assert data["explicit_operator_decision_value_selection_operator_prompt_package_locked"] is True
+    assert data["explicit_operator_decision_value_selection_operator_prompt_package_review_required"] is True
+    assert data["explicit_operator_decision_value_selection_operator_prompt_package_review_created"] is False
+    assert data["explicit_operator_decision_value_selection_operator_prompt_package_contains_allowed_values"] is True
+    assert data["explicit_operator_decision_value_selection_operator_prompt_package_selected_value_absent"] is True
+    assert data["operator_prompt_option_count"] == len(ALLOWED_OPERATOR_DECISION_VALUES)
+    assert data["operator_prompt_item_count"] == len(ALLOWED_OPERATOR_DECISION_VALUES)
+    assert data["waiting_for_explicit_operator_decision_value"] is True
+    assert data["explicit_operator_decision_value_selected"] is False
+    assert data["selected_operator_decision_value"] == SELECTED_OPERATOR_DECISION_VALUE
+    assert data["operator_decision_received"] is False
+    assert data["implementation_authorized"] is False
+    assert data["acceptance_gate_failure_count"] == 0
+
+
+def test_task_23_preserves_task_22_baseline() -> None:
+    source = build_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_pending_status_closure_review()
+    data = build_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_operator_prompt_package()
+
+    assert data["previous_commit"] == PREVIOUS_COMMIT == "3b670d1"
+    assert data["previous_signature"] == PREVIOUS_SIGNATURE == "8B6FA46CF0C3E2FA"
+    assert data["source_explicit_operator_decision_value_selection_pending_status_closure_review_signature"] == source["signature"] == PREVIOUS_SIGNATURE
+    assert source["explicit_operator_decision_value_selection_operator_prompt_package_required"] is True
+    assert source["explicit_operator_decision_value_selection_operator_prompt_package_created"] is False
+    assert source["waiting_for_explicit_operator_decision_value"] is True
+    assert source["explicit_operator_decision_value_selected"] is False
+    assert source["selected_operator_decision_value"] == SELECTED_OPERATOR_DECISION_VALUE
+    assert source["operator_decision_received"] is False
+    assert source["implementation_authorized"] is False
+
+
+def test_task_23_operator_prompt_options_cover_allowed_values_without_selection() -> None:
+    options = build_operator_prompt_options()
+
+    assert len(options) == len(ALLOWED_OPERATOR_DECISION_VALUES)
+    assert tuple(option["decision_value"] for option in options) == ALLOWED_OPERATOR_DECISION_VALUES
+    assert all(option["requires_explicit_operator_selection"] is True for option in options)
+    assert not any(option["selected"] for option in options)
+    assert not any(option["validated"] for option in options)
+    assert not any(option["authorizing"] for option in options)
+    assert not any(option["implementation_authorized_by_this_task"] for option in options)
+    assert not any(option["runtime_activation_authorized_by_this_task"] for option in options)
+    assert not any(option["real_evaluation_authorized_by_this_task"] for option in options)
+    assert not any(option["kaggle_submission_authorized_by_this_task"] for option in options)
+    assert all(option["boundary"]["fail_closed_active"] is True for option in options)
+
+
+def test_task_23_prompt_items_are_available_not_selected_and_blocked() -> None:
+    source = build_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_pending_status_closure_review()
+    items = build_prompt_package_items(source)
+
+    assert len(items) == len(ALLOWED_OPERATOR_DECISION_VALUES)
+    assert all(item["decision_value"] in ALLOWED_OPERATOR_DECISION_VALUES for item in items)
+    assert all(item["prompt_status"] == "OPERATOR_DECISION_VALUE_OPTION_AVAILABLE_NOT_SELECTED" for item in items)
+    assert all(
+        item["prompt_effect"] == "AWAIT_EXPLICIT_OPERATOR_SELECTION_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION"
+        for item in items
+    )
+    assert all(item["requires_explicit_operator_selection"] is True for item in items)
+    assert not any(item["selected"] for item in items)
+    assert not any(item["validated"] for item in items)
+    assert not any(item["authorizing"] for item in items)
+    assert all(item["selected_operator_decision_value"] == SELECTED_OPERATOR_DECISION_VALUE for item in items)
+    assert all(item["waiting_for_explicit_operator_decision_value"] is True for item in items)
+    assert not any(item["explicit_operator_decision_value_selected"] for item in items)
+    assert not any(item["operator_decision_received"] for item in items)
+    assert not any(item["implementation_authorized"] for item in items)
+    assert not any(item["runtime_solver_modified"] for item in items)
+    assert not any(item["candidate_generator_modified"] for item in items)
+    assert not any(item["real_evaluation_performed"] for item in items)
+    assert not any(item["kaggle_submission_sent"] for item in items)
+    assert not any(item["hidden_label_accessed"] for item in items)
+    assert not any(item["private_core_exposure"] for item in items)
+    assert all(item["fail_closed_active"] is True for item in items)
+    assert not any(item["blocking_issue"] for item in items)
+
+
+def test_task_23_boundary_confirms_prompt_package_without_authorization() -> None:
+    controls = build_boundary_controls()
+
+    assert controls["explicit_operator_decision_value_selection_operator_prompt_package_only"] is True
+    assert controls["explicit_operator_decision_value_selection_operator_prompt_package_ready"] is True
+    assert controls["explicit_operator_decision_value_selection_operator_prompt_package_created"] is True
+    assert controls["explicit_operator_decision_value_selection_operator_prompt_package_locked"] is True
+    assert controls["explicit_operator_decision_value_selection_operator_prompt_package_review_required"] is True
+    assert controls["explicit_operator_decision_value_selection_operator_prompt_package_review_created"] is False
+    assert controls["explicit_operator_decision_value_selection_operator_prompt_package_contains_allowed_values"] is True
+    assert controls["explicit_operator_decision_value_selection_operator_prompt_package_selected_value_absent"] is True
+    assert controls["waiting_for_explicit_operator_decision_value"] is True
+    assert controls["explicit_operator_decision_value_selected"] is False
+    assert controls["selected_operator_decision_value_pending"] is True
+    assert controls["operator_decision_received"] is False
+    assert controls["implementation_authorized"] is False
+    assert controls["runtime_activation_authorized"] is False
+    assert controls["runtime_solver_modified"] is False
+    assert controls["candidate_generator_modified"] is False
+    assert controls["real_evaluation_authorized"] is False
+    assert controls["real_submission_authorized"] is False
+    assert controls["kaggle_submission_sent"] is False
+    assert controls["hidden_label_accessed"] is False
+    assert controls["private_core_exposure"] is False
+    assert controls["fail_closed_active"] is True
+
+
+def test_task_23_models_remain_unchanged() -> None:
+    data = build_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_operator_prompt_package()
+
+    assert data["pipeline_model"] == build_pipeline_model()
+    assert data["feature_families"] == build_feature_families()
+    assert data["required_output_fields"] == build_required_output_fields()
+    assert data["test_plan"] == build_test_plan()
+
+
+def test_task_23_acceptance_and_signature_are_deterministic() -> None:
+    first = build_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_operator_prompt_package()
+    second = build_cross_trace_diagnostic_planner_explicit_operator_decision_value_selection_operator_prompt_package()
+
+    assert first["signature"] == second["signature"]
+    assert len(first["signature"]) == 16
+    assert first["explicit_operator_decision_value_selection_operator_prompt_package_id"].endswith(first["signature"])
+    assert first["acceptance_gate_count"] > 313
+    assert first["acceptance_gate_failure_count"] == 0
+    assert first["acceptance_gate_failures"] == []
+
+
+def test_task_23_artifacts_are_written(tmp_path) -> None:
+    paths = write_artifacts(
+        artifact_dir=tmp_path / "examples" / "milestone-19" / "task-23",
+        docs_path=tmp_path / "docs" / "task-23.md",
+        index_path=tmp_path / "docs" / "milestone-19-index.md",
+    )
+
+    for path in paths.values():
+        assert path.exists(), path
+
+    data = json.loads(paths["json"].read_text(encoding="utf-8"))
+    manifest = paths["manifest"].read_text(encoding="utf-8")
+    docs = paths["docs"].read_text(encoding="utf-8")
+    milestone_index = paths["milestone_index"].read_text(encoding="utf-8")
+
+    assert data["task"] == TASK_NAME
+    assert "explicit_operator_decision_value_selection_operator_prompt_package_ready=true" in manifest
+    assert "explicit_operator_decision_value_selection_operator_prompt_package_created=true" in manifest
+    assert "explicit_operator_decision_value_selection_operator_prompt_package_locked=true" in manifest
+    assert "explicit_operator_decision_value_selection_operator_prompt_package_review_required=true" in manifest
+    assert "explicit_operator_decision_value_selection_operator_prompt_package_review_created=false" in manifest
+    assert "explicit_operator_decision_value_selection_operator_prompt_package_contains_allowed_values=true" in manifest
+    assert "explicit_operator_decision_value_selection_operator_prompt_package_selected_value_absent=true" in manifest
+    assert "waiting_for_explicit_operator_decision_value=true" in manifest
+    assert "explicit_operator_decision_value_selected=false" in manifest
+    assert "selected_operator_decision_value=PENDING_EXPLICIT_OPERATOR_DECISION" in manifest
+    assert "operator_decision_received=false" in manifest
+    assert "implementation_authorized=false" in manifest
+    assert "runtime_solver_modified=false" in manifest
+    assert "real_evaluation_authorized=false" in manifest
+    assert "kaggle_submission_sent=false" in manifest
+    assert "hidden_label_accessed=false" in manifest
+    assert "Operator Prompt Package v1" in docs
+    assert "Explicit operator decision value selection operator prompt package created" in milestone_index
