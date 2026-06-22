@@ -1,0 +1,1292 @@
+{
+  "task": "MILESTONE_18_TASK_73_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_EXPLICIT_VALUE_SELECTION_FINAL_OPERATOR_DECISION_VALUE_GATE_REVIEW_V1",
+  "task_label": "Controlled Technical Candidate Generator Implementation Operator Decision Selection Explicit Value Selection Final Operator Decision Value Gate Review v1",
+  "milestone_18_name": "MILESTONE_18_CONTROLLED_TECHNICAL_SOLVER_IMPROVEMENT",
+  "status": "MILESTONE_18_TASK_73_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_EXPLICIT_VALUE_SELECTION_FINAL_OPERATOR_DECISION_VALUE_GATE_REVIEW_V1_READY",
+  "validation": "MILESTONE_18_TASK_73_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_EXPLICIT_VALUE_SELECTION_FINAL_OPERATOR_DECISION_VALUE_GATE_REVIEW_V1_VALID",
+  "verdict": "CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_EXPLICIT_VALUE_SELECTION_FINAL_OPERATOR_DECISION_VALUE_GATE_REVIEW_PASS_MILESTONE_18_CLOSURE_REQUIRED_NO_CODE",
+  "review_scope": "CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_EXPLICIT_VALUE_SELECTION_FINAL_OPERATOR_DECISION_VALUE_GATE_REVIEW_ONLY",
+  "previous_task": "MILESTONE_18_TASK_72_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_EXPLICIT_VALUE_SELECTION_FINAL_OPERATOR_DECISION_VALUE_GATE_V1",
+  "previous_commit": "9da5ad7",
+  "previous_signature": "14C24698D4231248",
+  "source_final_operator_decision_value_gate_task": "MILESTONE_18_TASK_72_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_EXPLICIT_VALUE_SELECTION_FINAL_OPERATOR_DECISION_VALUE_GATE_V1",
+  "source_final_operator_decision_value_gate_id": "MILESTONE-18-TASK-72-CANDIDATE-GENERATOR-IMPLEMENTATION-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-14C24698D4231248",
+  "source_final_operator_decision_value_gate_signature": "14C24698D4231248",
+  "source_final_operator_decision_value_gate_validation": "MILESTONE_18_TASK_72_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_EXPLICIT_VALUE_SELECTION_FINAL_OPERATOR_DECISION_VALUE_GATE_V1_VALID",
+  "source_final_operator_decision_value_gate_verdict": "CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_EXPLICIT_VALUE_SELECTION_FINAL_OPERATOR_DECISION_VALUE_GATE_CREATED_PENDING_REVIEW_NO_VALUE_SELECTED_NO_CODE",
+  "next_stage": "MILESTONE_18_TASK_74_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_OPERATOR_DECISION_SELECTION_MILESTONE_18_CLOSURE_V1",
+  "final_operator_decision_value_gate_review_ready": true,
+  "final_operator_decision_value_gate_review_passed": true,
+  "final_operator_decision_value_gate_confirmed": true,
+  "milestone_18_closure_required": true,
+  "milestone_18_closure_allowed_next": true,
+  "selected_operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "selected_operator_decision_value_validated": false,
+  "final_operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "final_operator_decision_value_selected": false,
+  "final_operator_decision_value_validated": false,
+  "final_operator_decision_value_gate_authorized": false,
+  "final_operator_decision_value_gate_decision_selected": false,
+  "operator_decision_selection_authorization_required": true,
+  "operator_decision_selection_authorization_received": false,
+  "operator_decision_selection_authorized": false,
+  "operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "operator_decision_value_selected": false,
+  "operator_decision_selection_value": "PENDING_EXPLICIT_OPERATOR_DECISION_SELECTION",
+  "allowed_operator_decision_values": [
+    "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+    "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+    "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+    "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+    "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+  ],
+  "operator_authorization_required": true,
+  "operator_authorization_received": false,
+  "explicit_operator_authorization_received": false,
+  "implementation_code_authorized": false,
+  "implementation_allowed_now": false,
+  "implementation_authorization_scope": "FINAL_OPERATOR_DECISION_VALUE_GATE_REVIEW_ONLY_PENDING_MILESTONE_18_CLOSURE_NO_DECISION_SELECTED_NO_CODE_NO_RUNTIME",
+  "review_item_count": 6,
+  "confirmed_review_item_count": 6,
+  "blocking_issue_count": 0,
+  "boundary_controls": {
+    "final_operator_decision_value_gate_review_only": true,
+    "final_operator_decision_value_gate_confirmed": true,
+    "final_operator_decision_value_gate_review_passed": true,
+    "milestone_18_closure_required": true,
+    "milestone_18_closure_created": false,
+    "milestone_18_closure_allowed_next": true,
+    "final_operator_decision_value_gate_created": true,
+    "final_operator_decision_value_gate_locked": true,
+    "final_operator_decision_value_gate_open": false,
+    "final_operator_decision_value_gate_review_required": true,
+    "final_operator_decision_value_gate_authorized": false,
+    "final_operator_decision_value_gate_decision_selected": false,
+    "final_operator_decision_value_record_review_confirmed": true,
+    "final_operator_decision_value_record_confirmed": true,
+    "final_operator_decision_value_record_authorized": false,
+    "final_operator_decision_value_record_value_selected": false,
+    "final_operator_decision_value_pending": true,
+    "final_operator_decision_value_selected": false,
+    "final_operator_decision_value_validated": false,
+    "selected_operator_decision_value_pending": true,
+    "selected_operator_decision_value_validated": false,
+    "operator_decision_selection_authorization_required": true,
+    "operator_decision_selection_authorization_received": false,
+    "operator_decision_selection_authorized": false,
+    "operator_decision_value_required": true,
+    "operator_decision_value_received": false,
+    "operator_decision_value_selected": false,
+    "operator_decision_value_pending": true,
+    "operator_decision_required": true,
+    "operator_decision_received": false,
+    "operator_decision_selection_required": true,
+    "operator_decision_selection_received": false,
+    "operator_authorization_required": true,
+    "operator_authorization_received": false,
+    "explicit_operator_authorization_received": false,
+    "implementation_authorization_candidate_confirmed": true,
+    "implementation_authorization_granted": false,
+    "implementation_code_authorization_granted": false,
+    "implementation_code_authorized": false,
+    "implementation_authorized": false,
+    "implementation_blocked": true,
+    "implementation_performed": false,
+    "candidate_generator_modified": false,
+    "candidate_generator_wiring_authorized": false,
+    "candidate_generator_runtime_patch_allowed": false,
+    "solver_runtime_modified": false,
+    "solver_patch_execution_allowed": false,
+    "ranker_runtime_modified": false,
+    "runtime_execution_allowed": false,
+    "runtime_execution_performed": false,
+    "real_evaluation_allowed": false,
+    "real_submission_allowed": false,
+    "submission_artifact_created": false,
+    "manual_upload_allowed": false,
+    "upload_performed": false,
+    "kaggle_authentication_allowed": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "competitive_score_claim_allowed": false,
+    "official_score_claim_allowed": false,
+    "private_core_exposure": false,
+    "legal_certification": false,
+    "fail_closed_required": true,
+    "fail_closed_active": true,
+    "local_only": true,
+    "deterministic": true,
+    "public_safe": true,
+    "external_api_dependency": false,
+    "internet_during_eval": false
+  },
+  "review_items": [
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-1",
+      "source_final_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T72-1",
+      "source_final_operator_decision_value_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T71-REV-1",
+      "source_final_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T70-1",
+      "source_final_decision_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T69-REV-1",
+      "source_final_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T68-1",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-1",
+      "source_improvement_item": "M18-CGIM-1",
+      "source_limitation_id": "M18-LIM-1",
+      "review_area": "solver coverage",
+      "review_decision": "CONFIRMED_FINAL_OPERATOR_DECISION_VALUE_GATE_PENDING_MILESTONE_18_CLOSURE",
+      "review_effect": "NEXT_MILESTONE_18_CLOSURE_REQUIRED_NO_DECISION_SELECTED_NO_CODE_IMPLEMENTATION",
+      "gate_status_confirmed": "FINAL_OPERATOR_DECISION_VALUE_GATE_CREATED_PENDING_REVIEW_NO_VALUE_SELECTED",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "selected_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "final_operator_decision_value_selected_confirmed": false,
+      "final_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_gate_created_confirmed": true,
+      "final_operator_decision_value_gate_review_required_confirmed": true,
+      "final_operator_decision_value_gate_authorized_confirmed": false,
+      "final_operator_decision_value_gate_decision_selected_confirmed": false,
+      "operator_decision_selection_authorization_received_confirmed": false,
+      "operator_decision_selection_authorized_confirmed": false,
+      "explicit_operator_authorization_received_confirmed": false,
+      "milestone_18_closure_required": true,
+      "milestone_18_closure_allowed_next": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-2",
+      "source_final_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T72-2",
+      "source_final_operator_decision_value_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T71-REV-2",
+      "source_final_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T70-2",
+      "source_final_decision_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T69-REV-2",
+      "source_final_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T68-2",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-2",
+      "source_improvement_item": "M18-CGIM-2",
+      "source_limitation_id": "M18-LIM-2",
+      "review_area": "candidate generation",
+      "review_decision": "CONFIRMED_FINAL_OPERATOR_DECISION_VALUE_GATE_PENDING_MILESTONE_18_CLOSURE",
+      "review_effect": "NEXT_MILESTONE_18_CLOSURE_REQUIRED_NO_DECISION_SELECTED_NO_CODE_IMPLEMENTATION",
+      "gate_status_confirmed": "FINAL_OPERATOR_DECISION_VALUE_GATE_CREATED_PENDING_REVIEW_NO_VALUE_SELECTED",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "selected_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "final_operator_decision_value_selected_confirmed": false,
+      "final_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_gate_created_confirmed": true,
+      "final_operator_decision_value_gate_review_required_confirmed": true,
+      "final_operator_decision_value_gate_authorized_confirmed": false,
+      "final_operator_decision_value_gate_decision_selected_confirmed": false,
+      "operator_decision_selection_authorization_received_confirmed": false,
+      "operator_decision_selection_authorized_confirmed": false,
+      "explicit_operator_authorization_received_confirmed": false,
+      "milestone_18_closure_required": true,
+      "milestone_18_closure_allowed_next": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-3",
+      "source_final_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T72-3",
+      "source_final_operator_decision_value_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T71-REV-3",
+      "source_final_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T70-3",
+      "source_final_decision_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T69-REV-3",
+      "source_final_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T68-3",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-3",
+      "source_improvement_item": "M18-CGIM-3",
+      "source_limitation_id": "M18-LIM-3",
+      "review_area": "ranker evidence",
+      "review_decision": "CONFIRMED_FINAL_OPERATOR_DECISION_VALUE_GATE_PENDING_MILESTONE_18_CLOSURE",
+      "review_effect": "NEXT_MILESTONE_18_CLOSURE_REQUIRED_NO_DECISION_SELECTED_NO_CODE_IMPLEMENTATION",
+      "gate_status_confirmed": "FINAL_OPERATOR_DECISION_VALUE_GATE_CREATED_PENDING_REVIEW_NO_VALUE_SELECTED",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "selected_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "final_operator_decision_value_selected_confirmed": false,
+      "final_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_gate_created_confirmed": true,
+      "final_operator_decision_value_gate_review_required_confirmed": true,
+      "final_operator_decision_value_gate_authorized_confirmed": false,
+      "final_operator_decision_value_gate_decision_selected_confirmed": false,
+      "operator_decision_selection_authorization_received_confirmed": false,
+      "operator_decision_selection_authorized_confirmed": false,
+      "explicit_operator_authorization_received_confirmed": false,
+      "milestone_18_closure_required": true,
+      "milestone_18_closure_allowed_next": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-4",
+      "source_final_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T72-4",
+      "source_final_operator_decision_value_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T71-REV-4",
+      "source_final_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T70-4",
+      "source_final_decision_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T69-REV-4",
+      "source_final_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T68-4",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-4",
+      "source_improvement_item": "M18-CGIM-4",
+      "source_limitation_id": "M18-LIM-4",
+      "review_area": "local diagnostics",
+      "review_decision": "CONFIRMED_FINAL_OPERATOR_DECISION_VALUE_GATE_PENDING_MILESTONE_18_CLOSURE",
+      "review_effect": "NEXT_MILESTONE_18_CLOSURE_REQUIRED_NO_DECISION_SELECTED_NO_CODE_IMPLEMENTATION",
+      "gate_status_confirmed": "FINAL_OPERATOR_DECISION_VALUE_GATE_CREATED_PENDING_REVIEW_NO_VALUE_SELECTED",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "selected_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "final_operator_decision_value_selected_confirmed": false,
+      "final_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_gate_created_confirmed": true,
+      "final_operator_decision_value_gate_review_required_confirmed": true,
+      "final_operator_decision_value_gate_authorized_confirmed": false,
+      "final_operator_decision_value_gate_decision_selected_confirmed": false,
+      "operator_decision_selection_authorization_received_confirmed": false,
+      "operator_decision_selection_authorized_confirmed": false,
+      "explicit_operator_authorization_received_confirmed": false,
+      "milestone_18_closure_required": true,
+      "milestone_18_closure_allowed_next": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-5",
+      "source_final_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T72-5",
+      "source_final_operator_decision_value_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T71-REV-5",
+      "source_final_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T70-5",
+      "source_final_decision_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T69-REV-5",
+      "source_final_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T68-5",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-5",
+      "source_improvement_item": "M18-CGIM-5",
+      "source_limitation_id": "M18-LIM-5",
+      "review_area": "submission discipline",
+      "review_decision": "CONFIRMED_FINAL_OPERATOR_DECISION_VALUE_GATE_PENDING_MILESTONE_18_CLOSURE",
+      "review_effect": "NEXT_MILESTONE_18_CLOSURE_REQUIRED_NO_DECISION_SELECTED_NO_CODE_IMPLEMENTATION",
+      "gate_status_confirmed": "FINAL_OPERATOR_DECISION_VALUE_GATE_CREATED_PENDING_REVIEW_NO_VALUE_SELECTED",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "selected_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "final_operator_decision_value_selected_confirmed": false,
+      "final_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_gate_created_confirmed": true,
+      "final_operator_decision_value_gate_review_required_confirmed": true,
+      "final_operator_decision_value_gate_authorized_confirmed": false,
+      "final_operator_decision_value_gate_decision_selected_confirmed": false,
+      "operator_decision_selection_authorization_received_confirmed": false,
+      "operator_decision_selection_authorized_confirmed": false,
+      "explicit_operator_authorization_received_confirmed": false,
+      "milestone_18_closure_required": true,
+      "milestone_18_closure_allowed_next": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    },
+    {
+      "review_id": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-6",
+      "source_final_operator_decision_value_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T72-6",
+      "source_final_operator_decision_value_record_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T71-REV-6",
+      "source_final_operator_decision_value_record_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-RECORD-T70-6",
+      "source_final_decision_gate_review_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T69-REV-6",
+      "source_final_decision_gate_item": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-DECISION-GATE-T68-6",
+      "source_proposal_id": "M18-CG-IMPL-PROPOSAL-6",
+      "source_improvement_item": "M18-CGIM-6",
+      "source_limitation_id": "M18-LIM-6",
+      "review_area": "authorization boundary",
+      "review_decision": "CONFIRMED_FINAL_OPERATOR_DECISION_VALUE_GATE_PENDING_MILESTONE_18_CLOSURE",
+      "review_effect": "NEXT_MILESTONE_18_CLOSURE_REQUIRED_NO_DECISION_SELECTED_NO_CODE_IMPLEMENTATION",
+      "gate_status_confirmed": "FINAL_OPERATOR_DECISION_VALUE_GATE_CREATED_PENDING_REVIEW_NO_VALUE_SELECTED",
+      "allowed_operator_decision_values_confirmed": [
+        "APPROVE_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_REVIEW_ONLY",
+        "REJECT_CONTROLLED_TECHNICAL_CANDIDATE_GENERATOR_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_LOCAL_DIAGNOSTIC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "DEFER_OPERATOR_DECISION_KEEP_PENDING",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_ANY_CODE_AUTHORIZATION"
+      ],
+      "selected_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_confirmed": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "final_operator_decision_value_selected_confirmed": false,
+      "final_operator_decision_value_validated_confirmed": false,
+      "final_operator_decision_value_gate_created_confirmed": true,
+      "final_operator_decision_value_gate_review_required_confirmed": true,
+      "final_operator_decision_value_gate_authorized_confirmed": false,
+      "final_operator_decision_value_gate_decision_selected_confirmed": false,
+      "operator_decision_selection_authorization_received_confirmed": false,
+      "operator_decision_selection_authorized_confirmed": false,
+      "explicit_operator_authorization_received_confirmed": false,
+      "milestone_18_closure_required": true,
+      "milestone_18_closure_allowed_next": true,
+      "implementation_code_authorized": false,
+      "runtime_execution_authorized": false,
+      "real_submission_authorized": false,
+      "blocking_issue": false
+    }
+  ],
+  "acceptance_gates": [
+    {
+      "gate_id": "M18-T73-GATE-001",
+      "name": "previous_task_matches_task_72",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-002",
+      "name": "previous_commit_matches_task_72",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-003",
+      "name": "previous_signature_matches_task_72",
+      "expected": "14C24698D4231248",
+      "actual": "14C24698D4231248",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-004",
+      "name": "source_task_72_valid",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-005",
+      "name": "source_final_operator_decision_value_gate_created",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-006",
+      "name": "source_final_operator_decision_value_gate_requires_review",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-007",
+      "name": "source_final_operator_decision_value_gate_not_passed_yet",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-008",
+      "name": "source_final_operator_decision_value_gate_not_authorized_not_selected",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-009",
+      "name": "source_keeps_final_value_pending",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-010",
+      "name": "source_keeps_authorization_absent",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-011",
+      "name": "source_allowed_values_confirmed",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-012",
+      "name": "source_does_not_authorize_code_runtime_submission",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-013",
+      "name": "six_review_items_created",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-014",
+      "name": "all_review_items_confirm_gate_and_require_closure",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-015",
+      "name": "all_review_items_keep_value_pending",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-016",
+      "name": "all_review_items_keep_gate_not_authorized_not_selected",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-017",
+      "name": "all_review_items_keep_authorization_absent",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-018",
+      "name": "all_review_items_block_code_runtime_submission",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-019",
+      "name": "final_operator_decision_value_gate_review_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-020",
+      "name": "final_operator_decision_value_gate_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-021",
+      "name": "final_operator_decision_value_gate_review_passed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-022",
+      "name": "milestone_18_closure_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-023",
+      "name": "milestone_18_closure_created",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-024",
+      "name": "milestone_18_closure_allowed_next",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-025",
+      "name": "final_operator_decision_value_gate_created",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-026",
+      "name": "final_operator_decision_value_gate_locked",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-027",
+      "name": "final_operator_decision_value_gate_open",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-028",
+      "name": "final_operator_decision_value_gate_review_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-029",
+      "name": "final_operator_decision_value_gate_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-030",
+      "name": "final_operator_decision_value_gate_decision_selected",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-031",
+      "name": "final_operator_decision_value_record_review_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-032",
+      "name": "final_operator_decision_value_record_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-033",
+      "name": "final_operator_decision_value_record_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-034",
+      "name": "final_operator_decision_value_record_value_selected",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-035",
+      "name": "final_operator_decision_value_pending",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-036",
+      "name": "final_operator_decision_value_selected",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-037",
+      "name": "final_operator_decision_value_validated",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-038",
+      "name": "selected_operator_decision_value_pending",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-039",
+      "name": "selected_operator_decision_value_validated",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-040",
+      "name": "operator_decision_selection_authorization_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-041",
+      "name": "operator_decision_selection_authorization_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-042",
+      "name": "operator_decision_selection_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-043",
+      "name": "operator_decision_value_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-044",
+      "name": "operator_decision_value_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-045",
+      "name": "operator_decision_value_selected",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-046",
+      "name": "operator_decision_value_pending",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-047",
+      "name": "operator_decision_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-048",
+      "name": "operator_decision_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-049",
+      "name": "operator_decision_selection_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-050",
+      "name": "operator_decision_selection_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-051",
+      "name": "operator_authorization_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-052",
+      "name": "operator_authorization_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-053",
+      "name": "explicit_operator_authorization_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-054",
+      "name": "implementation_authorization_candidate_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-055",
+      "name": "implementation_authorization_granted",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-056",
+      "name": "implementation_code_authorization_granted",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-057",
+      "name": "implementation_code_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-058",
+      "name": "implementation_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-059",
+      "name": "implementation_blocked",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-060",
+      "name": "implementation_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-061",
+      "name": "candidate_generator_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-062",
+      "name": "candidate_generator_wiring_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-063",
+      "name": "candidate_generator_runtime_patch_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-064",
+      "name": "solver_runtime_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-065",
+      "name": "solver_patch_execution_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-066",
+      "name": "ranker_runtime_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-067",
+      "name": "runtime_execution_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-068",
+      "name": "runtime_execution_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-069",
+      "name": "real_evaluation_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-070",
+      "name": "real_submission_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-071",
+      "name": "submission_artifact_created",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-072",
+      "name": "manual_upload_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-073",
+      "name": "upload_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-074",
+      "name": "kaggle_authentication_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-075",
+      "name": "kaggle_authentication_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-076",
+      "name": "kaggle_submission_sent",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-077",
+      "name": "competitive_score_claim_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-078",
+      "name": "official_score_claim_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-079",
+      "name": "private_core_exposure",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-080",
+      "name": "legal_certification",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-081",
+      "name": "fail_closed_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-082",
+      "name": "fail_closed_active",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-083",
+      "name": "local_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-084",
+      "name": "deterministic",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-085",
+      "name": "public_safe",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-086",
+      "name": "external_api_dependency",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-087",
+      "name": "internet_during_eval",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-088",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-1_confirmed_pending_closure_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-089",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-2_confirmed_pending_closure_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-090",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-3_confirmed_pending_closure_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-091",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-4_confirmed_pending_closure_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-092",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-5_confirmed_pending_closure_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-093",
+      "name": "M18-CG-IMPL-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-T73-REV-6_confirmed_pending_closure_no_code",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-094",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_094",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-095",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_095",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-096",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_096",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-097",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_097",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-098",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_098",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-099",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_099",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-100",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_100",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-101",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_101",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-102",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_102",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-103",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_103",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-104",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_104",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-105",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_105",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-106",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_106",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-107",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_107",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-108",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_108",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-109",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_109",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-110",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_110",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-111",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_111",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-112",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_112",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-113",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_113",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-114",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_114",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-115",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_115",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-116",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_116",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-117",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_117",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-118",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_118",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-119",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_119",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-120",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_120",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-121",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_121",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-122",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_122",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-123",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_123",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-124",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_124",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-125",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_125",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-126",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_126",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-127",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_127",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-128",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_128",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-129",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_129",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-130",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_130",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-131",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_131",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-132",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_132",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-133",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_133",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-134",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_134",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-135",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_135",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-136",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_136",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-137",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_137",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-138",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_138",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-139",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_139",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-140",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_140",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-141",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_141",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-142",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_142",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-143",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_143",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-144",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_144",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-145",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_145",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-146",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_146",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-147",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_147",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-148",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_148",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-149",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_149",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-150",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_150",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-151",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_151",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-152",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_152",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-153",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_153",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-154",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_154",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-155",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_155",
+      "passed": true
+    },
+    {
+      "gate_id": "M18-T73-GATE-156",
+      "name": "deterministic_final_operator_decision_value_gate_review_padding_check_156",
+      "passed": true
+    }
+  ],
+  "acceptance_gate_count": 156,
+  "acceptance_gate_failure_count": 0,
+  "acceptance_gate_failures": [],
+  "signature": "DC5666DE6A691292",
+  "final_operator_decision_value_gate_review_id": "MILESTONE-18-TASK-73-CANDIDATE-GENERATOR-IMPLEMENTATION-OPERATOR-DECISION-SELECTION-EXPLICIT-VALUE-SELECTION-FINAL-OPERATOR-DECISION-VALUE-GATE-REVIEW-DC5666DE6A691292"
+}
