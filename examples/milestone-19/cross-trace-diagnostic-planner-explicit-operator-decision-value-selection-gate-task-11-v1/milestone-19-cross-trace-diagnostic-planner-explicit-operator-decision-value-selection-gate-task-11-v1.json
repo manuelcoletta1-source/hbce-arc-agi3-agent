@@ -1,0 +1,1464 @@
+{
+  "task": "MILESTONE_19_TASK_11_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_V1",
+  "task_label": "Cross-Trace Diagnostic Planner Explicit Operator Decision Value Selection Gate v1",
+  "milestone_19_name": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER",
+  "status": "MILESTONE_19_TASK_11_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_V1_READY",
+  "validation": "MILESTONE_19_TASK_11_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_V1_VALID",
+  "verdict": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_CREATED_PENDING_SELECTION_IMPLEMENTATION_BLOCKED",
+  "gate_scope": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_ONLY_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+  "previous_task": "MILESTONE_19_TASK_10_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_REVIEW_V1",
+  "previous_commit": "ba7304c",
+  "previous_signature": "E2113C1986928748",
+  "source_implementation_operator_decision_value_record_review_task": "MILESTONE_19_TASK_10_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_REVIEW_V1",
+  "source_implementation_operator_decision_value_record_review_id": "MILESTONE-19-TASK-10-CROSS-TRACE-DIAGNOSTIC-PLANNER-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-REVIEW-E2113C1986928748",
+  "source_implementation_operator_decision_value_record_review_signature": "E2113C1986928748",
+  "source_implementation_operator_decision_value_record_review_validation": "MILESTONE_19_TASK_10_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_REVIEW_V1_VALID",
+  "source_implementation_operator_decision_value_record_review_verdict": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_OPERATOR_DECISION_VALUE_RECORD_REVIEW_PASS_EXPLICIT_SELECTION_GATE_REQUIRED_IMPLEMENTATION_BLOCKED",
+  "next_stage": "MILESTONE_19_TASK_12_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_REVIEW_V1",
+  "explicit_operator_decision_value_selection_gate_ready": true,
+  "explicit_operator_decision_value_selection_gate_created": true,
+  "explicit_operator_decision_value_selection_gate_locked": true,
+  "explicit_operator_decision_value_selection_gate_open": false,
+  "explicit_operator_decision_value_selection_gate_review_required": true,
+  "explicit_operator_decision_value_selection_gate_review_created": false,
+  "explicit_operator_decision_value_selection_gate_passed": false,
+  "explicit_operator_decision_value_selected": false,
+  "explicit_operator_decision_value_validated": false,
+  "explicit_operator_decision_value_authorizing": false,
+  "selected_operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "selected_operator_decision_value_validated": false,
+  "selected_operator_decision_value_authorizing": false,
+  "allowed_operator_decision_values": [
+    "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+    "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+    "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+    "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+    "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+  ],
+  "operator_approval_required": true,
+  "operator_approval_received": false,
+  "operator_decision_required_for_implementation": true,
+  "operator_decision_received": false,
+  "implementation_authorized": false,
+  "implementation_authorization_received": false,
+  "implementation_decision_selected": false,
+  "runtime_activation_authorized": false,
+  "runtime_activation_performed": false,
+  "runtime_solver_modified": false,
+  "candidate_generator_modified": false,
+  "ranker_modified": false,
+  "verifier_modified": false,
+  "real_evaluation_authorized": false,
+  "real_evaluation_performed": false,
+  "real_submission_authorized": false,
+  "submission_artifact_created": false,
+  "kaggle_submission_sent": false,
+  "internet_during_eval": false,
+  "external_api_dependency": false,
+  "hidden_label_accessed": false,
+  "private_core_exposure": false,
+  "legal_certification": false,
+  "planning_only_until_explicit_operator_decision": true,
+  "pipeline_model": [
+    "task_parser",
+    "deterministic_feature_extractor",
+    "cross_trace_diagnostic_planner",
+    "authorized_candidate_generator",
+    "existing_verifier",
+    "ranker_or_benchmark_report"
+  ],
+  "feature_families": [
+    "color",
+    "geometry",
+    "position",
+    "count",
+    "transformation",
+    "invariance",
+    "contradiction",
+    "complexity"
+  ],
+  "required_output_fields": [
+    "diagnosticId",
+    "taskId",
+    "sourceScope",
+    "observation",
+    "evidence",
+    "hypothesis",
+    "invariants",
+    "contradictions",
+    "confidence",
+    "verificationStatus",
+    "candidateInterface",
+    "boundary"
+  ],
+  "test_plan": [
+    {
+      "test_id": "CTDP-T1",
+      "objective": "deterministic_feature_extraction",
+      "pass_condition": "same_training_pair_yields_identical_snapshot_and_hash"
+    },
+    {
+      "test_id": "CTDP-T2",
+      "objective": "cross_pair_relation_classification",
+      "pass_condition": "known_fixture_relations_classified_correctly"
+    },
+    {
+      "test_id": "CTDP-T3",
+      "objective": "contradiction_handling",
+      "pass_condition": "candidate_failing_one_training_pair_is_not_marked_consistent"
+    },
+    {
+      "test_id": "CTDP-T4",
+      "objective": "boundary_enforcement",
+      "pass_condition": "network_external_source_hidden_label_private_core_paths_denied"
+    },
+    {
+      "test_id": "CTDP-T5",
+      "objective": "candidate_handoff_integrity",
+      "pass_condition": "diagnostic_record_preserves_source_pair_refs_and_cannot_alter_verifier_output"
+    },
+    {
+      "test_id": "CTDP-T6",
+      "objective": "regression_and_determinism",
+      "pass_condition": "same_fixtures_version_seed_produce_same_diagnostic_records"
+    }
+  ],
+  "selection_gate_items": [
+    {
+      "selection_gate_item_id": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-1",
+      "source_value_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-REVIEW-T10-1",
+      "source_value_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-T9-1",
+      "source_value_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-REVIEW-T8-1",
+      "source_value_gate_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-T7-1",
+      "source_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-REVIEW-T6-1",
+      "source_decision_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-T5-1",
+      "source_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-REVIEW-T4-1",
+      "source_gate_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-T3-1",
+      "decision_area": "implementation_scope",
+      "source_review_status": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_NO_IMPLEMENTATION",
+      "selection_gate_status": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_CREATED_PENDING_SELECTION",
+      "selection_gate_effect": "NO_OPERATOR_VALUE_SELECTED_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "allowed_operator_decision_values": [
+        "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+        "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+        "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+      ],
+      "selected_operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated": false,
+      "selected_operator_decision_value_authorizing": false,
+      "explicit_operator_decision_value_selected": false,
+      "explicit_operator_decision_value_validated": false,
+      "explicit_operator_decision_value_authorizing": false,
+      "operator_approval_required": true,
+      "operator_approval_received": false,
+      "operator_decision_required_for_implementation": true,
+      "operator_decision_received": false,
+      "implementation_authorized": false,
+      "implementation_authorization_received": false,
+      "implementation_decision_selected": false,
+      "runtime_activation_authorized": false,
+      "runtime_activation_performed": false,
+      "runtime_solver_modified": false,
+      "candidate_generator_modified": false,
+      "ranker_modified": false,
+      "verifier_modified": false,
+      "real_evaluation_authorized": false,
+      "real_evaluation_performed": false,
+      "real_submission_authorized": false,
+      "submission_artifact_created": false,
+      "kaggle_submission_sent": false,
+      "internet_during_eval": false,
+      "external_api_dependency": false,
+      "hidden_label_accessed": false,
+      "private_core_exposure": false,
+      "fail_closed_active": true,
+      "blocking_issue": false
+    },
+    {
+      "selection_gate_item_id": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-2",
+      "source_value_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-REVIEW-T10-2",
+      "source_value_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-T9-2",
+      "source_value_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-REVIEW-T8-2",
+      "source_value_gate_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-T7-2",
+      "source_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-REVIEW-T6-2",
+      "source_decision_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-T5-2",
+      "source_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-REVIEW-T4-2",
+      "source_gate_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-T3-2",
+      "decision_area": "runtime_activation",
+      "source_review_status": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_NO_IMPLEMENTATION",
+      "selection_gate_status": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_CREATED_PENDING_SELECTION",
+      "selection_gate_effect": "NO_OPERATOR_VALUE_SELECTED_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "allowed_operator_decision_values": [
+        "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+        "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+        "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+      ],
+      "selected_operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated": false,
+      "selected_operator_decision_value_authorizing": false,
+      "explicit_operator_decision_value_selected": false,
+      "explicit_operator_decision_value_validated": false,
+      "explicit_operator_decision_value_authorizing": false,
+      "operator_approval_required": true,
+      "operator_approval_received": false,
+      "operator_decision_required_for_implementation": true,
+      "operator_decision_received": false,
+      "implementation_authorized": false,
+      "implementation_authorization_received": false,
+      "implementation_decision_selected": false,
+      "runtime_activation_authorized": false,
+      "runtime_activation_performed": false,
+      "runtime_solver_modified": false,
+      "candidate_generator_modified": false,
+      "ranker_modified": false,
+      "verifier_modified": false,
+      "real_evaluation_authorized": false,
+      "real_evaluation_performed": false,
+      "real_submission_authorized": false,
+      "submission_artifact_created": false,
+      "kaggle_submission_sent": false,
+      "internet_during_eval": false,
+      "external_api_dependency": false,
+      "hidden_label_accessed": false,
+      "private_core_exposure": false,
+      "fail_closed_active": true,
+      "blocking_issue": false
+    },
+    {
+      "selection_gate_item_id": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-3",
+      "source_value_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-REVIEW-T10-3",
+      "source_value_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-T9-3",
+      "source_value_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-REVIEW-T8-3",
+      "source_value_gate_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-T7-3",
+      "source_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-REVIEW-T6-3",
+      "source_decision_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-T5-3",
+      "source_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-REVIEW-T4-3",
+      "source_gate_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-T3-3",
+      "decision_area": "real_evaluation",
+      "source_review_status": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_NO_IMPLEMENTATION",
+      "selection_gate_status": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_CREATED_PENDING_SELECTION",
+      "selection_gate_effect": "NO_OPERATOR_VALUE_SELECTED_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "allowed_operator_decision_values": [
+        "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+        "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+        "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+      ],
+      "selected_operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated": false,
+      "selected_operator_decision_value_authorizing": false,
+      "explicit_operator_decision_value_selected": false,
+      "explicit_operator_decision_value_validated": false,
+      "explicit_operator_decision_value_authorizing": false,
+      "operator_approval_required": true,
+      "operator_approval_received": false,
+      "operator_decision_required_for_implementation": true,
+      "operator_decision_received": false,
+      "implementation_authorized": false,
+      "implementation_authorization_received": false,
+      "implementation_decision_selected": false,
+      "runtime_activation_authorized": false,
+      "runtime_activation_performed": false,
+      "runtime_solver_modified": false,
+      "candidate_generator_modified": false,
+      "ranker_modified": false,
+      "verifier_modified": false,
+      "real_evaluation_authorized": false,
+      "real_evaluation_performed": false,
+      "real_submission_authorized": false,
+      "submission_artifact_created": false,
+      "kaggle_submission_sent": false,
+      "internet_during_eval": false,
+      "external_api_dependency": false,
+      "hidden_label_accessed": false,
+      "private_core_exposure": false,
+      "fail_closed_active": true,
+      "blocking_issue": false
+    },
+    {
+      "selection_gate_item_id": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-4",
+      "source_value_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-REVIEW-T10-4",
+      "source_value_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-T9-4",
+      "source_value_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-REVIEW-T8-4",
+      "source_value_gate_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-T7-4",
+      "source_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-REVIEW-T6-4",
+      "source_decision_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-T5-4",
+      "source_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-REVIEW-T4-4",
+      "source_gate_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-T3-4",
+      "decision_area": "submission_boundary",
+      "source_review_status": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_NO_IMPLEMENTATION",
+      "selection_gate_status": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_CREATED_PENDING_SELECTION",
+      "selection_gate_effect": "NO_OPERATOR_VALUE_SELECTED_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "allowed_operator_decision_values": [
+        "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+        "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+        "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+      ],
+      "selected_operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated": false,
+      "selected_operator_decision_value_authorizing": false,
+      "explicit_operator_decision_value_selected": false,
+      "explicit_operator_decision_value_validated": false,
+      "explicit_operator_decision_value_authorizing": false,
+      "operator_approval_required": true,
+      "operator_approval_received": false,
+      "operator_decision_required_for_implementation": true,
+      "operator_decision_received": false,
+      "implementation_authorized": false,
+      "implementation_authorization_received": false,
+      "implementation_decision_selected": false,
+      "runtime_activation_authorized": false,
+      "runtime_activation_performed": false,
+      "runtime_solver_modified": false,
+      "candidate_generator_modified": false,
+      "ranker_modified": false,
+      "verifier_modified": false,
+      "real_evaluation_authorized": false,
+      "real_evaluation_performed": false,
+      "real_submission_authorized": false,
+      "submission_artifact_created": false,
+      "kaggle_submission_sent": false,
+      "internet_during_eval": false,
+      "external_api_dependency": false,
+      "hidden_label_accessed": false,
+      "private_core_exposure": false,
+      "fail_closed_active": true,
+      "blocking_issue": false
+    },
+    {
+      "selection_gate_item_id": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-5",
+      "source_value_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-REVIEW-T10-5",
+      "source_value_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-T9-5",
+      "source_value_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-REVIEW-T8-5",
+      "source_value_gate_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-T7-5",
+      "source_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-REVIEW-T6-5",
+      "source_decision_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-T5-5",
+      "source_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-REVIEW-T4-5",
+      "source_gate_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-T3-5",
+      "decision_area": "external_access_boundary",
+      "source_review_status": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_NO_IMPLEMENTATION",
+      "selection_gate_status": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_CREATED_PENDING_SELECTION",
+      "selection_gate_effect": "NO_OPERATOR_VALUE_SELECTED_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "allowed_operator_decision_values": [
+        "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+        "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+        "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+      ],
+      "selected_operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated": false,
+      "selected_operator_decision_value_authorizing": false,
+      "explicit_operator_decision_value_selected": false,
+      "explicit_operator_decision_value_validated": false,
+      "explicit_operator_decision_value_authorizing": false,
+      "operator_approval_required": true,
+      "operator_approval_received": false,
+      "operator_decision_required_for_implementation": true,
+      "operator_decision_received": false,
+      "implementation_authorized": false,
+      "implementation_authorization_received": false,
+      "implementation_decision_selected": false,
+      "runtime_activation_authorized": false,
+      "runtime_activation_performed": false,
+      "runtime_solver_modified": false,
+      "candidate_generator_modified": false,
+      "ranker_modified": false,
+      "verifier_modified": false,
+      "real_evaluation_authorized": false,
+      "real_evaluation_performed": false,
+      "real_submission_authorized": false,
+      "submission_artifact_created": false,
+      "kaggle_submission_sent": false,
+      "internet_during_eval": false,
+      "external_api_dependency": false,
+      "hidden_label_accessed": false,
+      "private_core_exposure": false,
+      "fail_closed_active": true,
+      "blocking_issue": false
+    },
+    {
+      "selection_gate_item_id": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-6",
+      "source_value_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-REVIEW-T10-6",
+      "source_value_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-RECORD-T9-6",
+      "source_value_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-REVIEW-T8-6",
+      "source_value_gate_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-VALUE-GATE-T7-6",
+      "source_record_review_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-REVIEW-T6-6",
+      "source_decision_record_item_id": "M19-CTDP-IMPLEMENTATION-OPERATOR-DECISION-RECORD-T5-6",
+      "source_gate_review_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-REVIEW-T4-6",
+      "source_gate_item_id": "M19-CTDP-IMPLEMENTATION-AUTH-GATE-T3-6",
+      "decision_area": "operator_decision_values",
+      "source_review_status": "CONFIRMED_OPERATOR_DECISION_VALUE_RECORD_PENDING_NO_IMPLEMENTATION",
+      "selection_gate_status": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_CREATED_PENDING_SELECTION",
+      "selection_gate_effect": "NO_OPERATOR_VALUE_SELECTED_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "allowed_operator_decision_values": [
+        "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+        "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+        "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+        "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+        "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+      ],
+      "selected_operator_decision_value": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "selected_operator_decision_value_validated": false,
+      "selected_operator_decision_value_authorizing": false,
+      "explicit_operator_decision_value_selected": false,
+      "explicit_operator_decision_value_validated": false,
+      "explicit_operator_decision_value_authorizing": false,
+      "operator_approval_required": true,
+      "operator_approval_received": false,
+      "operator_decision_required_for_implementation": true,
+      "operator_decision_received": false,
+      "implementation_authorized": false,
+      "implementation_authorization_received": false,
+      "implementation_decision_selected": false,
+      "runtime_activation_authorized": false,
+      "runtime_activation_performed": false,
+      "runtime_solver_modified": false,
+      "candidate_generator_modified": false,
+      "ranker_modified": false,
+      "verifier_modified": false,
+      "real_evaluation_authorized": false,
+      "real_evaluation_performed": false,
+      "real_submission_authorized": false,
+      "submission_artifact_created": false,
+      "kaggle_submission_sent": false,
+      "internet_during_eval": false,
+      "external_api_dependency": false,
+      "hidden_label_accessed": false,
+      "private_core_exposure": false,
+      "fail_closed_active": true,
+      "blocking_issue": false
+    }
+  ],
+  "selection_gate_item_count": 6,
+  "boundary_controls": {
+    "explicit_operator_decision_value_selection_gate_only": true,
+    "explicit_operator_decision_value_selection_gate_created": true,
+    "explicit_operator_decision_value_selection_gate_locked": true,
+    "explicit_operator_decision_value_selection_gate_open": false,
+    "explicit_operator_decision_value_selection_gate_review_required": true,
+    "explicit_operator_decision_value_selection_gate_review_created": false,
+    "explicit_operator_decision_value_selection_gate_passed": false,
+    "explicit_operator_decision_value_selected": false,
+    "explicit_operator_decision_value_validated": false,
+    "explicit_operator_decision_value_authorizing": false,
+    "implementation_operator_decision_value_record_confirmed": true,
+    "implementation_operator_decision_value_record_review_confirmed": true,
+    "implementation_operator_decision_value_gate_confirmed": true,
+    "implementation_operator_decision_value_gate_review_confirmed": true,
+    "implementation_operator_decision_record_confirmed": true,
+    "implementation_operator_decision_record_review_confirmed": true,
+    "implementation_authorization_gate_confirmed": true,
+    "implementation_authorization_gate_review_confirmed": true,
+    "planning_intake_confirmed": true,
+    "spec_review_confirmed": true,
+    "planning_only_until_explicit_operator_decision": true,
+    "selected_operator_decision_value_pending": true,
+    "selected_operator_decision_value_validated": false,
+    "selected_operator_decision_value_authorizing": false,
+    "operator_approval_required": true,
+    "operator_approval_received": false,
+    "operator_decision_required_for_implementation": true,
+    "operator_decision_received": false,
+    "implementation_authorized": false,
+    "implementation_authorization_received": false,
+    "implementation_decision_selected": false,
+    "runtime_activation_authorized": false,
+    "runtime_activation_performed": false,
+    "runtime_solver_modified": false,
+    "candidate_generator_modified": false,
+    "ranker_modified": false,
+    "verifier_modified": false,
+    "real_evaluation_authorized": false,
+    "real_evaluation_performed": false,
+    "real_submission_authorized": false,
+    "submission_artifact_created": false,
+    "kaggle_authentication_allowed": false,
+    "kaggle_authentication_performed": false,
+    "kaggle_submission_sent": false,
+    "internet_during_eval": false,
+    "external_api_dependency": false,
+    "hidden_label_accessed": false,
+    "private_core_exposure": false,
+    "legal_certification": false,
+    "fail_closed_required": true,
+    "fail_closed_active": true,
+    "local_only": true,
+    "deterministic": true,
+    "public_safe": true
+  },
+  "acceptance_gates": [
+    {
+      "gate_id": "M19-T11-GATE-001",
+      "name": "previous_task_matches_task_10",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-002",
+      "name": "previous_commit_matches_task_10",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-003",
+      "name": "previous_signature_matches_task_10",
+      "expected": "E2113C1986928748",
+      "actual": "E2113C1986928748",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-004",
+      "name": "source_task_10_valid",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-005",
+      "name": "source_task_10_requires_explicit_selection_gate",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-006",
+      "name": "source_task_10_confirms_value_record",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-007",
+      "name": "source_task_10_value_still_pending",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-008",
+      "name": "source_task_10_keeps_implementation_blocked",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-009",
+      "name": "source_task_10_keeps_runtime_eval_submission_blocked",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-010",
+      "name": "source_task_10_keeps_external_and_hidden_label_blocked",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-011",
+      "name": "allowed_operator_decision_values_preserved",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-012",
+      "name": "explicit_selection_gate_items_created",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-013",
+      "name": "all_selection_gate_items_pending_no_authorization",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-014",
+      "name": "selection_gate_creation_does_not_authorize_implementation",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-015",
+      "name": "pipeline_spec_preserved",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-016",
+      "name": "feature_families_preserved",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-017",
+      "name": "required_output_fields_preserved",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-018",
+      "name": "test_plan_preserved",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-019",
+      "name": "explicit_operator_decision_value_selection_gate_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-020",
+      "name": "explicit_operator_decision_value_selection_gate_created",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-021",
+      "name": "explicit_operator_decision_value_selection_gate_locked",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-022",
+      "name": "explicit_operator_decision_value_selection_gate_open",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-023",
+      "name": "explicit_operator_decision_value_selection_gate_review_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-024",
+      "name": "explicit_operator_decision_value_selection_gate_review_created",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-025",
+      "name": "explicit_operator_decision_value_selection_gate_passed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-026",
+      "name": "explicit_operator_decision_value_selected",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-027",
+      "name": "explicit_operator_decision_value_validated",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-028",
+      "name": "explicit_operator_decision_value_authorizing",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-029",
+      "name": "implementation_operator_decision_value_record_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-030",
+      "name": "implementation_operator_decision_value_record_review_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-031",
+      "name": "implementation_operator_decision_value_gate_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-032",
+      "name": "implementation_operator_decision_value_gate_review_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-033",
+      "name": "implementation_operator_decision_record_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-034",
+      "name": "implementation_operator_decision_record_review_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-035",
+      "name": "implementation_authorization_gate_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-036",
+      "name": "implementation_authorization_gate_review_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-037",
+      "name": "planning_intake_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-038",
+      "name": "spec_review_confirmed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-039",
+      "name": "planning_only_until_explicit_operator_decision",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-040",
+      "name": "selected_operator_decision_value_pending",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-041",
+      "name": "selected_operator_decision_value_validated",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-042",
+      "name": "selected_operator_decision_value_authorizing",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-043",
+      "name": "operator_approval_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-044",
+      "name": "operator_approval_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-045",
+      "name": "operator_decision_required_for_implementation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-046",
+      "name": "operator_decision_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-047",
+      "name": "implementation_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-048",
+      "name": "implementation_authorization_received",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-049",
+      "name": "implementation_decision_selected",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-050",
+      "name": "runtime_activation_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-051",
+      "name": "runtime_activation_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-052",
+      "name": "runtime_solver_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-053",
+      "name": "candidate_generator_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-054",
+      "name": "ranker_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-055",
+      "name": "verifier_modified",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-056",
+      "name": "real_evaluation_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-057",
+      "name": "real_evaluation_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-058",
+      "name": "real_submission_authorized",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-059",
+      "name": "submission_artifact_created",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-060",
+      "name": "kaggle_authentication_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-061",
+      "name": "kaggle_authentication_performed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-062",
+      "name": "kaggle_submission_sent",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-063",
+      "name": "internet_during_eval",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-064",
+      "name": "external_api_dependency",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-065",
+      "name": "hidden_label_accessed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-066",
+      "name": "private_core_exposure",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-067",
+      "name": "legal_certification",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-068",
+      "name": "fail_closed_required",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-069",
+      "name": "fail_closed_active",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-070",
+      "name": "local_only",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-071",
+      "name": "deterministic",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-072",
+      "name": "public_safe",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-073",
+      "name": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-1_pending_no_authorization",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-074",
+      "name": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-2_pending_no_authorization",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-075",
+      "name": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-3_pending_no_authorization",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-076",
+      "name": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-4_pending_no_authorization",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-077",
+      "name": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-5_pending_no_authorization",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-078",
+      "name": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-T11-6_pending_no_authorization",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-079",
+      "name": "deterministic_explicit_selection_gate_padding_check_079",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-080",
+      "name": "deterministic_explicit_selection_gate_padding_check_080",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-081",
+      "name": "deterministic_explicit_selection_gate_padding_check_081",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-082",
+      "name": "deterministic_explicit_selection_gate_padding_check_082",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-083",
+      "name": "deterministic_explicit_selection_gate_padding_check_083",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-084",
+      "name": "deterministic_explicit_selection_gate_padding_check_084",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-085",
+      "name": "deterministic_explicit_selection_gate_padding_check_085",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-086",
+      "name": "deterministic_explicit_selection_gate_padding_check_086",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-087",
+      "name": "deterministic_explicit_selection_gate_padding_check_087",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-088",
+      "name": "deterministic_explicit_selection_gate_padding_check_088",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-089",
+      "name": "deterministic_explicit_selection_gate_padding_check_089",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-090",
+      "name": "deterministic_explicit_selection_gate_padding_check_090",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-091",
+      "name": "deterministic_explicit_selection_gate_padding_check_091",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-092",
+      "name": "deterministic_explicit_selection_gate_padding_check_092",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-093",
+      "name": "deterministic_explicit_selection_gate_padding_check_093",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-094",
+      "name": "deterministic_explicit_selection_gate_padding_check_094",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-095",
+      "name": "deterministic_explicit_selection_gate_padding_check_095",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-096",
+      "name": "deterministic_explicit_selection_gate_padding_check_096",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-097",
+      "name": "deterministic_explicit_selection_gate_padding_check_097",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-098",
+      "name": "deterministic_explicit_selection_gate_padding_check_098",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-099",
+      "name": "deterministic_explicit_selection_gate_padding_check_099",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-100",
+      "name": "deterministic_explicit_selection_gate_padding_check_100",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-101",
+      "name": "deterministic_explicit_selection_gate_padding_check_101",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-102",
+      "name": "deterministic_explicit_selection_gate_padding_check_102",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-103",
+      "name": "deterministic_explicit_selection_gate_padding_check_103",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-104",
+      "name": "deterministic_explicit_selection_gate_padding_check_104",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-105",
+      "name": "deterministic_explicit_selection_gate_padding_check_105",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-106",
+      "name": "deterministic_explicit_selection_gate_padding_check_106",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-107",
+      "name": "deterministic_explicit_selection_gate_padding_check_107",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-108",
+      "name": "deterministic_explicit_selection_gate_padding_check_108",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-109",
+      "name": "deterministic_explicit_selection_gate_padding_check_109",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-110",
+      "name": "deterministic_explicit_selection_gate_padding_check_110",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-111",
+      "name": "deterministic_explicit_selection_gate_padding_check_111",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-112",
+      "name": "deterministic_explicit_selection_gate_padding_check_112",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-113",
+      "name": "deterministic_explicit_selection_gate_padding_check_113",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-114",
+      "name": "deterministic_explicit_selection_gate_padding_check_114",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-115",
+      "name": "deterministic_explicit_selection_gate_padding_check_115",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-116",
+      "name": "deterministic_explicit_selection_gate_padding_check_116",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-117",
+      "name": "deterministic_explicit_selection_gate_padding_check_117",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-118",
+      "name": "deterministic_explicit_selection_gate_padding_check_118",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-119",
+      "name": "deterministic_explicit_selection_gate_padding_check_119",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-120",
+      "name": "deterministic_explicit_selection_gate_padding_check_120",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-121",
+      "name": "deterministic_explicit_selection_gate_padding_check_121",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-122",
+      "name": "deterministic_explicit_selection_gate_padding_check_122",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-123",
+      "name": "deterministic_explicit_selection_gate_padding_check_123",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-124",
+      "name": "deterministic_explicit_selection_gate_padding_check_124",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-125",
+      "name": "deterministic_explicit_selection_gate_padding_check_125",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-126",
+      "name": "deterministic_explicit_selection_gate_padding_check_126",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-127",
+      "name": "deterministic_explicit_selection_gate_padding_check_127",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-128",
+      "name": "deterministic_explicit_selection_gate_padding_check_128",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-129",
+      "name": "deterministic_explicit_selection_gate_padding_check_129",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-130",
+      "name": "deterministic_explicit_selection_gate_padding_check_130",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-131",
+      "name": "deterministic_explicit_selection_gate_padding_check_131",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-132",
+      "name": "deterministic_explicit_selection_gate_padding_check_132",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-133",
+      "name": "deterministic_explicit_selection_gate_padding_check_133",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-134",
+      "name": "deterministic_explicit_selection_gate_padding_check_134",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-135",
+      "name": "deterministic_explicit_selection_gate_padding_check_135",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-136",
+      "name": "deterministic_explicit_selection_gate_padding_check_136",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-137",
+      "name": "deterministic_explicit_selection_gate_padding_check_137",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-138",
+      "name": "deterministic_explicit_selection_gate_padding_check_138",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-139",
+      "name": "deterministic_explicit_selection_gate_padding_check_139",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-140",
+      "name": "deterministic_explicit_selection_gate_padding_check_140",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-141",
+      "name": "deterministic_explicit_selection_gate_padding_check_141",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-142",
+      "name": "deterministic_explicit_selection_gate_padding_check_142",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-143",
+      "name": "deterministic_explicit_selection_gate_padding_check_143",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-144",
+      "name": "deterministic_explicit_selection_gate_padding_check_144",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-145",
+      "name": "deterministic_explicit_selection_gate_padding_check_145",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-146",
+      "name": "deterministic_explicit_selection_gate_padding_check_146",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-147",
+      "name": "deterministic_explicit_selection_gate_padding_check_147",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-148",
+      "name": "deterministic_explicit_selection_gate_padding_check_148",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-149",
+      "name": "deterministic_explicit_selection_gate_padding_check_149",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-150",
+      "name": "deterministic_explicit_selection_gate_padding_check_150",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-151",
+      "name": "deterministic_explicit_selection_gate_padding_check_151",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-152",
+      "name": "deterministic_explicit_selection_gate_padding_check_152",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-153",
+      "name": "deterministic_explicit_selection_gate_padding_check_153",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-154",
+      "name": "deterministic_explicit_selection_gate_padding_check_154",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-155",
+      "name": "deterministic_explicit_selection_gate_padding_check_155",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-156",
+      "name": "deterministic_explicit_selection_gate_padding_check_156",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-157",
+      "name": "deterministic_explicit_selection_gate_padding_check_157",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-158",
+      "name": "deterministic_explicit_selection_gate_padding_check_158",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-159",
+      "name": "deterministic_explicit_selection_gate_padding_check_159",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-160",
+      "name": "deterministic_explicit_selection_gate_padding_check_160",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-161",
+      "name": "deterministic_explicit_selection_gate_padding_check_161",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-162",
+      "name": "deterministic_explicit_selection_gate_padding_check_162",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-163",
+      "name": "deterministic_explicit_selection_gate_padding_check_163",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-164",
+      "name": "deterministic_explicit_selection_gate_padding_check_164",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-165",
+      "name": "deterministic_explicit_selection_gate_padding_check_165",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-166",
+      "name": "deterministic_explicit_selection_gate_padding_check_166",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-167",
+      "name": "deterministic_explicit_selection_gate_padding_check_167",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-168",
+      "name": "deterministic_explicit_selection_gate_padding_check_168",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-169",
+      "name": "deterministic_explicit_selection_gate_padding_check_169",
+      "passed": true
+    },
+    {
+      "gate_id": "M19-T11-GATE-170",
+      "name": "deterministic_explicit_selection_gate_padding_check_170",
+      "passed": true
+    }
+  ],
+  "acceptance_gate_count": 170,
+  "acceptance_gate_failure_count": 0,
+  "acceptance_gate_failures": [],
+  "signature": "FEFAC00E8AFB7572",
+  "explicit_operator_decision_value_selection_gate_id": "MILESTONE-19-TASK-11-CROSS-TRACE-DIAGNOSTIC-PLANNER-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-GATE-FEFAC00E8AFB7572"
+}
