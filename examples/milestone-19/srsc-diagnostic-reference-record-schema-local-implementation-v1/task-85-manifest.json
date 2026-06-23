@@ -1,0 +1,47 @@
+{
+  "taskId": "MILESTONE_19_TASK_85_SRSC_DIAGNOSTIC_REFERENCE_RECORD_SCHEMA_LOCAL_IMPLEMENTATION_V1",
+  "status": "LOCAL_SCHEMA_IMPLEMENTATION_READY",
+  "mode": "LOCAL_STANDALONE_SCHEMA_NO_RUNTIME_WIRING",
+  "dependency": "MILESTONE_19_TASK_84_SRSC_DIAGNOSTIC_REFERENCE_RECORD_SCHEMA_AUTHORIZATION_REVIEW_V1",
+  "implementedModules": [
+    "src/hbce_arc_agi3/srsc_diagnostic_reference.py"
+  ],
+  "implementedTests": [
+    "tests/test_srsc_diagnostic_reference.py"
+  ],
+  "implementedSchemaTypes": [
+    "DiagnosticReferenceSourceType",
+    "SrscDiagnosticReferenceRecord",
+    "DiagnosticReferenceBoundary",
+    "create_diagnostic_reference_record"
+  ],
+  "allowedSourceTypes": [
+    "CROSS_TRACE_DIAGNOSTIC_PLANNER_RECORD",
+    "PUBLIC_SAFE_AUDIT_SUMMARY",
+    "LOCAL_CLAIM_REVIEW_REPORT",
+    "EVIDENCE_BOUND_DIAGNOSTIC_NOTE",
+    "MILESTONE_CLOSURE_RECORD",
+    "SOURCE_FILE_EVIDENCE_NOTE"
+  ],
+  "schemaImplementationPerformed": true,
+  "localStandaloneSchema": true,
+  "diagnosticAdapterImplemented": false,
+  "runtimeActivationAuthorized": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "candidateGeneratorModified": false,
+  "rankerModified": false,
+  "verifierModified": false,
+  "benchmarkScoreClaimed": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "internetDuringEval": false,
+  "externalApiDependency": false,
+  "privateCoreExposure": false,
+  "legalCertification": false,
+  "failClosedRequired": true,
+  "failClosedActive": true,
+  "nextStage": "MILESTONE_19_TASK_86_SRSC_DIAGNOSTIC_REFERENCE_RECORD_SCHEMA_IMPLEMENTATION_REVIEW_V1"
+}

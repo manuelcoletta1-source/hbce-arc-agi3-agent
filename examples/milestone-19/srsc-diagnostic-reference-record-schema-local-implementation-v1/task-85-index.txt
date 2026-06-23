@@ -1,0 +1,42 @@
+MILESTONE #19 TASK 85 - SRSC DIAGNOSTIC REFERENCE RECORD SCHEMA LOCAL IMPLEMENTATION v1
+
+TASK_ID=MILESTONE_19_TASK_85_SRSC_DIAGNOSTIC_REFERENCE_RECORD_SCHEMA_LOCAL_IMPLEMENTATION_V1
+STATUS=LOCAL_SCHEMA_IMPLEMENTATION_READY
+MODE=LOCAL_STANDALONE_SCHEMA_NO_RUNTIME_WIRING
+DEPENDENCY=MILESTONE_19_TASK_84_SRSC_DIAGNOSTIC_REFERENCE_RECORD_SCHEMA_AUTHORIZATION_REVIEW_V1
+
+IMPLEMENTED_MODULES:
+- src/hbce_arc_agi3/srsc_diagnostic_reference.py
+
+IMPLEMENTED_TESTS:
+- tests/test_srsc_diagnostic_reference.py
+
+IMPLEMENTED_SCHEMA_TYPES:
+- DiagnosticReferenceSourceType
+- SrscDiagnosticReferenceRecord
+- DiagnosticReferenceBoundary
+- create_diagnostic_reference_record
+
+BOUNDARY:
+schema_implementation_performed=true
+local_standalone_schema=true
+diagnostic_adapter_implemented=false
+runtime_activation_authorized=false
+runtime_solver_modified=false
+runtime_wiring_allowed=false
+candidate_generator_modified=false
+ranker_modified=false
+verifier_modified=false
+benchmark_score_claimed=false
+real_evaluation_performed=false
+real_submission_authorized=false
+kaggle_authentication_performed=false
+kaggle_submission_sent=false
+internet_during_eval=false
+external_api_dependency=false
+private_core_exposure=false
+legal_certification=false
+fail_closed_required=true
+fail_closed_active=true
+
+NEXT_STAGE=MILESTONE_19_TASK_86_SRSC_DIAGNOSTIC_REFERENCE_RECORD_SCHEMA_IMPLEMENTATION_REVIEW_V1
