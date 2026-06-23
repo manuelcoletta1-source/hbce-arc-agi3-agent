@@ -1,0 +1,630 @@
+{
+  "acceptanceGateCount": 90,
+  "acceptanceGateFailureCount": 0,
+  "acceptanceGates": [
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-001",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-002",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-003",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-004",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-005",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-006",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-007",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-008",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-009",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-010",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-011",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-012",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-013",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-014",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-015",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-016",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-017",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-018",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-019",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-020",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-021",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-022",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-023",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-024",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-025",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-026",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-027",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-028",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-029",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-030",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-031",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-032",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-033",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-034",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-035",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-036",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-037",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-038",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-039",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-040",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-041",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-042",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-043",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-044",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-045",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-046",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-047",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-048",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-049",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-050",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-051",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-052",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-053",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-054",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-055",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-056",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-057",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-058",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-059",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-060",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-061",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-062",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-063",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-064",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-065",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-066",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-067",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-068",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-069",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-070",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-071",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-072",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-073",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-074",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-075",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-076",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-077",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-078",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-079",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-080",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-081",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-082",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-083",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-084",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-085",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-086",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-087",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-088",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-089",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T67-GATE-090",
+      "passed": true
+    }
+  ],
+  "allowedOperatorDecisionValues": [
+    "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+    "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+    "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+    "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+    "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+  ],
+  "candidateGeneratorModified": false,
+  "closureArchiveIndexActive": true,
+  "closureArchiveIndexClosed": false,
+  "closureArchiveIndexConfirmed": true,
+  "closureArchiveIndexCreated": true,
+  "closureArchiveIndexItemCount": 5,
+  "closureArchiveIndexLocked": true,
+  "closureArchiveIndexOnly": true,
+  "closureArchiveIndexReady": true,
+  "closureArchiveIndexReviewCreated": false,
+  "closureArchiveIndexReviewItemCount": 5,
+  "closureArchiveIndexReviewRequired": true,
+  "deterministic": true,
+  "explicitOperatorDecisionValueAuthorizing": false,
+  "explicitOperatorDecisionValueSelected": false,
+  "explicitOperatorDecisionValueValidated": false,
+  "externalApiDependency": false,
+  "failClosedActive": true,
+  "failClosedRequired": true,
+  "hiddenLabelAccessed": false,
+  "implementationAuthorizationReceived": false,
+  "implementationAuthorized": false,
+  "implementationDecisionSelected": false,
+  "internetDuringEval": false,
+  "items": [
+    {
+      "authorizing": false,
+      "closureArchiveIndexActive": true,
+      "closureArchiveIndexClosed": false,
+      "closureArchiveIndexConfirmed": true,
+      "closureArchiveIndexCreated": true,
+      "closureArchiveIndexLocked": true,
+      "closureArchiveIndexReviewCreated": false,
+      "closureArchiveIndexReviewRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T67-CLOSURE-ARCHIVE-INDEX-1",
+      "kaggleSubmissionSent": false,
+      "operatorDecisionValue": "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "sourceClosureReviewItemId": "M19-T66-CLOSURE-REVIEW-1",
+      "validated": false
+    },
+    {
+      "authorizing": false,
+      "closureArchiveIndexActive": true,
+      "closureArchiveIndexClosed": false,
+      "closureArchiveIndexConfirmed": true,
+      "closureArchiveIndexCreated": true,
+      "closureArchiveIndexLocked": true,
+      "closureArchiveIndexReviewCreated": false,
+      "closureArchiveIndexReviewRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T67-CLOSURE-ARCHIVE-INDEX-2",
+      "kaggleSubmissionSent": false,
+      "operatorDecisionValue": "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "sourceClosureReviewItemId": "M19-T66-CLOSURE-REVIEW-2",
+      "validated": false
+    },
+    {
+      "authorizing": false,
+      "closureArchiveIndexActive": true,
+      "closureArchiveIndexClosed": false,
+      "closureArchiveIndexConfirmed": true,
+      "closureArchiveIndexCreated": true,
+      "closureArchiveIndexLocked": true,
+      "closureArchiveIndexReviewCreated": false,
+      "closureArchiveIndexReviewRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T67-CLOSURE-ARCHIVE-INDEX-3",
+      "kaggleSubmissionSent": false,
+      "operatorDecisionValue": "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "sourceClosureReviewItemId": "M19-T66-CLOSURE-REVIEW-3",
+      "validated": false
+    },
+    {
+      "authorizing": false,
+      "closureArchiveIndexActive": true,
+      "closureArchiveIndexClosed": false,
+      "closureArchiveIndexConfirmed": true,
+      "closureArchiveIndexCreated": true,
+      "closureArchiveIndexLocked": true,
+      "closureArchiveIndexReviewCreated": false,
+      "closureArchiveIndexReviewRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T67-CLOSURE-ARCHIVE-INDEX-4",
+      "kaggleSubmissionSent": false,
+      "operatorDecisionValue": "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "sourceClosureReviewItemId": "M19-T66-CLOSURE-REVIEW-4",
+      "validated": false
+    },
+    {
+      "authorizing": false,
+      "closureArchiveIndexActive": true,
+      "closureArchiveIndexClosed": false,
+      "closureArchiveIndexConfirmed": true,
+      "closureArchiveIndexCreated": true,
+      "closureArchiveIndexLocked": true,
+      "closureArchiveIndexReviewCreated": false,
+      "closureArchiveIndexReviewRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T67-CLOSURE-ARCHIVE-INDEX-5",
+      "kaggleSubmissionSent": false,
+      "operatorDecisionValue": "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION",
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "sourceClosureReviewItemId": "M19-T66-CLOSURE-REVIEW-5",
+      "validated": false
+    }
+  ],
+  "kaggleAuthenticationAllowed": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "localOnly": true,
+  "milestoneName": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER",
+  "mode": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_ONLY_NO_SELECTION_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+  "nextTask": "MILESTONE_19_TASK_68_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_REVIEW_V1",
+  "operatorApprovalReceived": false,
+  "operatorApprovalRequired": true,
+  "operatorDecisionPendingStatusActive": true,
+  "operatorDecisionReceived": false,
+  "operatorDecisionRequiredForImplementation": true,
+  "operatorPromptOptionCount": 5,
+  "planningOnlyUntilExplicitOperatorDecision": true,
+  "previousCommit": "cea9820",
+  "previousSignature": "51DA31031BA75A82",
+  "previousTask": "MILESTONE_19_TASK_66_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_REVIEW_V1",
+  "privateCoreExposure": false,
+  "publicSafe": true,
+  "rankerModified": false,
+  "realEvaluationAuthorized": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "runtimeActivationAuthorized": false,
+  "runtimeActivationPerformed": false,
+  "runtimeSolverModified": false,
+  "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "signature": "F674E2A5FA4BB2DB",
+  "sourceClosureActive": false,
+  "sourceClosureArchiveIndexCreated": false,
+  "sourceClosureArchiveIndexRequired": true,
+  "sourceClosureClosed": true,
+  "sourceClosureConfirmed": true,
+  "sourceClosureCreated": true,
+  "sourceClosureLocked": true,
+  "sourceClosureReady": true,
+  "sourceClosureReviewActive": true,
+  "sourceClosureReviewClosed": false,
+  "sourceClosureReviewConfirmed": true,
+  "sourceClosureReviewCreated": true,
+  "sourceClosureReviewPassed": true,
+  "sourceClosureReviewReady": true,
+  "submissionArtifactCreated": false,
+  "taskId": "MILESTONE-19-TASK-67-CLOSURE-ARCHIVE-INDEX-F674E2A5FA4BB2DB",
+  "taskLabel": "Cross-Trace Diagnostic Planner Explicit Operator Decision Value Selection Operator Decision Final Wait State Archive Index Final Pending Status Closure Archive Index Closure Archive Index Closure Archive Index Closure Archive Index Closure Archive Index Closure Archive Index v1",
+  "taskName": "MILESTONE_19_TASK_67_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_V1",
+  "taskNumber": 67,
+  "verdict": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CLOSURE_ARCHIVE_INDEX_CREATED_REVIEW_REQUIRED_IMPLEMENTATION_BLOCKED",
+  "verifierModified": false,
+  "waitingForExplicitOperatorDecisionValue": true
+}
