@@ -1,0 +1,26 @@
+{
+  "taskId": "MILESTONE_19_TASK_79_SRSC_CROSS_TRACE_FRAMEWORK_ALIGNMENT_V1",
+  "status": "PLANNING_READY_DOCUMENTATION_ALIGNED",
+  "mode": "DOCUMENTATION_AND_FRAMEWORK_ALIGNMENT_ONLY",
+  "documents": {
+    "srscFramework": "docs/srsc-ai-framework-anti-allucinazioni-v1-0.md",
+    "crossTracePlanner": "docs/arc-agi3-cross-trace-diagnostic-planner-v1.md",
+    "taskAlignment": "docs/milestone-19-task-79-srsc-cross-trace-framework-alignment-v1.md"
+  },
+  "implementationAuthorized": false,
+  "implementationPerformed": false,
+  "runtimeActivationAuthorized": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "internetDuringEval": false,
+  "externalApiDependency": false,
+  "privateCoreExposure": false,
+  "legalCertification": false,
+  "failClosedRequired": true,
+  "failClosedActive": true,
+  "nextStage": "MILESTONE_19_TASK_80_SRSC_CLAIM_LEDGER_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1"
+}
