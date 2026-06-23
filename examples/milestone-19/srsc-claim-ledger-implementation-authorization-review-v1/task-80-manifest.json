@@ -1,0 +1,38 @@
+{
+  "taskId": "MILESTONE_19_TASK_80_SRSC_CLAIM_LEDGER_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1",
+  "status": "AUTHORIZATION_REVIEW_READY",
+  "mode": "REVIEW_ONLY_NO_RUNTIME_IMPLEMENTATION",
+  "dependency": "MILESTONE_19_TASK_79_SRSC_CROSS_TRACE_FRAMEWORK_ALIGNMENT_V1",
+  "decision": "AUTHORIZE_NEXT_TASK_LOCAL_STANDALONE_IMPLEMENTATION_ONLY",
+  "implementationAuthorizedForNextTask": true,
+  "implementationPerformedInTask80": false,
+  "authorizedFutureModules": [
+    "src/hbce_arc_agi3/srsc_claim_ledger.py",
+    "src/hbce_arc_agi3/srsc_evidence_gate.py",
+    "tests/test_srsc_claim_ledger.py",
+    "tests/test_srsc_evidence_gate.py"
+  ],
+  "documents": {
+    "task80Review": "docs/milestone-19-task-80-srsc-claim-ledger-implementation-authorization-review-v1.md",
+    "task79Alignment": "docs/milestone-19-task-79-srsc-cross-trace-framework-alignment-v1.md",
+    "srscFramework": "docs/srsc-ai-framework-anti-allucinazioni-v1-0.md"
+  },
+  "runtimeActivationAuthorized": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "candidateGeneratorModified": false,
+  "rankerModified": false,
+  "verifierModified": false,
+  "benchmarkScoreClaimed": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "internetDuringEval": false,
+  "externalApiDependency": false,
+  "privateCoreExposure": false,
+  "legalCertification": false,
+  "failClosedRequired": true,
+  "failClosedActive": true,
+  "nextStage": "MILESTONE_19_TASK_81_SRSC_CLAIM_LEDGER_EVIDENCE_GATE_LOCAL_IMPLEMENTATION_V1"
+}
