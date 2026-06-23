@@ -1,0 +1,68 @@
+MILESTONE #19 TASK 96 - SRSC DIAGNOSTIC ADAPTER CONTROLLED ACTIVATION USAGE IMPLEMENTATION AUTHORIZATION REVIEW v1
+
+TASK_ID=MILESTONE_19_TASK_96_SRSC_DIAGNOSTIC_ADAPTER_CONTROLLED_ACTIVATION_USAGE_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1
+STATUS=CONTROLLED_ACTIVATION_USAGE_IMPLEMENTATION_AUTHORIZATION_REVIEW_READY
+MODE=REVIEW_ONLY_NO_USAGE_IMPLEMENTATION
+DEPENDENCY=MILESTONE_19_TASK_95_SRSC_DIAGNOSTIC_ADAPTER_CONTROLLED_ACTIVATION_USAGE_PLANNING_V1
+
+DECISION=AUTHORIZE_NEXT_TASK_CONTROLLED_DIAGNOSTIC_USAGE_IMPLEMENTATION_ONLY
+
+AUTHORIZED_FUTURE_MODULES:
+- src/hbce_arc_agi3/srsc_diagnostic_adapter_activation_usage.py
+- tests/test_srsc_diagnostic_adapter_activation_usage.py
+
+AUTHORIZED_FUTURE_USAGE_TYPES:
+- DiagnosticActivationUsageRequest
+- DiagnosticActivationUsageResult
+- DiagnosticActivationUsageBlockedRequest
+- run_controlled_activation_usage
+- run_controlled_activation_usage_batch
+
+BLOCKED_BINDINGS:
+- usage implementation in Task 96
+- activation wrapper modification in Task 96
+- adapter modification in Task 96
+- activation runtime wiring
+- solver runtime binding
+- candidate generator binding
+- ranker score binding
+- verifier binding
+- benchmark score binding
+- Kaggle submission binding
+- external API binding
+- internet evaluation binding
+- private core binding
+- legal certification binding
+
+BOUNDARY:
+controlled_activation_usage_implementation_authorization_review_performed=true
+controlled_diagnostic_usage_implementation_authorized_for_next_task=true
+implementation_performed_in_task_96=false
+usage_implemented_in_task_96=false
+activation_modified_in_task_96=false
+adapter_modified_in_task_96=false
+runtime_activation_authorized=false
+runtime_solver_modified=false
+runtime_wiring_allowed=false
+solver_runtime_binding=false
+candidate_generator_modified=false
+candidate_generator_binding=false
+ranker_modified=false
+ranker_binding=false
+verifier_modified=false
+verifier_binding=false
+benchmark_score_claimed=false
+benchmark_binding=false
+real_evaluation_performed=false
+real_submission_authorized=false
+kaggle_authentication_performed=false
+kaggle_submission_sent=false
+kaggle_submission_binding=false
+internet_during_eval=false
+external_api_dependency=false
+private_core_exposure=false
+legal_certification=false
+fail_closed_required=true
+fail_closed_active=true
+
+NEXT_STAGE=MILESTONE_19_TASK_97_SRSC_DIAGNOSTIC_ADAPTER_CONTROLLED_ACTIVATION_USAGE_LOCAL_IMPLEMENTATION_V1
