@@ -1,0 +1,928 @@
+{
+  "acceptanceGateCount": 89,
+  "acceptanceGateFailureCount": 0,
+  "acceptanceGates": [
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-001",
+      "name": "previous_task_45_final_pending_status_closure_ready",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-002",
+      "name": "previous_task_45_final_pending_status_closure_created",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-003",
+      "name": "previous_task_45_final_pending_status_closure_confirmed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-004",
+      "name": "previous_task_45_final_pending_status_closure_locked",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-005",
+      "name": "previous_task_45_final_pending_status_closure_closed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-006",
+      "name": "previous_task_45_final_pending_status_closure_review_required",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-007",
+      "name": "previous_task_45_final_pending_status_closure_review_not_created",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-008",
+      "name": "previous_task_45_signature_confirmed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-009",
+      "name": "previous_task_45_commit_confirmed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-010",
+      "name": "task_46_closure_review_only",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-011",
+      "name": "task_46_closure_review_ready",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-012",
+      "name": "task_46_closure_review_passed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-013",
+      "name": "task_46_closure_review_confirmed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-014",
+      "name": "task_46_closure_review_created",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-015",
+      "name": "task_46_closure_review_active",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-016",
+      "name": "task_46_closure_review_not_closed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-017",
+      "name": "final_pending_status_closure_archive_index_required",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-018",
+      "name": "final_pending_status_closure_archive_index_not_created",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-019",
+      "name": "final_pending_status_closed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-020",
+      "name": "final_pending_status_not_active",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-021",
+      "name": "final_pending_status_review_closed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-022",
+      "name": "final_pending_status_review_not_active",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-023",
+      "name": "final_pending_status_closure_closed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-024",
+      "name": "final_pending_status_closure_not_active",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-025",
+      "name": "archive_index_closure_review_confirmed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-026",
+      "name": "archive_index_closure_confirmed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-027",
+      "name": "archive_index_closed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-028",
+      "name": "allowed_values_available",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-029",
+      "name": "selected_value_absent",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-030",
+      "name": "pending_value_retained",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-031",
+      "name": "operator_approval_required",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-032",
+      "name": "operator_approval_not_received",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-033",
+      "name": "operator_decision_required_for_implementation",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-034",
+      "name": "operator_decision_not_received",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-035",
+      "name": "implementation_not_authorized",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-036",
+      "name": "implementation_authorization_not_received",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-037",
+      "name": "implementation_decision_not_selected",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-038",
+      "name": "runtime_activation_not_authorized",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-039",
+      "name": "runtime_activation_not_performed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-040",
+      "name": "runtime_solver_not_modified",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-041",
+      "name": "candidate_generator_not_modified",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-042",
+      "name": "ranker_not_modified",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-043",
+      "name": "verifier_not_modified",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-044",
+      "name": "real_evaluation_not_authorized",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-045",
+      "name": "real_evaluation_not_performed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-046",
+      "name": "real_submission_not_authorized",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-047",
+      "name": "submission_artifact_not_created",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-048",
+      "name": "kaggle_authentication_not_allowed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-049",
+      "name": "kaggle_authentication_not_performed",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-050",
+      "name": "kaggle_submission_not_sent",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-051",
+      "name": "internet_during_eval_false",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-052",
+      "name": "external_api_dependency_false",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-053",
+      "name": "hidden_label_accessed_false",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-054",
+      "name": "private_core_exposure_false",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-055",
+      "name": "legal_certification_false",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-056",
+      "name": "fail_closed_required",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-057",
+      "name": "fail_closed_active",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-058",
+      "name": "local_only",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-059",
+      "name": "deterministic",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-060",
+      "name": "public_safe",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-061",
+      "name": "planning_only_until_explicit_operator_decision",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-062",
+      "name": "pipeline_model_declared",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-063",
+      "name": "feature_families_declared",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-GATE-064",
+      "name": "required_output_fields_declared",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OPTION-GATE-001",
+      "name": "operator_option_closure_reviewed_available_not_selected::AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OPTION-GATE-002",
+      "name": "operator_option_closure_reviewed_available_not_selected::DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OPTION-GATE-003",
+      "name": "operator_option_closure_reviewed_available_not_selected::REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OPTION-GATE-004",
+      "name": "operator_option_closure_reviewed_available_not_selected::REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OPTION-GATE-005",
+      "name": "operator_option_closure_reviewed_available_not_selected::REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-FEATURE-GATE-001",
+      "name": "feature_family_retained::color",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-FEATURE-GATE-002",
+      "name": "feature_family_retained::geometry",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-FEATURE-GATE-003",
+      "name": "feature_family_retained::position",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-FEATURE-GATE-004",
+      "name": "feature_family_retained::count",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-FEATURE-GATE-005",
+      "name": "feature_family_retained::transformation",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-FEATURE-GATE-006",
+      "name": "feature_family_retained::invariance",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-FEATURE-GATE-007",
+      "name": "feature_family_retained::contradiction",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-FEATURE-GATE-008",
+      "name": "feature_family_retained::complexity",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-001",
+      "name": "required_output_field_retained::diagnosticId",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-002",
+      "name": "required_output_field_retained::taskId",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-003",
+      "name": "required_output_field_retained::sourceScope",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-004",
+      "name": "required_output_field_retained::observation",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-005",
+      "name": "required_output_field_retained::evidence",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-006",
+      "name": "required_output_field_retained::hypothesis",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-007",
+      "name": "required_output_field_retained::invariants",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-008",
+      "name": "required_output_field_retained::contradictions",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-009",
+      "name": "required_output_field_retained::confidence",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-010",
+      "name": "required_output_field_retained::verificationStatus",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-011",
+      "name": "required_output_field_retained::candidateInterface",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T46-OUTPUT-FIELD-GATE-012",
+      "name": "required_output_field_retained::boundary",
+      "passed": true
+    }
+  ],
+  "allowedOperatorDecisionValues": [
+    "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+    "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+    "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+    "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+    "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+  ],
+  "candidateGeneratorModified": false,
+  "closureReviewItemCount": 5,
+  "deterministic": true,
+  "explicitOperatorDecisionValueAuthorizing": false,
+  "explicitOperatorDecisionValueSelected": false,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalPendingStatusActive": false,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalPendingStatusClosed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateActive": false,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexClosed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexClosureConfirmed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexClosureCreated": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexClosureLocked": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexClosureReviewPassed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexClosureReviewReady": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusActive": false,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureActive": false,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureArchiveIndexCreated": false,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureArchiveIndexRequired": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureClosed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureConfirmed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureCreated": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureLocked": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReady": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReviewActive": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReviewClosed": false,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReviewConfirmed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReviewCreated": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReviewItems": [
+    {
+      "blockingIssue": false,
+      "blockingStatus": "IMPLEMENTATION_BLOCKED_NO_SELECTION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "candidateGeneratorModified": false,
+      "confirmationStatus": "CONFIRMED_FINAL_PENDING_STATUS_CLOSURE_REVIEW_VALUE_AVAILABLE_NOT_SELECTED",
+      "explicitOperatorDecisionValueSelected": false,
+      "finalPendingStatusClosureReview": "FINAL_PENDING_STATUS_CLOSURE_REVIEW_PASSED_VALUE_AVAILABLE_NOT_SELECTED",
+      "implementationAuthorized": false,
+      "itemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-REVIEW-T46-1",
+      "kaggleSubmissionSent": false,
+      "nextArchiveIndexStatus": "FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_REQUIRED_NO_SELECTION_NO_IMPLEMENTATION",
+      "operatorDecisionFinalPendingStatusActive": false,
+      "operatorDecisionFinalPendingStatusClosed": true,
+      "operatorDecisionFinalPendingStatusClosureActive": false,
+      "operatorDecisionFinalPendingStatusClosureClosed": true,
+      "operatorDecisionFinalPendingStatusReviewActive": false,
+      "operatorDecisionFinalPendingStatusReviewClosed": true,
+      "operatorDecisionFinalWaitStateActive": false,
+      "operatorDecisionFinalWaitStateClosed": true,
+      "operatorDecisionPendingStatusActive": true,
+      "operatorDecisionReceived": false,
+      "operatorDecisionValue": "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+      "rankerModified": false,
+      "realEvaluationPerformed": false,
+      "runtimeSolverModified": false,
+      "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "sourceArchiveIndexItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-T39-1",
+      "sourceArchiveIndexReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-REVIEW-T40-1",
+      "sourceClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-T41-1",
+      "sourceClosureReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-REVIEW-T42-1",
+      "sourceFinalPendingStatusClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-T45-1",
+      "sourceFinalPendingStatusItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-T43-1",
+      "sourceFinalPendingStatusReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-REVIEW-T44-1",
+      "verifierModified": false,
+      "waitingForExplicitOperatorDecisionValue": true
+    },
+    {
+      "blockingIssue": false,
+      "blockingStatus": "IMPLEMENTATION_BLOCKED_NO_SELECTION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "candidateGeneratorModified": false,
+      "confirmationStatus": "CONFIRMED_FINAL_PENDING_STATUS_CLOSURE_REVIEW_VALUE_AVAILABLE_NOT_SELECTED",
+      "explicitOperatorDecisionValueSelected": false,
+      "finalPendingStatusClosureReview": "FINAL_PENDING_STATUS_CLOSURE_REVIEW_PASSED_VALUE_AVAILABLE_NOT_SELECTED",
+      "implementationAuthorized": false,
+      "itemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-REVIEW-T46-2",
+      "kaggleSubmissionSent": false,
+      "nextArchiveIndexStatus": "FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_REQUIRED_NO_SELECTION_NO_IMPLEMENTATION",
+      "operatorDecisionFinalPendingStatusActive": false,
+      "operatorDecisionFinalPendingStatusClosed": true,
+      "operatorDecisionFinalPendingStatusClosureActive": false,
+      "operatorDecisionFinalPendingStatusClosureClosed": true,
+      "operatorDecisionFinalPendingStatusReviewActive": false,
+      "operatorDecisionFinalPendingStatusReviewClosed": true,
+      "operatorDecisionFinalWaitStateActive": false,
+      "operatorDecisionFinalWaitStateClosed": true,
+      "operatorDecisionPendingStatusActive": true,
+      "operatorDecisionReceived": false,
+      "operatorDecisionValue": "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+      "rankerModified": false,
+      "realEvaluationPerformed": false,
+      "runtimeSolverModified": false,
+      "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "sourceArchiveIndexItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-T39-2",
+      "sourceArchiveIndexReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-REVIEW-T40-2",
+      "sourceClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-T41-2",
+      "sourceClosureReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-REVIEW-T42-2",
+      "sourceFinalPendingStatusClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-T45-2",
+      "sourceFinalPendingStatusItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-T43-2",
+      "sourceFinalPendingStatusReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-REVIEW-T44-2",
+      "verifierModified": false,
+      "waitingForExplicitOperatorDecisionValue": true
+    },
+    {
+      "blockingIssue": false,
+      "blockingStatus": "IMPLEMENTATION_BLOCKED_NO_SELECTION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "candidateGeneratorModified": false,
+      "confirmationStatus": "CONFIRMED_FINAL_PENDING_STATUS_CLOSURE_REVIEW_VALUE_AVAILABLE_NOT_SELECTED",
+      "explicitOperatorDecisionValueSelected": false,
+      "finalPendingStatusClosureReview": "FINAL_PENDING_STATUS_CLOSURE_REVIEW_PASSED_VALUE_AVAILABLE_NOT_SELECTED",
+      "implementationAuthorized": false,
+      "itemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-REVIEW-T46-3",
+      "kaggleSubmissionSent": false,
+      "nextArchiveIndexStatus": "FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_REQUIRED_NO_SELECTION_NO_IMPLEMENTATION",
+      "operatorDecisionFinalPendingStatusActive": false,
+      "operatorDecisionFinalPendingStatusClosed": true,
+      "operatorDecisionFinalPendingStatusClosureActive": false,
+      "operatorDecisionFinalPendingStatusClosureClosed": true,
+      "operatorDecisionFinalPendingStatusReviewActive": false,
+      "operatorDecisionFinalPendingStatusReviewClosed": true,
+      "operatorDecisionFinalWaitStateActive": false,
+      "operatorDecisionFinalWaitStateClosed": true,
+      "operatorDecisionPendingStatusActive": true,
+      "operatorDecisionReceived": false,
+      "operatorDecisionValue": "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+      "rankerModified": false,
+      "realEvaluationPerformed": false,
+      "runtimeSolverModified": false,
+      "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "sourceArchiveIndexItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-T39-3",
+      "sourceArchiveIndexReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-REVIEW-T40-3",
+      "sourceClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-T41-3",
+      "sourceClosureReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-REVIEW-T42-3",
+      "sourceFinalPendingStatusClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-T45-3",
+      "sourceFinalPendingStatusItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-T43-3",
+      "sourceFinalPendingStatusReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-REVIEW-T44-3",
+      "verifierModified": false,
+      "waitingForExplicitOperatorDecisionValue": true
+    },
+    {
+      "blockingIssue": false,
+      "blockingStatus": "IMPLEMENTATION_BLOCKED_NO_SELECTION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "candidateGeneratorModified": false,
+      "confirmationStatus": "CONFIRMED_FINAL_PENDING_STATUS_CLOSURE_REVIEW_VALUE_AVAILABLE_NOT_SELECTED",
+      "explicitOperatorDecisionValueSelected": false,
+      "finalPendingStatusClosureReview": "FINAL_PENDING_STATUS_CLOSURE_REVIEW_PASSED_VALUE_AVAILABLE_NOT_SELECTED",
+      "implementationAuthorized": false,
+      "itemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-REVIEW-T46-4",
+      "kaggleSubmissionSent": false,
+      "nextArchiveIndexStatus": "FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_REQUIRED_NO_SELECTION_NO_IMPLEMENTATION",
+      "operatorDecisionFinalPendingStatusActive": false,
+      "operatorDecisionFinalPendingStatusClosed": true,
+      "operatorDecisionFinalPendingStatusClosureActive": false,
+      "operatorDecisionFinalPendingStatusClosureClosed": true,
+      "operatorDecisionFinalPendingStatusReviewActive": false,
+      "operatorDecisionFinalPendingStatusReviewClosed": true,
+      "operatorDecisionFinalWaitStateActive": false,
+      "operatorDecisionFinalWaitStateClosed": true,
+      "operatorDecisionPendingStatusActive": true,
+      "operatorDecisionReceived": false,
+      "operatorDecisionValue": "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+      "rankerModified": false,
+      "realEvaluationPerformed": false,
+      "runtimeSolverModified": false,
+      "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "sourceArchiveIndexItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-T39-4",
+      "sourceArchiveIndexReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-REVIEW-T40-4",
+      "sourceClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-T41-4",
+      "sourceClosureReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-REVIEW-T42-4",
+      "sourceFinalPendingStatusClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-T45-4",
+      "sourceFinalPendingStatusItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-T43-4",
+      "sourceFinalPendingStatusReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-REVIEW-T44-4",
+      "verifierModified": false,
+      "waitingForExplicitOperatorDecisionValue": true
+    },
+    {
+      "blockingIssue": false,
+      "blockingStatus": "IMPLEMENTATION_BLOCKED_NO_SELECTION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+      "candidateGeneratorModified": false,
+      "confirmationStatus": "CONFIRMED_FINAL_PENDING_STATUS_CLOSURE_REVIEW_VALUE_AVAILABLE_NOT_SELECTED",
+      "explicitOperatorDecisionValueSelected": false,
+      "finalPendingStatusClosureReview": "FINAL_PENDING_STATUS_CLOSURE_REVIEW_PASSED_VALUE_AVAILABLE_NOT_SELECTED",
+      "implementationAuthorized": false,
+      "itemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-REVIEW-T46-5",
+      "kaggleSubmissionSent": false,
+      "nextArchiveIndexStatus": "FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_REQUIRED_NO_SELECTION_NO_IMPLEMENTATION",
+      "operatorDecisionFinalPendingStatusActive": false,
+      "operatorDecisionFinalPendingStatusClosed": true,
+      "operatorDecisionFinalPendingStatusClosureActive": false,
+      "operatorDecisionFinalPendingStatusClosureClosed": true,
+      "operatorDecisionFinalPendingStatusReviewActive": false,
+      "operatorDecisionFinalPendingStatusReviewClosed": true,
+      "operatorDecisionFinalWaitStateActive": false,
+      "operatorDecisionFinalWaitStateClosed": true,
+      "operatorDecisionPendingStatusActive": true,
+      "operatorDecisionReceived": false,
+      "operatorDecisionValue": "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION",
+      "rankerModified": false,
+      "realEvaluationPerformed": false,
+      "runtimeSolverModified": false,
+      "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+      "sourceArchiveIndexItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-T39-5",
+      "sourceArchiveIndexReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-REVIEW-T40-5",
+      "sourceClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-T41-5",
+      "sourceClosureReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-CLOSURE-REVIEW-T42-5",
+      "sourceFinalPendingStatusClosureItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-T45-5",
+      "sourceFinalPendingStatusItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-T43-5",
+      "sourceFinalPendingStatusReviewItemId": "M19-CTDP-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-REVIEW-T44-5",
+      "verifierModified": false,
+      "waitingForExplicitOperatorDecisionValue": true
+    }
+  ],
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReviewOnly": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReviewPassed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReviewReady": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusCreated": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusReady": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusReviewActive": false,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusReviewClosed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusReviewConfirmed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusReviewCreated": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusReviewPassed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusReviewReady": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateClosed": true,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionReadyStateActive": false,
+  "explicitOperatorDecisionValueSelectionOperatorDecisionReadyStateClosed": true,
+  "explicitOperatorDecisionValueSelectionOperatorPromptPackageActive": false,
+  "explicitOperatorDecisionValueSelectionOperatorPromptPackageClosed": true,
+  "explicitOperatorDecisionValueSelectionOperatorPromptPackageContainsAllowedValues": true,
+  "explicitOperatorDecisionValueSelectionOperatorPromptPackageLocked": true,
+  "explicitOperatorDecisionValueSelectionOperatorPromptPackageSelectedValueAbsent": true,
+  "explicitOperatorDecisionValueValidated": false,
+  "externalApiDependency": false,
+  "failClosedActive": true,
+  "failClosedRequired": true,
+  "featureFamilies": [
+    "color",
+    "geometry",
+    "position",
+    "count",
+    "transformation",
+    "invariance",
+    "contradiction",
+    "complexity"
+  ],
+  "hiddenLabelAccessed": false,
+  "implementationAuthorizationReceived": false,
+  "implementationAuthorized": false,
+  "implementationDecisionSelected": false,
+  "internetDuringEval": false,
+  "kaggleAuthenticationAllowed": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "localOnly": true,
+  "milestoneName": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER",
+  "mode": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_REVIEW_ONLY_NO_SELECTION_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+  "nextTask": "MILESTONE_19_TASK_47_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_ARCHIVE_INDEX_V1",
+  "operatorApprovalReceived": false,
+  "operatorApprovalRequired": true,
+  "operatorDecisionFinalPendingStatusActive": false,
+  "operatorDecisionFinalPendingStatusClosed": true,
+  "operatorDecisionFinalPendingStatusClosureArchiveIndexCreated": false,
+  "operatorDecisionFinalPendingStatusClosureArchiveIndexItemCount": 5,
+  "operatorDecisionFinalPendingStatusClosureArchiveIndexRequired": true,
+  "operatorDecisionFinalPendingStatusClosureCreated": true,
+  "operatorDecisionFinalPendingStatusClosureItemCount": 5,
+  "operatorDecisionFinalPendingStatusClosureLocked": true,
+  "operatorDecisionFinalPendingStatusClosureReviewActive": true,
+  "operatorDecisionFinalPendingStatusClosureReviewClosed": false,
+  "operatorDecisionFinalPendingStatusClosureReviewCreated": true,
+  "operatorDecisionFinalPendingStatusClosureReviewItemCount": 5,
+  "operatorDecisionFinalPendingStatusClosureReviewPassed": true,
+  "operatorDecisionFinalPendingStatusClosureReviewReady": true,
+  "operatorDecisionFinalPendingStatusItemCount": 5,
+  "operatorDecisionFinalWaitStateActive": false,
+  "operatorDecisionFinalWaitStateArchiveIndexClosureItemCount": 5,
+  "operatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureReviewOptions": [
+    {
+      "authorizing": false,
+      "optionId": "M19-CTDP-OPERATOR-PROMPT-OPTION-T23-1",
+      "selected": false,
+      "status": "VALUE_AVAILABLE_NOT_SELECTED_CLOSURE_REVIEWED",
+      "validated": false,
+      "value": "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY"
+    },
+    {
+      "authorizing": false,
+      "optionId": "M19-CTDP-OPERATOR-PROMPT-OPTION-T23-2",
+      "selected": false,
+      "status": "VALUE_AVAILABLE_NOT_SELECTED_CLOSURE_REVIEWED",
+      "validated": false,
+      "value": "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY"
+    },
+    {
+      "authorizing": false,
+      "optionId": "M19-CTDP-OPERATOR-PROMPT-OPTION-T23-3",
+      "selected": false,
+      "status": "VALUE_AVAILABLE_NOT_SELECTED_CLOSURE_REVIEWED",
+      "validated": false,
+      "value": "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED"
+    },
+    {
+      "authorizing": false,
+      "optionId": "M19-CTDP-OPERATOR-PROMPT-OPTION-T23-4",
+      "selected": false,
+      "status": "VALUE_AVAILABLE_NOT_SELECTED_CLOSURE_REVIEWED",
+      "validated": false,
+      "value": "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION"
+    },
+    {
+      "authorizing": false,
+      "optionId": "M19-CTDP-OPERATOR-PROMPT-OPTION-T23-5",
+      "selected": false,
+      "status": "VALUE_AVAILABLE_NOT_SELECTED_CLOSURE_REVIEWED",
+      "validated": false,
+      "value": "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+    }
+  ],
+  "operatorDecisionFinalWaitStateArchiveIndexItemCount": 5,
+  "operatorDecisionFinalWaitStateClosed": true,
+  "operatorDecisionFinalWaitStateClosureItemCount": 5,
+  "operatorDecisionFinalWaitStateItemCount": 5,
+  "operatorDecisionPendingStatusActive": true,
+  "operatorDecisionReadyStateClosureItemCount": 5,
+  "operatorDecisionReadyStateItemCount": 5,
+  "operatorDecisionReceived": false,
+  "operatorDecisionRequiredForImplementation": true,
+  "operatorPromptClosureItemCount": 5,
+  "operatorPromptItemCount": 5,
+  "operatorPromptOptionCount": 5,
+  "pipelineModel": [
+    "task_parser",
+    "deterministic_feature_extractor",
+    "cross_trace_diagnostic_planner",
+    "authorized_candidate_generator",
+    "existing_verifier",
+    "ranker_or_benchmark_report"
+  ],
+  "planningIntakeConfirmed": true,
+  "planningOnlyUntilExplicitOperatorDecision": true,
+  "previousCommit": "abe60c9",
+  "previousSignature": "05233D2333CA7542",
+  "previousTask": "MILESTONE_19_TASK_45_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_V1",
+  "privateCoreExposure": false,
+  "publicSafe": true,
+  "rankerModified": false,
+  "realEvaluationAuthorized": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "requiredOutputFields": [
+    "diagnosticId",
+    "taskId",
+    "sourceScope",
+    "observation",
+    "evidence",
+    "hypothesis",
+    "invariants",
+    "contradictions",
+    "confidence",
+    "verificationStatus",
+    "candidateInterface",
+    "boundary"
+  ],
+  "runtimeActivationAuthorized": false,
+  "runtimeActivationPerformed": false,
+  "runtimeSolverModified": false,
+  "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "selectedOperatorDecisionValueAuthorizing": false,
+  "selectedOperatorDecisionValuePending": true,
+  "selectedOperatorDecisionValueValidated": false,
+  "signature": "11C9DEC2BFAB95D8",
+  "sourceExplicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureSignature": "05233D2333CA7542",
+  "sourceExplicitOperatorDecisionValueSelectionOperatorDecisionFinalWaitStateArchiveIndexFinalPendingStatusClosureTask": "MILESTONE_19_TASK_45_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_V1",
+  "specReviewConfirmed": true,
+  "submissionArtifactCreated": false,
+  "taskId": "MILESTONE-19-TASK-46-CROSS-TRACE-DIAGNOSTIC-PLANNER-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-REVIEW-11C9DEC2BFAB95D8",
+  "taskLabel": "Cross-Trace Diagnostic Planner Explicit Operator Decision Value Selection Operator Decision Final Wait State Archive Index Final Pending Status Closure Review v1",
+  "taskName": "MILESTONE_19_TASK_46_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_REVIEW_V1",
+  "taskNumber": 46,
+  "verdict": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_REVIEW_PASS_ARCHIVE_INDEX_REQUIRED_IMPLEMENTATION_BLOCKED",
+  "verifierModified": false,
+  "waitingForExplicitOperatorDecisionValue": true
+}
