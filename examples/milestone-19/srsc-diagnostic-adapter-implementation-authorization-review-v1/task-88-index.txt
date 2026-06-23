@@ -1,0 +1,59 @@
+MILESTONE #19 TASK 88 - SRSC DIAGNOSTIC ADAPTER IMPLEMENTATION AUTHORIZATION REVIEW v1
+
+TASK_ID=MILESTONE_19_TASK_88_SRSC_DIAGNOSTIC_ADAPTER_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1
+STATUS=ADAPTER_IMPLEMENTATION_AUTHORIZATION_REVIEW_READY
+MODE=REVIEW_ONLY_NO_ADAPTER_IMPLEMENTATION
+DEPENDENCY=MILESTONE_19_TASK_87_SRSC_DIAGNOSTIC_ADAPTER_PLANNING_V1
+
+DECISION=AUTHORIZE_NEXT_TASK_LOCAL_ADAPTER_IMPLEMENTATION_ONLY
+
+AUTHORIZED_FUTURE_MODULES:
+- src/hbce_arc_agi3/srsc_diagnostic_adapter.py
+- tests/test_srsc_diagnostic_adapter.py
+
+AUTHORIZED_FUTURE_ADAPTER_TYPES:
+- DiagnosticAdapterInput
+- DiagnosticAdapterResult
+- DiagnosticAdapterBlockedReference
+- adapt_diagnostic_input_to_reference
+- adapt_diagnostic_inputs_to_references
+
+BLOCKED_BINDINGS:
+- diagnostic adapter implementation in Task 88
+- diagnostic adapter activation
+- solver runtime binding
+- candidate generator binding
+- ranker score binding
+- verifier binding
+- benchmark score binding
+- Kaggle submission binding
+- external API binding
+- internet evaluation binding
+- private core binding
+- legal certification binding
+
+BOUNDARY:
+adapter_implementation_authorization_review_performed=true
+adapter_implementation_authorized_for_next_task=true
+implementation_performed_in_task_88=false
+adapter_implemented_in_task_88=false
+adapter_activated_in_task_88=false
+runtime_activation_authorized=false
+runtime_solver_modified=false
+runtime_wiring_allowed=false
+candidate_generator_modified=false
+ranker_modified=false
+verifier_modified=false
+benchmark_score_claimed=false
+real_evaluation_performed=false
+real_submission_authorized=false
+kaggle_authentication_performed=false
+kaggle_submission_sent=false
+internet_during_eval=false
+external_api_dependency=false
+private_core_exposure=false
+legal_certification=false
+fail_closed_required=true
+fail_closed_active=true
+
+NEXT_STAGE=MILESTONE_19_TASK_89_SRSC_DIAGNOSTIC_ADAPTER_LOCAL_IMPLEMENTATION_V1
