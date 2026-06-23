@@ -1,0 +1,55 @@
+{
+  "taskId": "MILESTONE_19_TASK_86_SRSC_DIAGNOSTIC_REFERENCE_RECORD_SCHEMA_IMPLEMENTATION_REVIEW_V1",
+  "status": "IMPLEMENTATION_REVIEW_READY",
+  "mode": "REVIEW_ONLY_NO_ADAPTER_IMPLEMENTATION",
+  "dependency": "MILESTONE_19_TASK_85_SRSC_DIAGNOSTIC_REFERENCE_RECORD_SCHEMA_LOCAL_IMPLEMENTATION_V1",
+  "decision": "AUTHORIZE_NEXT_TASK_DIAGNOSTIC_ADAPTER_PLANNING_ONLY",
+  "schemaImplementationReviewPerformed": true,
+  "diagnosticAdapterPlanningAuthorizedForNextTask": true,
+  "implementationPerformedInTask86": false,
+  "adapterImplementedInTask86": false,
+  "reviewedModule": "src/hbce_arc_agi3/srsc_diagnostic_reference.py",
+  "reviewedTests": [
+    "tests/test_srsc_diagnostic_reference.py",
+    "tests/test_milestone_19_task_85_srsc_diagnostic_reference_schema_local_implementation.py"
+  ],
+  "futurePlanningTargets": [
+    "src/hbce_arc_agi3/srsc_diagnostic_adapter.py",
+    "tests/test_srsc_diagnostic_adapter.py"
+  ],
+  "blockedBindings": [
+    "diagnostic adapter implementation",
+    "solver runtime binding",
+    "candidate generator binding",
+    "ranker score binding",
+    "verifier binding",
+    "benchmark score binding",
+    "Kaggle submission binding",
+    "external API binding",
+    "internet evaluation binding",
+    "private core binding",
+    "legal certification binding"
+  ],
+  "documents": {
+    "task86Review": "docs/milestone-19-task-86-srsc-diagnostic-reference-record-schema-implementation-review-v1.md",
+    "task85Implementation": "docs/milestone-19-task-85-srsc-diagnostic-reference-record-schema-local-implementation-v1.md"
+  },
+  "runtimeActivationAuthorized": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "candidateGeneratorModified": false,
+  "rankerModified": false,
+  "verifierModified": false,
+  "benchmarkScoreClaimed": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "internetDuringEval": false,
+  "externalApiDependency": false,
+  "privateCoreExposure": false,
+  "legalCertification": false,
+  "failClosedRequired": true,
+  "failClosedActive": true,
+  "nextStage": "MILESTONE_19_TASK_87_SRSC_DIAGNOSTIC_ADAPTER_PLANNING_V1"
+}
