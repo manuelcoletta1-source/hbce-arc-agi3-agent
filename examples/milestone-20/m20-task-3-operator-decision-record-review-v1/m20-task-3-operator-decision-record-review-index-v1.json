@@ -1,0 +1,14 @@
+{
+  "explicitOperatorDecisionValueSelectionGateCreated": false,
+  "explicitOperatorDecisionValueSelectionGateRequired": true,
+  "explicitOperatorDecisionValueSelectionRequired": true,
+  "failClosedActive": true,
+  "implementationAuthorized": false,
+  "kaggleSubmissionSent": false,
+  "nextTask": "MILESTONE_20_TASK_4_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_V1",
+  "operatorDecisionRecordReviewPassed": true,
+  "signature": "4DFB116D4A18C4D0",
+  "sourceOperatorDecisionRecordedValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "taskId": "MILESTONE-20-TASK-3-OPERATOR-DECISION-RECORD-REVIEW-4DFB116D4A18C4D0",
+  "taskName": "MILESTONE_20_TASK_3_OPERATOR_DECISION_RECORD_REVIEW_V1"
+}

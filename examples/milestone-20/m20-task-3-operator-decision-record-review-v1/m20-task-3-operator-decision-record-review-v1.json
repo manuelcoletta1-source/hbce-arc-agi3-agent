@@ -1,0 +1,614 @@
+{
+  "acceptanceGateCount": 90,
+  "acceptanceGateFailureCount": 0,
+  "acceptanceGates": [
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-001",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-002",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-003",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-004",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-005",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-006",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-007",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-008",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-009",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-010",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-011",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-012",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-013",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-014",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-015",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-016",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-017",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-018",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-019",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-020",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-021",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-022",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-023",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-024",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-025",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-026",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-027",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-028",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-029",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-030",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-031",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-032",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-033",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-034",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-035",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-036",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-037",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-038",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-039",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-040",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-041",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-042",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-043",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-044",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-045",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-046",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-047",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-048",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-049",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-050",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-051",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-052",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-053",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-054",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-055",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-056",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-057",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-058",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-059",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-060",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-061",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-062",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-063",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-064",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-065",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-066",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-067",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-068",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-069",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-070",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-071",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-072",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-073",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-074",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-075",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-076",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-077",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-078",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-079",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-080",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-081",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-082",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-083",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-084",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-085",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-086",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-087",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-088",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-089",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M20-T3-GATE-090",
+      "passed": true
+    }
+  ],
+  "candidateGeneratorModified": false,
+  "controlledLocalImplementationAuthorizedNow": false,
+  "controlledLocalImplementationMayBeRequested": true,
+  "controlledLocalImplementationRecordRequiredBeforeImplementation": true,
+  "deterministic": true,
+  "diagnosticOnly": true,
+  "dryRunOnly": true,
+  "explicitOperatorDecisionValueAuthorizing": false,
+  "explicitOperatorDecisionValueSelected": false,
+  "explicitOperatorDecisionValueSelectionGateCreated": false,
+  "explicitOperatorDecisionValueSelectionGateRequired": true,
+  "explicitOperatorDecisionValueSelectionMayProceed": true,
+  "explicitOperatorDecisionValueSelectionRequired": true,
+  "explicitOperatorDecisionValueValidated": false,
+  "externalApiDependency": false,
+  "failClosedActive": true,
+  "failClosedRequired": true,
+  "hiddenLabelAccessed": false,
+  "implementationAuthorizationPendingOperatorDecision": true,
+  "implementationAuthorizationReceived": false,
+  "implementationAuthorized": false,
+  "implementationDecisionSelected": false,
+  "implementationPatchApplied": false,
+  "implementationPatchCreated": false,
+  "internetDuringEval": false,
+  "kaggleAuthenticationAllowed": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "localOnly": true,
+  "milestoneName": "MILESTONE_20_OPERATOR_DECISION_AND_CONTROLLED_IMPLEMENTATION_AUTHORIZATION",
+  "mode": "OPERATOR_DECISION_RECORD_REVIEW_ONLY_PENDING_EXPLICIT_OPERATOR_DECISION_NO_SELECTION_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+  "nextTask": "MILESTONE_20_TASK_4_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_V1",
+  "operatorDecisionAuthorizing": false,
+  "operatorDecisionReceived": false,
+  "operatorDecisionRecordReviewClosed": true,
+  "operatorDecisionRecordReviewConfirmed": true,
+  "operatorDecisionRecordReviewCreated": true,
+  "operatorDecisionRecordReviewLocked": true,
+  "operatorDecisionRecordReviewOnly": true,
+  "operatorDecisionRecordReviewPassed": true,
+  "operatorDecisionRecordReviewReady": true,
+  "operatorDecisionRecordReviewed": true,
+  "operatorDecisionRecorded": true,
+  "operatorDecisionRecordedValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "operatorDecisionRequired": true,
+  "operatorDecisionReviewResult": "PENDING_EXPLICIT_OPERATOR_DECISION_CONFIRMED",
+  "operatorDecisionValidated": false,
+  "operatorPromptOptionCount": 5,
+  "previousCommit": "bc9cb14",
+  "previousSignature": "86CED93414333D7E",
+  "previousTask": "MILESTONE_20_TASK_2_OPERATOR_DECISION_RECORD_V1",
+  "privateCoreExposure": false,
+  "publicSafe": true,
+  "rankerModified": false,
+  "realEvaluationAuthorized": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "reviewItemCount": 5,
+  "reviewItems": [
+    {
+      "decisionValue": "AUTHORIZE_CONTROLLED_LOCAL_IMPLEMENTATION_ONLY",
+      "explicitSelectionStillRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M20-T3-OPERATOR-DECISION-RECORD-REVIEW-1",
+      "kaggleSubmissionSent": false,
+      "reviewPassed": true,
+      "reviewed": true,
+      "runtimeActivationPerformed": false,
+      "sourceRecordAvailable": true,
+      "sourceRecordedAsSelected": false,
+      "sourceSelected": false
+    },
+    {
+      "decisionValue": "DEFER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+      "explicitSelectionStillRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M20-T3-OPERATOR-DECISION-RECORD-REVIEW-2",
+      "kaggleSubmissionSent": false,
+      "reviewPassed": true,
+      "reviewed": true,
+      "runtimeActivationPerformed": false,
+      "sourceRecordAvailable": true,
+      "sourceRecordedAsSelected": false,
+      "sourceSelected": false
+    },
+    {
+      "decisionValue": "REJECT_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+      "explicitSelectionStillRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M20-T3-OPERATOR-DECISION-RECORD-REVIEW-3",
+      "kaggleSubmissionSent": false,
+      "reviewPassed": true,
+      "reviewed": true,
+      "runtimeActivationPerformed": false,
+      "sourceRecordAvailable": true,
+      "sourceRecordedAsSelected": false,
+      "sourceSelected": false
+    },
+    {
+      "decisionValue": "REQUEST_ADDITIONAL_EVIDENCE_BEFORE_DECISION",
+      "explicitSelectionStillRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M20-T3-OPERATOR-DECISION-RECORD-REVIEW-4",
+      "kaggleSubmissionSent": false,
+      "reviewPassed": true,
+      "reviewed": true,
+      "runtimeActivationPerformed": false,
+      "sourceRecordAvailable": true,
+      "sourceRecordedAsSelected": false,
+      "sourceSelected": false
+    },
+    {
+      "decisionValue": "REQUIRE_BOUNDARY_RECHECK_BEFORE_DECISION",
+      "explicitSelectionStillRequired": true,
+      "implementationAuthorized": false,
+      "itemId": "M20-T3-OPERATOR-DECISION-RECORD-REVIEW-5",
+      "kaggleSubmissionSent": false,
+      "reviewPassed": true,
+      "reviewed": true,
+      "runtimeActivationPerformed": false,
+      "sourceRecordAvailable": true,
+      "sourceRecordedAsSelected": false,
+      "sourceSelected": false
+    }
+  ],
+  "runtimeActivationAuthorized": false,
+  "runtimeActivationPerformed": false,
+  "runtimeSolverModified": false,
+  "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "signature": "4DFB116D4A18C4D0",
+  "sourceExplicitOperatorDecisionValueSelected": false,
+  "sourceOperatorDecisionReceived": false,
+  "sourceOperatorDecisionRecordClosed": true,
+  "sourceOperatorDecisionRecordConfirmed": true,
+  "sourceOperatorDecisionRecordCreated": true,
+  "sourceOperatorDecisionRecordLocked": true,
+  "sourceOperatorDecisionRecordReady": true,
+  "sourceOperatorDecisionRecordReviewCreated": false,
+  "sourceOperatorDecisionRecordReviewRequired": true,
+  "sourceOperatorDecisionRecorded": true,
+  "sourceOperatorDecisionRecordedValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "sourceSelectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "submissionArtifactCreated": false,
+  "taskId": "MILESTONE-20-TASK-3-OPERATOR-DECISION-RECORD-REVIEW-4DFB116D4A18C4D0",
+  "taskLabel": "Milestone 20 Task 3 - Operator Decision Record Review v1",
+  "taskName": "MILESTONE_20_TASK_3_OPERATOR_DECISION_RECORD_REVIEW_V1",
+  "taskNumber": 3,
+  "validOperatorDecisionValueCount": 5,
+  "validOperatorDecisionValues": [
+    "AUTHORIZE_CONTROLLED_LOCAL_IMPLEMENTATION_ONLY",
+    "DEFER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+    "REJECT_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+    "REQUEST_ADDITIONAL_EVIDENCE_BEFORE_DECISION",
+    "REQUIRE_BOUNDARY_RECHECK_BEFORE_DECISION"
+  ],
+  "verdict": "MILESTONE_20_OPERATOR_DECISION_RECORD_REVIEW_PASS_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_REQUIRED_IMPLEMENTATION_BLOCKED_FAIL_CLOSED",
+  "verifierModified": false
+}
