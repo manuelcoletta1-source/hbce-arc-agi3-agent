@@ -1,0 +1,40 @@
+{
+  "taskId": "MILESTONE_19_TASK_89_SRSC_DIAGNOSTIC_ADAPTER_LOCAL_IMPLEMENTATION_V1",
+  "status": "LOCAL_ADAPTER_IMPLEMENTATION_READY",
+  "mode": "LOCAL_STANDALONE_ADAPTER_NO_RUNTIME_WIRING",
+  "dependency": "MILESTONE_19_TASK_88_SRSC_DIAGNOSTIC_ADAPTER_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1",
+  "implementedModules": [
+    "src/hbce_arc_agi3/srsc_diagnostic_adapter.py"
+  ],
+  "implementedTests": [
+    "tests/test_srsc_diagnostic_adapter.py"
+  ],
+  "implementedAdapterTypes": [
+    "DiagnosticAdapterInput",
+    "DiagnosticAdapterResult",
+    "DiagnosticAdapterBlockedReference",
+    "adapt_diagnostic_input_to_reference",
+    "adapt_diagnostic_inputs_to_references"
+  ],
+  "adapterImplementationPerformed": true,
+  "localStandaloneAdapter": true,
+  "adapterActivated": false,
+  "runtimeActivationAuthorized": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "candidateGeneratorModified": false,
+  "rankerModified": false,
+  "verifierModified": false,
+  "benchmarkScoreClaimed": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "internetDuringEval": false,
+  "externalApiDependency": false,
+  "privateCoreExposure": false,
+  "legalCertification": false,
+  "failClosedRequired": true,
+  "failClosedActive": true,
+  "nextStage": "MILESTONE_19_TASK_90_SRSC_DIAGNOSTIC_ADAPTER_IMPLEMENTATION_REVIEW_V1"
+}

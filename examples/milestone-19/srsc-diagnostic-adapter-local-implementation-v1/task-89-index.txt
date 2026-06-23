@@ -1,0 +1,43 @@
+MILESTONE #19 TASK 89 - SRSC DIAGNOSTIC ADAPTER LOCAL IMPLEMENTATION v1
+
+TASK_ID=MILESTONE_19_TASK_89_SRSC_DIAGNOSTIC_ADAPTER_LOCAL_IMPLEMENTATION_V1
+STATUS=LOCAL_ADAPTER_IMPLEMENTATION_READY
+MODE=LOCAL_STANDALONE_ADAPTER_NO_RUNTIME_WIRING
+DEPENDENCY=MILESTONE_19_TASK_88_SRSC_DIAGNOSTIC_ADAPTER_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1
+
+IMPLEMENTED_MODULES:
+- src/hbce_arc_agi3/srsc_diagnostic_adapter.py
+
+IMPLEMENTED_TESTS:
+- tests/test_srsc_diagnostic_adapter.py
+
+IMPLEMENTED_ADAPTER_TYPES:
+- DiagnosticAdapterInput
+- DiagnosticAdapterResult
+- DiagnosticAdapterBlockedReference
+- adapt_diagnostic_input_to_reference
+- adapt_diagnostic_inputs_to_references
+
+BOUNDARY:
+adapter_implementation_performed=true
+local_standalone_adapter=true
+adapter_activated=false
+runtime_activation_authorized=false
+runtime_solver_modified=false
+runtime_wiring_allowed=false
+candidate_generator_modified=false
+ranker_modified=false
+verifier_modified=false
+benchmark_score_claimed=false
+real_evaluation_performed=false
+real_submission_authorized=false
+kaggle_authentication_performed=false
+kaggle_submission_sent=false
+internet_during_eval=false
+external_api_dependency=false
+private_core_exposure=false
+legal_certification=false
+fail_closed_required=true
+fail_closed_active=true
+
+NEXT_STAGE=MILESTONE_19_TASK_90_SRSC_DIAGNOSTIC_ADAPTER_IMPLEMENTATION_REVIEW_V1
