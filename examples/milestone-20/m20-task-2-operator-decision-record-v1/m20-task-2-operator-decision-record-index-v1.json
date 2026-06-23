@@ -1,0 +1,15 @@
+{
+  "controlledLocalImplementationAuthorizedNow": false,
+  "explicitOperatorDecisionValueSelected": false,
+  "failClosedActive": true,
+  "implementationAuthorized": false,
+  "kaggleSubmissionSent": false,
+  "nextTask": "MILESTONE_20_TASK_3_OPERATOR_DECISION_RECORD_REVIEW_V1",
+  "operatorDecisionReceived": false,
+  "operatorDecisionRecordCreated": true,
+  "operatorDecisionRecorded": true,
+  "operatorDecisionRecordedValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "signature": "86CED93414333D7E",
+  "taskId": "MILESTONE-20-TASK-2-OPERATOR-DECISION-RECORD-86CED93414333D7E",
+  "taskName": "MILESTONE_20_TASK_2_OPERATOR_DECISION_RECORD_V1"
+}

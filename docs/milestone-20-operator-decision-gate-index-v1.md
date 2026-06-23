@@ -23,3 +23,27 @@
 - Next task: `MILESTONE_20_TASK_2_OPERATOR_DECISION_RECORD_V1`
 
 <!-- MILESTONE_20_TASK_1_OPERATOR_DECISION_GATE_END -->
+
+<!-- MILESTONE_20_TASK_2_OPERATOR_DECISION_RECORD_START -->
+
+## Milestone 20 Task 2 - Operator Decision Record v1
+
+- Task: `MILESTONE_20_TASK_2_OPERATOR_DECISION_RECORD_V1`
+- Task ID: `MILESTONE-20-TASK-2-OPERATOR-DECISION-RECORD-86CED93414333D7E`
+- Signature: `86CED93414333D7E`
+- Previous commit: `a77a2e9`
+- Previous signature: `0B41A78A7FD4B64F`
+- Operator decision record created: `True`
+- Operator decision record locked: `True`
+- Operator decision received: `False`
+- Operator decision recorded: `True`
+- Recorded value: `PENDING_EXPLICIT_OPERATOR_DECISION`
+- Explicit operator decision selected: `False`
+- Controlled local implementation authorized now: `False`
+- Implementation authorized: `False`
+- Runtime activation performed: `False`
+- Kaggle submission sent: `False`
+- Fail closed active: `True`
+- Next task: `MILESTONE_20_TASK_3_OPERATOR_DECISION_RECORD_REVIEW_V1`
+
+<!-- MILESTONE_20_TASK_2_OPERATOR_DECISION_RECORD_END -->
