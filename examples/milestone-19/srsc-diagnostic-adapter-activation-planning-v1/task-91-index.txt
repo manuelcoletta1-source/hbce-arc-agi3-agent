@@ -1,0 +1,80 @@
+MILESTONE #19 TASK 91 - SRSC DIAGNOSTIC ADAPTER ACTIVATION PLANNING v1
+
+TASK_ID=MILESTONE_19_TASK_91_SRSC_DIAGNOSTIC_ADAPTER_ACTIVATION_PLANNING_V1
+STATUS=ADAPTER_ACTIVATION_PLANNING_READY
+MODE=PLANNING_ONLY_NO_ADAPTER_ACTIVATION
+DEPENDENCY=MILESTONE_19_TASK_90_SRSC_DIAGNOSTIC_ADAPTER_IMPLEMENTATION_REVIEW_V1
+
+DECISION=PLAN_CONTROLLED_ADAPTER_ACTIVATION_ONLY
+
+PLANNED_ALLOWED_CALL_SITES:
+- local diagnostic scripts
+- public-safe audit artifact builders
+- SRSC review artifact generators
+- milestone closure evidence builders
+- cross-trace diagnostic planners
+
+PLANNED_FORBIDDEN_CALL_SITES:
+- solver runtime loop
+- agent planner
+- world model
+- observer runtime path
+- candidate generator
+- candidate ranker
+- verifier
+- benchmark executor
+- Kaggle submission package builder
+- real evaluation runner
+- private core modules
+- network or API clients
+
+PLANNED_ALLOWED_OUTPUTS:
+- DiagnosticAdapterResult
+- deterministic public JSON
+- accepted diagnostic reference records
+- blocked reference reports
+- local manifest fragments
+- audit-friendly technical receipt payloads
+
+PLANNED_FORBIDDEN_OUTPUTS:
+- solver action
+- candidate patch
+- ranker score
+- verifier verdict
+- benchmark score
+- Kaggle submission file
+- public score claim
+- private score claim
+- legal certification claim
+
+BOUNDARY:
+adapter_activation_planning_performed=true
+adapter_activation_implementation_authorization_review_required_next=true
+implementation_performed_in_task_91=false
+adapter_modified_in_task_91=false
+adapter_activated_in_task_91=false
+runtime_activation_authorized=false
+runtime_solver_modified=false
+runtime_wiring_allowed=false
+solver_runtime_binding=false
+candidate_generator_modified=false
+candidate_generator_binding=false
+ranker_modified=false
+ranker_binding=false
+verifier_modified=false
+verifier_binding=false
+benchmark_score_claimed=false
+benchmark_binding=false
+real_evaluation_performed=false
+real_submission_authorized=false
+kaggle_authentication_performed=false
+kaggle_submission_sent=false
+kaggle_submission_binding=false
+internet_during_eval=false
+external_api_dependency=false
+private_core_exposure=false
+legal_certification=false
+fail_closed_required=true
+fail_closed_active=true
+
+NEXT_STAGE=MILESTONE_19_TASK_92_SRSC_DIAGNOSTIC_ADAPTER_ACTIVATION_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1
