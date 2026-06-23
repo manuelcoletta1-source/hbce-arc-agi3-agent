@@ -1,0 +1,15 @@
+{
+  "failClosedActive": true,
+  "handoffToMilestone20": true,
+  "implementationAuthorized": false,
+  "kaggleSubmissionSent": false,
+  "milestone19Closed": true,
+  "milestone19Frozen": true,
+  "nextRecommendedTask": "MILESTONE_20_TASK_1_OPERATOR_DECISION_GATE_V1",
+  "nextStage": "MILESTONE_20",
+  "noFurtherMilestone19TasksRequired": true,
+  "recursiveArchiveChainStopped": true,
+  "signature": "96D4D3402FD43306",
+  "taskId": "MILESTONE-19-TASK-83-FINAL-CLOSEOUT-96D4D3402FD43306",
+  "taskName": "MILESTONE_19_TASK_83_FINAL_CLOSEOUT_FREEZE_INDEX_HANDOFF_TO_MILESTONE_20_V1"
+}

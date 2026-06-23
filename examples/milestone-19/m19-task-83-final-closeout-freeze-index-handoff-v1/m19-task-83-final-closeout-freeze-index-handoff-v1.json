@@ -1,0 +1,616 @@
+{
+  "acceptanceGateCount": 90,
+  "acceptanceGateFailureCount": 0,
+  "acceptanceGates": [
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-001",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-002",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-003",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-004",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-005",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-006",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-007",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-008",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-009",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-010",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-011",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-012",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-013",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-014",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-015",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-016",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-017",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-018",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-019",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-020",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-021",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-022",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-023",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-024",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-025",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-026",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-027",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-028",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-029",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-030",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-031",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-032",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-033",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-034",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-035",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-036",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-037",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-038",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-039",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-040",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-041",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-042",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-043",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-044",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-045",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-046",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-047",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-048",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-049",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-050",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-051",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-052",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-053",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-054",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-055",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-056",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-057",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-058",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-059",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-060",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-061",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-062",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-063",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-064",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-065",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-066",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-067",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-068",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-069",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-070",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-071",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-072",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-073",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-074",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-075",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-076",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-077",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-078",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-079",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-080",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-081",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-082",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-083",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-084",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-085",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-086",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-087",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-088",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-089",
+      "passed": true
+    },
+    {
+      "failure": false,
+      "gateId": "M19-T83-GATE-090",
+      "passed": true
+    }
+  ],
+  "additionalRecursiveArchiveIndexRequired": false,
+  "allowedOperatorDecisionValues": [
+    "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+    "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+    "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+    "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+    "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION"
+  ],
+  "candidateGeneratorModified": false,
+  "deterministic": true,
+  "explicitOperatorDecisionValueAuthorizing": false,
+  "explicitOperatorDecisionValueSelected": false,
+  "explicitOperatorDecisionValueValidated": false,
+  "externalApiDependency": false,
+  "failClosedActive": true,
+  "failClosedRequired": true,
+  "finalCloseoutItemCount": 5,
+  "finalCloseoutOnly": true,
+  "finalMilestone19CloseoutClosed": true,
+  "finalMilestone19CloseoutConfirmed": true,
+  "finalMilestone19CloseoutCreated": true,
+  "finalMilestone19CloseoutLocked": true,
+  "finalMilestone19CloseoutReady": true,
+  "handoffItemCount": 5,
+  "handoffToMilestone20": true,
+  "hiddenLabelAccessed": false,
+  "implementationAuthorizationReceived": false,
+  "implementationAuthorized": false,
+  "implementationDecisionSelected": false,
+  "internetDuringEval": false,
+  "items": [
+    {
+      "authorizing": false,
+      "handoffToMilestone20": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T83-FINAL-CLOSEOUT-1",
+      "kaggleSubmissionSent": false,
+      "milestone19Closed": true,
+      "noFurtherMilestone19TasksRequired": true,
+      "operatorDecisionValue": "AUTHORIZE_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_ONLY",
+      "recursiveArchiveChainStopped": true,
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "validated": false
+    },
+    {
+      "authorizing": false,
+      "handoffToMilestone20": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T83-FINAL-CLOSEOUT-2",
+      "kaggleSubmissionSent": false,
+      "milestone19Closed": true,
+      "noFurtherMilestone19TasksRequired": true,
+      "operatorDecisionValue": "DEFER_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_PLANNING_ONLY",
+      "recursiveArchiveChainStopped": true,
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "validated": false
+    },
+    {
+      "authorizing": false,
+      "handoffToMilestone20": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T83-FINAL-CLOSEOUT-3",
+      "kaggleSubmissionSent": false,
+      "milestone19Closed": true,
+      "noFurtherMilestone19TasksRequired": true,
+      "operatorDecisionValue": "REJECT_CROSS_TRACE_DIAGNOSTIC_PLANNER_IMPLEMENTATION_KEEP_FAIL_CLOSED",
+      "recursiveArchiveChainStopped": true,
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "validated": false
+    },
+    {
+      "authorizing": false,
+      "handoffToMilestone20": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T83-FINAL-CLOSEOUT-4",
+      "kaggleSubmissionSent": false,
+      "milestone19Closed": true,
+      "noFurtherMilestone19TasksRequired": true,
+      "operatorDecisionValue": "REQUEST_ADDITIONAL_SPEC_EVIDENCE_BEFORE_IMPLEMENTATION",
+      "recursiveArchiveChainStopped": true,
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "validated": false
+    },
+    {
+      "authorizing": false,
+      "handoffToMilestone20": true,
+      "implementationAuthorized": false,
+      "itemId": "M19-T83-FINAL-CLOSEOUT-5",
+      "kaggleSubmissionSent": false,
+      "milestone19Closed": true,
+      "noFurtherMilestone19TasksRequired": true,
+      "operatorDecisionValue": "REQUIRE_BOUNDARY_RECHECK_BEFORE_IMPLEMENTATION",
+      "recursiveArchiveChainStopped": true,
+      "runtimeActivationPerformed": false,
+      "selected": false,
+      "validated": false
+    }
+  ],
+  "kaggleAuthenticationAllowed": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "localOnly": true,
+  "milestone19Closed": true,
+  "milestone19FinalStatus": "CLOSED_HANDOFF_READY",
+  "milestone19FreezeIndexClosed": true,
+  "milestone19FreezeIndexCreated": true,
+  "milestone19FreezeIndexLocked": true,
+  "milestone19Frozen": true,
+  "milestone20ImplementationAuthorizedNow": false,
+  "milestone20ImplementationMayOnlyStartAfterExplicitOperatorDecision": true,
+  "milestone20ReadyForOperatorDecisionGate": true,
+  "milestoneName": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER",
+  "mode": "FINAL_CLOSEOUT_FREEZE_INDEX_HANDOFF_ONLY_NO_SELECTION_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+  "nextRecommendedTask": "MILESTONE_20_TASK_1_OPERATOR_DECISION_GATE_V1",
+  "nextRecursiveArchiveIndexRequired": false,
+  "nextStage": "MILESTONE_20",
+  "noFurtherMilestone19ClosureLoopRequired": true,
+  "noFurtherMilestone19TasksRequired": true,
+  "operatorApprovalReceived": false,
+  "operatorApprovalRequired": true,
+  "operatorDecisionPendingStatusActive": true,
+  "operatorDecisionReceived": false,
+  "operatorDecisionRequiredForImplementation": true,
+  "operatorPromptOptionCount": 5,
+  "planningOnlyUntilExplicitOperatorDecision": true,
+  "previousCommit": "24b2da4",
+  "previousSignature": "D54A0FD0B0FDAB29",
+  "previousTask": "MILESTONE_19_TASK_82_FINAL_CLOSURE_REVIEW_V1",
+  "privateCoreExposure": false,
+  "publicSafe": true,
+  "rankerModified": false,
+  "realEvaluationAuthorized": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "recursiveArchiveChainStopReason": "TASK_82_FINAL_CLOSURE_REVIEW_CONFIRMED_NO_ADDITIONAL_ARCHIVE_INDEX_REQUIRED",
+  "recursiveArchiveChainStopRequired": true,
+  "recursiveArchiveChainStopped": true,
+  "recursiveArchiveChainStoppedAtTask": 83,
+  "runtimeActivationAuthorized": false,
+  "runtimeActivationPerformed": false,
+  "runtimeSolverModified": false,
+  "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "signature": "96D4D3402FD43306",
+  "sourceTask82AdditionalRecursiveArchiveIndexRequired": false,
+  "sourceTask82ClosureReviewPassed": true,
+  "sourceTask82FinalCloseoutRequired": true,
+  "sourceTask82RecursiveArchiveChainStopRequired": true,
+  "submissionArtifactCreated": false,
+  "taskId": "MILESTONE-19-TASK-83-FINAL-CLOSEOUT-96D4D3402FD43306",
+  "taskLabel": "Milestone 19 Final Closeout / Freeze Index / Handoff to Milestone 20 v1",
+  "taskName": "MILESTONE_19_TASK_83_FINAL_CLOSEOUT_FREEZE_INDEX_HANDOFF_TO_MILESTONE_20_V1",
+  "taskNumber": 83,
+  "verdict": "MILESTONE_19_CLOSED_RECURSIVE_ARCHIVE_CHAIN_STOPPED_HANDOFF_TO_MILESTONE_20_IMPLEMENTATION_BLOCKED_PENDING_OPERATOR_DECISION",
+  "verifierModified": false,
+  "waitingForExplicitOperatorDecisionValue": true
+}
