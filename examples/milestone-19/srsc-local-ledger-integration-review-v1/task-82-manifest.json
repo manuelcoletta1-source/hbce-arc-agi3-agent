@@ -1,0 +1,59 @@
+{
+  "taskId": "MILESTONE_19_TASK_82_SRSC_LOCAL_LEDGER_INTEGRATION_REVIEW_V1",
+  "status": "INTEGRATION_REVIEW_READY",
+  "mode": "REVIEW_ONLY_NO_RUNTIME_WIRING",
+  "dependency": "MILESTONE_19_TASK_81_SRSC_CLAIM_LEDGER_EVIDENCE_GATE_LOCAL_IMPLEMENTATION_V1",
+  "decision": "AUTHORIZE_NEXT_TASK_DIAGNOSTIC_REFERENCE_PLANNING_ONLY",
+  "integrationReviewPerformed": true,
+  "diagnosticReferencePlanningAuthorizedForNextTask": true,
+  "implementationPerformedInTask82": false,
+  "reviewedModules": [
+    "src/hbce_arc_agi3/srsc_claim_ledger.py",
+    "src/hbce_arc_agi3/srsc_evidence_gate.py"
+  ],
+  "reviewedTests": [
+    "tests/test_srsc_claim_ledger.py",
+    "tests/test_srsc_evidence_gate.py"
+  ],
+  "allowedFutureReferenceTargets": [
+    "cross-trace diagnostic planner records",
+    "public-safe audit summaries",
+    "local claim review reports",
+    "evidence-bound diagnostic notes",
+    "milestone closure records"
+  ],
+  "blockedIntegrations": [
+    "solver runtime wiring",
+    "candidate generator mutation",
+    "ranker scoring mutation",
+    "verifier mutation",
+    "benchmark score claiming",
+    "Kaggle submission flow",
+    "external API dependency",
+    "internet use during evaluation",
+    "private core exposure",
+    "legal certification claim"
+  ],
+  "documents": {
+    "task82Review": "docs/milestone-19-task-82-srsc-local-ledger-integration-review-v1.md",
+    "task81Implementation": "docs/milestone-19-task-81-srsc-claim-ledger-evidence-gate-local-implementation-v1.md"
+  },
+  "runtimeActivationAuthorized": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "candidateGeneratorModified": false,
+  "rankerModified": false,
+  "verifierModified": false,
+  "benchmarkScoreClaimed": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "internetDuringEval": false,
+  "externalApiDependency": false,
+  "privateCoreExposure": false,
+  "legalCertification": false,
+  "failClosedRequired": true,
+  "failClosedActive": true,
+  "nextStage": "MILESTONE_19_TASK_83_SRSC_DIAGNOSTIC_REFERENCE_PLANNING_V1"
+}
