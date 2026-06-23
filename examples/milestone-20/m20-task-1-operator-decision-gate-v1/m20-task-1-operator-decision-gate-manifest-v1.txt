@@ -1,0 +1,15 @@
+MILESTONE_20_TASK_1_OPERATOR_DECISION_GATE_V1
+task_id=MILESTONE-20-TASK-1-OPERATOR-DECISION-GATE-0B41A78A7FD4B64F
+signature=0B41A78A7FD4B64F
+previous_commit=3160c5a
+previous_signature=96D4D3402FD43306
+source_milestone_19_closed=True
+operator_decision_gate_open=True
+operator_decision_required=True
+operator_decision_received=False
+selected_operator_decision_value=PENDING_EXPLICIT_OPERATOR_DECISION
+controlled_local_implementation_authorized_now=False
+implementation_authorized=False
+kaggle_submission_sent=False
+fail_closed_active=True
+next_task=MILESTONE_20_TASK_2_OPERATOR_DECISION_RECORD_V1

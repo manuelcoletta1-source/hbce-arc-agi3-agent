@@ -1,0 +1,16 @@
+{
+  "controlledLocalImplementationAuthorizedNow": false,
+  "decisionOptionCount": 5,
+  "failClosedActive": true,
+  "implementationAuthorized": false,
+  "kaggleSubmissionSent": false,
+  "nextTask": "MILESTONE_20_TASK_2_OPERATOR_DECISION_RECORD_V1",
+  "operatorDecisionGateOpen": true,
+  "operatorDecisionReceived": false,
+  "operatorDecisionRequired": true,
+  "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "signature": "0B41A78A7FD4B64F",
+  "sourceMilestone19Closed": true,
+  "taskId": "MILESTONE-20-TASK-1-OPERATOR-DECISION-GATE-0B41A78A7FD4B64F",
+  "taskName": "MILESTONE_20_TASK_1_OPERATOR_DECISION_GATE_V1"
+}
