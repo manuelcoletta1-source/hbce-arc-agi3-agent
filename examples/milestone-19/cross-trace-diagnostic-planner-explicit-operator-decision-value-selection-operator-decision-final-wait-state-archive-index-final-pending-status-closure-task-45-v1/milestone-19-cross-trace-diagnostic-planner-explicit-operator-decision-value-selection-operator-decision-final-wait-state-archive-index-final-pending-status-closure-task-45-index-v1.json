@@ -1,0 +1,30 @@
+{
+  "artifactPaths": {
+    "docs": "docs/milestone-19-cross-trace-diagnostic-planner-explicit-operator-decision-value-selection-operator-decision-final-wait-state-archive-index-final-pending-status-closure-task-45-v1.md",
+    "index_json": "examples/milestone-19/cross-trace-diagnostic-planner-explicit-operator-decision-value-selection-operator-decision-final-wait-state-archive-index-final-pending-status-closure-task-45-v1/milestone-19-cross-trace-diagnostic-planner-explicit-operator-decision-value-selection-operator-decision-final-wait-state-archive-index-final-pending-status-closure-task-45-index-v1.json",
+    "json": "examples/milestone-19/cross-trace-diagnostic-planner-explicit-operator-decision-value-selection-operator-decision-final-wait-state-archive-index-final-pending-status-closure-task-45-v1/milestone-19-cross-trace-diagnostic-planner-explicit-operator-decision-value-selection-operator-decision-final-wait-state-archive-index-final-pending-status-closure-task-45-v1.json",
+    "manifest": "examples/milestone-19/cross-trace-diagnostic-planner-explicit-operator-decision-value-selection-operator-decision-final-wait-state-archive-index-final-pending-status-closure-task-45-v1/milestone-19-cross-trace-diagnostic-planner-explicit-operator-decision-value-selection-operator-decision-final-wait-state-archive-index-final-pending-status-closure-task-45-manifest-v1.txt",
+    "markdown": "examples/milestone-19/cross-trace-diagnostic-planner-explicit-operator-decision-value-selection-operator-decision-final-wait-state-archive-index-final-pending-status-closure-task-45-v1/milestone-19-cross-trace-diagnostic-planner-explicit-operator-decision-value-selection-operator-decision-final-wait-state-archive-index-final-pending-status-closure-task-45-v1.md",
+    "milestone_index": "docs/milestone-19-cross-trace-diagnostic-planner-planning-index-v1.md"
+  },
+  "closureCreated": true,
+  "closureLocked": true,
+  "closureReviewRequired": true,
+  "explicitOperatorDecisionValueSelected": false,
+  "failClosedActive": true,
+  "implementationAuthorized": false,
+  "kaggleSubmissionSent": false,
+  "milestoneName": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER",
+  "mode": "EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_ONLY_NO_SELECTION_NO_IMPLEMENTATION_NO_RUNTIME_NO_EVALUATION_NO_SUBMISSION",
+  "nextTask": "MILESTONE_19_TASK_46_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_REVIEW_V1",
+  "previousCommit": "25ad702",
+  "previousSignature": "1579CA4EDF5FF89E",
+  "previousTask": "MILESTONE_19_TASK_44_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_REVIEW_V1",
+  "realEvaluationPerformed": false,
+  "runtimeActivationPerformed": false,
+  "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "signature": "05233D2333CA7542",
+  "taskId": "MILESTONE-19-TASK-45-CROSS-TRACE-DIAGNOSTIC-PLANNER-EXPLICIT-OPERATOR-DECISION-VALUE-SELECTION-OPERATOR-DECISION-FINAL-WAIT-STATE-ARCHIVE-INDEX-FINAL-PENDING-STATUS-CLOSURE-05233D2333CA7542",
+  "taskName": "MILESTONE_19_TASK_45_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_V1",
+  "verdict": "MILESTONE_19_CROSS_TRACE_DIAGNOSTIC_PLANNER_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_OPERATOR_DECISION_FINAL_WAIT_STATE_ARCHIVE_INDEX_FINAL_PENDING_STATUS_CLOSURE_CREATED_REVIEW_REQUIRED_IMPLEMENTATION_BLOCKED"
+}
