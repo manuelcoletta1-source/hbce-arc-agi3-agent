@@ -1,0 +1,69 @@
+{
+  "taskId": "MILESTONE_19_TASK_97_SRSC_DIAGNOSTIC_ADAPTER_CONTROLLED_ACTIVATION_USAGE_LOCAL_IMPLEMENTATION_V1",
+  "status": "CONTROLLED_DIAGNOSTIC_USAGE_LOCAL_IMPLEMENTATION_READY",
+  "mode": "LOCAL_DIAGNOSTIC_ONLY_USAGE_NO_RUNTIME_WIRING",
+  "dependency": "MILESTONE_19_TASK_96_SRSC_DIAGNOSTIC_ADAPTER_CONTROLLED_ACTIVATION_USAGE_IMPLEMENTATION_AUTHORIZATION_REVIEW_V1",
+  "implementedModules": [
+    "src/hbce_arc_agi3/srsc_diagnostic_adapter_activation_usage.py"
+  ],
+  "implementedTests": [
+    "tests/test_srsc_diagnostic_adapter_activation_usage.py"
+  ],
+  "implementedUsageTypes": [
+    "DiagnosticActivationUsageRequest",
+    "DiagnosticActivationUsageResult",
+    "DiagnosticActivationUsageBlockedRequest",
+    "run_controlled_activation_usage",
+    "run_controlled_activation_usage_batch"
+  ],
+  "allowedUsageContexts": [
+    "local SRSC diagnostic report generation",
+    "local milestone evidence packaging",
+    "local public-safe audit summary creation",
+    "local cross-trace planner evidence attachment",
+    "local blocked-call report generation"
+  ],
+  "forbiddenUsageContexts": [
+    "solver runtime execution",
+    "runtime planner execution",
+    "agent loop execution",
+    "candidate generation",
+    "candidate ranking",
+    "verifier execution",
+    "benchmark execution",
+    "real evaluation execution",
+    "Kaggle submission packaging",
+    "score reporting",
+    "private core execution",
+    "network/API execution",
+    "legal certification workflows"
+  ],
+  "controlledUsageImplemented": true,
+  "diagnosticUsageOnly": true,
+  "activationWrapperModified": false,
+  "adapterModified": false,
+  "runtimeActivationAuthorized": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "solverRuntimeBinding": false,
+  "candidateGeneratorModified": false,
+  "candidateGeneratorBinding": false,
+  "rankerModified": false,
+  "rankerBinding": false,
+  "verifierModified": false,
+  "verifierBinding": false,
+  "benchmarkScoreClaimed": false,
+  "benchmarkBinding": false,
+  "realEvaluationPerformed": false,
+  "realSubmissionAuthorized": false,
+  "kaggleAuthenticationPerformed": false,
+  "kaggleSubmissionSent": false,
+  "kaggleSubmissionBinding": false,
+  "internetDuringEval": false,
+  "externalApiDependency": false,
+  "privateCoreExposure": false,
+  "legalCertification": false,
+  "failClosedRequired": true,
+  "failClosedActive": true,
+  "nextStage": "MILESTONE_19_TASK_98_SRSC_DIAGNOSTIC_ADAPTER_CONTROLLED_ACTIVATION_USAGE_IMPLEMENTATION_REVIEW_V1"
+}
