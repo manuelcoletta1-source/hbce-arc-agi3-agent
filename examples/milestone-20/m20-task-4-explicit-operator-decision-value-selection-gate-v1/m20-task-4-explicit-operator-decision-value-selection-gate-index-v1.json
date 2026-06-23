@@ -1,0 +1,16 @@
+{
+  "explicitOperatorDecisionValueSelectionGateCreated": true,
+  "explicitOperatorDecisionValueSelectionGateOpen": true,
+  "explicitOperatorDecisionValueSelectionReceived": false,
+  "explicitOperatorDecisionValueSelectionRecorded": false,
+  "explicitOperatorDecisionValueSelectionRequired": true,
+  "failClosedActive": true,
+  "implementationAuthorized": false,
+  "kaggleSubmissionSent": false,
+  "nextTask": "MILESTONE_20_TASK_5_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_RECORD_V1",
+  "selectedOperatorDecisionValue": "PENDING_EXPLICIT_OPERATOR_DECISION",
+  "signature": "7A3A50C5E1BA9E97",
+  "taskId": "MILESTONE-20-TASK-4-EXPLICIT-SELECTION-GATE-7A3A50C5E1BA9E97",
+  "taskName": "MILESTONE_20_TASK_4_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE_V1",
+  "validOperatorDecisionValueCount": 5
+}
