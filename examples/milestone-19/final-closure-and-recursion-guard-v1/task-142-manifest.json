@@ -1,0 +1,39 @@
+{
+  "actualTaskCount": 63,
+  "closureRequiredForFutureMilestones": true,
+  "complexMilestoneTaskMax": 12,
+  "continueRecursiveTasks": false,
+  "exceptionalMilestoneTaskMax": 15,
+  "failClosedActive": true,
+  "finalStatus": "CLOSED_WITH_PROCESS_CORRECTION",
+  "futureBudgetPolicyRequired": true,
+  "generatedArtifacts": [
+    "examples/milestone-19/final-closure-and-recursion-guard-v1/task-142-milestone-19-final-closure.json",
+    "examples/milestone-19/final-closure-and-recursion-guard-v1/task-142-milestone-19-final-closure.md"
+  ],
+  "implementedModule": "src/hbce_arc_agi3/milestone_task_budget_governance.py",
+  "implementedTests": [
+    "tests/test_milestone_task_budget_governance.py",
+    "tests/test_milestone_19_task_142_final_closure_and_recursion_guard.py"
+  ],
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "maxAuthorizationDepth": 1,
+  "maxFinalizationDepth": 1,
+  "maxReviewDepth": 1,
+  "milestoneId": "MILESTONE_19",
+  "mode": "FINAL_CLOSURE_PROCESS_CORRECTION_NO_REWRITE",
+  "nextStage": "MILESTONE_20_GOVERNED_EXECUTION_WITH_TASK_BUDGET_MAX_8",
+  "noRecursiveMetaLayerRequired": true,
+  "processStatus": "OVERSIZED_RECURSIVE_CORRECTED",
+  "rawRequestBodyPersisted": false,
+  "rewriteRequired": false,
+  "rollbackRequired": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "secretPersisted": false,
+  "standardMilestoneTaskMax": 8,
+  "status": "MILESTONE_19_FINAL_CLOSURE_AND_RECURSION_GUARD_READY",
+  "taskId": "MILESTONE_19_TASK_142_FINAL_CLOSURE_AND_RECURSION_GUARD_V1",
+  "technicalStatus": "PASS"
+}
