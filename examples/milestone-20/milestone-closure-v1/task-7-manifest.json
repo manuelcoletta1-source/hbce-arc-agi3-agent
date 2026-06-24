@@ -1,0 +1,37 @@
+{
+  "completedTaskCount": 7,
+  "emergencyReserveUnused": true,
+  "failClosedActive": true,
+  "finalStatus": "CLOSED_WITH_TASK_BUDGET_MAX_8",
+  "finalTaskNumber": 7,
+  "generatedArtifacts": [
+    "examples/milestone-20/milestone-closure-v1/task-7-milestone-closure.json",
+    "examples/milestone-20/milestone-closure-v1/task-7-milestone-closure.md"
+  ],
+  "implementedModule": "src/hbce_arc_agi3/milestone_20_closure.py",
+  "implementedTests": [
+    "tests/test_milestone_20_closure.py",
+    "tests/test_milestone_20_task_7_milestone_closure.py"
+  ],
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "maxAuthorizationDepth": 1,
+  "maxFinalizationDepth": 1,
+  "maxReviewDepth": 1,
+  "milestoneId": "MILESTONE_20",
+  "mode": "MILESTONE_CLOSURE_WITH_TASK_BUDGET_MAX_8",
+  "nextStage": "MILESTONE_20_CLOSED_NO_TASK_8_USED",
+  "noRecursiveMetaLayer": true,
+  "processStatus": "GOVERNED_WITHIN_TASK_BUDGET",
+  "rawRequestBodyPersisted": false,
+  "reopenMilestone19Required": false,
+  "rewriteMilestone19Required": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "secretPersisted": false,
+  "status": "MILESTONE_20_CLOSURE_READY",
+  "task8Used": false,
+  "taskBudgetMax": 8,
+  "taskId": "MILESTONE_20_TASK_7_MILESTONE_CLOSURE_V1",
+  "technicalStatus": "PASS"
+}
