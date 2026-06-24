@@ -1,0 +1,37 @@
+{
+  "closureRequiredNext": true,
+  "currentTaskNumber": 6,
+  "emergencyReserveTaskNumber": 8,
+  "failClosedActive": true,
+  "generatedArtifacts": [
+    "examples/milestone-20/validation-and-integration-v1/task-6-validation-integration.json",
+    "examples/milestone-20/validation-and-integration-v1/task-6-validation-integration.md"
+  ],
+  "implementedModule": "src/hbce_arc_agi3/milestone_20_validation_integration.py",
+  "implementedTests": [
+    "tests/test_milestone_20_validation_integration.py",
+    "tests/test_milestone_20_task_6_validation_and_integration.py"
+  ],
+  "integratedTaskCount": 6,
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "maxAuthorizationDepth": 1,
+  "maxFinalizationDepth": 1,
+  "maxReviewDepth": 1,
+  "milestone19RemainsClosed": true,
+  "milestone20GovernanceValidated": true,
+  "milestone20ReadyForClosure": true,
+  "milestoneId": "MILESTONE_20",
+  "mode": "VALIDATION_AND_INTEGRATION_WITH_TASK_BUDGET_MAX_8",
+  "nextClosureTaskNumber": 7,
+  "nextStage": "MILESTONE_20_TASK_7_MILESTONE_CLOSURE_V1",
+  "noRecursiveMetaLayer": true,
+  "rawRequestBodyPersisted": false,
+  "remainingBudgetAfterCurrentTask": 2,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "secretPersisted": false,
+  "status": "MILESTONE_20_VALIDATION_AND_INTEGRATION_READY",
+  "taskBudgetMax": 8,
+  "taskId": "MILESTONE_20_TASK_6_VALIDATION_AND_INTEGRATION_V1"
+}
