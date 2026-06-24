@@ -1,0 +1,47 @@
+{
+  "closureRequired": true,
+  "completedTaskCountAtAlignment": 4,
+  "completedTaskLabels": [
+    "MILESTONE_20_TASK_1_OPERATOR_DECISION_GATE",
+    "MILESTONE_20_TASK_2_OPERATOR_DECISION_RECORD",
+    "MILESTONE_20_TASK_3_OPERATOR_DECISION_RECORD_REVIEW",
+    "MILESTONE_20_TASK_4_EXPLICIT_OPERATOR_DECISION_VALUE_SELECTION_GATE"
+  ],
+  "currentTaskNumber": 5,
+  "emergencyOnlyTaskLabel": "MILESTONE_20_TASK_8_EMERGENCY_RESERVE_ONLY",
+  "emergencyReserveTaskCount": 1,
+  "executionId": "MILESTONE-20-GOVERNED-EXECUTION-9C92BA176E3235C0",
+  "failClosedActive": true,
+  "governedExecutionOk": true,
+  "governedExecutionReady": true,
+  "issues": [],
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "maxAuthorizationDepth": 1,
+  "maxFinalizationDepth": 1,
+  "maxReviewDepth": 1,
+  "metadata": {
+    "artifact": "task-5-budget-alignment"
+  },
+  "milestoneId": "MILESTONE_20",
+  "noRecursiveMetaLayer": true,
+  "plannedRemainingTaskLabels": [
+    "MILESTONE_20_TASK_5_GOVERNED_EXECUTION_BUDGET_ALIGNMENT",
+    "MILESTONE_20_TASK_6_VALIDATION_AND_INTEGRATION",
+    "MILESTONE_20_TASK_7_MILESTONE_CLOSURE"
+  ],
+  "rawRequestBodyPersisted": false,
+  "recommendedClosureTaskNumber": 7,
+  "remainingBudgetAfterCurrentTask": 3,
+  "reopenMilestone19Required": false,
+  "revision": "MILESTONE_20_GOVERNED_EXECUTION_WITH_TASK_BUDGET_MAX_8_v1",
+  "rewriteMilestone19Required": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "secretPersisted": false,
+  "stopCondition": "operator decision value selection gate validated, regression tested, full suite passed, milestone closure committed and pushed",
+  "taskBudgetMax": 8,
+  "taskBudgetMin": 5,
+  "taskId": "MILESTONE_20_TASK_5_GOVERNED_EXECUTION_BUDGET_ALIGNMENT_V1",
+  "valid": true
+}

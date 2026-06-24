@@ -1,0 +1,35 @@
+{
+  "closureRequired": true,
+  "completedTaskCountAtAlignment": 4,
+  "currentTaskNumber": 5,
+  "emergencyReserveTaskCount": 1,
+  "failClosedActive": true,
+  "generatedArtifacts": [
+    "examples/milestone-20/governed-execution-budget-alignment-v1/task-5-governed-execution.json",
+    "examples/milestone-20/governed-execution-budget-alignment-v1/task-5-governed-execution.md"
+  ],
+  "implementedModule": "src/hbce_arc_agi3/milestone_20_governed_execution.py",
+  "implementedTests": [
+    "tests/test_milestone_20_governed_execution.py",
+    "tests/test_milestone_20_task_5_governed_execution_budget_alignment.py"
+  ],
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "maxAuthorizationDepth": 1,
+  "maxFinalizationDepth": 1,
+  "maxReviewDepth": 1,
+  "milestoneId": "MILESTONE_20",
+  "mode": "GOVERNED_EXECUTION_WITH_TASK_BUDGET_MAX_8",
+  "nextStage": "MILESTONE_20_TASK_6_VALIDATION_AND_INTEGRATION_V1",
+  "noRecursiveMetaLayer": true,
+  "rawRequestBodyPersisted": false,
+  "recommendedClosureTaskNumber": 7,
+  "reopenMilestone19Required": false,
+  "rewriteMilestone19Required": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "secretPersisted": false,
+  "status": "MILESTONE_20_GOVERNED_EXECUTION_BUDGET_ALIGNMENT_READY",
+  "taskBudgetMax": 8,
+  "taskId": "MILESTONE_20_TASK_5_GOVERNED_EXECUTION_BUDGET_ALIGNMENT_V1"
+}
