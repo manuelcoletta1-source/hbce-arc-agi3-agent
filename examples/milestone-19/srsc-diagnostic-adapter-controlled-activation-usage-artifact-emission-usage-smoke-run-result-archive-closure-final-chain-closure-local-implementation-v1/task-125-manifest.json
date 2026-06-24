@@ -1,0 +1,48 @@
+{
+  "apiKeyPersisted": false,
+  "artifactEmitterModified": false,
+  "benchmarkScoreClaimed": false,
+  "closureFinalizationModified": false,
+  "closureFinalizationModuleModified": false,
+  "closureModified": false,
+  "closureModuleModified": false,
+  "controlledSmokeRunResultArchiveClosureFinalChainClosureImplemented": true,
+  "coveredTaskRange": "MILESTONE_19_TASK_107_THROUGH_MILESTONE_19_TASK_122",
+  "credentialPersisted": false,
+  "dependency": "MILESTONE_19_TASK_124_SRSC_DIAGNOSTIC_ADAPTER_CONTROLLED_ACTIVATION_USAGE_ARTIFACT_EMISSION_USAGE_SMOKE_RUN_RESULT_ARCHIVE_CLOSURE_FINAL_CHAIN_CLOSURE_AUTHORIZATION_REVIEW_V1",
+  "diagnosticSmokeRunResultArchiveClosureFinalChainClosureOnly": true,
+  "failClosedActive": true,
+  "generatedArtifacts": [
+    "examples/milestone-19/srsc-diagnostic-adapter-controlled-activation-usage-artifact-emission-usage-smoke-run-result-archive-closure-final-chain-closure-local-implementation-v1/task-125-smoke-run-result-archive-closure-final-chain-closure.json",
+    "examples/milestone-19/srsc-diagnostic-adapter-controlled-activation-usage-artifact-emission-usage-smoke-run-result-archive-closure-final-chain-closure-local-implementation-v1/task-125-smoke-run-result-archive-closure-final-chain-closure.md"
+  ],
+  "implementedModules": [
+    "src/hbce_arc_agi3/srsc_diagnostic_adapter_activation_usage_artifact_emission_smoke_run_result_archive_closure_final_chain_closure.py"
+  ],
+  "implementedTests": [
+    "tests/test_srsc_diagnostic_adapter_activation_usage_artifact_emission_smoke_run_result_archive_closure_final_chain_closure.py",
+    "tests/test_milestone_19_task_125_srsc_diagnostic_adapter_controlled_activation_usage_artifact_emission_usage_smoke_run_result_archive_closure_final_chain_closure_local_implementation.py"
+  ],
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "mode": "LOCAL_DIAGNOSTIC_ONLY_FINAL_CHAIN_CLOSURE_NO_RUNTIME_WIRING",
+  "nextStage": "MILESTONE_19_TASK_126_SRSC_DIAGNOSTIC_ADAPTER_CONTROLLED_ACTIVATION_USAGE_ARTIFACT_EMISSION_USAGE_SMOKE_RUN_RESULT_ARCHIVE_CLOSURE_FINAL_CHAIN_CLOSURE_IMPLEMENTATION_REVIEW_V1",
+  "pocV09Benchmarked": false,
+  "pocV09FaultInjectionPerformed": false,
+  "pocV09Maturity": "DESIGNED / NOT_IMPLEMENTED / NOT_TESTED",
+  "pocV09ProductionReady": false,
+  "pocV09RuntimeImplemented": false,
+  "pocV09Status": "POC_V0_9_SPECIFICATION_READY / IMPLEMENTATION_NOT_STARTED",
+  "privateCoreExposure": false,
+  "rawRequestBodyPersisted": false,
+  "resultArchiveModified": false,
+  "resultArchiveModuleModified": false,
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "secretPersisted": false,
+  "smokeRunModuleModified": false,
+  "solverRuntimeBinding": false,
+  "status": "CONTROLLED_ARTIFACT_EMISSION_USAGE_SMOKE_RUN_RESULT_ARCHIVE_CLOSURE_FINAL_CHAIN_CLOSURE_LOCAL_IMPLEMENTATION_READY",
+  "taskId": "MILESTONE_19_TASK_125_SRSC_DIAGNOSTIC_ADAPTER_CONTROLLED_ACTIVATION_USAGE_ARTIFACT_EMISSION_USAGE_SMOKE_RUN_RESULT_ARCHIVE_CLOSURE_FINAL_CHAIN_CLOSURE_LOCAL_IMPLEMENTATION_V1",
+  "usageRunnerModified": false
+}
