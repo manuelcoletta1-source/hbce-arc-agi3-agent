@@ -1,0 +1,97 @@
+# Milestone #21 Task 6 - Milestone Closure v1
+
+Project: HBCE ARC-AGI-3 Agent  
+Organization: HERMETICUM B.C.E. S.r.l.  
+Task ID: MILESTONE_21_TASK_6_MILESTONE_CLOSURE_V1  
+Status: MILESTONE_21_CLOSURE_READY  
+Mode: MILESTONE_21_CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6  
+Boundary: legalCertification=false; technical proof receipt only.
+
+## Purpose
+
+Task 6 closes Milestone 21 after successful governed opening, scope lock, scoped handoff implementation, validation artifacts, and integration regression.
+
+## Final Milestone 21 State
+
+MILESTONE_21_TECHNICAL_STATUS=PASS  
+MILESTONE_21_PROCESS_STATUS=GOVERNED_WITHIN_TASK_BUDGET  
+MILESTONE_21_FINAL_STATUS=CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6  
+MILESTONE_21_TASK_BUDGET_MAX=8  
+MILESTONE_21_FINAL_TASK_NUMBER=6  
+MILESTONE_21_COMPLETED_TASK_COUNT=6  
+MILESTONE_21_TASK_7_USED=false  
+MILESTONE_21_TASK_8_USED=false  
+MILESTONE_21_RESERVE_UNUSED=true  
+MILESTONE_21_EMERGENCY_RESERVE_UNUSED=true  
+
+## Completed Tasks
+
+1. Governed opening with task budget.
+2. Objective selection and scope lock.
+3. Scoped operator decision handoff implementation.
+4. Validation and artifacts.
+5. Integration regression.
+6. Milestone closure.
+
+## Closure Checks
+
+1. milestone_20_closed_task_8_unused
+2. milestone_21_task_1_valid
+3. milestone_21_task_2_valid
+4. milestone_21_task_3_valid
+5. milestone_21_task_4_valid
+6. milestone_21_task_5_valid
+7. task_budget_respected
+8. reserve_tasks_unused
+9. forbidden_actions_absent
+10. fail_closed_boundary_preserved
+
+## Canonical Markers
+
+MILESTONE_21_TASK_6_MILESTONE_CLOSURE_READY=true
+MILESTONE_21_TASK_6_STATUS=MILESTONE_21_CLOSURE_READY
+MILESTONE_21_TASK_6_MODE=MILESTONE_21_CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6
+MILESTONE_21_TASK_6_TECHNICAL_STATUS=PASS
+MILESTONE_21_TASK_6_PROCESS_STATUS=GOVERNED_WITHIN_TASK_BUDGET
+MILESTONE_21_TASK_6_FINAL_STATUS=CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6
+MILESTONE_21_TASK_6_TASK_BUDGET_MAX=8
+MILESTONE_21_TASK_6_FINAL_TASK_NUMBER=6
+MILESTONE_21_TASK_6_COMPLETED_TASK_COUNT=6
+MILESTONE_21_TASK_6_REMAINING_BUDGET_AFTER_CLOSURE=2
+MILESTONE_21_TASK_6_RESERVE_TASK_NUMBER=7
+MILESTONE_21_TASK_6_EMERGENCY_ONLY_TASK_NUMBER=8
+MILESTONE_21_TASK_6_TASK_7_USED=false
+MILESTONE_21_TASK_6_TASK_8_USED=false
+MILESTONE_21_TASK_6_RESERVE_UNUSED=true
+MILESTONE_21_TASK_6_EMERGENCY_RESERVE_UNUSED=true
+MILESTONE_21_TASK_6_CLOSURE_CHECK_COUNT=10
+MILESTONE_21_TASK_6_CLOSURE_REQUIRED=true
+MILESTONE_21_TASK_6_CLOSURE_COMPLETED=true
+MILESTONE_21_TASK_6_NO_RECURSIVE_META_LAYER=true
+MILESTONE_21_TASK_6_MAX_REVIEW_DEPTH=1
+MILESTONE_21_TASK_6_MAX_AUTHORIZATION_DEPTH=1
+MILESTONE_21_TASK_6_MAX_FINALIZATION_DEPTH=1
+MILESTONE_21_TASK_6_MILESTONE_20_REOPEN_REQUIRED=false
+MILESTONE_21_TASK_6_MILESTONE_20_TASK_8_REQUIRED=false
+MILESTONE_21_TASK_6_MILESTONE_19_REOPEN_REQUIRED=false
+MILESTONE_21_TASK_6_RUNTIME_SOLVER_MODIFIED=false
+MILESTONE_21_TASK_6_RUNTIME_WIRING_ALLOWED=false
+MILESTONE_21_TASK_6_KAGGLE_SUBMISSION_SENT=false
+MILESTONE_21_TASK_6_RAW_REQUEST_BODY_PERSISTED=false
+MILESTONE_21_TASK_6_SECRET_PERSISTED=false
+MILESTONE_21_TASK_6_LEGAL_CERTIFICATION=false
+MILESTONE_21_TASK_6_FAIL_CLOSED_ACTIVE=true
+MILESTONE_21_TASK_6_NEXT_STAGE=MILESTONE_21_CLOSED_NO_TASK_7_OR_8_USED
+
+## Closure Rule
+
+Milestone 21 is closed.  
+Task 7 is not used.  
+Task 8 is not used.  
+Task 7 may only be used as reserve if a real defect appears after closure.  
+Task 8 may only be used as emergency-only if a real blocking defect appears after closure.  
+Otherwise next work must open Milestone 22 with a declared budget and stop condition before Task 1.
+
+## Next Stage
+
+MILESTONE_21_CLOSED_NO_TASK_7_OR_8_USED
