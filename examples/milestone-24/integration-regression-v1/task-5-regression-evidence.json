@@ -1,0 +1,26 @@
+{
+  "deterministic": true,
+  "issues": [],
+  "legalCertification": false,
+  "localOnly": true,
+  "m20Task7Used": true,
+  "m20Task8Used": false,
+  "m21Task7Used": false,
+  "m21Task8Used": false,
+  "m22Task7Used": false,
+  "m22Task8Used": false,
+  "missingSnapshotFound": false,
+  "missingSnapshotValid": false,
+  "operation": "build_regression_evidence_fast",
+  "queryEvidenceValid": true,
+  "readOnly": true,
+  "registeredMilestoneIds": [
+    "MILESTONE_20",
+    "MILESTONE_21",
+    "MILESTONE_22"
+  ],
+  "snapshotCount": 3,
+  "summaryM22Text": "MILESTONE_22 closed with CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6; finalTaskNumber=6; task7Used=false; task8Used=false; scope=fast_snapshot_guard.",
+  "summaryM22Valid": true,
+  "valid": true
+}
