@@ -1,0 +1,15 @@
+{
+  "brokenBoundaryIssues": [
+    "TASK_8_USED"
+  ],
+  "brokenBoundaryValid": false,
+  "issues": [],
+  "legalCertification": false,
+  "localOnly": true,
+  "operation": "build_boundary_report",
+  "readOnly": true,
+  "requiredFieldCount": 10,
+  "valid": true,
+  "validBoundaryCount": 3,
+  "validBoundaryPassCount": 3
+}
