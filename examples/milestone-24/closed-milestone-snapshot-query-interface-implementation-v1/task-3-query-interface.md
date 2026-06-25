@@ -1,0 +1,13 @@
+# Milestone 24 Task 3 - Closed Milestone Snapshot Query Interface
+
+implementationId: MILESTONE-24-QUERY-INTERFACE-E288CEBB864B4618
+sourceScopeLockId: MILESTONE_24_SCOPE_CLOSED_MILESTONE_SNAPSHOT_QUERY_INTERFACE_LOCAL_ONLY
+sourceSelectedObjectiveId: CLOSED_MILESTONE_SNAPSHOT_QUERY_INTERFACE_LOCAL_ONLY
+queryInterfaceImplemented: True
+queryInterfaceReadOnly: True
+snapshotCount: 3
+registeredMilestoneIds: MILESTONE_20, MILESTONE_21, MILESTONE_22
+m20Task7Used: True
+m22Task8Used: False
+nextStage: MILESTONE_24_TASK_4_VALIDATION_AND_ARTIFACTS_V1
+valid: True
