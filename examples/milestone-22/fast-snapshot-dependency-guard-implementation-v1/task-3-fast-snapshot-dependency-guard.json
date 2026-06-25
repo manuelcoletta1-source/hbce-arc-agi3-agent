@@ -1,0 +1,131 @@
+{
+  "allowedDependencyModeCount": 3,
+  "allowedDependencyModes": [
+    "FAST_SNAPSHOT_STATIC_CLOSURE_RECORD",
+    "DOCUMENT_BASED_MARKER_EVIDENCE",
+    "NO_RUNTIME_RECURSIVE_REVALIDATION"
+  ],
+  "closureRequired": true,
+  "currentTaskNumber": 3,
+  "deepRecursiveTraversalBlocked": true,
+  "documentEvidencePreserved": true,
+  "emergencyOnlyTaskNumber": 8,
+  "failClosedActive": true,
+  "fastSnapshotDependencyGuardImplemented": true,
+  "fastSnapshotDependencyGuardReady": true,
+  "forbiddenDependencyModeCount": 4,
+  "forbiddenDependencyModes": [
+    "DEEP_RECURSIVE_TO_PUBLIC_DICT_CHAIN",
+    "CLOSED_MILESTONE_VALID_PROPERTY_TRAVERSAL",
+    "HISTORICAL_MILESTONE_RUNTIME_REVALIDATION",
+    "RECURSIVE_META_LAYER"
+  ],
+  "forbiddenRuntimeTraversalTokenCount": 5,
+  "forbiddenRuntimeTraversalTokens": [
+    "closed_milestone.to_public_dict()",
+    "closed_milestone.valid",
+    "validate_closed_milestone_chain()",
+    "recursive_runtime_dependency_walk",
+    "historical_milestone_revalidation_as_runtime_traversal"
+  ],
+  "guardCheckCount": 10,
+  "guardChecks": [
+    "scope_lock_valid",
+    "fast_snapshot_pattern_enforced",
+    "closed_milestone_snapshots_valid",
+    "document_evidence_markers_present",
+    "deep_recursive_traversal_blocked",
+    "runtime_solver_unchanged",
+    "runtime_wiring_unchanged",
+    "kaggle_paths_unchanged",
+    "secret_and_raw_body_persistence_absent",
+    "fail_closed_boundary_preserved"
+  ],
+  "guardId": "MILESTONE-22-FAST-SNAPSHOT-GUARD-86F9FD65660E8C5F",
+  "guardOk": true,
+  "historicalMilestoneRewrite": false,
+  "issues": [],
+  "kaggleAuthenticationAllowed": false,
+  "kaggleSubmissionSent": false,
+  "kaggleUploadAllowed": false,
+  "legalCertification": false,
+  "localOnlyGuard": true,
+  "maxAuthorizationDepth": 1,
+  "maxFinalizationDepth": 1,
+  "maxReviewDepth": 1,
+  "metadata": {
+    "artifact": "task-3-fast-snapshot-guard-regenerated-after-m20-task7-fix"
+  },
+  "milestone19ReopenRequired": false,
+  "milestone20ReopenRequired": false,
+  "milestone20Task8Required": false,
+  "milestone21ReopenRequired": false,
+  "milestone21Task7Required": false,
+  "milestone21Task8Required": false,
+  "milestoneId": "MILESTONE_22",
+  "nextStage": "MILESTONE_22_TASK_4_VALIDATION_AND_ARTIFACTS_V1",
+  "noRecursiveMetaLayer": true,
+  "rawRequestBodyPersisted": false,
+  "readyForValidationArtifacts": true,
+  "recommendedClosureTaskNumber": 6,
+  "remainingBudgetAfterCurrentTask": 5,
+  "requiredSnapshotFieldCount": 8,
+  "requiredSnapshotFields": [
+    "milestoneId",
+    "finalStatus",
+    "taskBudgetMax",
+    "finalTaskNumber",
+    "task7Used",
+    "task8Used",
+    "evidenceDocPath",
+    "evidenceMarkers"
+  ],
+  "reserveTaskNumber": 7,
+  "revision": "MILESTONE_22_FAST_SNAPSHOT_DEPENDENCY_GUARD_IMPLEMENTATION_v1",
+  "runtimeSolverModified": false,
+  "runtimeWiringAllowed": false,
+  "scopeLockId": "MILESTONE_22_SCOPE_FAST_SNAPSHOT_DEPENDENCY_GUARD_LOCAL_ONLY",
+  "secretPersisted": false,
+  "snapshotCount": 2,
+  "snapshotPatternEnforced": true,
+  "snapshots": [
+    {
+      "evidenceDocPath": "docs/milestone-21-task-6-milestone-closure-v1.md",
+      "evidenceMarkers": [
+        "MILESTONE_21_TASK_6_MILESTONE_CLOSURE_READY=true",
+        "MILESTONE_21_TASK_6_FINAL_STATUS=CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6",
+        "MILESTONE_21_TASK_6_TASK_7_USED=false",
+        "MILESTONE_21_TASK_6_TASK_8_USED=false"
+      ],
+      "finalStatus": "CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6",
+      "finalTaskNumber": 6,
+      "markerCount": 4,
+      "milestoneId": "MILESTONE_21",
+      "task7Used": false,
+      "task8Used": false,
+      "taskBudgetMax": 8,
+      "valid": true
+    },
+    {
+      "evidenceDocPath": "docs/milestone-20-task-7-milestone-closure-v1.md",
+      "evidenceMarkers": [
+        "MILESTONE_20_TASK_7_FINAL_STATUS=CLOSED_WITH_TASK_BUDGET_MAX_8",
+        "MILESTONE_20_TASK_7_TASK_8_USED=false",
+        "MILESTONE_20_TASK_7_EMERGENCY_RESERVE_UNUSED=true"
+      ],
+      "finalStatus": "CLOSED_WITH_TASK_BUDGET_MAX_8",
+      "finalTaskNumber": 7,
+      "markerCount": 3,
+      "milestoneId": "MILESTONE_20",
+      "task7Used": true,
+      "task8Used": false,
+      "taskBudgetMax": 8,
+      "valid": true
+    }
+  ],
+  "sourceScopeLockId": "MILESTONE_22_SCOPE_FAST_SNAPSHOT_DEPENDENCY_GUARD_LOCAL_ONLY",
+  "sourceScopeLockValid": true,
+  "taskBudgetMax": 8,
+  "taskId": "MILESTONE_22_TASK_3_FAST_SNAPSHOT_DEPENDENCY_GUARD_IMPLEMENTATION_V1",
+  "valid": true
+}
