@@ -1,0 +1,14 @@
+# Milestone 24 Task 2 - Objective Selection and Scope Lock
+
+lockId: MILESTONE-24-SCOPE-LOCK-F84248918DF6A90A
+scopeLockId: MILESTONE_24_SCOPE_CLOSED_MILESTONE_SNAPSHOT_QUERY_INTERFACE_LOCAL_ONLY
+selectedObjectiveId: CLOSED_MILESTONE_SNAPSHOT_QUERY_INTERFACE_LOCAL_ONLY
+selectedObjectiveTitle: Closed Milestone Snapshot Query Interface Local Only
+fastSourceOpeningSnapshot: True
+taskBudgetMax: 8
+currentTaskNumber: 2
+implementationAllowedNext: True
+implementationStarted: False
+queryInterfaceImplementationStarted: False
+nextStage: MILESTONE_24_TASK_3_CLOSED_MILESTONE_SNAPSHOT_QUERY_INTERFACE_IMPLEMENTATION_V1
+valid: True
