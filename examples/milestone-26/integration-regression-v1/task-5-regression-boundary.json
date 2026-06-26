@@ -1,0 +1,15 @@
+{
+  "deepRecursiveDependencyTraversalAllowed": false,
+  "invalidArchiveItemFound": false,
+  "issues": [],
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "localOnly": true,
+  "missingArchiveItemFound": false,
+  "noMutationRegressionValidated": true,
+  "publicSafe": true,
+  "regressionId": "MILESTONE-26-INTEGRATION-REGRESSION-950FD76468344FE2",
+  "runtimeSolverModified": false,
+  "task8UsedFound": false,
+  "valid": true
+}
