@@ -1,0 +1,27 @@
+{
+  "archiveItemCount": 3,
+  "archivedMilestoneIds": [
+    "MILESTONE_20",
+    "MILESTONE_21",
+    "MILESTONE_22"
+  ],
+  "closureId": "MILESTONE-26-CLOSURE-84DAF1A583293C51",
+  "closureOk": true,
+  "completedTaskCount": 6,
+  "emergencyReserveUnused": true,
+  "finalStatus": "CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6",
+  "finalTaskNumber": 6,
+  "issues": [],
+  "milestoneClosed": true,
+  "milestoneId": "MILESTONE_26",
+  "noTask7Or8Used": true,
+  "processStatus": "GOVERNED_WITHIN_TASK_BUDGET",
+  "readyForNextMilestone": true,
+  "reserveUnused": true,
+  "task7Used": false,
+  "task8Used": false,
+  "taskBudgetMax": 8,
+  "taskId": "MILESTONE_26_TASK_6_MILESTONE_CLOSURE_V1",
+  "technicalStatus": "PASS",
+  "valid": true
+}
