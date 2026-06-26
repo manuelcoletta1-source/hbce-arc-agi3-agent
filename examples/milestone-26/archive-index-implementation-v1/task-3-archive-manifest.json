@@ -1,0 +1,17 @@
+{
+  "archiveDigest": "bc2fa6000a2ec738c73f6b083c36502ddfab3584d195cd931d505a2860805bb2",
+  "archiveIndexId": "MILESTONE-26-ARCHIVE-INDEX-0CC8C56DF686D1CD",
+  "archiveItemCount": 3,
+  "archivedMilestoneIds": [
+    "MILESTONE_20",
+    "MILESTONE_21",
+    "MILESTONE_22"
+  ],
+  "deterministic": true,
+  "legalCertification": false,
+  "localOnly": true,
+  "milestoneId": "MILESTONE_26",
+  "publicSafe": true,
+  "taskId": "MILESTONE_26_TASK_3_ARCHIVE_INDEX_IMPLEMENTATION_V1",
+  "valid": true
+}

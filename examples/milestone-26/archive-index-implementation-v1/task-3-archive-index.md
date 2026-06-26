@@ -1,0 +1,13 @@
+# Milestone 26 Task 3 - Archive Index Implementation
+
+archiveIndexId: MILESTONE-26-ARCHIVE-INDEX-0CC8C56DF686D1CD
+archiveDigest: bc2fa6000a2ec738c73f6b083c36502ddfab3584d195cd931d505a2860805bb2
+selectedObjectiveId: CLOSED_MILESTONE_SNAPSHOT_QUERY_RESULT_EVIDENCE_BUNDLE_ARCHIVE_INDEX_LOCAL_ONLY
+archiveIndexImplemented: True
+archiveIndexValid: True
+archiveItemCount: 3
+archivedMilestoneIds: MILESTONE_20,MILESTONE_21,MILESTONE_22
+implementationCompleted: True
+readyForValidationArtifacts: True
+nextStage: MILESTONE_26_TASK_4_VALIDATION_AND_ARTIFACTS_V1
+valid: True
