@@ -1,0 +1,30 @@
+{
+  "boundaryReportValidated": true,
+  "boundaryValidated": true,
+  "deepRecursiveDependencyTraversalAllowed": false,
+  "evidenceBundleValidated": true,
+  "evidenceManifestValidated": true,
+  "fastSourceEvidenceBundleSnapshot": true,
+  "generatedArtifactCount": 6,
+  "integritySummaryValidated": true,
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "milestoneId": "MILESTONE_25",
+  "mode": "VALIDATION_AND_ARTIFACTS_FAST_SOURCE_EVIDENCE_BUNDLE_SNAPSHOT",
+  "nextStage": "MILESTONE_25_TASK_5_INTEGRATION_REGRESSION_V1",
+  "queryResultItemCount": 3,
+  "queryResultItemsValidated": true,
+  "readyForIntegrationRegression": true,
+  "registeredMilestoneIds": [
+    "MILESTONE_20",
+    "MILESTONE_21",
+    "MILESTONE_22"
+  ],
+  "runtimeSolverModified": false,
+  "sourceTaskId": "MILESTONE_25_TASK_3_EVIDENCE_BUNDLE_IMPLEMENTATION_V1",
+  "status": "MILESTONE_25_VALIDATION_AND_ARTIFACTS_READY",
+  "taskId": "MILESTONE_25_TASK_4_VALIDATION_AND_ARTIFACTS_V1",
+  "validationArtifactsCreated": true,
+  "validationCaseCount": 12,
+  "validationId": "MILESTONE-25-VALIDATION-6C9A760AEAFE43A2"
+}

@@ -1,0 +1,15 @@
+{
+  "invalidQueryResultFound": false,
+  "issues": [],
+  "missingSnapshotFound": false,
+  "queryResultItemCount": 3,
+  "readyForIntegrationRegression": true,
+  "registeredMilestoneIds": [
+    "MILESTONE_20",
+    "MILESTONE_21",
+    "MILESTONE_22"
+  ],
+  "task8UsedFound": false,
+  "valid": true,
+  "validationId": "MILESTONE-25-VALIDATION-6C9A760AEAFE43A2"
+}
