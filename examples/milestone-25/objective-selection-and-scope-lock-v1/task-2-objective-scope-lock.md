@@ -1,0 +1,10 @@
+# Milestone 25 Task 2 - Objective Selection and Scope Lock
+
+lockArtifactId: MILESTONE-25-SCOPE-LOCK-295DE38D673658CF
+selectedObjectiveId: CLOSED_MILESTONE_SNAPSHOT_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+scopeLockId: MILESTONE_25_SCOPE_CLOSED_MILESTONE_SNAPSHOT_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+currentTaskNumber: 2
+implementationAllowedNext: True
+implementationStarted: False
+nextStage: MILESTONE_25_TASK_3_EVIDENCE_BUNDLE_IMPLEMENTATION_V1
+valid: True
