@@ -1,0 +1,10 @@
+# Milestone 25 Task 3 - Evidence Bundle Implementation
+
+bundleId: MILESTONE-25-EVIDENCE-BUNDLE-114F3ED9035E7286
+selectedObjectiveId: CLOSED_MILESTONE_SNAPSHOT_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+queryResultItemCount: 3
+registeredMilestoneIds: MILESTONE_20,MILESTONE_21,MILESTONE_22
+implementationCompleted: True
+readyForValidationArtifacts: True
+nextStage: MILESTONE_25_TASK_4_VALIDATION_AND_ARTIFACTS_V1
+valid: True
