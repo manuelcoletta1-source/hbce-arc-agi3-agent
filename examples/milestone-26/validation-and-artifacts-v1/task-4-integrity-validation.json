@@ -1,0 +1,16 @@
+{
+  "archiveIndexValidated": true,
+  "archiveItemCount": 3,
+  "archiveManifestValidated": true,
+  "archivedMilestoneIds": [
+    "MILESTONE_20",
+    "MILESTONE_21",
+    "MILESTONE_22"
+  ],
+  "boundaryReportValidated": true,
+  "integritySummaryValidated": true,
+  "issues": [],
+  "readyForIntegrationRegression": true,
+  "valid": true,
+  "validationId": "MILESTONE-26-VALIDATION-316F1DDDC899C135"
+}

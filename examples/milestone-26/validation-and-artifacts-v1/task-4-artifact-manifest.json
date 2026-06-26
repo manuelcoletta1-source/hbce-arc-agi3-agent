@@ -1,0 +1,25 @@
+{
+  "archiveIndexValidated": true,
+  "archiveItemCount": 3,
+  "archiveManifestValidated": true,
+  "archivedMilestoneIds": [
+    "MILESTONE_20",
+    "MILESTONE_21",
+    "MILESTONE_22"
+  ],
+  "boundaryReportValidated": true,
+  "deepRecursiveDependencyTraversalAllowed": false,
+  "fastSourceArchiveIndexSnapshot": true,
+  "generatedArtifactCount": 6,
+  "integritySummaryValidated": true,
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "milestoneId": "MILESTONE_26",
+  "readyForIntegrationRegression": true,
+  "runtimeSolverModified": false,
+  "taskId": "MILESTONE_26_TASK_4_VALIDATION_AND_ARTIFACTS_V1",
+  "valid": true,
+  "validationArtifactsCreated": true,
+  "validationCaseCount": 12,
+  "validationId": "MILESTONE-26-VALIDATION-316F1DDDC899C135"
+}
