@@ -1,0 +1,12 @@
+{
+  "deepRecursiveDependencyTraversalAllowed": false,
+  "issues": [],
+  "kaggleSubmissionSent": false,
+  "legalCertification": false,
+  "localOnly": true,
+  "noMutationRegressionValidated": true,
+  "publicSafe": true,
+  "regressionId": "MILESTONE-25-INTEGRATION-REGRESSION-81F2A18402239A42",
+  "runtimeSolverModified": false,
+  "valid": true
+}
