@@ -1,0 +1,83 @@
+"""Tests for Milestone #26 objective selection and scope lock."""
+
+from __future__ import annotations
+
+from hbce_arc_agi3.milestone_26_objective_scope_lock import (
+    FAST_SOURCE_OPENING_SNAPSHOT,
+    IMPLEMENTATION_ALLOWED_NEXT,
+    NEXT_STAGE,
+    OBJECTIVE_SELECTED,
+    SCOPE_LOCKED,
+    SELECTED_OBJECTIVE_ID,
+    TASK_ID,
+    build_fast_source_opening_snapshot,
+    build_milestone_26_objective_scope_lock,
+    validate_milestone_26_objective_scope_lock,
+)
+
+
+def test_fast_source_opening_snapshot_contract() -> None:
+    source = build_fast_source_opening_snapshot()
+
+    assert source["taskId"] == "MILESTONE_26_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1"
+    assert source["milestoneId"] == "MILESTONE_26"
+    assert source["governedOpeningReady"] is True
+    assert source["taskBudgetLocked"] is True
+    assert source["objectiveSelectionRequiredNext"] is True
+    assert source["scopeLockRequiredNext"] is True
+    assert source["implementationStarted"] is False
+    assert source["implementationAllowedAtTask1"] is False
+    assert source["valid"] is True
+    assert source["openingOk"] is True
+    assert source["issues"] == []
+
+
+def test_objective_scope_lock_contract() -> None:
+    lock = build_milestone_26_objective_scope_lock()
+
+    assert TASK_ID == "MILESTONE_26_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1"
+    assert SELECTED_OBJECTIVE_ID == "CLOSED_MILESTONE_SNAPSHOT_QUERY_RESULT_EVIDENCE_BUNDLE_ARCHIVE_INDEX_LOCAL_ONLY"
+    assert NEXT_STAGE == "MILESTONE_26_TASK_3_ARCHIVE_INDEX_IMPLEMENTATION_V1"
+    assert OBJECTIVE_SELECTED is True
+    assert SCOPE_LOCKED is True
+    assert IMPLEMENTATION_ALLOWED_NEXT is True
+    assert FAST_SOURCE_OPENING_SNAPSHOT is True
+    assert lock.milestone_id == "MILESTONE_26"
+    assert lock.task_budget_max == 8
+    assert lock.current_task_number == 2
+    assert lock.remaining_budget_after_current_task == 6
+    assert len(lock.scope_checks) == 13
+    assert len(lock.allowed_operations) == 4
+    assert len(lock.forbidden_operations) == 9
+    assert len(lock.generated_artifacts) == 4
+    assert lock.lock_ok is True
+    assert lock.valid is True
+    assert validate_milestone_26_objective_scope_lock(lock) == ()
+
+
+def test_objective_scope_lock_public_payload() -> None:
+    payload = build_milestone_26_objective_scope_lock().to_public_dict()
+
+    assert payload["taskId"] == "MILESTONE_26_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1"
+    assert payload["milestoneId"] == "MILESTONE_26"
+    assert payload["sourceTaskId"] == "MILESTONE_26_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1"
+    assert payload["selectedObjectiveId"] == "CLOSED_MILESTONE_SNAPSHOT_QUERY_RESULT_EVIDENCE_BUNDLE_ARCHIVE_INDEX_LOCAL_ONLY"
+    assert payload["scopeLockId"] == "MILESTONE_26_SCOPE_CLOSED_MILESTONE_SNAPSHOT_QUERY_RESULT_EVIDENCE_BUNDLE_ARCHIVE_INDEX_LOCAL_ONLY"
+    assert payload["nextStage"] == "MILESTONE_26_TASK_3_ARCHIVE_INDEX_IMPLEMENTATION_V1"
+    assert payload["objectiveSelected"] is True
+    assert payload["scopeLocked"] is True
+    assert payload["implementationAllowedNext"] is True
+    assert payload["implementationStarted"] is False
+    assert payload["archiveIndexImplementationStarted"] is False
+    assert payload["allowedOperationCount"] == 4
+    assert payload["forbiddenOperationCount"] == 9
+    assert payload["currentTaskNumber"] == 2
+    assert payload["fastSourceOpeningSnapshot"] is True
+    assert payload["deepRecursiveDependencyTraversalAllowed"] is False
+    assert payload["runtimeSolverModified"] is False
+    assert payload["kaggleSubmissionSent"] is False
+    assert payload["legalCertification"] is False
+    assert payload["lockOk"] is True
+    assert payload["valid"] is True
+    assert payload["issues"] == []
+    assert payload["lockId"].startswith("MILESTONE-26-SCOPE-LOCK-")

@@ -1,0 +1,11 @@
+# Milestone 26 Task 2 - Objective Selection and Scope Lock
+
+lockId: MILESTONE-26-SCOPE-LOCK-8261EF92C9B277E8
+selectedObjectiveId: CLOSED_MILESTONE_SNAPSHOT_QUERY_RESULT_EVIDENCE_BUNDLE_ARCHIVE_INDEX_LOCAL_ONLY
+scopeLockId: MILESTONE_26_SCOPE_CLOSED_MILESTONE_SNAPSHOT_QUERY_RESULT_EVIDENCE_BUNDLE_ARCHIVE_INDEX_LOCAL_ONLY
+objectiveSelected: True
+scopeLocked: True
+implementationAllowedNext: True
+implementationStarted: False
+nextStage: MILESTONE_26_TASK_3_ARCHIVE_INDEX_IMPLEMENTATION_V1
+valid: True
