@@ -1,0 +1,76 @@
+# Milestone 28 Task 2 - Objective Selection and Scope Lock v1
+
+MILESTONE_28_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_READY=true
+
+MILESTONE_28_TASK_2_SOURCE_TASK_ID=MILESTONE_28_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1
+MILESTONE_28_TASK_2_OBJECTIVE_SELECTION_REVISION=MILESTONE_28_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1
+
+MILESTONE_28_TASK_2_SELECTED_OBJECTIVE_ID=CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY
+MILESTONE_28_TASK_2_SELECTED_OBJECTIVE_LABEL=Closed milestone archive index query result export local-only
+MILESTONE_28_TASK_2_SCOPE_LOCK_ID=MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY
+
+MILESTONE_28_TASK_2_OBJECTIVE_SELECTION_READY=true
+MILESTONE_28_TASK_2_SCOPE_LOCKED=true
+
+MILESTONE_28_TASK_2_IMPLEMENTATION_STARTED=false
+MILESTONE_28_TASK_2_IMPLEMENTATION_ALLOWED_NEXT=true
+MILESTONE_28_TASK_2_IMPLEMENTATION_ALLOWED_AT_TASK_2=false
+
+MILESTONE_28_TASK_2_LOCAL_ONLY=true
+MILESTONE_28_TASK_2_NETWORK_ACCESS_ALLOWED=false
+MILESTONE_28_TASK_2_SHELL_EXECUTION_ALLOWED=false
+MILESTONE_28_TASK_2_REPOSITORY_MUTATION_ALLOWED=false
+MILESTONE_28_TASK_2_REMOTE_REGISTRY_LOOKUP_ALLOWED=false
+MILESTONE_28_TASK_2_DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL_ALLOWED=false
+MILESTONE_28_TASK_2_EXTERNAL_MODEL_CALL_ALLOWED=false
+
+MILESTONE_28_TASK_2_ALLOWED_INPUT_ARTIFACT_COUNT=6
+MILESTONE_28_TASK_2_FORBIDDEN_OPERATION_COUNT=8
+MILESTONE_28_TASK_2_ALLOWED_OUTPUT_FORMAT_COUNT=4
+
+MILESTONE_28_TASK_2_TASK_BUDGET_MAX=8
+MILESTONE_28_TASK_2_CURRENT_TASK_NUMBER=2
+
+MILESTONE_28_TASK_2_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_28_TASK_2_PRIMARY_SCOPE_LOCK_MODULE=src/hbce_arc_agi3/milestone_28_objective_scope_lock.py
+MILESTONE_28_TASK_2_PRIMARY_TEST_MODULE=tests/test_milestone_28_objective_scope_lock.py
+MILESTONE_28_TASK_2_TASK_VALIDATION_TEST=tests/test_milestone_28_task_2_objective_selection_and_scope_lock.py
+MILESTONE_28_TASK_2_ARTIFACT_DIR=examples/milestone-28/objective-selection-and-scope-lock-v1
+
+MILESTONE_28_TASK_2_NEXT_STAGE=MILESTONE_28_TASK_3_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1
+
+## Objective
+
+Select and lock the Milestone 28 objective before implementation.
+
+## Selected objective
+
+Closed milestone archive index query result export local-only.
+
+The objective extends the Milestone 27 query interface into deterministic local export artifacts.
+
+## Scope lock
+
+Allowed:
+
+- local artifact input from Milestone 27 and Milestone 28 Task 1;
+- JSON export;
+- Markdown export;
+- text index;
+- manifest generation.
+
+Forbidden:
+
+- network access;
+- shell execution from runtime query logic;
+- repository mutation during runtime query logic;
+- remote registry lookup;
+- deep recursive dependency traversal;
+- external model call;
+- unbounded filesystem scan;
+- task budget extension.
+
+## Result
+
+Task 2 locks the objective and permits implementation to begin at Task 3 only within the selected local-only scope. Humanity survives another boundary condition. Barely.
