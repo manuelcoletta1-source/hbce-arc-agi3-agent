@@ -1,0 +1,49 @@
+# Milestone 28 Task 4 - Query Result Export Validation v1
+
+MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_READY=true
+
+MILESTONE_28_TASK_4_SOURCE_TASK_ID=MILESTONE_28_TASK_3_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1
+MILESTONE_28_TASK_4_SELECTED_OBJECTIVE_ID=CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY
+MILESTONE_28_TASK_4_SCOPE_LOCK_ID=MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY
+
+MILESTONE_28_TASK_4_EXPORT_REVISION=MILESTONE_28_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1
+MILESTONE_28_TASK_4_VALIDATION_REVISION=MILESTONE_28_QUERY_RESULT_EXPORT_VALIDATION_V1
+
+MILESTONE_28_TASK_4_SOURCE_EXPORT_STATUS=READY
+MILESTONE_28_TASK_4_SOURCE_EXPORTED_RECORD_COUNT=1
+
+MILESTONE_28_TASK_4_VALIDATION_STATUS=VALID
+MILESTONE_28_TASK_4_VALIDATION_CASE_COUNT=6
+MILESTONE_28_TASK_4_PASS_COUNT=6
+MILESTONE_28_TASK_4_FAIL_COUNT=0
+
+MILESTONE_28_TASK_4_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_28_TASK_4_TASK_BUDGET_MAX=8
+MILESTONE_28_TASK_4_CURRENT_TASK_NUMBER=4
+
+MILESTONE_28_TASK_4_PRIMARY_VALIDATION_MODULE=src/hbce_arc_agi3/milestone_28_query_result_export_validation.py
+MILESTONE_28_TASK_4_PRIMARY_TEST_MODULE=tests/test_milestone_28_query_result_export_validation.py
+MILESTONE_28_TASK_4_TASK_VALIDATION_TEST=tests/test_milestone_28_task_4_query_result_export_validation.py
+MILESTONE_28_TASK_4_ARTIFACT_DIR=examples/milestone-28/query-result-export-validation-v1
+
+MILESTONE_28_TASK_4_NEXT_STAGE=MILESTONE_28_TASK_5_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1
+
+## Objective
+
+Validate the deterministic local query result export implemented in Task 3.
+
+## Validation surface
+
+The validation checks:
+
+- persisted export payload validity;
+- runtime export stability;
+- manifest consistency;
+- export index consistency;
+- Markdown and text index consistency;
+- scope authority guards.
+
+## Result
+
+Task 4 validates the Task 3 export as READY and keeps the local-only scope intact. Another fence remains standing, which in software is basically a civic miracle.

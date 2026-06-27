@@ -1,0 +1,128 @@
+{
+  "case_results": [
+    {
+      "case_id": "PERSISTED_EXPORT_PAYLOAD_VALID",
+      "expected": {
+        "export_status": "READY",
+        "exported_record_count": 1,
+        "next_stage": "MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_V1"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+        "export_signature": "307754DF390BD6A9",
+        "export_status": "READY",
+        "exported_record_count": 1,
+        "next_stage": "MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_V1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "RUNTIME_EXPORT_STABILITY_VALID",
+      "expected": {
+        "exported_record_count": 1,
+        "stable_export_id": true,
+        "stable_export_signature": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "persisted_export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+        "persisted_export_signature": "307754DF390BD6A9",
+        "runtime_export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+        "runtime_export_signature": "307754DF390BD6A9",
+        "runtime_record_count": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "EXPORT_MANIFEST_CONSISTENCY_VALID",
+      "expected": {
+        "generated_artifact_count": 5,
+        "manifest_matches_payload": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "manifest_export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+        "manifest_export_signature": "307754DF390BD6A9",
+        "manifest_generated_artifact_count": 5,
+        "payload_export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+        "payload_export_signature": "307754DF390BD6A9"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "EXPORT_INDEX_CONSISTENCY_VALID",
+      "expected": {
+        "index_matches_payload": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "index_export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+        "index_record_count": 1,
+        "payload_export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+        "payload_record_count": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "MARKDOWN_AND_TEXT_INDEX_CONSISTENCY_VALID",
+      "expected": {
+        "markdown_and_index_match_payload": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "index_contains_export_status": true,
+        "index_contains_ready_marker": true,
+        "markdown_contains_export_id": true,
+        "markdown_contains_milestone_26": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "SCOPE_AUTHORITY_GUARDS_VALID",
+      "expected": {
+        "allowed_output_format_count": 4,
+        "forbidden_operation_count": 8,
+        "local_only": true,
+        "network_access_allowed": false
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "allowed_output_format_count": 4,
+        "deep_recursive_dependency_traversal_allowed": false,
+        "external_model_call_allowed": false,
+        "forbidden_operation_count": 8,
+        "local_only": true,
+        "network_access_allowed": false,
+        "remote_registry_lookup_allowed": false,
+        "shell_execution_allowed": false
+      },
+      "passed": true
+    }
+  ],
+  "current_task_number": 4,
+  "export_revision": "MILESTONE_28_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1",
+  "fail_count": 0,
+  "milestone_id": "MILESTONE_28",
+  "next_stage": "MILESTONE_28_TASK_5_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1",
+  "pass_count": 6,
+  "required_fail_count": 0,
+  "required_pass_count": 6,
+  "scope_lock_id": "MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+  "source_export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+  "source_export_signature": "307754DF390BD6A9",
+  "source_export_status": "READY",
+  "source_exported_record_count": 1,
+  "source_task_id": "MILESTONE_28_TASK_3_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1",
+  "task_3_signature": "6A43A44EB818AB6D",
+  "task_4_signature": "DC1D35F2F7A2810B",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_V1",
+  "validation_case_count": 6,
+  "validation_id": "MILESTONE-28-QUERY-EXPORT-VALIDATION-EE39267613697796",
+  "validation_passed": true,
+  "validation_revision": "MILESTONE_28_QUERY_RESULT_EXPORT_VALIDATION_V1",
+  "validation_signature": "90F9DC9B5F8438FD",
+  "validation_status": "VALID"
+}
