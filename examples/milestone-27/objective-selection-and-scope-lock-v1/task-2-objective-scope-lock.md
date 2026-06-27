@@ -1,0 +1,12 @@
+# Milestone 27 Task 2 - Objective Selection and Scope Lock
+
+lockId: MILESTONE-27-SCOPE-LOCK-224EFBD7646FE239
+selectedObjectiveId: CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY
+scopeLockId: MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY
+objectiveSelected: True
+scopeLocked: True
+implementationAllowedNext: True
+implementationStarted: False
+queryInterfaceImplementationStarted: False
+nextStage: MILESTONE_27_TASK_3_QUERY_INTERFACE_IMPLEMENTATION_V1
+valid: True
