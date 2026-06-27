@@ -1,0 +1,54 @@
+# Milestone 29 Task 5 - Query Result Evidence Bundle Regression Integration v1
+
+MILESTONE_29_TASK_5_QUERY_RESULT_EVIDENCE_BUNDLE_REGRESSION_INTEGRATION_READY=true
+
+MILESTONE_29_TASK_5_SOURCE_TASK_ID=MILESTONE_29_TASK_4_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1
+
+MILESTONE_29_TASK_5_SELECTED_OBJECTIVE_ID=CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+MILESTONE_29_TASK_5_SCOPE_LOCK_ID=MILESTONE_29_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+MILESTONE_29_TASK_5_REGRESSION_INTEGRATION_REVISION=MILESTONE_29_QUERY_RESULT_EVIDENCE_BUNDLE_REGRESSION_INTEGRATION_V1
+
+MILESTONE_29_TASK_5_SOURCE_VALIDATION_STATUS=VALID
+MILESTONE_29_TASK_5_SOURCE_IMPLEMENTATION_STATUS=READY
+MILESTONE_29_TASK_5_SOURCE_SCOPE_LOCK_VALID=true
+MILESTONE_29_TASK_5_SOURCE_CHAIN_VALID=true
+MILESTONE_29_TASK_5_SOURCE_EVIDENCE_VALID=true
+
+MILESTONE_29_TASK_5_INTEGRATION_STATUS=VALID
+MILESTONE_29_TASK_5_INTEGRATION_CASE_COUNT=9
+MILESTONE_29_TASK_5_PASS_COUNT=9
+MILESTONE_29_TASK_5_FAIL_COUNT=0
+
+MILESTONE_29_TASK_5_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_29_TASK_5_TASK_BUDGET_MAX=8
+MILESTONE_29_TASK_5_CURRENT_TASK_NUMBER=5
+
+MILESTONE_29_TASK_5_PRIMARY_REGRESSION_MODULE=src/hbce_arc_agi3/milestone_29_query_result_evidence_bundle_regression_integration.py
+MILESTONE_29_TASK_5_PRIMARY_TEST_MODULE=tests/test_milestone_29_query_result_evidence_bundle_regression_integration.py
+MILESTONE_29_TASK_5_TASK_VALIDATION_TEST=tests/test_milestone_29_task_5_query_result_evidence_bundle_regression_integration.py
+MILESTONE_29_TASK_5_ARTIFACT_DIR=examples/milestone-29/query-result-evidence-bundle-regression-integration-v1
+
+MILESTONE_29_TASK_5_NEXT_STAGE=MILESTONE_29_TASK_6_QUERY_RESULT_EVIDENCE_BUNDLE_FINAL_CLOSURE_V1
+
+## Objective
+
+Integrate the Milestone 29 query result evidence bundle validation into the regression chain.
+
+## Regression integration surface
+
+The regression integration verifies:
+
+- Task 4 validation report validity;
+- runtime and persisted validation stability;
+- Task 4 artifact set completeness;
+- Task 4 manifest consistency;
+- Task 4 index marker consistency;
+- Task 4 validation case set stability;
+- Task 3 source evidence bundle validity;
+- local-only guardrail preservation;
+- Task 5 transition and budget consistency.
+
+## Result
+
+The evidence bundle validation is regression integrated and ready for final closure.
