@@ -1,0 +1,19 @@
+{
+  "blocked_query_id": "MILESTONE-27-QUERY-BLOCKED-D80AE7CDF9135D82",
+  "deep_recursive_dependency_traversal_allowed": false,
+  "generated_artifact_count": 5,
+  "implementation_started": true,
+  "local_only": true,
+  "network_access_allowed": false,
+  "next_stage": "MILESTONE_27_TASK_4_QUERY_INTERFACE_VALIDATION_V1",
+  "primary_query_id": "MILESTONE-27-QUERY-16EF30982266409E",
+  "query_interface_implemented": true,
+  "query_interface_revision": "MILESTONE_27_QUERY_INTERFACE_IMPLEMENTATION_V1",
+  "repository_mutation_allowed": false,
+  "scope_lock_id": "MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "shell_execution_allowed": false,
+  "source_task_id": "MILESTONE_27_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+  "task_3_signature": "5BA3AA98C9F8C577",
+  "task_id": "MILESTONE_27_TASK_3_QUERY_INTERFACE_IMPLEMENTATION_V1"
+}
