@@ -1,0 +1,215 @@
+{
+  "case_results": [
+    {
+      "case_id": "TASK_3_EVIDENCE_BUNDLE_REPORT_VALID",
+      "expected": {
+        "evidence_valid": true,
+        "implementation_complete": true,
+        "implementation_status": "READY",
+        "scope_lock_valid": true,
+        "source_chain_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "evidence_valid": true,
+        "implementation_complete": true,
+        "implementation_status": "READY",
+        "next_stage": "MILESTONE_29_TASK_4_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1",
+        "scope_lock_valid": true,
+        "source_chain_valid": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_EVIDENCE_BUNDLE_RUNTIME_STABILITY_VALID",
+      "expected": {
+        "stable_bundle": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "evidence_item_count": 6,
+        "evidence_valid": true,
+        "implementation_complete": true,
+        "implementation_status": "READY",
+        "persisted_bundle_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-0DD6CDBE4DA3B39A",
+        "persisted_bundle_signature": "474639E678B7F005",
+        "persisted_task_3_signature": "6AA6A4788D2B048F",
+        "persisted_valid": true,
+        "runtime_bundle_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-0DD6CDBE4DA3B39A",
+        "runtime_bundle_signature": "474639E678B7F005",
+        "runtime_task_3_signature": "6AA6A4788D2B048F",
+        "runtime_valid": true,
+        "scope_lock_id": "MILESTONE_29_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+        "scope_lock_valid": true,
+        "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+        "source_chain_valid": true,
+        "source_next_stage": "MILESTONE_29_TASK_4_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1",
+        "source_task_id": "MILESTONE_29_TASK_3_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1",
+        "stable_bundle": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_EVIDENCE_BUNDLE_ARTIFACT_SET_PRESENT",
+      "expected": {
+        "artifact_count": 5,
+        "missing": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "artifact_count": 5,
+        "missing": [],
+        "readable_count": 5
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_EVIDENCE_BUNDLE_MANIFEST_CONSISTENCY_VALID",
+      "expected": {
+        "manifest_matches_bundle": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "bundle_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-0DD6CDBE4DA3B39A",
+        "manifest_bundle_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-0DD6CDBE4DA3B39A",
+        "manifest_next_stage": "MILESTONE_29_TASK_4_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1",
+        "manifest_status": "READY"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_EVIDENCE_BUNDLE_INDEX_MARKERS_VALID",
+      "expected": {
+        "missing_markers": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "missing_markers": [],
+        "required_marker_count": 14
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_EVIDENCE_INDEX_CONSISTENCY_VALID",
+      "expected": {
+        "evidence_index_matches_bundle": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "bundle_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-0DD6CDBE4DA3B39A",
+        "bundle_item_count": 6,
+        "index_bundle_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-0DD6CDBE4DA3B39A",
+        "index_item_count": 6
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_EVIDENCE_DIGESTS_VALID",
+      "expected": {
+        "digest_match": true,
+        "evidence_item_count": 6
+      },
+      "failure_reason": "NONE",
+      "observed": [
+        {
+          "exists": true,
+          "expected_sha256": "f2bb0c1597032d86813ad7084525927535db89307e9ed474fc4c1edb6345a4cb",
+          "observed_sha256": "f2bb0c1597032d86813ad7084525927535db89307e9ed474fc4c1edb6345a4cb",
+          "path": "examples/milestone-29/objective-selection-and-scope-lock-v1/task-2-objective-scope-lock.json"
+        },
+        {
+          "exists": true,
+          "expected_sha256": "13cdf89c459486b834d12f4ad61e476ddf9ff2245158b1617d400e155b7810b3",
+          "observed_sha256": "13cdf89c459486b834d12f4ad61e476ddf9ff2245158b1617d400e155b7810b3",
+          "path": "examples/milestone-29/objective-selection-and-scope-lock-v1/task-2-manifest.json"
+        },
+        {
+          "exists": true,
+          "expected_sha256": "a8c1ac651cfba1e4cd303862b2276a9aed5f0d8bc5b0a46c4b60f210d3c78ebd",
+          "observed_sha256": "a8c1ac651cfba1e4cd303862b2276a9aed5f0d8bc5b0a46c4b60f210d3c78ebd",
+          "path": "examples/milestone-28/query-result-export-final-closure-v1/task-6-final-closure-report.json"
+        },
+        {
+          "exists": true,
+          "expected_sha256": "7ef6671dd828d97b7eeb0e833dd498b9817fc2d5ae447fd2639fab0e495596dc",
+          "observed_sha256": "7ef6671dd828d97b7eeb0e833dd498b9817fc2d5ae447fd2639fab0e495596dc",
+          "path": "examples/milestone-28/query-result-export-regression-integration-v1/task-5-regression-integration-report.json"
+        },
+        {
+          "exists": true,
+          "expected_sha256": "f1454027d620e2f1d02e8abbe415b3be573bd93dd4777b2774b201459a43cdb7",
+          "observed_sha256": "f1454027d620e2f1d02e8abbe415b3be573bd93dd4777b2774b201459a43cdb7",
+          "path": "examples/milestone-28/query-result-export-validation-v1/task-4-validation-report.json"
+        },
+        {
+          "exists": true,
+          "expected_sha256": "87bb3e2d26dd2f92aad2b20e67ae278dec15468b23ae90bca88f3d6156a57b1b",
+          "observed_sha256": "87bb3e2d26dd2f92aad2b20e67ae278dec15468b23ae90bca88f3d6156a57b1b",
+          "path": "examples/milestone-28/query-result-export-implementation-v1/task-3-query-result-export.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SOURCE_CHAIN_STATUS_VALID",
+      "expected": {
+        "closure_status": "CLOSED",
+        "export_status": "READY",
+        "integration_status": "VALID",
+        "validation_status": "VALID"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "closure_status": "CLOSED",
+        "export_status": "READY",
+        "export_task_id": "MILESTONE_28_TASK_3_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1",
+        "exported_record_count": 1,
+        "integration_fail_count": 0,
+        "integration_pass_count": 7,
+        "integration_status": "VALID",
+        "process_status": "CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6",
+        "source_closure_id": "MILESTONE-28-QUERY-EXPORT-FINAL-CLOSURE-B2F758A48B37823D",
+        "source_closure_signature": "E382B80914A5574F",
+        "source_export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+        "source_export_signature": "307754DF390BD6A9",
+        "source_integration_id": "MILESTONE-28-QUERY-EXPORT-INTEGRATION-2CD8AE251A0BBD41",
+        "source_integration_signature": "1786F931EFB54FDB",
+        "source_validation_id": "MILESTONE-28-QUERY-EXPORT-VALIDATION-EE39267613697796",
+        "source_validation_signature": "90F9DC9B5F8438FD",
+        "technical_status": "PASS",
+        "validation_fail_count": 0,
+        "validation_pass_count": 6,
+        "validation_status": "VALID"
+      },
+      "passed": true
+    }
+  ],
+  "current_task_number": 4,
+  "evidence_bundle_revision": "MILESTONE_29_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1",
+  "fail_count": 0,
+  "generated_artifact_count": 5,
+  "milestone_id": "MILESTONE_29",
+  "next_stage": "MILESTONE_29_TASK_5_QUERY_RESULT_EVIDENCE_BUNDLE_REGRESSION_INTEGRATION_V1",
+  "pass_count": 8,
+  "required_fail_count": 0,
+  "required_pass_count": 8,
+  "scope_lock_id": "MILESTONE_29_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+  "source_chain_valid": true,
+  "source_evidence_bundle_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-0DD6CDBE4DA3B39A",
+  "source_evidence_bundle_signature": "474639E678B7F005",
+  "source_evidence_valid": true,
+  "source_implementation_status": "READY",
+  "source_scope_lock_valid": true,
+  "source_task_id": "MILESTONE_29_TASK_3_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1",
+  "task_3_signature": "6AA6A4788D2B048F",
+  "task_4_signature": "AC92FA396FDEB4E6",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_29_TASK_4_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1",
+  "validation_case_count": 8,
+  "validation_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-VALIDATION-D275FEE37A03468E",
+  "validation_passed": true,
+  "validation_revision": "MILESTONE_29_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1",
+  "validation_signature": "C6A7E2A36808C71D",
+  "validation_status": "VALID"
+}

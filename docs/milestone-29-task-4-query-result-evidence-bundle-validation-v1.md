@@ -1,0 +1,52 @@
+# Milestone 29 Task 4 - Query Result Evidence Bundle Validation v1
+
+MILESTONE_29_TASK_4_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_READY=true
+
+MILESTONE_29_TASK_4_SOURCE_TASK_ID=MILESTONE_29_TASK_3_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1
+
+MILESTONE_29_TASK_4_SELECTED_OBJECTIVE_ID=CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+MILESTONE_29_TASK_4_SCOPE_LOCK_ID=MILESTONE_29_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+MILESTONE_29_TASK_4_VALIDATION_REVISION=MILESTONE_29_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1
+
+MILESTONE_29_TASK_4_SOURCE_IMPLEMENTATION_STATUS=READY
+MILESTONE_29_TASK_4_SOURCE_SCOPE_LOCK_VALID=true
+MILESTONE_29_TASK_4_SOURCE_CHAIN_VALID=true
+MILESTONE_29_TASK_4_SOURCE_EVIDENCE_VALID=true
+
+MILESTONE_29_TASK_4_VALIDATION_STATUS=VALID
+MILESTONE_29_TASK_4_VALIDATION_CASE_COUNT=8
+MILESTONE_29_TASK_4_PASS_COUNT=8
+MILESTONE_29_TASK_4_FAIL_COUNT=0
+
+MILESTONE_29_TASK_4_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_29_TASK_4_TASK_BUDGET_MAX=8
+MILESTONE_29_TASK_4_CURRENT_TASK_NUMBER=4
+
+MILESTONE_29_TASK_4_PRIMARY_VALIDATION_MODULE=src/hbce_arc_agi3/milestone_29_query_result_evidence_bundle_validation.py
+MILESTONE_29_TASK_4_PRIMARY_TEST_MODULE=tests/test_milestone_29_query_result_evidence_bundle_validation.py
+MILESTONE_29_TASK_4_TASK_VALIDATION_TEST=tests/test_milestone_29_task_4_query_result_evidence_bundle_validation.py
+MILESTONE_29_TASK_4_ARTIFACT_DIR=examples/milestone-29/query-result-evidence-bundle-validation-v1
+
+MILESTONE_29_TASK_4_NEXT_STAGE=MILESTONE_29_TASK_5_QUERY_RESULT_EVIDENCE_BUNDLE_REGRESSION_INTEGRATION_V1
+
+## Objective
+
+Validate the Milestone 29 local query result evidence bundle implementation.
+
+## Validation surface
+
+The validation checks:
+
+- persisted bundle validity;
+- runtime bundle stability;
+- Task 3 artifact set completeness;
+- Task 3 manifest consistency;
+- Task 3 index marker consistency;
+- evidence index consistency;
+- evidence source SHA-256 digest consistency;
+- Milestone 28 source chain status.
+
+## Result
+
+The local-only query result evidence bundle is valid and ready for regression integration.

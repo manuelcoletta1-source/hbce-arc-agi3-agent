@@ -1,0 +1,20 @@
+{
+  "fail_count": 0,
+  "generated_artifact_count": 5,
+  "milestone_id": "MILESTONE_29",
+  "next_stage": "MILESTONE_29_TASK_5_QUERY_RESULT_EVIDENCE_BUNDLE_REGRESSION_INTEGRATION_V1",
+  "pass_count": 8,
+  "scope_lock_id": "MILESTONE_29_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+  "source_evidence_bundle_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-0DD6CDBE4DA3B39A",
+  "source_evidence_bundle_signature": "474639E678B7F005",
+  "source_task_id": "MILESTONE_29_TASK_3_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1",
+  "task_3_signature": "6AA6A4788D2B048F",
+  "task_4_signature": "AC92FA396FDEB4E6",
+  "task_id": "MILESTONE_29_TASK_4_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1",
+  "validation_id": "MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-VALIDATION-D275FEE37A03468E",
+  "validation_passed": true,
+  "validation_revision": "MILESTONE_29_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1",
+  "validation_signature": "C6A7E2A36808C71D",
+  "validation_status": "VALID"
+}
