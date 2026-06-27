@@ -1,0 +1,56 @@
+# Milestone 29 Task 3 - Query Result Evidence Bundle Implementation v1
+
+MILESTONE_29_TASK_3_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_READY=true
+
+MILESTONE_29_TASK_3_SOURCE_TASK_ID=MILESTONE_29_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1
+
+MILESTONE_29_TASK_3_SELECTED_OBJECTIVE_ID=CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+MILESTONE_29_TASK_3_SCOPE_LOCK_ID=MILESTONE_29_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+MILESTONE_29_TASK_3_EVIDENCE_BUNDLE_REVISION=MILESTONE_29_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1
+
+MILESTONE_29_TASK_3_IMPLEMENTATION_STATUS=READY
+MILESTONE_29_TASK_3_IMPLEMENTATION_STARTED=true
+MILESTONE_29_TASK_3_IMPLEMENTATION_COMPLETE=true
+
+MILESTONE_29_TASK_3_SCOPE_LOCK_VALID=true
+MILESTONE_29_TASK_3_SOURCE_CHAIN_VALID=true
+MILESTONE_29_TASK_3_EVIDENCE_VALID=true
+MILESTONE_29_TASK_3_EVIDENCE_ITEM_COUNT=6
+
+MILESTONE_29_TASK_3_LOCAL_ONLY=true
+MILESTONE_29_TASK_3_NETWORK_ACCESS_ALLOWED=false
+MILESTONE_29_TASK_3_SHELL_EXECUTION_ALLOWED=false
+MILESTONE_29_TASK_3_REPOSITORY_MUTATION_ALLOWED=false
+MILESTONE_29_TASK_3_REMOTE_REGISTRY_LOOKUP_ALLOWED=false
+MILESTONE_29_TASK_3_DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL_ALLOWED=false
+MILESTONE_29_TASK_3_EXTERNAL_MODEL_CALL_ALLOWED=false
+
+MILESTONE_29_TASK_3_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_29_TASK_3_TASK_BUDGET_MAX=8
+MILESTONE_29_TASK_3_CURRENT_TASK_NUMBER=3
+
+MILESTONE_29_TASK_3_PRIMARY_BUNDLE_MODULE=src/hbce_arc_agi3/milestone_29_query_result_evidence_bundle.py
+MILESTONE_29_TASK_3_PRIMARY_TEST_MODULE=tests/test_milestone_29_query_result_evidence_bundle.py
+MILESTONE_29_TASK_3_TASK_VALIDATION_TEST=tests/test_milestone_29_task_3_query_result_evidence_bundle_implementation.py
+MILESTONE_29_TASK_3_ARTIFACT_DIR=examples/milestone-29/query-result-evidence-bundle-implementation-v1
+
+MILESTONE_29_TASK_3_NEXT_STAGE=MILESTONE_29_TASK_4_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1
+
+## Objective
+
+Implement a deterministic local-only evidence bundle for the closed milestone archive index query result export chain.
+
+## Evidence sources
+
+The bundle includes committed local repository artifacts from:
+
+- Milestone 29 Task 2 objective scope lock;
+- Milestone 28 final closure;
+- Milestone 28 regression integration;
+- Milestone 28 validation;
+- Milestone 28 exported query result payload.
+
+## Runtime boundary
+
+The implementation reads committed local artifacts, computes deterministic SHA-256 evidence records and writes local artifacts only. Runtime module behavior does not perform network access, shell execution, repository mutation, remote registry lookup, deep recursive dependency traversal or external model calls.

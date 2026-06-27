@@ -1,0 +1,25 @@
+# Milestone 29 Task 3 Query Result Evidence Bundle
+
+TASK_ID=MILESTONE_29_TASK_3_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1
+SOURCE_TASK_ID=MILESTONE_29_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1
+SELECTED_OBJECTIVE_ID=CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+SCOPE_LOCK_ID=MILESTONE_29_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY
+EVIDENCE_BUNDLE_ID=MILESTONE-29-QUERY-RESULT-EVIDENCE-BUNDLE-0DD6CDBE4DA3B39A
+EVIDENCE_BUNDLE_SIGNATURE=474639E678B7F005
+IMPLEMENTATION_STATUS=READY
+IMPLEMENTATION_STARTED=true
+IMPLEMENTATION_COMPLETE=true
+SCOPE_LOCK_VALID=true
+SOURCE_CHAIN_VALID=true
+EVIDENCE_VALID=true
+EVIDENCE_ITEM_COUNT=6
+LOCAL_ONLY=true
+NEXT_STAGE=MILESTONE_29_TASK_4_QUERY_RESULT_EVIDENCE_BUNDLE_VALIDATION_V1
+
+## Evidence items
+- examples/milestone-29/objective-selection-and-scope-lock-v1/task-2-objective-scope-lock.json sha256=f2bb0c1597032d86813ad7084525927535db89307e9ed474fc4c1edb6345a4cb
+- examples/milestone-29/objective-selection-and-scope-lock-v1/task-2-manifest.json sha256=13cdf89c459486b834d12f4ad61e476ddf9ff2245158b1617d400e155b7810b3
+- examples/milestone-28/query-result-export-final-closure-v1/task-6-final-closure-report.json sha256=a8c1ac651cfba1e4cd303862b2276a9aed5f0d8bc5b0a46c4b60f210d3c78ebd
+- examples/milestone-28/query-result-export-regression-integration-v1/task-5-regression-integration-report.json sha256=7ef6671dd828d97b7eeb0e833dd498b9817fc2d5ae447fd2639fab0e495596dc
+- examples/milestone-28/query-result-export-validation-v1/task-4-validation-report.json sha256=f1454027d620e2f1d02e8abbe415b3be573bd93dd4777b2774b201459a43cdb7
+- examples/milestone-28/query-result-export-implementation-v1/task-3-query-result-export.json sha256=87bb3e2d26dd2f92aad2b20e67ae278dec15468b23ae90bca88f3d6156a57b1b
