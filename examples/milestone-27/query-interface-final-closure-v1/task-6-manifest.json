@@ -1,0 +1,22 @@
+{
+  "closure_id": "MILESTONE-27-QUERY-FINAL-CLOSURE-F3FB4F48C55A725F",
+  "closure_passed": true,
+  "closure_signature": "E9B05D12F50F23CF",
+  "closure_status": "CLOSED",
+  "final_closure_revision": "MILESTONE_27_QUERY_INTERFACE_FINAL_CLOSURE_V1",
+  "final_task_number": 6,
+  "generated_artifact_count": 5,
+  "milestone_id": "MILESTONE_27",
+  "next_stage": "MILESTONE_28_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+  "scope_lock_id": "MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "source_task_id": "MILESTONE_27_TASK_5_QUERY_INTERFACE_REGRESSION_INTEGRATION_V1",
+  "task_3_signature": "5BA3AA98C9F8C577",
+  "task_4_signature": "B921EE56134DA786",
+  "task_5_signature": "8F90EC5884361A89",
+  "task_6_signature": "1A15F1AC8DB81C31",
+  "task_7_used": false,
+  "task_8_used": false,
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_27_TASK_6_QUERY_INTERFACE_FINAL_CLOSURE_V1"
+}

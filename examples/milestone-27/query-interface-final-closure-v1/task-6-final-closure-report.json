@@ -1,0 +1,172 @@
+{
+  "case_results": [
+    {
+      "case_id": "TASK_1_TO_5_DOCUMENT_CHAIN_VALID",
+      "expected": {
+        "all_docs_exist": true,
+        "all_ready_markers_present": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "docs/milestone-27-task-1-governed-opening-with-task-budget-v1.md": {
+          "contains": true,
+          "exists": true,
+          "marker": "MILESTONE_27_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_READY=true"
+        },
+        "docs/milestone-27-task-2-objective-selection-and-scope-lock-v1.md": {
+          "contains": true,
+          "exists": true,
+          "marker": "MILESTONE_27_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_READY=true"
+        },
+        "docs/milestone-27-task-3-query-interface-implementation-v1.md": {
+          "contains": true,
+          "exists": true,
+          "marker": "MILESTONE_27_TASK_3_QUERY_INTERFACE_IMPLEMENTATION_READY=true"
+        },
+        "docs/milestone-27-task-4-query-interface-validation-v1.md": {
+          "contains": true,
+          "exists": true,
+          "marker": "MILESTONE_27_TASK_4_QUERY_INTERFACE_VALIDATION_READY=true"
+        },
+        "docs/milestone-27-task-5-query-interface-regression-integration-v1.md": {
+          "contains": true,
+          "exists": true,
+          "marker": "MILESTONE_27_TASK_5_QUERY_INTERFACE_REGRESSION_INTEGRATION_READY=true"
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "SCOPE_LOCK_CONSISTENT_ACROSS_TASK_2_TO_6",
+      "expected": {
+        "scope_lock_id": "MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+        "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "query_interface_scope_lock_id": "MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+        "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+        "task_2_scope_lock_id": "MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_QUERY_INTERFACE_ARTIFACT_READY",
+      "expected": {
+        "matched_count": 1,
+        "query_status": "READY",
+        "task_3_signature": "5BA3AA98C9F8C577"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "matched_count": 1,
+        "query_status": "READY",
+        "task_3_signature": "5BA3AA98C9F8C577",
+        "task_id": "MILESTONE_27_TASK_3_QUERY_INTERFACE_IMPLEMENTATION_V1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_ARTIFACT_AND_RUNTIME_VALID",
+      "expected": {
+        "fail_count": 0,
+        "pass_count": 6,
+        "validation_status": "VALID"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "persisted_status": "VALID",
+        "persisted_validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63",
+        "runtime_fail_count": 0,
+        "runtime_status": "VALID",
+        "runtime_validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_REGRESSION_ARTIFACT_AND_RUNTIME_INTEGRATED",
+      "expected": {
+        "fail_count": 0,
+        "integration_status": "INTEGRATED",
+        "pass_count": 6
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "persisted_integration_id": "MILESTONE-27-QUERY-REGRESSION-C26F11448809E03A",
+        "persisted_status": "INTEGRATED",
+        "runtime_fail_count": 0,
+        "runtime_integration_id": "MILESTONE-27-QUERY-REGRESSION-C26F11448809E03A",
+        "runtime_status": "INTEGRATED"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_BUDGET_CLOSED_AT_TASK_6_WITH_TASK_7_AND_8_UNUSED",
+      "expected": {
+        "final_task_number": 6,
+        "task_7_used": false,
+        "task_8_used": false,
+        "task_budget_max": 8
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "current_task_number": 6,
+        "final_task_number": 6,
+        "task_7_used": false,
+        "task_8_used": false,
+        "task_budget_max": 8
+      },
+      "passed": true
+    },
+    {
+      "case_id": "NEXT_MILESTONE_READY",
+      "expected": {
+        "milestone_closed": true,
+        "next_stage": "MILESTONE_28_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+        "ready_for_next_milestone": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "milestone_closed": true,
+        "next_stage": "MILESTONE_28_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+        "ready_for_next_milestone": true
+      },
+      "passed": true
+    }
+  ],
+  "closure_case_count": 7,
+  "closure_id": "MILESTONE-27-QUERY-FINAL-CLOSURE-F3FB4F48C55A725F",
+  "closure_passed": true,
+  "closure_signature": "E9B05D12F50F23CF",
+  "closure_status": "CLOSED",
+  "current_task_number": 6,
+  "fail_count": 0,
+  "final_closure_revision": "MILESTONE_27_QUERY_INTERFACE_FINAL_CLOSURE_V1",
+  "final_task_number": 6,
+  "milestone_closed": true,
+  "milestone_id": "MILESTONE_27",
+  "next_stage": "MILESTONE_28_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+  "pass_count": 7,
+  "process_status": "CLOSED_WITH_TASK_BUDGET_MAX_8_AT_TASK_6",
+  "query_interface_revision": "MILESTONE_27_QUERY_INTERFACE_IMPLEMENTATION_V1",
+  "ready_for_next_milestone": true,
+  "regression_revision": "MILESTONE_27_QUERY_INTERFACE_REGRESSION_INTEGRATION_V1",
+  "required_fail_count": 0,
+  "required_pass_count": 7,
+  "scope_lock_id": "MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "source_task_id": "MILESTONE_27_TASK_5_QUERY_INTERFACE_REGRESSION_INTEGRATION_V1",
+  "task_3_id": "MILESTONE_27_TASK_3_QUERY_INTERFACE_IMPLEMENTATION_V1",
+  "task_3_signature": "5BA3AA98C9F8C577",
+  "task_4_id": "MILESTONE_27_TASK_4_QUERY_INTERFACE_VALIDATION_V1",
+  "task_4_signature": "B921EE56134DA786",
+  "task_5_id": "MILESTONE_27_TASK_5_QUERY_INTERFACE_REGRESSION_INTEGRATION_V1",
+  "task_5_signature": "8F90EC5884361A89",
+  "task_6_signature": "1A15F1AC8DB81C31",
+  "task_7_used": false,
+  "task_8_used": false,
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_27_TASK_6_QUERY_INTERFACE_FINAL_CLOSURE_V1",
+  "technical_status": "PASS",
+  "validation_revision": "MILESTONE_27_QUERY_INTERFACE_VALIDATION_V1"
+}
