@@ -1,0 +1,54 @@
+# Milestone 27 Task 5 - Query Interface Regression Integration v1
+
+MILESTONE_27_TASK_5_QUERY_INTERFACE_REGRESSION_INTEGRATION_READY=true
+
+MILESTONE_27_TASK_5_SOURCE_TASK_ID=MILESTONE_27_TASK_4_QUERY_INTERFACE_VALIDATION_V1
+MILESTONE_27_TASK_5_SELECTED_OBJECTIVE_ID=CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY
+MILESTONE_27_TASK_5_SCOPE_LOCK_ID=MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY
+
+MILESTONE_27_TASK_5_QUERY_INTERFACE_REVISION=MILESTONE_27_QUERY_INTERFACE_IMPLEMENTATION_V1
+MILESTONE_27_TASK_5_VALIDATION_REVISION=MILESTONE_27_QUERY_INTERFACE_VALIDATION_V1
+MILESTONE_27_TASK_5_REGRESSION_REVISION=MILESTONE_27_QUERY_INTERFACE_REGRESSION_INTEGRATION_V1
+
+MILESTONE_27_TASK_5_INTEGRATION_STATUS=INTEGRATED
+MILESTONE_27_TASK_5_REGRESSION_CASE_COUNT=6
+MILESTONE_27_TASK_5_PASS_COUNT=6
+MILESTONE_27_TASK_5_FAIL_COUNT=0
+
+MILESTONE_27_TASK_5_LOCAL_ONLY=true
+MILESTONE_27_TASK_5_NETWORK_ACCESS_ALLOWED=false
+MILESTONE_27_TASK_5_SHELL_EXECUTION_ALLOWED=false
+MILESTONE_27_TASK_5_REPOSITORY_MUTATION_ALLOWED=false
+MILESTONE_27_TASK_5_REMOTE_REGISTRY_LOOKUP_ALLOWED=false
+MILESTONE_27_TASK_5_DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL_ALLOWED=false
+
+MILESTONE_27_TASK_5_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_27_TASK_5_TASK_BUDGET_MAX=8
+MILESTONE_27_TASK_5_CURRENT_TASK_NUMBER=5
+
+MILESTONE_27_TASK_5_PRIMARY_REGRESSION_MODULE=src/hbce_arc_agi3/milestone_27_query_interface_regression_integration.py
+MILESTONE_27_TASK_5_PRIMARY_TEST_MODULE=tests/test_milestone_27_query_interface_regression_integration.py
+MILESTONE_27_TASK_5_TASK_VALIDATION_TEST=tests/test_milestone_27_task_5_query_interface_regression_integration.py
+MILESTONE_27_TASK_5_ARTIFACT_DIR=examples/milestone-27/query-interface-regression-integration-v1
+
+MILESTONE_27_TASK_5_NEXT_STAGE=MILESTONE_27_TASK_6_QUERY_INTERFACE_FINAL_CLOSURE_V1
+
+## Objective
+
+Integrate the query interface validation into a regression guard.
+
+## Regression surface
+
+The integration checks:
+
+- Task 4 validation report validity;
+- Task 3 primary query runtime stability;
+- Task 3 blocked query runtime stability;
+- Task 4 runtime validation stability;
+- Task 4 case matrix integration;
+- scope-lock blocking for forbidden operations.
+
+## Result
+
+Task 5 converts Task 4 validation into a regression layer. The query interface is now checked against persisted artifacts and runtime recomputation, because letting previous results drift quietly is how repositories become archaeological sites with a CI badge.

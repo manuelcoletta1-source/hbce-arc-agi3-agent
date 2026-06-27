@@ -1,0 +1,124 @@
+{
+  "case_count": 6,
+  "case_results": [
+    {
+      "case_id": "TASK_4_VALIDATION_REPORT_ARTIFACT_VALID",
+      "expected": {
+        "fail_count": 0,
+        "pass_count": 6,
+        "validation_status": "VALID"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "pass_count": 6,
+        "validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63",
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_PRIMARY_QUERY_RUNTIME_STABLE",
+      "expected": {
+        "matched_count": 1,
+        "query_status": "READY",
+        "stable_query_id": "MILESTONE-27-QUERY-16EF30982266409E"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "matched_count": 1,
+        "persisted_query_id": "MILESTONE-27-QUERY-16EF30982266409E",
+        "query_status": "READY",
+        "runtime_query_id": "MILESTONE-27-QUERY-16EF30982266409E"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_BLOCKED_QUERY_RUNTIME_STABLE",
+      "expected": {
+        "matched_count": 0,
+        "query_status": "BLOCKED_BY_SCOPE_LOCK",
+        "stable_query_id": "MILESTONE-27-QUERY-BLOCKED-D80AE7CDF9135D82"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "matched_count": 0,
+        "persisted_query_id": "MILESTONE-27-QUERY-BLOCKED-D80AE7CDF9135D82",
+        "query_status": "BLOCKED_BY_SCOPE_LOCK",
+        "runtime_query_id": "MILESTONE-27-QUERY-BLOCKED-D80AE7CDF9135D82"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_RUNTIME_VALIDATION_REPORT_STABLE",
+      "expected": {
+        "blocked_case_count": 2,
+        "fail_count": 0,
+        "pass_count": 6,
+        "ready_case_count": 4,
+        "validation_case_count": 6,
+        "validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63",
+        "validation_signature": "999B4B9DF22027C7",
+        "validation_status": "VALID"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "blocked_case_count": 2,
+        "fail_count": 0,
+        "pass_count": 6,
+        "ready_case_count": 4,
+        "validation_case_count": 6,
+        "validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63",
+        "validation_signature": "999B4B9DF22027C7",
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_CASE_MATRIX_INTEGRATED",
+      "expected": {
+        "all_passed": true,
+        "case_count": 6,
+        "statuses": [
+          "BLOCKED_BY_SCOPE_LOCK",
+          "READY"
+        ]
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "all_passed": true,
+        "case_count": 6,
+        "statuses": [
+          "BLOCKED_BY_SCOPE_LOCK",
+          "READY"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "case_id": "SCOPE_LOCK_REGRESSION_GUARD_BLOCKS_FORBIDDEN_OPERATIONS",
+      "expected": {
+        "blocked": true,
+        "query_status": "BLOCKED_BY_SCOPE_LOCK",
+        "required_forbidden": [
+          "NETWORK_ACCESS",
+          "SHELL_EXECUTION",
+          "DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL"
+        ]
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "blocked": true,
+        "forbidden_operations_detected": [
+          "DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL",
+          "NETWORK_ACCESS",
+          "SHELL_EXECUTION"
+        ],
+        "query_status": "BLOCKED_BY_SCOPE_LOCK"
+      },
+      "passed": true
+    }
+  ],
+  "integration_id": "MILESTONE-27-QUERY-REGRESSION-C26F11448809E03A",
+  "task_id": "MILESTONE_27_TASK_5_QUERY_INTERFACE_REGRESSION_INTEGRATION_V1"
+}

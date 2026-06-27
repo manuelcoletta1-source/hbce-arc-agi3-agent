@@ -1,0 +1,148 @@
+{
+  "case_results": [
+    {
+      "case_id": "TASK_4_VALIDATION_REPORT_ARTIFACT_VALID",
+      "expected": {
+        "fail_count": 0,
+        "pass_count": 6,
+        "validation_status": "VALID"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "pass_count": 6,
+        "validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63",
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_PRIMARY_QUERY_RUNTIME_STABLE",
+      "expected": {
+        "matched_count": 1,
+        "query_status": "READY",
+        "stable_query_id": "MILESTONE-27-QUERY-16EF30982266409E"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "matched_count": 1,
+        "persisted_query_id": "MILESTONE-27-QUERY-16EF30982266409E",
+        "query_status": "READY",
+        "runtime_query_id": "MILESTONE-27-QUERY-16EF30982266409E"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_BLOCKED_QUERY_RUNTIME_STABLE",
+      "expected": {
+        "matched_count": 0,
+        "query_status": "BLOCKED_BY_SCOPE_LOCK",
+        "stable_query_id": "MILESTONE-27-QUERY-BLOCKED-D80AE7CDF9135D82"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "matched_count": 0,
+        "persisted_query_id": "MILESTONE-27-QUERY-BLOCKED-D80AE7CDF9135D82",
+        "query_status": "BLOCKED_BY_SCOPE_LOCK",
+        "runtime_query_id": "MILESTONE-27-QUERY-BLOCKED-D80AE7CDF9135D82"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_RUNTIME_VALIDATION_REPORT_STABLE",
+      "expected": {
+        "blocked_case_count": 2,
+        "fail_count": 0,
+        "pass_count": 6,
+        "ready_case_count": 4,
+        "validation_case_count": 6,
+        "validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63",
+        "validation_signature": "999B4B9DF22027C7",
+        "validation_status": "VALID"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "blocked_case_count": 2,
+        "fail_count": 0,
+        "pass_count": 6,
+        "ready_case_count": 4,
+        "validation_case_count": 6,
+        "validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63",
+        "validation_signature": "999B4B9DF22027C7",
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_CASE_MATRIX_INTEGRATED",
+      "expected": {
+        "all_passed": true,
+        "case_count": 6,
+        "statuses": [
+          "BLOCKED_BY_SCOPE_LOCK",
+          "READY"
+        ]
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "all_passed": true,
+        "case_count": 6,
+        "statuses": [
+          "BLOCKED_BY_SCOPE_LOCK",
+          "READY"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "case_id": "SCOPE_LOCK_REGRESSION_GUARD_BLOCKS_FORBIDDEN_OPERATIONS",
+      "expected": {
+        "blocked": true,
+        "query_status": "BLOCKED_BY_SCOPE_LOCK",
+        "required_forbidden": [
+          "NETWORK_ACCESS",
+          "SHELL_EXECUTION",
+          "DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL"
+        ]
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "blocked": true,
+        "forbidden_operations_detected": [
+          "DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL",
+          "NETWORK_ACCESS",
+          "SHELL_EXECUTION"
+        ],
+        "query_status": "BLOCKED_BY_SCOPE_LOCK"
+      },
+      "passed": true
+    }
+  ],
+  "deep_recursive_dependency_traversal_allowed": false,
+  "fail_count": 0,
+  "integration_id": "MILESTONE-27-QUERY-REGRESSION-C26F11448809E03A",
+  "integration_passed": true,
+  "integration_signature": "AC68F2B35D5A30FA",
+  "integration_status": "INTEGRATED",
+  "local_only": true,
+  "network_access_allowed": false,
+  "next_stage": "MILESTONE_27_TASK_6_QUERY_INTERFACE_FINAL_CLOSURE_V1",
+  "pass_count": 6,
+  "query_interface_revision": "MILESTONE_27_QUERY_INTERFACE_IMPLEMENTATION_V1",
+  "regression_case_count": 6,
+  "regression_revision": "MILESTONE_27_QUERY_INTERFACE_REGRESSION_INTEGRATION_V1",
+  "required_fail_count": 0,
+  "required_pass_count": 6,
+  "scope_lock_enforced": true,
+  "scope_lock_id": "MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "shell_execution_allowed": false,
+  "source_task_id": "MILESTONE_27_TASK_4_QUERY_INTERFACE_VALIDATION_V1",
+  "task_3_id": "MILESTONE_27_TASK_3_QUERY_INTERFACE_IMPLEMENTATION_V1",
+  "task_3_signature": "5BA3AA98C9F8C577",
+  "task_4_id": "MILESTONE_27_TASK_4_QUERY_INTERFACE_VALIDATION_V1",
+  "task_4_signature": "B921EE56134DA786",
+  "task_5_signature": "8F90EC5884361A89",
+  "task_id": "MILESTONE_27_TASK_5_QUERY_INTERFACE_REGRESSION_INTEGRATION_V1",
+  "validation_revision": "MILESTONE_27_QUERY_INTERFACE_VALIDATION_V1"
+}
