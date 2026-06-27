@@ -1,0 +1,47 @@
+# Milestone 28 Task 3 - Query Result Export Implementation v1
+
+MILESTONE_28_TASK_3_QUERY_RESULT_EXPORT_IMPLEMENTATION_READY=true
+
+MILESTONE_28_TASK_3_SOURCE_TASK_ID=MILESTONE_28_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1
+MILESTONE_28_TASK_3_SELECTED_OBJECTIVE_ID=CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY
+MILESTONE_28_TASK_3_SCOPE_LOCK_ID=MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY
+MILESTONE_28_TASK_3_EXPORT_REVISION=MILESTONE_28_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1
+
+MILESTONE_28_TASK_3_IMPLEMENTATION_STARTED=true
+MILESTONE_28_TASK_3_IMPLEMENTATION_COMPLETE=true
+
+MILESTONE_28_TASK_3_LOCAL_ONLY=true
+MILESTONE_28_TASK_3_NETWORK_ACCESS_ALLOWED=false
+MILESTONE_28_TASK_3_SHELL_EXECUTION_ALLOWED=false
+MILESTONE_28_TASK_3_REPOSITORY_MUTATION_ALLOWED=false
+MILESTONE_28_TASK_3_REMOTE_REGISTRY_LOOKUP_ALLOWED=false
+MILESTONE_28_TASK_3_DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL_ALLOWED=false
+MILESTONE_28_TASK_3_EXTERNAL_MODEL_CALL_ALLOWED=false
+
+MILESTONE_28_TASK_3_ALLOWED_OUTPUT_FORMAT_COUNT=4
+MILESTONE_28_TASK_3_FORBIDDEN_OPERATION_COUNT=8
+MILESTONE_28_TASK_3_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_28_TASK_3_TASK_BUDGET_MAX=8
+MILESTONE_28_TASK_3_CURRENT_TASK_NUMBER=3
+
+MILESTONE_28_TASK_3_PRIMARY_EXPORT_MODULE=src/hbce_arc_agi3/milestone_28_query_result_export.py
+MILESTONE_28_TASK_3_PRIMARY_TEST_MODULE=tests/test_milestone_28_query_result_export.py
+MILESTONE_28_TASK_3_TASK_VALIDATION_TEST=tests/test_milestone_28_task_3_query_result_export_implementation.py
+MILESTONE_28_TASK_3_ARTIFACT_DIR=examples/milestone-28/query-result-export-implementation-v1
+
+MILESTONE_28_TASK_3_NEXT_STAGE=MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_V1
+
+## Objective
+
+Implement deterministic local export for the closed milestone archive index query result.
+
+## Scope
+
+The implementation exports the Milestone 27 query result into local JSON, Markdown, text index and manifest artifacts.
+
+It does not use network access, shell execution from runtime logic, remote registry lookup, external model calls or deep recursive dependency traversal.
+
+## Result
+
+Task 3 implements the local-only query result export selected and locked in Task 2. The export is intentionally boring, which is what good infrastructure looks like before humans decorate it with avoidable disasters.

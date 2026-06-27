@@ -1,0 +1,17 @@
+{
+  "export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+  "export_signature": "307754DF390BD6A9",
+  "exported_record_count": 1,
+  "exported_records": [
+    {
+      "archive_status": "CLOSED",
+      "closure_commit": null,
+      "closure_signature": null,
+      "final_task_number": 6,
+      "milestone_id": "MILESTONE_26",
+      "process_status": "GOVERNED_WITHIN_TASK_BUDGET",
+      "technical_status": "PASS"
+    }
+  ],
+  "task_id": "MILESTONE_28_TASK_3_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1"
+}

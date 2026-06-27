@@ -1,0 +1,92 @@
+{
+  "allowed_input_artifacts": [
+    "examples/milestone-27/query-interface-implementation-v1/task-3-query-interface-result.json",
+    "examples/milestone-27/query-interface-implementation-v1/task-3-query-interface-blocked-result.json",
+    "examples/milestone-27/query-interface-validation-v1/task-4-validation-report.json",
+    "examples/milestone-27/query-interface-regression-integration-v1/task-5-regression-integration-report.json",
+    "examples/milestone-27/query-interface-final-closure-v1/task-6-final-closure-report.json",
+    "examples/milestone-28/governed-opening-with-task-budget-v1/task-1-governed-opening.json"
+  ],
+  "allowed_output_formats": [
+    "JSON_EXPORT",
+    "MARKDOWN_EXPORT",
+    "TEXT_INDEX",
+    "MANIFEST"
+  ],
+  "current_task_number": 3,
+  "deep_recursive_dependency_traversal_allowed": false,
+  "export_formats": [
+    "JSON_EXPORT",
+    "MARKDOWN_EXPORT",
+    "TEXT_INDEX",
+    "MANIFEST"
+  ],
+  "export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+  "export_revision": "MILESTONE_28_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1",
+  "export_signature": "307754DF390BD6A9",
+  "export_status": "READY",
+  "exported_record_count": 1,
+  "exported_records": [
+    {
+      "archive_status": "CLOSED",
+      "closure_commit": null,
+      "closure_signature": null,
+      "final_task_number": 6,
+      "milestone_id": "MILESTONE_26",
+      "process_status": "GOVERNED_WITHIN_TASK_BUDGET",
+      "technical_status": "PASS"
+    }
+  ],
+  "external_model_call_allowed": false,
+  "forbidden_operations": [
+    "NETWORK_ACCESS",
+    "SHELL_EXECUTION",
+    "REPOSITORY_MUTATION_DURING_RUNTIME_QUERY",
+    "REMOTE_REGISTRY_LOOKUP",
+    "DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL",
+    "EXTERNAL_MODEL_CALL",
+    "UNBOUNDED_FILE_SYSTEM_SCAN",
+    "TASK_BUDGET_EXTENSION"
+  ],
+  "implementation_complete": true,
+  "implementation_started": true,
+  "local_only": true,
+  "milestone_id": "MILESTONE_28",
+  "network_access_allowed": false,
+  "next_stage": "MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_V1",
+  "remote_registry_lookup_allowed": false,
+  "repository_mutation_allowed": false,
+  "scope_lock_id": "MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+  "scope_lock_snapshot": {
+    "persisted_scope_lock_artifact_id": "MILESTONE-28-SCOPE-LOCK-49F8EDF63EBC6A26",
+    "persisted_scope_lock_signature": "758E78344E5AEABF",
+    "persisted_valid": true,
+    "runtime_scope_lock_artifact_id": "MILESTONE-28-SCOPE-LOCK-49F8EDF63EBC6A26",
+    "runtime_scope_lock_signature": "758E78344E5AEABF",
+    "runtime_valid": true,
+    "scope_lock_id": "MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+    "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+    "source_next_stage": "MILESTONE_28_TASK_3_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1",
+    "source_task_id": "MILESTONE_28_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+    "stable_scope_lock": true,
+    "task_2_signature": "B8B00BD1EDF305DD"
+  },
+  "scope_lock_valid": true,
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+  "shell_execution_allowed": false,
+  "source_blocked_query_id": "MILESTONE-27-QUERY-BLOCKED-D80AE7CDF9135D82",
+  "source_blocked_result_signature": "EDC2280666765560",
+  "source_closure_id": "MILESTONE-27-QUERY-FINAL-CLOSURE-F3FB4F48C55A725F",
+  "source_closure_signature": "E9B05D12F50F23CF",
+  "source_integration_id": "MILESTONE-27-QUERY-REGRESSION-C26F11448809E03A",
+  "source_integration_signature": "AC68F2B35D5A30FA",
+  "source_primary_query_id": "MILESTONE-27-QUERY-16EF30982266409E",
+  "source_primary_result_signature": "A8D394C998FD71DE",
+  "source_task_id": "MILESTONE_28_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+  "source_validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63",
+  "source_validation_signature": "999B4B9DF22027C7",
+  "task_2_signature": "B8B00BD1EDF305DD",
+  "task_3_signature": "6A43A44EB818AB6D",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_28_TASK_3_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1"
+}

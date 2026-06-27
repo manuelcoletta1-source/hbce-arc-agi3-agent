@@ -1,0 +1,16 @@
+{
+  "export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+  "export_revision": "MILESTONE_28_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1",
+  "export_signature": "307754DF390BD6A9",
+  "export_status": "READY",
+  "exported_record_count": 1,
+  "generated_artifact_count": 5,
+  "milestone_id": "MILESTONE_28",
+  "next_stage": "MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_V1",
+  "scope_lock_id": "MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+  "source_task_id": "MILESTONE_28_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+  "task_2_signature": "B8B00BD1EDF305DD",
+  "task_3_signature": "6A43A44EB818AB6D",
+  "task_id": "MILESTONE_28_TASK_3_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1"
+}
