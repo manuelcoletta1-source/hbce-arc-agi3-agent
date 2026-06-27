@@ -1,0 +1,57 @@
+# Milestone 30 Task 1 - Governed Opening With Task Budget v1
+
+MILESTONE_30_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_READY=true
+
+MILESTONE_30_TASK_1_SOURCE_TASK_ID=MILESTONE_29_TASK_6_QUERY_RESULT_EVIDENCE_BUNDLE_FINAL_CLOSURE_V1
+MILESTONE_30_TASK_1_SOURCE_MILESTONE_ID=MILESTONE_29
+
+MILESTONE_30_TASK_1_OPENING_REVISION=MILESTONE_30_GOVERNED_OPENING_WITH_TASK_BUDGET_V1
+
+MILESTONE_30_TASK_1_OPENING_STATUS=OPEN
+MILESTONE_30_TASK_1_TECHNICAL_STATUS=PASS
+MILESTONE_30_TASK_1_PROCESS_STATUS=GOVERNED_OPENING_WITH_TASK_BUDGET_MAX_8
+
+MILESTONE_30_TASK_1_SOURCE_DEPENDENCY_VALID=true
+
+MILESTONE_30_TASK_1_TASK_BUDGET_MAX=8
+MILESTONE_30_TASK_1_CURRENT_TASK_NUMBER=1
+
+MILESTONE_30_TASK_1_IMPLEMENTATION_STARTED=false
+MILESTONE_30_TASK_1_IMPLEMENTATION_ALLOWED_AT_TASK_1=false
+
+MILESTONE_30_TASK_1_OBJECTIVE_SELECTION_REQUIRED_NEXT=true
+MILESTONE_30_TASK_1_SCOPE_LOCK_REQUIRED_NEXT=true
+
+MILESTONE_30_TASK_1_PROPOSED_OPERATOR_SEED_ID=JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE
+MILESTONE_30_TASK_1_PROPOSED_OPERATOR_SEED_STATUS=CANDIDATE_ONLY_NOT_LOCKED
+
+MILESTONE_30_TASK_1_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_30_TASK_1_PRIMARY_OPENING_MODULE=src/hbce_arc_agi3/milestone_30_governed_opening.py
+MILESTONE_30_TASK_1_PRIMARY_TEST_MODULE=tests/test_milestone_30_governed_opening.py
+MILESTONE_30_TASK_1_TASK_VALIDATION_TEST=tests/test_milestone_30_task_1_governed_opening_with_task_budget.py
+MILESTONE_30_TASK_1_ARTIFACT_DIR=examples/milestone-30/governed-opening-with-task-budget-v1
+
+MILESTONE_30_TASK_1_NEXT_STAGE=MILESTONE_30_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1
+
+## Objective
+
+Open Milestone 30 under a governed task budget after the Milestone 29 final closure.
+
+## Operator seed
+
+The operator-provided text about JOKER-C2 as a fail-closed cybernetic agent is registered as candidate-only input for the next objective selection and scope lock.
+
+The candidate objective is not implemented in Task 1.
+
+## Candidate objective note
+
+Candidate objective for Task 2:
+
+JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE
+
+This candidate concerns the public/private runtime separation, external interlocutor authorization boundary, and fail-closed identity assumption rule.
+
+## Governance boundary
+
+Task 1 only opens the milestone and verifies the source closure dependency. Implementation remains blocked until objective selection and scope lock are completed.

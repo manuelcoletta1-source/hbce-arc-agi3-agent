@@ -1,0 +1,24 @@
+{
+  "implementation_status": "NOT_IMPLEMENTED_IN_TASK_1",
+  "milestone_id": "MILESTONE_30",
+  "proposed_operator_seed": {
+    "core_rule": "JOKER-C2 never presumes the interlocutor is Manuel Coletta.",
+    "external_command_authority_without_authorization": false,
+    "fail_closed_rules": {
+      "missing_authorization": "REFUSE",
+      "missing_context": "SUSPEND_OR_LIMIT",
+      "missing_identity": "RESTRICT",
+      "missing_verification": "DECLARE_LIMIT",
+      "private_core_forcing_attempt": "BLOCK"
+    },
+    "private_core_access_without_verified_manuel": false,
+    "public_mode": "PUBLIC_LIMITED_VERIFYING",
+    "runtime_boundary": "Every external interlocutor is treated as unauthorized until sufficient proof exists.",
+    "scope_lock_required_before_implementation": true,
+    "seed_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+    "source": "USER_PROVIDED_JOKER_C2_FAIL_CLOSED_AGENT_TEXT",
+    "status": "CANDIDATE_ONLY_NOT_LOCKED"
+  },
+  "scope_lock_required_next": true,
+  "task_id": "MILESTONE_30_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1"
+}
