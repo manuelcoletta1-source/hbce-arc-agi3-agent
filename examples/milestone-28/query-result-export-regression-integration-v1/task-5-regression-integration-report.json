@@ -1,0 +1,151 @@
+{
+  "case_results": [
+    {
+      "case_id": "TASK_4_VALIDATION_REPORT_VALID",
+      "expected": {
+        "fail_count": 0,
+        "pass_count": 6,
+        "validation_status": "VALID"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "next_stage": "MILESTONE_28_TASK_5_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1",
+        "pass_count": 6,
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_RUNTIME_STABILITY_VALID",
+      "expected": {
+        "stable_validation": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "pass_count": 6,
+        "persisted_task_4_signature": "DC1D35F2F7A2810B",
+        "persisted_valid": true,
+        "persisted_validation_id": "MILESTONE-28-QUERY-EXPORT-VALIDATION-EE39267613697796",
+        "persisted_validation_signature": "90F9DC9B5F8438FD",
+        "runtime_task_4_signature": "DC1D35F2F7A2810B",
+        "runtime_valid": true,
+        "runtime_validation_id": "MILESTONE-28-QUERY-EXPORT-VALIDATION-EE39267613697796",
+        "runtime_validation_signature": "90F9DC9B5F8438FD",
+        "scope_lock_id": "MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+        "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+        "source_next_stage": "MILESTONE_28_TASK_5_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1",
+        "source_validation_task_id": "MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_V1",
+        "stable_validation": true,
+        "validation_case_count": 6,
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_ARTIFACT_SET_PRESENT",
+      "expected": {
+        "artifact_count": 5,
+        "missing": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "artifact_count": 5,
+        "missing": [],
+        "readable_count": 5
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_MANIFEST_CONSISTENCY_VALID",
+      "expected": {
+        "manifest_matches_report": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "manifest_next_stage": "MILESTONE_28_TASK_5_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1",
+        "manifest_status": "VALID",
+        "manifest_validation_id": "MILESTONE-28-QUERY-EXPORT-VALIDATION-EE39267613697796",
+        "report_validation_id": "MILESTONE-28-QUERY-EXPORT-VALIDATION-EE39267613697796"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_INDEX_MARKERS_VALID",
+      "expected": {
+        "missing_markers": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "missing_markers": [],
+        "required_marker_count": 11
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_EXPORT_PAYLOAD_GUARDS_STILL_VALID",
+      "expected": {
+        "export_status": "READY",
+        "exported_record_count": 1,
+        "local_only": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "export_status": "READY",
+        "exported_record_count": 1,
+        "local_only": true,
+        "network_access_allowed": false
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_BUDGET_AND_TRANSITION_VALID",
+      "expected": {
+        "current_task_number": 5,
+        "source_current_task_number": 4,
+        "source_next_stage": "MILESTONE_28_TASK_5_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1",
+        "task_budget_max": 8
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "current_task_number": 5,
+        "next_stage": "MILESTONE_28_TASK_6_QUERY_RESULT_EXPORT_FINAL_CLOSURE_V1",
+        "source_current_task_number": 4,
+        "source_next_stage": "MILESTONE_28_TASK_5_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1",
+        "task_budget_max": 8
+      },
+      "passed": true
+    }
+  ],
+  "current_task_number": 5,
+  "export_payload_status": "READY",
+  "export_revision": "MILESTONE_28_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1",
+  "exported_record_count": 1,
+  "fail_count": 0,
+  "integration_case_count": 7,
+  "integration_id": "MILESTONE-28-QUERY-EXPORT-INTEGRATION-2CD8AE251A0BBD41",
+  "integration_passed": true,
+  "integration_signature": "1786F931EFB54FDB",
+  "integration_status": "VALID",
+  "milestone_id": "MILESTONE_28",
+  "next_stage": "MILESTONE_28_TASK_6_QUERY_RESULT_EXPORT_FINAL_CLOSURE_V1",
+  "pass_count": 7,
+  "regression_integration_revision": "MILESTONE_28_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1",
+  "required_fail_count": 0,
+  "required_pass_count": 7,
+  "scope_lock_id": "MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY",
+  "source_export_id": "MILESTONE-28-QUERY-EXPORT-2EB8B2A9B1DAFE42",
+  "source_export_signature": "307754DF390BD6A9",
+  "source_export_status": "READY",
+  "source_task_id": "MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_V1",
+  "source_validation_id": "MILESTONE-28-QUERY-EXPORT-VALIDATION-EE39267613697796",
+  "source_validation_signature": "90F9DC9B5F8438FD",
+  "source_validation_status": "VALID",
+  "task_4_signature": "DC1D35F2F7A2810B",
+  "task_5_signature": "67AFED6EAB554477",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_28_TASK_5_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1",
+  "validation_revision": "MILESTONE_28_QUERY_RESULT_EXPORT_VALIDATION_V1"
+}

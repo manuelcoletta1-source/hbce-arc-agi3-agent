@@ -1,0 +1,51 @@
+# Milestone 28 Task 5 - Query Result Export Regression Integration v1
+
+MILESTONE_28_TASK_5_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_READY=true
+
+MILESTONE_28_TASK_5_SOURCE_TASK_ID=MILESTONE_28_TASK_4_QUERY_RESULT_EXPORT_VALIDATION_V1
+MILESTONE_28_TASK_5_SELECTED_OBJECTIVE_ID=CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY
+MILESTONE_28_TASK_5_SCOPE_LOCK_ID=MILESTONE_28_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EXPORT_LOCAL_ONLY
+
+MILESTONE_28_TASK_5_EXPORT_REVISION=MILESTONE_28_QUERY_RESULT_EXPORT_IMPLEMENTATION_V1
+MILESTONE_28_TASK_5_VALIDATION_REVISION=MILESTONE_28_QUERY_RESULT_EXPORT_VALIDATION_V1
+MILESTONE_28_TASK_5_REGRESSION_INTEGRATION_REVISION=MILESTONE_28_QUERY_RESULT_EXPORT_REGRESSION_INTEGRATION_V1
+
+MILESTONE_28_TASK_5_SOURCE_VALIDATION_STATUS=VALID
+MILESTONE_28_TASK_5_SOURCE_EXPORT_STATUS=READY
+
+MILESTONE_28_TASK_5_INTEGRATION_STATUS=VALID
+MILESTONE_28_TASK_5_INTEGRATION_CASE_COUNT=7
+MILESTONE_28_TASK_5_PASS_COUNT=7
+MILESTONE_28_TASK_5_FAIL_COUNT=0
+
+MILESTONE_28_TASK_5_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_28_TASK_5_TASK_BUDGET_MAX=8
+MILESTONE_28_TASK_5_CURRENT_TASK_NUMBER=5
+
+MILESTONE_28_TASK_5_PRIMARY_INTEGRATION_MODULE=src/hbce_arc_agi3/milestone_28_query_result_export_regression_integration.py
+MILESTONE_28_TASK_5_PRIMARY_TEST_MODULE=tests/test_milestone_28_query_result_export_regression_integration.py
+MILESTONE_28_TASK_5_TASK_VALIDATION_TEST=tests/test_milestone_28_task_5_query_result_export_regression_integration.py
+MILESTONE_28_TASK_5_ARTIFACT_DIR=examples/milestone-28/query-result-export-regression-integration-v1
+
+MILESTONE_28_TASK_5_NEXT_STAGE=MILESTONE_28_TASK_6_QUERY_RESULT_EXPORT_FINAL_CLOSURE_V1
+
+## Objective
+
+Integrate regression coverage for the Milestone 28 local query result export chain.
+
+## Regression surface
+
+The integration checks:
+
+- Task 4 validation report validity;
+- runtime validation stability;
+- validation artifact set completeness;
+- validation manifest consistency;
+- validation index marker consistency;
+- Task 3 export payload authority guards;
+- task budget and transition continuity.
+
+## Result
+
+Task 5 validates regression integration for the local-only query result export chain and prepares Task 6 final closure.
