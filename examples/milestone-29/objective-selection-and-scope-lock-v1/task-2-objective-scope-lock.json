@@ -1,0 +1,107 @@
+{
+  "current_task_number": 2,
+  "generated_artifact_count": 5,
+  "implementation_allowed_at_task_2": false,
+  "implementation_allowed_next": true,
+  "implementation_started": false,
+  "milestone_id": "MILESTONE_29",
+  "next_stage": "MILESTONE_29_TASK_3_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1",
+  "objective_candidates": [
+    {
+      "implementation_stage": "MILESTONE_29_TASK_3_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1",
+      "local_only": true,
+      "objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+      "selected": true,
+      "selection_reason": "Extends the Milestone 28 query result export with a local evidence bundle suitable for deterministic verification.",
+      "title": "Closed milestone archive index query result evidence bundle"
+    },
+    {
+      "local_only": true,
+      "objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_RENDERED_SUMMARY_LOCAL_ONLY",
+      "rejection_reason": "Readable summary is useful but weaker than evidence bundling for closure continuity.",
+      "selected": false,
+      "title": "Rendered local summary for exported query results"
+    },
+    {
+      "local_only": true,
+      "objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_BULK_EXPORT_LOCAL_ONLY",
+      "rejection_reason": "Bulk mode increases surface area before a single evidence bundle path is locked.",
+      "selected": false,
+      "title": "Bulk local export of closed milestone query results"
+    },
+    {
+      "local_only": false,
+      "objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_REMOTE_QUERY_RESULT_EVIDENCE_SYNC",
+      "rejection_reason": "Remote sync violates the current local-only operating boundary.",
+      "selected": false,
+      "title": "Remote query result evidence synchronization"
+    }
+  ],
+  "objective_selection_ready": true,
+  "opening_revision": "MILESTONE_29_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+  "scope_guard": {
+    "allowed_inputs": [
+      "Milestone 28 final closure report",
+      "Milestone 28 regression integration report",
+      "Milestone 28 validation report",
+      "Milestone 28 exported query result payload",
+      "Milestone 29 Task 1 governed opening report",
+      "Local repository committed artifacts only"
+    ],
+    "deep_recursive_dependency_traversal_allowed": false,
+    "external_model_call_allowed": false,
+    "forbidden_operations": [
+      "network access",
+      "shell execution from runtime module",
+      "repository mutation from runtime module",
+      "remote registry lookup",
+      "deep recursive dependency traversal",
+      "external model call",
+      "unstable timestamp dependency",
+      "non-local evidence source"
+    ],
+    "local_only": true,
+    "network_access_allowed": false,
+    "output_artifacts": [
+      "task-2-objective-candidates.json",
+      "task-2-objective-scope-lock.json",
+      "task-2-objective-scope-lock.md",
+      "task-2-manifest.json",
+      "task-2-index.txt"
+    ],
+    "remote_registry_lookup_allowed": false,
+    "repository_mutation_allowed": false,
+    "shell_execution_allowed": false
+  },
+  "scope_lock_artifact_id": "MILESTONE-29-SCOPE-LOCK-1F3460060AC848A6",
+  "scope_lock_id": "MILESTONE_29_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+  "scope_lock_revision": "MILESTONE_29_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+  "scope_lock_signature": "EA6E7D3CC3EA38BF",
+  "scope_locked": true,
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+  "source_opening_snapshot": {
+    "implementation_allowed_at_task_1": false,
+    "implementation_started": false,
+    "milestone_id": "MILESTONE_29",
+    "objective_selection_required_next": true,
+    "opening_id": "MILESTONE-29-GOVERNED-OPENING-7B2243386B26CACA",
+    "opening_revision": "MILESTONE_29_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+    "opening_signature": "FCEDF392EC385064",
+    "opening_status": "OPEN",
+    "opening_valid": true,
+    "process_status": "GOVERNED_OPENING_WITH_TASK_BUDGET_MAX_8",
+    "scope_lock_required_next": true,
+    "source_current_task_number": 1,
+    "source_dependency_valid": true,
+    "source_next_stage": "MILESTONE_29_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+    "source_task_id": "MILESTONE_29_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+    "task_1_signature": "3A6FB072C04C5CE7",
+    "task_budget_max": 8,
+    "technical_status": "PASS"
+  },
+  "source_task_id": "MILESTONE_29_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+  "task_1_signature": "3A6FB072C04C5CE7",
+  "task_2_signature": "CCEDBE36F0F1FD88",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_29_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1"
+}

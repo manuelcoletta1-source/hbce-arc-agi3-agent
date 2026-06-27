@@ -1,0 +1,34 @@
+{
+  "candidates": [
+    {
+      "implementation_stage": "MILESTONE_29_TASK_3_QUERY_RESULT_EVIDENCE_BUNDLE_IMPLEMENTATION_V1",
+      "local_only": true,
+      "objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_EVIDENCE_BUNDLE_LOCAL_ONLY",
+      "selected": true,
+      "selection_reason": "Extends the Milestone 28 query result export with a local evidence bundle suitable for deterministic verification.",
+      "title": "Closed milestone archive index query result evidence bundle"
+    },
+    {
+      "local_only": true,
+      "objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_RENDERED_SUMMARY_LOCAL_ONLY",
+      "rejection_reason": "Readable summary is useful but weaker than evidence bundling for closure continuity.",
+      "selected": false,
+      "title": "Rendered local summary for exported query results"
+    },
+    {
+      "local_only": true,
+      "objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_RESULT_BULK_EXPORT_LOCAL_ONLY",
+      "rejection_reason": "Bulk mode increases surface area before a single evidence bundle path is locked.",
+      "selected": false,
+      "title": "Bulk local export of closed milestone query results"
+    },
+    {
+      "local_only": false,
+      "objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_REMOTE_QUERY_RESULT_EVIDENCE_SYNC",
+      "rejection_reason": "Remote sync violates the current local-only operating boundary.",
+      "selected": false,
+      "title": "Remote query result evidence synchronization"
+    }
+  ],
+  "task_id": "MILESTONE_29_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1"
+}
