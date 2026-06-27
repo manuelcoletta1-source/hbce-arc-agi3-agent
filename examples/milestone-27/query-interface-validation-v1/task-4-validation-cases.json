@@ -1,0 +1,129 @@
+{
+  "case_count": 6,
+  "case_results": [
+    {
+      "actual_blocked": false,
+      "actual_matched_count": 1,
+      "actual_query_status": "READY",
+      "case_id": "READY_MILESTONE_26_EXACT",
+      "expected_blocked": false,
+      "expected_matched_count": 1,
+      "expected_query_status": "READY",
+      "failure_reason": "NONE",
+      "forbidden_operations_detected": [],
+      "passed": true,
+      "query": {
+        "local_only": true,
+        "milestone_id": "MILESTONE_26"
+      },
+      "query_id": "MILESTONE-27-QUERY-16EF30982266409E",
+      "result_signature": "A8D394C998FD71DE"
+    },
+    {
+      "actual_blocked": false,
+      "actual_matched_count": 2,
+      "actual_query_status": "READY",
+      "case_id": "READY_CLOSED_PASS_FILTER",
+      "expected_blocked": false,
+      "expected_matched_count": 2,
+      "expected_query_status": "READY",
+      "failure_reason": "NONE",
+      "forbidden_operations_detected": [],
+      "passed": true,
+      "query": {
+        "archive_status": "CLOSED",
+        "final_task_number_lte": 8,
+        "local_only": true,
+        "technical_status": "PASS"
+      },
+      "query_id": "MILESTONE-27-QUERY-7E5D841644734805",
+      "result_signature": "E02F334D6C226F1E"
+    },
+    {
+      "actual_blocked": false,
+      "actual_matched_count": 1,
+      "actual_query_status": "READY",
+      "case_id": "READY_SUPPRESS_EVIDENCE",
+      "expected_blocked": false,
+      "expected_matched_count": 1,
+      "expected_query_status": "READY",
+      "failure_reason": "NONE",
+      "forbidden_operations_detected": [],
+      "passed": true,
+      "query": {
+        "include_evidence": false,
+        "local_only": true,
+        "milestone_id": "MILESTONE_26"
+      },
+      "query_id": "MILESTONE-27-QUERY-490A6B8C61892FDE",
+      "result_signature": "0FC4708BC90FF377"
+    },
+    {
+      "actual_blocked": false,
+      "actual_matched_count": 1,
+      "actual_query_status": "READY",
+      "case_id": "READY_LIMIT_ONE",
+      "expected_blocked": false,
+      "expected_matched_count": 1,
+      "expected_query_status": "READY",
+      "failure_reason": "NONE",
+      "forbidden_operations_detected": [],
+      "passed": true,
+      "query": {
+        "archive_status": "CLOSED",
+        "limit": 1,
+        "local_only": true,
+        "technical_status": "PASS"
+      },
+      "query_id": "MILESTONE-27-QUERY-910DE1C63AC6ACCB",
+      "result_signature": "A8D394C998FD71DE"
+    },
+    {
+      "actual_blocked": true,
+      "actual_matched_count": 0,
+      "actual_query_status": "BLOCKED_BY_SCOPE_LOCK",
+      "case_id": "BLOCK_NON_LOCAL",
+      "expected_blocked": true,
+      "expected_matched_count": 0,
+      "expected_query_status": "BLOCKED_BY_SCOPE_LOCK",
+      "failure_reason": "NONE",
+      "forbidden_operations_detected": [
+        "NON_LOCAL_QUERY_REQUESTED"
+      ],
+      "passed": true,
+      "query": {
+        "local_only": false,
+        "milestone_id": "MILESTONE_26"
+      },
+      "query_id": "MILESTONE-27-QUERY-BLOCKED-D80AE7CDF9135D82",
+      "result_signature": "EDC2280666765560"
+    },
+    {
+      "actual_blocked": true,
+      "actual_matched_count": 0,
+      "actual_query_status": "BLOCKED_BY_SCOPE_LOCK",
+      "case_id": "BLOCK_FORBIDDEN_NETWORK_AND_DEEP_SCAN",
+      "expected_blocked": true,
+      "expected_matched_count": 0,
+      "expected_query_status": "BLOCKED_BY_SCOPE_LOCK",
+      "failure_reason": "NONE",
+      "forbidden_operations_detected": [
+        "NETWORK_ACCESS",
+        "DEEP_RECURSIVE_DEPENDENCY_TRAVERSAL"
+      ],
+      "passed": true,
+      "query": {
+        "forbidden_operations": [
+          "network_access",
+          "deep_recursive_dependency_traversal"
+        ],
+        "local_only": true,
+        "milestone_id": "MILESTONE_26"
+      },
+      "query_id": "MILESTONE-27-QUERY-BLOCKED-4CBE8FF9F987E4FC",
+      "result_signature": "605EABB80243E576"
+    }
+  ],
+  "task_id": "MILESTONE_27_TASK_4_QUERY_INTERFACE_VALIDATION_V1",
+  "validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63"
+}

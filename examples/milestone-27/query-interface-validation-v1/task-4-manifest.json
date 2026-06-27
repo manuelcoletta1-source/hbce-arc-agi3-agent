@@ -1,0 +1,16 @@
+{
+  "generated_artifact_count": 5,
+  "next_stage": "MILESTONE_27_TASK_5_QUERY_INTERFACE_REGRESSION_INTEGRATION_V1",
+  "query_interface_revision": "MILESTONE_27_QUERY_INTERFACE_IMPLEMENTATION_V1",
+  "scope_lock_id": "MILESTONE_27_SCOPE_CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "selected_objective_id": "CLOSED_MILESTONE_ARCHIVE_INDEX_QUERY_INTERFACE_LOCAL_ONLY",
+  "source_task_id": "MILESTONE_27_TASK_3_QUERY_INTERFACE_IMPLEMENTATION_V1",
+  "task_3_signature": "5BA3AA98C9F8C577",
+  "task_4_signature": "B921EE56134DA786",
+  "task_id": "MILESTONE_27_TASK_4_QUERY_INTERFACE_VALIDATION_V1",
+  "validation_id": "MILESTONE-27-QUERY-VALIDATION-6F8C0D190E6FCA63",
+  "validation_passed": true,
+  "validation_revision": "MILESTONE_27_QUERY_INTERFACE_VALIDATION_V1",
+  "validation_signature": "999B4B9DF22027C7",
+  "validation_status": "VALID"
+}
