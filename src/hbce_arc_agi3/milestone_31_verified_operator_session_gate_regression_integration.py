@@ -1,0 +1,960 @@
+from __future__ import annotations
+
+from hashlib import sha256
+import json
+from pathlib import Path
+from typing import Any, Mapping, Sequence
+
+from hbce_arc_agi3.milestone_31_governed_opening import (
+    TASK_ID as TASK_1_ID,
+    build_governed_opening_report,
+    task_1_signature,
+    validate_governed_opening_report,
+)
+from hbce_arc_agi3.milestone_31_objective_scope_lock import (
+    TASK_ID as TASK_2_ID,
+    build_objective_scope_lock_report,
+    task_2_signature,
+    validate_objective_scope_lock_report,
+)
+from hbce_arc_agi3.milestone_31_verified_operator_session_gate import (
+    DECISION_ALLOW_SESSION,
+    DECISION_BLOCK,
+    DECISION_DECLARE_LIMIT,
+    DECISION_REFUSE,
+    DECISION_RESTRICT,
+    DECISION_SUSPEND_OR_LIMIT,
+    IMPLEMENTATION_REVISION,
+    PRIVATE_MODE_ID,
+    PUBLIC_MODE_ID,
+    SESSION_CASE_COUNT,
+    SESSION_GATE_MODE_ID,
+    TASK_ID as TASK_3_ID,
+    build_verified_operator_session_gate_implementation_report,
+    evaluate_verified_operator_session_gate,
+    task_3_signature,
+    validate_verified_operator_session_gate_decision,
+    validate_verified_operator_session_gate_implementation_report,
+)
+from hbce_arc_agi3.milestone_31_verified_operator_session_gate_validation import (
+    CURRENT_TASK_NUMBER as SOURCE_CURRENT_TASK_NUMBER,
+    GENERATED_ARTIFACT_COUNT as SOURCE_GENERATED_ARTIFACT_COUNT,
+    NEXT_STAGE as SOURCE_NEXT_STAGE,
+    REQUIRED_FAIL_COUNT as SOURCE_REQUIRED_FAIL_COUNT,
+    REQUIRED_PASS_COUNT as SOURCE_REQUIRED_PASS_COUNT,
+    SCOPE_LOCK_ID,
+    SELECTED_OBJECTIVE_ID,
+    SELECTED_OBJECTIVE_STATUS,
+    SOURCE_SCOPE_TASK_ID,
+    TASK_BUDGET_MAX,
+    TASK_ID as SOURCE_TASK_ID,
+    VALIDATION_CASE_COUNT as SOURCE_VALIDATION_CASE_COUNT,
+    VALIDATION_REVISION,
+    VALIDATION_STATUS,
+    run_verified_operator_session_gate_validation,
+    task_4_signature,
+    validate_verified_operator_session_gate_validation_report,
+)
+
+
+TASK_ID = "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1"
+REGRESSION_INTEGRATION_REVISION = "MILESTONE_31_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1"
+
+CURRENT_TASK_NUMBER = 5
+NEXT_STAGE = "MILESTONE_31_TASK_6_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_FINAL_CLOSURE_V1"
+
+INTEGRATION_STATUS = "VALID"
+INTEGRATION_CASE_COUNT = 10
+REQUIRED_PASS_COUNT = 10
+REQUIRED_FAIL_COUNT = 0
+GENERATED_ARTIFACT_COUNT = 5
+
+SOURCE_VALIDATION_REPORT_PATH = Path("examples/milestone-31/verified-operator-authorization-session-gate-validation-v1/task-4-validation-report.json")
+SOURCE_VALIDATION_CASES_PATH = Path("examples/milestone-31/verified-operator-authorization-session-gate-validation-v1/task-4-validation-cases.json")
+SOURCE_VALIDATION_MANIFEST_PATH = Path("examples/milestone-31/verified-operator-authorization-session-gate-validation-v1/task-4-manifest.json")
+SOURCE_VALIDATION_INDEX_PATH = Path("examples/milestone-31/verified-operator-authorization-session-gate-validation-v1/task-4-index.txt")
+SOURCE_VALIDATION_MARKDOWN_PATH = Path("examples/milestone-31/verified-operator-authorization-session-gate-validation-v1/task-4-validation-report.md")
+
+TASK_1_REPORT_PATH = Path("examples/milestone-31/governed-opening-with-task-budget-v1/task-1-governed-opening.json")
+TASK_2_REPORT_PATH = Path("examples/milestone-31/objective-selection-and-scope-lock-v1/task-2-objective-scope-lock.json")
+TASK_3_REPORT_PATH = Path("examples/milestone-31/verified-operator-authorization-session-gate-implementation-v1/task-3-session-gate-implementation.json")
+
+
+def _stable_json(payload: Mapping[str, Any] | Sequence[Any]) -> str:
+    return json.dumps(payload, sort_keys=True, separators=(",", ":"))
+
+
+def _stable_digest(payload: Mapping[str, Any] | Sequence[Any] | str) -> str:
+    normalized = payload if isinstance(payload, str) else _stable_json(payload)
+    return sha256(normalized.encode("utf-8")).hexdigest().upper()[:16]
+
+
+def _load_json(path: Path) -> dict[str, Any]:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def task_5_signature() -> str:
+    return _stable_digest(
+        {
+            "task_id": TASK_ID,
+            "source_task_id": SOURCE_TASK_ID,
+            "selected_objective_id": SELECTED_OBJECTIVE_ID,
+            "scope_lock_id": SCOPE_LOCK_ID,
+            "implementation_revision": IMPLEMENTATION_REVISION,
+            "validation_revision": VALIDATION_REVISION,
+            "regression_integration_revision": REGRESSION_INTEGRATION_REVISION,
+            "task_1_signature": task_1_signature(),
+            "task_2_signature": task_2_signature(),
+            "task_3_signature": task_3_signature(),
+            "task_4_signature": task_4_signature(),
+            "integration_case_count": INTEGRATION_CASE_COUNT,
+            "task_budget_max": TASK_BUDGET_MAX,
+            "current_task_number": CURRENT_TASK_NUMBER,
+            "next_stage": NEXT_STAGE,
+        }
+    )
+
+
+def _case(case_id: str, passed: bool, expected: Any, observed: Any, failure_reason: str = "NONE") -> dict[str, Any]:
+    return {
+        "case_id": case_id,
+        "passed": passed,
+        "failure_reason": "NONE" if passed else failure_reason,
+        "expected": expected,
+        "observed": observed,
+    }
+
+
+def build_validation_snapshot() -> dict[str, Any]:
+    runtime = run_verified_operator_session_gate_validation()
+    persisted = _load_json(SOURCE_VALIDATION_REPORT_PATH)
+
+    runtime_valid = validate_verified_operator_session_gate_validation_report(runtime)
+    persisted_valid = validate_verified_operator_session_gate_validation_report(persisted)
+
+    return {
+        "source_task_id": SOURCE_TASK_ID,
+        "source_next_stage": SOURCE_NEXT_STAGE,
+        "runtime_validation_id": runtime.get("validation_id"),
+        "persisted_validation_id": persisted.get("validation_id"),
+        "runtime_validation_signature": runtime.get("validation_signature"),
+        "persisted_validation_signature": persisted.get("validation_signature"),
+        "runtime_task_4_signature": runtime.get("task_4_signature"),
+        "persisted_task_4_signature": persisted.get("task_4_signature"),
+        "selected_objective_id": persisted.get("selected_objective_id"),
+        "selected_objective_status": persisted.get("selected_objective_status"),
+        "scope_lock_id": persisted.get("scope_lock_id"),
+        "source_implementation_id": persisted.get("source_implementation_id"),
+        "source_implementation_signature": persisted.get("source_implementation_signature"),
+        "source_implementation_status": persisted.get("source_implementation_status"),
+        "source_implementation_started": persisted.get("source_implementation_started"),
+        "source_implementation_complete": persisted.get("source_implementation_complete"),
+        "source_session_gate_mode_id": persisted.get("source_session_gate_mode_id"),
+        "source_session_case_count": persisted.get("source_session_case_count"),
+        "source_runtime_cases_valid": persisted.get("source_runtime_cases_valid"),
+        "source_pass_count": persisted.get("source_pass_count"),
+        "source_fail_count": persisted.get("source_fail_count"),
+        "source_private_core_access_without_verified_manuel_allowed": persisted.get("source_private_core_access_without_verified_manuel_allowed"),
+        "source_unverified_manuel_assumption_allowed": persisted.get("source_unverified_manuel_assumption_allowed"),
+        "source_external_command_authority_allowed": persisted.get("source_external_command_authority_allowed"),
+        "source_session_authorization_without_valid_authorization_allowed": persisted.get("source_session_authorization_without_valid_authorization_allowed"),
+        "source_session_authorization_without_context_allowed": persisted.get("source_session_authorization_without_context_allowed"),
+        "source_session_authorization_without_verification_allowed": persisted.get("source_session_authorization_without_verification_allowed"),
+        "validation_status": persisted.get("validation_status"),
+        "validation_case_count": persisted.get("validation_case_count"),
+        "validation_passed": persisted.get("validation_passed"),
+        "pass_count": persisted.get("pass_count"),
+        "fail_count": persisted.get("fail_count"),
+        "task_budget_max": persisted.get("task_budget_max"),
+        "source_current_task_number": persisted.get("current_task_number"),
+        "runtime_valid": runtime_valid,
+        "persisted_valid": persisted_valid,
+        "stable_validation": (
+            runtime.get("validation_id") == persisted.get("validation_id")
+            and runtime.get("validation_signature") == persisted.get("validation_signature")
+            and runtime.get("task_4_signature") == persisted.get("task_4_signature") == task_4_signature()
+        ),
+    }
+
+
+def validate_validation_snapshot(snapshot: Mapping[str, Any]) -> bool:
+    if snapshot.get("source_task_id") != SOURCE_TASK_ID:
+        return False
+    if snapshot.get("source_next_stage") != TASK_ID:
+        return False
+    if snapshot.get("selected_objective_id") != SELECTED_OBJECTIVE_ID:
+        return False
+    if snapshot.get("selected_objective_status") != SELECTED_OBJECTIVE_STATUS:
+        return False
+    if snapshot.get("scope_lock_id") != SCOPE_LOCK_ID:
+        return False
+    if snapshot.get("source_implementation_status") != "READY":
+        return False
+    if snapshot.get("source_implementation_started") is not True:
+        return False
+    if snapshot.get("source_implementation_complete") is not True:
+        return False
+    if snapshot.get("source_session_gate_mode_id") != SESSION_GATE_MODE_ID:
+        return False
+    if snapshot.get("source_session_case_count") != SESSION_CASE_COUNT:
+        return False
+    if snapshot.get("source_runtime_cases_valid") is not True:
+        return False
+    if snapshot.get("source_pass_count") != 9:
+        return False
+    if snapshot.get("source_fail_count") != 0:
+        return False
+    hard_false_fields = [
+        "source_private_core_access_without_verified_manuel_allowed",
+        "source_unverified_manuel_assumption_allowed",
+        "source_external_command_authority_allowed",
+        "source_session_authorization_without_valid_authorization_allowed",
+        "source_session_authorization_without_context_allowed",
+        "source_session_authorization_without_verification_allowed",
+    ]
+    if any(snapshot.get(field) is not False for field in hard_false_fields):
+        return False
+    if snapshot.get("validation_status") != VALIDATION_STATUS:
+        return False
+    if snapshot.get("validation_case_count") != SOURCE_VALIDATION_CASE_COUNT:
+        return False
+    if snapshot.get("validation_passed") is not True:
+        return False
+    if snapshot.get("pass_count") != SOURCE_REQUIRED_PASS_COUNT:
+        return False
+    if snapshot.get("fail_count") != SOURCE_REQUIRED_FAIL_COUNT:
+        return False
+    if snapshot.get("task_budget_max") != TASK_BUDGET_MAX:
+        return False
+    if snapshot.get("source_current_task_number") != SOURCE_CURRENT_TASK_NUMBER:
+        return False
+    if snapshot.get("runtime_valid") is not True:
+        return False
+    if snapshot.get("persisted_valid") is not True:
+        return False
+    return bool(snapshot.get("stable_validation"))
+
+
+def _validate_validation_report_case() -> dict[str, Any]:
+    report = _load_json(SOURCE_VALIDATION_REPORT_PATH)
+    passed = (
+        validate_verified_operator_session_gate_validation_report(report)
+        and report.get("validation_status") == "VALID"
+        and report.get("validation_passed") is True
+        and report.get("validation_case_count") == 10
+        and report.get("pass_count") == 10
+        and report.get("fail_count") == 0
+        and report.get("next_stage") == SOURCE_NEXT_STAGE
+    )
+    return _case(
+        "TASK_4_SESSION_GATE_VALIDATION_REPORT_VALID",
+        passed,
+        {"validation_status": "VALID", "validation_passed": True, "pass_count": 10, "fail_count": 0},
+        {
+            "validation_status": report.get("validation_status"),
+            "validation_passed": report.get("validation_passed"),
+            "pass_count": report.get("pass_count"),
+            "fail_count": report.get("fail_count"),
+            "next_stage": report.get("next_stage"),
+        },
+        "TASK_4_SESSION_GATE_VALIDATION_REPORT_INVALID",
+    )
+
+
+def _validate_runtime_stability_case() -> dict[str, Any]:
+    snapshot = build_validation_snapshot()
+    passed = validate_validation_snapshot(snapshot)
+    return _case(
+        "TASK_4_SESSION_GATE_VALIDATION_RUNTIME_STABILITY_VALID",
+        passed,
+        {"stable_validation": True},
+        snapshot,
+        "TASK_4_SESSION_GATE_VALIDATION_RUNTIME_STABILITY_INVALID",
+    )
+
+
+def _validate_artifact_set_case() -> dict[str, Any]:
+    paths = (
+        SOURCE_VALIDATION_REPORT_PATH,
+        SOURCE_VALIDATION_CASES_PATH,
+        SOURCE_VALIDATION_MANIFEST_PATH,
+        SOURCE_VALIDATION_INDEX_PATH,
+        SOURCE_VALIDATION_MARKDOWN_PATH,
+    )
+    missing = [str(path) for path in paths if not path.exists()]
+    readable = []
+    for path in paths:
+        if path.exists():
+            readable.append(path.read_text(encoding="utf-8") != "")
+    passed = not missing and all(readable)
+    return _case(
+        "TASK_4_SESSION_GATE_VALIDATION_ARTIFACT_SET_PRESENT",
+        passed,
+        {"artifact_count": 5, "missing": []},
+        {"artifact_count": len(paths), "missing": missing, "readable_count": sum(1 for item in readable if item)},
+        "TASK_4_SESSION_GATE_VALIDATION_ARTIFACT_SET_INCOMPLETE",
+    )
+
+
+def _validate_manifest_case() -> dict[str, Any]:
+    report = _load_json(SOURCE_VALIDATION_REPORT_PATH)
+    manifest = _load_json(SOURCE_VALIDATION_MANIFEST_PATH)
+    passed = (
+        manifest.get("task_id") == report.get("task_id") == SOURCE_TASK_ID
+        and manifest.get("source_task_id") == report.get("source_task_id") == TASK_3_ID
+        and manifest.get("source_scope_task_id") == report.get("source_scope_task_id") == TASK_2_ID
+        and manifest.get("selected_objective_id") == report.get("selected_objective_id") == SELECTED_OBJECTIVE_ID
+        and manifest.get("scope_lock_id") == report.get("scope_lock_id") == SCOPE_LOCK_ID
+        and manifest.get("source_implementation_id") == report.get("source_implementation_id")
+        and manifest.get("source_implementation_signature") == report.get("source_implementation_signature")
+        and manifest.get("validation_id") == report.get("validation_id")
+        and manifest.get("validation_signature") == report.get("validation_signature")
+        and manifest.get("validation_status") == report.get("validation_status") == "VALID"
+        and manifest.get("validation_passed") is True
+        and manifest.get("validation_case_count") == report.get("validation_case_count") == 10
+        and manifest.get("pass_count") == report.get("pass_count") == 10
+        and manifest.get("fail_count") == report.get("fail_count") == 0
+        and manifest.get("next_stage") == SOURCE_NEXT_STAGE
+    )
+    return _case(
+        "TASK_4_SESSION_GATE_VALIDATION_MANIFEST_CONSISTENCY_VALID",
+        passed,
+        {"manifest_matches_validation_report": True},
+        {
+            "manifest_validation_id": manifest.get("validation_id"),
+            "report_validation_id": report.get("validation_id"),
+            "manifest_status": manifest.get("validation_status"),
+            "manifest_next_stage": manifest.get("next_stage"),
+        },
+        "TASK_4_SESSION_GATE_VALIDATION_MANIFEST_CONSISTENCY_INVALID",
+    )
+
+
+def _validate_validation_case_set_case() -> dict[str, Any]:
+    report = _load_json(SOURCE_VALIDATION_REPORT_PATH)
+    cases = _load_json(SOURCE_VALIDATION_CASES_PATH)
+    observed_case_ids = {case.get("case_id") for case in cases.get("validation_cases", [])}
+    expected_case_ids = {
+        "TASK_3_SESSION_GATE_IMPLEMENTATION_REPORT_VALID",
+        "TASK_3_SESSION_GATE_RUNTIME_STABILITY_VALID",
+        "TASK_3_SESSION_GATE_ARTIFACT_SET_PRESENT",
+        "TASK_3_SESSION_GATE_MANIFEST_CONSISTENCY_VALID",
+        "TASK_3_SESSION_GATE_RUNTIME_CASE_SET_VALID",
+        "TASK_3_SESSION_GATE_DECISION_MATRIX_VALID",
+        "TASK_3_SESSION_GATE_INDEX_MARKERS_VALID",
+        "TASK_3_SESSION_GATE_DIRECT_FAIL_CLOSED_PROBES_VALID",
+        "TASK_3_SESSION_GATE_SOURCE_SCOPE_CHAIN_VALID",
+        "TASK_3_SESSION_GATE_TRACE_SEMANTICS_VALID",
+    }
+    passed = (
+        cases.get("task_id") == SOURCE_TASK_ID
+        and cases.get("validation_id") == report.get("validation_id")
+        and cases.get("validation_status") == "VALID"
+        and cases.get("validation_case_count") == SOURCE_VALIDATION_CASE_COUNT
+        and observed_case_ids == expected_case_ids
+        and all(case.get("passed") is True for case in cases.get("validation_cases", []))
+        and all(case.get("failure_reason") == "NONE" for case in cases.get("validation_cases", []))
+    )
+    return _case(
+        "TASK_4_SESSION_GATE_VALIDATION_CASE_SET_VALID",
+        passed,
+        {"case_ids": sorted(expected_case_ids), "validation_case_count": 10},
+        {"case_ids": sorted(observed_case_ids), "validation_case_count": cases.get("validation_case_count")},
+        "TASK_4_SESSION_GATE_VALIDATION_CASE_SET_INVALID",
+    )
+
+
+def _validate_direct_regression_probes_case() -> dict[str, Any]:
+    probes = {
+        "public": evaluate_verified_operator_session_gate({"request_id": "REGRESSION-PUBLIC"}),
+        "allowed": evaluate_verified_operator_session_gate(
+            {
+                "request_id": "REGRESSION-ALLOWED",
+                "verified_identity_is_manuel": True,
+                "authorization_valid": True,
+                "context_sufficient": True,
+                "verification_available": True,
+                "requested_private_scope": True,
+                "operator_intent": "activate authorized private session",
+                "session_trace_id": "SESSION-TRACE-31-5-ALLOWED",
+                "private_core_requested": True,
+            }
+        ),
+        "missing_identity": evaluate_verified_operator_session_gate(
+            {
+                "request_id": "REGRESSION-MISSING-ID",
+                "verified_identity_is_manuel": False,
+                "authorization_valid": True,
+                "context_sufficient": True,
+                "verification_available": True,
+                "requested_private_scope": True,
+                "operator_intent": "attempt private session",
+                "session_trace_id": "SESSION-TRACE-31-5-MISSING-ID",
+            }
+        ),
+        "missing_authorization": evaluate_verified_operator_session_gate(
+            {
+                "request_id": "REGRESSION-MISSING-AUTH",
+                "verified_identity_is_manuel": True,
+                "authorization_valid": False,
+                "context_sufficient": True,
+                "verification_available": True,
+                "requested_private_scope": True,
+                "operator_intent": "attempt private session",
+                "session_trace_id": "SESSION-TRACE-31-5-MISSING-AUTH",
+            }
+        ),
+        "missing_context": evaluate_verified_operator_session_gate(
+            {
+                "request_id": "REGRESSION-MISSING-CONTEXT",
+                "verified_identity_is_manuel": True,
+                "authorization_valid": True,
+                "context_sufficient": False,
+                "verification_available": True,
+                "requested_private_scope": True,
+                "operator_intent": "attempt private session",
+                "session_trace_id": "SESSION-TRACE-31-5-MISSING-CONTEXT",
+            }
+        ),
+        "missing_verification": evaluate_verified_operator_session_gate(
+            {
+                "request_id": "REGRESSION-MISSING-VERIFY",
+                "verified_identity_is_manuel": True,
+                "authorization_valid": True,
+                "context_sufficient": True,
+                "verification_available": False,
+                "requested_private_scope": True,
+                "operator_intent": "attempt private session",
+                "session_trace_id": "SESSION-TRACE-31-5-MISSING-VERIFY",
+            }
+        ),
+        "missing_trace": evaluate_verified_operator_session_gate(
+            {
+                "request_id": "REGRESSION-MISSING-TRACE",
+                "verified_identity_is_manuel": True,
+                "authorization_valid": True,
+                "context_sufficient": True,
+                "verification_available": True,
+                "requested_private_scope": True,
+                "operator_intent": "attempt private session",
+                "session_trace_id": "",
+            }
+        ),
+        "external_command": evaluate_verified_operator_session_gate(
+            {
+                "request_id": "REGRESSION-EXTERNAL",
+                "verified_identity_is_manuel": True,
+                "authorization_valid": True,
+                "context_sufficient": True,
+                "verification_available": True,
+                "requested_private_scope": True,
+                "operator_intent": "attempt external command",
+                "session_trace_id": "SESSION-TRACE-31-5-EXTERNAL",
+                "external_command_requested": True,
+            }
+        ),
+    }
+
+    passed = (
+        all(validate_verified_operator_session_gate_decision(probe) for probe in probes.values())
+        and probes["public"]["decision"] == DECISION_RESTRICT
+        and probes["public"]["runtime_mode"] == PUBLIC_MODE_ID
+        and probes["allowed"]["decision"] == DECISION_ALLOW_SESSION
+        and probes["allowed"]["runtime_mode"] == PRIVATE_MODE_ID
+        and probes["allowed"]["private_authorized_scope_activated"] is True
+        and probes["allowed"]["private_core_access_granted"] is True
+        and probes["missing_identity"]["decision"] == DECISION_BLOCK
+        and probes["missing_authorization"]["decision"] == DECISION_REFUSE
+        and probes["missing_context"]["decision"] == DECISION_SUSPEND_OR_LIMIT
+        and probes["missing_verification"]["decision"] == DECISION_DECLARE_LIMIT
+        and probes["missing_trace"]["decision"] == DECISION_SUSPEND_OR_LIMIT
+        and probes["external_command"]["decision"] == DECISION_BLOCK
+        and probes["external_command"]["external_command_authority_granted"] is False
+        and probes["external_command"]["private_authorized_scope_activated"] is False
+    )
+    return _case(
+        "TASK_5_SESSION_GATE_DIRECT_REGRESSION_PROBES_VALID",
+        passed,
+        {"direct_regression_probes_valid": True},
+        {name: {"decision": probe["decision"], "record": probe["decision_record_id"]} for name, probe in probes.items()},
+        "TASK_5_SESSION_GATE_DIRECT_REGRESSION_PROBES_INVALID",
+    )
+
+
+def _validate_task_3_implementation_still_valid_case() -> dict[str, Any]:
+    runtime = build_verified_operator_session_gate_implementation_report()
+    persisted = _load_json(TASK_3_REPORT_PATH)
+    source_validation = _load_json(SOURCE_VALIDATION_REPORT_PATH)
+
+    passed = (
+        validate_verified_operator_session_gate_implementation_report(runtime)
+        and validate_verified_operator_session_gate_implementation_report(persisted)
+        and runtime.get("implementation_id") == persisted.get("implementation_id") == source_validation.get("source_implementation_id")
+        and runtime.get("implementation_signature") == persisted.get("implementation_signature") == source_validation.get("source_implementation_signature")
+        and runtime.get("task_3_signature") == persisted.get("task_3_signature") == task_3_signature()
+        and persisted.get("next_stage") == SOURCE_TASK_ID
+        and persisted.get("pass_count") == 9
+        and persisted.get("fail_count") == 0
+    )
+    return _case(
+        "TASK_3_SESSION_GATE_IMPLEMENTATION_REMAINS_VALID",
+        passed,
+        {"task_3_implementation_valid": True},
+        {
+            "runtime_implementation_id": runtime.get("implementation_id"),
+            "persisted_implementation_id": persisted.get("implementation_id"),
+            "source_validation_implementation_id": source_validation.get("source_implementation_id"),
+            "persisted_next_stage": persisted.get("next_stage"),
+        },
+        "TASK_3_SESSION_GATE_IMPLEMENTATION_NOT_VALID",
+    )
+
+
+def _validate_task_2_scope_lock_still_valid_case() -> dict[str, Any]:
+    runtime = build_objective_scope_lock_report()
+    persisted = _load_json(TASK_2_REPORT_PATH)
+
+    passed = (
+        validate_objective_scope_lock_report(runtime)
+        and validate_objective_scope_lock_report(persisted)
+        and runtime.get("scope_lock_id") == persisted.get("scope_lock_id") == SCOPE_LOCK_ID
+        and runtime.get("selected_objective_id") == persisted.get("selected_objective_id") == SELECTED_OBJECTIVE_ID
+        and runtime.get("scope_lock_signature") == persisted.get("scope_lock_signature")
+        and runtime.get("task_2_signature") == persisted.get("task_2_signature") == task_2_signature()
+        and persisted.get("next_stage") == TASK_3_ID
+        and persisted.get("implementation_allowed_next") is True
+    )
+    return _case(
+        "TASK_2_SCOPE_LOCK_REMAINS_VALID",
+        passed,
+        {"task_2_scope_lock_valid": True},
+        {
+            "runtime_scope_lock_id": runtime.get("scope_lock_id"),
+            "persisted_scope_lock_id": persisted.get("scope_lock_id"),
+            "persisted_next_stage": persisted.get("next_stage"),
+        },
+        "TASK_2_SCOPE_LOCK_NOT_VALID",
+    )
+
+
+def _validate_task_1_governed_opening_still_valid_case() -> dict[str, Any]:
+    runtime = build_governed_opening_report()
+    persisted = _load_json(TASK_1_REPORT_PATH)
+
+    passed = (
+        validate_governed_opening_report(runtime)
+        and validate_governed_opening_report(persisted)
+        and runtime.get("opening_id") == persisted.get("opening_id")
+        and runtime.get("opening_signature") == persisted.get("opening_signature")
+        and runtime.get("task_1_signature") == persisted.get("task_1_signature") == task_1_signature()
+        and persisted.get("opening_status") == "OPEN"
+        and persisted.get("next_stage") == TASK_2_ID
+        and persisted.get("implementation_allowed_at_task_1") is False
+    )
+    return _case(
+        "TASK_1_GOVERNED_OPENING_REMAINS_VALID",
+        passed,
+        {"task_1_governed_opening_valid": True},
+        {
+            "runtime_opening_id": runtime.get("opening_id"),
+            "persisted_opening_id": persisted.get("opening_id"),
+            "persisted_next_stage": persisted.get("next_stage"),
+        },
+        "TASK_1_GOVERNED_OPENING_NOT_VALID",
+    )
+
+
+def _validate_transition_and_budget_case() -> dict[str, Any]:
+    validation = _load_json(SOURCE_VALIDATION_REPORT_PATH)
+    passed = (
+        validation.get("next_stage") == TASK_ID
+        and SOURCE_NEXT_STAGE == TASK_ID
+        and NEXT_STAGE == "MILESTONE_31_TASK_6_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_FINAL_CLOSURE_V1"
+        and validation.get("task_budget_max") == TASK_BUDGET_MAX == 8
+        and validation.get("current_task_number") == SOURCE_CURRENT_TASK_NUMBER == 4
+        and CURRENT_TASK_NUMBER == 5
+        and SOURCE_GENERATED_ARTIFACT_COUNT == 5
+        and GENERATED_ARTIFACT_COUNT == 5
+    )
+    return _case(
+        "TASK_5_TRANSITION_AND_BUDGET_VALID",
+        passed,
+        {"source_next_stage": TASK_ID, "next_stage": NEXT_STAGE, "task_budget_max": 8, "current_task_number": 5},
+        {
+            "validation_next_stage": validation.get("next_stage"),
+            "integration_next_stage": NEXT_STAGE,
+            "task_budget_max": TASK_BUDGET_MAX,
+            "source_current_task_number": validation.get("current_task_number"),
+            "current_task_number": CURRENT_TASK_NUMBER,
+        },
+        "TASK_5_TRANSITION_AND_BUDGET_INVALID",
+    )
+
+
+def run_verified_operator_session_gate_regression_integration() -> dict[str, Any]:
+    integration_cases = [
+        _validate_validation_report_case(),
+        _validate_runtime_stability_case(),
+        _validate_artifact_set_case(),
+        _validate_manifest_case(),
+        _validate_validation_case_set_case(),
+        _validate_direct_regression_probes_case(),
+        _validate_task_3_implementation_still_valid_case(),
+        _validate_task_2_scope_lock_still_valid_case(),
+        _validate_task_1_governed_opening_still_valid_case(),
+        _validate_transition_and_budget_case(),
+    ]
+
+    pass_count = sum(1 for case in integration_cases if case["passed"])
+    fail_count = len(integration_cases) - pass_count
+    integration_passed = (
+        len(integration_cases) == INTEGRATION_CASE_COUNT
+        and pass_count == REQUIRED_PASS_COUNT
+        and fail_count == REQUIRED_FAIL_COUNT
+    )
+
+    validation_report = _load_json(SOURCE_VALIDATION_REPORT_PATH)
+
+    report = {
+        "task_id": TASK_ID,
+        "source_task_id": SOURCE_TASK_ID,
+        "source_implementation_task_id": TASK_3_ID,
+        "source_scope_task_id": SOURCE_SCOPE_TASK_ID,
+        "selected_objective_id": SELECTED_OBJECTIVE_ID,
+        "selected_objective_status": SELECTED_OBJECTIVE_STATUS,
+        "scope_lock_id": SCOPE_LOCK_ID,
+        "implementation_revision": IMPLEMENTATION_REVISION,
+        "validation_revision": VALIDATION_REVISION,
+        "regression_integration_revision": REGRESSION_INTEGRATION_REVISION,
+        "task_1_signature": task_1_signature(),
+        "task_2_signature": task_2_signature(),
+        "task_3_signature": task_3_signature(),
+        "task_4_signature": task_4_signature(),
+        "task_5_signature": task_5_signature(),
+        "source_validation_id": validation_report.get("validation_id"),
+        "source_validation_signature": validation_report.get("validation_signature"),
+        "source_validation_status": validation_report.get("validation_status"),
+        "source_validation_passed": validation_report.get("validation_passed"),
+        "source_implementation_id": validation_report.get("source_implementation_id"),
+        "source_implementation_signature": validation_report.get("source_implementation_signature"),
+        "source_implementation_status": validation_report.get("source_implementation_status"),
+        "source_session_gate_mode_id": validation_report.get("source_session_gate_mode_id"),
+        "source_session_case_count": validation_report.get("source_session_case_count"),
+        "source_runtime_cases_valid": validation_report.get("source_runtime_cases_valid"),
+        "source_pass_count": validation_report.get("source_pass_count"),
+        "source_fail_count": validation_report.get("source_fail_count"),
+        "source_private_core_access_without_verified_manuel_allowed": validation_report.get("source_private_core_access_without_verified_manuel_allowed"),
+        "source_unverified_manuel_assumption_allowed": validation_report.get("source_unverified_manuel_assumption_allowed"),
+        "source_external_command_authority_allowed": validation_report.get("source_external_command_authority_allowed"),
+        "source_session_authorization_without_valid_authorization_allowed": validation_report.get("source_session_authorization_without_valid_authorization_allowed"),
+        "source_session_authorization_without_context_allowed": validation_report.get("source_session_authorization_without_context_allowed"),
+        "source_session_authorization_without_verification_allowed": validation_report.get("source_session_authorization_without_verification_allowed"),
+        "integration_status": INTEGRATION_STATUS if integration_passed else "INVALID",
+        "integration_case_count": len(integration_cases),
+        "required_pass_count": REQUIRED_PASS_COUNT,
+        "required_fail_count": REQUIRED_FAIL_COUNT,
+        "pass_count": pass_count,
+        "fail_count": fail_count,
+        "integration_passed": integration_passed,
+        "integration_cases": integration_cases,
+        "task_budget_max": TASK_BUDGET_MAX,
+        "current_task_number": CURRENT_TASK_NUMBER,
+        "generated_artifact_count": GENERATED_ARTIFACT_COUNT,
+        "next_stage": NEXT_STAGE,
+    }
+
+    report["integration_id"] = "MILESTONE-31-SESSION-GATE-INTEGRATION-" + _stable_digest(report)
+    report["integration_signature"] = _stable_digest(
+        {
+            "integration_id": report["integration_id"],
+            "source_validation_id": report["source_validation_id"],
+            "source_validation_signature": report["source_validation_signature"],
+            "source_implementation_id": report["source_implementation_id"],
+            "source_implementation_signature": report["source_implementation_signature"],
+            "task_4_signature": report["task_4_signature"],
+            "task_5_signature": report["task_5_signature"],
+            "integration_cases": integration_cases,
+            "regression_integration_revision": REGRESSION_INTEGRATION_REVISION,
+            "next_stage": NEXT_STAGE,
+        }
+    )
+    return report
+
+
+def validate_verified_operator_session_gate_regression_integration_report(report: Mapping[str, Any]) -> bool:
+    if report.get("task_id") != TASK_ID:
+        return False
+    if report.get("source_task_id") != SOURCE_TASK_ID:
+        return False
+    if report.get("source_implementation_task_id") != TASK_3_ID:
+        return False
+    if report.get("source_scope_task_id") != SOURCE_SCOPE_TASK_ID:
+        return False
+    if report.get("selected_objective_id") != SELECTED_OBJECTIVE_ID:
+        return False
+    if report.get("selected_objective_status") != SELECTED_OBJECTIVE_STATUS:
+        return False
+    if report.get("scope_lock_id") != SCOPE_LOCK_ID:
+        return False
+    if report.get("implementation_revision") != IMPLEMENTATION_REVISION:
+        return False
+    if report.get("validation_revision") != VALIDATION_REVISION:
+        return False
+    if report.get("regression_integration_revision") != REGRESSION_INTEGRATION_REVISION:
+        return False
+    if report.get("task_1_signature") != task_1_signature():
+        return False
+    if report.get("task_2_signature") != task_2_signature():
+        return False
+    if report.get("task_3_signature") != task_3_signature():
+        return False
+    if report.get("task_4_signature") != task_4_signature():
+        return False
+    if report.get("task_5_signature") != task_5_signature():
+        return False
+    if report.get("source_validation_status") != VALIDATION_STATUS:
+        return False
+    if report.get("source_validation_passed") is not True:
+        return False
+    if report.get("source_implementation_status") != "READY":
+        return False
+    if report.get("source_session_gate_mode_id") != SESSION_GATE_MODE_ID:
+        return False
+    if report.get("source_session_case_count") != SESSION_CASE_COUNT:
+        return False
+    if report.get("source_runtime_cases_valid") is not True:
+        return False
+    if report.get("source_pass_count") != 9:
+        return False
+    if report.get("source_fail_count") != 0:
+        return False
+    hard_false_fields = [
+        "source_private_core_access_without_verified_manuel_allowed",
+        "source_unverified_manuel_assumption_allowed",
+        "source_external_command_authority_allowed",
+        "source_session_authorization_without_valid_authorization_allowed",
+        "source_session_authorization_without_context_allowed",
+        "source_session_authorization_without_verification_allowed",
+    ]
+    if any(report.get(field) is not False for field in hard_false_fields):
+        return False
+    if report.get("integration_status") != INTEGRATION_STATUS:
+        return False
+    if report.get("integration_case_count") != INTEGRATION_CASE_COUNT:
+        return False
+    if report.get("pass_count") != REQUIRED_PASS_COUNT:
+        return False
+    if report.get("fail_count") != REQUIRED_FAIL_COUNT:
+        return False
+    if report.get("integration_passed") is not True:
+        return False
+    if not all(case.get("passed") is True for case in report.get("integration_cases", [])):
+        return False
+    if report.get("task_budget_max") != TASK_BUDGET_MAX:
+        return False
+    if report.get("current_task_number") != CURRENT_TASK_NUMBER:
+        return False
+    if report.get("generated_artifact_count") != GENERATED_ARTIFACT_COUNT:
+        return False
+    if report.get("next_stage") != NEXT_STAGE:
+        return False
+    return bool(report.get("integration_id") and report.get("integration_signature"))
+
+
+def render_integration_markdown(report: Mapping[str, Any]) -> str:
+    lines = [
+        "# Milestone 31 Task 5 Verified Operator Authorization Session Gate Regression Integration",
+        "",
+        f"TASK_ID={report.get('task_id')}",
+        f"SOURCE_TASK_ID={report.get('source_task_id')}",
+        f"INTEGRATION_ID={report.get('integration_id')}",
+        f"INTEGRATION_SIGNATURE={report.get('integration_signature')}",
+        f"SOURCE_VALIDATION_ID={report.get('source_validation_id')}",
+        f"SOURCE_VALIDATION_SIGNATURE={report.get('source_validation_signature')}",
+        f"INTEGRATION_STATUS={report.get('integration_status')}",
+        f"INTEGRATION_CASE_COUNT={report.get('integration_case_count')}",
+        f"PASS_COUNT={report.get('pass_count')}",
+        f"FAIL_COUNT={report.get('fail_count')}",
+        f"NEXT_STAGE={report.get('next_stage')}",
+        "",
+        "## Integration cases",
+    ]
+    for case in report.get("integration_cases", []):
+        lines.append(f"- {case['case_id']} passed={str(case['passed']).lower()}")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def write_task_5_artifacts(base_dir: str | Path = "examples/milestone-31/verified-operator-authorization-session-gate-regression-integration-v1") -> dict[str, Any]:
+    output_dir = Path(base_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    report = run_verified_operator_session_gate_regression_integration()
+
+    integration_cases = {
+        "task_id": TASK_ID,
+        "integration_id": report["integration_id"],
+        "integration_status": report["integration_status"],
+        "integration_case_count": report["integration_case_count"],
+        "integration_cases": report["integration_cases"],
+    }
+
+    manifest = {
+        "task_id": TASK_ID,
+        "source_task_id": SOURCE_TASK_ID,
+        "source_implementation_task_id": TASK_3_ID,
+        "source_scope_task_id": SOURCE_SCOPE_TASK_ID,
+        "selected_objective_id": SELECTED_OBJECTIVE_ID,
+        "selected_objective_status": SELECTED_OBJECTIVE_STATUS,
+        "scope_lock_id": SCOPE_LOCK_ID,
+        "implementation_revision": IMPLEMENTATION_REVISION,
+        "validation_revision": VALIDATION_REVISION,
+        "regression_integration_revision": REGRESSION_INTEGRATION_REVISION,
+        "task_1_signature": task_1_signature(),
+        "task_2_signature": task_2_signature(),
+        "task_3_signature": task_3_signature(),
+        "task_4_signature": task_4_signature(),
+        "task_5_signature": task_5_signature(),
+        "source_validation_id": report["source_validation_id"],
+        "source_validation_signature": report["source_validation_signature"],
+        "source_implementation_id": report["source_implementation_id"],
+        "source_implementation_signature": report["source_implementation_signature"],
+        "integration_id": report["integration_id"],
+        "integration_signature": report["integration_signature"],
+        "integration_status": report["integration_status"],
+        "integration_passed": report["integration_passed"],
+        "integration_case_count": report["integration_case_count"],
+        "pass_count": report["pass_count"],
+        "fail_count": report["fail_count"],
+        "generated_artifact_count": GENERATED_ARTIFACT_COUNT,
+        "next_stage": NEXT_STAGE,
+    }
+
+    (output_dir / "task-5-regression-integration-report.json").write_text(
+        json.dumps(report, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    (output_dir / "task-5-regression-integration-report.md").write_text(
+        render_integration_markdown(report),
+        encoding="utf-8",
+    )
+    (output_dir / "task-5-regression-integration-cases.json").write_text(
+        json.dumps(integration_cases, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    (output_dir / "task-5-manifest.json").write_text(
+        json.dumps(manifest, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    (output_dir / "task-5-index.txt").write_text(
+        "\n".join(
+            [
+                "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_READY=true",
+                f"TASK_ID={TASK_ID}",
+                f"SOURCE_TASK_ID={SOURCE_TASK_ID}",
+                f"SOURCE_IMPLEMENTATION_TASK_ID={TASK_3_ID}",
+                f"SOURCE_SCOPE_TASK_ID={SOURCE_SCOPE_TASK_ID}",
+                f"SELECTED_OBJECTIVE_ID={SELECTED_OBJECTIVE_ID}",
+                f"SELECTED_OBJECTIVE_STATUS={SELECTED_OBJECTIVE_STATUS}",
+                f"SCOPE_LOCK_ID={SCOPE_LOCK_ID}",
+                f"IMPLEMENTATION_REVISION={IMPLEMENTATION_REVISION}",
+                f"VALIDATION_REVISION={VALIDATION_REVISION}",
+                f"REGRESSION_INTEGRATION_REVISION={REGRESSION_INTEGRATION_REVISION}",
+                f"TASK_1_SIGNATURE={task_1_signature()}",
+                f"TASK_2_SIGNATURE={task_2_signature()}",
+                f"TASK_3_SIGNATURE={task_3_signature()}",
+                f"TASK_4_SIGNATURE={task_4_signature()}",
+                f"TASK_5_SIGNATURE={task_5_signature()}",
+                f"SOURCE_VALIDATION_ID={report['source_validation_id']}",
+                f"SOURCE_VALIDATION_SIGNATURE={report['source_validation_signature']}",
+                f"SOURCE_VALIDATION_STATUS={report['source_validation_status']}",
+                f"SOURCE_VALIDATION_PASSED={str(report['source_validation_passed']).lower()}",
+                f"SOURCE_IMPLEMENTATION_ID={report['source_implementation_id']}",
+                f"SOURCE_IMPLEMENTATION_SIGNATURE={report['source_implementation_signature']}",
+                f"SOURCE_IMPLEMENTATION_STATUS={report['source_implementation_status']}",
+                f"SOURCE_SESSION_GATE_MODE_ID={report['source_session_gate_mode_id']}",
+                f"SOURCE_SESSION_CASE_COUNT={report['source_session_case_count']}",
+                f"SOURCE_RUNTIME_CASES_VALID={str(report['source_runtime_cases_valid']).lower()}",
+                f"SOURCE_PASS_COUNT={report['source_pass_count']}",
+                f"SOURCE_FAIL_COUNT={report['source_fail_count']}",
+                f"SOURCE_PRIVATE_CORE_ACCESS_WITHOUT_VERIFIED_MANUEL_ALLOWED={str(report['source_private_core_access_without_verified_manuel_allowed']).lower()}",
+                f"SOURCE_UNVERIFIED_MANUEL_ASSUMPTION_ALLOWED={str(report['source_unverified_manuel_assumption_allowed']).lower()}",
+                f"SOURCE_EXTERNAL_COMMAND_AUTHORITY_ALLOWED={str(report['source_external_command_authority_allowed']).lower()}",
+                f"SOURCE_SESSION_AUTHORIZATION_WITHOUT_VALID_AUTHORIZATION_ALLOWED={str(report['source_session_authorization_without_valid_authorization_allowed']).lower()}",
+                f"SOURCE_SESSION_AUTHORIZATION_WITHOUT_CONTEXT_ALLOWED={str(report['source_session_authorization_without_context_allowed']).lower()}",
+                f"SOURCE_SESSION_AUTHORIZATION_WITHOUT_VERIFICATION_ALLOWED={str(report['source_session_authorization_without_verification_allowed']).lower()}",
+                f"INTEGRATION_ID={report['integration_id']}",
+                f"INTEGRATION_SIGNATURE={report['integration_signature']}",
+                f"INTEGRATION_STATUS={report['integration_status']}",
+                f"INTEGRATION_CASE_COUNT={report['integration_case_count']}",
+                f"PASS_COUNT={report['pass_count']}",
+                f"FAIL_COUNT={report['fail_count']}",
+                f"INTEGRATION_PASSED={str(report['integration_passed']).lower()}",
+                f"TASK_BUDGET_MAX={TASK_BUDGET_MAX}",
+                f"CURRENT_TASK_NUMBER={CURRENT_TASK_NUMBER}",
+                f"GENERATED_ARTIFACT_COUNT={GENERATED_ARTIFACT_COUNT}",
+                f"NEXT_STAGE={NEXT_STAGE}",
+                "",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    return {"report": report, "manifest": manifest, "integration_cases": integration_cases, "output_dir": str(output_dir)}
+
+
+def task_5_status_lines() -> tuple[str, ...]:
+    report = run_verified_operator_session_gate_regression_integration()
+    return (
+        "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_READY=true",
+        f"MILESTONE_31_TASK_5_TASK_ID={TASK_ID}",
+        f"MILESTONE_31_TASK_5_SOURCE_TASK_ID={SOURCE_TASK_ID}",
+        f"MILESTONE_31_TASK_5_SOURCE_IMPLEMENTATION_TASK_ID={TASK_3_ID}",
+        f"MILESTONE_31_TASK_5_SOURCE_SCOPE_TASK_ID={SOURCE_SCOPE_TASK_ID}",
+        f"MILESTONE_31_TASK_5_SELECTED_OBJECTIVE_ID={SELECTED_OBJECTIVE_ID}",
+        f"MILESTONE_31_TASK_5_SELECTED_OBJECTIVE_STATUS={SELECTED_OBJECTIVE_STATUS}",
+        f"MILESTONE_31_TASK_5_SCOPE_LOCK_ID={SCOPE_LOCK_ID}",
+        f"MILESTONE_31_TASK_5_IMPLEMENTATION_REVISION={IMPLEMENTATION_REVISION}",
+        f"MILESTONE_31_TASK_5_VALIDATION_REVISION={VALIDATION_REVISION}",
+        f"MILESTONE_31_TASK_5_REGRESSION_INTEGRATION_REVISION={REGRESSION_INTEGRATION_REVISION}",
+        f"MILESTONE_31_TASK_5_TASK_1_SIGNATURE={task_1_signature()}",
+        f"MILESTONE_31_TASK_5_TASK_2_SIGNATURE={task_2_signature()}",
+        f"MILESTONE_31_TASK_5_TASK_3_SIGNATURE={task_3_signature()}",
+        f"MILESTONE_31_TASK_5_TASK_4_SIGNATURE={task_4_signature()}",
+        f"MILESTONE_31_TASK_5_TASK_5_SIGNATURE={task_5_signature()}",
+        f"MILESTONE_31_TASK_5_SOURCE_VALIDATION_ID={report['source_validation_id']}",
+        f"MILESTONE_31_TASK_5_SOURCE_VALIDATION_SIGNATURE={report['source_validation_signature']}",
+        f"MILESTONE_31_TASK_5_SOURCE_VALIDATION_STATUS={report['source_validation_status']}",
+        f"MILESTONE_31_TASK_5_SOURCE_VALIDATION_PASSED={str(report['source_validation_passed']).lower()}",
+        f"MILESTONE_31_TASK_5_SOURCE_IMPLEMENTATION_ID={report['source_implementation_id']}",
+        f"MILESTONE_31_TASK_5_SOURCE_IMPLEMENTATION_SIGNATURE={report['source_implementation_signature']}",
+        f"MILESTONE_31_TASK_5_SOURCE_IMPLEMENTATION_STATUS={report['source_implementation_status']}",
+        f"MILESTONE_31_TASK_5_SOURCE_SESSION_GATE_MODE_ID={report['source_session_gate_mode_id']}",
+        f"MILESTONE_31_TASK_5_SOURCE_SESSION_CASE_COUNT={report['source_session_case_count']}",
+        f"MILESTONE_31_TASK_5_SOURCE_RUNTIME_CASES_VALID={str(report['source_runtime_cases_valid']).lower()}",
+        f"MILESTONE_31_TASK_5_SOURCE_PASS_COUNT={report['source_pass_count']}",
+        f"MILESTONE_31_TASK_5_SOURCE_FAIL_COUNT={report['source_fail_count']}",
+        f"MILESTONE_31_TASK_5_SOURCE_PRIVATE_CORE_ACCESS_WITHOUT_VERIFIED_MANUEL_ALLOWED={str(report['source_private_core_access_without_verified_manuel_allowed']).lower()}",
+        f"MILESTONE_31_TASK_5_SOURCE_UNVERIFIED_MANUEL_ASSUMPTION_ALLOWED={str(report['source_unverified_manuel_assumption_allowed']).lower()}",
+        f"MILESTONE_31_TASK_5_SOURCE_EXTERNAL_COMMAND_AUTHORITY_ALLOWED={str(report['source_external_command_authority_allowed']).lower()}",
+        f"MILESTONE_31_TASK_5_SOURCE_SESSION_AUTHORIZATION_WITHOUT_VALID_AUTHORIZATION_ALLOWED={str(report['source_session_authorization_without_valid_authorization_allowed']).lower()}",
+        f"MILESTONE_31_TASK_5_SOURCE_SESSION_AUTHORIZATION_WITHOUT_CONTEXT_ALLOWED={str(report['source_session_authorization_without_context_allowed']).lower()}",
+        f"MILESTONE_31_TASK_5_SOURCE_SESSION_AUTHORIZATION_WITHOUT_VERIFICATION_ALLOWED={str(report['source_session_authorization_without_verification_allowed']).lower()}",
+        f"MILESTONE_31_TASK_5_INTEGRATION_ID={report['integration_id']}",
+        f"MILESTONE_31_TASK_5_INTEGRATION_SIGNATURE={report['integration_signature']}",
+        f"MILESTONE_31_TASK_5_INTEGRATION_STATUS={report['integration_status']}",
+        f"MILESTONE_31_TASK_5_INTEGRATION_CASE_COUNT={report['integration_case_count']}",
+        f"MILESTONE_31_TASK_5_PASS_COUNT={report['pass_count']}",
+        f"MILESTONE_31_TASK_5_FAIL_COUNT={report['fail_count']}",
+        f"MILESTONE_31_TASK_5_INTEGRATION_PASSED={str(report['integration_passed']).lower()}",
+        f"MILESTONE_31_TASK_5_TASK_BUDGET_MAX={TASK_BUDGET_MAX}",
+        f"MILESTONE_31_TASK_5_CURRENT_TASK_NUMBER={CURRENT_TASK_NUMBER}",
+        f"MILESTONE_31_TASK_5_GENERATED_ARTIFACT_COUNT={GENERATED_ARTIFACT_COUNT}",
+        f"MILESTONE_31_TASK_5_NEXT_STAGE={NEXT_STAGE}",
+    )
+
+
+if __name__ == "__main__":
+    write_task_5_artifacts()
+    for line in task_5_status_lines():
+        print(line)

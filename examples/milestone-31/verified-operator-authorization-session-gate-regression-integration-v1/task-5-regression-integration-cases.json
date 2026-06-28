@@ -1,0 +1,236 @@
+{
+  "integration_case_count": 10,
+  "integration_cases": [
+    {
+      "case_id": "TASK_4_SESSION_GATE_VALIDATION_REPORT_VALID",
+      "expected": {
+        "fail_count": 0,
+        "pass_count": 10,
+        "validation_passed": true,
+        "validation_status": "VALID"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "next_stage": "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1",
+        "pass_count": 10,
+        "validation_passed": true,
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_SESSION_GATE_VALIDATION_RUNTIME_STABILITY_VALID",
+      "expected": {
+        "stable_validation": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "pass_count": 10,
+        "persisted_task_4_signature": "5722CDF4DCFE8E3A",
+        "persisted_valid": true,
+        "persisted_validation_id": "MILESTONE-31-SESSION-GATE-VALIDATION-AB3C9DF583DB197D",
+        "persisted_validation_signature": "69DC6BE52E2AA923",
+        "runtime_task_4_signature": "5722CDF4DCFE8E3A",
+        "runtime_valid": true,
+        "runtime_validation_id": "MILESTONE-31-SESSION-GATE-VALIDATION-AB3C9DF583DB197D",
+        "runtime_validation_signature": "69DC6BE52E2AA923",
+        "scope_lock_id": "MILESTONE_31_SCOPE_JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+        "selected_objective_id": "JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+        "selected_objective_status": "SELECTED_AND_SCOPE_LOCKED",
+        "source_current_task_number": 4,
+        "source_external_command_authority_allowed": false,
+        "source_fail_count": 0,
+        "source_implementation_complete": true,
+        "source_implementation_id": "MILESTONE-31-VERIFIED-OPERATOR-SESSION-GATE-EF7EB1169D27D833",
+        "source_implementation_signature": "4C77D6FEA429C734",
+        "source_implementation_started": true,
+        "source_implementation_status": "READY",
+        "source_next_stage": "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1",
+        "source_pass_count": 9,
+        "source_private_core_access_without_verified_manuel_allowed": false,
+        "source_runtime_cases_valid": true,
+        "source_session_authorization_without_context_allowed": false,
+        "source_session_authorization_without_valid_authorization_allowed": false,
+        "source_session_authorization_without_verification_allowed": false,
+        "source_session_case_count": 9,
+        "source_session_gate_mode_id": "VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+        "source_task_id": "MILESTONE_31_TASK_4_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_VALIDATION_V1",
+        "source_unverified_manuel_assumption_allowed": false,
+        "stable_validation": true,
+        "task_budget_max": 8,
+        "validation_case_count": 10,
+        "validation_passed": true,
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_SESSION_GATE_VALIDATION_ARTIFACT_SET_PRESENT",
+      "expected": {
+        "artifact_count": 5,
+        "missing": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "artifact_count": 5,
+        "missing": [],
+        "readable_count": 5
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_SESSION_GATE_VALIDATION_MANIFEST_CONSISTENCY_VALID",
+      "expected": {
+        "manifest_matches_validation_report": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "manifest_next_stage": "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1",
+        "manifest_status": "VALID",
+        "manifest_validation_id": "MILESTONE-31-SESSION-GATE-VALIDATION-AB3C9DF583DB197D",
+        "report_validation_id": "MILESTONE-31-SESSION-GATE-VALIDATION-AB3C9DF583DB197D"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_SESSION_GATE_VALIDATION_CASE_SET_VALID",
+      "expected": {
+        "case_ids": [
+          "TASK_3_SESSION_GATE_ARTIFACT_SET_PRESENT",
+          "TASK_3_SESSION_GATE_DECISION_MATRIX_VALID",
+          "TASK_3_SESSION_GATE_DIRECT_FAIL_CLOSED_PROBES_VALID",
+          "TASK_3_SESSION_GATE_IMPLEMENTATION_REPORT_VALID",
+          "TASK_3_SESSION_GATE_INDEX_MARKERS_VALID",
+          "TASK_3_SESSION_GATE_MANIFEST_CONSISTENCY_VALID",
+          "TASK_3_SESSION_GATE_RUNTIME_CASE_SET_VALID",
+          "TASK_3_SESSION_GATE_RUNTIME_STABILITY_VALID",
+          "TASK_3_SESSION_GATE_SOURCE_SCOPE_CHAIN_VALID",
+          "TASK_3_SESSION_GATE_TRACE_SEMANTICS_VALID"
+        ],
+        "validation_case_count": 10
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "case_ids": [
+          "TASK_3_SESSION_GATE_ARTIFACT_SET_PRESENT",
+          "TASK_3_SESSION_GATE_DECISION_MATRIX_VALID",
+          "TASK_3_SESSION_GATE_DIRECT_FAIL_CLOSED_PROBES_VALID",
+          "TASK_3_SESSION_GATE_IMPLEMENTATION_REPORT_VALID",
+          "TASK_3_SESSION_GATE_INDEX_MARKERS_VALID",
+          "TASK_3_SESSION_GATE_MANIFEST_CONSISTENCY_VALID",
+          "TASK_3_SESSION_GATE_RUNTIME_CASE_SET_VALID",
+          "TASK_3_SESSION_GATE_RUNTIME_STABILITY_VALID",
+          "TASK_3_SESSION_GATE_SOURCE_SCOPE_CHAIN_VALID",
+          "TASK_3_SESSION_GATE_TRACE_SEMANTICS_VALID"
+        ],
+        "validation_case_count": 10
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_SESSION_GATE_DIRECT_REGRESSION_PROBES_VALID",
+      "expected": {
+        "direct_regression_probes_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "allowed": {
+          "decision": "ALLOW_AUTHORIZED_PRIVATE_SESSION",
+          "record": "M31-SESSION-GATE-DECISION-42E48F07D41C6BFE"
+        },
+        "external_command": {
+          "decision": "BLOCK",
+          "record": "M31-SESSION-GATE-DECISION-A2C084A1333F6B9F"
+        },
+        "missing_authorization": {
+          "decision": "REFUSE",
+          "record": "M31-SESSION-GATE-DECISION-BF5AE2FA0EA3E6CE"
+        },
+        "missing_context": {
+          "decision": "SUSPEND_OR_LIMIT",
+          "record": "M31-SESSION-GATE-DECISION-75E5F1655ED6E947"
+        },
+        "missing_identity": {
+          "decision": "BLOCK",
+          "record": "M31-SESSION-GATE-DECISION-3487AAC4D4289C66"
+        },
+        "missing_trace": {
+          "decision": "SUSPEND_OR_LIMIT",
+          "record": "M31-SESSION-GATE-DECISION-36F3EA4AE6463CBE"
+        },
+        "missing_verification": {
+          "decision": "DECLARE_LIMIT",
+          "record": "M31-SESSION-GATE-DECISION-78446A4964BE036E"
+        },
+        "public": {
+          "decision": "RESTRICT_PUBLIC_LIMITED",
+          "record": "M31-SESSION-GATE-DECISION-CF70501C699E85D3"
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_IMPLEMENTATION_REMAINS_VALID",
+      "expected": {
+        "task_3_implementation_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "persisted_implementation_id": "MILESTONE-31-VERIFIED-OPERATOR-SESSION-GATE-EF7EB1169D27D833",
+        "persisted_next_stage": "MILESTONE_31_TASK_4_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_VALIDATION_V1",
+        "runtime_implementation_id": "MILESTONE-31-VERIFIED-OPERATOR-SESSION-GATE-EF7EB1169D27D833",
+        "source_validation_implementation_id": "MILESTONE-31-VERIFIED-OPERATOR-SESSION-GATE-EF7EB1169D27D833"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_2_SCOPE_LOCK_REMAINS_VALID",
+      "expected": {
+        "task_2_scope_lock_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "persisted_next_stage": "MILESTONE_31_TASK_3_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_IMPLEMENTATION_V1",
+        "persisted_scope_lock_id": "MILESTONE_31_SCOPE_JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+        "runtime_scope_lock_id": "MILESTONE_31_SCOPE_JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_1_GOVERNED_OPENING_REMAINS_VALID",
+      "expected": {
+        "task_1_governed_opening_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "persisted_next_stage": "MILESTONE_31_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+        "persisted_opening_id": "MILESTONE-31-GOVERNED-OPENING-93F580BC9E5B3090",
+        "runtime_opening_id": "MILESTONE-31-GOVERNED-OPENING-93F580BC9E5B3090"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_TRANSITION_AND_BUDGET_VALID",
+      "expected": {
+        "current_task_number": 5,
+        "next_stage": "MILESTONE_31_TASK_6_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_FINAL_CLOSURE_V1",
+        "source_next_stage": "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1",
+        "task_budget_max": 8
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "current_task_number": 5,
+        "integration_next_stage": "MILESTONE_31_TASK_6_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_FINAL_CLOSURE_V1",
+        "source_current_task_number": 4,
+        "task_budget_max": 8,
+        "validation_next_stage": "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1"
+      },
+      "passed": true
+    }
+  ],
+  "integration_id": "MILESTONE-31-SESSION-GATE-INTEGRATION-B2F0A37FBB8D78BA",
+  "integration_status": "VALID",
+  "task_id": "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1"
+}
