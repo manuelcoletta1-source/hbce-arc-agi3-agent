@@ -1,0 +1,30 @@
+{
+  "decisions": {
+    "external_command_attempt": "BLOCK",
+    "missing_authorization": "REFUSE",
+    "missing_context": "SUSPEND_OR_LIMIT",
+    "missing_identity_private_scope": "BLOCK",
+    "missing_operator_intent": "SUSPEND_OR_LIMIT",
+    "missing_session_trace_id": "SUSPEND_OR_LIMIT",
+    "missing_verification": "DECLARE_LIMIT",
+    "private_core_forcing_without_verified_manuel": "BLOCK",
+    "public_unverified_default": "RESTRICT_PUBLIC_LIMITED",
+    "verified_authorized_contextual_verified_traceable_private_scope": "ALLOW_AUTHORIZED_PRIVATE_SESSION"
+  },
+  "hard_denials": {
+    "external_command_authority_allowed": false,
+    "private_core_access_without_verified_manuel_allowed": false,
+    "session_authorization_without_context_allowed": false,
+    "session_authorization_without_valid_authorization_allowed": false,
+    "session_authorization_without_verification_allowed": false,
+    "unverified_manuel_assumption_allowed": false
+  },
+  "runtime_modes": {
+    "private_mode_id": "PRIVATE_VERIFIED_MANUEL_AUTHORIZED_SCOPE_ONLY",
+    "public_mode_id": "PUBLIC_LIMITED_VERIFYING"
+  },
+  "scope_lock_id": "MILESTONE_31_SCOPE_JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "selected_objective_id": "JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "session_gate_mode_id": "VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "task_id": "MILESTONE_31_TASK_3_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_IMPLEMENTATION_V1"
+}
