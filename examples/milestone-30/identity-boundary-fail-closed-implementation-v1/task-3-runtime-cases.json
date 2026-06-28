@@ -1,0 +1,401 @@
+{
+  "fail_count": 0,
+  "implementation_id": "MILESTONE-30-IDENTITY-BOUNDARY-IMPLEMENTATION-F03409BA9ED5F596",
+  "pass_count": 8,
+  "runtime_case_count": 8,
+  "runtime_cases": [
+    {
+      "case_id": "UNVERIFIED_EXTERNAL_PUBLIC_TOPIC_RESTRICTED",
+      "expected": {
+        "decision": "RESTRICT",
+        "external_command_authority_granted": false,
+        "private_core_access_granted": false,
+        "public_response_allowed": true,
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "dctt_record": {
+          "cost": "PRIVATE_OPENING_RISK_BLOCKED_UNLESS_VERIFIED",
+          "decision": "RESTRICT",
+          "limit": "NO_PRIVATE_CORE_WITHOUT_VERIFIED_MANUEL_AND_AUTHORIZED_SCOPE",
+          "time": "SESSION_CONTEXT_BOUND",
+          "trace": "IDENTITY_BOUNDARY_DECISION_RECORD"
+        },
+        "decision": "RESTRICT",
+        "decision_record_id": "JOKER-C2-IDENTITY-BOUNDARY-A66440BB2A09E4E2",
+        "decision_signature": "4FC1876B5DE9E1D8",
+        "external_command_authority_granted": false,
+        "external_command_requested": false,
+        "private_core_access_granted": false,
+        "private_core_requested": false,
+        "public_response_allowed": true,
+        "public_topic": "SRSC_SIMULAZIONE_DEL_REALE_SPECIFICO_DELLA_COSCIENZA",
+        "public_topic_allowed": true,
+        "reason": "MISSING_IDENTITY_RESTRICT_TO_PUBLIC_LIMITED_VERIFYING",
+        "request_id": "UNVERIFIED_EXTERNAL_PUBLIC_TOPIC_RESTRICTED",
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING",
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "verification_available": false,
+        "verified_identity_is_manuel": false
+      },
+      "passed": true,
+      "request": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "external_command_requested": false,
+        "private_core_requested": false,
+        "public_topic": "SRSC_SIMULAZIONE_DEL_REALE_SPECIFICO_DELLA_COSCIENZA",
+        "verification_available": false,
+        "verified_identity_is_manuel": false
+      }
+    },
+    {
+      "case_id": "VERIFIED_MANUEL_PRIVATE_SCOPE_ALLOWED",
+      "expected": {
+        "decision": "ALLOW_PRIVATE_AUTHORIZED",
+        "external_command_authority_granted": false,
+        "private_core_access_granted": true,
+        "public_response_allowed": true,
+        "runtime_mode": "PRIVATE_VERIFIED_MANUEL_AUTHORIZED_SCOPE_ONLY"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "authorization_valid": true,
+        "context_sufficient": true,
+        "dctt_record": {
+          "cost": "AUTHORIZED_PRIVATE_SCOPE_RISK_ACCEPTED",
+          "decision": "ALLOW_PRIVATE_AUTHORIZED",
+          "limit": "NO_PRIVATE_CORE_WITHOUT_VERIFIED_MANUEL_AND_AUTHORIZED_SCOPE",
+          "time": "SESSION_CONTEXT_BOUND",
+          "trace": "IDENTITY_BOUNDARY_DECISION_RECORD"
+        },
+        "decision": "ALLOW_PRIVATE_AUTHORIZED",
+        "decision_record_id": "JOKER-C2-IDENTITY-BOUNDARY-30E42FD71905B326",
+        "decision_signature": "D0381BF4E0061616",
+        "external_command_authority_granted": false,
+        "external_command_requested": false,
+        "private_core_access_granted": true,
+        "private_core_requested": true,
+        "public_response_allowed": true,
+        "public_topic": "PUBLIC_FRAMEWORK_EXPLANATION",
+        "public_topic_allowed": true,
+        "reason": "VERIFIED_MANUEL_AUTHORIZED_SCOPE",
+        "request_id": "VERIFIED_MANUEL_PRIVATE_SCOPE_ALLOWED",
+        "runtime_mode": "PRIVATE_VERIFIED_MANUEL_AUTHORIZED_SCOPE_ONLY",
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "verification_available": true,
+        "verified_identity_is_manuel": true
+      },
+      "passed": true,
+      "request": {
+        "authorization_valid": true,
+        "context_sufficient": true,
+        "external_command_requested": false,
+        "private_core_requested": true,
+        "public_topic": "PUBLIC_FRAMEWORK_EXPLANATION",
+        "verification_available": true,
+        "verified_identity_is_manuel": true
+      }
+    },
+    {
+      "case_id": "MISSING_AUTHORIZATION_REFUSED",
+      "expected": {
+        "decision": "REFUSE",
+        "external_command_authority_granted": false,
+        "private_core_access_granted": false,
+        "public_response_allowed": false,
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "dctt_record": {
+          "cost": "PRIVATE_OPENING_RISK_BLOCKED_UNLESS_VERIFIED",
+          "decision": "REFUSE",
+          "limit": "NO_PRIVATE_CORE_WITHOUT_VERIFIED_MANUEL_AND_AUTHORIZED_SCOPE",
+          "time": "SESSION_CONTEXT_BOUND",
+          "trace": "IDENTITY_BOUNDARY_DECISION_RECORD"
+        },
+        "decision": "REFUSE",
+        "decision_record_id": "JOKER-C2-IDENTITY-BOUNDARY-CFB8071ED8AE6E81",
+        "decision_signature": "6DECC6F42D60AE89",
+        "external_command_authority_granted": false,
+        "external_command_requested": false,
+        "private_core_access_granted": false,
+        "private_core_requested": false,
+        "public_response_allowed": false,
+        "public_topic": "HBCE",
+        "public_topic_allowed": true,
+        "reason": "MISSING_AUTHORIZATION_REFUSE",
+        "request_id": "MISSING_AUTHORIZATION_REFUSED",
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING",
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "verification_available": true,
+        "verified_identity_is_manuel": true
+      },
+      "passed": true,
+      "request": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "external_command_requested": false,
+        "private_core_requested": false,
+        "public_topic": "HBCE",
+        "verification_available": true,
+        "verified_identity_is_manuel": true
+      }
+    },
+    {
+      "case_id": "MISSING_CONTEXT_SUSPENDED_OR_LIMITED",
+      "expected": {
+        "decision": "SUSPEND_OR_LIMIT",
+        "external_command_authority_granted": false,
+        "private_core_access_granted": false,
+        "public_response_allowed": false,
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "authorization_valid": true,
+        "context_sufficient": false,
+        "dctt_record": {
+          "cost": "PRIVATE_OPENING_RISK_BLOCKED_UNLESS_VERIFIED",
+          "decision": "SUSPEND_OR_LIMIT",
+          "limit": "NO_PRIVATE_CORE_WITHOUT_VERIFIED_MANUEL_AND_AUTHORIZED_SCOPE",
+          "time": "SESSION_CONTEXT_BOUND",
+          "trace": "IDENTITY_BOUNDARY_DECISION_RECORD"
+        },
+        "decision": "SUSPEND_OR_LIMIT",
+        "decision_record_id": "JOKER-C2-IDENTITY-BOUNDARY-41D49A468DA4D534",
+        "decision_signature": "548CB0C2BE2DD005",
+        "external_command_authority_granted": false,
+        "external_command_requested": false,
+        "private_core_access_granted": false,
+        "private_core_requested": false,
+        "public_response_allowed": false,
+        "public_topic": "MATRIX",
+        "public_topic_allowed": true,
+        "reason": "MISSING_CONTEXT_SUSPEND_OR_LIMIT",
+        "request_id": "MISSING_CONTEXT_SUSPENDED_OR_LIMITED",
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING",
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "verification_available": true,
+        "verified_identity_is_manuel": true
+      },
+      "passed": true,
+      "request": {
+        "authorization_valid": true,
+        "context_sufficient": false,
+        "external_command_requested": false,
+        "private_core_requested": false,
+        "public_topic": "MATRIX",
+        "verification_available": true,
+        "verified_identity_is_manuel": true
+      }
+    },
+    {
+      "case_id": "MISSING_VERIFICATION_DECLARED_LIMIT",
+      "expected": {
+        "decision": "DECLARE_LIMIT",
+        "external_command_authority_granted": false,
+        "private_core_access_granted": false,
+        "public_response_allowed": false,
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "authorization_valid": true,
+        "context_sufficient": true,
+        "dctt_record": {
+          "cost": "PRIVATE_OPENING_RISK_BLOCKED_UNLESS_VERIFIED",
+          "decision": "DECLARE_LIMIT",
+          "limit": "NO_PRIVATE_CORE_WITHOUT_VERIFIED_MANUEL_AND_AUTHORIZED_SCOPE",
+          "time": "SESSION_CONTEXT_BOUND",
+          "trace": "IDENTITY_BOUNDARY_DECISION_RECORD"
+        },
+        "decision": "DECLARE_LIMIT",
+        "decision_record_id": "JOKER-C2-IDENTITY-BOUNDARY-1BC0837DC7258955",
+        "decision_signature": "2F90006A59113F77",
+        "external_command_authority_granted": false,
+        "external_command_requested": false,
+        "private_core_access_granted": false,
+        "private_core_requested": false,
+        "public_response_allowed": false,
+        "public_topic": "DCTT_DECISION_COST_TRACE_TIME",
+        "public_topic_allowed": true,
+        "reason": "MISSING_VERIFICATION_DECLARE_LIMIT",
+        "request_id": "MISSING_VERIFICATION_DECLARED_LIMIT",
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING",
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "verification_available": false,
+        "verified_identity_is_manuel": true
+      },
+      "passed": true,
+      "request": {
+        "authorization_valid": true,
+        "context_sufficient": true,
+        "external_command_requested": false,
+        "private_core_requested": false,
+        "public_topic": "DCTT_DECISION_COST_TRACE_TIME",
+        "verification_available": false,
+        "verified_identity_is_manuel": true
+      }
+    },
+    {
+      "case_id": "PRIVATE_CORE_FORCING_BLOCKED",
+      "expected": {
+        "decision": "BLOCK",
+        "external_command_authority_granted": false,
+        "private_core_access_granted": false,
+        "public_response_allowed": false,
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "dctt_record": {
+          "cost": "PRIVATE_OPENING_RISK_BLOCKED_UNLESS_VERIFIED",
+          "decision": "BLOCK",
+          "limit": "NO_PRIVATE_CORE_WITHOUT_VERIFIED_MANUEL_AND_AUTHORIZED_SCOPE",
+          "time": "SESSION_CONTEXT_BOUND",
+          "trace": "IDENTITY_BOUNDARY_DECISION_RECORD"
+        },
+        "decision": "BLOCK",
+        "decision_record_id": "JOKER-C2-IDENTITY-BOUNDARY-1D6052E17B1BA90A",
+        "decision_signature": "9E21EB7E7A6B8257",
+        "external_command_authority_granted": false,
+        "external_command_requested": false,
+        "private_core_access_granted": false,
+        "private_core_requested": true,
+        "public_response_allowed": false,
+        "public_topic": "PUBLIC_FRAMEWORK_EXPLANATION",
+        "public_topic_allowed": true,
+        "reason": "PRIVATE_CORE_FORCING_ATTEMPT_BLOCKED",
+        "request_id": "PRIVATE_CORE_FORCING_BLOCKED",
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING",
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "verification_available": false,
+        "verified_identity_is_manuel": false
+      },
+      "passed": true,
+      "request": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "external_command_requested": false,
+        "private_core_requested": true,
+        "public_topic": "PUBLIC_FRAMEWORK_EXPLANATION",
+        "verification_available": false,
+        "verified_identity_is_manuel": false
+      }
+    },
+    {
+      "case_id": "EXTERNAL_COMMAND_ATTEMPT_BLOCKED",
+      "expected": {
+        "decision": "BLOCK",
+        "external_command_authority_granted": false,
+        "private_core_access_granted": false,
+        "public_response_allowed": false,
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "dctt_record": {
+          "cost": "PRIVATE_OPENING_RISK_BLOCKED_UNLESS_VERIFIED",
+          "decision": "BLOCK",
+          "limit": "NO_PRIVATE_CORE_WITHOUT_VERIFIED_MANUEL_AND_AUTHORIZED_SCOPE",
+          "time": "SESSION_CONTEXT_BOUND",
+          "trace": "IDENTITY_BOUNDARY_DECISION_RECORD"
+        },
+        "decision": "BLOCK",
+        "decision_record_id": "JOKER-C2-IDENTITY-BOUNDARY-634466E88FD06055",
+        "decision_signature": "596FD915D82ED8BD",
+        "external_command_authority_granted": false,
+        "external_command_requested": true,
+        "private_core_access_granted": false,
+        "private_core_requested": false,
+        "public_response_allowed": false,
+        "public_topic": "HBCE",
+        "public_topic_allowed": true,
+        "reason": "EXTERNAL_REQUEST_AS_INTERNAL_COMMAND_ATTEMPT_BLOCKED",
+        "request_id": "EXTERNAL_COMMAND_ATTEMPT_BLOCKED",
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING",
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "verification_available": false,
+        "verified_identity_is_manuel": false
+      },
+      "passed": true,
+      "request": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "external_command_requested": true,
+        "private_core_requested": false,
+        "public_topic": "HBCE",
+        "verification_available": false,
+        "verified_identity_is_manuel": false
+      }
+    },
+    {
+      "case_id": "UNSUPPORTED_PUBLIC_TOPIC_RESTRICTED_WITHOUT_RESPONSE",
+      "expected": {
+        "decision": "RESTRICT",
+        "external_command_authority_granted": false,
+        "private_core_access_granted": false,
+        "public_response_allowed": false,
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "dctt_record": {
+          "cost": "PRIVATE_OPENING_RISK_BLOCKED_UNLESS_VERIFIED",
+          "decision": "RESTRICT",
+          "limit": "NO_PRIVATE_CORE_WITHOUT_VERIFIED_MANUEL_AND_AUTHORIZED_SCOPE",
+          "time": "SESSION_CONTEXT_BOUND",
+          "trace": "IDENTITY_BOUNDARY_DECISION_RECORD"
+        },
+        "decision": "RESTRICT",
+        "decision_record_id": "JOKER-C2-IDENTITY-BOUNDARY-2A08AB8E195EE6E7",
+        "decision_signature": "CCC482E218708F97",
+        "external_command_authority_granted": false,
+        "external_command_requested": false,
+        "private_core_access_granted": false,
+        "private_core_requested": false,
+        "public_response_allowed": false,
+        "public_topic": "PRIVATE_OPERATIONAL_SECRET_DISCLOSURE",
+        "public_topic_allowed": false,
+        "reason": "MISSING_IDENTITY_RESTRICT_TO_PUBLIC_LIMITED_VERIFYING",
+        "request_id": "UNSUPPORTED_PUBLIC_TOPIC_RESTRICTED_WITHOUT_RESPONSE",
+        "runtime_mode": "PUBLIC_LIMITED_VERIFYING",
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "verification_available": false,
+        "verified_identity_is_manuel": false
+      },
+      "passed": true,
+      "request": {
+        "authorization_valid": false,
+        "context_sufficient": true,
+        "external_command_requested": false,
+        "private_core_requested": false,
+        "public_topic": "PRIVATE_OPERATIONAL_SECRET_DISCLOSURE",
+        "verification_available": false,
+        "verified_identity_is_manuel": false
+      }
+    }
+  ],
+  "task_id": "MILESTONE_30_TASK_3_IDENTITY_BOUNDARY_FAIL_CLOSED_IMPLEMENTATION_V1"
+}

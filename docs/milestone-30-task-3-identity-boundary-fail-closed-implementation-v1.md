@@ -1,0 +1,75 @@
+# Milestone 30 Task 3 - Identity Boundary Fail-Closed Implementation v1
+
+MILESTONE_30_TASK_3_IDENTITY_BOUNDARY_FAIL_CLOSED_IMPLEMENTATION_READY=true
+
+MILESTONE_30_TASK_3_SOURCE_TASK_ID=MILESTONE_30_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1
+
+MILESTONE_30_TASK_3_SELECTED_OBJECTIVE_ID=JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE
+MILESTONE_30_TASK_3_SCOPE_LOCK_ID=MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE
+
+MILESTONE_30_TASK_3_IMPLEMENTATION_REVISION=MILESTONE_30_IDENTITY_BOUNDARY_FAIL_CLOSED_IMPLEMENTATION_V1
+
+MILESTONE_30_TASK_3_IMPLEMENTATION_STATUS=READY
+MILESTONE_30_TASK_3_IMPLEMENTATION_STARTED=true
+MILESTONE_30_TASK_3_IMPLEMENTATION_COMPLETE=true
+
+MILESTONE_30_TASK_3_SOURCE_DEPENDENCY_VALID=true
+MILESTONE_30_TASK_3_SCOPE_RULES_VALID=true
+
+MILESTONE_30_TASK_3_RUNTIME_CASE_COUNT=8
+MILESTONE_30_TASK_3_PASS_COUNT=8
+MILESTONE_30_TASK_3_FAIL_COUNT=0
+MILESTONE_30_TASK_3_RUNTIME_CASES_VALID=true
+
+MILESTONE_30_TASK_3_PUBLIC_MODE_ID=PUBLIC_LIMITED_VERIFYING
+MILESTONE_30_TASK_3_PRIVATE_MODE_ID=PRIVATE_VERIFIED_MANUEL_AUTHORIZED_SCOPE_ONLY
+
+MILESTONE_30_TASK_3_PRIVATE_CORE_ACCESS_ALLOWED_WITHOUT_VERIFIED_MANUEL=false
+MILESTONE_30_TASK_3_UNVERIFIED_MANUEL_ASSUMPTION_ALLOWED=false
+MILESTONE_30_TASK_3_EXTERNAL_COMMAND_AUTHORITY_ALLOWED=false
+
+MILESTONE_30_TASK_3_TASK_BUDGET_MAX=8
+MILESTONE_30_TASK_3_CURRENT_TASK_NUMBER=3
+
+MILESTONE_30_TASK_3_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_30_TASK_3_PRIMARY_IMPLEMENTATION_MODULE=src/hbce_arc_agi3/milestone_30_identity_boundary_fail_closed.py
+MILESTONE_30_TASK_3_PRIMARY_TEST_MODULE=tests/test_milestone_30_identity_boundary_fail_closed.py
+MILESTONE_30_TASK_3_TASK_VALIDATION_TEST=tests/test_milestone_30_task_3_identity_boundary_fail_closed_implementation.py
+MILESTONE_30_TASK_3_ARTIFACT_DIR=examples/milestone-30/identity-boundary-fail-closed-implementation-v1
+
+MILESTONE_30_TASK_3_NEXT_STAGE=MILESTONE_30_TASK_4_IDENTITY_BOUNDARY_FAIL_CLOSED_VALIDATION_V1
+
+## Implemented runtime
+
+Task 3 implements a local identity boundary evaluator for JOKER-C2.
+
+The evaluator never presumes that the interlocutor is Manuel Coletta.
+
+Without verified Manuel identity, authorization, sufficient context and verification, the runtime remains in PUBLIC_LIMITED_VERIFYING mode.
+
+Private core access is only possible in PRIVATE_VERIFIED_MANUEL_AUTHORIZED_SCOPE_ONLY mode.
+
+External command authority is never granted by this boundary module.
+
+## Fail-closed outcomes
+
+Missing identity produces RESTRICT.
+
+Missing authorization produces REFUSE.
+
+Missing context produces SUSPEND_OR_LIMIT.
+
+Missing verification produces DECLARE_LIMIT.
+
+Private core forcing produces BLOCK.
+
+External command attempts produce BLOCK.
+
+## Public explanation boundary
+
+Public mode may explain HBCE, DCTT, ACV, Matrix, Apokalypsis and SRSC, expanded as Simulazione del Reale Specifico della Coscienza, when the requested topic is public and allowed.
+
+## Result
+
+The identity boundary runtime is implemented locally and ready for validation.

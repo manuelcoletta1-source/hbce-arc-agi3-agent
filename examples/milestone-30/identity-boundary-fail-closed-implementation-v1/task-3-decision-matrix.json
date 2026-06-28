@@ -1,0 +1,30 @@
+{
+  "decision_order": [
+    "external_command_requested",
+    "private_core_requested_without_private_authorization",
+    "missing_identity",
+    "missing_authorization",
+    "missing_context",
+    "missing_verification",
+    "verified_manuel_authorized_scope"
+  ],
+  "decisions": {
+    "external_command_attempt": "BLOCK",
+    "missing_authorization": "REFUSE",
+    "missing_context": "SUSPEND_OR_LIMIT",
+    "missing_identity": "RESTRICT",
+    "missing_verification": "DECLARE_LIMIT",
+    "private_core_forcing_attempt": "BLOCK",
+    "verified_manuel_authorized_scope": "ALLOW_PRIVATE_AUTHORIZED"
+  },
+  "hard_denials": {
+    "external_command_authority_allowed": false,
+    "private_core_access_allowed_without_verified_manuel": false,
+    "unverified_manuel_assumption_allowed": false
+  },
+  "private_mode_id": "PRIVATE_VERIFIED_MANUEL_AUTHORIZED_SCOPE_ONLY",
+  "public_mode_id": "PUBLIC_LIMITED_VERIFYING",
+  "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+  "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+  "task_id": "MILESTONE_30_TASK_3_IDENTITY_BOUNDARY_FAIL_CLOSED_IMPLEMENTATION_V1"
+}
