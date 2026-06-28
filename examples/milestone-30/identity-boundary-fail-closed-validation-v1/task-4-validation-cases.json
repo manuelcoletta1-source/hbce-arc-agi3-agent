@@ -1,0 +1,229 @@
+{
+  "task_id": "MILESTONE_30_TASK_4_IDENTITY_BOUNDARY_FAIL_CLOSED_VALIDATION_V1",
+  "validation_case_count": 9,
+  "validation_cases": [
+    {
+      "case_id": "TASK_3_IMPLEMENTATION_REPORT_VALID",
+      "expected": {
+        "fail_count": 0,
+        "implementation_status": "READY",
+        "pass_count": 8,
+        "runtime_cases_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "implementation_complete": true,
+        "implementation_status": "READY",
+        "next_stage": "MILESTONE_30_TASK_4_IDENTITY_BOUNDARY_FAIL_CLOSED_VALIDATION_V1",
+        "pass_count": 8,
+        "runtime_cases_valid": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_IMPLEMENTATION_RUNTIME_STABILITY_VALID",
+      "expected": {
+        "stable_implementation": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "external_command_authority_allowed": false,
+        "fail_count": 0,
+        "implementation_complete": true,
+        "implementation_revision": "MILESTONE_30_IDENTITY_BOUNDARY_FAIL_CLOSED_IMPLEMENTATION_V1",
+        "implementation_started": true,
+        "implementation_status": "READY",
+        "pass_count": 8,
+        "persisted_implementation_id": "MILESTONE-30-IDENTITY-BOUNDARY-IMPLEMENTATION-F03409BA9ED5F596",
+        "persisted_implementation_signature": "7F2CF27E35ED1CDA",
+        "persisted_task_3_signature": "1BA776199AE8D7B6",
+        "persisted_valid": true,
+        "private_core_access_allowed_without_verified_manuel": false,
+        "private_mode_id": "PRIVATE_VERIFIED_MANUEL_AUTHORIZED_SCOPE_ONLY",
+        "public_mode_id": "PUBLIC_LIMITED_VERIFYING",
+        "runtime_case_count": 8,
+        "runtime_cases_valid": true,
+        "runtime_implementation_id": "MILESTONE-30-IDENTITY-BOUNDARY-IMPLEMENTATION-F03409BA9ED5F596",
+        "runtime_implementation_signature": "7F2CF27E35ED1CDA",
+        "runtime_task_3_signature": "1BA776199AE8D7B6",
+        "runtime_valid": true,
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "scope_rules_valid": true,
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "source_dependency_valid": true,
+        "source_next_stage": "MILESTONE_30_TASK_4_IDENTITY_BOUNDARY_FAIL_CLOSED_VALIDATION_V1",
+        "source_task_id": "MILESTONE_30_TASK_3_IDENTITY_BOUNDARY_FAIL_CLOSED_IMPLEMENTATION_V1",
+        "stable_implementation": true,
+        "unverified_manuel_assumption_allowed": false
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_IMPLEMENTATION_ARTIFACT_SET_PRESENT",
+      "expected": {
+        "artifact_count": 6,
+        "missing": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "artifact_count": 6,
+        "missing": [],
+        "readable_count": 6
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_IMPLEMENTATION_MANIFEST_CONSISTENCY_VALID",
+      "expected": {
+        "manifest_matches_implementation_report": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "manifest_implementation_id": "MILESTONE-30-IDENTITY-BOUNDARY-IMPLEMENTATION-F03409BA9ED5F596",
+        "manifest_next_stage": "MILESTONE_30_TASK_4_IDENTITY_BOUNDARY_FAIL_CLOSED_VALIDATION_V1",
+        "manifest_status": "READY",
+        "report_implementation_id": "MILESTONE-30-IDENTITY-BOUNDARY-IMPLEMENTATION-F03409BA9ED5F596"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_RUNTIME_CASE_SET_VALID",
+      "expected": {
+        "case_ids": [
+          "EXTERNAL_COMMAND_ATTEMPT_BLOCKED",
+          "MISSING_AUTHORIZATION_REFUSED",
+          "MISSING_CONTEXT_SUSPENDED_OR_LIMITED",
+          "MISSING_VERIFICATION_DECLARED_LIMIT",
+          "PRIVATE_CORE_FORCING_BLOCKED",
+          "UNSUPPORTED_PUBLIC_TOPIC_RESTRICTED_WITHOUT_RESPONSE",
+          "UNVERIFIED_EXTERNAL_PUBLIC_TOPIC_RESTRICTED",
+          "VERIFIED_MANUEL_PRIVATE_SCOPE_ALLOWED"
+        ],
+        "fail_count": 0,
+        "pass_count": 8
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "case_ids": [
+          "EXTERNAL_COMMAND_ATTEMPT_BLOCKED",
+          "MISSING_AUTHORIZATION_REFUSED",
+          "MISSING_CONTEXT_SUSPENDED_OR_LIMITED",
+          "MISSING_VERIFICATION_DECLARED_LIMIT",
+          "PRIVATE_CORE_FORCING_BLOCKED",
+          "UNSUPPORTED_PUBLIC_TOPIC_RESTRICTED_WITHOUT_RESPONSE",
+          "UNVERIFIED_EXTERNAL_PUBLIC_TOPIC_RESTRICTED",
+          "VERIFIED_MANUEL_PRIVATE_SCOPE_ALLOWED"
+        ],
+        "decisions": {
+          "EXTERNAL_COMMAND_ATTEMPT_BLOCKED": "BLOCK",
+          "MISSING_AUTHORIZATION_REFUSED": "REFUSE",
+          "MISSING_CONTEXT_SUSPENDED_OR_LIMITED": "SUSPEND_OR_LIMIT",
+          "MISSING_VERIFICATION_DECLARED_LIMIT": "DECLARE_LIMIT",
+          "PRIVATE_CORE_FORCING_BLOCKED": "BLOCK",
+          "UNSUPPORTED_PUBLIC_TOPIC_RESTRICTED_WITHOUT_RESPONSE": "RESTRICT",
+          "UNVERIFIED_EXTERNAL_PUBLIC_TOPIC_RESTRICTED": "RESTRICT",
+          "VERIFIED_MANUEL_PRIVATE_SCOPE_ALLOWED": "ALLOW_PRIVATE_AUTHORIZED"
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_DECISION_MATRIX_VALID",
+      "expected": {
+        "decision_matrix_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "decisions": {
+          "external_command_attempt": "BLOCK",
+          "missing_authorization": "REFUSE",
+          "missing_context": "SUSPEND_OR_LIMIT",
+          "missing_identity": "RESTRICT",
+          "missing_verification": "DECLARE_LIMIT",
+          "private_core_forcing_attempt": "BLOCK",
+          "verified_manuel_authorized_scope": "ALLOW_PRIVATE_AUTHORIZED"
+        },
+        "hard_denials": {
+          "external_command_authority_allowed": false,
+          "private_core_access_allowed_without_verified_manuel": false,
+          "unverified_manuel_assumption_allowed": false
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_IMPLEMENTATION_INDEX_MARKERS_VALID",
+      "expected": {
+        "missing_markers": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "missing_markers": [],
+        "required_marker_count": 16
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_DIRECT_FAIL_CLOSED_PROBES_VALID",
+      "expected": {
+        "direct_fail_closed_probes_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "probe_decisions": [
+          "BLOCK",
+          "BLOCK",
+          "REFUSE",
+          "ALLOW_PRIVATE_AUTHORIZED"
+        ],
+        "probe_ids": [
+          "JOKER-C2-IDENTITY-BOUNDARY-F455C236E9E5E969",
+          "JOKER-C2-IDENTITY-BOUNDARY-FA953568D0AFDF91",
+          "JOKER-C2-IDENTITY-BOUNDARY-828FDE78BAA06029",
+          "JOKER-C2-IDENTITY-BOUNDARY-4BE60E066FA1869A"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SOURCE_SCOPE_CHAIN_VALID",
+      "expected": {
+        "source_chain_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "scope_rules_valid": true,
+        "source_dependency_valid": true,
+        "source_scope_snapshot": {
+          "external_command_authority_allowed": false,
+          "implementation_allowed_next": true,
+          "persisted_scope_lock_artifact_id": "MILESTONE-30-SCOPE-LOCK-8900C68B0373BB13",
+          "persisted_scope_lock_signature": "AB07440214116316",
+          "persisted_task_2_signature": "042FD8D11DF425F3",
+          "persisted_valid": true,
+          "policy_matrix_private_core_exposure_allowed": false,
+          "policy_matrix_scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+          "private_core_exposure_allowed": false,
+          "private_mode_id": "PRIVATE_VERIFIED_MANUEL_AUTHORIZED_SCOPE_ONLY",
+          "public_mode_id": "PUBLIC_LIMITED_VERIFYING",
+          "runtime_scope_lock_artifact_id": "MILESTONE-30-SCOPE-LOCK-8900C68B0373BB13",
+          "runtime_scope_lock_signature": "AB07440214116316",
+          "runtime_task_2_signature": "042FD8D11DF425F3",
+          "runtime_valid": true,
+          "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+          "scope_locked": true,
+          "scope_rules_valid": true,
+          "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+          "source_next_stage": "MILESTONE_30_TASK_3_IDENTITY_BOUNDARY_FAIL_CLOSED_IMPLEMENTATION_V1",
+          "source_task_id": "MILESTONE_30_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+          "stable_scope_lock": true,
+          "unverified_manuel_assumption_allowed": false
+        }
+      },
+      "passed": true
+    }
+  ],
+  "validation_id": "MILESTONE-30-IDENTITY-BOUNDARY-VALIDATION-BDB11CAB85D7F123",
+  "validation_status": "VALID"
+}
