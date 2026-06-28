@@ -1,0 +1,231 @@
+{
+  "current_task_number": 5,
+  "fail_count": 0,
+  "generated_artifact_count": 5,
+  "implementation_revision": "MILESTONE_30_IDENTITY_BOUNDARY_FAIL_CLOSED_IMPLEMENTATION_V1",
+  "integration_case_count": 9,
+  "integration_cases": [
+    {
+      "case_id": "TASK_4_VALIDATION_REPORT_VALID",
+      "expected": {
+        "fail_count": 0,
+        "pass_count": 9,
+        "validation_passed": true,
+        "validation_status": "VALID"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "next_stage": "MILESTONE_30_TASK_5_IDENTITY_BOUNDARY_FAIL_CLOSED_REGRESSION_INTEGRATION_V1",
+        "pass_count": 9,
+        "validation_passed": true,
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_RUNTIME_STABILITY_VALID",
+      "expected": {
+        "stable_validation": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "pass_count": 9,
+        "persisted_task_4_signature": "993024F54A1D2617",
+        "persisted_valid": true,
+        "persisted_validation_id": "MILESTONE-30-IDENTITY-BOUNDARY-VALIDATION-BDB11CAB85D7F123",
+        "persisted_validation_signature": "57A57E2DF69E03EC",
+        "runtime_task_4_signature": "993024F54A1D2617",
+        "runtime_valid": true,
+        "runtime_validation_id": "MILESTONE-30-IDENTITY-BOUNDARY-VALIDATION-BDB11CAB85D7F123",
+        "runtime_validation_signature": "57A57E2DF69E03EC",
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "source_external_command_authority_allowed": false,
+        "source_implementation_complete": true,
+        "source_implementation_id": "MILESTONE-30-IDENTITY-BOUNDARY-IMPLEMENTATION-F03409BA9ED5F596",
+        "source_implementation_signature": "7F2CF27E35ED1CDA",
+        "source_implementation_status": "READY",
+        "source_next_stage": "MILESTONE_30_TASK_5_IDENTITY_BOUNDARY_FAIL_CLOSED_REGRESSION_INTEGRATION_V1",
+        "source_private_core_access_allowed_without_verified_manuel": false,
+        "source_runtime_case_count": 8,
+        "source_runtime_cases_valid": true,
+        "source_task_id": "MILESTONE_30_TASK_4_IDENTITY_BOUNDARY_FAIL_CLOSED_VALIDATION_V1",
+        "source_unverified_manuel_assumption_allowed": false,
+        "stable_validation": true,
+        "validation_case_count": 9,
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_ARTIFACT_SET_PRESENT",
+      "expected": {
+        "artifact_count": 5,
+        "missing": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "artifact_count": 5,
+        "missing": [],
+        "readable_count": 5
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_MANIFEST_CONSISTENCY_VALID",
+      "expected": {
+        "manifest_matches_validation_report": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "manifest_next_stage": "MILESTONE_30_TASK_5_IDENTITY_BOUNDARY_FAIL_CLOSED_REGRESSION_INTEGRATION_V1",
+        "manifest_status": "VALID",
+        "manifest_validation_id": "MILESTONE-30-IDENTITY-BOUNDARY-VALIDATION-BDB11CAB85D7F123",
+        "report_validation_id": "MILESTONE-30-IDENTITY-BOUNDARY-VALIDATION-BDB11CAB85D7F123"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_CASE_SET_VALID",
+      "expected": {
+        "case_ids": [
+          "TASK_3_DECISION_MATRIX_VALID",
+          "TASK_3_DIRECT_FAIL_CLOSED_PROBES_VALID",
+          "TASK_3_IMPLEMENTATION_ARTIFACT_SET_PRESENT",
+          "TASK_3_IMPLEMENTATION_INDEX_MARKERS_VALID",
+          "TASK_3_IMPLEMENTATION_MANIFEST_CONSISTENCY_VALID",
+          "TASK_3_IMPLEMENTATION_REPORT_VALID",
+          "TASK_3_IMPLEMENTATION_RUNTIME_STABILITY_VALID",
+          "TASK_3_RUNTIME_CASE_SET_VALID",
+          "TASK_3_SOURCE_SCOPE_CHAIN_VALID"
+        ],
+        "validation_case_count": 9
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "case_ids": [
+          "TASK_3_DECISION_MATRIX_VALID",
+          "TASK_3_DIRECT_FAIL_CLOSED_PROBES_VALID",
+          "TASK_3_IMPLEMENTATION_ARTIFACT_SET_PRESENT",
+          "TASK_3_IMPLEMENTATION_INDEX_MARKERS_VALID",
+          "TASK_3_IMPLEMENTATION_MANIFEST_CONSISTENCY_VALID",
+          "TASK_3_IMPLEMENTATION_REPORT_VALID",
+          "TASK_3_IMPLEMENTATION_RUNTIME_STABILITY_VALID",
+          "TASK_3_RUNTIME_CASE_SET_VALID",
+          "TASK_3_SOURCE_SCOPE_CHAIN_VALID"
+        ],
+        "validation_case_count": 9
+      },
+      "passed": true
+    },
+    {
+      "case_id": "IDENTITY_BOUNDARY_DIRECT_REGRESSION_PROBES_VALID",
+      "expected": {
+        "direct_regression_probes_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "external_command": {
+          "decision": "BLOCK",
+          "record": "JOKER-C2-IDENTITY-BOUNDARY-4D044CE48BFC5289"
+        },
+        "missing_authorization": {
+          "decision": "REFUSE",
+          "record": "JOKER-C2-IDENTITY-BOUNDARY-86A51DA673D327A5"
+        },
+        "unverified_private_core": {
+          "decision": "BLOCK",
+          "record": "JOKER-C2-IDENTITY-BOUNDARY-8AAB6EF6C1CDB41B"
+        },
+        "unverified_public_srsc": {
+          "decision": "RESTRICT",
+          "record": "JOKER-C2-IDENTITY-BOUNDARY-E0E5C20A7B7C673C"
+        },
+        "verified_private": {
+          "decision": "ALLOW_PRIVATE_AUTHORIZED",
+          "record": "JOKER-C2-IDENTITY-BOUNDARY-003C81461B97320C"
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SOURCE_IMPLEMENTATION_REMAINS_VALID",
+      "expected": {
+        "source_implementation_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "hard_denials": {
+          "external_command_authority_allowed": false,
+          "private_core_access_allowed_without_verified_manuel": false,
+          "unverified_manuel_assumption_allowed": false
+        },
+        "implementation_id": "MILESTONE-30-IDENTITY-BOUNDARY-IMPLEMENTATION-F03409BA9ED5F596",
+        "matrix_scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "runtime_case_count": 8
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_2_SCOPE_LOCK_GUARDRAILS_REMAIN_VALID",
+      "expected": {
+        "scope_lock_guardrails_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "external_command_authority_allowed": false,
+        "private_core_exposure_allowed": false,
+        "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+        "scope_rules_valid": true,
+        "unverified_manuel_assumption_allowed": false
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_TRANSITION_AND_BUDGET_VALID",
+      "expected": {
+        "current_task_number": 5,
+        "source_current_task_number": 4,
+        "task_budget_max": 8
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "current_task_number": 5,
+        "next_stage": "MILESTONE_30_TASK_6_IDENTITY_BOUNDARY_FAIL_CLOSED_FINAL_CLOSURE_V1",
+        "source_current_task_number": 4,
+        "source_next_stage": "MILESTONE_30_TASK_5_IDENTITY_BOUNDARY_FAIL_CLOSED_REGRESSION_INTEGRATION_V1",
+        "task_budget_max": 8
+      },
+      "passed": true
+    }
+  ],
+  "integration_id": "MILESTONE-30-IDENTITY-BOUNDARY-INTEGRATION-48C854B8831099BD",
+  "integration_passed": true,
+  "integration_signature": "3340615551187AE3",
+  "integration_status": "VALID",
+  "next_stage": "MILESTONE_30_TASK_6_IDENTITY_BOUNDARY_FAIL_CLOSED_FINAL_CLOSURE_V1",
+  "pass_count": 9,
+  "regression_integration_revision": "MILESTONE_30_IDENTITY_BOUNDARY_FAIL_CLOSED_REGRESSION_INTEGRATION_V1",
+  "required_fail_count": 0,
+  "required_pass_count": 9,
+  "scope_lock_id": "MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+  "selected_objective_id": "JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE",
+  "source_external_command_authority_allowed": false,
+  "source_implementation_id": "MILESTONE-30-IDENTITY-BOUNDARY-IMPLEMENTATION-F03409BA9ED5F596",
+  "source_implementation_signature": "7F2CF27E35ED1CDA",
+  "source_private_core_access_allowed_without_verified_manuel": false,
+  "source_task_id": "MILESTONE_30_TASK_4_IDENTITY_BOUNDARY_FAIL_CLOSED_VALIDATION_V1",
+  "source_unverified_manuel_assumption_allowed": false,
+  "source_validation_id": "MILESTONE-30-IDENTITY-BOUNDARY-VALIDATION-BDB11CAB85D7F123",
+  "source_validation_passed": true,
+  "source_validation_signature": "57A57E2DF69E03EC",
+  "source_validation_status": "VALID",
+  "task_3_signature": "1BA776199AE8D7B6",
+  "task_4_signature": "993024F54A1D2617",
+  "task_5_signature": "055FBE8B6FFC3677",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_30_TASK_5_IDENTITY_BOUNDARY_FAIL_CLOSED_REGRESSION_INTEGRATION_V1",
+  "validation_revision": "MILESTONE_30_IDENTITY_BOUNDARY_FAIL_CLOSED_VALIDATION_V1"
+}

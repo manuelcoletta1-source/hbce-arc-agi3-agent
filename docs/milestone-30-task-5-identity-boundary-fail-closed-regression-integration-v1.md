@@ -1,0 +1,56 @@
+# Milestone 30 Task 5 - Identity Boundary Fail-Closed Regression Integration v1
+
+MILESTONE_30_TASK_5_IDENTITY_BOUNDARY_FAIL_CLOSED_REGRESSION_INTEGRATION_READY=true
+
+MILESTONE_30_TASK_5_SOURCE_TASK_ID=MILESTONE_30_TASK_4_IDENTITY_BOUNDARY_FAIL_CLOSED_VALIDATION_V1
+
+MILESTONE_30_TASK_5_SELECTED_OBJECTIVE_ID=JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE
+MILESTONE_30_TASK_5_SCOPE_LOCK_ID=MILESTONE_30_SCOPE_JOKER_C2_IDENTITY_BOUNDARY_AND_FAIL_CLOSED_PUBLIC_MODE
+
+MILESTONE_30_TASK_5_REGRESSION_INTEGRATION_REVISION=MILESTONE_30_IDENTITY_BOUNDARY_FAIL_CLOSED_REGRESSION_INTEGRATION_V1
+
+MILESTONE_30_TASK_5_SOURCE_VALIDATION_STATUS=VALID
+MILESTONE_30_TASK_5_SOURCE_VALIDATION_PASSED=true
+
+MILESTONE_30_TASK_5_SOURCE_PRIVATE_CORE_ACCESS_ALLOWED_WITHOUT_VERIFIED_MANUEL=false
+MILESTONE_30_TASK_5_SOURCE_UNVERIFIED_MANUEL_ASSUMPTION_ALLOWED=false
+MILESTONE_30_TASK_5_SOURCE_EXTERNAL_COMMAND_AUTHORITY_ALLOWED=false
+
+MILESTONE_30_TASK_5_INTEGRATION_STATUS=VALID
+MILESTONE_30_TASK_5_INTEGRATION_CASE_COUNT=9
+MILESTONE_30_TASK_5_PASS_COUNT=9
+MILESTONE_30_TASK_5_FAIL_COUNT=0
+
+MILESTONE_30_TASK_5_TASK_BUDGET_MAX=8
+MILESTONE_30_TASK_5_CURRENT_TASK_NUMBER=5
+
+MILESTONE_30_TASK_5_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_30_TASK_5_PRIMARY_REGRESSION_MODULE=src/hbce_arc_agi3/milestone_30_identity_boundary_fail_closed_regression_integration.py
+MILESTONE_30_TASK_5_PRIMARY_TEST_MODULE=tests/test_milestone_30_identity_boundary_fail_closed_regression_integration.py
+MILESTONE_30_TASK_5_TASK_VALIDATION_TEST=tests/test_milestone_30_task_5_identity_boundary_fail_closed_regression_integration.py
+MILESTONE_30_TASK_5_ARTIFACT_DIR=examples/milestone-30/identity-boundary-fail-closed-regression-integration-v1
+
+MILESTONE_30_TASK_5_NEXT_STAGE=MILESTONE_30_TASK_6_IDENTITY_BOUNDARY_FAIL_CLOSED_FINAL_CLOSURE_V1
+
+## Objective
+
+Integrate regression coverage for the Milestone 30 identity boundary fail-closed runtime.
+
+## Regression surface
+
+The regression integration verifies:
+
+- Task 4 validation report validity;
+- validation runtime stability;
+- Task 4 artifact set completeness;
+- manifest consistency;
+- validation case set correctness;
+- direct fail-closed runtime probes;
+- Task 3 implementation preservation;
+- Task 2 scope lock guardrail preservation;
+- Task 5 transition and task budget.
+
+## Result
+
+The identity boundary fail-closed runtime remains valid across the regression integration surface and is ready for final closure.
