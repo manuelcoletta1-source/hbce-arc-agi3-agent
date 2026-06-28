@@ -1,0 +1,13 @@
+{
+  "candidate_only": true,
+  "implementation_started": false,
+  "milestone_id": "MILESTONE_31",
+  "proposed_operator_seed_id": "JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "proposed_operator_seed_objective": "Define a verified operator authorization session gate for JOKER-C2 that can activate private authorized scope only after verified Manuel identity, valid authorization, sufficient context, available verification and preserved fail-closed guardrails.",
+  "proposed_operator_seed_status": "CANDIDATE_ONLY_NOT_LOCKED",
+  "requires_task_2_objective_selection": true,
+  "requires_task_2_scope_lock": true,
+  "scope_locked": false,
+  "selected": false,
+  "task_id": "MILESTONE_31_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1"
+}

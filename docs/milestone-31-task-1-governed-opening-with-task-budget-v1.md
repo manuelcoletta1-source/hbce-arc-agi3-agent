@@ -1,0 +1,77 @@
+# Milestone 31 Task 1 - Governed Opening With Task Budget v1
+
+MILESTONE_31_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_READY=true
+
+MILESTONE_31_TASK_1_MILESTONE_ID=MILESTONE_31
+
+MILESTONE_31_TASK_1_TASK_ID=MILESTONE_31_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1
+
+MILESTONE_31_TASK_1_SOURCE_TASK_ID=MILESTONE_30_TASK_6_IDENTITY_BOUNDARY_FAIL_CLOSED_FINAL_CLOSURE_V1
+
+MILESTONE_31_TASK_1_OPENING_REVISION=MILESTONE_31_GOVERNED_OPENING_WITH_TASK_BUDGET_V1
+
+MILESTONE_31_TASK_1_OPENING_STATUS=OPEN
+MILESTONE_31_TASK_1_TECHNICAL_STATUS=PASS
+MILESTONE_31_TASK_1_PROCESS_STATUS=GOVERNED_OPENING_WITH_TASK_BUDGET_MAX_8
+
+MILESTONE_31_TASK_1_SOURCE_DEPENDENCY_VALID=true
+MILESTONE_31_TASK_1_SOURCE_MILESTONE_CLOSED=true
+MILESTONE_31_TASK_1_SOURCE_READY_FOR_NEXT_MILESTONE=true
+
+MILESTONE_31_TASK_1_PRIVATE_CORE_ACCESS_ALLOWED_WITHOUT_VERIFIED_MANUEL=false
+MILESTONE_31_TASK_1_UNVERIFIED_MANUEL_ASSUMPTION_ALLOWED=false
+MILESTONE_31_TASK_1_EXTERNAL_COMMAND_AUTHORITY_ALLOWED=false
+MILESTONE_31_TASK_1_FAIL_CLOSED_DEFAULT=true
+
+MILESTONE_31_TASK_1_TASK_BUDGET_MAX=8
+MILESTONE_31_TASK_1_CURRENT_TASK_NUMBER=1
+
+MILESTONE_31_TASK_1_IMPLEMENTATION_STARTED=false
+MILESTONE_31_TASK_1_IMPLEMENTATION_ALLOWED_AT_TASK_1=false
+
+MILESTONE_31_TASK_1_OBJECTIVE_SELECTION_REQUIRED_NEXT=true
+MILESTONE_31_TASK_1_SCOPE_LOCK_REQUIRED_NEXT=true
+
+MILESTONE_31_TASK_1_PROPOSED_OPERATOR_SEED_ID=JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE
+MILESTONE_31_TASK_1_PROPOSED_OPERATOR_SEED_STATUS=CANDIDATE_ONLY_NOT_LOCKED
+
+MILESTONE_31_TASK_1_GENERATED_ARTIFACT_COUNT=5
+
+MILESTONE_31_TASK_1_PRIMARY_OPENING_MODULE=src/hbce_arc_agi3/milestone_31_governed_opening.py
+MILESTONE_31_TASK_1_PRIMARY_TEST_MODULE=tests/test_milestone_31_governed_opening.py
+MILESTONE_31_TASK_1_TASK_VALIDATION_TEST=tests/test_milestone_31_task_1_governed_opening_with_task_budget.py
+MILESTONE_31_TASK_1_ARTIFACT_DIR=examples/milestone-31/governed-opening-with-task-budget-v1
+
+MILESTONE_31_TASK_1_NEXT_STAGE=MILESTONE_31_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1
+
+## Objective
+
+Open Milestone 31 under a governed task budget after the Milestone 30 identity boundary fail-closed final closure.
+
+## Proposed operator seed
+
+The proposed seed is candidate-only and not locked:
+
+JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE
+
+The candidate objective is to define a verified operator authorization session gate for JOKER-C2 that can activate private authorized scope only after verified Manuel identity, valid authorization, sufficient context, available verification and preserved fail-closed guardrails.
+
+## Scope discipline
+
+Task 1 does not implement the proposed seed.
+
+Task 1 does not select the objective.
+
+Task 1 does not lock the scope.
+
+Objective selection and scope lock are required at Task 2.
+
+## Carried guardrails
+
+Private core access without verified Manuel remains false.
+
+Unverified Manuel assumption remains false.
+
+External command authority remains false.
+
+Default behavior remains fail-closed.
