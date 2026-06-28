@@ -1,0 +1,271 @@
+{
+  "current_task_number": 4,
+  "fail_count": 0,
+  "generated_artifact_count": 5,
+  "implementation_revision": "MILESTONE_31_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_IMPLEMENTATION_V1",
+  "next_stage": "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1",
+  "pass_count": 10,
+  "required_fail_count": 0,
+  "required_pass_count": 10,
+  "scope_lock_id": "MILESTONE_31_SCOPE_JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "selected_objective_id": "JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "selected_objective_status": "SELECTED_AND_SCOPE_LOCKED",
+  "source_external_command_authority_allowed": false,
+  "source_fail_count": 0,
+  "source_implementation_complete": true,
+  "source_implementation_id": "MILESTONE-31-VERIFIED-OPERATOR-SESSION-GATE-EF7EB1169D27D833",
+  "source_implementation_signature": "4C77D6FEA429C734",
+  "source_implementation_started": true,
+  "source_implementation_status": "READY",
+  "source_pass_count": 9,
+  "source_private_core_access_without_verified_manuel_allowed": false,
+  "source_runtime_cases_valid": true,
+  "source_scope_task_id": "MILESTONE_31_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+  "source_session_authorization_without_context_allowed": false,
+  "source_session_authorization_without_valid_authorization_allowed": false,
+  "source_session_authorization_without_verification_allowed": false,
+  "source_session_case_count": 9,
+  "source_session_gate_mode_id": "VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "source_task_id": "MILESTONE_31_TASK_3_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_IMPLEMENTATION_V1",
+  "source_unverified_manuel_assumption_allowed": false,
+  "task_3_signature": "8938E6CF3C887AC2",
+  "task_4_signature": "5722CDF4DCFE8E3A",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_31_TASK_4_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_VALIDATION_V1",
+  "validation_case_count": 10,
+  "validation_cases": [
+    {
+      "case_id": "TASK_3_SESSION_GATE_IMPLEMENTATION_REPORT_VALID",
+      "expected": {
+        "fail_count": 0,
+        "implementation_complete": true,
+        "implementation_status": "READY",
+        "pass_count": 9
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "implementation_complete": true,
+        "implementation_status": "READY",
+        "next_stage": "MILESTONE_31_TASK_4_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_VALIDATION_V1",
+        "pass_count": 9
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_RUNTIME_STABILITY_VALID",
+      "expected": {
+        "stable_implementation": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "external_command_authority_allowed": false,
+        "fail_count": 0,
+        "implementation_complete": true,
+        "implementation_revision": "MILESTONE_31_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_IMPLEMENTATION_V1",
+        "implementation_started": true,
+        "implementation_status": "READY",
+        "pass_count": 9,
+        "persisted_implementation_id": "MILESTONE-31-VERIFIED-OPERATOR-SESSION-GATE-EF7EB1169D27D833",
+        "persisted_implementation_signature": "4C77D6FEA429C734",
+        "persisted_task_3_signature": "8938E6CF3C887AC2",
+        "persisted_valid": true,
+        "private_core_access_without_verified_manuel_allowed": false,
+        "private_mode_id": "PRIVATE_VERIFIED_MANUEL_AUTHORIZED_SCOPE_ONLY",
+        "public_mode_id": "PUBLIC_LIMITED_VERIFYING",
+        "runtime_cases_valid": true,
+        "runtime_implementation_id": "MILESTONE-31-VERIFIED-OPERATOR-SESSION-GATE-EF7EB1169D27D833",
+        "runtime_implementation_signature": "4C77D6FEA429C734",
+        "runtime_task_3_signature": "8938E6CF3C887AC2",
+        "runtime_valid": true,
+        "scope_lock_id": "MILESTONE_31_SCOPE_JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+        "selected_objective_id": "JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+        "selected_objective_status": "SELECTED_AND_SCOPE_LOCKED",
+        "session_authorization_without_context_allowed": false,
+        "session_authorization_without_valid_authorization_allowed": false,
+        "session_authorization_without_verification_allowed": false,
+        "session_case_count": 9,
+        "session_gate_mode_id": "VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+        "source_current_task_number": 3,
+        "source_next_stage": "MILESTONE_31_TASK_4_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_VALIDATION_V1",
+        "source_scope_task_id": "MILESTONE_31_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+        "source_task_id": "MILESTONE_31_TASK_3_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_IMPLEMENTATION_V1",
+        "stable_implementation": true,
+        "task_budget_max": 8,
+        "unverified_manuel_assumption_allowed": false
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_ARTIFACT_SET_PRESENT",
+      "expected": {
+        "artifact_count": 6,
+        "missing": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "artifact_count": 6,
+        "missing": [],
+        "readable_count": 6
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_MANIFEST_CONSISTENCY_VALID",
+      "expected": {
+        "manifest_matches_implementation_report": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "manifest_implementation_id": "MILESTONE-31-VERIFIED-OPERATOR-SESSION-GATE-EF7EB1169D27D833",
+        "manifest_next_stage": "MILESTONE_31_TASK_4_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_VALIDATION_V1",
+        "manifest_status": "READY",
+        "report_implementation_id": "MILESTONE-31-VERIFIED-OPERATOR-SESSION-GATE-EF7EB1169D27D833"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_RUNTIME_CASE_SET_VALID",
+      "expected": {
+        "case_ids": [
+          "EXTERNAL_COMMAND_ATTEMPT_BLOCKED",
+          "MISSING_AUTHORIZATION_REFUSED",
+          "MISSING_CONTEXT_SUSPENDED_OR_LIMITED",
+          "MISSING_IDENTITY_PRIVATE_SCOPE_BLOCKED",
+          "MISSING_SESSION_TRACE_SUSPENDED_OR_LIMITED",
+          "MISSING_VERIFICATION_DECLARED_LIMIT",
+          "PRIVATE_CORE_FORCING_WITHOUT_VERIFIED_MANUEL_BLOCKED",
+          "PUBLIC_UNVERIFIED_LIMITED_RESTRICTED",
+          "VERIFIED_MANUEL_AUTHORIZED_SESSION_ALLOWED"
+        ],
+        "session_case_count": 9
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "case_ids": [
+          "EXTERNAL_COMMAND_ATTEMPT_BLOCKED",
+          "MISSING_AUTHORIZATION_REFUSED",
+          "MISSING_CONTEXT_SUSPENDED_OR_LIMITED",
+          "MISSING_IDENTITY_PRIVATE_SCOPE_BLOCKED",
+          "MISSING_SESSION_TRACE_SUSPENDED_OR_LIMITED",
+          "MISSING_VERIFICATION_DECLARED_LIMIT",
+          "PRIVATE_CORE_FORCING_WITHOUT_VERIFIED_MANUEL_BLOCKED",
+          "PUBLIC_UNVERIFIED_LIMITED_RESTRICTED",
+          "VERIFIED_MANUEL_AUTHORIZED_SESSION_ALLOWED"
+        ],
+        "session_case_count": 9
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_DECISION_MATRIX_VALID",
+      "expected": {
+        "decision_matrix_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "decisions": {
+          "external_command_attempt": "BLOCK",
+          "missing_authorization": "REFUSE",
+          "missing_context": "SUSPEND_OR_LIMIT",
+          "missing_identity_private_scope": "BLOCK",
+          "missing_operator_intent": "SUSPEND_OR_LIMIT",
+          "missing_session_trace_id": "SUSPEND_OR_LIMIT",
+          "missing_verification": "DECLARE_LIMIT",
+          "private_core_forcing_without_verified_manuel": "BLOCK",
+          "public_unverified_default": "RESTRICT_PUBLIC_LIMITED",
+          "verified_authorized_contextual_verified_traceable_private_scope": "ALLOW_AUTHORIZED_PRIVATE_SESSION"
+        },
+        "hard_denials": {
+          "external_command_authority_allowed": false,
+          "private_core_access_without_verified_manuel_allowed": false,
+          "session_authorization_without_context_allowed": false,
+          "session_authorization_without_valid_authorization_allowed": false,
+          "session_authorization_without_verification_allowed": false,
+          "unverified_manuel_assumption_allowed": false
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_INDEX_MARKERS_VALID",
+      "expected": {
+        "missing": []
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "missing": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_DIRECT_FAIL_CLOSED_PROBES_VALID",
+      "expected": {
+        "direct_fail_closed_probes_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "allowed": {
+          "decision": "ALLOW_AUTHORIZED_PRIVATE_SESSION",
+          "record": "M31-SESSION-GATE-DECISION-AD164F7DD4549BD0"
+        },
+        "external_command": {
+          "decision": "BLOCK",
+          "record": "M31-SESSION-GATE-DECISION-734C2B1FD718462A"
+        },
+        "missing_authorization": {
+          "decision": "REFUSE",
+          "record": "M31-SESSION-GATE-DECISION-3C212ED5EDDCF251"
+        },
+        "missing_context": {
+          "decision": "SUSPEND_OR_LIMIT",
+          "record": "M31-SESSION-GATE-DECISION-E3989E291FA047B0"
+        },
+        "missing_identity": {
+          "decision": "BLOCK",
+          "record": "M31-SESSION-GATE-DECISION-9AF73461900F1775"
+        },
+        "missing_verification": {
+          "decision": "DECLARE_LIMIT",
+          "record": "M31-SESSION-GATE-DECISION-F21876BC5728FEDA"
+        },
+        "public": {
+          "decision": "RESTRICT_PUBLIC_LIMITED",
+          "record": "M31-SESSION-GATE-DECISION-71B1A8004D75655F"
+        }
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_SOURCE_SCOPE_CHAIN_VALID",
+      "expected": {
+        "source_scope_chain_valid": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "report_source_task_id": "MILESTONE_31_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+        "report_task_id": "MILESTONE_31_TASK_3_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_IMPLEMENTATION_V1",
+        "source_next_stage": "MILESTONE_31_TASK_3_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_IMPLEMENTATION_V1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_SESSION_GATE_TRACE_SEMANTICS_VALID",
+      "expected": {
+        "intent_and_trace_required_for_private_session": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "allowed": "ALLOW_AUTHORIZED_PRIVATE_SESSION",
+        "missing_intent": "SUSPEND_OR_LIMIT",
+        "missing_trace": "SUSPEND_OR_LIMIT"
+      },
+      "passed": true
+    }
+  ],
+  "validation_id": "MILESTONE-31-SESSION-GATE-VALIDATION-AB3C9DF583DB197D",
+  "validation_passed": true,
+  "validation_revision": "MILESTONE_31_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_VALIDATION_V1",
+  "validation_signature": "69DC6BE52E2AA923",
+  "validation_status": "VALID"
+}
