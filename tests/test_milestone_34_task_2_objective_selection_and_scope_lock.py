@@ -1,0 +1,36 @@
+from hbce_arc_agi3.milestone_34_objective_scope_lock import (
+    DOC_PATH,
+    NEXT_STAGE,
+    TASK_ID,
+    run_milestone_34_objective_scope_lock,
+    validate_milestone_34_objective_scope_lock_report,
+    write_milestone_34_task_2_artifacts,
+)
+
+def test_task_2_identity_and_source_opening_are_stable():
+    report = run_milestone_34_objective_scope_lock()
+    assert report["task_id"] == TASK_ID
+    assert report["source_opening_status"] == "READY"
+    assert report["source_opening_passed"] is True
+
+def test_task_2_pass_fail_accounting_is_closed():
+    report = run_milestone_34_objective_scope_lock()
+    assert report["scope_lock_case_count"] == 12
+    assert report["pass_count"] == 12
+    assert report["fail_count"] == 0
+    assert report["scope_lock_passed"] is True
+
+def test_task_2_next_stage_points_to_task_3_implementation():
+    report = run_milestone_34_objective_scope_lock()
+    assert report["next_stage"] == NEXT_STAGE
+    assert "TASK_3" in report["next_stage"]
+    assert "IMPLEMENTATION" in report["next_stage"]
+
+def test_task_2_doc_contains_required_markers():
+    write_milestone_34_task_2_artifacts()
+    text = DOC_PATH.read_text(encoding="utf-8")
+    assert "MILESTONE_34_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_READY=true" in text
+    assert "MILESTONE_34_TASK_2_SCOPE_LOCK_STATUS=LOCKED" in text
+    assert "MILESTONE_34_TASK_2_LEGAL_CERTIFICATION=false" in text
+    assert "MILESTONE_34_TASK_2_KAGGLE_SCORE_CLAIM=false" in text
+    assert validate_milestone_34_objective_scope_lock_report(run_milestone_34_objective_scope_lock())

@@ -1,0 +1,5 @@
+MILESTONE_34_TASK_2_ARTIFACT_INDEX
+task-2-objective-scope-lock-cases.json
+task-2-objective-scope-lock-report.json
+task-2-objective-scope-lock-report.md
+task-2-manifest.json

@@ -1,0 +1,15 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-2-objective-scope-lock-cases.json",
+    "task-2-objective-scope-lock-report.json",
+    "task-2-objective-scope-lock-report.md",
+    "task-2-index.txt",
+    "task-2-manifest.json"
+  ],
+  "scope_lock_id": "MILESTONE_34_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+  "scope_lock_instance_id": "MILESTONE-34-SCOPE-LOCK-FDC8E31DA830C4A4",
+  "scope_lock_signature": "DD3285082A29D8D2",
+  "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+  "task_id": "MILESTONE_34_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1"
+}
