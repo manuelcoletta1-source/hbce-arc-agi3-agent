@@ -1,0 +1,143 @@
+{
+  "ai_output_linked_to_audit_record": true,
+  "ai_output_linked_to_event_trace": true,
+  "ai_output_linked_to_governed_session": true,
+  "ai_output_linked_to_model_usage_record": true,
+  "ai_output_linked_to_technical_proof_receipt": true,
+  "ai_output_linked_to_verified_operational_subject": true,
+  "current_task_number": 2,
+  "explicit_legal_boundary_required": true,
+  "fail_count": 0,
+  "generated_artifact_count": 5,
+  "ipr_card_internal_operational_identity_certificate": true,
+  "ipr_card_official_public_identity_document": false,
+  "legal_certification": false,
+  "next_stage": "MILESTONE_32_TASK_3_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_IMPLEMENTATION_V1",
+  "objective_selection_revision": "MILESTONE_32_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+  "opc_technical_proof_receipt_only": true,
+  "pass_count": 10,
+  "scope_lock_case_count": 10,
+  "scope_lock_cases": [
+    {
+      "case_id": "TASK_1_GOVERNED_OPENING_REMAINS_VALID",
+      "expected": "Task 1 governed opening remains READY",
+      "failure_reason": "NONE",
+      "observed": {
+        "opening_passed": true,
+        "opening_status": "READY"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_1_TO_TASK_2_TRANSITION_CONFIRMED",
+      "expected": "MILESTONE_32_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+      "failure_reason": "NONE",
+      "observed": {
+        "source_constant_next_stage": "MILESTONE_32_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+        "source_report_next_stage": "MILESTONE_32_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_1_DOCUMENT_MARKERS_PRESENT",
+      "expected": "Task 1 opening doc has READY and next-stage markers",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-32-task-1-governed-opening-with-task-budget-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "OBJECTIVE_CANDIDATE_SELECTED",
+      "expected": "HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY",
+      "failure_reason": "NONE",
+      "observed": "HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "SCOPE_LOCK_ID_BOUND_TO_SELECTED_OBJECTIVE",
+      "expected": "HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY",
+      "failure_reason": "NONE",
+      "observed": "MILESTONE_32_SCOPE_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "OPC_BOUNDARY_REMAINS_TECHNICAL_PROOF_ONLY",
+      "expected": {
+        "legalCertification": false,
+        "opc": "technical proof receipt only"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "legalCertification": false,
+        "opcTechnicalProofReceiptOnly": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "IPR_CARD_BOUNDARY_REMAINS_INTERNAL_NOT_PUBLIC_ID",
+      "expected": {
+        "internalOperationalIdentityCertificate": true,
+        "officialPublicIdentityDocument": false
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "internalOperationalIdentityCertificate": true,
+        "officialPublicIdentityDocument": false
+      },
+      "passed": true
+    },
+    {
+      "case_id": "AI_OUTPUT_PROOF_LINKS_LOCKED",
+      "expected": "all AI output proof links enabled",
+      "failure_reason": "NONE",
+      "observed": {
+        "audit_record": true,
+        "event_trace": true,
+        "governed_session": true,
+        "model_usage_record": true,
+        "technical_proof_receipt": true,
+        "verified_operational_subject": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_BUDGET_REMAINS_WITHIN_GOVERNED_LIMIT",
+      "expected": {
+        "current_task_number": 2,
+        "source_current_task_number": 1,
+        "task_budget_max": 8
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "current_task_number": 2,
+        "source_current_task_number": 1,
+        "task_budget_max": 8
+      },
+      "passed": true
+    },
+    {
+      "case_id": "NEXT_STAGE_IMPLEMENTATION_READY",
+      "expected": "MILESTONE_32_TASK_3_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_IMPLEMENTATION_V1",
+      "failure_reason": "NONE",
+      "observed": "MILESTONE_32_TASK_3_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_IMPLEMENTATION_V1",
+      "passed": true
+    }
+  ],
+  "scope_lock_id": "MILESTONE_32_SCOPE_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY",
+  "scope_lock_instance_id": "MILESTONE-32-SCOPE-LOCK-47C171F99D34A06C",
+  "scope_lock_passed": true,
+  "scope_lock_signature": "A5BC2B8F37666095",
+  "scope_lock_status": "LOCKED",
+  "selected_objective_id": "HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY",
+  "selected_objective_status": "SELECTED_AND_SCOPE_LOCKED",
+  "source_generated_artifact_count": 5,
+  "source_opening_id": "MILESTONE-32-GOVERNED-OPENING-940049C37372DBCD",
+  "source_opening_passed": true,
+  "source_opening_revision": "MILESTONE_32_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+  "source_opening_signature": "5CB8C8125A214AA8",
+  "source_opening_status": "READY",
+  "source_opening_task_id": "MILESTONE_32_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+  "source_task_1_signature": "578DBB024D2F0771",
+  "task_2_signature": "B0DBECAFDEFB0784",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_32_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1"
+}

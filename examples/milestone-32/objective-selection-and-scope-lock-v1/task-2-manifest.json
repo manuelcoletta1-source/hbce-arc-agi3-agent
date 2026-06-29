@@ -1,0 +1,20 @@
+{
+  "current_task_number": 2,
+  "fail_count": 0,
+  "generated_artifact_count": 5,
+  "next_stage": "MILESTONE_32_TASK_3_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_IMPLEMENTATION_V1",
+  "objective_selection_revision": "MILESTONE_32_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+  "pass_count": 10,
+  "scope_lock_case_count": 10,
+  "scope_lock_id": "MILESTONE_32_SCOPE_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY",
+  "scope_lock_instance_id": "MILESTONE-32-SCOPE-LOCK-47C171F99D34A06C",
+  "scope_lock_passed": true,
+  "scope_lock_signature": "A5BC2B8F37666095",
+  "scope_lock_status": "LOCKED",
+  "selected_objective_id": "HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY",
+  "selected_objective_status": "SELECTED_AND_SCOPE_LOCKED",
+  "source_opening_task_id": "MILESTONE_32_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+  "task_2_signature": "B0DBECAFDEFB0784",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_32_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1"
+}
