@@ -1,0 +1,178 @@
+{
+  "audit_artifact_required": true,
+  "cases": [
+    {
+      "case_id": "SOURCE_SCOPE_STATUS_LOCKED",
+      "expected": "LOCKED",
+      "failure_reason": null,
+      "observed": "LOCKED",
+      "passed": true
+    },
+    {
+      "case_id": "SOURCE_SCOPE_PASSED",
+      "expected": true,
+      "failure_reason": null,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "case_id": "OBJECTIVE_ID_MATCHES_SCOPE",
+      "expected": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+      "failure_reason": null,
+      "observed": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "SCOPE_LOCK_ID_MATCHES_SCOPE",
+      "expected": "MILESTONE_34_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+      "failure_reason": null,
+      "observed": "MILESTONE_34_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "HARNESS_MODE_BOUND",
+      "expected": "ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+      "failure_reason": null,
+      "observed": "ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "REPLAY_EVALUATION_HARNESS_IMPLEMENTED",
+      "expected": true,
+      "failure_reason": null,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "case_id": "REPLAYABLE_EVENT_TRACE_IMPLEMENTED",
+      "expected": true,
+      "failure_reason": null,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "case_id": "LOCAL_EVALUATION_RECORD_IMPLEMENTED",
+      "expected": true,
+      "failure_reason": null,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "case_id": "REGRESSION_SNAPSHOT_IMPLEMENTED",
+      "expected": true,
+      "failure_reason": null,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "case_id": "AUDIT_ARTIFACT_IMPLEMENTED",
+      "expected": true,
+      "failure_reason": null,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "case_id": "SOURCE_RUNTIME_CLOSURE_CLOSED",
+      "expected": "CLOSED",
+      "failure_reason": null,
+      "observed": "CLOSED",
+      "passed": true
+    },
+    {
+      "case_id": "REPLAY_EVALUATION_RECORD_VALID",
+      "expected": true,
+      "failure_reason": null,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "case_id": "LEGAL_KAGGLE_BENCHMARK_CLAIMS_DENIED",
+      "expected": "false/false/false",
+      "failure_reason": null,
+      "observed": "False/False/False",
+      "passed": true
+    },
+    {
+      "case_id": "NEXT_STAGE_TASK_4_VALIDATION",
+      "expected": "MILESTONE_34_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_VALIDATION_V1",
+      "failure_reason": null,
+      "observed": "MILESTONE_34_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_VALIDATION_V1",
+      "passed": true
+    }
+  ],
+  "current_task_number": 3,
+  "fail_count": 0,
+  "generated_artifact_count": 5,
+  "harness_mode_id": "ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+  "implementation_case_count": 14,
+  "implementation_id": "MILESTONE-34-ARC-AGI3-REPLAY-EVALUATION-HARNESS-FDC8E31DA830C4A4",
+  "implementation_passed": true,
+  "implementation_revision": "MILESTONE_34_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_IMPLEMENTATION_V1",
+  "implementation_signature": "E834C79E9A69958A",
+  "implementation_status": "READY",
+  "kaggle_score_claim": false,
+  "legal_certification": false,
+  "local_evaluation_record_required": true,
+  "network_access_allowed": false,
+  "next_stage": "MILESTONE_34_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_VALIDATION_V1",
+  "official_benchmark_certification": false,
+  "pass_count": 14,
+  "ready": true,
+  "regression_snapshot_required": true,
+  "replay_evaluation_harness_boundary": true,
+  "replay_evaluation_record": {
+    "audit_artifact": {
+      "artifact_digest": "ED95E698428619ED",
+      "artifact_kind": "REPLAY_EVALUATION_HARNESS_AUDIT_ARTIFACT",
+      "audit_id": "M34-AUDIT-8777B47C9F1D4E4F",
+      "kaggle_score_claim": false,
+      "legal_certification": false,
+      "technical_evaluation_only": true
+    },
+    "audit_artifact_required": true,
+    "harness_mode_id": "ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+    "implementation_id": "MILESTONE-34-ARC-AGI3-REPLAY-EVALUATION-HARNESS-FDC8E31DA830C4A4",
+    "kaggle_score_claim": false,
+    "legal_certification": false,
+    "local_evaluation_record": {
+      "assessment_kind": "LOCAL_TECHNICAL_ASSESSMENT_ONLY",
+      "criteria_count": 6,
+      "criteria_pass_count": 6,
+      "evaluation_id": "M34-EVALUATION-41795BE52A3A583E",
+      "evaluation_status": "READY",
+      "kaggle_score_claim": false,
+      "legal_certification": false,
+      "official_benchmark_certification": false,
+      "technical_evaluation_only": true
+    },
+    "local_evaluation_record_required": true,
+    "official_benchmark_certification": false,
+    "regression_snapshot": {
+      "snapshot_id": "M34-REGRESSION-SNAPSHOT-A6CD9B2BBB460CE1",
+      "source_runtime_closure_id": "MILESTONE-33-ARC-AGI3-INTERACTIVE-RUNTIME-FINAL-CLOSURE-EF4D791D0866640F",
+      "source_runtime_event_count": 4,
+      "source_runtime_trace_fingerprint": "CE883C84561D5BC8"
+    },
+    "regression_snapshot_required": true,
+    "replay_id": "M34-REPLAY-85E499A082CADC86",
+    "replayable_event_trace_required": true,
+    "scope_lock_id": "MILESTONE_34_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+    "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+    "source_runtime_closure_passed": true,
+    "source_runtime_closure_status": "CLOSED",
+    "technical_evaluation_only": true
+  },
+  "replayable_event_trace_required": true,
+  "repository_mutation_allowed": false,
+  "scope_lock_id": "MILESTONE_34_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+  "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+  "shell_execution_allowed": false,
+  "source_scope_passed": true,
+  "source_scope_status": "LOCKED",
+  "source_scope_task_id": "MILESTONE_34_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+  "source_task_2_signature": "9950495DE8C1D4EA",
+  "task_3_signature": "9E7030C05B7F690E",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_34_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_IMPLEMENTATION_V1",
+  "technical_evaluation_only": true
+}

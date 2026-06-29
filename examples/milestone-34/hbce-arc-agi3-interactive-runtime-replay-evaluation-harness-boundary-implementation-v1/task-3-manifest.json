@@ -1,0 +1,13 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-3-replay-evaluation-harness-cases.json",
+    "task-3-replay-evaluation-harness-report.json",
+    "task-3-replay-evaluation-harness-report.md",
+    "task-3-index.txt",
+    "task-3-manifest.json"
+  ],
+  "implementation_id": "MILESTONE-34-ARC-AGI3-REPLAY-EVALUATION-HARNESS-FDC8E31DA830C4A4",
+  "implementation_signature": "E834C79E9A69958A",
+  "task_id": "MILESTONE_34_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_IMPLEMENTATION_V1"
+}

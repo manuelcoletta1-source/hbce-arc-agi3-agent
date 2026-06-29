@@ -1,0 +1,5 @@
+MILESTONE_34_TASK_3_ARTIFACT_INDEX
+task-3-replay-evaluation-harness-cases.json
+task-3-replay-evaluation-harness-report.json
+task-3-replay-evaluation-harness-report.md
+task-3-manifest.json
