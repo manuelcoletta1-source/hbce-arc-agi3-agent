@@ -1,0 +1,130 @@
+{
+  "closure_case_count": 12,
+  "closure_cases": [
+    {
+      "case_id": "TASK_5_REGRESSION_INTEGRATION_REMAINS_VALID",
+      "expected": "Task 5 regression integration remains VALID",
+      "failure_reason": "NONE",
+      "observed": {
+        "integration_passed": true,
+        "integration_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_REGRESSION_CASES_REMAIN_VALID",
+      "expected": 12,
+      "failure_reason": "NONE",
+      "observed": {
+        "all_cases_passed": true,
+        "integration_case_count": 12
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_ARTIFACT_SET_REMAINS_PRESENT",
+      "expected": "Task 5 artifact set present",
+      "failure_reason": "NONE",
+      "observed": "present",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_TRANSITION_TO_FINAL_CLOSURE_CONFIRMED",
+      "expected": "MILESTONE_32_TASK_6_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_FINAL_CLOSURE_V1",
+      "failure_reason": "NONE",
+      "observed": {
+        "source_constant_next_stage": "MILESTONE_32_TASK_6_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_FINAL_CLOSURE_V1",
+        "source_report_next_stage": "MILESTONE_32_TASK_6_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_FINAL_CLOSURE_V1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_CHAIN_REMAINS_VALID",
+      "expected": "Task 4 validation remains valid",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-32-task-4-hbce-ipr-runtime-api-v1-operational-identity-and-proof-layer-boundary-validation-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_IMPLEMENTATION_CHAIN_REMAINS_READY",
+      "expected": "Task 3 implementation remains ready",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-32-task-3-hbce-ipr-runtime-api-v1-operational-identity-and-proof-layer-boundary-implementation-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_2_SCOPE_LOCK_CHAIN_REMAINS_LOCKED",
+      "expected": "Task 2 scope lock remains locked",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-32-task-2-objective-selection-and-scope-lock-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_1_GOVERNED_OPENING_CHAIN_REMAINS_READY",
+      "expected": "Task 1 opening remains ready",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-32-task-1-governed-opening-with-task-budget-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "LEGAL_BOUNDARY_REMAINS_FALSE_CERTIFICATION",
+      "expected": {
+        "iprCardOfficialPublicIdentityDocument": false,
+        "legalCertification": false,
+        "opcTechnicalProofReceiptOnly": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "iprCardOfficialPublicIdentityDocument": false,
+        "legalCertification": false,
+        "opcTechnicalProofReceiptOnly": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "FAIL_CLOSED_REGRESSION_CASE_REMAINS_PRESENT",
+      "expected": "MISSING_REQUIRED_LINKS_REMAIN_FAIL_CLOSED",
+      "failure_reason": "NONE",
+      "observed": [
+        "TASK_4_VALIDATION_REMAINS_VALID",
+        "TASK_4_VALIDATION_CASES_REMAIN_VALID",
+        "TASK_4_ARTIFACT_SET_REMAINS_PRESENT",
+        "TASK_4_TO_TASK_5_TRANSITION_CONFIRMED",
+        "COMPLETE_LAYER_REMAINS_READY",
+        "MISSING_REQUIRED_LINKS_REMAIN_FAIL_CLOSED",
+        "LEGAL_BOUNDARY_REMAINS_FALSE_CERTIFICATION",
+        "TASK_4_DOCUMENT_MARKERS_REMAIN_PRESENT",
+        "TASK_3_IMPLEMENTATION_CHAIN_REMAINS_READY",
+        "TASK_2_SCOPE_LOCK_CHAIN_REMAINS_LOCKED",
+        "TASK_1_GOVERNED_OPENING_CHAIN_REMAINS_READY",
+        "TASK_BUDGET_AND_FINAL_CLOSURE_STAGE_READY"
+      ],
+      "passed": true
+    },
+    {
+      "case_id": "TASK_BUDGET_REMAINS_WITHIN_GOVERNED_LIMIT",
+      "expected": {
+        "current_task_number": 6,
+        "source_current_task_number": 5,
+        "task_budget_max": 8
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "current_task_number": 6,
+        "source_current_task_number": 5,
+        "task_budget_max": 8
+      },
+      "passed": true
+    },
+    {
+      "case_id": "MILESTONE_32_FINAL_CLOSURE_READY_FOR_NEXT_GOVERNED_OPENING",
+      "expected": "MILESTONE_33_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+      "failure_reason": "NONE",
+      "observed": "MILESTONE_33_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+      "passed": true
+    }
+  ],
+  "closure_id": "MILESTONE-32-HBCE-IPR-RUNTIME-API-BOUNDARY-FINAL-CLOSURE-7CE1E3BE761701CF",
+  "closure_status": "CLOSED",
+  "task_id": "MILESTONE_32_TASK_6_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_FINAL_CLOSURE_V1"
+}
