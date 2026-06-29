@@ -1,0 +1,117 @@
+{
+  "closure_case_count": 12,
+  "closure_cases": [
+    {
+      "case_id": "TASK_5_REGRESSION_INTEGRATION_REMAINS_VALID",
+      "expected": "Task 5 regression integration remains VALID",
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "integration_passed": true,
+        "integration_status": "VALID",
+        "pass_count": 10
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_REGRESSION_CASES_REMAIN_VALID",
+      "expected": 10,
+      "failure_reason": "NONE",
+      "observed": {
+        "all_cases_passed": true,
+        "integration_case_count": 10
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_ARTIFACT_SET_REMAINS_PRESENT",
+      "expected": "Task 5 persisted artifact set present",
+      "failure_reason": "NONE",
+      "observed": "present",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_5_TRANSITION_TO_FINAL_CLOSURE_REMAINS_VALID",
+      "expected": "MILESTONE_31_TASK_6_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_FINAL_CLOSURE_V1",
+      "failure_reason": "NONE",
+      "observed": "MILESTONE_31_TASK_6_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_FINAL_CLOSURE_V1",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_CHAIN_REMAINS_VALID",
+      "expected": "Task 4 validation doc remains valid",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-31-task-4-verified-operator-authorization-session-gate-validation-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_IMPLEMENTATION_CHAIN_REMAINS_VALID",
+      "expected": "Task 3 implementation doc remains ready",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-31-task-3-verified-operator-authorization-session-gate-implementation-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_2_SCOPE_LOCK_CHAIN_REMAINS_VALID",
+      "expected": "Task 2 scope lock doc remains aligned",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-31-task-2-objective-selection-and-scope-lock-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_1_GOVERNED_OPENING_CHAIN_REMAINS_VALID",
+      "expected": "Task 1 governed opening doc remains aligned",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-31-task-1-governed-opening-with-task-budget-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "FAIL_CLOSED_AUTHORIZATION_DENIALS_REMAIN_ENFORCED",
+      "expected": "all protected authorization bypass flags remain false",
+      "failure_reason": "NONE",
+      "observed": {
+        "external_command": false,
+        "private_core": false,
+        "unverified_manuel": false,
+        "without_context": false,
+        "without_valid_authorization": false,
+        "without_verification": false
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_BUDGET_REMAINS_WITHIN_GOVERNED_LIMIT",
+      "expected": {
+        "current_task_number": 6,
+        "task_budget_max": 8
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "current_task_number": 6,
+        "source_current_task_number": 5,
+        "task_budget_max": 8
+      },
+      "passed": true
+    },
+    {
+      "case_id": "MILESTONE_31_CLOSURE_ARTIFACT_PLAN_REMAINS_COMPLETE",
+      "expected": 5,
+      "failure_reason": "NONE",
+      "observed": {
+        "task_5_generated_artifact_count": 5,
+        "task_6_generated_artifact_count": 5
+      },
+      "passed": true
+    },
+    {
+      "case_id": "MILESTONE_31_FINAL_CLOSURE_READY_FOR_NEXT_GOVERNED_OPENING",
+      "expected": "MILESTONE_32_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+      "failure_reason": "NONE",
+      "observed": "MILESTONE_32_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+      "passed": true
+    }
+  ],
+  "closure_id": "MILESTONE-31-SESSION-GATE-FINAL-CLOSURE-99E9138689ADEE75",
+  "closure_status": "CLOSED",
+  "task_id": "MILESTONE_31_TASK_6_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_FINAL_CLOSURE_V1"
+}

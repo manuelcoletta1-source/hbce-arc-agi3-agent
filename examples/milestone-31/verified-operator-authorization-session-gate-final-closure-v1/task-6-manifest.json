@@ -1,0 +1,21 @@
+{
+  "closure_case_count": 12,
+  "closure_id": "MILESTONE-31-SESSION-GATE-FINAL-CLOSURE-99E9138689ADEE75",
+  "closure_passed": true,
+  "closure_signature": "B6AE9E5FBA422EB7",
+  "closure_status": "CLOSED",
+  "fail_count": 0,
+  "final_closure_revision": "MILESTONE_31_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_FINAL_CLOSURE_V1",
+  "generated_artifact_count": 5,
+  "next_stage": "MILESTONE_32_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+  "pass_count": 12,
+  "scope_lock_id": "MILESTONE_31_SCOPE_JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "selected_objective_id": "JOKER_C2_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "session_gate_mode_id": "VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE",
+  "source_integration_id": "MILESTONE-31-SESSION-GATE-INTEGRATION-B2F0A37FBB8D78BA",
+  "source_integration_signature": "64653886F9E3A62D",
+  "source_regression_task_id": "MILESTONE_31_TASK_5_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_REGRESSION_INTEGRATION_V1",
+  "source_task_5_signature": "226D4D590F4693FD",
+  "task_6_signature": "EA2D490F6BE63379",
+  "task_id": "MILESTONE_31_TASK_6_VERIFIED_OPERATOR_AUTHORIZATION_SESSION_GATE_FINAL_CLOSURE_V1"
+}
