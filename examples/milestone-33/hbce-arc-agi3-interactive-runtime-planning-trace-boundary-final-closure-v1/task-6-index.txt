@@ -1,0 +1,5 @@
+MILESTONE_33_TASK_6_ARTIFACT_INDEX
+task-6-boundary-final-closure-cases.json
+task-6-boundary-final-closure-report.json
+task-6-boundary-final-closure-report.md
+task-6-manifest.json

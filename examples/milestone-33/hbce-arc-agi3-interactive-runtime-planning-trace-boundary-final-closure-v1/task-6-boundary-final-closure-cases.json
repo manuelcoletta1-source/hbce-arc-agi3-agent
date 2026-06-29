@@ -1,0 +1,114 @@
+[
+  {
+    "case_id": "TASK_5_REGRESSION_READY",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_INTEGRATION_STATUS_VALID",
+    "expected": "VALID",
+    "failure_reason": null,
+    "observed": "VALID",
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_INTEGRATION_PASSED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_INTEGRATION_REPORT_VALID",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "OBJECTIVE_CLOSED",
+    "expected": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
+    "failure_reason": null,
+    "observed": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "SCOPE_LOCK_CLOSED",
+    "expected": "MILESTONE_33_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
+    "failure_reason": null,
+    "observed": "MILESTONE_33_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_EVENT_COUNT_CLOSED",
+    "expected": 4,
+    "failure_reason": null,
+    "observed": 4,
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_FINGERPRINT_CLOSED",
+    "expected": "non-empty",
+    "failure_reason": null,
+    "observed": "CE883C84561D5BC8",
+    "passed": true
+  },
+  {
+    "case_id": "PLANNING_TRACE_BOUNDARY_CLOSED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "ACTION_OBSERVATION_TRACE_BOUNDARY_CLOSED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "GOAL_INFERENCE_BOUNDARY_CLOSED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "MEMORY_STATE_BOUNDARY_CLOSED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "LEGAL_CERTIFICATION_FALSE",
+    "expected": false,
+    "failure_reason": null,
+    "observed": false,
+    "passed": true
+  },
+  {
+    "case_id": "KAGGLE_SCORE_CLAIM_FALSE",
+    "expected": false,
+    "failure_reason": null,
+    "observed": false,
+    "passed": true
+  },
+  {
+    "case_id": "RUNTIME_SIDE_EFFECTS_DENIED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "NEXT_STAGE_MILESTONE_34_OPENING",
+    "expected": "MILESTONE_34_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+    "failure_reason": null,
+    "observed": "MILESTONE_34_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+    "passed": true
+  }
+]
