@@ -1,0 +1,184 @@
+{
+  "integration_case_count": 12,
+  "integration_cases": [
+    {
+      "case_id": "TASK_4_VALIDATION_REMAINS_VALID",
+      "expected": "Task 4 validation remains VALID",
+      "failure_reason": "NONE",
+      "observed": {
+        "fail_count": 0,
+        "pass_count": 12,
+        "validation_passed": true,
+        "validation_status": "VALID"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_VALIDATION_CASES_REMAIN_VALID",
+      "expected": 12,
+      "failure_reason": "NONE",
+      "observed": {
+        "all_cases_passed": true,
+        "validation_case_count": 12
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_ARTIFACT_SET_REMAINS_PRESENT",
+      "expected": "Task 4 persisted artifact set present",
+      "failure_reason": "NONE",
+      "observed": "present",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_TO_TASK_5_TRANSITION_CONFIRMED",
+      "expected": "MILESTONE_32_TASK_5_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_REGRESSION_INTEGRATION_V1",
+      "failure_reason": "NONE",
+      "observed": {
+        "source_constant_next_stage": "MILESTONE_32_TASK_5_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_REGRESSION_INTEGRATION_V1",
+        "source_report_next_stage": "MILESTONE_32_TASK_5_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_REGRESSION_INTEGRATION_V1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "COMPLETE_LAYER_REMAINS_READY",
+      "expected": {
+        "proof_layer_passed": true,
+        "proof_layer_status": "READY"
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "proof_layer_passed": true,
+        "proof_layer_status": "READY"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "MISSING_REQUIRED_LINKS_REMAIN_FAIL_CLOSED",
+      "expected": "six missing-link probes remain BLOCKED",
+      "failure_reason": "NONE",
+      "observed": [
+        {
+          "layer_key": "verified_operational_subject",
+          "missing_required_links": [
+            "verified_operational_subject"
+          ],
+          "parameter_name": "operational_subject_id",
+          "status": "BLOCKED",
+          "validator_passed": false
+        },
+        {
+          "layer_key": "governed_session",
+          "missing_required_links": [
+            "governed_session"
+          ],
+          "parameter_name": "governed_session_id",
+          "status": "BLOCKED",
+          "validator_passed": false
+        },
+        {
+          "layer_key": "event_trace",
+          "missing_required_links": [
+            "event_trace"
+          ],
+          "parameter_name": "event_trace_id",
+          "status": "BLOCKED",
+          "validator_passed": false
+        },
+        {
+          "layer_key": "technical_proof_receipt",
+          "missing_required_links": [
+            "technical_proof_receipt"
+          ],
+          "parameter_name": "technical_proof_receipt_id",
+          "status": "BLOCKED",
+          "validator_passed": false
+        },
+        {
+          "layer_key": "audit_record",
+          "missing_required_links": [
+            "audit_record"
+          ],
+          "parameter_name": "audit_record_id",
+          "status": "BLOCKED",
+          "validator_passed": false
+        },
+        {
+          "layer_key": "model_usage_record",
+          "missing_required_links": [
+            "model_usage_record"
+          ],
+          "parameter_name": "model_usage_record_id",
+          "status": "BLOCKED",
+          "validator_passed": false
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case_id": "LEGAL_BOUNDARY_REMAINS_FALSE_CERTIFICATION",
+      "expected": {
+        "explicitLegalBoundaryRequired": true,
+        "iprCardOfficialPublicIdentityDocument": false,
+        "legalCertification": false,
+        "opcTechnicalProofReceiptOnly": true
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "explicitLegalBoundaryRequired": true,
+        "iprCardOfficialPublicIdentityDocument": false,
+        "legalCertification": false,
+        "opcTechnicalProofReceiptOnly": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "TASK_4_DOCUMENT_MARKERS_REMAIN_PRESENT",
+      "expected": "Task 4 validation doc remains aligned",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-32-task-4-hbce-ipr-runtime-api-v1-operational-identity-and-proof-layer-boundary-validation-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_3_IMPLEMENTATION_CHAIN_REMAINS_READY",
+      "expected": "Task 3 implementation doc remains ready",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-32-task-3-hbce-ipr-runtime-api-v1-operational-identity-and-proof-layer-boundary-implementation-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_2_SCOPE_LOCK_CHAIN_REMAINS_LOCKED",
+      "expected": "Task 2 scope lock doc remains locked",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-32-task-2-objective-selection-and-scope-lock-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_1_GOVERNED_OPENING_CHAIN_REMAINS_READY",
+      "expected": "Task 1 governed opening doc remains ready",
+      "failure_reason": "NONE",
+      "observed": "docs/milestone-32-task-1-governed-opening-with-task-budget-v1.md",
+      "passed": true
+    },
+    {
+      "case_id": "TASK_BUDGET_AND_FINAL_CLOSURE_STAGE_READY",
+      "expected": {
+        "current_task_number": 5,
+        "next_stage_suffix": "_FINAL_CLOSURE_V1",
+        "source_current_task_number": 4,
+        "task_budget_max": 8
+      },
+      "failure_reason": "NONE",
+      "observed": {
+        "current_task_number": 5,
+        "next_stage": "MILESTONE_32_TASK_6_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_FINAL_CLOSURE_V1",
+        "source_current_task_number": 4,
+        "task_budget_max": 8
+      },
+      "passed": true
+    }
+  ],
+  "integration_id": "MILESTONE-32-HBCE-IPR-RUNTIME-API-BOUNDARY-INTEGRATION-94762E5BCC86909C",
+  "integration_status": "VALID",
+  "task_id": "MILESTONE_32_TASK_5_HBCE_IPR_RUNTIME_API_V1_OPERATIONAL_IDENTITY_AND_PROOF_LAYER_BOUNDARY_REGRESSION_INTEGRATION_V1"
+}
