@@ -1,0 +1,5 @@
+MILESTONE_33_TASK_3_ARTIFACT_INDEX
+task-3-boundary-implementation-cases.json
+task-3-boundary-implementation-report.json
+task-3-boundary-implementation-report.md
+task-3-manifest.json
