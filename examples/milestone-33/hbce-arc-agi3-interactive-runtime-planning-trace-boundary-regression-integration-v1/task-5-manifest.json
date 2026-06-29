@@ -1,0 +1,14 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-5-boundary-regression-integration-cases.json",
+    "task-5-boundary-regression-integration-report.json",
+    "task-5-boundary-regression-integration-report.md",
+    "task-5-index.txt",
+    "task-5-manifest.json"
+  ],
+  "integration_id": "MILESTONE-33-ARC-AGI3-INTERACTIVE-RUNTIME-INTEGRATION-EF4D791D0866640F",
+  "integration_signature": "5B84E0A85D3CF934",
+  "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
+  "task_id": "MILESTONE_33_TASK_5_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY_REGRESSION_INTEGRATION_V1"
+}

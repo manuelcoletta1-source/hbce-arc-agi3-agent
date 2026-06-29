@@ -1,0 +1,157 @@
+[
+  {
+    "case_id": "TASK_4_VALIDATION_READY",
+    "expected": "Task 4 validation ready",
+    "failure_reason": null,
+    "observed": "/home/manuelcoletta1/github/hbce-arc-agi3-agent/docs/milestone-33-task-4-hbce-arc-agi3-interactive-runtime-planning-trace-boundary-validation-v1.md",
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_VALIDATION_STATUS_VALID",
+    "expected": "VALID",
+    "failure_reason": null,
+    "observed": "VALID",
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_VALIDATION_PASSED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_VALIDATION_REPORT_VALID",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "OBJECTIVE_ID_MATCHES_VALIDATION",
+    "expected": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
+    "failure_reason": null,
+    "observed": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "SCOPE_LOCK_ID_MATCHES_VALIDATION",
+    "expected": "MILESTONE_33_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
+    "failure_reason": null,
+    "observed": "MILESTONE_33_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "VALIDATION_CASE_COUNT_STABLE",
+    "expected": 16,
+    "failure_reason": null,
+    "observed": 16,
+    "passed": true
+  },
+  {
+    "case_id": "VALIDATION_PASS_COUNT_STABLE",
+    "expected": 16,
+    "failure_reason": null,
+    "observed": 16,
+    "passed": true
+  },
+  {
+    "case_id": "VALIDATION_FAIL_COUNT_ZERO",
+    "expected": 0,
+    "failure_reason": null,
+    "observed": 0,
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_SNAPSHOT_EVENT_COUNT_STABLE",
+    "expected": 4,
+    "failure_reason": null,
+    "observed": 4,
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_EVENT_TRACE_FINGERPRINT_PRESENT",
+    "expected": "non-empty fingerprint",
+    "failure_reason": null,
+    "observed": "CE883C84561D5BC8",
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_EVENT_IDS_UNIQUE",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_ACTION_IDS_SEQUENTIAL",
+    "expected": "ACTION-001..ACTION-004",
+    "failure_reason": null,
+    "observed": [
+      "ACTION-001",
+      "ACTION-002",
+      "ACTION-003",
+      "ACTION-004"
+    ],
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_OBSERVATION_IDS_SEQUENTIAL",
+    "expected": "OBSERVATION-001..OBSERVATION-004",
+    "failure_reason": null,
+    "observed": [
+      "OBSERVATION-001",
+      "OBSERVATION-002",
+      "OBSERVATION-003",
+      "OBSERVATION-004"
+    ],
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_PLANNING_STEP_IDS_SEQUENTIAL",
+    "expected": "PLAN-001..PLAN-004",
+    "failure_reason": null,
+    "observed": [
+      "PLAN-001",
+      "PLAN-002",
+      "PLAN-003",
+      "PLAN-004"
+    ],
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_MEMORY_DIGESTS_PRESENT",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "LEGAL_CERTIFICATION_FALSE",
+    "expected": false,
+    "failure_reason": null,
+    "observed": false,
+    "passed": true
+  },
+  {
+    "case_id": "KAGGLE_SCORE_CLAIM_FALSE",
+    "expected": false,
+    "failure_reason": null,
+    "observed": false,
+    "passed": true
+  },
+  {
+    "case_id": "RUNTIME_SIDE_EFFECT_FLAGS_DENIED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "NEXT_STAGE_TASK_6_FINAL_CLOSURE",
+    "expected": "MILESTONE_33_TASK_6_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY_FINAL_CLOSURE_V1",
+    "failure_reason": null,
+    "observed": "MILESTONE_33_TASK_6_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY_FINAL_CLOSURE_V1",
+    "passed": true
+  }
+]
