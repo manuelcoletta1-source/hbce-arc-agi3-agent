@@ -1,0 +1,86 @@
+[
+  {
+    "case_id": "TASK_1_GOVERNED_OPENING_READY",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_OPENING_STATUS_READY",
+    "expected": "READY",
+    "failure_reason": null,
+    "observed": "READY",
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_OPENING_PASSED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "OBJECTIVE_CANDIDATE_SELECTED",
+    "expected": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+    "failure_reason": null,
+    "observed": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "SCOPE_LOCK_ID_BOUND",
+    "expected": "MILESTONE_35_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+    "failure_reason": null,
+    "observed": "MILESTONE_35_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "MULTI_MODEL_ORCHESTRATION_BOUNDARY_LOCKED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "REPLAYABLE_EVENT_TRACE_REQUIRED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "LOCAL_EVALUATION_RECORD_REQUIRED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_SNAPSHOT_REQUIRED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "AUDIT_ARTIFACT_REQUIRED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "LEGAL_AND_KAGGLE_CLAIMS_DENIED",
+    "expected": "false/false",
+    "failure_reason": null,
+    "observed": "False/False",
+    "passed": true
+  },
+  {
+    "case_id": "NEXT_STAGE_TASK_3_IMPLEMENTATION",
+    "expected": "MILESTONE_35_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_IMPLEMENTATION_V1",
+    "failure_reason": null,
+    "observed": "MILESTONE_35_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_IMPLEMENTATION_V1",
+    "passed": true
+  }
+]
