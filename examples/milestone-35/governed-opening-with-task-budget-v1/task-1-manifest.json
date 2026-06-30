@@ -1,0 +1,13 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-1-governed-opening-cases.json",
+    "task-1-governed-opening-report.json",
+    "task-1-governed-opening-report.md",
+    "task-1-index.txt",
+    "task-1-manifest.json"
+  ],
+  "opening_id": "MILESTONE-35-GOVERNED-OPENING-89DDC5016E5D8B10",
+  "opening_signature": "3940EE7F0AF4A15B",
+  "task_id": "MILESTONE_35_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1"
+}

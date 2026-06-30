@@ -1,0 +1,5 @@
+MILESTONE_35_TASK_1_ARTIFACT_INDEX
+task-1-governed-opening-cases.json
+task-1-governed-opening-report.json
+task-1-governed-opening-report.md
+task-1-manifest.json
