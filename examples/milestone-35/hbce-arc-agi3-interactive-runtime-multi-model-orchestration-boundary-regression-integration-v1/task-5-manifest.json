@@ -1,0 +1,13 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-5-multi-model-orchestration-regression-integration-cases.json",
+    "task-5-multi-model-orchestration-regression-integration-report.json",
+    "task-5-multi-model-orchestration-regression-integration-report.md",
+    "task-5-index.txt",
+    "task-5-manifest.json"
+  ],
+  "integration_id": "MILESTONE-35-ARC-AGI3-MULTI-MODEL-ORCHESTRATION-INTEGRATION-FDC8E31DA830C4A4",
+  "integration_signature": "3D03005A0603C51F",
+  "task_id": "MILESTONE_35_TASK_5_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_REGRESSION_INTEGRATION_V1"
+}
