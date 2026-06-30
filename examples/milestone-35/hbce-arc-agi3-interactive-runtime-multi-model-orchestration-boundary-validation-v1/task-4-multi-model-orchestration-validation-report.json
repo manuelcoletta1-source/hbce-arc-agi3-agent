@@ -1,0 +1,323 @@
+{
+  "audit_artifact_required": true,
+  "audit_id": "M34-AUDIT-F521BFEAAB12515C",
+  "cases": [
+    {
+      "case_id": "M34-T4-001",
+      "description": "Source implementation report validates",
+      "evidence": "MILESTONE_35_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_IMPLEMENTATION_V1",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-002",
+      "description": "Source implementation task id is bound",
+      "evidence": "MILESTONE_35_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_IMPLEMENTATION_V1",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-003",
+      "description": "Selected objective remains locked",
+      "evidence": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-004",
+      "description": "Scope lock remains bound",
+      "evidence": "MILESTONE_35_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-005",
+      "description": "Harness mode remains bound",
+      "evidence": "ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-006",
+      "description": "Implementation status is READY",
+      "evidence": "READY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-007",
+      "description": "Implementation passed",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-008",
+      "description": "Replay evaluation harness boundary is present",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-009",
+      "description": "Replayable event trace is required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-010",
+      "description": "Local evaluation record is required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-011",
+      "description": "Regression snapshot is required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-012",
+      "description": "Audit artifact is required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-013",
+      "description": "Evaluation remains technical only",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-014",
+      "description": "Legal certification remains denied",
+      "evidence": false,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-015",
+      "description": "Kaggle score claim remains denied",
+      "evidence": false,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-016",
+      "description": "Official benchmark certification remains denied",
+      "evidence": false,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T4-017",
+      "description": "Validation next stage advances to regression integration",
+      "evidence": "MILESTONE_35_TASK_5_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+      "passed": true
+    }
+  ],
+  "current_task_number": 4,
+  "fail_count": 0,
+  "generated_artifact_count": 5,
+  "harness_mode_id": "ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+  "kaggle_score_claim": false,
+  "legal_certification": false,
+  "local_evaluation_id": "M34-EVALUATION-A9E3D0299C308374",
+  "local_evaluation_record_required": true,
+  "multi_model_orchestration_boundary": true,
+  "network_access_allowed": false,
+  "next_stage": "MILESTONE_35_TASK_5_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+  "official_benchmark_certification": false,
+  "pass_count": 17,
+  "ready": true,
+  "regression_snapshot_id": "M34-REGRESSION-SNAPSHOT-C5954E83D498D3A4",
+  "regression_snapshot_required": true,
+  "replay_id": "M35-MULTI-MODEL-5E0BA37850D6DC27",
+  "replayable_event_trace_required": true,
+  "repository_mutation_allowed": false,
+  "scope_lock_id": "MILESTONE_35_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+  "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+  "shell_execution_allowed": false,
+  "source_implementation_passed": true,
+  "source_implementation_report": {
+    "audit_artifact_required": true,
+    "cases": [
+      {
+        "case_id": "SOURCE_SCOPE_STATUS_LOCKED",
+        "expected": "LOCKED",
+        "failure_reason": null,
+        "observed": "LOCKED",
+        "passed": true
+      },
+      {
+        "case_id": "SOURCE_SCOPE_PASSED",
+        "expected": true,
+        "failure_reason": null,
+        "observed": true,
+        "passed": true
+      },
+      {
+        "case_id": "OBJECTIVE_ID_MATCHES_SCOPE",
+        "expected": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+        "failure_reason": null,
+        "observed": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+        "passed": true
+      },
+      {
+        "case_id": "SCOPE_LOCK_ID_MATCHES_SCOPE",
+        "expected": "MILESTONE_35_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+        "failure_reason": null,
+        "observed": "MILESTONE_35_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+        "passed": true
+      },
+      {
+        "case_id": "HARNESS_MODE_BOUND",
+        "expected": "ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+        "failure_reason": null,
+        "observed": "ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+        "passed": true
+      },
+      {
+        "case_id": "MULTI_MODEL_ORCHESTRATION_IMPLEMENTED",
+        "expected": true,
+        "failure_reason": null,
+        "observed": true,
+        "passed": true
+      },
+      {
+        "case_id": "REPLAYABLE_EVENT_TRACE_IMPLEMENTED",
+        "expected": true,
+        "failure_reason": null,
+        "observed": true,
+        "passed": true
+      },
+      {
+        "case_id": "LOCAL_EVALUATION_RECORD_IMPLEMENTED",
+        "expected": true,
+        "failure_reason": null,
+        "observed": true,
+        "passed": true
+      },
+      {
+        "case_id": "REGRESSION_SNAPSHOT_IMPLEMENTED",
+        "expected": true,
+        "failure_reason": null,
+        "observed": true,
+        "passed": true
+      },
+      {
+        "case_id": "AUDIT_ARTIFACT_IMPLEMENTED",
+        "expected": true,
+        "failure_reason": null,
+        "observed": true,
+        "passed": true
+      },
+      {
+        "case_id": "SOURCE_RUNTIME_CLOSURE_CLOSED",
+        "expected": "CLOSED",
+        "failure_reason": null,
+        "observed": "CLOSED",
+        "passed": true
+      },
+      {
+        "case_id": "REPLAY_EVALUATION_RECORD_VALID",
+        "expected": true,
+        "failure_reason": null,
+        "observed": true,
+        "passed": true
+      },
+      {
+        "case_id": "LEGAL_KAGGLE_BENCHMARK_CLAIMS_DENIED",
+        "expected": "false/false/false",
+        "failure_reason": null,
+        "observed": "False/False/False",
+        "passed": true
+      },
+      {
+        "case_id": "NEXT_STAGE_TASK_4_VALIDATION",
+        "expected": "MILESTONE_35_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_VALIDATION_V1",
+        "failure_reason": null,
+        "observed": "MILESTONE_35_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_VALIDATION_V1",
+        "passed": true
+      }
+    ],
+    "current_task_number": 3,
+    "fail_count": 0,
+    "generated_artifact_count": 5,
+    "harness_mode_id": "ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+    "implementation_case_count": 14,
+    "implementation_id": "MILESTONE-35-ARC-AGI3-MULTI-MODEL-ORCHESTRATION-610EAD8EAA03DA3F",
+    "implementation_passed": true,
+    "implementation_revision": "MILESTONE_35_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_IMPLEMENTATION_V1",
+    "implementation_signature": "8E00D42C17FD3586",
+    "implementation_status": "READY",
+    "kaggle_score_claim": false,
+    "legal_certification": false,
+    "local_evaluation_record_required": true,
+    "multi_model_orchestration_boundary": true,
+    "network_access_allowed": false,
+    "next_stage": "MILESTONE_35_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_VALIDATION_V1",
+    "official_benchmark_certification": false,
+    "pass_count": 14,
+    "ready": true,
+    "regression_snapshot_required": true,
+    "replay_evaluation_record": {
+      "audit_artifact": {
+        "artifact_digest": "8E64F33AA73AA2E5",
+        "artifact_kind": "MULTI_MODEL_ORCHESTRATION_AUDIT_ARTIFACT",
+        "audit_id": "M34-AUDIT-F521BFEAAB12515C",
+        "kaggle_score_claim": false,
+        "legal_certification": false,
+        "technical_evaluation_only": true
+      },
+      "audit_artifact_required": true,
+      "harness_mode_id": "ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+      "implementation_id": "MILESTONE-35-ARC-AGI3-MULTI-MODEL-ORCHESTRATION-610EAD8EAA03DA3F",
+      "kaggle_score_claim": false,
+      "legal_certification": false,
+      "local_evaluation_record": {
+        "assessment_kind": "LOCAL_TECHNICAL_ASSESSMENT_ONLY",
+        "criteria_count": 6,
+        "criteria_pass_count": 6,
+        "evaluation_id": "M34-EVALUATION-A9E3D0299C308374",
+        "evaluation_status": "READY",
+        "kaggle_score_claim": false,
+        "legal_certification": false,
+        "official_benchmark_certification": false,
+        "technical_evaluation_only": true
+      },
+      "local_evaluation_record_required": true,
+      "official_benchmark_certification": false,
+      "regression_snapshot": {
+        "snapshot_id": "M34-REGRESSION-SNAPSHOT-C5954E83D498D3A4",
+        "source_runtime_closure_id": "MILESTONE-33-ARC-AGI3-INTERACTIVE-RUNTIME-FINAL-CLOSURE-EF4D791D0866640F",
+        "source_runtime_event_count": 4,
+        "source_runtime_trace_fingerprint": "CE883C84561D5BC8"
+      },
+      "regression_snapshot_required": true,
+      "replay_id": "M35-MULTI-MODEL-5E0BA37850D6DC27",
+      "replayable_event_trace_required": true,
+      "scope_lock_id": "MILESTONE_35_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+      "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+      "source_runtime_closure_passed": true,
+      "source_runtime_closure_status": "CLOSED",
+      "technical_evaluation_only": true
+    },
+    "replayable_event_trace_required": true,
+    "repository_mutation_allowed": false,
+    "scope_lock_id": "MILESTONE_35_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+    "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY",
+    "shell_execution_allowed": false,
+    "source_scope_passed": true,
+    "source_scope_status": "LOCKED",
+    "source_scope_task_id": "MILESTONE_35_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+    "source_task_2_signature": "3880205AB32AAC7F",
+    "task_3_signature": "4AAE3109AE316162",
+    "task_budget_max": 8,
+    "task_id": "MILESTONE_35_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_IMPLEMENTATION_V1",
+    "technical_evaluation_only": true
+  },
+  "source_implementation_status": "READY",
+  "source_implementation_task_id": "MILESTONE_35_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_IMPLEMENTATION_V1",
+  "source_runtime_event_count": 4,
+  "source_runtime_trace_fingerprint": "CE883C84561D5BC8",
+  "task_4_signature": "0166EA052B41588C",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_35_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_VALIDATION_V1",
+  "technical_evaluation_only": true,
+  "validation_case_count": 17,
+  "validation_id": "MILESTONE-35-ARC-AGI3-MULTI-MODEL-ORCHESTRATION-VALIDATION-FDC8E31DA830C4A4",
+  "validation_passed": true,
+  "validation_revision": "MILESTONE_35_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_MULTI_MODEL_ORCHESTRATION_BOUNDARY_VALIDATION_V1",
+  "validation_signature": "82DCDC172340343C",
+  "validation_status": "VALID"
+}
