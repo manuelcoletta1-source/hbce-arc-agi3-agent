@@ -1,0 +1,104 @@
+[
+  {
+    "case_id": "M34-T4-001",
+    "description": "Source implementation report validates",
+    "evidence": "MILESTONE_34_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_IMPLEMENTATION_V1",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-002",
+    "description": "Source implementation task id is bound",
+    "evidence": "MILESTONE_34_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_IMPLEMENTATION_V1",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-003",
+    "description": "Selected objective remains locked",
+    "evidence": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-004",
+    "description": "Scope lock remains bound",
+    "evidence": "MILESTONE_34_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-005",
+    "description": "Harness mode remains bound",
+    "evidence": "ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-006",
+    "description": "Implementation status is READY",
+    "evidence": "READY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-007",
+    "description": "Implementation passed",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-008",
+    "description": "Replay evaluation harness boundary is present",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-009",
+    "description": "Replayable event trace is required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-010",
+    "description": "Local evaluation record is required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-011",
+    "description": "Regression snapshot is required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-012",
+    "description": "Audit artifact is required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-013",
+    "description": "Evaluation remains technical only",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-014",
+    "description": "Legal certification remains denied",
+    "evidence": false,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-015",
+    "description": "Kaggle score claim remains denied",
+    "evidence": false,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-016",
+    "description": "Official benchmark certification remains denied",
+    "evidence": false,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T4-017",
+    "description": "Validation next stage advances to regression integration",
+    "evidence": "MILESTONE_34_TASK_5_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_REGRESSION_INTEGRATION_V1",
+    "passed": true
+  }
+]
