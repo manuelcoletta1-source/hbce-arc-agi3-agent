@@ -1,0 +1,147 @@
+[
+  {
+    "case_id": "M34-T5-001",
+    "description": "Source validation report validates",
+    "evidence": "MILESTONE_34_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_VALIDATION_V1",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-002",
+    "description": "Source validation task id is bound",
+    "evidence": "MILESTONE_34_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_VALIDATION_V1",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-003",
+    "description": "Source validation status is VALID",
+    "evidence": "VALID",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-004",
+    "description": "Source validation passed",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-005",
+    "description": "Selected objective remains locked",
+    "evidence": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-006",
+    "description": "Scope lock remains bound",
+    "evidence": "MILESTONE_34_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-007",
+    "description": "Harness mode remains bound",
+    "evidence": "ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-008",
+    "description": "Implementation report remains ready",
+    "evidence": "READY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-009",
+    "description": "Replay boundary remains true",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-010",
+    "description": "Replayable event trace remains required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-011",
+    "description": "Local evaluation record remains required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-012",
+    "description": "Regression snapshot remains required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-013",
+    "description": "Audit artifact remains required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-014",
+    "description": "Regression event trace has four bound events",
+    "evidence": 4,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-015",
+    "description": "Regression event trace entries are all bound",
+    "evidence": [
+      {
+        "event_id": "M34-T5-EVT-001",
+        "event_type": "source-validation-bound",
+        "fingerprint": "76A187C85D806971",
+        "status": "VALID"
+      },
+      {
+        "event_id": "M34-T5-EVT-002",
+        "event_type": "replay-record-bound",
+        "fingerprint": "M34-REPLAY-85E499A082CADC86",
+        "status": "BOUND"
+      },
+      {
+        "event_id": "M34-T5-EVT-003",
+        "event_type": "regression-snapshot-bound",
+        "fingerprint": "M34-REGRESSION-SNAPSHOT-A6CD9B2BBB460CE1",
+        "status": "BOUND"
+      },
+      {
+        "event_id": "M34-T5-EVT-004",
+        "event_type": "audit-artifact-bound",
+        "fingerprint": "M34-AUDIT-8777B47C9F1D4E4F",
+        "status": "BOUND"
+      }
+    ],
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-016",
+    "description": "Technical evaluation only remains true",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-017",
+    "description": "Legal certification remains denied",
+    "evidence": false,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-018",
+    "description": "Kaggle score claim remains denied",
+    "evidence": false,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-019",
+    "description": "Official benchmark certification remains denied",
+    "evidence": false,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T5-020",
+    "description": "Integration next stage advances to final closure",
+    "evidence": "MILESTONE_34_TASK_6_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_REPLAY_EVALUATION_HARNESS_BOUNDARY_FINAL_CLOSURE_V1",
+    "passed": true
+  }
+]
