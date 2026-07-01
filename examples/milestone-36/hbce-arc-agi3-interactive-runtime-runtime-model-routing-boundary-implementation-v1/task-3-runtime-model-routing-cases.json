@@ -1,0 +1,100 @@
+[
+  {
+    "case_id": "SOURCE_SCOPE_STATUS_LOCKED",
+    "expected": "LOCKED",
+    "failure_reason": null,
+    "observed": "LOCKED",
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_SCOPE_PASSED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "OBJECTIVE_ID_MATCHES_SCOPE",
+    "expected": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+    "failure_reason": null,
+    "observed": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "SCOPE_LOCK_ID_MATCHES_SCOPE",
+    "expected": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+    "failure_reason": null,
+    "observed": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "HARNESS_MODE_BOUND",
+    "expected": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+    "failure_reason": null,
+    "observed": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "RUNTIME_MODEL_ROUTING_IMPLEMENTED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "REPLAYABLE_EVENT_TRACE_IMPLEMENTED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "LOCAL_EVALUATION_RECORD_IMPLEMENTED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "REGRESSION_SNAPSHOT_IMPLEMENTED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "AUDIT_ARTIFACT_IMPLEMENTED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_RUNTIME_CLOSURE_CLOSED",
+    "expected": "CLOSED",
+    "failure_reason": null,
+    "observed": "CLOSED",
+    "passed": true
+  },
+  {
+    "case_id": "REPLAY_EVALUATION_RECORD_VALID",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "LEGAL_KAGGLE_BENCHMARK_CLAIMS_DENIED",
+    "expected": "false/false/false",
+    "failure_reason": null,
+    "observed": "False/False/False",
+    "passed": true
+  },
+  {
+    "case_id": "NEXT_STAGE_TASK_4_VALIDATION",
+    "expected": "MILESTONE_36_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+    "failure_reason": null,
+    "observed": "MILESTONE_36_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+    "passed": true
+  }
+]

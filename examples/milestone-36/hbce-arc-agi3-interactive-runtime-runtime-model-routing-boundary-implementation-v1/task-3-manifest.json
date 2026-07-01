@@ -1,0 +1,13 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-3-runtime-model-routing-cases.json",
+    "task-3-runtime-model-routing-report.json",
+    "task-3-runtime-model-routing-report.md",
+    "task-3-index.txt",
+    "task-3-manifest.json"
+  ],
+  "implementation_id": "MILESTONE-36-ARC-AGI3-RUNTIME-MODEL-ROUTING-D6DC73E2F2662BA4",
+  "implementation_signature": "503098B37256318A",
+  "task_id": "MILESTONE_36_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_IMPLEMENTATION_V1"
+}
