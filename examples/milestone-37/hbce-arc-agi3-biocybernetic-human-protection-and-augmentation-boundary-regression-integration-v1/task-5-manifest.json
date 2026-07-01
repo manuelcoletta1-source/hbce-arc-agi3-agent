@@ -1,0 +1,13 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-5-biocybernetic-human-protection-and-augmentation-regression-integration-cases.json",
+    "task-5-biocybernetic-human-protection-and-augmentation-regression-integration-report.json",
+    "task-5-biocybernetic-human-protection-and-augmentation-regression-integration-report.md",
+    "task-5-index.txt",
+    "task-5-manifest.json"
+  ],
+  "integration_id": "MILESTONE-37-ARC-AGI3-BIOCYBERNETIC-HUMAN-PROTECTION-AUGMENTATION-INTEGRATION-FDC8E31DA830C4A4",
+  "integration_signature": "D64014603B1B2F8E",
+  "task_id": "MILESTONE_37_TASK_5_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_REGRESSION_INTEGRATION_V1"
+}

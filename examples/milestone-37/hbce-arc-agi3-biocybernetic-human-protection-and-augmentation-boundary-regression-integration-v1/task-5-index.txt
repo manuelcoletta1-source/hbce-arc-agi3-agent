@@ -1,0 +1,6 @@
+MILESTONE_37_TASK_5_ARTIFACT_INDEX
+task-5-biocybernetic-human-protection-and-augmentation-regression-integration-cases.json
+task-5-biocybernetic-human-protection-and-augmentation-regression-integration-report.json
+task-5-biocybernetic-human-protection-and-augmentation-regression-integration-report.md
+task-5-index.txt
+task-5-manifest.json
