@@ -1,0 +1,5 @@
+MILESTONE_37_TASK_3_ARTIFACT_INDEX
+task-3-biocybernetic-human-protection-and-augmentation-cases.json
+task-3-biocybernetic-human-protection-and-augmentation-report.json
+task-3-biocybernetic-human-protection-and-augmentation-report.md
+task-3-manifest.json
