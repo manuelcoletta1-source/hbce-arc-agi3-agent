@@ -1,0 +1,539 @@
+{
+  "audit_artifact_required": true,
+  "audit_id": "M34-AUDIT-6D3DCEFAC68E5930",
+  "cases": [
+    {
+      "case_id": "M34-T5-001",
+      "description": "Source validation report validates",
+      "evidence": "MILESTONE_36_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-002",
+      "description": "Source validation task id is bound",
+      "evidence": "MILESTONE_36_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-003",
+      "description": "Source validation status is VALID",
+      "evidence": "VALID",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-004",
+      "description": "Source validation passed",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-005",
+      "description": "Selected objective remains locked",
+      "evidence": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-006",
+      "description": "Scope lock remains bound",
+      "evidence": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-007",
+      "description": "Harness mode remains bound",
+      "evidence": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-008",
+      "description": "Implementation report remains ready",
+      "evidence": "READY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-009",
+      "description": "Replay boundary remains true",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-010",
+      "description": "Replayable event trace remains required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-011",
+      "description": "Local evaluation record remains required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-012",
+      "description": "Regression snapshot remains required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-013",
+      "description": "Audit artifact remains required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-014",
+      "description": "Regression event trace has four bound events",
+      "evidence": 4,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-015",
+      "description": "Regression event trace entries are all bound",
+      "evidence": [
+        {
+          "event_id": "M34-T5-EVT-001",
+          "event_type": "source-validation-bound",
+          "fingerprint": "E676043EA2481AB9",
+          "status": "VALID"
+        },
+        {
+          "event_id": "M34-T5-EVT-002",
+          "event_type": "replay-record-bound",
+          "fingerprint": "M36-RUNTIME-MODEL-9FF681C7FEF5FC70",
+          "status": "BOUND"
+        },
+        {
+          "event_id": "M34-T5-EVT-003",
+          "event_type": "regression-snapshot-bound",
+          "fingerprint": "M34-REGRESSION-SNAPSHOT-41818BEF101C189B",
+          "status": "BOUND"
+        },
+        {
+          "event_id": "M34-T5-EVT-004",
+          "event_type": "audit-artifact-bound",
+          "fingerprint": "M34-AUDIT-6D3DCEFAC68E5930",
+          "status": "BOUND"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-016",
+      "description": "Technical evaluation only remains true",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-017",
+      "description": "Legal certification remains denied",
+      "evidence": false,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-018",
+      "description": "Kaggle score claim remains denied",
+      "evidence": false,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-019",
+      "description": "Official benchmark certification remains denied",
+      "evidence": false,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T5-020",
+      "description": "Integration next stage advances to final closure",
+      "evidence": "MILESTONE_36_TASK_6_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_FINAL_CLOSURE_V1",
+      "passed": true
+    }
+  ],
+  "current_task_number": 5,
+  "fail_count": 0,
+  "generated_artifact_count": 5,
+  "harness_mode_id": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+  "integration_case_count": 20,
+  "integration_id": "MILESTONE-36-ARC-AGI3-RUNTIME-MODEL-ROUTING-INTEGRATION-FDC8E31DA830C4A4",
+  "integration_passed": true,
+  "integration_signature": "3CE97FE59E440231",
+  "integration_status": "VALID",
+  "kaggle_score_claim": false,
+  "legal_certification": false,
+  "local_evaluation_id": "M34-EVALUATION-AF2A6445F38ED588",
+  "local_evaluation_record_required": true,
+  "network_access_allowed": false,
+  "next_stage": "MILESTONE_36_TASK_6_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_FINAL_CLOSURE_V1",
+  "official_benchmark_certification": false,
+  "pass_count": 20,
+  "ready": true,
+  "regression_event_count": 4,
+  "regression_event_trace": [
+    {
+      "event_id": "M34-T5-EVT-001",
+      "event_type": "source-validation-bound",
+      "fingerprint": "E676043EA2481AB9",
+      "status": "VALID"
+    },
+    {
+      "event_id": "M34-T5-EVT-002",
+      "event_type": "replay-record-bound",
+      "fingerprint": "M36-RUNTIME-MODEL-9FF681C7FEF5FC70",
+      "status": "BOUND"
+    },
+    {
+      "event_id": "M34-T5-EVT-003",
+      "event_type": "regression-snapshot-bound",
+      "fingerprint": "M34-REGRESSION-SNAPSHOT-41818BEF101C189B",
+      "status": "BOUND"
+    },
+    {
+      "event_id": "M34-T5-EVT-004",
+      "event_type": "audit-artifact-bound",
+      "fingerprint": "M34-AUDIT-6D3DCEFAC68E5930",
+      "status": "BOUND"
+    }
+  ],
+  "regression_event_trace_fingerprint": "8C70BEA0EFF7F7C4",
+  "regression_integration_revision": "MILESTONE_36_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_REGRESSION_INTEGRATION_V1",
+  "regression_snapshot_id": "M34-REGRESSION-SNAPSHOT-41818BEF101C189B",
+  "regression_snapshot_required": true,
+  "replay_id": "M36-RUNTIME-MODEL-9FF681C7FEF5FC70",
+  "replayable_event_trace_required": true,
+  "repository_mutation_allowed": false,
+  "runtime_model_routing_boundary": true,
+  "scope_lock_id": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+  "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+  "shell_execution_allowed": false,
+  "source_implementation_passed": true,
+  "source_implementation_status": "READY",
+  "source_validation_passed": true,
+  "source_validation_report": {
+    "audit_artifact_required": true,
+    "audit_id": "M34-AUDIT-6D3DCEFAC68E5930",
+    "cases": [
+      {
+        "case_id": "M34-T4-001",
+        "description": "Source implementation report validates",
+        "evidence": "MILESTONE_36_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_IMPLEMENTATION_V1",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-002",
+        "description": "Source implementation task id is bound",
+        "evidence": "MILESTONE_36_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_IMPLEMENTATION_V1",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-003",
+        "description": "Selected objective remains locked",
+        "evidence": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-004",
+        "description": "Scope lock remains bound",
+        "evidence": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-005",
+        "description": "Harness mode remains bound",
+        "evidence": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-006",
+        "description": "Implementation status is READY",
+        "evidence": "READY",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-007",
+        "description": "Implementation passed",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-008",
+        "description": "Replay evaluation harness boundary is present",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-009",
+        "description": "Replayable event trace is required",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-010",
+        "description": "Local evaluation record is required",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-011",
+        "description": "Regression snapshot is required",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-012",
+        "description": "Audit artifact is required",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-013",
+        "description": "Evaluation remains technical only",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-014",
+        "description": "Legal certification remains denied",
+        "evidence": false,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-015",
+        "description": "Kaggle score claim remains denied",
+        "evidence": false,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-016",
+        "description": "Official benchmark certification remains denied",
+        "evidence": false,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T4-017",
+        "description": "Validation next stage advances to regression integration",
+        "evidence": "MILESTONE_36_TASK_5_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_REGRESSION_INTEGRATION_V1",
+        "passed": true
+      }
+    ],
+    "current_task_number": 4,
+    "fail_count": 0,
+    "generated_artifact_count": 5,
+    "harness_mode_id": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+    "kaggle_score_claim": false,
+    "legal_certification": false,
+    "local_evaluation_id": "M34-EVALUATION-AF2A6445F38ED588",
+    "local_evaluation_record_required": true,
+    "network_access_allowed": false,
+    "next_stage": "MILESTONE_36_TASK_5_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_REGRESSION_INTEGRATION_V1",
+    "official_benchmark_certification": false,
+    "pass_count": 17,
+    "ready": true,
+    "regression_snapshot_id": "M34-REGRESSION-SNAPSHOT-41818BEF101C189B",
+    "regression_snapshot_required": true,
+    "replay_id": "M36-RUNTIME-MODEL-9FF681C7FEF5FC70",
+    "replayable_event_trace_required": true,
+    "repository_mutation_allowed": false,
+    "runtime_model_routing_boundary": true,
+    "scope_lock_id": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+    "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+    "shell_execution_allowed": false,
+    "source_implementation_passed": true,
+    "source_implementation_report": {
+      "audit_artifact_required": true,
+      "cases": [
+        {
+          "case_id": "SOURCE_SCOPE_STATUS_LOCKED",
+          "expected": "LOCKED",
+          "failure_reason": null,
+          "observed": "LOCKED",
+          "passed": true
+        },
+        {
+          "case_id": "SOURCE_SCOPE_PASSED",
+          "expected": true,
+          "failure_reason": null,
+          "observed": true,
+          "passed": true
+        },
+        {
+          "case_id": "OBJECTIVE_ID_MATCHES_SCOPE",
+          "expected": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+          "failure_reason": null,
+          "observed": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+          "passed": true
+        },
+        {
+          "case_id": "SCOPE_LOCK_ID_MATCHES_SCOPE",
+          "expected": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+          "failure_reason": null,
+          "observed": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+          "passed": true
+        },
+        {
+          "case_id": "HARNESS_MODE_BOUND",
+          "expected": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+          "failure_reason": null,
+          "observed": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+          "passed": true
+        },
+        {
+          "case_id": "RUNTIME_MODEL_ROUTING_IMPLEMENTED",
+          "expected": true,
+          "failure_reason": null,
+          "observed": true,
+          "passed": true
+        },
+        {
+          "case_id": "REPLAYABLE_EVENT_TRACE_IMPLEMENTED",
+          "expected": true,
+          "failure_reason": null,
+          "observed": true,
+          "passed": true
+        },
+        {
+          "case_id": "LOCAL_EVALUATION_RECORD_IMPLEMENTED",
+          "expected": true,
+          "failure_reason": null,
+          "observed": true,
+          "passed": true
+        },
+        {
+          "case_id": "REGRESSION_SNAPSHOT_IMPLEMENTED",
+          "expected": true,
+          "failure_reason": null,
+          "observed": true,
+          "passed": true
+        },
+        {
+          "case_id": "AUDIT_ARTIFACT_IMPLEMENTED",
+          "expected": true,
+          "failure_reason": null,
+          "observed": true,
+          "passed": true
+        },
+        {
+          "case_id": "SOURCE_RUNTIME_CLOSURE_CLOSED",
+          "expected": "CLOSED",
+          "failure_reason": null,
+          "observed": "CLOSED",
+          "passed": true
+        },
+        {
+          "case_id": "REPLAY_EVALUATION_RECORD_VALID",
+          "expected": true,
+          "failure_reason": null,
+          "observed": true,
+          "passed": true
+        },
+        {
+          "case_id": "LEGAL_KAGGLE_BENCHMARK_CLAIMS_DENIED",
+          "expected": "false/false/false",
+          "failure_reason": null,
+          "observed": "False/False/False",
+          "passed": true
+        },
+        {
+          "case_id": "NEXT_STAGE_TASK_4_VALIDATION",
+          "expected": "MILESTONE_36_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+          "failure_reason": null,
+          "observed": "MILESTONE_36_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+          "passed": true
+        }
+      ],
+      "current_task_number": 3,
+      "fail_count": 0,
+      "generated_artifact_count": 5,
+      "harness_mode_id": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+      "implementation_case_count": 14,
+      "implementation_id": "MILESTONE-36-ARC-AGI3-RUNTIME-MODEL-ROUTING-D6DC73E2F2662BA4",
+      "implementation_passed": true,
+      "implementation_revision": "MILESTONE_36_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_IMPLEMENTATION_V1",
+      "implementation_signature": "503098B37256318A",
+      "implementation_status": "READY",
+      "kaggle_score_claim": false,
+      "legal_certification": false,
+      "local_evaluation_record_required": true,
+      "network_access_allowed": false,
+      "next_stage": "MILESTONE_36_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+      "official_benchmark_certification": false,
+      "pass_count": 14,
+      "ready": true,
+      "regression_snapshot_required": true,
+      "replay_evaluation_record": {
+        "audit_artifact": {
+          "artifact_digest": "2E75C9C58672E687",
+          "artifact_kind": "RUNTIME_MODEL_ROUTING_AUDIT_ARTIFACT",
+          "audit_id": "M34-AUDIT-6D3DCEFAC68E5930",
+          "kaggle_score_claim": false,
+          "legal_certification": false,
+          "technical_evaluation_only": true
+        },
+        "audit_artifact_required": true,
+        "harness_mode_id": "ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+        "implementation_id": "MILESTONE-36-ARC-AGI3-RUNTIME-MODEL-ROUTING-D6DC73E2F2662BA4",
+        "kaggle_score_claim": false,
+        "legal_certification": false,
+        "local_evaluation_record": {
+          "assessment_kind": "LOCAL_TECHNICAL_ASSESSMENT_ONLY",
+          "criteria_count": 6,
+          "criteria_pass_count": 6,
+          "evaluation_id": "M34-EVALUATION-AF2A6445F38ED588",
+          "evaluation_status": "READY",
+          "kaggle_score_claim": false,
+          "legal_certification": false,
+          "official_benchmark_certification": false,
+          "technical_evaluation_only": true
+        },
+        "local_evaluation_record_required": true,
+        "official_benchmark_certification": false,
+        "regression_snapshot": {
+          "snapshot_id": "M34-REGRESSION-SNAPSHOT-41818BEF101C189B",
+          "source_runtime_closure_id": "MILESTONE-33-ARC-AGI3-INTERACTIVE-RUNTIME-FINAL-CLOSURE-EF4D791D0866640F",
+          "source_runtime_event_count": 4,
+          "source_runtime_trace_fingerprint": "CE883C84561D5BC8"
+        },
+        "regression_snapshot_required": true,
+        "replay_id": "M36-RUNTIME-MODEL-9FF681C7FEF5FC70",
+        "replayable_event_trace_required": true,
+        "scope_lock_id": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+        "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+        "source_runtime_closure_passed": true,
+        "source_runtime_closure_status": "CLOSED",
+        "technical_evaluation_only": true
+      },
+      "replayable_event_trace_required": true,
+      "repository_mutation_allowed": false,
+      "runtime_model_routing_boundary": true,
+      "scope_lock_id": "MILESTONE_36_SCOPE_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+      "selected_objective_id": "HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY",
+      "shell_execution_allowed": false,
+      "source_scope_passed": true,
+      "source_scope_status": "LOCKED",
+      "source_scope_task_id": "MILESTONE_36_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+      "source_task_2_signature": "0D25F9610E98B1DD",
+      "task_3_signature": "86F1177C4B5B5A54",
+      "task_budget_max": 8,
+      "task_id": "MILESTONE_36_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_IMPLEMENTATION_V1",
+      "technical_evaluation_only": true
+    },
+    "source_implementation_status": "READY",
+    "source_implementation_task_id": "MILESTONE_36_TASK_3_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_IMPLEMENTATION_V1",
+    "source_runtime_event_count": 4,
+    "source_runtime_trace_fingerprint": "CE883C84561D5BC8",
+    "task_4_signature": "A5BCA10C596D231A",
+    "task_budget_max": 8,
+    "task_id": "MILESTONE_36_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+    "technical_evaluation_only": true,
+    "validation_case_count": 17,
+    "validation_id": "MILESTONE-36-ARC-AGI3-RUNTIME-MODEL-ROUTING-VALIDATION-FDC8E31DA830C4A4",
+    "validation_passed": true,
+    "validation_revision": "MILESTONE_36_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+    "validation_signature": "E676043EA2481AB9",
+    "validation_status": "VALID"
+  },
+  "source_validation_status": "VALID",
+  "source_validation_task_id": "MILESTONE_36_TASK_4_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_VALIDATION_V1",
+  "task_5_signature": "1726A2E15E3B9CC3",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_36_TASK_5_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_REGRESSION_INTEGRATION_V1",
+  "technical_evaluation_only": true
+}
