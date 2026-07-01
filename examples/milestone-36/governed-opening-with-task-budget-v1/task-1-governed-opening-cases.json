@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "MILESTONE_33_FINAL_CLOSURE_READY",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_CLOSURE_STATUS_CLOSED",
+    "expected": "CLOSED",
+    "failure_reason": null,
+    "observed": "CLOSED",
+    "passed": true
+  },
+  {
+    "case_id": "SOURCE_CLOSURE_PASSED",
+    "expected": true,
+    "failure_reason": null,
+    "observed": true,
+    "passed": true
+  },
+  {
+    "case_id": "MILESTONE_ID_SET",
+    "expected": "MILESTONE_36",
+    "failure_reason": null,
+    "observed": "MILESTONE_36",
+    "passed": true
+  },
+  {
+    "case_id": "TASK_BUDGET_MAX_EIGHT",
+    "expected": 8,
+    "failure_reason": null,
+    "observed": 8,
+    "passed": true
+  },
+  {
+    "case_id": "CURRENT_TASK_NUMBER_ONE",
+    "expected": 1,
+    "failure_reason": null,
+    "observed": 1,
+    "passed": true
+  },
+  {
+    "case_id": "OBJECTIVE_SELECTION_PENDING",
+    "expected": "PENDING_TASK_2_SCOPE_LOCK",
+    "failure_reason": null,
+    "observed": "PENDING_TASK_2_SCOPE_LOCK",
+    "passed": true
+  },
+  {
+    "case_id": "NEXT_STAGE_TASK_2_SCOPE_LOCK",
+    "expected": "MILESTONE_36_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+    "failure_reason": null,
+    "observed": "MILESTONE_36_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+    "passed": true
+  }
+]
