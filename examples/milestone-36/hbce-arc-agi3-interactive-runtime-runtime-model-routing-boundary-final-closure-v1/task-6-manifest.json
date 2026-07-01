@@ -1,0 +1,13 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-6-runtime-model-routing-final-closure-cases.json",
+    "task-6-runtime-model-routing-final-closure-report.json",
+    "task-6-runtime-model-routing-final-closure-report.md",
+    "task-6-index.txt",
+    "task-6-manifest.json"
+  ],
+  "closure_id": "MILESTONE-36-ARC-AGI3-RUNTIME-MODEL-ROUTING-FINAL-CLOSURE-FDC8E31DA830C4A4",
+  "closure_signature": "1DA7FC02AC471EF2",
+  "task_id": "MILESTONE_36_TASK_6_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_RUNTIME_MODEL_ROUTING_BOUNDARY_FINAL_CLOSURE_V1"
+}
