@@ -1,0 +1,13 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-5-kaggle-competitive-agent-and-productization-regression-integration-cases.json",
+    "task-5-kaggle-competitive-agent-and-productization-regression-integration-report.json",
+    "task-5-kaggle-competitive-agent-and-productization-regression-integration-report.md",
+    "task-5-index.txt",
+    "task-5-manifest.json"
+  ],
+  "integration_id": "MILESTONE-38-ARC-AGI3-KAGGLE-COMPETITIVE-AGENT-PRODUCTIZATION-INTEGRATION-FDC8E31DA830C4A4",
+  "integration_signature": "C20B80158663A7A6",
+  "task_id": "MILESTONE_38_TASK_5_HBCE_ARC_AGI3_KAGGLE_COMPETITIVE_AGENT_AND_PRODUCTIZATION_BOUNDARY_REGRESSION_INTEGRATION_V1"
+}
