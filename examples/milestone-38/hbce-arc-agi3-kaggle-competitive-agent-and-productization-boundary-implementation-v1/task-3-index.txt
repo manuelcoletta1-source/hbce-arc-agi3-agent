@@ -1,0 +1,5 @@
+MILESTONE_38_TASK_3_ARTIFACT_INDEX
+task-3-kaggle-competitive-agent-and-productization-cases.json
+task-3-kaggle-competitive-agent-and-productization-report.json
+task-3-kaggle-competitive-agent-and-productization-report.md
+task-3-manifest.json
