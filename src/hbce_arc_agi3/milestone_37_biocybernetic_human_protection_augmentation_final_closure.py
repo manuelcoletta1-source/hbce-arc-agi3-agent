@@ -85,7 +85,7 @@ def build_milestone_37_biocybernetic_human_protection_augmentation_final_closure
         _case("M34-T6-013", "Regression event trace remains bound", source.get("regression_event_count") == 4, source.get("regression_event_count")),
         _case("M34-T6-014", "Legal certification remains denied", source.get("legal_certification") is False, source.get("legal_certification")),
         _case("M34-T6-015", "Kaggle and benchmark claims remain denied", source.get("kaggle_score_claim") is False and source.get("official_benchmark_certification") is False, {"kaggle": source.get("kaggle_score_claim"), "benchmark": source.get("official_benchmark_certification")}),
-        _case("M34-T6-016", "Milestone 37 closes into Milestone 37 governed opening", NEXT_STAGE == "MILESTONE_37_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1", NEXT_STAGE),
+        _case("M34-T6-016", "Milestone 37 closes into Milestone 37 governed opening", NEXT_STAGE == "MILESTONE_38_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1", NEXT_STAGE),
     ]
 
 

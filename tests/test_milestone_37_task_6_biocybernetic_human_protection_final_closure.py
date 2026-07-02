@@ -36,7 +36,7 @@ def test_task_6_pass_fail_accounting_is_closed():
 def test_task_6_next_stage_points_to_milestone_35_opening():
     report = run_milestone_37_biocybernetic_human_protection_augmentation_final_closure()
     assert report["next_stage"] == NEXT_STAGE
-    assert "MILESTONE_37_TASK_1" in report["next_stage"]
+    assert "MILESTONE_38_TASK_1" in report["next_stage"]
     assert "GOVERNED_OPENING" in report["next_stage"]
 
 
