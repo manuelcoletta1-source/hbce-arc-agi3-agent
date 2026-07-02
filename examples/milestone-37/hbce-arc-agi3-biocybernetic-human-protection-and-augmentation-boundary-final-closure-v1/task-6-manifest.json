@@ -1,0 +1,13 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    "task-6-biocybernetic-human-protection-and-augmentation-final-closure-cases.json",
+    "task-6-biocybernetic-human-protection-and-augmentation-final-closure-report.json",
+    "task-6-biocybernetic-human-protection-and-augmentation-final-closure-report.md",
+    "task-6-index.txt",
+    "task-6-manifest.json"
+  ],
+  "closure_id": "MILESTONE-37-ARC-AGI3-BIOCYBERNETIC-HUMAN-PROTECTION-AUGMENTATION-FINAL-CLOSURE-FDC8E31DA830C4A4",
+  "closure_signature": "F57625D2B5ACF490",
+  "task_id": "MILESTONE_37_TASK_6_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_FINAL_CLOSURE_V1"
+}

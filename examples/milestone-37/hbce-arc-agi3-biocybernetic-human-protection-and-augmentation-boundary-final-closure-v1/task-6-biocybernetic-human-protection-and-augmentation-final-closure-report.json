@@ -1,0 +1,681 @@
+{
+  "audit_artifact_required": true,
+  "audit_id": "M34-AUDIT-241429B352E8ADE4",
+  "biocybernetic_human_protection_augmentation_boundary": true,
+  "cases": [
+    {
+      "case_id": "M34-T6-001",
+      "description": "Source regression integration report validates",
+      "evidence": "MILESTONE_37_TASK_5_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-002",
+      "description": "Source regression task id is bound",
+      "evidence": "MILESTONE_37_TASK_5_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-003",
+      "description": "Source integration status is VALID",
+      "evidence": "VALID",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-004",
+      "description": "Source integration passed",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-005",
+      "description": "Selected objective remains locked",
+      "evidence": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-006",
+      "description": "Scope lock remains bound",
+      "evidence": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-007",
+      "description": "Harness mode remains bound",
+      "evidence": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-008",
+      "description": "Replay harness boundary remains true",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-009",
+      "description": "Replayable event trace remains required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-010",
+      "description": "Local evaluation record remains required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-011",
+      "description": "Regression snapshot remains required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-012",
+      "description": "Audit artifact remains required",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-013",
+      "description": "Regression event trace remains bound",
+      "evidence": 4,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-014",
+      "description": "Legal certification remains denied",
+      "evidence": false,
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-015",
+      "description": "Kaggle and benchmark claims remain denied",
+      "evidence": {
+        "benchmark": false,
+        "kaggle": false
+      },
+      "passed": true
+    },
+    {
+      "case_id": "M34-T6-016",
+      "description": "Milestone 37 closes into Milestone 37 governed opening",
+      "evidence": "MILESTONE_37_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+      "passed": true
+    }
+  ],
+  "closure_case_count": 16,
+  "closure_id": "MILESTONE-37-ARC-AGI3-BIOCYBERNETIC-HUMAN-PROTECTION-AUGMENTATION-FINAL-CLOSURE-FDC8E31DA830C4A4",
+  "closure_passed": true,
+  "closure_signature": "F57625D2B5ACF490",
+  "closure_status": "CLOSED",
+  "current_task_number": 6,
+  "fail_count": 0,
+  "final_closure_revision": "MILESTONE_37_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_FINAL_CLOSURE_V1",
+  "generated_artifact_count": 5,
+  "harness_mode_id": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+  "kaggle_score_claim": false,
+  "legal_certification": false,
+  "local_evaluation_id": "M34-EVALUATION-60FB5EABDE21C591",
+  "local_evaluation_record_required": true,
+  "network_access_allowed": false,
+  "next_stage": "MILESTONE_37_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+  "official_benchmark_certification": false,
+  "pass_count": 16,
+  "ready": true,
+  "regression_event_count": 4,
+  "regression_event_trace_fingerprint": "88820FAF03E8D7DE",
+  "regression_snapshot_id": "M34-REGRESSION-SNAPSHOT-7034D363D75BBFCB",
+  "regression_snapshot_required": true,
+  "replay_id": "M37-BIOCYBERNETIC-HUMAN-PROTECTION-8B1724E7F5A2CD29",
+  "replayable_event_trace_required": true,
+  "repository_mutation_allowed": false,
+  "scope_lock_id": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+  "selected_objective_id": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+  "shell_execution_allowed": false,
+  "source_integration_passed": true,
+  "source_integration_status": "VALID",
+  "source_regression_integration_report": {
+    "audit_artifact_required": true,
+    "audit_id": "M34-AUDIT-241429B352E8ADE4",
+    "biocybernetic_human_protection_augmentation_boundary": true,
+    "cases": [
+      {
+        "case_id": "M34-T5-001",
+        "description": "Source validation report validates",
+        "evidence": "MILESTONE_37_TASK_4_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_VALIDATION_V1",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-002",
+        "description": "Source validation task id is bound",
+        "evidence": "MILESTONE_37_TASK_4_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_VALIDATION_V1",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-003",
+        "description": "Source validation status is VALID",
+        "evidence": "VALID",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-004",
+        "description": "Source validation passed",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-005",
+        "description": "Selected objective remains locked",
+        "evidence": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-006",
+        "description": "Scope lock remains bound",
+        "evidence": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-007",
+        "description": "Harness mode remains bound",
+        "evidence": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-008",
+        "description": "Implementation report remains ready",
+        "evidence": "READY",
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-009",
+        "description": "Replay boundary remains true",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-010",
+        "description": "Replayable event trace remains required",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-011",
+        "description": "Local evaluation record remains required",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-012",
+        "description": "Regression snapshot remains required",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-013",
+        "description": "Audit artifact remains required",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-014",
+        "description": "Regression event trace has four bound events",
+        "evidence": 4,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-015",
+        "description": "Regression event trace entries are all bound",
+        "evidence": [
+          {
+            "event_id": "M34-T5-EVT-001",
+            "event_type": "source-validation-bound",
+            "fingerprint": "1A592BA1A72A0A1B",
+            "status": "VALID"
+          },
+          {
+            "event_id": "M34-T5-EVT-002",
+            "event_type": "replay-record-bound",
+            "fingerprint": "M37-BIOCYBERNETIC-HUMAN-PROTECTION-8B1724E7F5A2CD29",
+            "status": "BOUND"
+          },
+          {
+            "event_id": "M34-T5-EVT-003",
+            "event_type": "regression-snapshot-bound",
+            "fingerprint": "M34-REGRESSION-SNAPSHOT-7034D363D75BBFCB",
+            "status": "BOUND"
+          },
+          {
+            "event_id": "M34-T5-EVT-004",
+            "event_type": "audit-artifact-bound",
+            "fingerprint": "M34-AUDIT-241429B352E8ADE4",
+            "status": "BOUND"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-016",
+        "description": "Technical evaluation only remains true",
+        "evidence": true,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-017",
+        "description": "Legal certification remains denied",
+        "evidence": false,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-018",
+        "description": "Kaggle score claim remains denied",
+        "evidence": false,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-019",
+        "description": "Official benchmark certification remains denied",
+        "evidence": false,
+        "passed": true
+      },
+      {
+        "case_id": "M34-T5-020",
+        "description": "Integration next stage advances to final closure",
+        "evidence": "MILESTONE_37_TASK_6_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_FINAL_CLOSURE_V1",
+        "passed": true
+      }
+    ],
+    "current_task_number": 5,
+    "fail_count": 0,
+    "generated_artifact_count": 5,
+    "harness_mode_id": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+    "integration_case_count": 20,
+    "integration_id": "MILESTONE-37-ARC-AGI3-BIOCYBERNETIC-HUMAN-PROTECTION-AUGMENTATION-INTEGRATION-FDC8E31DA830C4A4",
+    "integration_passed": true,
+    "integration_signature": "D64014603B1B2F8E",
+    "integration_status": "VALID",
+    "kaggle_score_claim": false,
+    "legal_certification": false,
+    "local_evaluation_id": "M34-EVALUATION-60FB5EABDE21C591",
+    "local_evaluation_record_required": true,
+    "network_access_allowed": false,
+    "next_stage": "MILESTONE_37_TASK_6_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_FINAL_CLOSURE_V1",
+    "official_benchmark_certification": false,
+    "pass_count": 20,
+    "ready": true,
+    "regression_event_count": 4,
+    "regression_event_trace": [
+      {
+        "event_id": "M34-T5-EVT-001",
+        "event_type": "source-validation-bound",
+        "fingerprint": "1A592BA1A72A0A1B",
+        "status": "VALID"
+      },
+      {
+        "event_id": "M34-T5-EVT-002",
+        "event_type": "replay-record-bound",
+        "fingerprint": "M37-BIOCYBERNETIC-HUMAN-PROTECTION-8B1724E7F5A2CD29",
+        "status": "BOUND"
+      },
+      {
+        "event_id": "M34-T5-EVT-003",
+        "event_type": "regression-snapshot-bound",
+        "fingerprint": "M34-REGRESSION-SNAPSHOT-7034D363D75BBFCB",
+        "status": "BOUND"
+      },
+      {
+        "event_id": "M34-T5-EVT-004",
+        "event_type": "audit-artifact-bound",
+        "fingerprint": "M34-AUDIT-241429B352E8ADE4",
+        "status": "BOUND"
+      }
+    ],
+    "regression_event_trace_fingerprint": "88820FAF03E8D7DE",
+    "regression_integration_revision": "MILESTONE_37_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+    "regression_snapshot_id": "M34-REGRESSION-SNAPSHOT-7034D363D75BBFCB",
+    "regression_snapshot_required": true,
+    "replay_id": "M37-BIOCYBERNETIC-HUMAN-PROTECTION-8B1724E7F5A2CD29",
+    "replayable_event_trace_required": true,
+    "repository_mutation_allowed": false,
+    "scope_lock_id": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+    "selected_objective_id": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+    "shell_execution_allowed": false,
+    "source_implementation_passed": true,
+    "source_implementation_status": "READY",
+    "source_validation_passed": true,
+    "source_validation_report": {
+      "audit_artifact_required": true,
+      "audit_id": "M34-AUDIT-241429B352E8ADE4",
+      "biocybernetic_human_protection_augmentation_boundary": true,
+      "cases": [
+        {
+          "case_id": "M34-T4-001",
+          "description": "Source implementation report validates",
+          "evidence": "MILESTONE_37_TASK_3_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_IMPLEMENTATION_V1",
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-002",
+          "description": "Source implementation task id is bound",
+          "evidence": "MILESTONE_37_TASK_3_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_IMPLEMENTATION_V1",
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-003",
+          "description": "Selected objective remains locked",
+          "evidence": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-004",
+          "description": "Scope lock remains bound",
+          "evidence": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-005",
+          "description": "Harness mode remains bound",
+          "evidence": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-006",
+          "description": "Implementation status is READY",
+          "evidence": "READY",
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-007",
+          "description": "Implementation passed",
+          "evidence": true,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-008",
+          "description": "Replay evaluation harness boundary is present",
+          "evidence": true,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-009",
+          "description": "Replayable event trace is required",
+          "evidence": true,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-010",
+          "description": "Local evaluation record is required",
+          "evidence": true,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-011",
+          "description": "Regression snapshot is required",
+          "evidence": true,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-012",
+          "description": "Audit artifact is required",
+          "evidence": true,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-013",
+          "description": "Evaluation remains technical only",
+          "evidence": true,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-014",
+          "description": "Legal certification remains denied",
+          "evidence": false,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-015",
+          "description": "Kaggle score claim remains denied",
+          "evidence": false,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-016",
+          "description": "Official benchmark certification remains denied",
+          "evidence": false,
+          "passed": true
+        },
+        {
+          "case_id": "M34-T4-017",
+          "description": "Validation next stage advances to regression integration",
+          "evidence": "MILESTONE_37_TASK_5_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+          "passed": true
+        }
+      ],
+      "current_task_number": 4,
+      "fail_count": 0,
+      "generated_artifact_count": 5,
+      "harness_mode_id": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+      "kaggle_score_claim": false,
+      "legal_certification": false,
+      "local_evaluation_id": "M34-EVALUATION-60FB5EABDE21C591",
+      "local_evaluation_record_required": true,
+      "network_access_allowed": false,
+      "next_stage": "MILESTONE_37_TASK_5_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+      "official_benchmark_certification": false,
+      "pass_count": 17,
+      "ready": true,
+      "regression_snapshot_id": "M34-REGRESSION-SNAPSHOT-7034D363D75BBFCB",
+      "regression_snapshot_required": true,
+      "replay_id": "M37-BIOCYBERNETIC-HUMAN-PROTECTION-8B1724E7F5A2CD29",
+      "replayable_event_trace_required": true,
+      "repository_mutation_allowed": false,
+      "scope_lock_id": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+      "selected_objective_id": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+      "shell_execution_allowed": false,
+      "source_implementation_passed": true,
+      "source_implementation_report": {
+        "audit_artifact_required": true,
+        "biocybernetic_human_protection_augmentation_boundary": true,
+        "cases": [
+          {
+            "case_id": "SOURCE_SCOPE_STATUS_LOCKED",
+            "expected": "LOCKED",
+            "failure_reason": null,
+            "observed": "LOCKED",
+            "passed": true
+          },
+          {
+            "case_id": "SOURCE_SCOPE_PASSED",
+            "expected": true,
+            "failure_reason": null,
+            "observed": true,
+            "passed": true
+          },
+          {
+            "case_id": "OBJECTIVE_ID_MATCHES_SCOPE",
+            "expected": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+            "failure_reason": null,
+            "observed": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+            "passed": true
+          },
+          {
+            "case_id": "SCOPE_LOCK_ID_MATCHES_SCOPE",
+            "expected": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+            "failure_reason": null,
+            "observed": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+            "passed": true
+          },
+          {
+            "case_id": "HARNESS_MODE_BOUND",
+            "expected": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+            "failure_reason": null,
+            "observed": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+            "passed": true
+          },
+          {
+            "case_id": "BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_IMPLEMENTED",
+            "expected": true,
+            "failure_reason": null,
+            "observed": true,
+            "passed": true
+          },
+          {
+            "case_id": "REPLAYABLE_EVENT_TRACE_IMPLEMENTED",
+            "expected": true,
+            "failure_reason": null,
+            "observed": true,
+            "passed": true
+          },
+          {
+            "case_id": "LOCAL_EVALUATION_RECORD_IMPLEMENTED",
+            "expected": true,
+            "failure_reason": null,
+            "observed": true,
+            "passed": true
+          },
+          {
+            "case_id": "REGRESSION_SNAPSHOT_IMPLEMENTED",
+            "expected": true,
+            "failure_reason": null,
+            "observed": true,
+            "passed": true
+          },
+          {
+            "case_id": "AUDIT_ARTIFACT_IMPLEMENTED",
+            "expected": true,
+            "failure_reason": null,
+            "observed": true,
+            "passed": true
+          },
+          {
+            "case_id": "SOURCE_RUNTIME_CLOSURE_CLOSED",
+            "expected": "CLOSED",
+            "failure_reason": null,
+            "observed": "CLOSED",
+            "passed": true
+          },
+          {
+            "case_id": "REPLAY_EVALUATION_RECORD_VALID",
+            "expected": true,
+            "failure_reason": null,
+            "observed": true,
+            "passed": true
+          },
+          {
+            "case_id": "LEGAL_KAGGLE_BENCHMARK_CLAIMS_DENIED",
+            "expected": "false/false/false",
+            "failure_reason": null,
+            "observed": "False/False/False",
+            "passed": true
+          },
+          {
+            "case_id": "NEXT_STAGE_TASK_4_VALIDATION",
+            "expected": "MILESTONE_37_TASK_4_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_VALIDATION_V1",
+            "failure_reason": null,
+            "observed": "MILESTONE_37_TASK_4_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_VALIDATION_V1",
+            "passed": true
+          }
+        ],
+        "current_task_number": 3,
+        "fail_count": 0,
+        "generated_artifact_count": 5,
+        "harness_mode_id": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+        "implementation_case_count": 14,
+        "implementation_id": "MILESTONE-37-ARC-AGI3-BIOCYBERNETIC-HUMAN-PROTECTION-AUGMENTATION-96F8F7C80EA19A84",
+        "implementation_passed": true,
+        "implementation_revision": "MILESTONE_37_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_IMPLEMENTATION_V1",
+        "implementation_signature": "79C8AF6FCAF03305",
+        "implementation_status": "READY",
+        "kaggle_score_claim": false,
+        "legal_certification": false,
+        "local_evaluation_record_required": true,
+        "network_access_allowed": false,
+        "next_stage": "MILESTONE_37_TASK_4_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_VALIDATION_V1",
+        "official_benchmark_certification": false,
+        "pass_count": 14,
+        "ready": true,
+        "regression_snapshot_required": true,
+        "replay_evaluation_record": {
+          "audit_artifact": {
+            "artifact_digest": "ED8BCE2268428E4A",
+            "artifact_kind": "BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_AUDIT_ARTIFACT",
+            "audit_id": "M34-AUDIT-241429B352E8ADE4",
+            "kaggle_score_claim": false,
+            "legal_certification": false,
+            "technical_evaluation_only": true
+          },
+          "audit_artifact_required": true,
+          "harness_mode_id": "ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+          "implementation_id": "MILESTONE-37-ARC-AGI3-BIOCYBERNETIC-HUMAN-PROTECTION-AUGMENTATION-96F8F7C80EA19A84",
+          "kaggle_score_claim": false,
+          "legal_certification": false,
+          "local_evaluation_record": {
+            "assessment_kind": "LOCAL_TECHNICAL_ASSESSMENT_ONLY",
+            "criteria_count": 6,
+            "criteria_pass_count": 6,
+            "evaluation_id": "M34-EVALUATION-60FB5EABDE21C591",
+            "evaluation_status": "READY",
+            "kaggle_score_claim": false,
+            "legal_certification": false,
+            "official_benchmark_certification": false,
+            "technical_evaluation_only": true
+          },
+          "local_evaluation_record_required": true,
+          "official_benchmark_certification": false,
+          "regression_snapshot": {
+            "snapshot_id": "M34-REGRESSION-SNAPSHOT-7034D363D75BBFCB",
+            "source_runtime_closure_id": "MILESTONE-33-ARC-AGI3-INTERACTIVE-RUNTIME-FINAL-CLOSURE-EF4D791D0866640F",
+            "source_runtime_event_count": 4,
+            "source_runtime_trace_fingerprint": "CE883C84561D5BC8"
+          },
+          "regression_snapshot_required": true,
+          "replay_id": "M37-BIOCYBERNETIC-HUMAN-PROTECTION-8B1724E7F5A2CD29",
+          "replayable_event_trace_required": true,
+          "scope_lock_id": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+          "selected_objective_id": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+          "source_runtime_closure_passed": true,
+          "source_runtime_closure_status": "CLOSED",
+          "technical_evaluation_only": true
+        },
+        "replayable_event_trace_required": true,
+        "repository_mutation_allowed": false,
+        "scope_lock_id": "MILESTONE_37_SCOPE_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+        "selected_objective_id": "HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+        "shell_execution_allowed": false,
+        "source_scope_passed": true,
+        "source_scope_status": "LOCKED",
+        "source_scope_task_id": "MILESTONE_37_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1",
+        "source_task_2_signature": "A11C75549588BB16",
+        "task_3_signature": "3C72B28FD2C486D2",
+        "task_budget_max": 8,
+        "task_id": "MILESTONE_37_TASK_3_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_IMPLEMENTATION_V1",
+        "technical_evaluation_only": true
+      },
+      "source_implementation_status": "READY",
+      "source_implementation_task_id": "MILESTONE_37_TASK_3_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_IMPLEMENTATION_V1",
+      "source_runtime_event_count": 4,
+      "source_runtime_trace_fingerprint": "CE883C84561D5BC8",
+      "task_4_signature": "F7236D068736E018",
+      "task_budget_max": 8,
+      "task_id": "MILESTONE_37_TASK_4_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_VALIDATION_V1",
+      "technical_evaluation_only": true,
+      "validation_case_count": 17,
+      "validation_id": "MILESTONE-37-ARC-AGI3-BIOCYBERNETIC-HUMAN-PROTECTION-AUGMENTATION-VALIDATION-FDC8E31DA830C4A4",
+      "validation_passed": true,
+      "validation_revision": "MILESTONE_37_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_VALIDATION_V1",
+      "validation_signature": "1A592BA1A72A0A1B",
+      "validation_status": "VALID"
+    },
+    "source_validation_status": "VALID",
+    "source_validation_task_id": "MILESTONE_37_TASK_4_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_VALIDATION_V1",
+    "task_5_signature": "358D973732422F4E",
+    "task_budget_max": 8,
+    "task_id": "MILESTONE_37_TASK_5_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+    "technical_evaluation_only": true
+  },
+  "source_regression_task_id": "MILESTONE_37_TASK_5_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+  "task_6_signature": "8BA69B70B0F36553",
+  "task_budget_max": 8,
+  "task_id": "MILESTONE_37_TASK_6_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_FINAL_CLOSURE_V1",
+  "technical_evaluation_only": true
+}
