@@ -1,7 +1,7 @@
 {
   "cases": [
     {
-      "case_id": "MILESTONE_33_FINAL_CLOSURE_READY",
+      "case_id": "MILESTONE_37_FINAL_CLOSURE_READY",
       "expected": true,
       "failure_reason": null,
       "observed": true,
@@ -74,9 +74,9 @@
   "source_closure_passed": true,
   "source_closure_status": "CLOSED",
   "source_closure_task_id": "MILESTONE_37_TASK_6_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_FINAL_CLOSURE_V1",
-  "source_milestone_id": "MILESTONE_33_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY",
-  "source_regression_event_trace_fingerprint": "",
-  "source_task_6_signature": "",
+  "source_milestone_id": "MILESTONE_37_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY",
+  "source_regression_event_trace_fingerprint": "88820FAF03E8D7DE",
+  "source_task_6_signature": "8BA69B70B0F36553",
   "task_1_signature": "A18779EE13A378B4",
   "task_budget_max": 8,
   "task_id": "MILESTONE_38_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1"

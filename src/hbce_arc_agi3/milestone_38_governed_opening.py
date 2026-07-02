@@ -7,7 +7,7 @@ from typing import Any
 
 TASK_ID = "MILESTONE_38_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1"
 MILESTONE_ID = "MILESTONE_38"
-SOURCE_MILESTONE_ID = "MILESTONE_33_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY"
+SOURCE_MILESTONE_ID = "MILESTONE_37_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY"
 SOURCE_CLOSURE_TASK_ID = "MILESTONE_37_TASK_6_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_FINAL_CLOSURE_V1"
 OPENING_REVISION = "MILESTONE_38_GOVERNED_OPENING_WITH_TASK_BUDGET_V1"
 TASK_BUDGET_MAX = 8
@@ -17,7 +17,7 @@ NEXT_STAGE = "MILESTONE_38_TASK_2_OBJECTIVE_SELECTION_AND_SCOPE_LOCK_V1"
 
 ROOT = Path(__file__).resolve().parents[2]
 DOC_PATH = ROOT / "docs" / "milestone-38-task-1-governed-opening-with-task-budget-v1.md"
-SOURCE_CLOSURE_DOC_PATH = ROOT / "docs" / "milestone-33-task-6-hbce-arc-agi3-interactive-runtime-planning-trace-boundary-final-closure-v1.md"
+SOURCE_CLOSURE_DOC_PATH = ROOT / "docs" / "milestone-37-task-6-hbce-arc-agi3-biocybernetic-human-protection-and-augmentation-boundary-final-closure-v1.md"
 ARTIFACT_DIR = ROOT / "examples" / "milestone-38" / "governed-opening-with-task-budget-v1"
 
 def _digest(*parts: Any, length: int = 16) -> str:
@@ -33,21 +33,21 @@ OPENING_SIGNATURE = _digest(OPENING_ID, TASK_1_SIGNATURE, NEXT_STAGE)
 def _source_closure_summary() -> dict[str, Any]:
     try:
         from hbce_arc_agi3.milestone_37_biocybernetic_human_protection_augmentation_final_closure import (
-            run_milestone_33_boundary_final_closure,
-            validate_milestone_33_boundary_final_closure_report,
+            run_milestone_37_biocybernetic_human_protection_augmentation_final_closure,
+            validate_milestone_37_biocybernetic_human_protection_augmentation_final_closure_report,
         )
-        report = run_milestone_33_boundary_final_closure()
+        report = run_milestone_37_biocybernetic_human_protection_augmentation_final_closure()
         return {
             "source_closure_status": report.get("closure_status", "UNKNOWN"),
-            "source_closure_passed": bool(report.get("closure_passed")) and validate_milestone_33_boundary_final_closure_report(report),
+            "source_closure_passed": bool(report.get("closure_passed")) and validate_milestone_37_biocybernetic_human_protection_augmentation_final_closure_report(report),
             "source_task_6_signature": report.get("task_6_signature", ""),
             "source_regression_event_trace_fingerprint": report.get("regression_event_trace_fingerprint", ""),
         }
     except Exception:
         text = SOURCE_CLOSURE_DOC_PATH.read_text(encoding="utf-8")
         return {
-            "source_closure_status": "CLOSED" if "MILESTONE_33_TASK_6_CLOSURE_STATUS=CLOSED" in text else "UNKNOWN",
-            "source_closure_passed": "MILESTONE_33_TASK_6_CLOSURE_PASSED=true" in text,
+            "source_closure_status": "CLOSED" if "MILESTONE_37_TASK_6_CLOSURE_STATUS=CLOSED" in text else "UNKNOWN",
+            "source_closure_passed": "MILESTONE_37_TASK_6_CLOSURE_PASSED=true" in text,
             "source_task_6_signature": "",
             "source_regression_event_trace_fingerprint": "",
         }
@@ -58,7 +58,7 @@ def _case(case_id: str, expected: Any, observed: Any, passed: bool) -> dict[str,
 def build_milestone_38_governed_opening_cases(report: dict[str, Any]) -> list[dict[str, Any]]:
     source_text = SOURCE_CLOSURE_DOC_PATH.read_text(encoding="utf-8")
     return [
-        _case("MILESTONE_33_FINAL_CLOSURE_READY", True, "MILESTONE_33_TASK_6_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY_FINAL_CLOSURE_READY=true" in source_text, "MILESTONE_33_TASK_6_HBCE_ARC_AGI3_INTERACTIVE_RUNTIME_PLANNING_TRACE_BOUNDARY_FINAL_CLOSURE_READY=true" in source_text),
+        _case("MILESTONE_37_FINAL_CLOSURE_READY", True, "MILESTONE_37_TASK_6_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_FINAL_CLOSURE_READY=true" in source_text, "MILESTONE_37_TASK_6_HBCE_ARC_AGI3_BIOCYBERNETIC_HUMAN_PROTECTION_AND_AUGMENTATION_BOUNDARY_FINAL_CLOSURE_READY=true" in source_text),
         _case("SOURCE_CLOSURE_STATUS_CLOSED", "CLOSED", report["source_closure_status"], report["source_closure_status"] == "CLOSED"),
         _case("SOURCE_CLOSURE_PASSED", True, report["source_closure_passed"], report["source_closure_passed"] is True),
         _case("MILESTONE_ID_SET", MILESTONE_ID, report["milestone_id"], report["milestone_id"] == MILESTONE_ID),
