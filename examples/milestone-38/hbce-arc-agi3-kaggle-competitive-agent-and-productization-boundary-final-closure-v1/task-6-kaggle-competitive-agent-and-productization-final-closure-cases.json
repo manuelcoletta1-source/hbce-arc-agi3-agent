@@ -1,0 +1,101 @@
+[
+  {
+    "case_id": "M34-T6-001",
+    "description": "Source regression integration report validates",
+    "evidence": "MILESTONE_38_TASK_5_HBCE_ARC_AGI3_KAGGLE_COMPETITIVE_AGENT_AND_PRODUCTIZATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-002",
+    "description": "Source regression task id is bound",
+    "evidence": "MILESTONE_38_TASK_5_HBCE_ARC_AGI3_KAGGLE_COMPETITIVE_AGENT_AND_PRODUCTIZATION_BOUNDARY_REGRESSION_INTEGRATION_V1",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-003",
+    "description": "Source integration status is VALID",
+    "evidence": "VALID",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-004",
+    "description": "Source integration passed",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-005",
+    "description": "Selected objective remains locked",
+    "evidence": "HBCE_ARC_AGI3_KAGGLE_COMPETITIVE_AGENT_AND_PRODUCTIZATION_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-006",
+    "description": "Scope lock remains bound",
+    "evidence": "MILESTONE_38_SCOPE_HBCE_ARC_AGI3_KAGGLE_COMPETITIVE_AGENT_AND_PRODUCTIZATION_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-007",
+    "description": "Harness mode remains bound",
+    "evidence": "ARC_AGI3_KAGGLE_COMPETITIVE_AGENT_AND_PRODUCTIZATION_BOUNDARY",
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-008",
+    "description": "Replay harness boundary remains true",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-009",
+    "description": "Replayable event trace remains required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-010",
+    "description": "Local evaluation record remains required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-011",
+    "description": "Regression snapshot remains required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-012",
+    "description": "Audit artifact remains required",
+    "evidence": true,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-013",
+    "description": "Regression event trace remains bound",
+    "evidence": 4,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-014",
+    "description": "Legal certification remains denied",
+    "evidence": false,
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-015",
+    "description": "Kaggle and benchmark claims remain denied",
+    "evidence": {
+      "benchmark": false,
+      "kaggle": false
+    },
+    "passed": true
+  },
+  {
+    "case_id": "M34-T6-016",
+    "description": "Milestone 38 closes into Milestone 38 governed opening",
+    "evidence": "MILESTONE_39_TASK_1_GOVERNED_OPENING_WITH_TASK_BUDGET_V1",
+    "passed": true
+  }
+]
